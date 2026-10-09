@@ -1,0 +1,20 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/camera_focus.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/camera_native.js" />
+        <include src="file://{resources}/scripts/custom_game/camera_panel.js" />
+    </scripts>
+    <Panel class="CoachCameraRoot" hittest="false" hittestchildren="true">
+        <Panel class="CoachCameraPanel" hittest="true">
+            <Label class="CoachCameraTitle" text="Камера тренера" html="false" />
+            <Label id="CameraRecipient" class="CoachCameraText" text="Игрок не выбран." html="false" />
+            <Label id="CameraAvailability" class="CoachCameraText" text="Камера ещё не подключена." html="false" />
+            <Label id="CameraResult" class="CoachCameraText" text="Фокус ещё не запрошен." html="false" />
+            <Button id="CameraFocus" class="CoachCameraButton" enabled="false">
+                <Label text="Показать героя команды" html="false" />
+            </Button>
+        </Panel>
+    </Panel>
+</root>
