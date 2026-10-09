@@ -1,0 +1,18 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/coach_probe.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/coach_probe_state.js" />
+        <include src="file://{resources}/scripts/custom_game/coach_probe.js" />
+    </scripts>
+    <Panel class="CoachProbeRoot" hittest="false" hittestchildren="true">
+        <Panel class="CoachProbePanel" hittest="true">
+            <Label class="CoachProbeTitle" text="Dota Coach — проверка связи" />
+            <Label id="ProbeStatus" class="CoachProbeStatus" text="Проверка связи недоступна." />
+            <Button id="ProbeButton" class="CoachProbeButton" enabled="false">
+                <Label text="Проверить связь" />
+            </Button>
+        </Panel>
+    </Panel>
+</root>
