@@ -59,9 +59,9 @@ def output_path(repository, output):
     return target
 
 
-def build_bundle(repository: Path, manifest: dict, output: Path) -> dict:
+def prepare_assets(repository: Path, manifest: dict) -> list:
+    """Validate declared UI paths and read bounded source bytes without writing."""
     root = repository.resolve()
-    target_root = output_path(root, output)
     if not isinstance(manifest, dict) or set(manifest) != {"schema_version", "kind", "assets"}:
         raise ValueError("Unsupported bundle manifest fields")
     if type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1:
@@ -98,6 +98,14 @@ def build_bundle(repository: Path, manifest: dict, output: Path) -> dict:
         if len(payload) > MAX_BYTES:
             raise ValueError("UI resource exceeds 1 MiB")
         prepared.append((source.as_posix(), target.as_posix(), payload))
+
+    return prepared
+
+
+def build_bundle(repository: Path, manifest: dict, output: Path) -> dict:
+    root = repository.resolve()
+    target_root = output_path(root, output)
+    prepared = prepare_assets(root, manifest)
 
     # All paths and bytes are checked before any output is created.
     target_root.parent.mkdir(parents=True, exist_ok=True)
