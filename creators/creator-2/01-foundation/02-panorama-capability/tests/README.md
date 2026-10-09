@@ -7,3 +7,13 @@
 ```sh
 node --test creators/creator-2/01-foundation/02-panorama-capability/tests/*.test.cjs
 ```
+
+Проверки упаковки используют Python 3.9+ и реальные временные файлы:
+
+```sh
+python3 -m unittest discover -s creators/creator-2/01-foundation/02-panorama-capability/tests -p 'test_*.py' -v
+```
+
+Для проверки готового пакета агент задаёт DOTA_COACH_PROBE_ASSET_ROOT равным
+его абсолютному content/panorama и выполняет ту же команду Node. По умолчанию
+проверяются единственные исходники из библиотеки.

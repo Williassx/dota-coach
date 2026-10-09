@@ -5,7 +5,8 @@ const path = require("node:path");
 const test = require("node:test");
 const vm = require("node:vm");
 
-const scripts = path.join(__dirname, "../src/panorama/scripts/custom_game");
+const assetRoot = process.env.DOTA_COACH_PROBE_ASSET_ROOT || path.join(__dirname, "../src/panorama");
+const scripts = path.join(assetRoot, "scripts/custom_game");
 
 function fixture() {
     let now = 0;

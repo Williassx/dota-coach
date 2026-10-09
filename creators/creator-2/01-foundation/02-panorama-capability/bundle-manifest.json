@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_probe",
+  "assets": [
+    {
+      "source": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    },
+    {
+      "source": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/layout/custom_game/coach_probe.xml",
+      "target": "content/panorama/layout/custom_game/coach_probe.xml"
+    },
+    {
+      "source": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/styles/custom_game/coach_probe.css",
+      "target": "content/panorama/styles/custom_game/coach_probe.css"
+    },
+    {
+      "source": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/scripts/custom_game/coach_probe_state.js",
+      "target": "content/panorama/scripts/custom_game/coach_probe_state.js"
+    },
+    {
+      "source": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/scripts/custom_game/coach_probe.js",
+      "target": "content/panorama/scripts/custom_game/coach_probe.js"
+    }
+  ]
+}
