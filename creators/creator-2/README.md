@@ -10,6 +10,7 @@
 - [Отдельный журнал действий Codex](00-action-log/README.md).
 - [Первая задача](01-foundation/01-workspace-audit/README.md).
 - [Подготовленные карточки игроков](02-coach-interface/01-roster-cards/README.md).
+- [Подготовленная панель режимов и приказов](02-coach-interface/02-status-orders/README.md).
 - [Продолжение в локальном Codex на Windows](01-foundation/01-workspace-audit/notes/windows-start.md).
 - [Инструкции агентам отдела](AGENTS.md).
 - [Общий порядок работы](../shared/WORKFLOW.md).

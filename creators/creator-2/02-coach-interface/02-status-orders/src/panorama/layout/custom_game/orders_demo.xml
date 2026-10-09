@@ -1,0 +1,30 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/orders.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/orders_state.js" />
+        <include src="file://{resources}/scripts/custom_game/orders_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/orders_demo_data.js" />
+        <include src="file://{resources}/scripts/custom_game/orders_demo.js" />
+    </scripts>
+    <Panel class="OrdersDemoRoot" hittest="false" hittestchildren="true">
+        <Panel class="OrdersPanel" hittest="true">
+            <Label class="OrdersTitle" text="Приказы · демонстрация" html="false" />
+            <Label class="OrdersNotice" text="Синтетический игрок и имитация ответов. Приказы в Dota не исполняются." html="false" />
+            <Label id="OrderRecipient" class="OrdersText" text="Адресат не выбран." html="false" />
+            <Label id="OrderMode" class="OrdersText" text="Режим не получен." html="false" />
+            <Label id="OrderRequestRecipient" class="OrdersText" html="false" />
+            <Label id="OrderAction" class="OrdersText" html="false" />
+            <Label id="OrderResult" class="OrdersResult" text="Демонстрация загружается…" html="false" />
+            <Label id="OrderReason" class="OrdersText" html="false" />
+            <Label id="OrderEligibility" class="OrdersText" html="false" />
+            <Button id="OrderMove" class="OrderButton" enabled="false">
+                <Label class="OrderButtonText" text="К контрольной точке" html="false" />
+            </Button>
+            <Button id="OrderAttack" class="OrderButton" enabled="false">
+                <Label class="OrderButtonText" text="Атаковать тестовую цель" html="false" />
+            </Button>
+        </Panel>
+    </Panel>
+</root>

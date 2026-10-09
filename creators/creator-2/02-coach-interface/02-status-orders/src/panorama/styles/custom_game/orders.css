@@ -1,0 +1,66 @@
+.OrdersDemoRoot
+{
+    width: 100%;
+    height: 100%;
+}
+
+.OrdersPanel
+{
+    width: 380px;
+    height: fit-children;
+    horizontal-align: right;
+    margin-top: 72px;
+    margin-right: 24px;
+    padding: 14px;
+    flow-children: down;
+    background-color: #14202bee;
+    border: 1px solid #536575;
+}
+
+.OrdersTitle
+{
+    width: 100%;
+    font-size: 20px;
+    color: #f2ede2;
+}
+
+.OrdersText, .OrdersNotice, .OrdersResult
+{
+    width: 100%;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #c4cbd3;
+}
+
+.OrdersNotice
+{
+    color: #e6bf71;
+}
+
+.OrdersResult
+{
+    color: #f2ede2;
+}
+
+.OrderButton
+{
+    width: 100%;
+    height: fit-children;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #708395;
+    background-color: #294557;
+}
+
+.OrderButton:disabled
+{
+    background-color: #27323b;
+    opacity: 0.55;
+}
+
+.OrderButtonText
+{
+    width: 100%;
+    font-size: 17px;
+    color: #f2ede2;
+}
