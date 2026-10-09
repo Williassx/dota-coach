@@ -1,0 +1,6 @@
+{
+  "protocol_version": 1,
+  "request_id": "c2-probe-002",
+  "status": "rejected",
+  "reason": "unsupported_version"
+}
