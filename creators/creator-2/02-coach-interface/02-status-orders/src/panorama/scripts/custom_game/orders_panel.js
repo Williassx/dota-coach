@@ -1,12 +1,14 @@
 /* Injected presentation gateway only. No Dota transport or hero control. */
 var DotaCoachOrderPanels = (function () {
     "use strict";
+    var owners = [];
     function valid(panel) {
         if (!panel || !panel.IsValid()) { throw new Error("Orders panels unavailable"); }
         return panel;
     }
     function bind(root, send) {
         valid(root);
+        if (owners.indexOf(root) !== -1) { throw new Error("Orders root already bound"); }
         var labels = {};
         var fields = ["Recipient", "Mode", "RequestRecipient", "Action", "Result", "Reason", "Eligibility"];
         for (var n = 0; n < fields.length; n += 1) {
@@ -19,6 +21,7 @@ var DotaCoachOrderPanels = (function () {
         var closed = false;
         var generation = 0;
         var replyTimer = null;
+        owners.push(root);
 
         function cancelReply(ticket) {
             if (replyTimer && (ticket === undefined || replyTimer.ticket === ticket)) {
@@ -29,6 +32,8 @@ var DotaCoachOrderPanels = (function () {
         function dispose() {
             if (closed) { return; }
             closed = true;
+            var owner = owners.indexOf(root);
+            if (owner !== -1) { owners.splice(owner, 1); }
             generation += 1;
             cancelReply();
             state.dispose();
@@ -61,6 +66,7 @@ var DotaCoachOrderPanels = (function () {
             }
         }
         function publish(message) {
+            if (!available()) { return false; }
             try {
                 var view = state.view();
                 generation += 1;
@@ -108,14 +114,20 @@ var DotaCoachOrderPanels = (function () {
                 if (available() && state.expire(ticket)) { publish(""); }
             }
         }
+        function mutate(method, args) {
+            if (!available()) { return false; }
+            var before = state.view().ticket;
+            var accepted = state[method].apply(state, args);
+            if (!available()) { return false; }
+            if (state.view().ticket !== before) { cancelReply(); }
+            var displayed = publish(accepted ? "" : "Состояние не обновлено; показаны последние данные.");
+            return accepted && displayed;
+        }
         var api = {
-            setRecipient: function (snapshot) {
-                if (!available()) { return false; }
-                var before = state.view().ticket;
-                var accepted = state.setRecipient(snapshot);
-                if (state.view().ticket !== before) { cancelReply(); }
-                var displayed = publish(accepted ? "" : "Состояние не обновлено; показаны последние данные.");
-                return accepted && displayed;
+            setRecipient: function (snapshot) { return mutate("setRecipient", [snapshot]); },
+            updateRecipient: function (snapshot) { return mutate("updateRecipient", [snapshot]); },
+            selectRecipient: function (id, playerName, allowIntents) {
+                return mutate("selectRecipient", [id, playerName, allowIntents]);
             },
             dispose: dispose,
             isDisposed: function () { return closed; }

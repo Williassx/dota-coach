@@ -35,6 +35,8 @@ var DotaCoachOrders = (function () {
     function create(transportReady) {
         var known = [];
         var selected = null;
+        var selectedName = "";
+        var selectionAllowed = false;
         var request = null;
         var serial = 0;
         var notice = "";
@@ -50,53 +52,71 @@ var DotaCoachOrders = (function () {
         function busy() { return !!request && !terminal(request.stage); }
         function canIssue() {
             var row = recipient();
-            return !closed && transportReady === true && !!row && row.mode === "AI" &&
+            return !closed && selectionAllowed && transportReady === true && !!row && row.mode === "AI" &&
                 row.side === "own" && row.availability === "alive" && !busy();
         }
         function guard() {
             var row = recipient();
             if (closed) { return "Панель закрыта."; }
             if (!transportReady) { return "Не подключён переходник к серверу."; }
-            if (!row) { return "Выберите адресата."; }
+            if (selected === null) { return "Выберите адресата."; }
             if (busy()) { return "Незавершённый приказ сохраняется при смене карточки."; }
+            if (!selectionAllowed) { return "Карточка доступна только для просмотра."; }
+            if (!row) { return "Режим адресата не получен."; }
             if (row.side !== "own") { return "Чужому игроку приказ недоступен."; }
             if (row.availability !== "alive") { return "Игрок мёртв или не поддерживается."; }
             if (row.mode !== "AI") { return "Приказы этой панели доступны только в подтверждённом AI."; }
             return "";
         }
 
+        function store(input) {
+            if (closed) { return null; }
+            var row = copy(input, snapshotFields);
+            if (closed || !row || !text(row.id, 64) || /^\s|\s$/.test(row.id) || !text(row.playerName, 64) ||
+                    ["AI", "MANUAL", "INACTIVE"].indexOf(row.mode) === -1 ||
+                    !integer(row.epoch) || !integer(row.revision) ||
+                    ["own", "opponent"].indexOf(row.side) === -1 ||
+                    ["alive", "dead", "unsupported"].indexOf(row.availability) === -1) { return null; }
+            var index = find(row.id);
+            if (index === -1) {
+                if (known.length === 10) { return null; }
+                known.push(row);
+            } else {
+                var previous = known[index];
+                if (row.epoch < previous.epoch ||
+                        (row.epoch === previous.epoch && row.revision < previous.revision)) { return null; }
+                if (row.epoch === previous.epoch && row.revision === previous.revision) {
+                    for (var n = 0; n < snapshotFields.length; n += 1) {
+                        var field = snapshotFields[n];
+                        if (previous[field] !== row[field]) { return null; }
+                    }
+                } else { known[index] = row; }
+            }
+            if (request && request.recipientId === row.id && row.epoch > request.epoch) {
+                request = null;
+                notice = "Новая эпоха управления; завершение прежнего приказа не подтверждено.";
+            }
+            return row;
+        }
+        function select(id, playerName, allowIntents) {
+            if (closed) { return false; }
+            if (id === null) { selected = null; selectedName = ""; selectionAllowed = false; return true; }
+            if (!text(id, 64) || /^\s|\s$/.test(id) || !text(playerName, 64) ||
+                    typeof allowIntents !== "boolean") { return false; }
+            selected = id;
+            selectedName = playerName;
+            selectionAllowed = allowIntents;
+            return true;
+        }
+
         return {
             setRecipient: function (input) {
-                if (closed) { return false; }
-                if (input === null) { selected = null; return true; }
-                var row = copy(input, snapshotFields);
-                if (closed || !row || !text(row.id, 64) || /^\s|\s$/.test(row.id) || !text(row.playerName, 64) ||
-                        ["AI", "MANUAL", "INACTIVE"].indexOf(row.mode) === -1 ||
-                        !integer(row.epoch) || !integer(row.revision) ||
-                        ["own", "opponent"].indexOf(row.side) === -1 ||
-                        ["alive", "dead", "unsupported"].indexOf(row.availability) === -1) { return false; }
-                var index = find(row.id);
-                if (index === -1) {
-                    if (known.length === 10) { return false; }
-                    known.push(row);
-                } else {
-                    var previous = known[index];
-                    if (row.epoch < previous.epoch ||
-                            (row.epoch === previous.epoch && row.revision < previous.revision)) { return false; }
-                    if (row.epoch === previous.epoch && row.revision === previous.revision) {
-                        for (var n = 0; n < snapshotFields.length; n += 1) {
-                            var field = snapshotFields[n];
-                            if (previous[field] !== row[field]) { return false; }
-                        }
-                    } else { known[index] = row; }
-                }
-                if (request && request.recipientId === row.id && row.epoch > request.epoch) {
-                    request = null;
-                    notice = "Новая эпоха управления; завершение прежнего приказа не подтверждено.";
-                }
-                selected = row.id;
-                return true;
+                if (input === null) { return select(null); }
+                var row = store(input);
+                return !!row && select(row.id, row.playerName, true);
             },
+            updateRecipient: function (input) { return !!store(input); },
+            selectRecipient: select,
             begin: function (action) {
                 if (!canIssue() || ["move", "attack"].indexOf(action) === -1 || serial === 9007199254740991) { return null; }
                 var row = recipient();
@@ -137,7 +157,7 @@ var DotaCoachOrders = (function () {
                 var row = recipient();
                 var stage = request ? request.stage : "idle";
                 return {
-                    recipientText: row ? row.playerName : "Адресат не выбран.",
+                    recipientText: selected !== null ? selectedName : "Адресат не выбран.",
                     modeText: row ? modes[row.mode] : "Режим не получен.",
                     requestRecipientText: request ? request.playerName : "Нет адресата приказа.",
                     actionText: request ? (request.action === "move" ? "К контрольной точке" : "Атаковать тестовую цель") : "Нет приказа.",
@@ -147,7 +167,10 @@ var DotaCoachOrders = (function () {
                     stage: stage, closed: closed
                 };
             },
-            dispose: function () { closed = true; selected = null; known = []; request = null; notice = ""; }
+            dispose: function () {
+                closed = true; selected = null; selectedName = ""; selectionAllowed = false;
+                known = []; request = null; notice = "";
+            }
         };
     }
     return { create: create };

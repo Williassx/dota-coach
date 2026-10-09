@@ -69,7 +69,7 @@ var DotaCoachRoster = (function () {
                         ids.push(row.id);
                         next.push(row);
                     }
-                    if (input.length !== count) { return false; }
+                    if (input.length !== count || closed) { return false; }
                 } catch (error) { return false; }
                 rows = next;
                 var current = find(selected);
@@ -102,6 +102,7 @@ var DotaCoachRoster = (function () {
                             (row.availability === "unsupported" ? "Нет поддержки" : "В игре"),
                         selected: selected === row.id,
                         selectable: selectable(row),
+                        availableForOrders: selectable(row) && row.availability === "alive",
                         selectionHint: hint(row)
                     });
                 }

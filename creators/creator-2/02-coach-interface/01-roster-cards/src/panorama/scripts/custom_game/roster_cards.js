@@ -1,14 +1,16 @@
 /* Panorama rendering adapter. Selection is local inspection, never a game command. */
 var DotaCoachRosterPanels = (function () {
     "use strict";
+    var owners = [];
 
     function requirePanel(panel) {
         if (!panel || !panel.IsValid()) { throw new Error("Roster panels unavailable"); }
         return panel;
     }
 
-    function bind(root) {
+    function bind(root, onSelection) {
         requirePanel(root);
+        if (owners.indexOf(root) !== -1) { throw new Error("Roster root already bound"); }
         var status = requirePanel(root.FindChildTraverse("RosterStatus"));
         var slots = [];
         var names = ["Name", "Hero", "Role", "Source", "Availability", "Hint"];
@@ -22,10 +24,13 @@ var DotaCoachRosterPanels = (function () {
         var model = DotaCoachRoster.create();
         var closed = false;
         var api;
+        owners.push(root);
 
         function dispose() {
             if (closed) { return; }
             closed = true;
+            var owner = owners.indexOf(root);
+            if (owner !== -1) { owners.splice(owner, 1); }
             model.dispose();
             for (var n = 0; n < slots.length; n += 1) {
                 try {
@@ -80,8 +85,20 @@ var DotaCoachRosterPanels = (function () {
                 (view.cards.length ? "Выберите игрока для просмотра." : "Игроки не получены.")));
         }
 
-        function publish(message) {
-            try { render(message); return true; }
+        function publish(message, notify) {
+            if (!available()) { return false; }
+            try {
+                render(message);
+                if (notify && typeof onSelection === "function") {
+                    var cards = model.view().cards;
+                    var selected = null;
+                    for (var n = 0; n < cards.length; n += 1) {
+                        if (cards[n].selected) { selected = cards[n]; break; }
+                    }
+                    onSelection(selected);
+                }
+                return available();
+            }
             catch (error) {
                 dispose();
                 try { write(status, "Просмотр недоступен. Карточки отключены."); }
@@ -94,23 +111,25 @@ var DotaCoachRosterPanels = (function () {
             replace: function (rows) {
                 if (!available()) { return false; }
                 var accepted = model.replace(rows);
-                var displayed = publish(accepted ? "" : "Список не обновлён; показаны предыдущие данные.");
+                if (!available()) { return false; }
+                var displayed = publish(accepted ? "" : "Список не обновлён; показаны предыдущие данные.", accepted);
                 return accepted && displayed;
             },
             select: function (id) {
                 if (!available()) { return false; }
                 var accepted = model.select(id);
-                var displayed = publish(accepted ? "" : "Карточка недоступна для выбора.");
+                if (!available()) { return false; }
+                var displayed = publish(accepted ? "" : "Карточка недоступна для выбора.", accepted);
                 return accepted && displayed;
             },
             clearSelection: function () {
                 if (!available()) { return false; }
-                return model.clearSelection() && publish("");
+                return model.clearSelection() && publish("", true);
             },
             dispose: dispose,
             isDisposed: function () { return closed; }
         };
-        if (!publish("")) { throw new Error("Roster view unavailable"); }
+        if (!publish("", true)) { throw new Error("Roster view unavailable"); }
         return api;
     }
 
