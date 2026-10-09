@@ -1,0 +1,58 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/roster_cards.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/roster_cards_state.js" />
+        <include src="file://{resources}/scripts/custom_game/roster_cards.js" />
+        <include src="file://{resources}/scripts/custom_game/roster_cards_demo_data.js" />
+        <include src="file://{resources}/scripts/custom_game/roster_cards_demo.js" />
+    </scripts>
+    <Panel class="RosterDemoRoot" hittest="false" hittestchildren="true">
+        <Panel class="RosterList" hittest="true">
+            <Label class="RosterTitle" text="Просмотр игроков · демонстрация" html="false" />
+            <Label class="RosterExplanation" text="Синтетические профили. Данные реальных матчей не загружены." html="false" />
+            <Label id="RosterStatus" class="RosterStatus" text="Демонстрация загружается…" html="false" />
+            <Button id="RosterCard0" class="RosterCard" enabled="false" visible="false">
+                <Label id="RosterName0" class="RosterName" html="false" />
+                <Label id="RosterHero0" class="RosterDetail" html="false" />
+                <Label id="RosterRole0" class="RosterDetail" html="false" />
+                <Label id="RosterSource0" class="RosterOrigin" html="false" />
+                <Label id="RosterAvailability0" class="RosterDetail" html="false" />
+                <Label id="RosterHint0" class="RosterHint" html="false" />
+            </Button>
+            <Button id="RosterCard1" class="RosterCard" enabled="false" visible="false">
+                <Label id="RosterName1" class="RosterName" html="false" />
+                <Label id="RosterHero1" class="RosterDetail" html="false" />
+                <Label id="RosterRole1" class="RosterDetail" html="false" />
+                <Label id="RosterSource1" class="RosterOrigin" html="false" />
+                <Label id="RosterAvailability1" class="RosterDetail" html="false" />
+                <Label id="RosterHint1" class="RosterHint" html="false" />
+            </Button>
+            <Button id="RosterCard2" class="RosterCard" enabled="false" visible="false">
+                <Label id="RosterName2" class="RosterName" html="false" />
+                <Label id="RosterHero2" class="RosterDetail" html="false" />
+                <Label id="RosterRole2" class="RosterDetail" html="false" />
+                <Label id="RosterSource2" class="RosterOrigin" html="false" />
+                <Label id="RosterAvailability2" class="RosterDetail" html="false" />
+                <Label id="RosterHint2" class="RosterHint" html="false" />
+            </Button>
+            <Button id="RosterCard3" class="RosterCard" enabled="false" visible="false">
+                <Label id="RosterName3" class="RosterName" html="false" />
+                <Label id="RosterHero3" class="RosterDetail" html="false" />
+                <Label id="RosterRole3" class="RosterDetail" html="false" />
+                <Label id="RosterSource3" class="RosterOrigin" html="false" />
+                <Label id="RosterAvailability3" class="RosterDetail" html="false" />
+                <Label id="RosterHint3" class="RosterHint" html="false" />
+            </Button>
+            <Button id="RosterCard4" class="RosterCard" enabled="false" visible="false">
+                <Label id="RosterName4" class="RosterName" html="false" />
+                <Label id="RosterHero4" class="RosterDetail" html="false" />
+                <Label id="RosterRole4" class="RosterDetail" html="false" />
+                <Label id="RosterSource4" class="RosterOrigin" html="false" />
+                <Label id="RosterAvailability4" class="RosterDetail" html="false" />
+                <Label id="RosterHint4" class="RosterHint" html="false" />
+            </Button>
+        </Panel>
+    </Panel>
+</root>
