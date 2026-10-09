@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+build/
+creators/creator-1/01-foundation/01-environment-audit/reports/*-local.json

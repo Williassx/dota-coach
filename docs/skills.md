@@ -71,8 +71,11 @@ project-brief.md и roadmap.md продолжают действовать. Пр
 
 ## Где создавать следующие документы
 
-Спецификации: `docs/superpowers/specs/YYYY-MM-DD-<subsystem>-design.md`.
-Технические планы: `docs/superpowers/plans/YYYY-MM-DD-<subsystem>.md`.
+По новому поручению пользователя работа сначала ведётся в библиотеке создателя:
+`creators/creator-N/NN-section/NN-subsection/design.md` и
+`creators/creator-N/NN-section/NN-subsection/implementation-plan.md`.
+Навигация и правила: [creators/README.md](../creators/README.md),
+[WORKFLOW.md](../creators/shared/WORKFLOW.md). Общие решения остаются в `docs/`.
 Каждый план ссылается на свою рассмотренную спецификацию; дата соответствует
 дате создания. На каждый крупный этап отдельный план: данные, симуляция,
 персональный ИИ, управление, полный матч и карьера.
