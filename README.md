@@ -15,6 +15,7 @@
 - [План создателя 2: интерфейс, карта, голос](creators/creator-2/PLAN.md).
 - [Первое обследование среды и Windows-запуск](creators/creator-1/01-foundation/01-environment-audit/README.md).
 - [Текущая работа создателя 2: фундамент интерфейса](creators/creator-2/01-foundation/README.md).
+- [Журнал выполненных действий Codex](creators/creator-2/00-action-log/README.md).
 - [Продолжение создателя 2 в локальном Codex на Windows](creators/creator-2/01-foundation/01-workspace-audit/notes/windows-start.md).
 - **[Агенты.md](Агенты.md)** — быстрый поиск 172 ролей по номеру, категории и задаче.
 - [Итоговые решения из диалога](docs/decisions.md) — требования, предложения и открытые вопросы.

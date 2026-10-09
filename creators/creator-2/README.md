@@ -7,6 +7,7 @@
 Начинайте задания здесь, в папке соответствующего раздела и подпункта.
 
 - [Подробный план: 12 разделов, 36 подпунктов](PLAN.md).
+- [Отдельный журнал действий Codex](00-action-log/README.md).
 - [Первая задача](01-foundation/01-workspace-audit/README.md).
 - [Продолжение в локальном Codex на Windows](01-foundation/01-workspace-audit/notes/windows-start.md).
 - [Инструкции агентам отдела](AGENTS.md).
