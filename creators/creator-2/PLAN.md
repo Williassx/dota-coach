@@ -167,3 +167,6 @@ native источник/identity/clock/мышь и второй владелец
 
 C2-04-01: исходники отдельной панели и 26 новых проверок подготовлены;
 вместе 346 облачных сценариев. Панель не включена в match HUD; native/server открыты.
+
+[C2-04-02](04-preparation-ui/02-hero-role-picker/README.md): pure local hero-role
+proposal draft (28 сценариев), общий итог 374. C1/native/real source и UI открыты.

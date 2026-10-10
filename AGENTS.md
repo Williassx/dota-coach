@@ -98,3 +98,7 @@ C2-04-01 содержит pure local team draft без panel/native/server/stora
 C2-04-01 panel source separate from match HUD. Explicit bind/dispose, all required
 nodes checked including offpage; stale handlers expire before input getters.
 Definitions/graph/VM tests are not native screen proof; no submit/start/storage.
+
+C2-04-02 pure hero-role proposals draft: local uniqueness is preliminary policy,
+not server support. Structured kind retained; origin/compatibility/coverage warnings.
+Atomic conflicts preserve old choice; serverConfirmed=false, no UI/native/start.

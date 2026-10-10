@@ -31,4 +31,4 @@ native действий/server confirmation. Проверить stale page handl
 - [x] XML exact ids/plain labels/resources/no bootstrap; не включать в match HUD.
 - [x] Повторить 320 прежних сценариев и новые проверки; syntax/links/README/diff.
 - [x] Start_skill partial update/readback, документировать ограничения native/activation.
-- [ ] Commit, fast-forward main, remote SHA и clean tree.
+- [x] Commit d447cf6, fast-forward main, remote SHA подтверждён, clean tree.
