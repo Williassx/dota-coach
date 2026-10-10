@@ -26,4 +26,4 @@ NativeWindows/Dota/WorkshopTools/сервер/lease/возвратИИ/втор�
 
 Start_skill revision23 сохранён, readback прочих полей без изменений.
 requires_publish=true/активация через настройки открыта; install/network/secrets/
-runtime не менялись. Проверены1394 локальные ссылки и README библиотечных папок.
+runtime не менялись. Проверены1395 локальные ссылки и README библиотечных папок.

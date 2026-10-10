@@ -195,3 +195,8 @@ probe policy сохранены. Bootstrap/общийпереход/native/serve
 C2-05-01: purelocalrequestprojection reuseOrders snapshot(id?) readAPI.29request/
 6newsnapshot,577sourcechecks. ACK≠MANUAL; mode-observed≠permission/causality.
 Panel/transport/lease/native/server/ИИreturn/secondowner остаются открытыми.
+
+C2-05-01: отдельная панель запроса с явным bind/dispose, 26 VM и 5 XML проверками;
+полная регрессия 608. Таймер ACK пять секунд не является lease. Скрытый обязательный
+дочерний элемент блокирует отправку. HUD/пакет, настоящий транспорт/серверное право,
+ручной ввод/возврат ИИ, native и второй владелец открыты.

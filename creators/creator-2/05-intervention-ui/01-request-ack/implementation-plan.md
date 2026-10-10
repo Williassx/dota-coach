@@ -28,4 +28,6 @@ report/expire/notSent/view/dispose/isDisposed из design. Uses DotaCoachOrders.
 - [x] VM requestflow/actor/highwater/busy/DTO/privatecopy tests RED.
 - [x] Minimal implementation GREEN; no panel/transport/sharedcontract/native added.
 - [x] Пять read-only verdicts; concretefixes RED→GREEN; previous542/regression/syntax.
-- [ ] Docs/library/journal/links/start_skill/readback, fast-forwardmain/remoteSHA/clean.
+- [x] Docs/library/journal/links/start_skill/readback, fast-forwardmain/remoteSHA/clean.
+
+Опубликовано: 36845f6; remote main и чистое дерево были проверены.
