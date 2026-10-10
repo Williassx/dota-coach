@@ -90,3 +90,7 @@ Git worktree допустимо по явному запросу пользов�
 C2-11-01 локально связывает четыре области; camera и send/report используют общий
 lifecycle guard. Entity mapping не доказывает identity, закрытие UI не отменяет
 серверный запрос. Bootstrap, общий server contract и native приёмка открыты.
+
+C2-04-01 содержит pure local team draft без panel/native/server/storage. id —
+виртуальный игрок, profileVersion отдельна; complete только count 5, serverConfirmed
+всегда false. Source mapping людей, персональное сходство, герои/роли открыты.

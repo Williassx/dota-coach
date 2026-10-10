@@ -27,6 +27,6 @@
 - [x] Уточнить packaging tests, реальный build/verify в новом output.
 - [x] Прежние266 сценариев и новые проверки, syntax/XML/link/README.
 - [x] Docs/status/action log/start_skill подготовлены.
-- [ ] Обычный fast-forward main, SHA/clean tree.
+- [x] Обычный fast-forward main: 1fdcaf1, remote SHA подтверждён, clean tree.
 
 Не добавлять default bootstrap/data/transport, server cancellation или native proof.
