@@ -10,7 +10,7 @@ var DotaCoachPreparationPanels = (function () {
         for (var n = 0; n < rows.length; n += 1) { if (rows[n].id === id) { return rows[n]; } }
         return null;
     }
-    function bind(root) {
+    function bind(root, projection) {
         valid(root);
         if (owners.indexOf(root) !== -1) { throw new Error("Preparation root already bound"); }
         owners.push(root);
@@ -30,7 +30,7 @@ var DotaCoachPreparationPanels = (function () {
         function dispose() {
             if (closed) { return; }
             closed = true; generation += 1;
-            if (model) { model.dispose(); }
+            try { if (model) { model.dispose(); } } catch (error) { /* Continue UI cleanup. */ }
             if (timer !== null) {
                 try { $.CancelScheduled(timer); } catch (error) { /* Context unavailable. */ }
                 timer = null;
@@ -49,6 +49,27 @@ var DotaCoachPreparationPanels = (function () {
             catch (error) { /* Status unavailable. */ }
             var owner = owners.indexOf(root);
             if (owner !== -1) { owners.splice(owner, 1); }
+        }
+        function pendingValid() {
+            if (closed) { return false; }
+            try { valid(root); for (var n = 0; n < nodes.length; n += 1) { valid(nodes[n]); } }
+            catch (error) { return false; }
+            return !closed;
+        }
+        function suspend() {
+            if (!available()) { return false; }
+            var version = ++generation;
+            try {
+                root.visible = false;
+                if (!current(version)) { return false; }
+                for (var b = 0; b < buttons.length; b += 1) {
+                    if (!button(buttons[b], false, false, null, version)) { return false; }
+                }
+                for (var l = 0; l < labels.length; l += 1) {
+                    if (!write(labels[l], "", version)) { return false; }
+                }
+                return current(version);
+            } catch (error) { if (current(version)) { dispose(); } return false; }
         }
         function available() {
             if (closed) { return false; }
@@ -159,7 +180,8 @@ var DotaCoachPreparationPanels = (function () {
             }
             chosenPlan = group("PreparationChosenPlan", ["Label", "Version", "Intent", "Action"], "");
             chosenTalk = group("PreparationChosenTalk", ["Label", "Version", "Intent", "Action"], "");
-            model = DotaCoachPreparation.create();
+            model = projection === undefined ? DotaCoachPreparation.create() :
+                DotaCoachPanelPorts.adopt(projection, ["update", "choosePlan", "chooseTalk", "removePlan", "removeTalk", "clear", "view", "draft"], pendingValid);
             if (!render()) { throw new Error("Preparation view unavailable"); }
             watch();
         } catch (error) { dispose(); throw error; }
@@ -168,7 +190,7 @@ var DotaCoachPreparationPanels = (function () {
             chooseTalk: function (id) { return invoke("chooseTalk", [id]); },
             removePlan: function () { return invoke("removePlan", []); }, removeTalk: function () { return invoke("removeTalk", []); },
             clear: function () { return invoke("clear", []); }, draft: function () { return available() ? model.draft() : null; },
-            dispose: dispose, isDisposed: function () { return !available(); } };
+            dispose: dispose, refresh: render, suspend: suspend, isDisposed: function () { return !available(); } };
     }
     return { bind: bind };
 }());

@@ -4,3 +4,5 @@
 
 - [coach_hud_binding.js](coach_hud_binding.js)
 - [preparation_flow_state.js](preparation_flow_state.js)
+- [preparation_panel_port.js](preparation_panel_port.js)
+- [preparation_binding.js](preparation_binding.js)

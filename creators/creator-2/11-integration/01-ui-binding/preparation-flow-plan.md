@@ -30,7 +30,9 @@ notes/preparation-flow.md/reports/cloud-preparation-flow.md.
 - [x] Happychain/contextgates/reset/invalid/stale/busy/dispose/copies tests RED.
 - [x] Implement → GREEN; пять критиков/reproducibledefects RED→GREEN.
 - [x] Прежние458 +новые, syntax/README/links/diff, journal/configreadback.
-- [ ] Commit/fast-forward main, remoteSHA/clean. Partial statuses and native/server open.
+- [x] Commit/fast-forward main, remoteSHA/clean. Partial statuses and native/server open.
 
 Review уточнил API contexts(): copied intermediate drafts без guessed counters,
 19flowGREEN, busy/dispose скрывают результат.
+
+Опубликован 9f26bdf; remoteSHA и чистота checkout проверены.

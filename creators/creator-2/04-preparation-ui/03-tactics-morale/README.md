@@ -53,3 +53,9 @@ API, сигнатуры, конкретные файлы и команды пр�
 
 Для локальной цепи C2-11-01 добавлен reset(): source/выбор снимаются, highwater
 сохранён. Два новых сценария, pure suite30PASS; прежние панели не менялись.
+
+## Общая цепь подготовки
+
+Optional bind(root,projection), refresh/suspend и безопасная очистка подключены к
+[общей привязке](../../11-integration/01-ui-binding/notes/preparation-binding.md).
+Текущая suite адаптера: 26 PASS; прежний standalone bind сохранён. Native открыта.

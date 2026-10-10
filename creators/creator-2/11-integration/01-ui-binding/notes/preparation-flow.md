@@ -21,9 +21,9 @@ frame revisions весь срок flow. Busy скрывает views/draft, neste
 модели сохраняют свой прежний newer-getter-win порядок.
 
 Final draft выдаётся только при полной цепи, copied/serverConfirmed=false. No native,
-server/start/catalog invention/storage. Existingpanels пока владеют отдельными
-моделями: coordinator ещё не подключён к их кнопкам и навигации. C1/sharedcontract,
+server/start/catalog invention/storage. Панели теперь могут использовать общую [привязку](preparation-binding.md);
+сам flow остаётся независимым от UI. Навигация ещё не подключена. C1/sharedcontract,
 реальные данные/эффект и второй владелец остаются открытыми.
 
-contexts() выдаёт copied {team,heroes} draft для построения следующего frame,
+contexts() выдаёт copied {team,heroes,preparation} draft для построения следующего frame,
 без реконструкции counters; во время busy/dispose результат null. Модели не открываются.

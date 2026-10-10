@@ -4,3 +4,4 @@
 
 - [cloud-ui-binding.md](cloud-ui-binding.md)
 - [cloud-preparation-flow.md](cloud-preparation-flow.md)
+- [cloud-preparation-binding.md](cloud-preparation-binding.md)

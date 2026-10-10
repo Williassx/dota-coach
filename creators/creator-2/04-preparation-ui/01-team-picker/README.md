@@ -50,3 +50,9 @@ API, сигнатуры, конкретные файлы и команды пр�
 Пять кандидатов на страницу, пять выбранных; origin/coverage до выбора, версии и
 предупреждения, явные добавление/удаление/clear. 21 VM и 5 sourcegraph сценариев
 проходят; общий облачный итог 346. Панель не включена в match HUD и не запускает игру.
+
+## Общая цепь подготовки
+
+Optional bind(root,projection), refresh/suspend и безопасная очистка подключены к
+[общей привязке](../../11-integration/01-ui-binding/notes/preparation-binding.md).
+Текущая suite адаптера: 25 PASS; прежний standalone bind сохранён. Native открыта.

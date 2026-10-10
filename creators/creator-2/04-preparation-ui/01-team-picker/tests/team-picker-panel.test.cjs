@@ -21,8 +21,9 @@ function fixture(options={}){
  }
  const deny=new Proxy({}, {get(_,key){return()=>{native.push(String(key));throw Error('unexpected native');};}});
  const context=vm.createContext({$: {Schedule(delay,callback){if(options.failSchedule)throw Error('schedule');timers.set(++serial,{delay,callback});return serial;},CancelScheduled(id){timers.delete(id);}},Game:deny,GameUI:deny,Entities:deny,GameEvents:deny});
+ vm.runInContext(fs.readFileSync(path.resolve(__dirname,'../../../11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_panel_port.js'),'utf8'),context);
  for(const file of ['team_picker_state.js','team_picker_panel.js'])vm.runInContext(fs.readFileSync(path.resolve(__dirname,'../src/panorama/scripts/custom_game',file),'utf8'),context,{filename:file});
- return {context,nodes,timers,native,root,options,bind(){return context.DotaCoachTeamPickerPanels.bind(root);},
+ return {context,nodes,timers,native,root,options,bind(projection){return context.DotaCoachTeamPickerPanels.bind(root,projection);},
  click(id){const callback=nodes.get(id).events.onactivate;assert.equal(typeof callback,'function',id);callback();},
  tick(){const [id,t]=[...timers][0];timers.delete(id);t.callback();}};
 }
@@ -135,3 +136,9 @@ test('old remove handler cannot remove a newly selected version of the same id',
  ui.update({revision:1,profiles:[profile('p0',{profileVersion:'v2'})]});ui.choose('p0');old();
  assert.equal(ui.draft().players[0].profileVersion,'v2');ui.dispose();
 });
+
+
+test('optional owned projection uses its actual draft and mutations rather than a separate model',()=>{const p=fixture(),model=p.context.DotaCoachTeamPicker.create();model.update({revision:0,profiles:[profile('p0'),profile('p1')]});const ui=p.bind(model);assert.equal(ui.choose('p0'),true);assert.equal(model.draft().players[0].id,'p0');ui.dispose();assert.equal(model.isDisposed(),true);});
+test('suspend clears private display expires handlers and refresh restores current draft',()=>{const p=fixture(),ui=setup(p);const old=p.nodes.get('TeamCandidate0').events.onactivate;assert.equal(ui.suspend(),true);assert.equal(p.root.visible,false);assert.equal(p.nodes.get('TeamCandidateName0').text,'');old();assert.equal(ui.refresh(),true);assert.equal(p.root.visible,true);assert.notEqual(p.nodes.get('TeamCandidateName0').text,'');assert.equal(ui.isDisposed(),false);ui.dispose();});
+test('injected dispose exceptions still clean timer controls and release pane owner',()=>{const p=fixture(),model=p.context.DotaCoachTeamPicker.create();let disposals=0;model.dispose=()=>{disposals++;throw Error('cleanup');};const ui=p.bind(model);assert.doesNotThrow(()=>ui.dispose());assert.equal(disposals,1);assert.equal(p.timers.size,0);p.bind().dispose();assert.equal(p.timers.size,0);});
+test('invalid injection is rejected without executing method accessors and permits retry',()=>{const p=fixture();let reads=0;const model={dispose(){},isDisposed(){return false;},get view(){reads++;throw Error('getter');}};assert.throws(()=>p.bind(model));assert.equal(reads,0);p.bind().dispose();});

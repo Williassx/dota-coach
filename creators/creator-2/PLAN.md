@@ -185,4 +185,5 @@ lineup и fixed warnings. No effect/start/HUD; C1/native/server/secondowner от
 
 C2-11-01 содержит также pure preparation flow из3private моделей. Downstream
 source reset сохраняетhighwater; fullcontext сравнивается по draft, busy nestedcalls
-отклоняются безDTOreads. Existingпанели ещё не подключены; C1/server/native открыты.
+отклоняются безDTOreads. Три existing панели подключены optionalports к одной privateflow;
+522 source checks проходят. XMLcomposition/C1/server/native/secondowner открыты.

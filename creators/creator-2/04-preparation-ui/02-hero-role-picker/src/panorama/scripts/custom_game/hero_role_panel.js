@@ -10,7 +10,7 @@ var DotaCoachHeroRolePanels = (function () {
         for (var n = 0; n < rows.length; n += 1) { if (rows[n].id === id) { return rows[n]; } }
         return null;
     }
-    function bind(root) {
+    function bind(root, projection) {
         valid(root);
         if (owners.indexOf(root) !== -1) { throw new Error("Hero role root already bound"); }
         owners.push(root);
@@ -29,7 +29,7 @@ var DotaCoachHeroRolePanels = (function () {
         function dispose() {
             if (closed) { return; }
             closed = true; generation += 1; active = null;
-            if (model) { model.dispose(); }
+            try { if (model) { model.dispose(); } } catch (error) { /* Continue UI cleanup. */ }
             if (timer !== null) {
                 try { $.CancelScheduled(timer); } catch (error) { /* Context unavailable. */ }
                 timer = null;
@@ -48,6 +48,27 @@ var DotaCoachHeroRolePanels = (function () {
             catch (error) { /* Status unavailable. */ }
             var owner = owners.indexOf(root);
             if (owner !== -1) { owners.splice(owner, 1); }
+        }
+        function pendingValid() {
+            if (closed) { return false; }
+            try { valid(root); for (var n = 0; n < nodes.length; n += 1) { valid(nodes[n]); } }
+            catch (error) { return false; }
+            return !closed;
+        }
+        function suspend() {
+            if (!available()) { return false; }
+            var version = ++generation;
+            try {
+                root.visible = false;
+                if (!current(version)) { return false; }
+                for (var b = 0; b < buttons.length; b += 1) {
+                    if (!button(buttons[b], false, false, null, version)) { return false; }
+                }
+                for (var l = 0; l < labels.length; l += 1) {
+                    if (!write(labels[l], "", version)) { return false; }
+                }
+                return current(version);
+            } catch (error) { if (current(version)) { dispose(); } return false; }
         }
         function available() {
             if (closed) { return false; }
@@ -179,7 +200,8 @@ var DotaCoachHeroRolePanels = (function () {
                 options.push(group("HeroRoleOption", ["Hero", "Position", "Coverage", "Action"], n));
                 assigned.push(group("HeroRoleAssigned", ["Name", "Choice", "Warnings", "Action"], n));
             }
-            model = DotaCoachHeroRoles.create();
+            model = projection === undefined ? DotaCoachHeroRoles.create() :
+                DotaCoachPanelPorts.adopt(projection, ["update", "assign", "remove", "clear", "view", "draft"], pendingValid);
             if (!render()) { throw new Error("Hero role view unavailable"); }
             watch();
         } catch (error) { dispose(); throw error; }
@@ -187,7 +209,7 @@ var DotaCoachHeroRolePanels = (function () {
             assign: function (id, heroId, role) { return invoke("assign", [id, heroId, role]); },
             remove: function (id) { return invoke("remove", [id]); }, clear: function () { return invoke("clear", []); },
             draft: function () { return available() ? model.draft() : null; }, dispose: dispose,
-            isDisposed: function () { return !available(); } };
+            refresh: render, suspend: suspend, isDisposed: function () { return !available(); } };
     }
     return { bind: bind };
 }());

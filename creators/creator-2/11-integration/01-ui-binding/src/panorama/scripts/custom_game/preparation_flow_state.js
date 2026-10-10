@@ -75,7 +75,7 @@ var DotaCoachPreparationFlow = (function () {
         }
         function contexts() {
             if (!available() || busy) { return null; }
-            return { team: team.draft(), heroes: heroes.draft() };
+            return { team: team.draft(), heroes: heroes.draft(), preparation: preparation.draft() };
         }
         function draft() {
             if (!available() || busy) { return null; }
