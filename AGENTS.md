@@ -94,3 +94,7 @@ lifecycle guard. Entity mapping не доказывает identity, закрыт
 C2-04-01 содержит pure local team draft без panel/native/server/storage. id —
 виртуальный игрок, profileVersion отдельна; complete только count 5, serverConfirmed
 всегда false. Source mapping людей, персональное сходство, герои/роли открыты.
+
+C2-04-01 panel source separate from match HUD. Explicit bind/dispose, all required
+nodes checked including offpage; stale handlers expire before input getters.
+Definitions/graph/VM tests are not native screen proof; no submit/start/storage.

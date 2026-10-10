@@ -3,3 +3,4 @@
 [Родитель](../README.md).
 
 - [team-draft.md](team-draft.md)
+- [team-panel.md](team-panel.md)

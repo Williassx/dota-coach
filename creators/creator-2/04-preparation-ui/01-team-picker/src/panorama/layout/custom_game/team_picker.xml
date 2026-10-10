@@ -1,0 +1,105 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/team_picker.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/team_picker_state.js" />
+        <include src="file://{resources}/scripts/custom_game/team_picker_panel.js" />
+    </scripts>
+    <Panel class="TeamPickerScreen" hittest="false" hittestchildren="true" id="TeamPickerRoot">
+        <Panel class="TeamPickerWindow" hittest="true" hittestchildren="true">
+            <Label html="false" class="TeamPickerTitle" text="Черновик состава" />
+            <Label html="false" class="TeamPickerText" id="TeamPickerStatus" text="Каталог игроков не получен." />
+            <Label html="false" class="TeamPickerText" id="TeamPickerCount" text="Локальный выбор: 0/5" />
+            <Panel class="TeamPickerColumns">
+                <Panel class="TeamPickerColumn">
+                    <Label html="false" class="TeamPickerHeading" text="Доступные записи" />
+                    <Panel class="TeamPickerList">
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamCandidate0">
+                            <Label html="false" class="TeamPickerName" id="TeamCandidateName0" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateVersion0" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateSource0" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateCoverage0" />
+                            <Label html="false" class="TeamPickerAction" id="TeamCandidateHint0" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamCandidate1">
+                            <Label html="false" class="TeamPickerName" id="TeamCandidateName1" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateVersion1" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateSource1" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateCoverage1" />
+                            <Label html="false" class="TeamPickerAction" id="TeamCandidateHint1" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamCandidate2">
+                            <Label html="false" class="TeamPickerName" id="TeamCandidateName2" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateVersion2" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateSource2" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateCoverage2" />
+                            <Label html="false" class="TeamPickerAction" id="TeamCandidateHint2" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamCandidate3">
+                            <Label html="false" class="TeamPickerName" id="TeamCandidateName3" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateVersion3" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateSource3" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateCoverage3" />
+                            <Label html="false" class="TeamPickerAction" id="TeamCandidateHint3" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamCandidate4">
+                            <Label html="false" class="TeamPickerName" id="TeamCandidateName4" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateVersion4" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateSource4" />
+                            <Label html="false" class="TeamPickerText" id="TeamCandidateCoverage4" />
+                            <Label html="false" class="TeamPickerAction" id="TeamCandidateHint4" />
+                        </Button>
+                    </Panel>
+                </Panel>
+                <Panel class="TeamPickerColumn">
+                    <Label html="false" class="TeamPickerHeading" text="Локальный выбор" />
+                    <Panel class="TeamPickerList">
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamSelected0">
+                            <Label html="false" class="TeamPickerName" id="TeamSelectedName0" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedVersion0" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedWarnings0" />
+                            <Label html="false" class="TeamPickerAction" id="TeamSelectedAction0" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamSelected1">
+                            <Label html="false" class="TeamPickerName" id="TeamSelectedName1" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedVersion1" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedWarnings1" />
+                            <Label html="false" class="TeamPickerAction" id="TeamSelectedAction1" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamSelected2">
+                            <Label html="false" class="TeamPickerName" id="TeamSelectedName2" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedVersion2" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedWarnings2" />
+                            <Label html="false" class="TeamPickerAction" id="TeamSelectedAction2" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamSelected3">
+                            <Label html="false" class="TeamPickerName" id="TeamSelectedName3" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedVersion3" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedWarnings3" />
+                            <Label html="false" class="TeamPickerAction" id="TeamSelectedAction3" />
+                        </Button>
+                        <Button class="TeamPickerCard" enabled="false" visible="false" id="TeamSelected4">
+                            <Label html="false" class="TeamPickerName" id="TeamSelectedName4" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedVersion4" />
+                            <Label html="false" class="TeamPickerText" id="TeamSelectedWarnings4" />
+                            <Label html="false" class="TeamPickerAction" id="TeamSelectedAction4" />
+                        </Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+            <Panel class="TeamPickerNavigation">
+                <Button class="TeamPickerControl" enabled="false" id="TeamPagePrevious">
+                    <Label html="false" class="TeamPickerText" text="Предыдущая страница" />
+                </Button>
+                <Button class="TeamPickerControl" enabled="false" id="TeamPageNext">
+                    <Label html="false" class="TeamPickerText" text="Следующая страница" />
+                </Button>
+                <Button class="TeamPickerControl" enabled="false" id="TeamClear">
+                    <Label html="false" class="TeamPickerText" text="Очистить черновик" />
+                </Button>
+            </Panel>
+            <Label html="false" class="TeamPickerText" id="TeamPickerPage" text="Нет записей для выбора" />
+        </Panel>
+    </Panel>
+</root>

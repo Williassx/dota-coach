@@ -2,4 +2,5 @@
 
 [Родитель](../README.md).
 
+- [team_picker_panel.js](team_picker_panel.js)
 - [team_picker_state.js](team_picker_state.js)

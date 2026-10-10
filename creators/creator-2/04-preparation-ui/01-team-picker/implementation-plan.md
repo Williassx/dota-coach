@@ -38,6 +38,6 @@ Getter disposal/newer update; profileVersion change; старый снимок �
 
 - [x] Повторить прежние 292 сценария; новые считать отдельно, без native claims.
 - [x] Syntax/link/README/diff checks, start_skill сохранить без изменения других полей.
-- [ ] Обычный fast-forward main, подтвердить remote SHA и чистое дерево.
+- [x] Обычный fast-forward main: 3b9840c, remote SHA подтверждён, чистое дерево.
 
 Panel/HUD/server/storage/герои/роли не входят в эту часть. Их задачи остаются открытыми.
