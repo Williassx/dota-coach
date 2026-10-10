@@ -1,0 +1,136 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/hero_role_picker.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/hero_role_state.js" />
+        <include src="file://{resources}/scripts/custom_game/hero_role_panel.js" />
+    </scripts>
+    <Panel id="HeroRoleRoot" class="HeroRoleScreen">
+        <Panel class="HeroRoleWindow">
+            <Label class="HeroRoleTitle" html="false" text="Черновик героев и позиций" />
+            <Label class="HeroRoleText" html="false" text="Предложения не получены; состав сервером не подтверждён." id="HeroRoleStatus" />
+            <Label class="HeroRoleText" html="false" text="Локальные назначения: 0/5" id="HeroRoleCount" />
+            <Label class="HeroRoleText" html="false" text="Выберите игрока для просмотра предложений." id="HeroRoleRecipient" />
+            <Panel class="HeroRoleColumns">
+                <Panel class="HeroRoleColumn">
+                    <Label class="HeroRoleHeading" html="false" text="Игроки: просмотр предложений" />
+                    <Panel class="HeroRoleList">
+                        <Button id="HeroRolePlayer0" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRolePlayerName0" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerVersion0" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerOrigin0" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRolePlayerAction0" />
+                        </Button>
+                        <Button id="HeroRolePlayer1" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRolePlayerName1" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerVersion1" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerOrigin1" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRolePlayerAction1" />
+                        </Button>
+                        <Button id="HeroRolePlayer2" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRolePlayerName2" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerVersion2" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerOrigin2" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRolePlayerAction2" />
+                        </Button>
+                        <Button id="HeroRolePlayer3" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRolePlayerName3" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerVersion3" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerOrigin3" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRolePlayerAction3" />
+                        </Button>
+                        <Button id="HeroRolePlayer4" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRolePlayerName4" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerVersion4" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRolePlayerOrigin4" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRolePlayerAction4" />
+                        </Button>
+                    </Panel>
+                </Panel>
+                <Panel class="HeroRoleColumn">
+                    <Label class="HeroRoleHeading" html="false" text="Предложенные сочетания" />
+                    <Panel class="HeroRoleList">
+                        <Button id="HeroRoleOption0" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleOptionHero0" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionPosition0" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionCoverage0" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleOptionAction0" />
+                        </Button>
+                        <Button id="HeroRoleOption1" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleOptionHero1" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionPosition1" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionCoverage1" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleOptionAction1" />
+                        </Button>
+                        <Button id="HeroRoleOption2" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleOptionHero2" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionPosition2" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionCoverage2" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleOptionAction2" />
+                        </Button>
+                        <Button id="HeroRoleOption3" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleOptionHero3" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionPosition3" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionCoverage3" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleOptionAction3" />
+                        </Button>
+                        <Button id="HeroRoleOption4" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleOptionHero4" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionPosition4" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleOptionCoverage4" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleOptionAction4" />
+                        </Button>
+                    </Panel>
+                </Panel>
+                <Panel class="HeroRoleColumn">
+                    <Label class="HeroRoleHeading" html="false" text="Локальные назначения" />
+                    <Panel class="HeroRoleList">
+                        <Button id="HeroRoleAssigned0" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleAssignedName0" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedChoice0" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedWarnings0" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleAssignedAction0" />
+                        </Button>
+                        <Button id="HeroRoleAssigned1" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleAssignedName1" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedChoice1" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedWarnings1" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleAssignedAction1" />
+                        </Button>
+                        <Button id="HeroRoleAssigned2" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleAssignedName2" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedChoice2" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedWarnings2" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleAssignedAction2" />
+                        </Button>
+                        <Button id="HeroRoleAssigned3" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleAssignedName3" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedChoice3" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedWarnings3" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleAssignedAction3" />
+                        </Button>
+                        <Button id="HeroRoleAssigned4" class="HeroRoleCard" enabled="false" visible="false">
+                            <Label class="HeroRoleName" html="false" text="" id="HeroRoleAssignedName4" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedChoice4" />
+                            <Label class="HeroRoleText" html="false" text="" id="HeroRoleAssignedWarnings4" />
+                            <Label class="HeroRoleAction" html="false" text="" id="HeroRoleAssignedAction4" />
+                        </Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+            <Panel class="HeroRoleNavigation">
+                <Button id="HeroRolePrevious" class="HeroRoleControl" enabled="false">
+                    <Label class="HeroRoleText" html="false" text="Назад" />
+                </Button>
+                <Button id="HeroRoleNext" class="HeroRoleControl" enabled="false">
+                    <Label class="HeroRoleText" html="false" text="Вперёд" />
+                </Button>
+                <Button id="HeroRoleClear" class="HeroRoleControl" enabled="false">
+                    <Label class="HeroRoleText" html="false" text="Снять все назначения" />
+                </Button>
+            </Panel>
+            <Label class="HeroRoleText" html="false" text="Сначала выберите игрока" id="HeroRolePage" />
+        </Panel>
+    </Panel>
+</root>

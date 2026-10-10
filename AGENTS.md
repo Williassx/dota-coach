@@ -102,3 +102,7 @@ Definitions/graph/VM tests are not native screen proof; no submit/start/storage.
 C2-04-02 pure hero-role proposals draft: local uniqueness is preliminary policy,
 not server support. Structured kind retained; origin/compatibility/coverage warnings.
 Atomic conflicts preserve old choice; serverConfirmed=false, no UI/native/start.
+
+C2-04-02: отдельная source панель предложений с explicit bind/dispose и 29 новыми
+проверками. Фокус только просмотр; version change очищает его. Native/сервер/реальные
+профили/навигация и второй владелец открыты, match HUD/bundle не расширен.

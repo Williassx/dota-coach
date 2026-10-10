@@ -2,4 +2,5 @@
 
 [Родитель](../README.md).
 
+- [cloud-hero-role-panel.md](cloud-hero-role-panel.md)
 - [cloud-hero-role.md](cloud-hero-role.md)

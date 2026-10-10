@@ -32,6 +32,6 @@ newer/invalid/dispose; независимые копии и причины сн�
 
 - [x] Прежние346 сценариев и новые проверки, syntax/link/README/diff.
 - [x] Start_skill partial save/readback без изменения других полей; activation отдельно.
-- [ ] Обычный fast-forward main, remote SHA и чистое дерево.
+- [x] Обычный fast-forward main, remote SHA и чистое дерево: 1948bce.
 
 UI/постоянноеstorage/server/native и подтверждённое владение героем не входят.

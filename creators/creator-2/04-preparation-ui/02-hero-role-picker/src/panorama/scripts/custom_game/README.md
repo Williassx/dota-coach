@@ -2,4 +2,5 @@
 
 [Родитель](../README.md).
 
+- [hero_role_panel.js](hero_role_panel.js)
 - [hero_role_state.js](hero_role_state.js)

@@ -170,3 +170,7 @@ C2-04-01: исходники отдельной панели и 26 новых п
 
 [C2-04-02](04-preparation-ui/02-hero-role-picker/README.md): pure local hero-role
 proposal draft (28 сценариев), общий итог 374. C1/native/real source и UI открыты.
+
+C2-04-02: отдельная source панель предложений с explicit bind/dispose и 29 новыми
+проверками. Фокус только просмотр; version change очищает его. Native/сервер/реальные
+профили/навигация и второй владелец открыты, match HUD/bundle не расширен.
