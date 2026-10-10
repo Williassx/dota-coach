@@ -29,6 +29,6 @@ reports/cloud-hero-role-panel.md и README каталогов.
 
 - [x] Sourcegraph RED→GREEN, no native proof/no manifest/HUD incorporation.
 - [x] Прежние374 и новые сценарии; syntax/links/README/diff.
-- [ ] Пять критиков, journal/config readback, fast-forward main, remote SHA/clean tree.
+- [x] Пять критиков, journal/config readback, fast-forward main, remote SHA/clean tree: 045fb99.
 
 UI data/source/native/server acceptance and equal second-owner review remain open.

@@ -106,3 +106,7 @@ Atomic conflicts preserve old choice; serverConfirmed=false, no UI/native/start.
 C2-04-02: отдельная source панель предложений с explicit bind/dispose и 29 новыми
 проверками. Фокус только просмотр; version change очищает его. Native/сервер/реальные
 профили/навигация и второй владелец открыты, match HUD/bundle не расширен.
+
+C2-04-03: pure draft тактики/разговора, два explicit local choices, 28 сценариев.
+Изменение полного lineup/option снимает выбор; intent не означает эффект.
+C1-07-02/03/панель/native/server/второй владелец открыты.
