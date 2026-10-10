@@ -33,6 +33,6 @@ invalid reset/recovery не должны оживить старые выбор�
 
 - [x] Повторить прежние403 и новые сценарии; syntax/links/README/diff.
 - [x] Записать реальные результаты, limits, пять verdicts и config readback.
-- [ ] Commit/fast-forward main, remote SHA совпадает/clean.
+- [x] Commit/fast-forward main, remote SHA совпадает/clean: a882841.
 
 Реальные C1 правила, эффекты, native/panel/server, второй владелец остаются открытыми.

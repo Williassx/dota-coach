@@ -1,0 +1,19 @@
+/* Source-only pre-match draft screen; native layout/hittest remain unverified. */
+.PreparationScreen { width: 100%; height: 100%; }
+.PreparationWindow { horizontal-align: center; vertical-align: center; width: 1280px; height: fit-children; padding: 24px; background-color: #14202bf5; border: 1px solid #54717d; flow-children: down; }
+.PreparationTitle { font-size: 28px; color: #edf4f7; margin-bottom: 10px; }
+.PreparationText { width: 100%; font-size: 15px; color: #c8d6de; white-space: normal; margin-bottom: 4px; }
+.PreparationHeading { font-size: 20px; color: #e2edf1; margin-bottom: 10px; }
+.PreparationColumns { width: 100%; flow-children: right; margin-top: 14px; }
+.PreparationColumn { width: 50%; flow-children: down; padding-right: 12px; }
+.PreparationList { width: 100%; height: 360px; flow-children: down; overflow: squish scroll; }
+.PreparationCard { width: 100%; height: fit-children; min-height: 120px; padding: 12px; margin-bottom: 8px; background-color: #243746; border: 1px solid #456476; flow-children: down; }
+.PreparationCard:hover { border: 1px solid #91bdcd; }
+.PreparationCard:disabled { wash-color: #89969c; }
+.PreparationName { width: 100%; font-size: 20px; color: #f2f5f6; white-space: normal; margin-bottom: 5px; }
+.PreparationAction { width: 100%; font-size: 15px; color: #9fd8e4; white-space: normal; margin-top: 6px; }
+.PreparationNavigation { width: 100%; flow-children: right; margin-top: 14px; margin-bottom: 10px; }
+.PreparationControl { padding: 9px 14px; margin-right: 12px; background-color: #305163; border: 1px solid #608696; }
+.PreparationControl:disabled { wash-color: #73838b; }
+
+.PreparationSummary { width: 100%; height: 100px; flow-children: down; overflow: squish scroll; }

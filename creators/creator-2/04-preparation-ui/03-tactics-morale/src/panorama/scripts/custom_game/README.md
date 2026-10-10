@@ -2,4 +2,5 @@
 
 [Родитель](../README.md).
 
+- [preparation_panel.js](preparation_panel.js)
 - [preparation_state.js](preparation_state.js)

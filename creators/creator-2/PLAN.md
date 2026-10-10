@@ -178,3 +178,7 @@ C2-04-02: отдельная source панель предложений с expli
 C2-04-03: pure draft тактики/разговора, два explicit local choices, 28 сценариев.
 Изменение полного lineup/option снимает выбор; intent не означает эффект.
 C1-07-02/03/панель/native/server/второй владелец открыты.
+
+C2-04-03: отдельная explicit source панель тактики/разговора, 22VM+5graph.
+Намерение/version до выбора, selected/remove/clear, separateemptyhints, технический
+lineup и fixed warnings. No effect/start/HUD; C1/native/server/secondowner открыты.

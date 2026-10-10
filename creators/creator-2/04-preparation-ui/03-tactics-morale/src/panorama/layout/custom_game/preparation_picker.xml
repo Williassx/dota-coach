@@ -1,0 +1,149 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/preparation_picker.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/preparation_state.js" />
+        <include src="file://{resources}/scripts/custom_game/preparation_panel.js" />
+    </scripts>
+    <Panel id="PreparationRoot" class="PreparationScreen">
+        <Panel class="PreparationWindow">
+            <Label class="PreparationTitle" html="false" text="Черновик тактики и разговора" />
+            <Label class="PreparationText" html="false" text="Предложения подготовки не получены; исполнение сервером не подтверждено." id="PreparationStatus" />
+            <Label class="PreparationText" html="false" text="Локальный выбор подготовки: 0/2" id="PreparationCount" />
+            <Label class="PreparationText" html="false" text="" id="PreparationWarnings" />
+            <Panel class="PreparationColumns">
+                <Panel class="PreparationColumn">
+                    <Label class="PreparationHeading" html="false" text="План команды" />
+                    <Label class="PreparationText" html="false" text="Предложения тактики недоступны." id="PreparationPlanHint" />
+                    <Panel class="PreparationList">
+                        <Button id="PreparationPlan0" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel0" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion0" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent0" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction0" />
+                        </Button>
+                        <Button id="PreparationPlan1" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel1" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion1" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent1" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction1" />
+                        </Button>
+                        <Button id="PreparationPlan2" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel2" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion2" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent2" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction2" />
+                        </Button>
+                        <Button id="PreparationPlan3" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel3" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion3" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent3" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction3" />
+                        </Button>
+                        <Button id="PreparationPlan4" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel4" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion4" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent4" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction4" />
+                        </Button>
+                        <Button id="PreparationPlan5" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel5" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion5" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent5" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction5" />
+                        </Button>
+                        <Button id="PreparationPlan6" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel6" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion6" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent6" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction6" />
+                        </Button>
+                        <Button id="PreparationPlan7" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationPlanLabel7" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanVersion7" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationPlanIntent7" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationPlanAction7" />
+                        </Button>
+                    </Panel>
+                    <Label class="PreparationHeading" html="false" text="Выбрано локально" />
+                    <Button id="PreparationChosenPlan" class="PreparationCard" enabled="false" visible="false">
+                        <Label class="PreparationText" html="false" text="" id="PreparationChosenPlanLabel" />
+                        <Label class="PreparationText" html="false" text="" id="PreparationChosenPlanVersion" />
+                        <Label class="PreparationText" html="false" text="" id="PreparationChosenPlanIntent" />
+                        <Label class="PreparationAction" html="false" text="" id="PreparationChosenPlanAction" />
+                    </Button>
+                </Panel>
+                <Panel class="PreparationColumn">
+                    <Label class="PreparationHeading" html="false" text="Разговор с командой" />
+                    <Label class="PreparationText" html="false" text="Предложения разговора недоступны." id="PreparationTalkHint" />
+                    <Panel class="PreparationList">
+                        <Button id="PreparationTalk0" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel0" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion0" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent0" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction0" />
+                        </Button>
+                        <Button id="PreparationTalk1" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel1" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion1" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent1" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction1" />
+                        </Button>
+                        <Button id="PreparationTalk2" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel2" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion2" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent2" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction2" />
+                        </Button>
+                        <Button id="PreparationTalk3" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel3" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion3" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent3" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction3" />
+                        </Button>
+                        <Button id="PreparationTalk4" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel4" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion4" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent4" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction4" />
+                        </Button>
+                        <Button id="PreparationTalk5" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel5" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion5" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent5" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction5" />
+                        </Button>
+                        <Button id="PreparationTalk6" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel6" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion6" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent6" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction6" />
+                        </Button>
+                        <Button id="PreparationTalk7" class="PreparationCard" enabled="false" visible="false">
+                            <Label class="PreparationName" html="false" text="" id="PreparationTalkLabel7" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkVersion7" />
+                            <Label class="PreparationText" html="false" text="" id="PreparationTalkIntent7" />
+                            <Label class="PreparationAction" html="false" text="" id="PreparationTalkAction7" />
+                        </Button>
+                    </Panel>
+                    <Label class="PreparationHeading" html="false" text="Выбрано локально" />
+                    <Button id="PreparationChosenTalk" class="PreparationCard" enabled="false" visible="false">
+                        <Label class="PreparationText" html="false" text="" id="PreparationChosenTalkLabel" />
+                        <Label class="PreparationText" html="false" text="" id="PreparationChosenTalkVersion" />
+                        <Label class="PreparationText" html="false" text="" id="PreparationChosenTalkIntent" />
+                        <Label class="PreparationAction" html="false" text="" id="PreparationChosenTalkAction" />
+                    </Button>
+                </Panel>
+            </Panel>
+            <Panel class="PreparationNavigation">
+                <Button id="PreparationClear" class="PreparationControl" enabled="false">
+                    <Label class="PreparationText" html="false" text="Снять выбранные варианты" />
+                </Button>
+            </Panel>
+            <Panel class="PreparationSummary">
+                <Label class="PreparationText" html="false" text="" id="PreparationLineup" />
+            </Panel>
+        </Panel>
+    </Panel>
+</root>
