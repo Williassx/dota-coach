@@ -3,3 +3,4 @@
 [Родитель](../README.md).
 
 - [local-hud.md](local-hud.md)
+- [preparation-flow.md](preparation-flow.md)

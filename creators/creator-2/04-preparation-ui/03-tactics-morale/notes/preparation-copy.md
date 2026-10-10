@@ -27,3 +27,6 @@ UX review: сохранение причины сброса должно соч�
 
 C1-07-02/03, наблюдаемый эффект, реальные каталоги, персональное сходство и совместимость,
 панель/native, сервер/start/storage и второй равноправный владелец остаются открытыми.
+
+reset() закрывает прежний source context без disposal; highwater сохранён,
+committed draft=null, новый frame строго выше. Counter bump только actualremoval.

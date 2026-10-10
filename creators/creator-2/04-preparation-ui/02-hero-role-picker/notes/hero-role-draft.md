@@ -39,3 +39,6 @@ node --test creators/creator-2/04-preparation-ui/02-hero-role-picker/tests/hero-
 
 Нет panel/HUD/network/storage/start/native. C1-07-01, настоящие profiles/heroes/identity,
 compatibility/server, нативная приёмка и второй равноправный владелец открыты.
+
+reset() закрывает прежний source context без disposal; highwater сохранён,
+committed draft=null, новый frame строго выше. Counter bump только actualremoval.

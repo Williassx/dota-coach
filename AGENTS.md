@@ -114,3 +114,7 @@ C1-07-02/03/панель/native/server/второй владелец откры�
 C2-04-03: отдельная explicit source панель тактики/разговора, 22VM+5graph.
 Намерение/version до выбора, selected/remove/clear, separateemptyhints, технический
 lineup и fixed warnings. No effect/start/HUD; C1/native/server/secondowner открыты.
+
+C2-11-01 содержит также pure preparation flow из3private моделей. Downstream
+source reset сохраняетhighwater; fullcontext сравнивается по draft, busy nestedcalls
+отклоняются безDTOreads. Existingпанели ещё не подключены; C1/server/native открыты.

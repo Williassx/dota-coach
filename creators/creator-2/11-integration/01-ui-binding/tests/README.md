@@ -3,3 +3,4 @@
 [Родитель](../README.md).
 
 - [hud-binding.test.cjs](hud-binding.test.cjs)
+- [preparation-flow.test.cjs](preparation-flow.test.cjs)

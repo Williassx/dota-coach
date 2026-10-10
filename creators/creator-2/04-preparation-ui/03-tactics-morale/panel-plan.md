@@ -30,6 +30,6 @@ reports/cloud-preparation-panel.md и README каталогов.
 
 - [x] Graph RED missingXML → GREEN; definitions only/no manifest/HUD.
 - [x] Прежние431 и новые проверки; syntax/links/README/diff.
-- [ ] Пять verdicts, журнал/config readback/fast-forward main/remoteSHA/clean.
+- [x] Пять verdicts, журнал/config readback/fast-forward main/remoteSHA/clean: 1f1b5c8.
 
 C1/native/effect/realcatalog/server/secondowner ещё открыты.

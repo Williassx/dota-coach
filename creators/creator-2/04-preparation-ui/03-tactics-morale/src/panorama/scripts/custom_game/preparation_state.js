@@ -26,6 +26,13 @@ var DotaCoachPreparation = (function () {
             lineup = null; plans = []; talks = []; plan = null; talk = null; revision = null; resetMessage = null;
             status = "disposed"; message = "Черновик подготовки закрыт.";
         }
+        function reset() {
+            if (closed) { return false; }
+            if ((plan || talk) && !bump()) { return false; }
+            generation += 1; lineup = null; plans = []; talks = []; plan = null; talk = null; revision = null;
+            resetMessage = null; status = "empty";
+            message = "Назначения изменены; получите новые варианты подготовки."; return true;
+        }
         function bump() {
             if (preparationRevision >= MAX) { dispose(); return false; }
             preparationRevision += 1; return true;
@@ -197,7 +204,7 @@ var DotaCoachPreparation = (function () {
         return { update: update, choosePlan: function (id) { return choose("plan", id); },
             chooseTalk: function (id) { return choose("talk", id); }, removePlan: function () { return remove("plan"); },
             removeTalk: function () { return remove("talk"); }, clear: clear, view: view, draft: draft,
-            dispose: dispose, isDisposed: function () { return closed; } };
+            reset: reset, dispose: dispose, isDisposed: function () { return closed; } };
     }
     return { create: create };
 }());

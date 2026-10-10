@@ -30,6 +30,13 @@ var DotaCoachHeroRoles = (function () {
             team = null; profiles = []; assignments = []; committedRevision = null;
             status = "disposed"; message = "Черновик назначений закрыт.";
         }
+        function reset() {
+            if (closed) { return false; }
+            if (assignments.length && !bump()) { return false; }
+            generation += 1; team = null; profiles = []; assignments = []; committedRevision = null;
+            status = "empty"; message = "Состав изменён; получите новые предложения героев и позиций.";
+            return true;
+        }
         function bump() {
             if (assignmentRevision >= MAX) { dispose(); return false; }
             assignmentRevision += 1; return true;
@@ -241,7 +248,7 @@ var DotaCoachHeroRoles = (function () {
                 assignments: rows.map(function (row) { return cloneAssignment(row, false); }), complete: rows.length === 5, serverConfirmed: false };
         }
         return { update: update, assign: assign, remove: remove, clear: clear, view: view, draft: draft,
-            dispose: dispose, isDisposed: function () { return closed; } };
+            reset: reset, dispose: dispose, isDisposed: function () { return closed; } };
     }
     return { create: create };
 }());

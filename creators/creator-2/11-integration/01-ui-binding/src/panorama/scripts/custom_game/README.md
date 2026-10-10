@@ -3,3 +3,4 @@
 [Родитель](../README.md).
 
 - [coach_hud_binding.js](coach_hud_binding.js)
+- [preparation_flow_state.js](preparation_flow_state.js)
