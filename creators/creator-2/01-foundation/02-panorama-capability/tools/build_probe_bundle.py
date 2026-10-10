@@ -30,6 +30,7 @@ HUD_SCRIPT_SOURCES = (
     ("03-map-view/02-camera-overlays", "camera_panel.js"),
     ("03-map-view/03-visibility-targets", "targets_state.js"),
     ("03-map-view/03-visibility-targets", "targets_panel.js"),
+    ("11-integration/01-ui-binding", "coach_hud_binding.js"),
 )
 HUD_ASSETS = {
     **{HUD_PREFIX + relative: "content/panorama/" + relative for relative in (
@@ -179,7 +180,7 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
 
     if kind == "panorama_source_hud":
         if {source: target for source, target, _ in prepared} != HUD_ASSETS:
-            raise ValueError("HUD requires all 12 fixed resources")
+            raise ValueError("HUD requires all 13 fixed resources")
         validate_hud_graph(prepared)
     return prepared
 

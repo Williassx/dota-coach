@@ -15,7 +15,7 @@ TASK = Path(__file__).resolve().parents[1]
 TOOLS = REPOSITORY / "creators/creator-2/01-foundation/02-panorama-capability/tools"
 HUD = "content/panorama/layout/custom_game/coach_hud.xml"
 SCRIPT_ORDER = ["roster_cards_state.js", "roster_cards.js", "orders_state.js", "orders_panel.js",
-                "input_routing.js", "camera_native.js", "camera_panel.js", "targets_state.js", "targets_panel.js"]
+                "input_routing.js", "camera_native.js", "camera_panel.js", "targets_state.js", "targets_panel.js", "coach_hud_binding.js"]
 
 
 def load(name, path):
@@ -71,8 +71,8 @@ class HudBundleTests(unittest.TestCase):
             self.assertEqual((self.repo / row["source"]).read_bytes(), before[row["source"]])
             self.assertEqual(row["sha256"], hashlib.sha256(before[row["source"]]).hexdigest())
         result = verifier.verify_bundle(self.repo, self.manifest, self.output)
-        self.assertEqual(result["assets"], 12)
-        self.assertEqual(result["xml_resource_links"], 11)
+        self.assertEqual(result["assets"], 13)
+        self.assertEqual(result["xml_resource_links"], 12)
         self.assertFalse(result["source2_compiled"])
         self.assertFalse(result["runtime_verified"])
 
@@ -125,7 +125,7 @@ const deny=new Proxy({}, {get(){throw Error('Native API used during source load'
 const context=vm.createContext({$:deny,Game:deny,GameUI:deny,GameEvents:deny,Entities:deny,Players:deny});
 for(const source of JSON.parse(process.argv[1]))vm.runInContext(fs.readFileSync(source,'utf8'),context);
 for(const name of ['DotaCoachRoster','DotaCoachRosterPanels','DotaCoachOrders','DotaCoachOrderPanels',
-'DotaCoachInputRouting','DotaCoachCameraNative','DotaCoachCameraPanels','DotaCoachTargets','DotaCoachTargetPanels'])
+'DotaCoachInputRouting','DotaCoachCameraNative','DotaCoachCameraPanels','DotaCoachTargets','DotaCoachTargetPanels','DotaCoachHudPanels'])
 if(!context[name])throw Error('Missing definition '+name);
 """
         result = subprocess.run(["node", "-e", code, json.dumps(sources)], capture_output=True, text=True)

@@ -12,8 +12,10 @@
         <include src="file://{resources}/scripts/custom_game/camera_panel.js" />
         <include src="file://{resources}/scripts/custom_game/targets_state.js" />
         <include src="file://{resources}/scripts/custom_game/targets_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/coach_hud_binding.js" />
     </scripts>
     <Panel class="CoachHudRoot" hittest="false" hittestchildren="true">
+        <Label id="CoachHudStatus" class="CoachHudBindingStatus" text="Данные и переходники не подключены." html="false" hittest="false" />
         <Panel id="CoachRoster" class="CoachHudRoster" hittest="false" hittestchildren="true">
             <Label class="CoachHudHeading" text="Команда тренера" html="false" />
             <Label id="RosterStatus" class="CoachHudText" text="Игроки не получены." html="false" />

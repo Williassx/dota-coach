@@ -1,7 +1,7 @@
 /* Local routing of existing UI adapters. No Dota mouse hook or transport. */
 var DotaCoachInputRouting = (function () {
     "use strict";
-    function bind(rosterRoot, ordersRoot, send) {
+    function bind(rosterRoot, ordersRoot, send, onSelection) {
         var roster = null;
         var orders = null;
         var watcher = null;
@@ -31,6 +31,9 @@ var DotaCoachInputRouting = (function () {
             if (closed || !orders || !orders.selectRecipient(card ? card.id : null,
                     card ? card.playerName : "", card ? card.availableForOrders : false)) {
                 throw new Error("Orders selection unavailable");
+            }
+            if (typeof onSelection === "function") {
+                onSelection(card ? { id: card.id, playerName: card.playerName } : null);
             }
         }
         function scopedSend(intent, report) {
@@ -68,7 +71,7 @@ var DotaCoachInputRouting = (function () {
             select: function (id) { return invoke(roster, "select", [id]); },
             clearSelection: function () { return invoke(roster, "clearSelection", []); },
             dispose: dispose,
-            isDisposed: function () { return closed; }
+            isDisposed: function () { return !available(); }
         };
     }
     return { bind: bind };

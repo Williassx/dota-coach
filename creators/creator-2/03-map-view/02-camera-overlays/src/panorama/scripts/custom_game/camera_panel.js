@@ -76,6 +76,9 @@ var DotaCoachCameraPanels = (function () {
         }
         function inspect(active) {
             if (!active) { return { available: false, reason: "Выберите игрока для фокуса камеры." }; }
+            if (active.entityIndex === null) {
+                return { available: false, reason: "Герой выбранного игрока ещё не определён." };
+            }
             if (!ready) { return { available: false, reason: "Камера ещё не подключена." }; }
             return readResult(gateway.check(active.entityIndex), "available");
         }
@@ -124,24 +127,27 @@ var DotaCoachCameraPanels = (function () {
                 publish("");
             } catch (error) { if (current(version, active)) { fail(); } }
         }
-        var api = {
-            setTarget: function (input) {
+        function setSelection(input, withEntity) {
                 if (!available()) { return false; }
                 var version = generation;
                 var row = null;
                 try {
-                    if (input !== null) { row = copy(input, ["id", "playerName", "entityIndex"]); }
+                    if (input !== null) { row = copy(input, withEntity ? ["id", "playerName", "entityIndex"] : ["id", "playerName"]); }
                 } catch (error) { /* Reject invalid input without changing selection. */ }
                 if (!available() || generation !== version) { return false; }
                 if (input !== null && (!row || !text(row.id, 64) || /^\s|\s$/.test(row.id) ||
-                        !text(row.playerName, 64) || typeof row.entityIndex !== "number" ||
-                        row.entityIndex < 0 || row.entityIndex > 2147483647 || row.entityIndex % 1 !== 0)) {
+                        !text(row.playerName, 64) || (withEntity && (typeof row.entityIndex !== "number" ||
+                        row.entityIndex < 0 || row.entityIndex > 2147483647 || row.entityIndex % 1 !== 0)))) {
                     publish("Цель не обновлена; показаны предыдущие данные.");
                     return false;
                 }
+                if (row && !withEntity) { row.entityIndex = null; }
                 target = row;
                 return publish("");
-            },
+        }
+        var api = {
+            setTarget: function (input) { return setSelection(input, true); },
+            setRecipient: function (input) { return setSelection(input, false); },
             refresh: function () { return publish(""); },
             dispose: dispose,
             isDisposed: function () { return closed; }

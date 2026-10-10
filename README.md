@@ -22,7 +22,7 @@
 - [Отдельный запрос фокуса героя команды](creators/creator-2/03-map-view/02-camera-overlays/README.md).
 - [Просмотр выбранной цели и очистка скрытых данных](creators/creator-2/03-map-view/03-visibility-targets/README.md).
 - [Общий шаблон HUD](creators/creator-2/07-match-screen/01-own-cards/README.md) и
-  [пакет12 исходных ресурсов](creators/creator-2/11-integration/02-addon-packaging/README.md).
+  [пакет из 13 исходных ресурсов](creators/creator-2/11-integration/02-addon-packaging/README.md).
 - [Журнал выполненных действий Codex](creators/creator-2/00-action-log/README.md).
 - [Продолжение создателя 2 в локальном Codex на Windows](creators/creator-2/01-foundation/01-workspace-audit/notes/windows-start.md).
 - **[Агенты.md](Агенты.md)** — быстрый поиск 172 ролей по номеру, категории и задаче.
@@ -70,7 +70,7 @@
 Подготовлена панель наблюдения цели: hidden/gone/unknown/expiry удаляют прежние
 подписи. Она получает частную UI-проекцию; серверная видимость ещё не подключена.
 Подготовлен один шаблон HUD для существующих компонентов и проверенный source-пакет
-из12 ресурсов. Данные/автоматическая привязка не добавлены; это ещё не запущенный HUD.
+из 13 ресурсов. Данные/автоматическая привязка не добавлены; это ещё не запущенный HUD.
 Приложение, импорт матчей, обученные модели и голосовое управление ещё не реализованы.
 Патч, конкретные API и сборка выбираются по фактической установке Tools.
 

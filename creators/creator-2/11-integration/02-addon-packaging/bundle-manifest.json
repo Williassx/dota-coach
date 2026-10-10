@@ -49,6 +49,10 @@
     {
       "source": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/scripts/custom_game/targets_panel.js",
       "target": "content/panorama/scripts/custom_game/targets_panel.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/coach_hud_binding.js",
+      "target": "content/panorama/scripts/custom_game/coach_hud_binding.js"
     }
   ]
 }

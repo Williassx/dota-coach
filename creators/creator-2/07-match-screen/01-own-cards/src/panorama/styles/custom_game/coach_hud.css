@@ -98,3 +98,5 @@
 {
     opacity: 0.45;
 }
+
+.CoachHudBindingStatus { horizontal-align: left; vertical-align: top; margin-left: 24px; margin-top: 72px; color: #c7d4dc; font-size: 16px; }
