@@ -1,0 +1,17 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/target_observation.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/targets_state.js" />
+        <include src="file://{resources}/scripts/custom_game/targets_panel.js" />
+    </scripts>
+    <Panel class="CoachTargetRoot" hittest="false" hittestchildren="false">
+        <Panel class="CoachTargetObservation">
+            <Label class="CoachTargetHeading" text="Наблюдение цели" html="false" />
+            <Label id="TargetTitle" class="CoachTargetName" text="Цель не выбрана." html="false" />
+            <Label id="TargetDetails" class="CoachTargetText" text="" html="false" />
+            <Label id="TargetStatus" class="CoachTargetText" text="Выберите цель на карте." html="false" />
+        </Panel>
+    </Panel>
+</root>
