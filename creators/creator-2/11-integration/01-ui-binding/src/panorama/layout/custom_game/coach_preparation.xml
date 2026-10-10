@@ -1,0 +1,28 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/team_picker.css" />
+        <include src="file://{resources}/styles/custom_game/hero_role_picker.css" />
+        <include src="file://{resources}/styles/custom_game/preparation_picker.css" />
+        <include src="file://{resources}/styles/custom_game/coach_preparation.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/preparation_panel_port.js" />
+        <include src="file://{resources}/scripts/custom_game/team_picker_state.js" />
+        <include src="file://{resources}/scripts/custom_game/team_picker_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/hero_role_state.js" />
+        <include src="file://{resources}/scripts/custom_game/hero_role_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/preparation_state.js" />
+        <include src="file://{resources}/scripts/custom_game/preparation_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/preparation_flow_state.js" />
+        <include src="file://{resources}/scripts/custom_game/preparation_binding.js" />
+    </scripts>
+    <Panel id="CoachPreparationRoot" class="CoachPreparationScreen" hittest="false" hittestchildren="true">
+        <Label class="CoachPreparationTitle" html="false" text="Подготовка команды" />
+        <Label id="CoachPreparationStatus" class="CoachPreparationStatus" html="false" text="Данные подготовки не подключены; готовность не подтверждена." />
+        <Panel class="CoachPreparationStack" hittest="false" hittestchildren="true">
+            <Panel id="CoachPreparationTeamHost" class="CoachPreparationHost" hittest="false" hittestchildren="true" />
+            <Panel id="CoachPreparationHeroHost" class="CoachPreparationHost" hittest="false" hittestchildren="true" />
+            <Panel id="CoachPreparationTacticsHost" class="CoachPreparationHost" hittest="false" hittestchildren="true" />
+        </Panel>
+    </Panel>
+</root>

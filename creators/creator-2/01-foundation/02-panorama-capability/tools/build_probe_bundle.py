@@ -2,6 +2,7 @@
 import argparse
 import datetime
 import hashlib
+import importlib.util
 import json
 import os
 import re
@@ -135,9 +136,39 @@ def output_path(repository, output):
     return target
 
 
+def read_source(repository: Path, source: str) -> bytes:
+    """The bounded path/ancestor policy shared by every copied or composed input."""
+    root = repository.resolve()
+    relative = portable_path(source)
+    actual = root.joinpath(*relative.parts)
+    check_ancestors(root, actual)
+    if not actual.is_file():
+        raise ValueError("Declared source is not a file")
+    with actual.open("rb") as handle:
+        payload = handle.read(MAX_BYTES + 1)
+    if len(payload) > MAX_BYTES:
+        raise ValueError("UI resource exceeds 1 MiB")
+    return payload
+
+
+def prepare_preparation(repository: Path, manifest: dict) -> list:
+    policy = REPOSITORY / "creators/creator-2/11-integration/02-addon-packaging/tools/preparation_layout.py"
+    spec = importlib.util.spec_from_file_location("dota_coach_preparation_layout", policy)
+    module = importlib.util.module_from_spec(spec)
+    previous = sys.dont_write_bytecode
+    sys.dont_write_bytecode = True
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.dont_write_bytecode = previous
+    return module.prepare(repository, manifest, read_source)
+
+
 def prepare_assets(repository: Path, manifest: dict) -> list:
     """Validate declared UI paths and read bounded source bytes without writing."""
     root = repository.resolve()
+    if isinstance(manifest, dict) and manifest.get("kind") == "panorama_source_preparation":
+        return prepare_preparation(root, manifest)
     if not isinstance(manifest, dict) or set(manifest) != {"schema_version", "kind", "assets"}:
         raise ValueError("Unsupported bundle manifest fields")
     if type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1:
@@ -168,14 +199,7 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
         if any(key == other or key.startswith(other + "/") or other.startswith(key + "/") for other in targets):
             raise ValueError("Duplicate or conflicting Windows destination")
         targets.add(key)
-        actual = root.joinpath(*source.parts)
-        check_ancestors(root, actual)
-        if not actual.is_file():
-            raise ValueError("Declared source is not a file")
-        with actual.open("rb") as handle:
-            payload = handle.read(MAX_BYTES + 1)
-        if len(payload) > MAX_BYTES:
-            raise ValueError("UI resource exceeds 1 MiB")
+        payload = read_source(root, source.as_posix())
         prepared.append((source.as_posix(), target.as_posix(), payload))
 
     if kind == "panorama_source_hud":

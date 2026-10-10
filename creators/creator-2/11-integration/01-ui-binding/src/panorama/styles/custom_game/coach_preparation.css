@@ -1,0 +1,15 @@
+/* Composition override only; native sizing/scroll/hittest remain unverified. */
+.CoachPreparationScreen { width: 100%; height: 100%; padding: 24px; background-color: #0e1822f5; flow-children: down; }
+.CoachPreparationTitle { font-size: 28px; color: #edf4f7; margin-bottom: 8px; }
+.CoachPreparationStatus { width: 100%; font-size: 17px; color: #c8d6de; white-space: normal; margin-bottom: 12px; }
+.CoachPreparationStack { width: 100%; height: fill-parent-flow(1); flow-children: down; overflow: squish scroll; }
+.CoachPreparationHost { width: 100%; height: fit-children; margin-bottom: 18px; }
+#CoachPreparationRoot .TeamPickerScreen,
+#CoachPreparationRoot .HeroRoleScreen,
+#CoachPreparationRoot .PreparationScreen { width: 100%; height: fit-children; }
+#CoachPreparationRoot .TeamPickerWindow,
+#CoachPreparationRoot .HeroRoleWindow,
+#CoachPreparationRoot .PreparationWindow { horizontal-align: left; vertical-align: top; width: 100%; height: fit-children; }
+#CoachPreparationRoot .TeamPickerList,
+#CoachPreparationRoot .HeroRoleList,
+#CoachPreparationRoot .PreparationList { height: fit-children; overflow: squish squish; }

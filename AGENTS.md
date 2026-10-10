@@ -119,3 +119,7 @@ C2-11-01 содержит также pure preparation flow из3private моде
 source reset сохраняетhighwater; fullcontext сравнивается по draft, busy nestedcalls
 отклоняются безDTOreads. Три existing панели подключены optionalports к одной privateflow;
 522 source checks проходят. XMLcomposition/C1/server/native/secondowner открыты.
+
+C2-11-02: third fixed preparation source kind15outputs/3canonicalXMLinputs,
+generatedsharedlayout9definitions, VMactualbind/click; общий итог542. Existing13HUD/
+probe policy сохранены. Bootstrap/общийпереход/native/server/secondowner открыты.

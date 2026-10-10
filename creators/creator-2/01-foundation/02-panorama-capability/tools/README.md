@@ -22,7 +22,12 @@ python3 creators/creator-2/01-foundation/02-panorama-capability/tools/verify_pro
 
 Теперь те же helpers поддерживают второй явно выбранный manifest
 [общего HUD](../../../11-integration/02-addon-packaging/bundle-manifest.json).
-Kind panorama_source_hud разрешает только12 закреплённых source→target пар и
+Kind panorama_source_hud разрешает только13 закреплённых source→target пар и
 проверяет один связный inert HUD graph. Добавьте --manifest с этим файлом и к build,
 и к verify. Probe kind/defaultmanifest сохраняют прежний source prefix; HUD не
 расширяет их разрешения. [Команды и ограничения](../../../11-integration/02-addon-packaging/notes/build-manifest.md).
+
+Третий kind panorama_source_preparation использует точную
+[recipe](../../../11-integration/02-addon-packaging/preparation-manifest.json),15outputs/3inputs.
+Тот же boundedreader проверяет все copied/composed inputs; lazycomposer bytecode-free.
+[Команды и ограничения](../../../11-integration/02-addon-packaging/notes/preparation-package.md).

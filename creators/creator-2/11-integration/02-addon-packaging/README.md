@@ -30,3 +30,13 @@
 Kind HUD разрешает ровно 13 source→target пар. Старый probe/defaultmanifest сохраняют
 ограничения. Build output отдельный/исключён из Git; не редактируется вручную.
 source2_compiled/runtime_verified=false. Никаких server/map/VPK/demo ресурсов нет.
+
+## Source-пакет подготовки
+
+[Дизайн](preparation-design.md) · [План](preparation-plan.md) ·
+[Recipe](preparation-manifest.json) · [Composer](tools/README.md) ·
+[Команды](notes/preparation-package.md) · [Отчёт](reports/cloud-preparation-package.md).
+
+Третий fixed kind собирает15 ресурсов и вставляет три canonicalXML дерева в один
+shell. Verifier сверяет повторную композицию из current rawinputs.20 новых сценариев,
+общий итог542. Пакет альтернативен matchHUD; общий переход/manifest/native открыты.

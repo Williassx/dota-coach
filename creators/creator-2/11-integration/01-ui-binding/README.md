@@ -57,3 +57,7 @@ API, сигнатуры, конкретные файлы и команды пр�
 refresh/suspend, общий lifecycle и статус проверены реальными обработчиками в VM.
 18 сквозных, 10 port, 12 injection и один context сценарий добавлены; общий итог522.
 Общий XML/ресурсы, native, сервер/реальные данные и второй владелец открыты.
+
+Shell/style/manifest общей подготовки теперь собираются через
+[пакет C2-11-02](../02-addon-packaging/notes/preparation-package.md).
+Generatedlayout содержит3canonicalroots/9definitions; native/автопривязка открыты.

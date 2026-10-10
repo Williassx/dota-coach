@@ -30,4 +30,6 @@ notes/preparation-binding.md, reports/cloud-preparation-binding.md.
 
 - [x] Actualclickchain/reset/failure/reentry/busy/latehandlers/partialowner tests RED→GREEN.
 - [x] Пять criticverdicts/concretefix RED→GREEN, previous481+new tests, syntax/README/links/diff.
-- [ ] Journal/configreadback/fast-forward main/remoteSHA/clean; native/server/secondowner open.
+- [x] Journal/configreadback/fast-forward main/remoteSHA/clean; native/server/secondowner open.
+
+Опубликован6e070a5; remoteSHA/clean проверены.

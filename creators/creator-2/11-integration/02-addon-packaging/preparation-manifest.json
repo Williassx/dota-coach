@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_preparation",
+  "assets": [
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_preparation.xml",
+      "target": "content/panorama/layout/custom_game/coach_preparation.xml"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_preparation.css",
+      "target": "content/panorama/styles/custom_game/coach_preparation.css"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/styles/custom_game/team_picker.css",
+      "target": "content/panorama/styles/custom_game/team_picker.css"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_state.js",
+      "target": "content/panorama/scripts/custom_game/team_picker_state.js"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_panel.js",
+      "target": "content/panorama/scripts/custom_game/team_picker_panel.js"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/styles/custom_game/hero_role_picker.css",
+      "target": "content/panorama/styles/custom_game/hero_role_picker.css"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_state.js",
+      "target": "content/panorama/scripts/custom_game/hero_role_state.js"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_panel.js",
+      "target": "content/panorama/scripts/custom_game/hero_role_panel.js"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/styles/custom_game/preparation_picker.css",
+      "target": "content/panorama/styles/custom_game/preparation_picker.css"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_state.js",
+      "target": "content/panorama/scripts/custom_game/preparation_state.js"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_panel.js",
+      "target": "content/panorama/scripts/custom_game/preparation_panel.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_panel_port.js",
+      "target": "content/panorama/scripts/custom_game/preparation_panel_port.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_flow_state.js",
+      "target": "content/panorama/scripts/custom_game/preparation_flow_state.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_binding.js",
+      "target": "content/panorama/scripts/custom_game/preparation_binding.js"
+    }
+  ],
+  "layout_inputs": [
+    {
+      "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/layout/custom_game/team_picker.xml",
+      "root_id": "TeamPickerRoot",
+      "host_id": "CoachPreparationTeamHost"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/layout/custom_game/hero_role_picker.xml",
+      "root_id": "HeroRoleRoot",
+      "host_id": "CoachPreparationHeroHost"
+    },
+    {
+      "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/layout/custom_game/preparation_picker.xml",
+      "root_id": "PreparationRoot",
+      "host_id": "CoachPreparationTacticsHost"
+    }
+  ]
+}
