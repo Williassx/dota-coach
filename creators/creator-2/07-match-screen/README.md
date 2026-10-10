@@ -2,6 +2,9 @@
 
 [План отдела](../PLAN.md) · [Правила библиотеки](../../shared/WORKFLOW.md)
 
+Рано подготовлен общий HUD template с пятью скрытыми slots и scoped root других
+компонентов. Source-пакет проверен; native appearance/интегратор/данные не подключены.
+
 - [C2-07-01 — Пять своих карточек](01-own-cards/README.md)
 - [C2-07-02 — Верхний ряд соперников](02-opponent-cards/README.md)
 - [C2-07-03 — Приказы и события справа](03-orders-timeline/README.md)

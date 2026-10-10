@@ -8,6 +8,7 @@ import re
 import secrets
 import stat
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path, PurePosixPath
 
 REPOSITORY = Path(__file__).resolve().parents[5]
@@ -18,6 +19,80 @@ MAX_BYTES = 1024 * 1024
 MAX_MANIFEST_BYTES = 256 * 1024
 MAX_ASSETS = 100
 DEVICE_NAME = re.compile(r"^(con|prn|aux|nul|com[1-9¹²³]|lpt[1-9¹²³])$", re.IGNORECASE)
+HUD_PREFIX = "creators/creator-2/07-match-screen/01-own-cards/src/panorama/"
+HUD_SCRIPT_SOURCES = (
+    ("02-coach-interface/01-roster-cards", "roster_cards_state.js"),
+    ("02-coach-interface/01-roster-cards", "roster_cards.js"),
+    ("02-coach-interface/02-status-orders", "orders_state.js"),
+    ("02-coach-interface/02-status-orders", "orders_panel.js"),
+    ("02-coach-interface/03-control-input", "input_routing.js"),
+    ("03-map-view/02-camera-overlays", "camera_native.js"),
+    ("03-map-view/02-camera-overlays", "camera_panel.js"),
+    ("03-map-view/03-visibility-targets", "targets_state.js"),
+    ("03-map-view/03-visibility-targets", "targets_panel.js"),
+)
+HUD_ASSETS = {
+    **{HUD_PREFIX + relative: "content/panorama/" + relative for relative in (
+        "layout/custom_game/custom_ui_manifest.xml", "layout/custom_game/coach_hud.xml",
+        "styles/custom_game/coach_hud.css")},
+    **{"creators/creator-2/" + library + "/src/panorama/scripts/custom_game/" + name:
+       "content/panorama/scripts/custom_game/" + name for library, name in HUD_SCRIPT_SOURCES},
+}
+
+
+def validate_hud_graph(prepared):
+    """Check one inert layout and complete dependency graph; never execute JS."""
+    payloads = {target: payload for _, target, payload in prepared}
+    manifest_name = "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    layout_name = "content/panorama/layout/custom_game/coach_hud.xml"
+    roots, edges = {}, {}
+    for name in (manifest_name, layout_name):
+        raw = payloads[name].decode("utf-8-sig")
+        if "<!DOCTYPE" in raw.upper() or "<!ENTITY" in raw.upper():
+            raise ValueError("HUD XML DTD/entities are not supported")
+        try:
+            roots[name] = ET.fromstring(raw)
+        except ET.ParseError as error:
+            raise ValueError("HUD XML cannot be parsed") from error
+        if roots[name].tag != "root":
+            raise ValueError("HUD XML must have one root element")
+        edges[name] = set()
+        for node in roots[name].iter():
+            if name == layout_name and (node.tag == "CustomUIElement" or "layoutfile" in node.attrib):
+                raise ValueError("HUD layout cannot load another layout or itself")
+            if node.tag.lower() in ("run", "script") or any(key.lower().startswith("on") for key in node.attrib):
+                raise ValueError("HUD XML must not automatically execute or bind scripts")
+            for key, value in node.attrib.items():
+                if key not in ("src", "layoutfile"):
+                    continue
+                prefix = "file://{resources}/"
+                if not value.startswith(prefix):
+                    raise ValueError("HUD XML references must use local Panorama resources")
+                target = (TARGET_PREFIX / portable_path(value[len(prefix):])).as_posix()
+                if target not in payloads:
+                    raise ValueError("HUD XML reference is not a declared resource")
+                edges[name].add(target)
+    elements = list(roots[manifest_name].iter("CustomUIElement"))
+    if (len(elements) != 1 or elements[0].get("type") != "Hud" or
+            elements[0].get("layoutfile") != "file://{resources}/layout/custom_game/coach_hud.xml" or
+            edges[manifest_name] != {layout_name}):
+        raise ValueError("HUD manifest must load exactly the common HUD layout")
+    scripts = roots[layout_name].findall("./scripts/include")
+    expected = ["file://{resources}/scripts/custom_game/" + name for _, name in HUD_SCRIPT_SOURCES]
+    if [node.get("src") for node in scripts] != expected:
+        raise ValueError("HUD scripts must preserve the complete dependency order")
+    if [node.get("src") for node in roots[layout_name].findall("./styles/include")] != [
+            "file://{resources}/styles/custom_game/coach_hud.css"]:
+        raise ValueError("HUD must load the declared common style")
+    reached, pending = set(), [manifest_name]
+    while pending:
+        name = pending.pop()
+        if name in reached:
+            continue
+        reached.add(name)
+        pending.extend(edges.get(name, ()))
+    if reached != set(payloads):
+        raise ValueError("HUD source graph contains an unreachable resource")
 
 
 def portable_path(value):
@@ -66,7 +141,8 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
         raise ValueError("Unsupported bundle manifest fields")
     if type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1:
         raise ValueError("Unsupported bundle manifest version")
-    if manifest["kind"] != "panorama_source_probe":
+    kind = manifest["kind"]
+    if not isinstance(kind, str) or kind not in ("panorama_source_probe", "panorama_source_hud"):
         raise ValueError("Unsupported bundle kind")
     entries = manifest["assets"]
     if not isinstance(entries, list) or not 1 <= len(entries) <= MAX_ASSETS:
@@ -79,7 +155,9 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
             raise ValueError("Asset requires source and target")
         source = portable_path(entry["source"])
         target = portable_path(entry["target"])
-        if not source.is_relative_to(SOURCE_PREFIX) or source == SOURCE_PREFIX:
+        if kind == "panorama_source_hud" and HUD_ASSETS.get(source.as_posix()) != target.as_posix():
+            raise ValueError("HUD requires the fixed source-to-target mapping")
+        if kind == "panorama_source_probe" and (not source.is_relative_to(SOURCE_PREFIX) or source == SOURCE_PREFIX):
             raise ValueError("Source must belong to this UI library")
         if not target.is_relative_to(TARGET_PREFIX) or target == TARGET_PREFIX:
             raise ValueError("Target must belong to content/panorama")
@@ -99,6 +177,10 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
             raise ValueError("UI resource exceeds 1 MiB")
         prepared.append((source.as_posix(), target.as_posix(), payload))
 
+    if kind == "panorama_source_hud":
+        if {source: target for source, target, _ in prepared} != HUD_ASSETS:
+            raise ValueError("HUD requires all 12 fixed resources")
+        validate_hud_graph(prepared)
     return prepared
 
 
@@ -119,7 +201,7 @@ def build_bundle(repository: Path, manifest: dict, output: Path) -> dict:
         assets.append({"source": source, "target": target, "bytes": len(payload),
                        "sha256": hashlib.sha256(payload).hexdigest()})
     canonical = json.dumps(manifest, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
-    report = {"schema_version": 1, "kind": "panorama_source_probe", "complete": True,
+    report = {"schema_version": 1, "kind": manifest["kind"], "complete": True,
               "generated_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "manifest_sha256": hashlib.sha256(canonical).hexdigest(),
               "source2_compiled": False, "runtime_verified": False, "assets": assets}

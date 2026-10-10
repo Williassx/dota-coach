@@ -61,7 +61,7 @@ def verify_bundle(repository: Path, manifest: dict, bundle: Path) -> dict:
     if not isinstance(report, dict) or set(report) != fields:
         raise ValueError("Unsupported bundle report fields")
     if (type(report["schema_version"]) is not int or report["schema_version"] != 1 or
-            report["kind"] != "panorama_source_probe" or report["complete"] is not True or
+            report["kind"] != manifest["kind"] or report["complete"] is not True or
             report["source2_compiled"] is not False or report["runtime_verified"] is not False or
             not isinstance(report["generated_at_utc"], str) or not report["generated_at_utc"]):
         raise ValueError("Invalid source-only bundle report status")

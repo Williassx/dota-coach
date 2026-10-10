@@ -19,3 +19,10 @@ python3 creators/creator-2/01-foundation/02-panorama-capability/tools/verify_pro
 
 [Результаты проверки](../reports/bundle-verification.md). В другом checkout агент
 сначала создаёт пакет сборщиком и использует его фактический output.
+
+Теперь те же helpers поддерживают второй явно выбранный manifest
+[общего HUD](../../../11-integration/02-addon-packaging/bundle-manifest.json).
+Kind panorama_source_hud разрешает только12 закреплённых source→target пар и
+проверяет один связный inert HUD graph. Добавьте --manifest с этим файлом и к build,
+и к verify. Probe kind/defaultmanifest сохраняют прежний source prefix; HUD не
+расширяет их разрешения. [Команды и ограничения](../../../11-integration/02-addon-packaging/notes/build-manifest.md).

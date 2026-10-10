@@ -15,6 +15,8 @@
 - [Подготовка обследования файлов карты](03-map-view/01-map-audit/README.md).
 - [Подготовленный запрос фокуса камеры](03-map-view/02-camera-overlays/README.md).
 - [Подготовленное отображение выбранной цели](03-map-view/03-visibility-targets/README.md).
+- [Общий шаблон HUD](07-match-screen/01-own-cards/README.md) и
+  [проверенная упаковка источников](11-integration/02-addon-packaging/README.md).
 - [Продолжение в локальном Codex на Windows](01-foundation/01-workspace-audit/notes/windows-start.md).
 - [Инструкции агентам отдела](AGENTS.md).
 - [Общий порядок работы](../shared/WORKFLOW.md).

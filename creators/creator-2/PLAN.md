@@ -49,6 +49,9 @@
 В [C2-03-03](03-map-view/03-visibility-targets/README.md) подготовлены частная
 проекция наблюдения и очистка выбранной цели при потере обзора/expiry. C1-03-01,
 native источник/identity/clock/мышь и второй владелец остаются открытыми.
+Рано подготовлены [шаблон HUD C2-07-01](07-match-screen/01-own-cards/README.md)
+и [source-пакет C2-11-02](11-integration/02-addon-packaging/README.md) по правилу
+ранней сцены. Это не закрывает C2-05-03/C1-07-01/C2-11-01/C2-10-01 или native HUD.
 
 ### 01. [Локальная среда и интерфейсная основа](01-foundation/README.md)
 

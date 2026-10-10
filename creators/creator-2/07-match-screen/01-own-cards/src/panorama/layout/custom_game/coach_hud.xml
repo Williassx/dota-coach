@@ -1,0 +1,97 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/coach_hud.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/roster_cards_state.js" />
+        <include src="file://{resources}/scripts/custom_game/roster_cards.js" />
+        <include src="file://{resources}/scripts/custom_game/orders_state.js" />
+        <include src="file://{resources}/scripts/custom_game/orders_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/input_routing.js" />
+        <include src="file://{resources}/scripts/custom_game/camera_native.js" />
+        <include src="file://{resources}/scripts/custom_game/camera_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/targets_state.js" />
+        <include src="file://{resources}/scripts/custom_game/targets_panel.js" />
+    </scripts>
+    <Panel class="CoachHudRoot" hittest="false" hittestchildren="true">
+        <Panel id="CoachRoster" class="CoachHudRoster" hittest="false" hittestchildren="true">
+            <Label class="CoachHudHeading" text="Команда тренера" html="false" />
+            <Label id="RosterStatus" class="CoachHudText" text="Игроки не получены." html="false" />
+            <Panel class="CoachHudCardStrip" hittest="false" hittestchildren="true">
+                <Button id="RosterCard0" class="CoachHudCard" enabled="false" visible="false">
+                    <Label id="RosterName0" class="CoachHudName" html="false" />
+                    <Label id="RosterHero0" class="CoachHudText" html="false" />
+                    <Label id="RosterRole0" class="CoachHudText" html="false" />
+                    <Label id="RosterSource0" class="CoachHudText" html="false" />
+                    <Label id="RosterAvailability0" class="CoachHudText" html="false" />
+                    <Label id="RosterHint0" class="CoachHudText" html="false" />
+                </Button>
+                <Button id="RosterCard1" class="CoachHudCard" enabled="false" visible="false">
+                    <Label id="RosterName1" class="CoachHudName" html="false" />
+                    <Label id="RosterHero1" class="CoachHudText" html="false" />
+                    <Label id="RosterRole1" class="CoachHudText" html="false" />
+                    <Label id="RosterSource1" class="CoachHudText" html="false" />
+                    <Label id="RosterAvailability1" class="CoachHudText" html="false" />
+                    <Label id="RosterHint1" class="CoachHudText" html="false" />
+                </Button>
+                <Button id="RosterCard2" class="CoachHudCard" enabled="false" visible="false">
+                    <Label id="RosterName2" class="CoachHudName" html="false" />
+                    <Label id="RosterHero2" class="CoachHudText" html="false" />
+                    <Label id="RosterRole2" class="CoachHudText" html="false" />
+                    <Label id="RosterSource2" class="CoachHudText" html="false" />
+                    <Label id="RosterAvailability2" class="CoachHudText" html="false" />
+                    <Label id="RosterHint2" class="CoachHudText" html="false" />
+                </Button>
+                <Button id="RosterCard3" class="CoachHudCard" enabled="false" visible="false">
+                    <Label id="RosterName3" class="CoachHudName" html="false" />
+                    <Label id="RosterHero3" class="CoachHudText" html="false" />
+                    <Label id="RosterRole3" class="CoachHudText" html="false" />
+                    <Label id="RosterSource3" class="CoachHudText" html="false" />
+                    <Label id="RosterAvailability3" class="CoachHudText" html="false" />
+                    <Label id="RosterHint3" class="CoachHudText" html="false" />
+                </Button>
+                <Button id="RosterCard4" class="CoachHudCard" enabled="false" visible="false">
+                    <Label id="RosterName4" class="CoachHudName" html="false" />
+                    <Label id="RosterHero4" class="CoachHudText" html="false" />
+                    <Label id="RosterRole4" class="CoachHudText" html="false" />
+                    <Label id="RosterSource4" class="CoachHudText" html="false" />
+                    <Label id="RosterAvailability4" class="CoachHudText" html="false" />
+                    <Label id="RosterHint4" class="CoachHudText" html="false" />
+                </Button>
+            </Panel>
+        </Panel>
+        <Panel class="CoachHudSidebar" hittest="false" hittestchildren="true">
+            <Panel id="CoachOrders" class="CoachHudSection" hittest="false" hittestchildren="true">
+                <Label class="CoachHudHeading" text="Приказы" html="false" />
+                <Label id="OrderRecipient" class="CoachHudText" text="Адресат не выбран." html="false" />
+                <Label id="OrderMode" class="CoachHudText" text="Режим не получен." html="false" />
+                <Label id="OrderRequestRecipient" class="CoachHudText" html="false" />
+                <Label id="OrderAction" class="CoachHudText" html="false" />
+                <Label id="OrderResult" class="CoachHudText" text="Нет текущего приказа." html="false" />
+                <Label id="OrderReason" class="CoachHudText" html="false" />
+                <Label id="OrderEligibility" class="CoachHudText" text="Управление не подключено." html="false" />
+                <Button id="OrderMove" class="CoachHudButton" enabled="false">
+                    <Label text="К контрольной точке" html="false" />
+                </Button>
+                <Button id="OrderAttack" class="CoachHudButton" enabled="false">
+                    <Label text="Атаковать тестовую цель" html="false" />
+                </Button>
+            </Panel>
+            <Panel id="CoachCamera" class="CoachHudSection" hittest="false" hittestchildren="true">
+                <Label class="CoachHudHeading" text="Камера тренера" html="false" />
+                <Label id="CameraRecipient" class="CoachHudText" text="Игрок не выбран." html="false" />
+                <Label id="CameraAvailability" class="CoachHudText" text="Камера ещё не подключена." html="false" />
+                <Label id="CameraResult" class="CoachHudText" text="Фокус ещё не запрошен." html="false" />
+                <Button id="CameraFocus" class="CoachHudButton" enabled="false">
+                    <Label text="Показать героя команды" html="false" />
+                </Button>
+            </Panel>
+            <Panel id="CoachTargets" class="CoachHudSection" hittest="false" hittestchildren="false">
+                <Label class="CoachHudHeading" text="Наблюдение цели" html="false" />
+                <Label id="TargetTitle" class="CoachHudName" text="Цель не выбрана." html="false" />
+                <Label id="TargetDetails" class="CoachHudText" text="" html="false" />
+                <Label id="TargetStatus" class="CoachHudText" text="Наблюдение целей не подключено." html="false" />
+            </Panel>
+        </Panel>
+    </Panel>
+</root>
