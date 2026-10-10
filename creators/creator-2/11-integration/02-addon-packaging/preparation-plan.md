@@ -30,4 +30,6 @@ verify_probe_bundle.py использует прежний prepare_assets API б
 - [x] NodeVM load generated dependency order, actual generated tree bind/click/dispose.
 - [x] Пять критиков; конкретные defects RED→GREEN; previous522 +new suites PASS.
 - [x] Notes/report/README/планы/журнал, syntax/links/diff, только start_skill/readback.
-- [ ] Commit/fast-forward main/remoteSHA/clean; native/сервер/второй владелец открыты.
+- [x] Commit/fast-forward main/remoteSHA/clean; native/сервер/второй владелец открыты.
+
+Опубликован d5066a2; remoteSHA/clean проверены.

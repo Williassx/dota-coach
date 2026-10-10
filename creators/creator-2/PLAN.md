@@ -191,3 +191,7 @@ source reset сохраняетhighwater; fullcontext сравнивается �
 C2-11-02: third fixed preparation source kind15outputs/3canonicalXMLinputs,
 generatedsharedlayout9definitions, VMactualbind/click; общий итог542. Existing13HUD/
 probe policy сохранены. Bootstrap/общийпереход/native/server/secondowner открыты.
+
+C2-05-01: purelocalrequestprojection reuseOrders snapshot(id?) readAPI.29request/
+6newsnapshot,577sourcechecks. ACK≠MANUAL; mode-observed≠permission/causality.
+Panel/transport/lease/native/server/ИИreturn/secondowner остаются открытыми.

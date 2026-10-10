@@ -110,6 +110,18 @@ var DotaCoachOrders = (function () {
         }
 
         return {
+            snapshot: function (id) {
+                if (closed) { return null; }
+                var identity = arguments.length === 0 ? selected : id;
+                if (!text(identity, 64) || /^\s|\s$/.test(identity)) { return null; }
+                var index = find(identity);
+                if (index === -1) { return null; }
+                var result = {};
+                for (var n = 0; n < snapshotFields.length; n += 1) {
+                    result[snapshotFields[n]] = known[index][snapshotFields[n]];
+                }
+                return result;
+            },
             setRecipient: function (input) {
                 if (input === null) { return select(null); }
                 var row = store(input);
