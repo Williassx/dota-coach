@@ -2,7 +2,8 @@
 
 **Отдел:** создатель 2. **Проверяющий:** создатель 1.
 **Статус:** частично подготовлено: ранний source-пакет общего HUD с проверкой
-целостности; полный аддон, установка/компиляция/runtime и второй владелец открыты.
+целостности; native HUD13 установлен отдельно и скомпилирован на Windows.
+Полный аддон, запуск/интерактивная приёмка и второй владелец открыты.
 **Зависимости:** [C2-11-01](../01-ui-binding/README.md), [C2-10-01](../../10-user-testing/01-install-guide/README.md).
 **Рабочая папка:** `creators/creator-2/11-integration/02-addon-packaging/`.
 
@@ -50,7 +51,11 @@ Dedicated TextEntry policy сохраняет старые defaults. Actual pack
 
 Kind HUD разрешает ровно 13 source→target пар. Старый probe/defaultmanifest сохраняют
 ограничения. Build output отдельный/исключён из Git; не редактируется вручную.
-source2_compiled/runtime_verified=false. Никаких server/map/VPK/demo ресурсов нет.
+В source-only reports source2_compiled/runtime_verified=false. Никаких server/map/VPK/demo ресурсов нет.
+
+[Нативная компиляция HUD 11 октября](reports/native-hud-2026-10-11.md): новый
+отдельный addon, 13 непустых compiled outputs, 13/13 source SHA-256 совпадают,
+19 package + 26 binding PASS. Runtime/bind/input/C1 этим не подтверждены.
 
 ## Source-пакет подготовки
 

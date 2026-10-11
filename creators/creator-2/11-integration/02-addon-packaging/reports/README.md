@@ -4,6 +4,9 @@
 
 Source integrity не заменяет установку/компиляцию/runtime.
 
+- [native-hud-2026-10-11.md](native-hud-2026-10-11.md) — отдельный Windows addon,
+  13 compiled outputs; запуск и интерактивная приёмка открыты.
+
 - [cloud-preparation-package.md](cloud-preparation-package.md)
 - [cloud-intervention-package.md](cloud-intervention-package.md)
 - [cloud-intervention-screen-package.md](cloud-intervention-screen-package.md)

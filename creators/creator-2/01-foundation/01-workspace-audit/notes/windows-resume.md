@@ -112,6 +112,14 @@ tests directory:3PASS без изменения прав. Existing file-symlink 
 WSL не предоставил подтверждённую local Linux среду; ничего не устанавливалось.
 [Reparse evidence и ограничения](../../../11-integration/03-end-to-end/reports/windows-reparse-2026-10-11.md).
 
+Следующий независимый native результат: fixed inert HUD13/12 установлен в новый
+addon dota_coach_c2_hud_20261011 и скомпилирован штатным resourcecompiler, exit0.
+13/13 source hashes совпадают, 13 непустых compiled outputs; 19 package и26binding
+tests PASS. Source-only handoff/report не переписаны: native evidence отдельно.
+Map/bootstrap/bind не добавлены, runtime/input/сервер/второй владелец открыты.
+Перед запуском согласовать отдельную fixture scene/manifest; не накладывать HUD
+на diagnostic probe. [Команды и evidence](../../../11-integration/02-addon-packaging/reports/native-hud-2026-10-11.md).
+
 Все действия отдельно в creators/creator-2/00-action-log/YYYY-MM-DD.md, UTC.
 Новые исходники сначала в библиотеке создателя2. Прочие отделы/контракты не менять.
 Чекбоксы/graph только по evidence; source checks не заменяют native/second owner.
