@@ -223,3 +223,7 @@ C2-11-01: source группа карточек/запроса с private flow, s
 C2-11-02: source-сцена карточек/запроса из 13 ресурсов, двух canonical XML inputs
 и восьми JS definitions в одном контексте. 11 новых проверок, полный итог 701;
 actual build/verify 13/12. Native/C1 и приёмка второго владельца открыты.
+
+C2-06-02: ограниченный local text parser использует existing Roster, четыре
+действия, точные имя/роль/группу и final-only bounded ID history. 23 RED→GREEN,
+полный итог724. Proposal не server contract; ASR/микрофон/transport/C1 открыты.
