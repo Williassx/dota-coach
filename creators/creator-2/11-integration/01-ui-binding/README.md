@@ -9,6 +9,8 @@
 
 ## Действия
 
+- [x] Подключить панель запроса к единой локальной модели выбора через owned port и проверить source lifecycle.
+
 - [ ] Сверить каналы событий с общим контрактом.
 - [ ] Проверить поздний снимок, смену героя и старое подключение.
 - [ ] Передать результаты создателю 1 для общей интеграции.
@@ -63,6 +65,9 @@ Shell/style/manifest общей подготовки теперь собираю
 Generatedlayout содержит3canonicalroots/9definitions; native/автопривязка открыты.
 
 ## Локальная связь карточки и запроса
+
+[Общий порт панели](intervention-port-design.md) · [План](intervention-port-plan.md) ·
+[Подключение](notes/intervention-port.md) · [Проверка](reports/cloud-intervention-port.md).
 
 [Дизайн](intervention-selection-design.md) · [План](intervention-selection-plan.md) ·
 [Подключение](notes/intervention-selection.md) · [Проверка](reports/cloud-intervention-selection.md).

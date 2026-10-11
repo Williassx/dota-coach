@@ -78,7 +78,7 @@ var DotaCoachInterventionSelection = (function () {
             closed = true; generation += 1; busy = false; listAccepted = false;
             roster.dispose(); requests.dispose();
         }
-        return {
+        var api = {
             replaceRoster: function (rows) {
                 return transact(function () {
                     var accepted = roster.replace(rows);
@@ -124,6 +124,20 @@ var DotaCoachInterventionSelection = (function () {
             },
             view: view, dispose: dispose, isDisposed: function () { return closed; }
         };
+        // A stable, exclusively owned panel port projects this flow, never another Requests store.
+        var panelPort = {
+            update: api.updateControl, select: api.selectPlayer,
+            begin: function (displayedSignature) {
+                // Check atomically at the model boundary, after any panel preflight callbacks.
+                if (displayedSignature !== undefined && displayedSignature !== JSON.stringify(view().manual)) { return null; }
+                return api.begin();
+            },
+            report: api.report, expire: api.expire, notSent: api.notSent,
+            view: function () { return view().manual; },
+            dispose: dispose, isDisposed: api.isDisposed
+        };
+        api.requestPort = function () { return panelPort; };
+        return api;
     }
     return { create: create };
 }());

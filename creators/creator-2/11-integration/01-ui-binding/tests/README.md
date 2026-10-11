@@ -7,3 +7,4 @@
 - [panel-port.test.cjs](panel-port.test.cjs)
 - [preparation-binding.test.cjs](preparation-binding.test.cjs)
 - [intervention-selection.test.cjs](intervention-selection.test.cjs)
+- [intervention-port-binding.test.cjs](intervention-port-binding.test.cjs)

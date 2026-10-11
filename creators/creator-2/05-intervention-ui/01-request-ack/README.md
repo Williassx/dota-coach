@@ -50,3 +50,6 @@ API, сигнатуры, конкретные файлы и команды пр�
 
 [Source-пакет панели](../../11-integration/02-addon-packaging/notes/intervention-package.md)
 собран отдельно: шесть ресурсов, без нативной компиляции и установки.
+
+[Общий порт модели выбора](../../11-integration/01-ui-binding/notes/intervention-port.md)
+подключается третьим аргументом bind; отдельный Requests при этом не создаётся.

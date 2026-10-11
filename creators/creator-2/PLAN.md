@@ -211,3 +211,7 @@ Selected card и capturedactor разделены, roster дополнитель
 
 C2-11-02: source-пакет ручного запроса из6ресурсов,13новыхсценариев,648PASS.
 Проверка source graph не означает native compile/runtime или право ручного ввода.
+
+C2-11-01: общий owned port связывает existing selection flow с панелью ручного
+запроса; 19 новых сценариев, общий итог667. Explicit refresh и atomic displayed-view
+guard предотвращают dispatch к невидимому адресату. Общий экран/recipe/native/C1 открыты.
