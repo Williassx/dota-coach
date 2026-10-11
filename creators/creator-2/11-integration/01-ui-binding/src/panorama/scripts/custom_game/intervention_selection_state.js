@@ -137,6 +137,12 @@ var DotaCoachInterventionSelection = (function () {
             dispose: dispose, isDisposed: api.isDisposed
         };
         api.requestPort = function () { return panelPort; };
+        var rosterPort = {
+            replace: api.replaceRoster, select: api.selectPlayer, clearSelection: api.clearSelection,
+            view: function () { return view().roster; },
+            dispose: dispose, isDisposed: api.isDisposed
+        };
+        api.rosterPort = function () { return rosterPort; };
         return api;
     }
     return { create: create };

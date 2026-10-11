@@ -159,3 +159,19 @@ test('new actor epoch clearing request before dispatch keeps shared panel usable
     assert.equal(ui.request(),false);assert.equal(sends,0);assert.equal(p.flow.view().manual.request,null);
     assert.equal(ui.isDisposed(),false);assert.equal(p.timers.size,1);assert.equal(ui.refresh(),true);ui.dispose();
 });
+test('ACK expiry while suspended is applied on refresh and late reply remains correlated',()=>{
+    const p=fixture();let reply;ready(p);const ui=p.bind((_,cb)=>reply=cb);p.click();ui.suspend();p.fire(5);
+    assert.equal(ui.refresh(),true);assert.equal(p.flow.view().manual.status,'unknown');assert.equal(p.timers.size,1);
+    assert.equal(p.nodes.get('ManualRequestButton').enabled,false);assert.equal(reply(response()),true);ui.dispose();
+});
+test('ACK expiry inside a busy source getter is applied after the source transaction',()=>{
+    const p=fixture();ready(p);const ui=p.bind();p.click();const data=frame('a',{revision:2});
+    Object.defineProperty(data,'mode',{enumerable:true,get(){p.fire(5);return 'AI';}});
+    assert.equal(ui.update(data),true);assert.equal(p.flow.view().manual.status,'unknown');
+    assert.match(p.text('State'),/неизвестен/);assert.equal(p.timers.size,1);ui.dispose();
+});
+test('deferred expiry cannot overwrite an externally accepted captured response',()=>{
+    const p=fixture();ready(p);const ui=p.bind();p.click();const ticket=p.flow.view().manual.request.ticket;
+    ui.suspend();p.fire(5);assert.equal(p.flow.report(ticket,response()),true);
+    assert.equal(ui.refresh(),true);assert.equal(p.flow.view().manual.status,'accepted');ui.dispose();
+});

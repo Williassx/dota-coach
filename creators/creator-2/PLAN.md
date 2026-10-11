@@ -215,3 +215,7 @@ C2-11-02: source-пакет ручного запроса из6ресурсов,
 C2-11-01: общий owned port связывает existing selection flow с панелью ручного
 запроса; 19 новых сценариев, общий итог667. Explicit refresh и atomic displayed-view
 guard предотвращают dispatch к невидимому адресату. Общий экран/recipe/native/C1 открыты.
+
+C2-11-01: source группа карточек/запроса с private flow, staging и общим lifecycle;
+20 новых групповых и3 таймерных сценария, полный итог690. Layout/recipe группы
+следующий шаг; native/C1 открыты.

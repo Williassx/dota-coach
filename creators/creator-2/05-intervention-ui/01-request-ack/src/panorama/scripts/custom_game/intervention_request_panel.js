@@ -9,9 +9,10 @@ var DotaCoachInterventionRequestPanels = (function () {
         valid(root);
         if (owners.indexOf(root) !== -1) { throw new Error("Manual request root already bound"); }
         owners.push(root);
-        var closed = false, binding = true, busy = false, generation = 0, model = null;
+        var closed = false, binding = true, busy = false, suspended = false, generation = 0, model = null;
         var labels = {}, nodes = [], button = null, timer = null, replyTimer = null;
         var displayedSignature = null;
+        var deferredExpiry = null;
         var names = ["Recipient", "Mode", "Actor", "State", "Reason", "Message", "Hint"];
         var stages = { idle: "Нет текущего запроса.", pending: "Ожидается ответ на запрос.",
             accepted: "Принят запрос; MANUAL не подтверждён.", unknown: "Исход запроса неизвестен.",
@@ -26,8 +27,9 @@ var DotaCoachInterventionRequestPanels = (function () {
         }
         function dispose() {
             if (closed) { return; }
-            closed = true; busy = false; generation += 1;
+            closed = true; busy = false; suspended = true; generation += 1;
             displayedSignature = null;
+            deferredExpiry = null;
             if (model) { model.dispose(); }
             cancelReply();
             if (timer !== null) { try { $.CancelScheduled(timer); } catch (error) { /* Context unavailable. */ } timer = null; }
@@ -70,6 +72,7 @@ var DotaCoachInterventionRequestPanels = (function () {
             button.enabled = false; return current(version);
         }
         function stage(version) {
+            suspended = true;
             displayedSignature = null;
             root.visible = false;
             if (!current(version) || !disable(version)) { return false; }
@@ -82,6 +85,7 @@ var DotaCoachInterventionRequestPanels = (function () {
             var version = ++generation;
             try {
                 var view = model.view(), signature = JSON.stringify(view), selected = view.selected, request = view.request;
+                suspended = false;
                 var canRequest = view.canRequest && typeof send === "function";
                 var message = view.canRequest && !canRequest ? "Переходник запроса не подключён к панели." : view.message;
                 var mode = !selected ? "Снимок недоступен." : (selected.mode === "AI" ? "Снимок: ИИ." :
@@ -108,17 +112,26 @@ var DotaCoachInterventionRequestPanels = (function () {
             var active = model.view().request;
             if (replyTimer && (!active || active.ticket !== replyTimer.ticket || active.stage !== "pending")) { cancelReply(); }
         }
+        function flushExpiry() {
+            if (deferredExpiry === null) { return; }
+            var view = model.view();
+            if (view.status === "updating") { return; }
+            var ticket = deferredExpiry; deferredExpiry = null;
+            if (view.request && view.request.ticket === ticket && view.request.stage === "pending") { model.expire(ticket); }
+        }
         function refresh() {
             if (!available() || busy) { return false; }
-            try { reconcileTimer(); return available() && render(); }
+            try { flushExpiry(); reconcileTimer(); return available() && render(); }
             catch (error) { dispose(); return false; }
         }
         function mutate(method, args) {
-            if (!available() || busy) { return false; }
+            if (!available() || busy || suspended) { return false; }
             var version = ++generation; busy = true;
             try {
                 if (!stage(version) || !current(version)) { return false; }
                 var accepted = model[method].apply(model, args);
+                if (!current(version)) { return false; }
+                flushExpiry();
                 if (!current(version)) { return false; }
                 reconcileTimer();
                 if (!current(version)) { return false; }
@@ -126,13 +139,13 @@ var DotaCoachInterventionRequestPanels = (function () {
             } catch (error) { if (current(version)) { dispose(); } return false; }
         }
         function receive(ticket, frame) {
-            if (!available() || busy) { return false; }
+            if (!available() || busy || suspended) { return false; }
             var active = model.view().request;
             if (!active || active.ticket !== ticket || ["pending", "unknown", "accepted"].indexOf(active.stage) === -1) { return false; }
             return mutate("report", [ticket, frame]);
         }
         function issue() {
-            if (!available() || busy || typeof send !== "function") { return false; }
+            if (!available() || busy || suspended || typeof send !== "function") { return false; }
             var version = ++generation; busy = true;
             try {
                 // An externally changed flow must not dispatch to an actor absent from the displayed frame.
@@ -164,8 +177,10 @@ var DotaCoachInterventionRequestPanels = (function () {
                 var dispatchVersion = version, ticket = intent.ticket, handle = null;
                 try {
                     handle = $.Schedule(5, function () {
-                        if (!available() || busy || !replyTimer || replyTimer.ticket !== ticket || replyTimer.handle !== handle) { return; }
-                        replyTimer = null; mutate("expire", [ticket]);
+                        if (!available() || !replyTimer || replyTimer.ticket !== ticket || replyTimer.handle !== handle) { return; }
+                        replyTimer = null;
+                        if (busy || suspended) { deferredExpiry = ticket; return; }
+                        mutate("expire", [ticket]);
                     });
                     if (!handleValid(handle)) { throw new Error("ACK timer has no usable handle"); }
                     if (!current(dispatchVersion)) {
@@ -221,6 +236,11 @@ var DotaCoachInterventionRequestPanels = (function () {
         return { update: function (frame) { return mutate("update", [frame]); },
             select: function (id) { return mutate("select", [id]); }, request: issue,
             refresh: refresh,
+            suspend: function () {
+                if (!available() || busy) { return false; }
+                var version = ++generation;
+                try { return stage(version); } catch (error) { if (current(version)) { dispose(); } return false; }
+            },
             dispose: dispose, isDisposed: function () { return !available(); } };
     }
     return { bind: bind };

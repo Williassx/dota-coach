@@ -10,6 +10,7 @@
 ## Действия
 
 - [x] Подключить панель запроса к единой локальной модели выбора через owned port и проверить source lifecycle.
+- [x] Связать карточки и запрос в одну source группу с единым выбором, staging и lifecycle.
 
 - [ ] Сверить каналы событий с общим контрактом.
 - [ ] Проверить поздний снимок, смену героя и старое подключение.
@@ -68,6 +69,11 @@ Generatedlayout содержит3canonicalroots/9definitions; native/автоп�
 
 [Общий порт панели](intervention-port-design.md) · [План](intervention-port-plan.md) ·
 [Подключение](notes/intervention-port.md) · [Проверка](reports/cloud-intervention-port.md).
+
+[Экран из двух областей](intervention-screen-design.md) ·
+[План](intervention-screen-plan.md) · [Подключение](notes/intervention-screen.md).
+[Проверка](reports/cloud-intervention-screen.md):20 групповых и3 таймерных сценария,
+полный итог690; native/C1 открыты.
 
 [Дизайн](intervention-selection-design.md) · [План](intervention-selection-plan.md) ·
 [Подключение](notes/intervention-selection.md) · [Проверка](reports/cloud-intervention-selection.md).
