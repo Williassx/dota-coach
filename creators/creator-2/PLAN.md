@@ -277,3 +277,11 @@ C2-11-02: восьмой фиксированный source-пакет публи
 контекст проверены. 8 новых сценариев, полный итог 41 suites / 875 PASS; один
 финальный критик без существенных замечаний. [Отчёт](11-integration/02-addon-packaging/reports/cloud-opponent-roster-package.md).
 График 39/206 (18.9%). C1/common HUD/Windows/native/второй владелец открыты.
+
+C2-11-01/02: общая read-only сцена соперников и истории; один parent и два
+канонических private child bindings, отдельные источники/готовность, общий lifecycle.
+Fixed пакет: 10 ресурсов / 2 canonical inputs / 9 links / 38 ID и fingerprints.
+15 Node и 8 packaging сценариев; итог 42 suites / 898 PASS. Один финальный критик
+выявил failed-acquisition visibility, воспроизведено и исправлено с сохранением
+независимого child/status. [Отчёт](11-integration/01-ui-binding/reports/cloud-match-observation.md).
+График 41/208 (19.7%). Full игровой HUD, C1/native/второй человек открыты.

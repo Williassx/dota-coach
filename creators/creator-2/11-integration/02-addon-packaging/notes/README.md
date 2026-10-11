@@ -10,3 +10,5 @@
 - [orders-timeline-package.md](orders-timeline-package.md).
 
 - [opponent-roster-package.md](opponent-roster-package.md).
+
+- [match-observation-package.md](match-observation-package.md).

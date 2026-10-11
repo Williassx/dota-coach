@@ -10,6 +10,7 @@
 
 ## Действия
 
+- [x] Собрать и проверить общую source-сцену соперников и истории из 10 ресурсов и двух canonical XML inputs.
 - [x] Собрать и проверить отдельный source-пакет публичных соперников из 5 ресурсов.
 - [x] Собрать и проверить отдельный source-пакет истории приказов из 5 ресурсов.
 - [x] Собрать и проверить source-сцену карточек/запроса: 13 ресурсов, один контекст, fingerprints исходных XML.
@@ -98,3 +99,15 @@ Labels и 7 контейнеров. Отдельная панель пяти с�
 исходники C2-07-02. Проверены порядок, принадлежность полей карточкам, целостность
 и поведение упакованного контекста. Handoff selector: `opponent-roster`.
 Серверная политика доступа, общий HUD, установка, запуск Dota и второй владелец открыты.
+
+## Общая source-сцена наблюдения
+
+[Спецификация](../01-ui-binding/match-observation-design.md) ·
+[План](../01-ui-binding/match-observation-plan.md) · [Recipe](match-observation-manifest.json) ·
+[Команды](notes/match-observation-package.md) · [Отчёт](../01-ui-binding/reports/cloud-match-observation.md).
+
+Девятый fixed kind: 10 ресурсов / 2 canonical XML inputs / 9 links / 38 ID.
+Верхний ряд соперников и история справа управляются одним parent binding;
+поддерживается отдельная готовность источников. Source fingerprints и повторная
+композиция сохраняют единственные исходники. Selector: `match-observation`.
+Это read-only вариант; весь игровой HUD, bootstrap/native/C1 ещё открыты.

@@ -8,3 +8,6 @@
 - [preparation_binding.js](preparation_binding.js)
 - [intervention_selection_state.js](intervention_selection_state.js)
 - [intervention_screen_binding.js](intervention_screen_binding.js)
+
+- [match_observation_binding.js](match_observation_binding.js) — общий owned lifecycle
+  публичных соперников и истории, независимые источники, без нового transport.

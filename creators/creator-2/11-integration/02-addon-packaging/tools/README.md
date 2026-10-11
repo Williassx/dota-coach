@@ -16,3 +16,7 @@
 - [opponent_roster_layout.py](opponent_roster_layout.py) — пять фиксированных ресурсов
   публичного состава; проверяет точный порядок карточек и принадлежность их подписей,
   использует прежний XML parser с локальным разрешением Panel.visible.
+
+- [match_observation_layout.py](match_observation_layout.py) — фиксированная
+  композиция двух canonical scopes в shell; использует validate_layout прежних
+  opponent/history policies, raw fingerprints и проверку generated topology.

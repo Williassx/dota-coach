@@ -2,6 +2,8 @@
 
 [Родитель](../README.md).
 
+- [match-observation.md](match-observation.md) — API общей сцены наблюдения.
+
 - [local-hud.md](local-hud.md)
 - [preparation-flow.md](preparation-flow.md)
 - [preparation-binding.md](preparation-binding.md)

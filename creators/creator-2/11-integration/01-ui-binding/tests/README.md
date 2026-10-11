@@ -9,3 +9,6 @@
 - [intervention-selection.test.cjs](intervention-selection.test.cjs)
 - [intervention-port-binding.test.cjs](intervention-port-binding.test.cjs)
 - [intervention-screen.test.cjs](intervention-screen.test.cjs)
+
+- [match-observation.test.cjs](match-observation.test.cjs) — 15 сценариев реальных
+  child panels: separate sources, lifecycle/reentry/partial bind/old owner.

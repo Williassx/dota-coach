@@ -205,6 +205,11 @@
       "id": "python-c2-07-02",
       "framework": "python-unittest",
       "path": "creators/creator-2/07-match-screen/02-opponent-cards/tests"
+    },
+    {
+      "id": "node-match-observation",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/match-observation.test.cjs"
     }
   ]
 }

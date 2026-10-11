@@ -9,6 +9,7 @@
 
 ## Действия
 
+- [x] Связать публичных соперников и историю приказов в одну read-only source-сцену с общим lifecycle.
 - [x] Подключить панель запроса к единой локальной модели выбора через owned port и проверить source lifecycle.
 - [x] Связать карточки и запрос в одну source группу с единым выбором, staging и lifecycle.
 
@@ -80,3 +81,15 @@ Generatedlayout содержит3canonicalroots/9definitions; native/автоп�
 
 Один private Roster/Requests, общий gate и сохранение capturedactor: 27 сценариев,
 полный облачный итог 635. Панели ещё не подключены; серверный критерий остаётся открытым.
+
+## Общая сцена наблюдения матча
+
+[Дизайн](match-observation-design.md) · [План](match-observation-plan.md) ·
+[API](notes/match-observation.md) · [Отчёт](reports/cloud-match-observation.md).
+
+Один родитель владеет двумя существующими панелями: соперники сверху и история
+справа. Источники обновляются независимо, недоступность одного не приписывается
+другому. Повреждение обязательного элемента закрывает группу; повторное открытие
+создаёт новые private instances. Explicit bind/dispose, без handlers/timers/transport.
+[Пакет](../02-addon-packaging/notes/match-observation-package.md) собирается из
+единственных канонических XML/JS/CSS. Это ещё не полный игровой HUD или приёмка Dota.

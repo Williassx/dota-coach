@@ -21,6 +21,7 @@ SCREENS = {
     'voice-text': (PACKAGING + 'voice-text-manifest.json', 'panorama_source_voice_text'),
     'orders-timeline': (PACKAGING + 'orders-timeline-manifest.json', 'panorama_source_orders_timeline'),
     'opponent-roster': (PACKAGING + 'opponent-roster-manifest.json', 'panorama_source_opponent_roster'),
+    'match-observation': (PACKAGING + 'match-observation-manifest.json', 'panorama_source_match_observation'),
 }
 
 

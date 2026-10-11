@@ -2,6 +2,8 @@
 
 [Родитель](../README.md).
 
+- [cloud-match-observation.md](cloud-match-observation.md) — связка и packaged context.
+
 - [cloud-ui-binding.md](cloud-ui-binding.md)
 - [cloud-preparation-flow.md](cloud-preparation-flow.md)
 - [cloud-preparation-binding.md](cloud-preparation-binding.md)

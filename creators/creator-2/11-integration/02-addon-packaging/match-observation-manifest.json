@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_match_observation",
+  "assets": [
+    {"source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/match_observation_manifest.xml", "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"},
+    {"source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_match_observation.xml", "target": "content/panorama/layout/custom_game/coach_match_observation.xml"},
+    {"source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_match_observation.css", "target": "content/panorama/styles/custom_game/coach_match_observation.css"},
+    {"source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/match_observation_binding.js", "target": "content/panorama/scripts/custom_game/match_observation_binding.js"},
+    {"source": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/styles/custom_game/opponent_roster.css", "target": "content/panorama/styles/custom_game/opponent_roster.css"},
+    {"source": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/scripts/custom_game/opponent_roster_state.js", "target": "content/panorama/scripts/custom_game/opponent_roster_state.js"},
+    {"source": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/scripts/custom_game/opponent_roster_panel.js", "target": "content/panorama/scripts/custom_game/opponent_roster_panel.js"},
+    {"source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/styles/custom_game/orders_timeline.css", "target": "content/panorama/styles/custom_game/orders_timeline.css"},
+    {"source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/scripts/custom_game/orders_timeline_state.js", "target": "content/panorama/scripts/custom_game/orders_timeline_state.js"},
+    {"source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/scripts/custom_game/orders_timeline_panel.js", "target": "content/panorama/scripts/custom_game/orders_timeline_panel.js"}
+  ],
+  "layout_inputs": [
+    {"source": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/layout/custom_game/opponent_roster.xml", "root_id": "OpponentRosterRoot", "host_id": "MatchOpponentHost"},
+    {"source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/layout/custom_game/orders_timeline.xml", "root_id": "OrdersTimelineRoot", "host_id": "MatchHistoryHost"}
+  ]
+}

@@ -25,6 +25,7 @@ python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_han
 python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen voice-text
 python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen orders-timeline
 python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen opponent-roster
+python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen match-observation
 ```
 
 Первый вариант готовит probe. Каждый создаёт новую папку в build/dota_coach,
@@ -44,6 +45,7 @@ Report сам не авторизует установку; перед буду�
 | voice-text | 6/5 | Текст→local proposal | [Text preview](../../../06-voice/03-voice-feedback/notes/text-preview.md) |
 | orders-timeline | 5/4 | Локальная история приказов | [Timeline](../../../07-match-screen/03-orders-timeline/notes/panel.md) |
 | opponent-roster | 5/4 | Публичные имена/герои соперников | [Public roster](../../../07-match-screen/02-opponent-cards/notes/public-roster.md) |
+| match-observation | 10/9 | Соперники + история в одной сцене | [Group binding](../../../11-integration/01-ui-binding/notes/match-observation.md) |
 
 Эти manifests альтернативны. Не копировать их поверх друг друга в одну сцену:
 автоматического объединения/общего runtime ещё нет. Source files каждой библиотеки

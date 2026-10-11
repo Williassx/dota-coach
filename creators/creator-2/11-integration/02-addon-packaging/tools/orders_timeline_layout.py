@@ -17,6 +17,23 @@ policy = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(policy)
 
 
+def validate_layout(payload):
+    """Shared canonical input validator for standalone and composed source layouts."""
+    layout = policy.parse(payload, extra_tags={'Panel': policy.ATTRS['Panel'] | {'visible'}})
+    policy.dependencies(layout, SCRIPTS, ('orders_timeline.css',))
+    group = layout.find('Panel')
+    names = ['TimelineTitle', 'TimelineSummary', 'TimelineHint', *['TimelineEvent' + str(i) for i in range(6)]]
+    if (group.attrib != {'id': 'OrdersTimelineRoot', 'class': 'OrdersTimeline', 'visible': 'false'} or
+            policy.ids(group) != {'OrdersTimelineRoot': 'Panel', **{name: 'Label' for name in names}} or
+            [n.tag for n in group] != ['Label'] * 9 or [n.get('id') for n in group] != names):
+        raise ValueError('Exact inert timeline topology required')
+    for node, name in zip(group, names):
+        expected_class = name if not name.startswith('TimelineEvent') else 'TimelineEvent'
+        if node.attrib != {'id': name, 'class': expected_class, 'html': 'false', 'text': ''}:
+            raise ValueError('Exact empty plain timeline Labels required')
+    return layout
+
+
 def prepare(repository, recipe, read_source):
     if (not isinstance(recipe, dict) or set(recipe) != {'schema_version', 'kind', 'assets'} or
             type(recipe['schema_version']) is not int or recipe['schema_version'] != 1 or
@@ -37,18 +54,7 @@ def prepare(repository, recipe, read_source):
     payloads = {target: raw for _, target, raw in prepared}
     policy.hud_manifest(payloads[MANIFEST], 'orders_timeline.xml')
     # Root visibility is a trusted local extension; old kinds keep the default.
-    layout = policy.parse(payloads[LAYOUT], extra_tags={'Panel': policy.ATTRS['Panel'] | {'visible'}})
-    policy.dependencies(layout, SCRIPTS, ('orders_timeline.css',))
-    group = layout.find('Panel')
-    names = ['TimelineTitle', 'TimelineSummary', 'TimelineHint', *['TimelineEvent' + str(i) for i in range(6)]]
-    if (group.attrib != {'id': 'OrdersTimelineRoot', 'class': 'OrdersTimeline', 'visible': 'false'} or
-            policy.ids(group) != {'OrdersTimelineRoot': 'Panel', **{name: 'Label' for name in names}} or
-            [n.tag for n in group] != ['Label'] * 9 or [n.get('id') for n in group] != names):
-        raise ValueError('Exact inert timeline topology required')
-    for node, name in zip(group, names):
-        expected_class = name if not name.startswith('TimelineEvent') else 'TimelineEvent'
-        if node.attrib != {'id': name, 'class': expected_class, 'html': 'false', 'text': ''}:
-            raise ValueError('Exact empty plain timeline Labels required')
+    layout = validate_layout(payloads[LAYOUT])
     reached = {MANIFEST, LAYOUT}
     for include in layout.findall('./scripts/include') + layout.findall('./styles/include'):
         reached.add(TARGET + include.get('src').removeprefix('file://{resources}/'))
