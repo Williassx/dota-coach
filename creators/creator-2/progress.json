@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
   "metric": "checked_actions_over_all_actions",
-  "done": 46,
+  "done": 49,
   "total": 213,
-  "percent": 21.6,
+  "percent": 23.0,
   "sections": [
     {
       "number": 1,
       "title": "Локальная среда и интерфейсная основа",
       "path": "01-foundation/README.md",
-      "done": 2,
+      "done": 5,
       "total": 15,
-      "percent": 13.3,
+      "percent": 33.3,
       "subsections": [
         {
           "path": "01-foundation/01-workspace-audit/README.md",
-          "done": 1,
+          "done": 3,
           "total": 5
         },
         {
           "path": "01-foundation/02-panorama-capability/README.md",
-          "done": 0,
+          "done": 1,
           "total": 5
         },
         {

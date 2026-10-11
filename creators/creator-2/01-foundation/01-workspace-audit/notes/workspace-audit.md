@@ -2,6 +2,28 @@
 
 Дата: 9 октября 2026 года. Пользователь — **создатель 2**.
 
+## Локальное продолжение 11 октября 2026 года
+
+Windows PowerShell реально подключён в `D:\AI\dota2coach`. Папка была пустой;
+исполнитель клонировал подтверждённый GitHub origin. Чистая ветка main,
+исходный HEAD `9d30deae4b0cd078288ec9572de2a5665f64cf60`.
+Прежняя таблица ниже описывает облачный аудит, а не текущую среду.
+
+- Python 3.12.14 из bundled runtime Codex, Node 24.19.0, Git 2.55.0.windows.5.
+  Store launcher `py` найден, но недоступен для исполнения; использован настоящий Python.
+- Steam: `C:\Program Files (x86)\Steam`; Dota:
+  `steamapps\common\dota 2 beta`, build_id `25845666`.
+- Обнаружены отдельные `content\dota_addons` и `game\dota_addons`, исходники
+  Panorama и штатные шаблоны addon_template/workshop_testbed.
+- Bounded JSON сохранён локально в reports/windows-20261011-local.json,
+  исключён из Git. Список ресурсов частичный (`truncated: true`), ошибок обхода нет.
+- Создан отдельный addon `dota_coach_c2_probe_20261011`; существующие не заменены.
+  Пять ресурсов панели успешно скомпилированы установленным resourcecompiler.
+
+Команды, ограничения проверки карты/Tools и тестов:
+[Windows foundation report](../reports/windows-foundation-2026-10-11.md).
+Нативная приёмка панели, hittest и обмен с C1 остаются открытыми.
+
 | Вход | Подтверждение |
 |---|---|
 | Windows-клон D:\AI\dota2coach существует, Codex открыт | Сообщение пользователя |
