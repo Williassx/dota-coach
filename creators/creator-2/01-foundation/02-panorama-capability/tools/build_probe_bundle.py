@@ -42,6 +42,80 @@ HUD_ASSETS = {
 }
 
 
+INTERVENTION_PREFIX = "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/"
+INTERVENTION_ASSETS = {
+    **{INTERVENTION_PREFIX + name: "content/panorama/" + name for name in (
+        "layout/custom_game/custom_ui_manifest.xml", "layout/custom_game/intervention_request.xml",
+        "styles/custom_game/intervention_request.css", "scripts/custom_game/intervention_request_state.js",
+        "scripts/custom_game/intervention_request_panel.js")},
+    "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_state.js":
+        "content/panorama/scripts/custom_game/orders_state.js",
+}
+
+
+def validate_intervention_graph(prepared):
+    """Validate the fixed inert manual-request source tree, not native compilation."""
+    payloads = {target: raw for _, target, raw in prepared}
+    resource = "file://{resources}/"
+    manifest_name = "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    layout_name = "content/panorama/layout/custom_game/intervention_request.xml"
+    trees = {}
+    for name in (manifest_name, layout_name):
+        raw = payloads[name].decode("utf-8-sig")
+        if "<!DOCTYPE" in raw.upper() or "<!ENTITY" in raw.upper():
+            raise ValueError("Manual request XML DTD/entities are not supported")
+        trees[name] = ET.fromstring(raw)
+        for node in trees[name].iter():
+            if (node.text or "").strip() or (node.tail or "").strip():
+                raise ValueError("Manual request XML cannot contain executable or mixed text")
+    manifest = trees[manifest_name]
+    nodes = list(manifest.iter())
+    if (len(nodes) != 3 or [n.tag for n in nodes] != ["root", "Panel", "CustomUIElement"] or
+            len(manifest) != 1 or len(nodes[1]) != 1 or nodes[1][0] is not nodes[2] or
+            nodes[0].attrib or nodes[1].attrib or nodes[2].attrib != {
+                "type": "Hud", "layoutfile": resource + "layout/custom_game/intervention_request.xml"}):
+        raise ValueError("Manual request manifest must load exactly one declared Hud layout")
+    layout = trees[layout_name]
+    if layout.tag != "root" or layout.attrib or [n.tag for n in layout] != ["styles", "scripts", "Panel"]:
+        raise ValueError("Manual request layout requires styles, scripts and one Panel")
+    reached = {manifest_name, layout_name}
+    for tag, expected in (("styles", ["styles/custom_game/intervention_request.css"]),
+                          ("scripts", ["scripts/custom_game/" + n for n in
+                                       ("orders_state.js", "intervention_request_state.js", "intervention_request_panel.js")])):
+        section = layout.find(tag)
+        if section.attrib or len(section) != len(expected):
+            raise ValueError("Manual request include count/section attributes invalid")
+        for node, name in zip(section, expected):
+            if node.tag != "include" or node.attrib != {"src": resource + name} or len(node):
+                raise ValueError("Manual request dependencies must be exact ordered leaf includes")
+            reached.add("content/panorama/" + name)
+    if reached != set(payloads):
+        raise ValueError("Manual request source graph has unreachable resources")
+    required = {"ManualRequestRoot": "Panel", "ManualRequestButton": "Button",
+                **{"ManualRequest" + name: "Label" for name in
+                   ("Recipient", "Mode", "Actor", "State", "Reason", "Message", "Hint")}}
+    ids, buttons = {}, []
+    attributes = {"Panel": {"id", "class", "hittest", "hittestchildren"},
+                  "Label": {"id", "class", "html", "text"}, "Button": {"id", "class", "enabled"}}
+    for node in layout.find("Panel").iter():
+        if node.tag not in attributes or set(node.attrib) - attributes[node.tag]:
+            raise ValueError("Manual request body has unsupported tag or attributes")
+        if "id" in node.attrib:
+            identity = node.attrib["id"]
+            if identity in ids:
+                raise ValueError("Manual request IDs must be unique")
+            ids[identity] = node.tag
+        if node.tag == "Label" and (node.get("html") != "false" or len(node)):
+            raise ValueError("Manual request labels must be plain leaf labels")
+        if node.tag == "Button":
+            buttons.append(node)
+    if ids != required or layout.find("Panel").get("id") != "ManualRequestRoot":
+        raise ValueError("Manual request requires its exact nine scoped IDs")
+    if (len(buttons) != 1 or buttons[0].get("enabled") != "false" or len(buttons[0]) != 1 or
+            buttons[0][0].tag != "Label" or buttons[0][0].get("id") != "ManualRequestHint"):
+        raise ValueError("Manual request requires one disabled button with its Hint")
+
+
 def validate_hud_graph(prepared):
     """Check one inert layout and complete dependency graph; never execute JS."""
     payloads = {target: payload for _, target, payload in prepared}
@@ -174,7 +248,7 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
     if type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1:
         raise ValueError("Unsupported bundle manifest version")
     kind = manifest["kind"]
-    if not isinstance(kind, str) or kind not in ("panorama_source_probe", "panorama_source_hud"):
+    if not isinstance(kind, str) or kind not in ("panorama_source_probe", "panorama_source_hud", "panorama_source_intervention"):
         raise ValueError("Unsupported bundle kind")
     entries = manifest["assets"]
     if not isinstance(entries, list) or not 1 <= len(entries) <= MAX_ASSETS:
@@ -189,6 +263,8 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
         target = portable_path(entry["target"])
         if kind == "panorama_source_hud" and HUD_ASSETS.get(source.as_posix()) != target.as_posix():
             raise ValueError("HUD requires the fixed source-to-target mapping")
+        if kind == "panorama_source_intervention" and INTERVENTION_ASSETS.get(source.as_posix()) != target.as_posix():
+            raise ValueError("Manual request requires the fixed source-to-target mapping")
         if kind == "panorama_source_probe" and (not source.is_relative_to(SOURCE_PREFIX) or source == SOURCE_PREFIX):
             raise ValueError("Source must belong to this UI library")
         if not target.is_relative_to(TARGET_PREFIX) or target == TARGET_PREFIX:
@@ -206,6 +282,10 @@ def prepare_assets(repository: Path, manifest: dict) -> list:
         if {source: target for source, target, _ in prepared} != HUD_ASSETS:
             raise ValueError("HUD requires all 13 fixed resources")
         validate_hud_graph(prepared)
+    if kind == "panorama_source_intervention":
+        if {source: target for source, target, _ in prepared} != INTERVENTION_ASSETS:
+            raise ValueError("Manual request requires all six fixed resources")
+        validate_intervention_graph(prepared)
     return prepared
 
 

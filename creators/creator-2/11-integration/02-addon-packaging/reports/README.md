@@ -5,3 +5,4 @@
 Source integrity не заменяет установку/компиляцию/runtime.
 
 - [cloud-preparation-package.md](cloud-preparation-package.md)
+- [cloud-intervention-package.md](cloud-intervention-package.md)

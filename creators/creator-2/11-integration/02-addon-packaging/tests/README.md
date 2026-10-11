@@ -7,3 +7,4 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
 подмену/лишние файлы/report flags и запрет рекурсивной разметки. Не native Dota.
 
 - [test_preparation_bundle.py](test_preparation_bundle.py)
+- [test_intervention_bundle.py](test_intervention_bundle.py)

@@ -87,7 +87,7 @@ def render(data):
     md += ['', 'Это доля отмеченных действий, не оценка времени или готовности кастомки.',
            'Готовые исходники не закрывают нативную проверку и приёмку второго создателя.', '',
            'Обновление: `python3 creators/creator-2/00-progress/tools/update_progress.py`.', '']
-    return {'PROGRESS.md': '\n'.join(md).encode('utf-8'), 'progress.svg': svg.getvalue(),
+    return {'PROGRESS.md': '\n'.join(md).encode('utf-8'), 'progress.svg': ('\n'.join(line.rstrip() for line in svg.getvalue().decode('utf-8').splitlines()) + '\n').encode('utf-8'),
             'progress.json': (json.dumps(data, ensure_ascii=False, indent=2) + '\n').encode('utf-8')}
 
 

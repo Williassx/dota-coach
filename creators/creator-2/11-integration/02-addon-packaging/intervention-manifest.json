@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_intervention",
+  "assets": [
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/layout/custom_game/intervention_request.xml",
+      "target": "content/panorama/layout/custom_game/intervention_request.xml"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/styles/custom_game/intervention_request.css",
+      "target": "content/panorama/styles/custom_game/intervention_request.css"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_state.js",
+      "target": "content/panorama/scripts/custom_game/intervention_request_state.js"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_panel.js",
+      "target": "content/panorama/scripts/custom_game/intervention_request_panel.js"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_state.js",
+      "target": "content/panorama/scripts/custom_game/orders_state.js"
+    }
+  ]
+}
