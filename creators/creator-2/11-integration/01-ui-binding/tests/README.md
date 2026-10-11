@@ -12,3 +12,5 @@
 
 - [match-observation.test.cjs](match-observation.test.cjs) — 15 сценариев реальных
   child panels: separate sources, lifecycle/reentry/partial bind/old owner.
+
+[mouse-targeting.test.cjs](mouse-targeting.test.cjs) — 20 VM интеграционных сценариев с real Targets/model/panel: expiry, clear-beforeDTO, immutable actor/move independence, clock/native reentry/dispose.

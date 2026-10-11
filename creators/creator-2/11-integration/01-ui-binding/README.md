@@ -9,6 +9,8 @@
 
 ## Действия
 
+- [x] Связать source-панель мыши с собственной проекцией Targets и снимать предложения для устаревшей цели.
+
 - [x] Связать публичных соперников и историю приказов в одну read-only source-сцену с общим lifecycle.
 - [x] Подключить панель запроса к единой локальной модели выбора через owned port и проверить source lifecycle.
 - [x] Связать карточки и запрос в одну source группу с единым выбором, staging и lifecycle.
@@ -93,3 +95,13 @@ Generatedlayout содержит3canonicalroots/9definitions; native/автоп�
 создаёт новые private instances. Explicit bind/dispose, без handlers/timers/transport.
 [Пакет](../02-addon-packaging/notes/match-observation-package.md) собирается из
 единственных канонических XML/JS/CSS. Это ещё не полный игровой HUD или приёмка Dota.
+
+## Локальная свежесть цели мыши
+
+[Дизайн](mouse-targeting-design.md) · [План](mouse-targeting-plan.md) ·
+[API](notes/mouse-targeting.md) · [Отчёт](reports/cloud-mouse-targeting.md).
+
+Один private Targets и existing MouseProposalPanel. Explicit update/select до DTO
+снимают старый target draft; expiry/dead/hidden при refresh/view снимают его,
+сохраняя actor. Move независим. Нет native hook, clock scheduling, authority/send
+или серверного эффекта; общий C1/native критерий и второй владелец открыты.

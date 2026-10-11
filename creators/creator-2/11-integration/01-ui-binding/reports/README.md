@@ -10,3 +10,5 @@
 - [cloud-intervention-selection.md](cloud-intervention-selection.md)
 - [cloud-intervention-port.md](cloud-intervention-port.md)
 - [cloud-intervention-screen.md](cloud-intervention-screen.md)
+
+- [cloud-mouse-targeting.md](cloud-mouse-targeting.md) — source composition и непроведённые native проверки.

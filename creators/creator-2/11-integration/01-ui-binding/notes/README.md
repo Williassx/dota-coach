@@ -10,3 +10,5 @@
 - [intervention-selection.md](intervention-selection.md)
 - [intervention-port.md](intervention-port.md)
 - [intervention-screen.md](intervention-screen.md)
+
+- [mouse-targeting.md](mouse-targeting.md) — API и явная свежесть proposal.

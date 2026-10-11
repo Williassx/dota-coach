@@ -11,3 +11,5 @@
 
 - [match_observation_binding.js](match_observation_binding.js) — общий owned lifecycle
   публичных соперников и истории, независимые источники, без нового transport.
+
+- [mouse_targeting_binding.js](mouse_targeting_binding.js) — existing Targets + MouseProposalPanel, явная свежесть цели и общий lifecycle.

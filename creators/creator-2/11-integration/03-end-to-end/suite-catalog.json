@@ -225,6 +225,11 @@
       "id": "python-c2-05-02",
       "framework": "python-unittest",
       "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests"
+    },
+    {
+      "id": "node-mouse-targeting",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/mouse-targeting.test.cjs"
     }
   ]
 }
