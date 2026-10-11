@@ -235,3 +235,7 @@ parser и plain адресатом/действием/отказом. 21VM+3XML+
 C2-11-02: отдельный source recipe text preview —6 canonical ресурсов/5ссылок,
 три definitions, exact inert TextEntry policy и actual packaged VM click.11 новых
 сценариев; full33suite760PASS. Native/ASR/общий runtime/C1/второй владелец открыты.
+
+C2-10-01: source handoff helper делегирует existingbuild/verify и создаёт отдельный
+immutable report для6fixedscreens; native поля явноnot_run/null/false.14RED→GREEN,
+full34suite774PASS. Маршрут локальномуCodex создан; Windows installation открыта.
