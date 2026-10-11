@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "metric": "checked_actions_over_all_actions",
-  "done": 32,
-  "total": 200,
-  "percent": 16.0,
+  "done": 33,
+  "total": 201,
+  "percent": 16.4,
   "sections": [
     {
       "number": 1,
@@ -159,9 +159,9 @@
       "number": 7,
       "title": "Экран матча по эскизу",
       "path": "07-match-screen/README.md",
-      "done": 1,
-      "total": 16,
-      "percent": 6.2,
+      "done": 2,
+      "total": 17,
+      "percent": 11.8,
       "subsections": [
         {
           "path": "07-match-screen/01-own-cards/README.md",
@@ -175,8 +175,8 @@
         },
         {
           "path": "07-match-screen/03-orders-timeline/README.md",
-          "done": 0,
-          "total": 5
+          "done": 1,
+          "total": 6
         }
       ]
     },
