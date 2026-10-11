@@ -241,13 +241,14 @@ def prepare_preparation(repository: Path, manifest: dict) -> list:
 def prepare_assets(repository: Path, manifest: dict) -> list:
     """Validate declared UI paths and read bounded source bytes without writing."""
     root = repository.resolve()
-    if isinstance(manifest, dict) and manifest.get("kind") in ("panorama_source_intervention_screen", "panorama_source_voice_text", "panorama_source_orders_timeline", "panorama_source_opponent_roster", "panorama_source_match_observation", "panorama_source_mouse_proposal"):
+    if isinstance(manifest, dict) and manifest.get("kind") in ("panorama_source_intervention_screen", "panorama_source_voice_text", "panorama_source_orders_timeline", "panorama_source_opponent_roster", "panorama_source_match_observation", "panorama_source_mouse_proposal", "panorama_source_mouse_targeting"):
         filename = {"panorama_source_intervention_screen": "intervention_screen_layout.py",
                     "panorama_source_voice_text": "voice_text_layout.py",
                     "panorama_source_orders_timeline": "orders_timeline_layout.py",
                     "panorama_source_opponent_roster": "opponent_roster_layout.py",
                     "panorama_source_match_observation": "match_observation_layout.py",
-                    "panorama_source_mouse_proposal": "mouse_proposal_layout.py"}[manifest["kind"]]
+                    "panorama_source_mouse_proposal": "mouse_proposal_layout.py",
+                    "panorama_source_mouse_targeting": "mouse_targeting_layout.py"}[manifest["kind"]]
         policy = REPOSITORY / "creators/creator-2/11-integration/02-addon-packaging/tools" / filename
         spec = importlib.util.spec_from_file_location("dota_coach_" + Path(filename).stem, policy)
         module = importlib.util.module_from_spec(spec)

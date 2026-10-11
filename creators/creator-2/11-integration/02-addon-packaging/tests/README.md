@@ -20,3 +20,5 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
   общей сцены, exact scopes/fingerprints и actual packaged group binding.
 
 [test_mouse_proposal_bundle.py](test_mouse_proposal_bundle.py) — 8 сценариев fixed mapping, topology, strict XML, source/output integrity и actual packaged VM.
+
+[test_mouse_targeting_bundle.py](test_mouse_targeting_bundle.py) — 8 сценариев: 6 reused guards и 2 package graph/actual context проверки.

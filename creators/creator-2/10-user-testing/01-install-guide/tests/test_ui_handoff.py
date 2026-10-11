@@ -63,10 +63,10 @@ class UIHandoffTests(unittest.TestCase):
         self.assertEqual(report['git']['head'], None)
         self.assertEqual(report['git']['dirty'], None)
 
-    def test_all_ten_fixed_screens_build_and_verify(self):
+    def test_all_eleven_fixed_screens_build_and_verify(self):
         expected = {'probe': (5, 4), 'hud': (13, 12), 'preparation': (15, 14),
                     'intervention': (6, 5), 'intervention-screen': (13, 12), 'voice-text': (6, 5),
-                    'orders-timeline': (5, 4), 'opponent-roster': (5, 4), 'match-observation': (10, 9), 'mouse-proposal': (5, 4)}
+                    'orders-timeline': (5, 4), 'opponent-roster': (5, 4), 'match-observation': (10, 9), 'mouse-proposal': (5, 4), 'mouse-targeting': (7, 6)}
         self.assertEqual(set(expected), set(self.helper.SCREENS))
         for screen, counts in expected.items():
             with self.subTest(screen=screen):

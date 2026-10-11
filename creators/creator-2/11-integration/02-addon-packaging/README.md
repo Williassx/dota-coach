@@ -10,6 +10,8 @@
 
 ## Действия
 
+- [x] Собрать и проверить source-пакет мыши с private наблюдением целей из 7 ресурсов.
+
 - [x] Собрать и проверить отдельный source-пакет предложений мыши из 5 ресурсов.
 
 - [x] Собрать и проверить общую source-сцену соперников и истории из 10 ресурсов и двух canonical XML inputs.
@@ -116,3 +118,7 @@ Labels и 7 контейнеров. Отдельная панель пяти с�
 
 [Mouse proposal recipe](mouse-proposal-manifest.json) ·
 [Инструкция](notes/mouse-proposal-package.md).
+
+[Mouse targeting recipe](mouse-targeting-manifest.json) ·
+[Дизайн](mouse-targeting-design.md) · [План](mouse-targeting-plan.md) ·
+[Инструкция](notes/mouse-targeting-package.md).

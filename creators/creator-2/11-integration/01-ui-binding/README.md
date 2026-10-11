@@ -105,3 +105,6 @@ Generatedlayout содержит3canonicalroots/9definitions; native/автоп�
 снимают старый target draft; expiry/dead/hidden при refresh/view снимают его,
 сохраняя actor. Move независим. Нет native hook, clock scheduling, authority/send
 или серверного эффекта; общий C1/native критерий и второй владелец открыты.
+
+[Отдельная упаковка](../02-addon-packaging/notes/mouse-targeting-package.md)
+включает dependency graph из 4 JS в generated layout; canonical XML не изменяется.

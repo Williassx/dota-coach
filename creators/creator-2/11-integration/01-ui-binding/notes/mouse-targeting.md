@@ -28,5 +28,6 @@ Missing/hidden/replaced/destroyed UI закрывает private модели. Bu
 native callbacks; old closed API не читает новые входы и не пишет новый bind.
 В разрушенный root не пишут native свойства; остальные живые Labels очищаются.
 Нет реальных click handlers, bridge, game API, lease, cancel/AI return или игровых
-гарантий last_hit/deny. Standalone mouse recipe пока включает только model+panel;
-координатор требует отдельной явной упаковки, не подменяет её неучтёнными JS.
+гарантий last_hit/deny. Standalone mouse recipe включает только model+panel. Координатор включён в
+[отдельный пакет](../../02-addon-packaging/notes/mouse-targeting-package.md),
+не подменяет standalone recipe неучтёнными JS.

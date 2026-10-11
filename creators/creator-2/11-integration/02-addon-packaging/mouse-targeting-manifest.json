@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_mouse_targeting",
+  "assets": [
+    {
+      "source": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/layout/custom_game/mouse_proposal.xml",
+      "target": "content/panorama/layout/custom_game/mouse_proposal.xml"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/styles/custom_game/mouse_proposal.css",
+      "target": "content/panorama/styles/custom_game/mouse_proposal.css"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/scripts/custom_game/mouse_proposal_state.js",
+      "target": "content/panorama/scripts/custom_game/mouse_proposal_state.js"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/scripts/custom_game/mouse_proposal_panel.js",
+      "target": "content/panorama/scripts/custom_game/mouse_proposal_panel.js"
+    },
+    {
+      "source": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/scripts/custom_game/targets_state.js",
+      "target": "content/panorama/scripts/custom_game/targets_state.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/mouse_targeting_binding.js",
+      "target": "content/panorama/scripts/custom_game/mouse_targeting_binding.js"
+    }
+  ]
+}

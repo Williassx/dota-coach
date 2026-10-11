@@ -14,3 +14,5 @@
 - [match-observation-package.md](match-observation-package.md).
 
 - [mouse-proposal-package.md](mouse-proposal-package.md).
+
+- [mouse-targeting-package.md](mouse-targeting-package.md).
