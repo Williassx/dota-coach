@@ -10,6 +10,7 @@
 
 ## Действия
 
+- [x] Собрать и проверить source-сцену карточек/запроса: 13 ресурсов, один контекст, fingerprints исходных XML.
 - [ ] После локального аудита согласовать manifest исходников и конечные game/content пути.
 - [ ] Собирать отдельный создаваемый каталог, сохраняя оригиналы в папках авторов.
 - [x] Создать и проверить отдельный source-пакет из 13 UI-ресурсов без установки.
@@ -51,3 +52,14 @@ shell. Verifier сверяет повторную композицию из curr
 
 Четвёртый fixed kind содержит6ресурсов, one inert Hud layout и3definitions.13новых
 сценариев; полный итог648. Пакет альтернативный, не общий runtime/установка/автопривязка.
+
+## Общая source-сцена карточек и запроса
+
+[Дизайн](intervention-screen-design.md) · [План](intervention-screen-plan.md) ·
+[Recipe](intervention-screen-manifest.json) · [Композиция](tools/README.md) ·
+[Команды](notes/intervention-screen-package.md) · [Отчёт](reports/cloud-intervention-screen-package.md).
+
+Пятый fixed kind собирает 13 ресурсов и две canonical XML scopes в одном контексте
+с восемью JS definitions. Raw input fingerprints и повторная композиция связывают
+пакет с текущими исходниками. Общий итог 701 source-проверка; bootstrap, компиляция,
+игровая геометрия, C1 authority и проверка второго владельца ещё открыты.

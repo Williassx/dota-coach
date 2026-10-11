@@ -241,6 +241,17 @@ def prepare_preparation(repository: Path, manifest: dict) -> list:
 def prepare_assets(repository: Path, manifest: dict) -> list:
     """Validate declared UI paths and read bounded source bytes without writing."""
     root = repository.resolve()
+    if isinstance(manifest, dict) and manifest.get("kind") == "panorama_source_intervention_screen":
+        policy = REPOSITORY / "creators/creator-2/11-integration/02-addon-packaging/tools/intervention_screen_layout.py"
+        spec = importlib.util.spec_from_file_location("dota_coach_intervention_screen_layout", policy)
+        module = importlib.util.module_from_spec(spec)
+        previous = sys.dont_write_bytecode
+        sys.dont_write_bytecode = True
+        try:
+            spec.loader.exec_module(module)
+        finally:
+            sys.dont_write_bytecode = previous
+        return module.prepare(root, manifest, read_source)
     if isinstance(manifest, dict) and manifest.get("kind") == "panorama_source_preparation":
         return prepare_preparation(root, manifest)
     if not isinstance(manifest, dict) or set(manifest) != {"schema_version", "kind", "assets"}:

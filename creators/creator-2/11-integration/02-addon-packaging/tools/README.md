@@ -4,3 +4,6 @@
 
 - [preparation_layout.py](preparation_layout.py) — точная policy и композиция;
   вызывается существующим build helper, не отдельный installer/CLI.
+
+- [intervention_screen_layout.py](intervention_screen_layout.py) — точная композиция
+  canonical roster/request scopes, также через существующий build helper.

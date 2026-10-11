@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_intervention_screen",
+  "assets": [
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/intervention_screen_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_intervention.xml",
+      "target": "content/panorama/layout/custom_game/coach_intervention.xml"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_intervention.css",
+      "target": "content/panorama/styles/custom_game/coach_intervention.css"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/styles/custom_game/coach_hud.css",
+      "target": "content/panorama/styles/custom_game/coach_hud.css"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_state.js",
+      "target": "content/panorama/scripts/custom_game/roster_cards_state.js"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards.js",
+      "target": "content/panorama/scripts/custom_game/roster_cards.js"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_state.js",
+      "target": "content/panorama/scripts/custom_game/orders_state.js"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/styles/custom_game/intervention_request.css",
+      "target": "content/panorama/styles/custom_game/intervention_request.css"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_state.js",
+      "target": "content/panorama/scripts/custom_game/intervention_request_state.js"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_panel.js",
+      "target": "content/panorama/scripts/custom_game/intervention_request_panel.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_panel_port.js",
+      "target": "content/panorama/scripts/custom_game/preparation_panel_port.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/intervention_selection_state.js",
+      "target": "content/panorama/scripts/custom_game/intervention_selection_state.js"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/intervention_screen_binding.js",
+      "target": "content/panorama/scripts/custom_game/intervention_screen_binding.js"
+    }
+  ],
+  "layout_inputs": [
+    {
+      "source": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/layout/custom_game/coach_hud.xml",
+      "root_id": "CoachRoster",
+      "host_id": "CoachInterventionRosterHost",
+      "output_root_id": "CoachInterventionRoster"
+    },
+    {
+      "source": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/layout/custom_game/intervention_request.xml",
+      "root_id": "ManualRequestRoot",
+      "host_id": "CoachInterventionManualHost",
+      "output_root_id": "ManualRequestRoot"
+    }
+  ]
+}
