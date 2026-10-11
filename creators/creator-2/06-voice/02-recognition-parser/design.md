@@ -37,6 +37,7 @@ fuzzy matching/угадывания. «не/нет», «и/или/потом/з�
 Plain DTO копируется из own data descriptors, без getters; bounded массив до5.
 Busy guard запрещает вложенные update/ingest; dispose во время Proxy trap остаётся
 окончательным. Внешние DTO/result mutation не меняют private snapshot/history.
-Proposal: utteranceId, rosterRevision, action, recipientIds, addressKind; это
+Proposal: utteranceId, rosterRevision, action, recipientIds, recipientNames,
+addressKind; имена копируются из того же snapshot для plain UI. Это
 намерение для будущего рассмотренного adapter. В нём нет PlayerID, epoch, lease,
 целей мира или серверного разрешения. Native API/сеть/таймеры не вызываются.

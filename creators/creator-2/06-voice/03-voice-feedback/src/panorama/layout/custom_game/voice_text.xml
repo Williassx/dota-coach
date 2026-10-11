@@ -1,0 +1,23 @@
+<root>
+    <styles><include src="file://{resources}/styles/custom_game/voice_text.css" /></styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/roster_cards_state.js" />
+        <include src="file://{resources}/scripts/custom_game/voice_text_state.js" />
+        <include src="file://{resources}/scripts/custom_game/voice_text_panel.js" />
+    </scripts>
+    <Panel id="VoiceTextRoot" class="CoachVoiceText" hittest="false" hittestchildren="true">
+        <Panel class="CoachVoiceTextWindow">
+            <Label class="CoachVoiceTitle" html="false" text="Команды тренера" />
+            <Label id="VoiceTextHint" html="false" text="Микрофон не подключён." />
+            <TextEntry id="VoiceTextInput" enabled="false" text="" />
+            <Panel class="CoachVoiceButtons">
+                <Button id="VoiceTextPreviewButton" enabled="false"><Label html="false" text="Разобрать текст" /></Button>
+                <Button id="VoiceTextClearButton" enabled="false"><Label html="false" text="Очистить" /></Button>
+            </Panel>
+            <Label id="VoiceTextStatus" html="false" text="Состав не получен." />
+            <Label id="VoiceTextNormalized" html="false" text="" />
+            <Label id="VoiceTextAddress" html="false" text="" />
+            <Label id="VoiceTextAction" html="false" text="" />
+        </Panel>
+    </Panel>
+</root>

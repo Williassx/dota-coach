@@ -1,0 +1,9 @@
+.CoachVoiceText { width: 100%; height: 100%; }
+.CoachVoiceTextWindow { width: 480px; flow-children: down; padding: 20px; background-color: #15242eee; }
+.CoachVoiceTextWindow Label { color: #e3e9ed; font-size: 18px; margin-bottom: 8px; }
+.CoachVoiceTitle { font-size: 26px; }
+#VoiceTextInput { width: 100%; height: 42px; margin-bottom: 12px; }
+.CoachVoiceButtons { flow-children: right; margin-bottom: 12px; }
+.CoachVoiceButtons Button { padding: 8px 12px; margin-right: 8px; background-color: #355263; }
+.CoachVoiceButtons Button:disabled { opacity: 0.35; }
+.CoachVoiceButtons Label { margin-bottom: 0px; }

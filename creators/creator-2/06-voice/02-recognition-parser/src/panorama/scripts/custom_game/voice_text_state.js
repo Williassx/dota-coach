@@ -89,7 +89,8 @@ var DotaCoachVoiceText = (function () {
                 var card = cards.filter(function (value) { return value.id === id; })[0];
                 if (!card || !card.availableForOrders) { return {reason: "address_unavailable"}; }
             }
-            return {kind: match.kind, ids: match.rows.map(function (row) { return row.id; })};
+            return {kind: match.kind, ids: match.rows.map(function (row) { return row.id; }),
+                names: match.rows.map(function (row) { return row.playerName; })};
         }
 
         return {
@@ -143,7 +144,7 @@ var DotaCoachVoiceText = (function () {
                     if (target.reason) { return rejected(target.reason, text); }
                     return result("ready", "none", text, {
                         utteranceId: event.utteranceId, rosterRevision: revision,
-                        action: action, recipientIds: target.ids, addressKind: target.kind
+                        action: action, recipientIds: target.ids, recipientNames: target.names, addressKind: target.kind
                     });
                 } catch (error) {
                     return closed ? result("disposed", "disposed", null, null) : rejected("invalid_event");

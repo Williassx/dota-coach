@@ -25,7 +25,7 @@ function plain(value) { return JSON.parse(JSON.stringify(value)); }
 test('load and explicit create are inert; final phrase creates local proposal only',()=>{
     const {model,calls}=fixture(); const result=model.ingest(event());
     assert.equal(result.status,'ready'); assert.equal(result.reason,'none');
-    assert.deepEqual(plain(result.proposal),{utteranceId:'speech-1',rosterRevision:1,action:'farm',recipientIds:['a'],addressKind:'player'});
+    assert.deepEqual(plain(result.proposal),{utteranceId:'speech-1',rosterRevision:1,action:'farm',recipientIds:['a'],recipientNames:['Альфа'],addressKind:'player'});
     assert.deepEqual(calls,[]);
 });
 test('four actions and singular/plural exact vocabulary',()=>{
@@ -147,4 +147,14 @@ test('dispose during source or event descriptor trap is permanent',()=>{
         const result=mode==='update'?model.update(data):model.ingest(data); if(mode==='update') assert.equal(result,false); else {assert.equal(result.status,'disposed');assert.equal(result.proposal,null);}
         assert.equal(model.view().status,'disposed'); assert.equal(model.update(snapshot(3)),false); assert.equal(model.ingest(event()).status,'disposed'); model.dispose();
     }
+});
+
+test('proposal captures copied display names from the resolved snapshot',()=>{
+    const {model}=fixture([player(),player('b','<b>Бета</b>',2)]);
+    const result=model.ingest(event('команда фармите'));
+    assert.deepEqual(plain(result.proposal.recipientNames),['Альфа','<b>Бета</b>']);
+    result.proposal.recipientNames[0]='mutated';
+    assert.deepEqual(plain(model.ingest(event('команда фармите',{utteranceId:'s2'})).proposal.recipientNames),['Альфа','<b>Бета</b>']);
+    assert.equal(model.update(snapshot(2,[player('a','Новый')])),true);
+    assert.equal(result.proposal.recipientNames[1],'<b>Бета</b>');
 });
