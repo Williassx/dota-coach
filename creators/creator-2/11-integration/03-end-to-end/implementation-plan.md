@@ -9,6 +9,13 @@ diagnostic в log; исправить только перенаправлени�
 Целевые17runner tests, full Windows catalog, ссылка/graph/diff/final critic,
 журнал/ledger/main push. Symlink failures/skips/native/C1 остаются отдельными.
 
+Directory redirect acceptance: проверить наличие локальной Linux среды и
+возможность Windows junction без изменения прав. Добавить actual redirect
+source/output/nested discovery tests в tests/test_directory_redirect_guards.py,
+запустить3targeted tests и обязательный полный runner. Production guards и
+existing file-symlink tests не менять. Отчёт/links/graph/final critic/Git по
+прежнему порядку; полный verified=false сохранять при оставшихся failures/skips.
+
 1. Зафиксировать 34 существующих набора и добавить отдельный набор тестов помощника
    в `suite-catalog.json`. Создать тесты каталога, summaries, границ вывода,
    параметров, неперезаписи, timeout/ошибок, полного и целевого CLI; получить RED.

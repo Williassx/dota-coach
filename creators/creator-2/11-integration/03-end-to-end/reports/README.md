@@ -8,3 +8,6 @@
 
 [Windows runner](windows-runner-2026-10-11.md) — taskkill в двух режимах,
 regression диагностики и фактический full verified=false.
+
+[Actual Windows reparse](windows-reparse-2026-10-11.md) — три junction guards,
+сохранность external fixture и отдельный открытый file-symlink coverage.

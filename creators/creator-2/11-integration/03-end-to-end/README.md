@@ -4,6 +4,8 @@
 **Статус:** частично выполнено: единый прогон исходников готов; клиентская цепочка открыта.
 
 [Windows runner: timeout проверен, полный прогон остаётся verified=false](reports/windows-runner-2026-10-11.md).
+
+[Actual Windows junction: три guard сценария PASS, file symlink открыт](reports/windows-reparse-2026-10-11.md).
 **Зависимости:** [C2-11-02](../02-addon-packaging/README.md), [C2-07-03](../../07-match-screen/03-orders-timeline/README.md), [C2-08-03](../../08-analysis-ui/03-post-match/README.md).
 **Рабочая папка:** `creators/creator-2/11-integration/03-end-to-end/`.
 

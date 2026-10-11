@@ -29,3 +29,10 @@ taskkill. Ошибка завершения owned process tree сохраняе�
 process.kill не подтверждает завершение потомков. Sandbox Access denied нельзя
 объявлять production bug или обходить изменением ОС/прав. Проверка вне sandbox
 разрешается только для собственных тестовых процессов.
+
+Отдельная проверка directory redirects использует настоящие Windows junction
+или POSIX directory symlink в принадлежащих тесту временных каталогах. Source,
+output ancestor и nested unittest discovery обязаны отказать до чтения/записи
+через redirect. Existing file-symlink tests сохраняются; junction PASS не
+подтверждает их выполнение. Cleanup удаляет только проверенную ссылку/reparse
+directory без обхода target и проверяет сохранность внешнего fixture.

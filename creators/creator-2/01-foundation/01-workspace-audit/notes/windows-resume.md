@@ -106,6 +106,12 @@ Node-only mock исправлен без отключения taskkill preflight
 Не менять ОС/Developer Mode/symlink privilege ради зелёного статуса. Native
 input/capture, C1 bootstrap/lease/AI return и full verification остаются открытыми.
 
+Дополнительно проверены actual Windows junction guards для source/output/nested
+tests directory:3PASS без изменения прав. Existing file-symlink tests сохранены;
+новый full201328Z46/752/6failed, own suite20tests18passed2symlink errors.
+WSL не предоставил подтверждённую local Linux среду; ничего не устанавливалось.
+[Reparse evidence и ограничения](../../../11-integration/03-end-to-end/reports/windows-reparse-2026-10-11.md).
+
 Все действия отдельно в creators/creator-2/00-action-log/YYYY-MM-DD.md, UTC.
 Новые исходники сначала в библиотеке создателя2. Прочие отделы/контракты не менять.
 Чекбоксы/graph только по evidence; source checks не заменяют native/second owner.

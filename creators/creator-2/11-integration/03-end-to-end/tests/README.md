@@ -9,3 +9,7 @@
 Проверка полноты сравнивает каталог с Node/Python test paths в обеих библиотеках.
 
 [Windows timeout/diagnostics и оставшиеся symlink errors](../reports/windows-runner-2026-10-11.md).
+
+[test_directory_redirect_guards.py](test_directory_redirect_guards.py) — ещё три
+actual directory redirect проверки; Windows junction/POSIX directory symlink.
+Всего20tests в suite. [Windows3PASS и ограничения](../reports/windows-reparse-2026-10-11.md).
