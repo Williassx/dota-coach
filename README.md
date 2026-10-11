@@ -25,7 +25,7 @@
   [пакет из 13 исходных ресурсов](creators/creator-2/11-integration/02-addon-packaging/README.md).
 - [Журнал выполненных действий Codex](creators/creator-2/00-action-log/README.md).
 - [Продолжение создателя 2 в локальном Codex на Windows](creators/creator-2/01-foundation/01-workspace-audit/notes/windows-start.md).
-- **[Агенты.md](Агенты.md)** — быстрый поиск 172 ролей по номеру, категории и задаче.
+- **[Агенты.md](Агенты.md)** — быстрый поиск 175 ролей по номеру, категории и задаче.
 - [Итоговые решения из диалога](docs/decisions.md) — требования, предложения и открытые вопросы.
 - [Замысел игры](docs/project-brief.md) — сценарий тренера и цифровые игроки.
 - [Поэтапный план](docs/roadmap.md) — 14 этапов и контрольные результаты.

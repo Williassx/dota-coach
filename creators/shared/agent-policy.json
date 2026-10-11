@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "mode": "economy",
+  "dispatcher_role": 173,
+  "execution": {
+    "conversation_subagents": 0,
+    "default_implementation_subagents": 0,
+    "max_implementation_subagents_without_new_user_request": 1,
+    "require_independent_deliverable": true,
+    "reuse_existing_agents": true,
+    "one_editor_per_file": true
+  },
+  "review": {
+    "trigger": "subproject_complete",
+    "default_critics": 1,
+    "during_conversation": false,
+    "during_planning": false,
+    "during_each_subtask": false,
+    "extra_critics": "only_for_unresolved_specific_findings_or_explicit_user_request"
+  },
+  "context": {
+    "default_fork_turns": "none",
+    "brief_soft_limit_chars": 1800,
+    "review_result_soft_limit_chars": 2200,
+    "tool_output_soft_limit_tokens": 2000,
+    "repeat_full_skill_reads": false,
+    "send_full_history_by_default": false,
+    "read_changed_files_and_relevant_dependencies_only": true
+  },
+  "verification": {
+    "targeted_after_change": true,
+    "required_checks_before_publication": true,
+    "repeat_broad_suite_only_after_new_code_or_unresolved_failure": true,
+    "never_skip_required_checks_for_token_savings": true
+  },
+  "models": {
+    "parent_model_change": "not_available_through_repository_policy",
+    "delegated_model_default": "inherit_parent",
+    "lower_cost_model": "use_only_if_available_and_authorized_for_the_specific_task"
+  },
+  "usage": {
+    "ledger": "agent-usage.jsonl",
+    "record_once_per_completed_task": true,
+    "missing_token_or_cost_values": null,
+    "invent_measurements": false,
+    "currency": null,
+    "hard_token_cap": null,
+    "provider_limit_change": "not_available_through_repository_policy"
+  }
+}

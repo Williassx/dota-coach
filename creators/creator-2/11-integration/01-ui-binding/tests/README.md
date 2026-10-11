@@ -6,3 +6,4 @@
 - [preparation-flow.test.cjs](preparation-flow.test.cjs)
 - [panel-port.test.cjs](panel-port.test.cjs)
 - [preparation-binding.test.cjs](preparation-binding.test.cjs)
+- [intervention-selection.test.cjs](intervention-selection.test.cjs)

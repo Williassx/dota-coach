@@ -61,3 +61,11 @@ refresh/suspend, общий lifecycle и статус проверены реа�
 Shell/style/manifest общей подготовки теперь собираются через
 [пакет C2-11-02](../02-addon-packaging/notes/preparation-package.md).
 Generatedlayout содержит3canonicalroots/9definitions; native/автопривязка открыты.
+
+## Локальная связь карточки и запроса
+
+[Дизайн](intervention-selection-design.md) · [План](intervention-selection-plan.md) ·
+[Подключение](notes/intervention-selection.md) · [Проверка](reports/cloud-intervention-selection.md).
+
+Один private Roster/Requests, общий gate и сохранение capturedactor: 27 сценариев,
+полный облачный итог 635. Панели ещё не подключены; серверный критерий остаётся открытым.
