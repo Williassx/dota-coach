@@ -40,6 +40,20 @@ DXGI_ERROR_DEVICE_REMOVED первого прогона записан
 отдельно от ошибки screenshot; драйвер не менялся. Реальный C1 обработчик
 ещё отсутствует; fake server/sender не добавлять.
 
+В следующем продолжении SessionFlags=1 подтвердил unlocked Windows session;
+capture timeout воспроизведён в пустом Блокноте и после JS reset. Input geometry
+недоступна даже для его UIA кнопки. Не повторять те же launch/capture попытки
+без нового диагностического основания; не считать Hidden доказанной причиной.
+Источник WTS и завершение собственных процессов записаны в Windows отчёте.
+
+Выполнен независимый step5: [native mouse-targeting7/6 план](../../../05-intervention-ui/02-mouse-targeting/native-plan.md).
+Source 2 root id error исправлена anonymous host с прежним MouseProposalRoot
+внутри. Новый addon dota_coach_c2_mouse_r1_20261011 содержит семь скомпилированных
+UI ресурсов; карты/bootstrap/bind там пока нет. Старый неудачный addon сохранён.
+Source bundles5/4 и7/6 пересозданы/проверены; probe policy не менялась.
+Full source run46/752 имеет6failed suites, verified=false; не объявлять regression
+или mouse runtime зелёными. Точные [команды/открытые проверки](../../../05-intervention-ui/02-mouse-targeting/reports/native-mouse-2026-10-11.md).
+
 ## Сначала подтвердить среду и сохранить изменения
 
 1. Определить фактические OS/shell/cwd. Начинать локальные команды только на Windows

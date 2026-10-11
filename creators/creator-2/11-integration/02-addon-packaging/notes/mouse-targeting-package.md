@@ -6,6 +6,8 @@
 Из корня: `python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen mouse-targeting`.
 Fixed kind panorama_source_mouse_targeting: 7 resources/6 XML links/7 IDs.
 Standalone mouse-proposal остаётся5/4. Это альтернативные manifests, не overlay.
+11 октября native компиляция 7/6 подтверждена в отдельном аддоне после исправления
+anonymous layout host; [Windows результат](../../../05-intervention-ui/02-mouse-targeting/reports/native-mouse-2026-10-11.md).
 Canonical files принадлежат своим библиотекам, copies только generated output.
 
 Canonical двухскриптовый mouse XML проверяется existing standalone validator.
@@ -15,6 +17,8 @@ sources, включая whitespace changes. Exact mapping/graph/DTD/link/output 
 сохранены. Helper не устанавливает и не запускает игру, outputs immutable.
 
 В правильном native контексте explicit bind MouseProposalRoot по API с now/maxAgeMs;
+MouseProposalRoot теперь единственный ребёнок безымянного XML host: получать
+компонент по ID, не передавать внешний context panel. Семь ID и порядок Labels сохранены.
 clock должен быть реальным локальным источником milliseconds. Оба alternative layouts
 inert: auto-bind/handlers/bridge отсутствуют. VM не доказывает native clock/обзор,
 identity/hittest/input authorization/lease/gameplay/AI return или приёмку владельца.

@@ -21,7 +21,11 @@ def validate_layout(payload):
     """Validate canonical input without changing older XML policies."""
     layout = policy.parse(payload, extra_tags={'Panel': policy.ATTRS['Panel'] | {'visible'}})
     policy.dependencies(layout, SCRIPTS, ('mouse_proposal.css',))
-    group = layout.find('Panel')
+    host = layout.find('Panel')
+    if (host.attrib != {'class': 'MouseProposalHost', 'hittest': 'false', 'hittestchildren': 'true'} or
+            len(host) != 1 or host[0].tag != 'Panel'):
+        raise ValueError('Exact anonymous non-hittable native mouse host required')
+    group = host[0]
     names = ('MouseActor', 'MouseAction', 'MouseTarget', 'MouseState', 'MouseLease', 'MouseHint')
     if (group.attrib != {'id': 'MouseProposalRoot', 'class': 'MouseProposal', 'visible': 'false'} or len(group) != 6):
         raise ValueError('Exact hidden mouse proposal root required')

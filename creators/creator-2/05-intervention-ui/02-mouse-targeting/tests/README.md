@@ -16,4 +16,5 @@ hook, native gameplay, lease или подтверждения реальног�
 
 [mouse-panel.test.cjs](mouse-panel.test.cjs) — 13 VM сценариев: четыре действия,
 фиксированный адресат, plain labels, clear-beforeDTO, ownership/reentry/dispose.
-[test_mouse_layout.py](test_mouse_layout.py) — 2 проверки исходного графа/loader.
+[test_mouse_layout.py](test_mouse_layout.py) — 3 проверки исходного графа/loader,
+включая anonymous XML root для Source 2 при сохранении 7 component IDs.

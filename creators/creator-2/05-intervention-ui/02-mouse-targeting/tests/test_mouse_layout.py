@@ -8,7 +8,7 @@ PANORAMA = Path(__file__).resolve().parents[1] / 'src/panorama'
 class MouseLayout(unittest.TestCase):
     def test_seven_ids_six_empty_plain_labels_no_handlers(self):
         root = ET.parse(PANORAMA / 'layout/custom_game/mouse_proposal.xml').getroot()
-        panel = root.find('Panel')
+        panel = root.find('.//*[@id="MouseProposalRoot"]')
         self.assertEqual(panel.attrib, {'id':'MouseProposalRoot','class':'MouseProposal','visible':'false'})
         names = ['MouseActor','MouseAction','MouseTarget','MouseState','MouseLease','MouseHint']
         self.assertEqual(len(panel),6)
@@ -18,6 +18,15 @@ class MouseLayout(unittest.TestCase):
             self.assertEqual(len(node),0)
         self.assertEqual(len([n for n in root.iter() if 'id' in n.attrib]),7)
         self.assertFalse(any(k.startswith('on') for n in root.iter() for k in n.attrib))
+
+    def test_native_layout_root_is_anonymous_and_contains_only_mouse_component(self):
+        root = ET.parse(PANORAMA / 'layout/custom_game/mouse_proposal.xml').getroot()
+        host = root.find('Panel')
+        self.assertNotIn('id', host.attrib, 'Source 2 forbids id on the XML root panel')
+        self.assertEqual(host.attrib, {'class':'MouseProposalHost','hittest':'false','hittestchildren':'true'})
+        self.assertEqual(len(host), 1)
+        self.assertEqual(host[0].tag, 'Panel')
+        self.assertEqual(host[0].get('id'), 'MouseProposalRoot')
 
     def test_ordered_existing_dependencies_and_inert_loader(self):
         root = ET.parse(PANORAMA / 'layout/custom_game/mouse_proposal.xml').getroot()

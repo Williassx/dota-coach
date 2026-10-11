@@ -1,5 +1,41 @@
 # Windows foundation — 11 октября 2026 года
 
+## Продолжение: захват вне Dota и нативный пакет мыши
+
+Гипотеза о WindowStyle Hidden проверена запуском установленного dota2.exe
+через штатный sky.launch_app. Захват снова получил FrameArrived timeout;
+VConsole default launch не ответил. Запуск с одними другими аргументами не
+считается контролируемым доказательством влияния Hidden: причина не установлена.
+Этот собственный PID4120 не завершился после Alt+F4, затем остановлен по
+сохранённому PID с проверкой executable path. Аддон в этом запуске не проверен.
+
+Системный read-only WTSQuerySessionInformationW(WTSSessionInfoEx) в18:45:31UTC
+показал Windows build19045, session1, SessionFlags=1, unlocked. Это не вывод
+из одного наличия LockApp: согласно [Microsoft WTSINFOEX_LEVEL1_W](https://learn.microsoft.com/en-us/windows/win32/api/wtsapi32/ns-wtsapi32-wtsinfoex_level1_w)
+значение1 означает unlocked на этой версии. Имена пользователя/домена не
+выводились и не сохранялись. Блокировка сессии этим прогоном не подтверждена.
+
+Независимый пустой Блокнот тоже получил window capture/FrameArrived timeout,
+в том числе после reset JS kernel и нового импорта @oai/sky. UI Automation
+показал его текстовый редактор/системные кнопки, но click(element_index) вернул
+coordinate input geometry is unavailable. Созданное пустое окно закрыто
+штатным Alt+F4 и проверено отсутствующим. Обход capture/клики по выдуманным
+координатам не выполнялись; текущая причина ошибки capture остаётся открытой.
+Этот результат сужает диагностику: сбой воспроизводится вне Dota, а не только
+в Panorama. Настройки ОС/безопасности/драйвер не менялись.
+
+Выполнен независимый windows-resume step5: [native план мыши7/6](../../../05-intervention-ui/02-mouse-targeting/native-plan.md).
+Native compiler обнаружил запрещённый id у XML root mouse_proposal.xml.
+Минимальная коррекция anonymous host/component, RED→GREEN и новый fixed7/6
+подтверждены реальным compile exit0 и семью outputs. [Подробный результат](../../../05-intervention-ui/02-mouse-targeting/reports/native-mouse-2026-10-11.md).
+Native bind/hittest/clock/lease не выдаются за пройденные. Probe policy/JS не менялись.
+
+После XML/validator исправления выполнен полный source runner46/752: verified=false,
+failed suites python-c2-01-01, python-c2-01-02, python-c2-03-01, python-c2-11-02,
+python-c2-10-01, python-c2-11-03. Новый отчёт source-checks-20261011T185649Z-71eb61;
+актуальные ограничения и дополнительный map-audit failure записаны в mouse отчёте.
+Результаты ниже сохранены как предыдущие этапы, не заменяют этот свежий source run.
+
 ## Продолжение 18:12 UTC: Workshop Tools и пределы проверки ввода
 
 В отдельном прогоне с `-tools` клиент загрузил ту же template_map и показал

@@ -70,13 +70,17 @@ class MouseProposalBundle(unittest.TestCase):
 
     def test_exact_ordered_plain_labels_and_hidden_initial_root(self):
         for field,value in [('id','Wrong'),('visible','true'),('onload','run()')]:
-            self.reject(LAYOUT,lambda r,k=field,v=value:r.find('Panel').set(k,v))
+            self.reject(LAYOUT,lambda r,k=field,v=value:r.find('.//*[@id="MouseProposalRoot"]').set(k,v))
         for field,value in [('id','MouseAction'),('html','true'),('text','stale')]:
             self.reject(LAYOUT,lambda r,k=field,v=value:r.find('.//*[@id="MouseActor"]').set(k,v))
         self.reject(LAYOUT,lambda r:r.find('.//*[@id="MouseActor"]').append(ET.Element('Label',{'html':'false'})))
         self.reject(LAYOUT,lambda r:r.find('Panel').insert(0,r.find('Panel')[-1]))
         self.reject(LAYOUT,lambda r:r.find('Panel').remove(r.find('Panel')[-1]))
         self.reject(LAYOUT,lambda r:r.find('Panel').append(ET.Element('Button',{'enabled':'false'})))
+
+    def test_rejects_identified_native_root_and_changed_host_input_policy(self):
+        for field,value in [('id','MouseProposalRoot'),('hittest','true'),('hittestchildren','false'),('class','OtherHost')]:
+            self.reject(LAYOUT,lambda r,k=field,v=value:r.find('Panel').set(k,v))
 
     def test_exact_ordered_dependencies_and_one_inert_hud_loader(self):
         self.reject(LAYOUT, lambda r: r.find('scripts').insert(0, r.find('scripts')[-1]))

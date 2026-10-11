@@ -8,6 +8,12 @@
 proposeTarget(Targets.view()), reset(), refresh() возвращают bool. view() — copy,
 null во время операции, empty closed после dispose(). isDisposed() проверяет дерево.
 
+XML root — безымянный MouseProposalHost: Source 2 не допускает id у корневой
+панели layout. Интегратор получает внутренний компонент через
+`$.GetContextPanel().FindChildTraverse("MouseProposalRoot")` и передаёт его в bind.
+Внешний host hittest=false/hittestchildren=true; это конфигурация, не пройденная
+нативная проверка попадания клика. Автоматического bind по-прежнему нет.
+
 Actor нельзя сменить до reset; это предварительно выбранный виртуальный игрок,
 не доказанная identity героя. Новый клик заменяет draft, ошибочный очищает его.
 Четыре подписи: движение, атака героя, добивание вражеского крипа, денай союзного.

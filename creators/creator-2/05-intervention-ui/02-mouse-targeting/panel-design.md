@@ -12,6 +12,11 @@ transport не добавлять. Все действия создают лиш
 
 Root MouseProposalRoot initial visible=false, шесть пустых plain Labels в порядке
 MouseActor/MouseAction/MouseTarget/MouseState/MouseLease/MouseHint. Всего 7 ID.
+Нативное уточнение 11 октября: XML layout имеет внешний безымянный
+MouseProposalHost (hittest=false, hittestchildren=true), единственный ребёнок —
+прежний MouseProposalRoot. Source 2 запрещает id у корневой панели layout.
+Host занимает viewport; explicit bind получает внутренний компонент по ID,
+не $.GetContextPanel() напрямую. Наличие hittest атрибутов не доказывает ввод.
 Перед DTO parent скрыт, все тексты пусты; busy до native/traps. Required nodes
 проверяются на missing/hidden/replaced/invalid, включая isDisposed. Distinct nodes,
 root ownership до discovery, cleanup до освобождения, старый binding не пишет
