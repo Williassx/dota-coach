@@ -180,6 +180,16 @@
       "id": "node-orders-timeline",
       "framework": "node-test",
       "path": "creators/creator-2/07-match-screen/03-orders-timeline/tests/orders-timeline.test.cjs"
+    },
+    {
+      "id": "node-orders-timeline-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/07-match-screen/03-orders-timeline/tests/orders-timeline-panel.test.cjs"
+    },
+    {
+      "id": "python-c2-07-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/07-match-screen/03-orders-timeline/tests"
     }
   ]
 }

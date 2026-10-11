@@ -5,3 +5,5 @@
 [Родитель](<../README.md>).
 
 [История отображения](history.md) — API, evidence и ограничения.
+
+[Source-панель](panel.md) — явный binding и display gate.

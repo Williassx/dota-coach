@@ -249,3 +249,11 @@ full34suite774PASS. Маршрут локальномуCodex создан; Windo
 отображаемых приказов: захваченный адресат, отдельные стадии, explicit потеря
 отслеживания, bounded64/drop counter. 20 новых сценариев; full36suites/810PASS.
 Панель справа, общий HUD, согласованный источник/server и native приёмка открыты.
+
+Для [C2-07-03](07-match-screen/03-orders-timeline/README.md) добавлена explicit source
+панель последних6 записей с отдельными hiddenStored/droppedEvents и lifecycle guards.
+14VM+2XML новых сценария; full38suites/826PASS. Watcher/transport нет; source package,
+общий HUD, читаемость/scroll/hittest в движке и другой владелец остаются открытыми.
+
+После финального review исправлена проверка дерева в isDisposed панели C2-07-03;
+добавлен regression case. Итоговый full38suites/827PASS.

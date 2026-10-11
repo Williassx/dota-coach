@@ -1,0 +1,20 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/orders_timeline.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/orders_timeline_state.js" />
+        <include src="file://{resources}/scripts/custom_game/orders_timeline_panel.js" />
+    </scripts>
+    <Panel id="OrdersTimelineRoot" class="OrdersTimeline" visible="false">
+        <Label id="TimelineTitle" class="TimelineTitle" html="false" text="" />
+        <Label id="TimelineSummary" class="TimelineSummary" html="false" text="" />
+        <Label id="TimelineHint" class="TimelineHint" html="false" text="" />
+        <Label id="TimelineEvent0" class="TimelineEvent" html="false" text="" />
+        <Label id="TimelineEvent1" class="TimelineEvent" html="false" text="" />
+        <Label id="TimelineEvent2" class="TimelineEvent" html="false" text="" />
+        <Label id="TimelineEvent3" class="TimelineEvent" html="false" text="" />
+        <Label id="TimelineEvent4" class="TimelineEvent" html="false" text="" />
+        <Label id="TimelineEvent5" class="TimelineEvent" html="false" text="" />
+    </Panel>
+</root>

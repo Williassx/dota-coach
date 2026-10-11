@@ -1,0 +1,30 @@
+.OrdersTimeline {
+    width: 380px;
+    height: 520px;
+    flow-children: down;
+    overflow: squish scroll;
+    horizontal-align: right;
+    vertical-align: center;
+    background-color: #14212eee;
+    padding: 14px;
+}
+.TimelineTitle {
+    width: 100%;
+    color: #f4ddb0;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.TimelineSummary, .TimelineHint {
+    width: 100%;
+    color: #b3c6d8;
+    font-size: 14px;
+    white-space: normal;
+    margin-bottom: 8px;
+}
+.TimelineEvent {
+    width: 100%;
+    color: #eef2f6;
+    font-size: 16px;
+    white-space: normal;
+    margin-bottom: 12px;
+}
