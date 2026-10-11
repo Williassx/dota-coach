@@ -20,6 +20,7 @@ SCREENS = {
     'intervention-screen': (PACKAGING + 'intervention-screen-manifest.json', 'panorama_source_intervention_screen'),
     'voice-text': (PACKAGING + 'voice-text-manifest.json', 'panorama_source_voice_text'),
     'orders-timeline': (PACKAGING + 'orders-timeline-manifest.json', 'panorama_source_orders_timeline'),
+    'opponent-roster': (PACKAGING + 'opponent-roster-manifest.json', 'panorama_source_opponent_roster'),
 }
 
 

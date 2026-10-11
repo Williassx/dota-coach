@@ -271,3 +271,9 @@ Unknown отличается от0, invalid/stale очищают источни�
 Proxy length coercion: воспроизведено regressiontest, исправлено без coercions.
 [Отчёт](07-match-screen/02-opponent-cards/reports/cloud-public-roster.md).
 Sourcepackage/commonHUD/C1/native/другой владелец открыты. График38/205(18.5%).
+
+C2-11-02: восьмой фиксированный source-пакет публичных соперников, 5 ресурсов / 4
+ссылки и handoff selector `opponent-roster`. Exact slot ownership и actual packaged
+контекст проверены. 8 новых сценариев, полный итог 41 suites / 875 PASS; один
+финальный критик без существенных замечаний. [Отчёт](11-integration/02-addon-packaging/reports/cloud-opponent-roster-package.md).
+График 39/206 (18.9%). C1/common HUD/Windows/native/второй владелец открыты.

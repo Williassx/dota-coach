@@ -12,3 +12,6 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
 - [test_voice_text_bundle.py](test_voice_text_bundle.py)
 
 - [test_orders_timeline_bundle.py](test_orders_timeline_bundle.py).
+
+- [test_opponent_roster_bundle.py](test_opponent_roster_bundle.py) — 8 сценариев
+  публичного состава, включая actual packaged XML/JS в одном VM-контексте.

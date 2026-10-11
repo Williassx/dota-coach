@@ -12,3 +12,7 @@
   использует общую strict XML policy с отдельным trusted TextEntry разрешением.
 
 - [orders_timeline_layout.py](orders_timeline_layout.py) — fixed five-resource history; общая XML policy с local Panel.visible разрешением.
+
+- [opponent_roster_layout.py](opponent_roster_layout.py) — пять фиксированных ресурсов
+  публичного состава; проверяет точный порядок карточек и принадлежность их подписей,
+  использует прежний XML parser с локальным разрешением Panel.visible.

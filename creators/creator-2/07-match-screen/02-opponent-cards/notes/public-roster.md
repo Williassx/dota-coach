@@ -41,6 +41,7 @@ isDisposed. Наблюдателя нет; интегратор обязан д�
 Root ownership резервируется до discovery и не передаётся во время cleanup.
 Старая closed API не читает snapshots и не пишет в свежий binding.
 
-Отдельная source-панель не включена в fixed packaging registry или общий HUD.
+Отдельная source-панель включена в [фиксированный пакет](../../../11-integration/02-addon-packaging/notes/opponent-roster-package.md)
+и handoff selector `opponent-roster`. Общий HUD пока не подключён.
 Нативная компиляция/читаемость/hittest, серверные права, реальный public roster
 и проверка второго владельца не проведены.

@@ -10,3 +10,5 @@ Source integrity не заменяет установку/компиляцию/r
 - [cloud-voice-text-package.md](cloud-voice-text-package.md)
 
 - [cloud-orders-timeline-package.md](cloud-orders-timeline-package.md).
+
+- [cloud-opponent-roster-package.md](cloud-opponent-roster-package.md).

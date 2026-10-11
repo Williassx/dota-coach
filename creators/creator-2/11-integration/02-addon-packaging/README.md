@@ -10,6 +10,7 @@
 
 ## Действия
 
+- [x] Собрать и проверить отдельный source-пакет публичных соперников из 5 ресурсов.
 - [x] Собрать и проверить отдельный source-пакет истории приказов из 5 ресурсов.
 - [x] Собрать и проверить source-сцену карточек/запроса: 13 ресурсов, один контекст, fingerprints исходных XML.
 - [x] Собрать и проверить отдельный source-пакет text preview из 6 ресурсов.
@@ -85,3 +86,15 @@ shell. Verifier сверяет повторную композицию из curr
 Седьмой fixed kind: пять ресурсов, два definitions, четыре resource links, exact inert
 layout последних записей. Старые defaults сохраняются. Source-only alternative Hud,
 без bootstrap/transport/native установки. Handoff screen: orders-timeline.
+
+## Source-пакет публичных соперников
+
+[Дизайн](opponent-roster-design.md) · [План](opponent-roster-plan.md) ·
+[Recipe](opponent-roster-manifest.json) · [Команды](notes/opponent-roster-package.md) ·
+[Отчёт](reports/cloud-opponent-roster-package.md).
+
+Восьмой фиксированный вариант: пять ресурсов и четыре ссылки, 17 пустых plain
+Labels и 7 контейнеров. Отдельная панель пяти соперников сохраняет канонические
+исходники C2-07-02. Проверены порядок, принадлежность полей карточкам, целостность
+и поведение упакованного контекста. Handoff selector: `opponent-roster`.
+Серверная политика доступа, общий HUD, установка, запуск Dota и второй владелец открыты.

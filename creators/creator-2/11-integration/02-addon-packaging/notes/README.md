@@ -8,3 +8,5 @@
 - [voice-text-package.md](voice-text-package.md)
 
 - [orders-timeline-package.md](orders-timeline-package.md).
+
+- [opponent-roster-package.md](opponent-roster-package.md).
