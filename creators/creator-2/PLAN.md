@@ -239,3 +239,8 @@ C2-11-02: отдельный source recipe text preview —6 canonical ресу�
 C2-10-01: source handoff helper делегирует existingbuild/verify и создаёт отдельный
 immutable report для6fixedscreens; native поля явноnot_run/null/false.14RED→GREEN,
 full34suite774PASS. Маршрут локальномуCodex создан; Windows installation открыта.
+
+В [C2-11-03](11-integration/03-end-to-end/README.md) реализован единый каталог
+и запуск source checks: полный прогон 35suites/790PASS, partial явно обозначается,
+логи отдельно. Это вспомогательная source-проверка; клиентская сквозная цепочка,
+сервер и нативная приёмка обоими владельцами остаются открытыми.

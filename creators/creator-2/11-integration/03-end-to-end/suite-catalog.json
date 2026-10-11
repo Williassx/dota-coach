@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "suites": [
+    {
+      "id": "node-probe",
+      "framework": "node-test",
+      "path": "creators/creator-2/01-foundation/02-panorama-capability/tests/probe.test.cjs"
+    },
+    {
+      "id": "node-roster-cards",
+      "framework": "node-test",
+      "path": "creators/creator-2/02-coach-interface/01-roster-cards/tests/roster-cards.test.cjs"
+    },
+    {
+      "id": "node-orders",
+      "framework": "node-test",
+      "path": "creators/creator-2/02-coach-interface/02-status-orders/tests/orders.test.cjs"
+    },
+    {
+      "id": "node-input-routing",
+      "framework": "node-test",
+      "path": "creators/creator-2/02-coach-interface/03-control-input/tests/input-routing.test.cjs"
+    },
+    {
+      "id": "node-camera",
+      "framework": "node-test",
+      "path": "creators/creator-2/03-map-view/02-camera-overlays/tests/camera.test.cjs"
+    },
+    {
+      "id": "node-targets",
+      "framework": "node-test",
+      "path": "creators/creator-2/03-map-view/03-visibility-targets/tests/targets.test.cjs"
+    },
+    {
+      "id": "node-team-picker-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/04-preparation-ui/01-team-picker/tests/team-picker-panel.test.cjs"
+    },
+    {
+      "id": "node-team-picker",
+      "framework": "node-test",
+      "path": "creators/creator-2/04-preparation-ui/01-team-picker/tests/team-picker.test.cjs"
+    },
+    {
+      "id": "node-hero-role-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/tests/hero-role-panel.test.cjs"
+    },
+    {
+      "id": "node-hero-role",
+      "framework": "node-test",
+      "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/tests/hero-role.test.cjs"
+    },
+    {
+      "id": "node-preparation-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/tests/preparation-panel.test.cjs"
+    },
+    {
+      "id": "node-preparation",
+      "framework": "node-test",
+      "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/tests/preparation.test.cjs"
+    },
+    {
+      "id": "node-intervention-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/05-intervention-ui/01-request-ack/tests/intervention-panel.test.cjs"
+    },
+    {
+      "id": "node-intervention-request",
+      "framework": "node-test",
+      "path": "creators/creator-2/05-intervention-ui/01-request-ack/tests/intervention-request.test.cjs"
+    },
+    {
+      "id": "node-hud-binding",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/hud-binding.test.cjs"
+    },
+    {
+      "id": "node-intervention-selection",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/intervention-selection.test.cjs"
+    },
+    {
+      "id": "node-intervention-port-binding",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/intervention-port-binding.test.cjs"
+    },
+    {
+      "id": "node-intervention-screen",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/intervention-screen.test.cjs"
+    },
+    {
+      "id": "node-panel-port",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/panel-port.test.cjs"
+    },
+    {
+      "id": "node-preparation-binding",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/preparation-binding.test.cjs"
+    },
+    {
+      "id": "node-preparation-flow",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/preparation-flow.test.cjs"
+    },
+    {
+      "id": "python-c1-01-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/01-foundation/01-environment-audit/tests"
+    },
+    {
+      "id": "python-c2-01-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/01-foundation/01-workspace-audit/tests"
+    },
+    {
+      "id": "python-c2-01-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/01-foundation/02-panorama-capability/tests"
+    },
+    {
+      "id": "python-c2-03-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/03-map-view/01-map-audit/tests"
+    },
+    {
+      "id": "python-c2-04-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/04-preparation-ui/01-team-picker/tests"
+    },
+    {
+      "id": "python-c2-04-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/tests"
+    },
+    {
+      "id": "python-c2-04-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/tests"
+    },
+    {
+      "id": "python-c2-05-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/05-intervention-ui/01-request-ack/tests"
+    },
+    {
+      "id": "python-c2-11-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/11-integration/02-addon-packaging/tests"
+    },
+    {
+      "id": "node-voice-text",
+      "framework": "node-test",
+      "path": "creators/creator-2/06-voice/02-recognition-parser/tests/voice-text.test.cjs"
+    },
+    {
+      "id": "node-voice-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/06-voice/03-voice-feedback/tests/voice-panel.test.cjs"
+    },
+    {
+      "id": "python-c2-06-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/06-voice/03-voice-feedback/tests"
+    },
+    {
+      "id": "python-c2-10-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/10-user-testing/01-install-guide/tests"
+    },
+    {
+      "id": "python-c2-11-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/11-integration/03-end-to-end/tests"
+    }
+  ]
+}
