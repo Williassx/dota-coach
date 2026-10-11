@@ -12,3 +12,5 @@
 - [opponent-roster-package.md](opponent-roster-package.md).
 
 - [match-observation-package.md](match-observation-package.md).
+
+- [mouse-proposal-package.md](mouse-proposal-package.md).

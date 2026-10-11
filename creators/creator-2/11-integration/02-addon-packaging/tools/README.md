@@ -20,3 +20,5 @@
 - [match_observation_layout.py](match_observation_layout.py) — фиксированная
   композиция двух canonical scopes в shell; использует validate_layout прежних
   opponent/history policies, raw fingerprints и проверку generated topology.
+
+- [mouse_proposal_layout.py](mouse_proposal_layout.py) — fixed 5/4, exact 7 IDs и 6 plain Labels; shared XML parser, отдельное разрешение root.visible.

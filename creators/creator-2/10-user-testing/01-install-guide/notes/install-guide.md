@@ -45,6 +45,7 @@ Report сам не авторизует установку; перед буду�
 | voice-text | 6/5 | Текст→local proposal | [Text preview](../../../06-voice/03-voice-feedback/notes/text-preview.md) |
 | orders-timeline | 5/4 | Локальная история приказов | [Timeline](../../../07-match-screen/03-orders-timeline/notes/panel.md) |
 | opponent-roster | 5/4 | Публичные имена/герои соперников | [Public roster](../../../07-match-screen/02-opponent-cards/notes/public-roster.md) |
+| mouse-proposal | 5/4 | Предложенное действие и фиксированный адресат | [Mouse panel](../../../05-intervention-ui/02-mouse-targeting/notes/mouse-panel.md) |
 | match-observation | 10/9 | Соперники + история в одной сцене | [Group binding](../../../11-integration/01-ui-binding/notes/match-observation.md) |
 
 Эти manifests альтернативны. Не копировать их поверх друг друга в одну сцену:

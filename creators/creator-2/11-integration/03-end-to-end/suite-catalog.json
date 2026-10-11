@@ -215,6 +215,16 @@
       "id": "node-mouse-proposals",
       "framework": "node-test",
       "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests/mouse-proposals.test.cjs"
+    },
+    {
+      "id": "node-mouse-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests/mouse-panel.test.cjs"
+    },
+    {
+      "id": "python-c2-05-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests"
     }
   ]
 }

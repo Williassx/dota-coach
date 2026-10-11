@@ -13,3 +13,7 @@ python3 creators/creator-2/11-integration/03-end-to-end/tools/run_source_checks.
 
 Это partial source-проверка; полный runner запускается без --suite. Нет real mouse
 hook, native gameplay, lease или подтверждения реального последнего удара.
+
+[mouse-panel.test.cjs](mouse-panel.test.cjs) — 13 VM сценариев: четыре действия,
+фиксированный адресат, plain labels, clear-beforeDTO, ownership/reentry/dispose.
+[test_mouse_layout.py](test_mouse_layout.py) — 2 проверки исходного графа/loader.

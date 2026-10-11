@@ -1,0 +1,17 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/mouse_proposal.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/mouse_proposal_state.js" />
+        <include src="file://{resources}/scripts/custom_game/mouse_proposal_panel.js" />
+    </scripts>
+    <Panel id="MouseProposalRoot" class="MouseProposal" visible="false">
+        <Label id="MouseActor" class="MouseActor" html="false" text="" />
+        <Label id="MouseAction" class="MouseAction" html="false" text="" />
+        <Label id="MouseTarget" class="MouseTarget" html="false" text="" />
+        <Label id="MouseState" class="MouseState" html="false" text="" />
+        <Label id="MouseLease" class="MouseLease" html="false" text="" />
+        <Label id="MouseHint" class="MouseHint" html="false" text="" />
+    </Panel>
+</root>

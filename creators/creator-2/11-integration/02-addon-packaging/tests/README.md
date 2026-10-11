@@ -18,3 +18,5 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
 
 - [test_match_observation_bundle.py](test_match_observation_bundle.py) — 8 сценариев
   общей сцены, exact scopes/fingerprints и actual packaged group binding.
+
+[test_mouse_proposal_bundle.py](test_mouse_proposal_bundle.py) — 8 сценариев fixed mapping, topology, strict XML, source/output integrity и actual packaged VM.

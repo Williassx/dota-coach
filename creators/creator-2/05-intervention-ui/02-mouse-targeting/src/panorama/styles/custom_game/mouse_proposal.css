@@ -1,0 +1,16 @@
+.MouseProposal {
+    width: 380px;
+    height: 250px;
+    flow-children: down;
+    horizontal-align: right;
+    vertical-align: bottom;
+    padding: 12px;
+    background-color: #17222eee;
+}
+.MouseProposal Label {
+    width: 100%;
+    font-size: 18px;
+    color: #dfebef;
+    margin-bottom: 6px;
+}
+.MouseLease, .MouseHint { color: #bfced4; font-size: 16px; }
