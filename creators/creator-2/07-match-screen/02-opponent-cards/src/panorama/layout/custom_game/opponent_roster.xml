@@ -1,0 +1,40 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/opponent_roster.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/opponent_roster_state.js" />
+        <include src="file://{resources}/scripts/custom_game/opponent_roster_panel.js" />
+    </scripts>
+    <Panel id="OpponentRosterRoot" class="OpponentRoster" visible="false">
+        <Label id="OpponentRosterStatus" class="OpponentStatus" html="false" text="" />
+        <Label id="OpponentRosterHint" class="OpponentHint" html="false" text="" />
+        <Panel id="OpponentCards" class="OpponentCards">
+            <Panel id="OpponentCard0" class="OpponentCard">
+                <Label id="OpponentName0" class="OpponentName" html="false" text="" />
+                <Label id="OpponentHero0" class="OpponentHero" html="false" text="" />
+                <Label id="OpponentInformation0" class="OpponentInformation" html="false" text="" />
+            </Panel>
+            <Panel id="OpponentCard1" class="OpponentCard">
+                <Label id="OpponentName1" class="OpponentName" html="false" text="" />
+                <Label id="OpponentHero1" class="OpponentHero" html="false" text="" />
+                <Label id="OpponentInformation1" class="OpponentInformation" html="false" text="" />
+            </Panel>
+            <Panel id="OpponentCard2" class="OpponentCard">
+                <Label id="OpponentName2" class="OpponentName" html="false" text="" />
+                <Label id="OpponentHero2" class="OpponentHero" html="false" text="" />
+                <Label id="OpponentInformation2" class="OpponentInformation" html="false" text="" />
+            </Panel>
+            <Panel id="OpponentCard3" class="OpponentCard">
+                <Label id="OpponentName3" class="OpponentName" html="false" text="" />
+                <Label id="OpponentHero3" class="OpponentHero" html="false" text="" />
+                <Label id="OpponentInformation3" class="OpponentInformation" html="false" text="" />
+            </Panel>
+            <Panel id="OpponentCard4" class="OpponentCard">
+                <Label id="OpponentName4" class="OpponentName" html="false" text="" />
+                <Label id="OpponentHero4" class="OpponentHero" html="false" text="" />
+                <Label id="OpponentInformation4" class="OpponentInformation" html="false" text="" />
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

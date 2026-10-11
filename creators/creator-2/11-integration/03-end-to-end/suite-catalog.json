@@ -190,6 +190,21 @@
       "id": "python-c2-07-03",
       "framework": "python-unittest",
       "path": "creators/creator-2/07-match-screen/03-orders-timeline/tests"
+    },
+    {
+      "id": "node-opponent-roster",
+      "framework": "node-test",
+      "path": "creators/creator-2/07-match-screen/02-opponent-cards/tests/opponent-roster.test.cjs"
+    },
+    {
+      "id": "node-opponent-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/07-match-screen/02-opponent-cards/tests/opponent-panel.test.cjs"
+    },
+    {
+      "id": "python-c2-07-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/07-match-screen/02-opponent-cards/tests"
     }
   ]
 }

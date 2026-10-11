@@ -263,3 +263,11 @@ source-пакет истории приказов:5assets/4links, actual package
 orders-timeline. Full38suites/835PASS. Независимый final review недоступен из-за
 usage limit; выполнен самостоятельный просмотр изменений, review остаётся открытым.
 Native/common HUD/server/другой владелец также открыты.
+
+C2-07-02: минимальная публичная проекция и отдельная верхняя панель пяти соперников.
+Unknown отличается от0, invalid/stale очищают источник до более новой revision.
+Нет боевых полей/выбора/приказа; sourceAuthorizationConfirmed=false.
+17model+13panel+2XML PASS; finalfull41suites/867PASS. Один финальный критик выявил
+Proxy length coercion: воспроизведено regressiontest, исправлено без coercions.
+[Отчёт](07-match-screen/02-opponent-cards/reports/cloud-public-roster.md).
+Sourcepackage/commonHUD/C1/native/другой владелец открыты. График38/205(18.5%).
