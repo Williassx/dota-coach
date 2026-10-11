@@ -1,6 +1,7 @@
 # Panorama: что найдено и что проверить локально
 
-Исследовано 9 октября 2026 года. Установленный шаблон пользователя пока не прочитан.
+Открытые источники исследованы 9 октября 2026 года; установленный шаблон,
+native runtime и справка API дополнительно проверены 11 октября.
 
 ## Проверенные открытые источники
 
@@ -61,7 +62,13 @@
 template_map загружена. В native log есть panel_ready/request_sent, видимость
 панели/idle-статуса/кнопки подтверждена скриншотом1280×720.
 [Отчёт и изображение](../../01-workspace-audit/reports/windows-foundation-2026-10-11.md).
-Hittest, timeout/retry, reload/dispose, C1 ответ и отдельный Tools runtime открыты;
+В отдельном Tools прогоне panel_ready подтверждён в 18:11:06 UTC вместе с
+проверенным Tools HUD 1280×720 и уникальным живым VConsole echo.
+Native справка содержит GameEvents, Schedule/CancelScheduled, CustomUIConfig,
+SetPanelEvent/ClearPanelEvent и hittest/hittestchildren; наличие API не доказывает
+приёмку сценариев. Захват Windows Computer Use завершился timeout, UI Automation
+не показал ProbeButton; нативный клик не выполнен. Hittest, timeout/retry,
+reload/dispose и C1 ответ открыты;
 первый игровой прогон завершился DXGI-падением. Таблица ниже остаётся общей
 приёмкой составных сценариев: видимость сама не закрывает ввод вне панели.
 

@@ -3,5 +3,6 @@
 [Подпункт](../README.md) · [Облачный прогон](cloud-audit.md).
 [Локальный Windows foundation](windows-foundation-2026-10-11.md).
 [Панель в игровом HUD, 1280×720](native-probe-hud-2026-10-11.png).
+[Панель в отдельном Workshop Tools прогоне, 1280×720](native-tools-hud-2026-10-11.png).
 [Рассмотрение пятью критиками](review-2026-10-09.md).
 `*-local.json` остаются вне Git. Здесь хранится необходимое резюме без секретов.

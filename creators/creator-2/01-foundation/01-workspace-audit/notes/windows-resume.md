@@ -27,8 +27,16 @@ Windows/Dota2/Workshop Tools подтверждены пользователем
 game/dota/screenshots. Внешний absolute screenshot path вызывает AbortMessage.
 Оригинал проверять до использования; raw buffered logs/дампы не публиковать.
 
-Следующие открытые шаги: timeout/retry/hittest/reload/dispose, отдельный Tools
-runtime и C1 bootstrap/ping. DXGI_ERROR_DEVICE_REMOVED первого прогона записан
+В продолжении 18:12 UTC отдельный `-tools -vconport 29002` прогон дошёл до
+PRE_GAME/panel_ready; Tools HUD подтверждён новым engine screenshot. Ранняя
+задержка ToolsStallMonitor разрешилась после загрузки. Для VConsole использовать
+новый уникальный echo и учитывать задержку старта: первые 30 секунд без ответа
+не доказывают окончательный отказ. Собственные процессы завершены через quit.
+`@oai/sky` доступен, но захват Dota/Asset Browser завершился timeout; UI Automation
+показывает только рамку окна. Проверенного канала клика в этом прогоне нет.
+
+Следующие открытые шаги: timeout/retry/hittest/reload/dispose и C1 bootstrap/ping.
+DXGI_ERROR_DEVICE_REMOVED первого прогона записан
 отдельно от ошибки screenshot; драйвер не менялся. Реальный C1 обработчик
 ещё отсутствует; fake server/sender не добавлять.
 
