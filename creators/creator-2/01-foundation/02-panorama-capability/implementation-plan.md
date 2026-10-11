@@ -35,9 +35,12 @@ Node.js 18+ со встроенными node:test/vm используется т
 `dota_coach_c2_probe_20261011`. Конкретные root, команды и ограничения:
 [Windows foundation](../01-workspace-audit/reports/windows-foundation-2026-10-11.md).
 В manifest штатного workshop_testbed найден CustomUIElement type=Hud.
-Сборка template_map и реальная загрузка панели пока не подтверждены;
-следующий шаг — выяснить ERROR_FILEOPEN базовых ресурсов компилятора, затем
-провести явную загрузку/hittest/reload без fake C1 transport.
+В продолжении того же дня template_map успешно скомпилирована без `-novpk`:
+этот флаг исключал базовые VPK из GAME search paths установленной версии.
+Локальный игровой клиент подтвердил panel_ready/request_sent. Видимость панели
+и кнопки подтверждена скриншотом1280×720; hittest/timeout/reload открыты после DXGI-падения клиента;
+состояние Tools и C1 transport проверяются отдельно. Использовать команду карты
+без `-novpk` из Windows-отчёта, не выдавать compile за нативную приёмку.
 
 Из C2-01-01/C1-01-01 получить реальную установку, шаблон, manifest, способ
 компиляции и отдельную сцену. В этот документ внести подтверждённые конечные пути

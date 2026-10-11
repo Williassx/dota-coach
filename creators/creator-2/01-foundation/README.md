@@ -9,7 +9,8 @@
 Подготовлена [отдельная упаковка UI-ресурсов](02-panorama-capability/reports/source-bundle.md)
 с проверкой целостности и поведения из пакета.
 Разовая проверка целостности сохранена как [повторяемый read-only инструмент](02-panorama-capability/reports/bundle-verification.md).
-Фундамент не закрыт; следующий шаг — [локальный аудит Windows](01-workspace-audit/notes/windows-start.md).
+Фундамент не закрыт. [Локальный Windows-аудит, компиляция карты/UI и видимость панели](01-workspace-audit/reports/windows-foundation-2026-10-11.md)
+подтверждены; следующий шаг — hittest/timeout/reload, обработчик C1 и полная нативная приёмка.
 Фактические статусы находятся только в карточках подпунктов ниже.
 
 - [C2-01-01 — Рабочая библиотека и пути Tools](01-workspace-audit/README.md)
