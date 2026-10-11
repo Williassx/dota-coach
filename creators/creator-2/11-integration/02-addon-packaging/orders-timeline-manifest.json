@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_orders_timeline",
+  "assets": [
+    {
+      "source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/layout/custom_game/orders_timeline.xml",
+      "target": "content/panorama/layout/custom_game/orders_timeline.xml"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/styles/custom_game/orders_timeline.css",
+      "target": "content/panorama/styles/custom_game/orders_timeline.css"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/scripts/custom_game/orders_timeline_state.js",
+      "target": "content/panorama/scripts/custom_game/orders_timeline_state.js"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/scripts/custom_game/orders_timeline_panel.js",
+      "target": "content/panorama/scripts/custom_game/orders_timeline_panel.js"
+    }
+  ]
+}

@@ -3,7 +3,9 @@
 Сначала загрузить definitions `orders_timeline_state.js` и `orders_timeline_panel.js`
 в один context. `DotaCoachOrdersTimelinePanels.bind(root)` вызывается интегратором
 явно; root содержит nodes из [XML](../src/panorama/layout/custom_game/orders_timeline.xml).
-Нет bootstrap/демо/таймеров/событий UI/Game API. Отдельный source-пакет ещё не добавлен.
+Нет bootstrap/демо/таймеров/событий UI/Game API.
+[Отдельный source-пакет](../../../11-integration/02-addon-packaging/notes/orders-timeline-package.md)
+добавлен; нативная установка не выполнена.
 
 - `record(orders.view())` → bool. Один Orders на весь lifecycle; recorded/unchanged
   открывают display gate. Invalid snapshot возвращает false и очищает отображение;

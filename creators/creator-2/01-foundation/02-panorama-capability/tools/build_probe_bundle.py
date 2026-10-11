@@ -241,9 +241,10 @@ def prepare_preparation(repository: Path, manifest: dict) -> list:
 def prepare_assets(repository: Path, manifest: dict) -> list:
     """Validate declared UI paths and read bounded source bytes without writing."""
     root = repository.resolve()
-    if isinstance(manifest, dict) and manifest.get("kind") in ("panorama_source_intervention_screen", "panorama_source_voice_text"):
+    if isinstance(manifest, dict) and manifest.get("kind") in ("panorama_source_intervention_screen", "panorama_source_voice_text", "panorama_source_orders_timeline"):
         filename = {"panorama_source_intervention_screen": "intervention_screen_layout.py",
-                    "panorama_source_voice_text": "voice_text_layout.py"}[manifest["kind"]]
+                    "panorama_source_voice_text": "voice_text_layout.py",
+                    "panorama_source_orders_timeline": "orders_timeline_layout.py"}[manifest["kind"]]
         policy = REPOSITORY / "creators/creator-2/11-integration/02-addon-packaging/tools" / filename
         spec = importlib.util.spec_from_file_location("dota_coach_" + Path(filename).stem, policy)
         module = importlib.util.module_from_spec(spec)

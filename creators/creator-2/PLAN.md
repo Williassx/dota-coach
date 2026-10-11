@@ -257,3 +257,9 @@ full34suite774PASS. Маршрут локальномуCodex создан; Windo
 
 После финального review исправлена проверка дерева в isDisposed панели C2-07-03;
 добавлен regression case. Итоговый full38suites/827PASS.
+
+В [C2-11-02](11-integration/02-addon-packaging/README.md) подготовлен седьмой fixed
+source-пакет истории приказов:5assets/4links, actual packaged VM и handoff экран
+orders-timeline. Full38suites/835PASS. Независимый final review недоступен из-за
+usage limit; выполнен самостоятельный просмотр изменений, review остаётся открытым.
+Native/common HUD/server/другой владелец также открыты.

@@ -10,6 +10,7 @@
 
 ## Действия
 
+- [x] Собрать и проверить отдельный source-пакет истории приказов из 5 ресурсов.
 - [x] Собрать и проверить source-сцену карточек/запроса: 13 ресурсов, один контекст, fingerprints исходных XML.
 - [x] Собрать и проверить отдельный source-пакет text preview из 6 ресурсов.
 - [ ] После локального аудита согласовать manifest исходников и конечные game/content пути.
@@ -74,3 +75,13 @@ shell. Verifier сверяет повторную композицию из curr
 с восемью JS definitions. Raw input fingerprints и повторная композиция связывают
 пакет с текущими исходниками. Общий итог 701 source-проверка; bootstrap, компиляция,
 игровая геометрия, C1 authority и проверка второго владельца ещё открыты.
+
+## Source-пакет истории приказов
+
+[Дизайн](orders-timeline-design.md) · [План](orders-timeline-plan.md) ·
+[Recipe](orders-timeline-manifest.json) · [Команды](notes/orders-timeline-package.md) ·
+[Отчёт](reports/cloud-orders-timeline-package.md).
+
+Седьмой fixed kind: пять ресурсов, два definitions, четыре resource links, exact inert
+layout последних записей. Старые defaults сохраняются. Source-only alternative Hud,
+без bootstrap/transport/native установки. Handoff screen: orders-timeline.

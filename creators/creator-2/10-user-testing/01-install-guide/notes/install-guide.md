@@ -23,6 +23,7 @@
 ```bash
 python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py
 python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen voice-text
+python3 creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py --screen orders-timeline
 ```
 
 Первый вариант готовит probe. Каждый создаёт новую папку в build/dota_coach,
@@ -40,6 +41,7 @@ Report сам не авторизует установку; перед буду�
 | intervention | 6/5 | Панель ручного запроса | [Request panel](../../../05-intervention-ui/01-request-ack/notes/request-panel.md) |
 | intervention-screen | 13/12 | Карточки/запрос в одном private flow | [Screen binding](../../../11-integration/01-ui-binding/notes/intervention-screen.md) |
 | voice-text | 6/5 | Текст→local proposal | [Text preview](../../../06-voice/03-voice-feedback/notes/text-preview.md) |
+| orders-timeline | 5/4 | Локальная история приказов | [Timeline](../../../07-match-screen/03-orders-timeline/notes/panel.md) |
 
 Эти manifests альтернативны. Не копировать их поверх друг друга в одну сцену:
 автоматического объединения/общего runtime ещё нет. Source files каждой библиотеки

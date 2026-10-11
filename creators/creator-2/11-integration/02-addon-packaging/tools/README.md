@@ -10,3 +10,5 @@
 
 - [voice_text_layout.py](voice_text_layout.py) — fixed six-resource text preview;
   использует общую strict XML policy с отдельным trusted TextEntry разрешением.
+
+- [orders_timeline_layout.py](orders_timeline_layout.py) — fixed five-resource history; общая XML policy с local Panel.visible разрешением.
