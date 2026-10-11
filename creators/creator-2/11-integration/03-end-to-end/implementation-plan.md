@@ -2,6 +2,13 @@
 
 Основание: [design.md](design.md). Работа основного исполнителя в этой папке.
 
+Windows correction 11 октября: воспроизвести taskkill Access denied в sandbox
+и успешное owned tree termination вне него. RED для сохранения termination
+diagnostic в log; исправить только перенаправление taskkill output/error logging.
+Тест отсутствия Node должен сохранять поиск taskkill; production preflight прежний.
+Целевые17runner tests, full Windows catalog, ссылка/graph/diff/final critic,
+журнал/ledger/main push. Symlink failures/skips/native/C1 остаются отдельными.
+
 1. Зафиксировать 34 существующих набора и добавить отдельный набор тестов помощника
    в `suite-catalog.json`. Создать тесты каталога, summaries, границ вывода,
    параметров, неперезаписи, timeout/ошибок, полного и целевого CLI; получить RED.

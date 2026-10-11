@@ -97,6 +97,15 @@ cross-API, ctime same-API guards);28passed/6skipped,100stable associations.
 
 ## Документация и публикация
 
+Следующее подтверждённое продолжение: Windows taskkill/tree timeout работает
+вне sandbox на owned fixtures; sandbox выдаёт Access denied. Runner теперь
+сохраняет stdout/stderr taskkill и exception в suite log, не меняя отказ/kill scope.
+Node-only mock исправлен без отключения taskkill preflight. Новый полный прогон
+194234Z вне sandbox:46/752/6failed; runner17tests15passed2symlink errors, timeout
+и partial-selection проходят. [Команды/evidence/границы](../../../11-integration/03-end-to-end/reports/windows-runner-2026-10-11.md).
+Не менять ОС/Developer Mode/symlink privilege ради зелёного статуса. Native
+input/capture, C1 bootstrap/lease/AI return и full verification остаются открытыми.
+
 Все действия отдельно в creators/creator-2/00-action-log/YYYY-MM-DD.md, UTC.
 Новые исходники сначала в библиотеке создателя2. Прочие отделы/контракты не менять.
 Чекбоксы/graph только по evidence; source checks не заменяют native/second owner.

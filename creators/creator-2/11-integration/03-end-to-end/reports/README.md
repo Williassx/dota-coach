@@ -5,3 +5,6 @@
 [Подпроект](../README.md).
 
 [Облачный прогон](cloud-source-checks.md) — каталог, проверки, лог и открытая native приёмка.
+
+[Windows runner](windows-runner-2026-10-11.md) — taskkill в двух режимах,
+regression диагностики и фактический full verified=false.

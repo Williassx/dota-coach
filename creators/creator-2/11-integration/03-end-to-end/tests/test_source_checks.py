@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -162,8 +163,15 @@ class SourceChecks(unittest.TestCase):
         self.assertIn('--test-reporter=tap', report['results'][1]['argv'])
 
     def test_partial_selection_does_not_need_node_and_is_reported(self):
-        with patch.object(runner.shutil, 'which', return_value=None):
+        original = runner.shutil.which
+        def without_node(name):
+            return None if name == 'node' else original(name)
+        with patch.object(runner.shutil, 'which', side_effect=without_node) as lookup:
             result = runner.run_checks(self.root, suites=['python-fixture'])
+        names = [call.args[0] for call in lookup.call_args_list]
+        self.assertNotIn('node', names)
+        if os.name == 'nt':
+            self.assertIn('taskkill', names)
         self.assertEqual((result['suites'], result['passed_tests'], result['selection']), (1, 1, 'partial'))
         self.assertTrue(result['verified'])
 
@@ -196,6 +204,29 @@ class SourceChecks(unittest.TestCase):
         self.assertFalse(result['verified'])
         self.assertEqual(report['results'][0]['reason'], 'timeout')
         self.assertIsNone(report['results'][0]['exit_code'])
+
+    def test_timeout_termination_failure_is_preserved_in_suite_log(self):
+        self.write(PYTHON + '/test_example.py', 'import time\ntime.sleep(10)\n')
+        if os.name == 'nt':
+            original = runner.subprocess.run
+            def refused(argv, **kwargs):
+                if '/T' not in argv:
+                    return original(argv, **kwargs)
+                if hasattr(kwargs['stdout'], 'write'):
+                    kwargs['stdout'].write(b'fixture taskkill access denied\n')
+                raise subprocess.CalledProcessError(1, argv)
+            failure = patch.object(runner.subprocess, 'run', side_effect=refused)
+        else:
+            failure = patch.object(runner.os, 'killpg', side_effect=OSError('fixture killpg access denied'))
+        with failure:
+            result = runner.run_checks(self.root, suites=['python-fixture'], timeout=0.1)
+        report = json.loads((self.root / result['report']).read_text())
+        row = report['results'][0]
+        self.assertFalse(result['verified'])
+        self.assertEqual(row['reason'], 'timeout_termination_failed')
+        log = (self.root / row['log']).read_text(encoding='utf-8')
+        self.assertIn('access denied', log)
+        self.assertIn('owned process tree termination failed', log)
 
     def test_timeout_stops_owned_child_processes(self):
         self.write(PYTHON + '/test_example.py',

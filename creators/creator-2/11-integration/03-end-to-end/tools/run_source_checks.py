@@ -130,10 +130,12 @@ def run_suite(root, target, entry, node, timeout, taskkill=None):
                             pass
                     else:
                         subprocess.run([taskkill, '/PID', str(process.pid), '/T', '/F'],
-                                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                                       stdout=handle, stderr=subprocess.STDOUT,
                                        timeout=5, check=True)
-                except (OSError, subprocess.SubprocessError):
+                except (OSError, subprocess.SubprocessError) as error:
                     reason = 'timeout_termination_failed'
+                    handle.write(('owned process tree termination failed: ' + str(error) + '\n')
+                                 .encode('utf-8', errors='replace'))
                     process.kill()
                 process.wait(timeout=5)
         except OSError as error:
