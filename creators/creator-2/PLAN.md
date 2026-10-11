@@ -285,3 +285,10 @@ Fixed пакет: 10 ресурсов / 2 canonical inputs / 9 links / 38 ID и 
 выявил failed-acquisition visibility, воспроизведено и исправлено с сохранением
 независимого child/status. [Отчёт](11-integration/01-ui-binding/reports/cloud-match-observation.md).
 График 41/208 (19.7%). Full игровой HUD, C1/native/второй человек открыты.
+
+C2-05-02: private модель локальных предложений мыши, captured actor сохраняется
+при новом клике/смене выделения; движение, attack, last_hit и deny различаются.
+Предложения без input authority, canSend/nativeConfirmed/sourceAuthorizationConfirmed=false.
+17 Node сценариев включая real Targets.view/expiry, full 43 suites / 915 PASS.
+Один финальный критик без существенных замечаний. [Отчёт](05-intervention-ui/02-mouse-targeting/reports/cloud-mouse-proposals.md).
+График 42/209 (20.1%). Native input/UI/identity/lease/сервер/второй владелец открыты.

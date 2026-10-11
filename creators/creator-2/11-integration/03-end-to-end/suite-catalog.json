@@ -210,6 +210,11 @@
       "id": "node-match-observation",
       "framework": "node-test",
       "path": "creators/creator-2/11-integration/01-ui-binding/tests/match-observation.test.cjs"
+    },
+    {
+      "id": "node-mouse-proposals",
+      "framework": "node-test",
+      "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests/mouse-proposals.test.cjs"
     }
   ]
 }
