@@ -11,6 +11,7 @@
 ## Действия
 
 - [x] Собрать и проверить source-сцену карточек/запроса: 13 ресурсов, один контекст, fingerprints исходных XML.
+- [x] Собрать и проверить отдельный source-пакет text preview из 6 ресурсов.
 - [ ] После локального аудита согласовать manifest исходников и конечные game/content пути.
 - [ ] Собирать отдельный создаваемый каталог, сохраняя оригиналы в папках авторов.
 - [x] Создать и проверить отдельный source-пакет из 13 UI-ресурсов без установки.
@@ -23,6 +24,16 @@
 ## Результат и приёмка
 
 Сборка использует единственные исходники и не перезаписывает установку без отдельного действия.
+
+## Source-пакет local text preview
+
+[Дизайн](voice-text-design.md) · [План](voice-text-plan.md) · [Recipe](voice-text-manifest.json) ·
+[Policy](tools/README.md) · [Команды](notes/voice-text-package.md) · [Отчёт](reports/cloud-voice-text-package.md).
+
+Шестой fixed kind содержит6 ресурсов/5ссылок, один context Roster→VoiceText→Panel.
+Dedicated TextEntry policy сохраняет старые defaults. Actual packaged context
+проверен на typed input/button→local proposal; общий итог760 source checks.
+Пакет альтернативный, native/ASR/C1/runtime/второй владелец ещё открыты.
 
 ## Подготовленные материалы
 

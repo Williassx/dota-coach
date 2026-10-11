@@ -9,3 +9,4 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
 - [test_preparation_bundle.py](test_preparation_bundle.py)
 - [test_intervention_bundle.py](test_intervention_bundle.py)
 - [test_intervention_screen_bundle.py](test_intervention_screen_bundle.py)
+- [test_voice_text_bundle.py](test_voice_text_bundle.py)

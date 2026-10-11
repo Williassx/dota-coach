@@ -16,7 +16,7 @@ for section,style,scripts in [('07-match-screen/01-own-cards','coach_hud.css',()
  if style:ASSETS[prefix+'styles/custom_game/'+style]=TARGET+'styles/custom_game/'+style
  for name in scripts:ASSETS[prefix+'scripts/custom_game/'+name]=TARGET+'scripts/custom_game/'+name
 ATTRS={'root':set(),'styles':set(),'scripts':set(),'include':{'src'},'Panel':{'id','class','hittest','hittestchildren'},'Label':{'id','class','html','text','hittest'},'Button':{'id','class','enabled','visible','hittest'}}
-def parse(payload,manifest=False):
+def parse(payload,manifest=False,extra_tags=None):
  text=payload.decode('utf-8-sig')
  if '<!DOCTYPE' in text.upper() or '<!ENTITY' in text.upper():raise ValueError('Unsupported XML DTD/entities')
  try:root=ET.fromstring(text)
@@ -24,7 +24,7 @@ def parse(payload,manifest=False):
  if root.tag!='root':raise ValueError('XML requires root')
  ids=set()
  for n in root.iter():
-  allowed={'type','layoutfile'} if manifest and n.tag=='CustomUIElement' else ATTRS.get(n.tag)
+  allowed={'type','layoutfile'} if manifest and n.tag=='CustomUIElement' else (extra_tags or {}).get(n.tag,ATTRS.get(n.tag))
   if allowed is None or not set(n.attrib)<=allowed:raise ValueError('XML must preserve inert attribute allowlist')
   if (n.text or '').strip() or (n.tail or '').strip():raise ValueError('XML text must be declared attributes')
   if n.tag in ('Label','include','CustomUIElement') and len(n):raise ValueError('Resource/label nodes must be leaves')
@@ -45,6 +45,10 @@ def dependencies(root,scripts,styles):
  if len(list(root.iter('include')))!=len(scripts)+len(styles) or len(list(root.iter('scripts')))!=1 or len(list(root.iter('styles')))!=1:raise ValueError('Nested dependency sections unsupported')
 
 def ids(panel):return {n.get('id'):n.tag for n in panel.iter() if n.get('id')}
+def hud_manifest(payload,layout):
+ root=parse(payload,True)
+ if [n.tag for n in root.iter()]!=['root','Panel','CustomUIElement'] or len(root)!=1 or root[0].attrib or len(root[0])!=1 or root[0][0].attrib!={'type':'Hud','layoutfile':'file://{resources}/layout/custom_game/'+layout}:raise ValueError('Exact one-parent Hud loader required')
+ return root
 def roster_scope(panel):
  expected={'CoachRoster':'Panel','RosterStatus':'Label'}
  for i in range(5):
@@ -95,8 +99,7 @@ def prepare(repository,manifest,read_source):
  expected.update('CoachInterventionRoster' if name=='CoachRoster' else name for name in ids(hosts[0][0]))
  expected.update(ids(hosts[1][0]))
  if set(ids(checked.find('Panel')))!=expected or len(expected)!=50:raise ValueError('Composition must preserve exactly50 IDs')
- manifest_root=parse(payloads[UI_MANIFEST],True)
- if [n.tag for n in manifest_root.iter()]!=['root','Panel','CustomUIElement'] or len(manifest_root)!=1 or manifest_root[0].attrib or len(manifest_root[0])!=1 or manifest_root[0][0].attrib!={'type':'Hud','layoutfile':'file://{resources}/layout/custom_game/coach_intervention.xml'}:raise ValueError('Exact one-parent Hud loader required')
+ hud_manifest(payloads[UI_MANIFEST],'coach_intervention.xml')
  reached={UI_MANIFEST,LAYOUT}
  for node in checked.findall('./scripts/include')+checked.findall('./styles/include'):
   value=node.get('src');name=TARGET+value[len('file://{resources}/'):]

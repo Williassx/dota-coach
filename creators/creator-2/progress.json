@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "metric": "checked_actions_over_all_actions",
-  "done": 29,
-  "total": 197,
-  "percent": 14.7,
+  "done": 30,
+  "total": 198,
+  "percent": 15.2,
   "sections": [
     {
       "number": 1,
@@ -259,9 +259,9 @@
       "number": 11,
       "title": "Интеграция и сборка",
       "path": "11-integration/README.md",
-      "done": 6,
-      "total": 21,
-      "percent": 28.6,
+      "done": 7,
+      "total": 22,
+      "percent": 31.8,
       "subsections": [
         {
           "path": "11-integration/01-ui-binding/README.md",
@@ -270,8 +270,8 @@
         },
         {
           "path": "11-integration/02-addon-packaging/README.md",
-          "done": 4,
-          "total": 9
+          "done": 5,
+          "total": 10
         },
         {
           "path": "11-integration/03-end-to-end/README.md",

@@ -1,4 +1,4 @@
-# tools — композиция подготовки
+# tools — source layout policy и композиция
 
 [Родитель](../README.md).
 
@@ -7,3 +7,6 @@
 
 - [intervention_screen_layout.py](intervention_screen_layout.py) — точная композиция
   canonical roster/request scopes, также через существующий build helper.
+
+- [voice_text_layout.py](voice_text_layout.py) — fixed six-resource text preview;
+  использует общую strict XML policy с отдельным trusted TextEntry разрешением.

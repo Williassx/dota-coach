@@ -231,3 +231,7 @@ C2-06-02: ограниченный local text parser использует existi
 C2-06-03: отдельная source text preview UI с input/кнопками, guarded private
 parser и plain адресатом/действием/отказом. 21VM+3XML+1captured-names сценарий;
 исполнение, микрофон/native/packaging/C1 и второй владелец остаются открытыми.
+
+C2-11-02: отдельный source recipe text preview —6 canonical ресурсов/5ссылок,
+три definitions, exact inert TextEntry policy и actual packaged VM click.11 новых
+сценариев; full33suite760PASS. Native/ASR/общий runtime/C1/второй владелец открыты.

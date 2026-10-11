@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "kind": "panorama_source_voice_text",
+  "assets": [
+    {"source": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/layout/custom_game/custom_ui_manifest.xml", "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml"},
+    {"source": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/layout/custom_game/voice_text.xml", "target": "content/panorama/layout/custom_game/voice_text.xml"},
+    {"source": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/styles/custom_game/voice_text.css", "target": "content/panorama/styles/custom_game/voice_text.css"},
+    {"source": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_state.js", "target": "content/panorama/scripts/custom_game/roster_cards_state.js"},
+    {"source": "creators/creator-2/06-voice/02-recognition-parser/src/panorama/scripts/custom_game/voice_text_state.js", "target": "content/panorama/scripts/custom_game/voice_text_state.js"},
+    {"source": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/scripts/custom_game/voice_text_panel.js", "target": "content/panorama/scripts/custom_game/voice_text_panel.js"}
+  ]
+}
