@@ -50,6 +50,12 @@ FIFO/устройства/сокеты пропускаются до open; пр�
 сверяются; изменение даёт hash_status=changed, без частичного SHA. Это диагностическая
 проверка, не атомарный снимок при враждебных изменениях файловой системы.
 
+На Windows/Python3.12+ cross-API identity использует st_birthtime_ns вместо
+legacy st_ctime_ns, которое может различаться между lstat/fstat неизменённого
+файла. POSIX и fallback сохраняют ctime. Для path и descriptor отдельно сверяются
+снимки до/после чтения, включая ctime; изменения этого поля не игнорируются.
+[План и regression evidence](windows-identity-plan.md).
+
 ## Сборка и доказательства
 
 Необязательная Steam library связывается с dota_root только если bounded manifest

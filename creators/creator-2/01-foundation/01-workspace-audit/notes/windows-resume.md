@@ -56,6 +56,16 @@ Full source run46/752 имеет6failed suites, verified=false; не объяв�
 
 ## Сначала подтвердить среду и сохранить изменения
 
+Последнее продолжение: sky Tab не дал наблюдаемого фокуса ProbeButton;
+sky F6 реально открыл Panorama Debugger, но его UIA/захват тоже не дали доступа
+к панели. Не повторять тот же путь без нового основания. Запускать полный набор
+ранее проверенных flags, включая -vconsole; при HERO_SELECTION штатная native
+справка подтверждает dota_pick_hero для local test scene. Не заменять этим C1.
+Причина ложного manifest_changed теперь исправлена в C2 map helper (birthtime
+cross-API, ctime same-API guards);28passed/6skipped,100stable associations.
+Новый full runner192232Z имеет6failed suites/verified=false; map tests не падают,
+но пропуски дают invalid_summary. [Актуальное evidence](../../../03-map-view/01-map-audit/reports/windows-identity-2026-10-11.md).
+
 1. Определить фактические OS/shell/cwd. Начинать локальные команды только на Windows
    в указанном проекте, не использовать D:\AI\game или другие доступные проекты.
 2. Прочитать root AGENTS.md, creators/creator-2/AGENTS.md и README foundation.

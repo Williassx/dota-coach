@@ -7,6 +7,8 @@
 Проверяются map/addon/archive категории, сохранность байтов, SHA и лимиты,
 Steam association/комментарии/дубликаты/размер manifest, links/reparse/special files,
 изменение файла, частичный отчёт, CLI/output и кириллица при CP1252 stdout.
+Windows cross-API birthtime и same-API ctime guards проверяются отдельно;
+[34 tests/28 passed/6 skipped и реальный bounded audit](../reports/windows-identity-2026-10-11.md).
 
 ```sh
 python3 -m unittest discover -s creators/creator-2/03-map-view/01-map-audit/tests -v

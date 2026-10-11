@@ -124,6 +124,67 @@ class MapWorkspaceTests(unittest.TestCase):
         self.assertEqual(r["build_evidence"]["status"], "installation_mismatch")
         self.assertIsNone(r["build_evidence"]["build_id"])
 
+    def test_windows_cross_api_identity_uses_birthtime_not_legacy_ctime(self):
+        values = dict(st_dev=1, st_ino=2, st_size=67, st_mtime_ns=300,
+                      st_birthtime_ns=100)
+        path = SimpleNamespace(**values, st_ctime_ns=100)
+        handle = SimpleNamespace(**values, st_ctime_ns=200)
+        with mock.patch.object(self.audit.sys, "platform", "win32"):
+            self.assertEqual(self.audit.identity(path), self.audit.identity(handle))
+            for field in values:
+                changed = SimpleNamespace(**{**values, field: values[field] + 1}, st_ctime_ns=200)
+                self.assertNotEqual(self.audit.identity(path), self.audit.identity(changed), field)
+            legacy = SimpleNamespace(**{k: v for k, v in values.items() if k != "st_birthtime_ns"},
+                                     st_ctime_ns=100)
+            self.assertEqual(self.audit.identity(legacy)[-1], 100)
+
+    def test_posix_cross_api_identity_retains_metadata_change_time(self):
+        values = dict(st_dev=1, st_ino=2, st_size=67, st_mtime_ns=300,
+                      st_birthtime_ns=100)
+        with mock.patch.object(self.audit.sys, "platform", "linux"):
+            self.assertNotEqual(self.audit.identity(SimpleNamespace(**values, st_ctime_ns=100)),
+                                self.audit.identity(SimpleNamespace(**values, st_ctime_ns=200)))
+
+    def test_same_api_metadata_identity_retains_ctime_on_windows(self):
+        values = dict(st_dev=1, st_ino=2, st_size=67, st_mtime_ns=300,
+                      st_birthtime_ns=100)
+        with mock.patch.object(self.audit.sys, "platform", "win32"):
+            self.assertNotEqual(self.audit.metadata_identity(SimpleNamespace(**values, st_ctime_ns=100)),
+                                self.audit.metadata_identity(SimpleNamespace(**values, st_ctime_ns=200)))
+
+    def test_ctime_only_changes_during_read_remain_rejected_for_both_inputs(self):
+        library, manifest = self.manifest()
+        map_file = self.file("content/dota/maps/probe.vmap")
+        for kind in ["manifest", "map"]:
+            for source in ["handle", "path"]:
+                with self.subTest(kind=kind, source=source):
+                    target = manifest if kind == "manifest" else map_file
+                    original = self.audit.os.fstat if source == "handle" else self.audit.checked
+                    calls = 0
+                    def changed(argument):
+                        nonlocal calls
+                        info = original(argument)
+                        if source == "handle" or argument == target:
+                            calls += 1
+                            if calls == 2:
+                                fields = ["st_dev", "st_ino", "st_size", "st_mode", "st_mtime_ns", "st_ctime_ns"]
+                                values = {field: getattr(info, field) for field in fields}
+                                if hasattr(info, "st_birthtime_ns"):
+                                    values["st_birthtime_ns"] = info.st_birthtime_ns
+                                values["st_ctime_ns"] += 1
+                                return SimpleNamespace(**values)
+                        return info
+                    owner = self.audit.os if source == "handle" else self.audit
+                    with mock.patch.object(owner, "fstat" if source == "handle" else "checked", changed):
+                        if kind == "manifest":
+                            result = self.audit.build_evidence(self.install, library)
+                            self.assertEqual(result["status"], "manifest_changed")
+                            self.assertIsNone(result["build_id"])
+                        else:
+                            result = self.audit.inspect_maps(self.install)
+                            self.assertEqual(result["resources"][0]["hash_status"], "changed")
+                            self.assertIsNone(result["resources"][0]["sha256"])
+
     def test_manifest_escape_wrong_app_or_oversize_is_rejected(self):
         library, p = self.manifest()
         for text in ['"appid" "570" "installdir" "../elsewhere" "buildid" "secret"',

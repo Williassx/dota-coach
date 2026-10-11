@@ -1,5 +1,32 @@
 # Windows foundation — 11 октября 2026 года
 
+## Продолжение: клавиатура и Windows identity
+
+Новое основание для bounded input test — ранее успешный Alt+F4 в Блокноте.
+Запущен существующий probe addon; первый неполный запуск PID19412 не дал VConsole,
+завершён после проверки нормализованного executable path. Полная команда с
+-game/-steam/-insecure/-vconsole/-vconport29000 и новым con_logfile дала собственный
+PID21296 и живые уникальные echo. Исходники/аддоны не менялись.
+
+Сцена задержалась в HERO_SELECTION. Native find hero подтвердил команду
+dota_pick_hero <player-id> <hero> [seed]; через VConsole в локальной тестовой
+сцене выполнены sv_cheats1 и dota_pick_hero0 npc_dota_hero_axe. PRE_GAME и
+panel_ready появились в21:17:12 local (19:17:12UTC). Это не реальный профиль/право.
+Engine shots0009/0010 (локально) подтвердили idle панель до/после одного sky Tab;
+фокус кнопки визуально не изменился, UIA содержит только окно. Enter/клик не выполнены.
+
+sky F6 открыл отдельное Panorama Debugger: это подтверждает доставку клавиши,
+но не активацию ProbeButton. Его UIA содержит рамку/системные кнопки, захват получил
+FrameArrived timeout. [Справка Valve](https://developer.valvesoftware.com/wiki/Zh/Dota_2_Workshop_Tools/Panorama/Debugger)
+описывает F6; английская страница при open вернула403. Доступ к native JS context
+не подтверждён. Собственный клиент завершён VConsole quit, PID21296 отсутствует.
+Timeout/retry/hittest/reload/dispose/C1 всё ещё открыты; глобальный hook не добавлен.
+
+Независимо исправлено ранее неизвестное map-audit расхождение manifest_changed:
+[причина, RED/GREEN, 100 повторов и bounded native inventory](../../../03-map-view/01-map-audit/reports/windows-identity-2026-10-11.md).
+Map suite28passed/6skipped; full runner46/752/6failed, verified=false, включая
+строгий invalid_summary для map suite с пропусками. Windows policy не ослаблена.
+
 ## Продолжение: захват вне Dota и нативный пакет мыши
 
 Гипотеза о WindowStyle Hidden проверена запуском установленного dota2.exe

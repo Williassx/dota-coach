@@ -43,7 +43,16 @@ def checked(path):
 
 
 def identity(info):
-    return info.st_dev, info.st_ino, info.st_size, info.st_mtime_ns, info.st_ctime_ns
+    # Windows 3.12 exposes creation time explicitly; legacy ctime can differ
+    # between path and descriptor APIs. Keep POSIX metadata-change semantics.
+    stamp = (getattr(info, "st_birthtime_ns", info.st_ctime_ns)
+             if sys.platform == "win32" else info.st_ctime_ns)
+    return info.st_dev, info.st_ino, info.st_size, info.st_mtime_ns, stamp
+
+
+def metadata_identity(info):
+    """Same-API snapshots still detect ctime-only changes on every platform."""
+    return identity(info) + (info.st_ctime_ns,)
 
 
 def appstate_values(text):
@@ -106,12 +115,13 @@ def build_evidence(root, library):
             result["status"] = "invalid_manifest"
             return result
         with manifest.open("rb") as stream:
-            if identity(os.fstat(stream.fileno())) != identity(info):
+            opened = os.fstat(stream.fileno())
+            if identity(opened) != identity(info):
                 result["status"] = "manifest_changed"
                 return result
             data = stream.read(65537)
-            if len(data) > 65536 or identity(os.fstat(stream.fileno())) != identity(info) or \
-                    identity(checked(manifest)) != identity(info):
+            if len(data) > 65536 or metadata_identity(os.fstat(stream.fileno())) != metadata_identity(opened) or \
+                    metadata_identity(checked(manifest)) != metadata_identity(info):
                 result["status"] = "manifest_changed"
                 return result
         text = data.decode("utf-8", errors="replace")
@@ -214,7 +224,8 @@ def inspect_maps(dota_root: Path, steam_library: Path | None = None, *, max_entr
         sha = hashlib.sha256()
         try:
             with path.open("rb") as stream:
-                if identity(os.fstat(stream.fileno())) != identity(before):
+                opened = os.fstat(stream.fileno())
+                if identity(opened) != identity(before):
                     return None, "changed"
                 remaining = before.st_size
                 while remaining:
@@ -224,8 +235,8 @@ def inspect_maps(dota_root: Path, steam_library: Path | None = None, *, max_entr
                         return None, "changed"
                     remaining -= len(data)
                     sha.update(data)
-                if identity(os.fstat(stream.fileno())) != identity(before) or \
-                        identity(checked(path)) != identity(before):
+                if metadata_identity(os.fstat(stream.fileno())) != metadata_identity(opened) or \
+                        metadata_identity(checked(path)) != metadata_identity(before):
                     return None, "changed"
             return sha.hexdigest(), "complete"
         except (ValueError, OSError):
