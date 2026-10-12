@@ -1,14 +1,19 @@
 {
-  "schema_version": 1,
-  "mode": "economy",
+  "schema_version": 2,
+  "mode": "stage_batches_all_roles",
   "dispatcher_role": 173,
   "execution": {
     "conversation_subagents": 0,
     "default_implementation_subagents": 0,
-    "max_implementation_subagents_without_new_user_request": 1,
+    "max_implementation_subagents_without_new_user_request": 3,
     "require_independent_deliverable": true,
     "reuse_existing_agents": true,
-    "one_editor_per_file": true
+    "one_editor_per_file": true,
+    "max_concurrent_agents_including_parent": 4,
+    "respect_actual_runtime_limit": true,
+    "stage_batches": true,
+    "do_not_spawn_empty_roles": true,
+    "dependent_tasks_wait_for_inputs": true
   },
   "review": {
     "trigger": "subproject_complete",
@@ -16,7 +21,9 @@
     "during_conversation": false,
     "during_planning": false,
     "during_each_subtask": false,
-    "extra_critics": "only_for_unresolved_specific_findings_or_explicit_user_request"
+    "extra_critics": "only_for_unresolved_specific_findings_or_explicit_user_request",
+    "human_second_owner_required": true,
+    "ai_critic_is_not_human_second_owner": true
   },
   "context": {
     "default_fork_turns": "none",
@@ -46,5 +53,42 @@
     "currency": null,
     "hard_token_cap": null,
     "provider_limit_change": "not_available_through_repository_policy"
+  },
+  "latest_user_direction": {
+    "date": "2026-10-12",
+    "use_all_catalog_roles_by_stage": true,
+    "delegate_independent_results_without_reasking": true,
+    "learn_from_actions": true,
+    "catalog_is_not_process_execution": true
+  },
+  "role_coverage": {
+    "catalog_count": 175,
+    "ids_min": 1,
+    "ids_max": 175,
+    "registry": "../creator-2/01-foundation/01-workspace-audit/notes/agent-activation-2026-10-12.md",
+    "statuses": [
+      "available",
+      "planned",
+      "blocked"
+    ],
+    "coverage_does_not_mean_all_roles_executed": true,
+    "owners_equal": true,
+    "server_ai_data_owner": "creator-1",
+    "ui_map_mouse_voice_owner": "creator-2"
+  },
+  "learning": {
+    "check_lessons_before_similar_action": true,
+    "assess_each_action_result": true,
+    "record_significant_successes_and_failures_in_project_library": true,
+    "required_evidence": [
+      "action",
+      "observed_result",
+      "cause_or_unknown",
+      "changed_approach",
+      "verification"
+    ],
+    "repeat_failed_action_requires_new_basis": true,
+    "does_not_update_model_weights": true,
+    "does_not_write_global_codex_memory": true
   }
 }

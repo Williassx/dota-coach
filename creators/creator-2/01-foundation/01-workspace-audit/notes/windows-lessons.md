@@ -1,0 +1,229 @@
+# Windows: уроки из выполненных действий
+
+[Заметки](README.md) · [Отчёт foundation](../reports/windows-foundation-2026-10-11.md) ·
+[Журнал 11 октября](../../../00-action-log/2026-10-11.md).
+
+Ведущая роль: создатель 2, диагностика Windows и проверка evidence. Область этой
+записи — повторяемые рабочие решения; игровые механики и критерии приёмки не меняются.
+Перед применением сопоставляйте версии, пути и режим запуска. Подтверждённый
+результат ниже относится к указанному прогону, а не ко всем будущим установкам.
+Полные native logs остаются в игнорируемом `build/dota_coach`; ссылки на них
+предназначены для локального checkout и могут отсутствовать после очистки build.
+
+## 1. Сначала проверять схему handoff, затем создавать addon
+
+- **Действие:** установщик попытался прочитать `source_verified` на верхнем уровне
+  handoff JSON и остановился до создания каталогов.
+- **Причина:** краткая stdout-сводка и сохранённый JSON имеют разные поля;
+  в handoff подтверждение находится в `source_verification.package_verified`.
+- **Исправление:** проверять фактическую схему и вложенный boolean, kind, asset
+  inventory и hashes до любой записи; не угадывать поле по тексту CLI.
+- **Проверка:** [handoff](../../../../../build/dota_coach/probe-ui-20261012T062416Z-7e7d92.handoff.json)
+  содержит `stage=source_only`, `package_verified=true`, 13 assets/12 XML links;
+  [отдельный verify](../../../../../build/dota_coach/native-hud-scene-source-verify-20261012.json)
+  сохраняет `source2_compiled=false`, `runtime_verified=false`.
+- **Следующий раз:** любой переход CLI → JSON → установка; source verification
+  не повышать до native runtime verification.
+
+## 2. ERROR_FILEOPEN: проверять GAME search paths
+
+- **Действие:** сборка template_map с `-novpk` не находила базовые ресурсы.
+- **Причина:** verbose log показывал только addon в GAME; флаг исключал штатные
+  dota/core VPK. `resourceinfo` прочитал error material внутри установленного VPK.
+- **Исправление:** в этой установке убрать `-novpk`, оставить проверенный
+  абсолютный `-game` и штатный resourcecompiler; не подменять базовые материалы.
+- **Проверка:** [foundation report](../reports/windows-foundation-2026-10-11.md),
+  раздел «Продолжение: карта собрана»: exit 0, 13 compiled/0 failed/0 skipped,
+  VPK 3033412 bytes с записанным MD5; карта затем загрузилась в клиенте.
+- **Следующий раз:** отсутствующий штатный ресурс при сборке карты; прежде
+  исправления ассетов сравнить search paths с успешным native прогоном.
+
+## 3. Exit 0 компилятора не доказывает обновление CSS
+
+- **Действие:** после изменения CSS повторно скомпилирован manifest entry.
+- **Причина:** [лог](../../../../../build/dota_coach/native-hud-scene-final-ui-compile-20261012.log)
+  содержал 0 compiled/0 failed/1 skipped: обновлённый CSS не был скомпилирован.
+- **Исправление:** явно передать изменённый canonical CSS resourcecompiler;
+  generated `.vcss_c` вручную не редактировать.
+- **Проверка:** [CSS compile log](../../../../../build/dota_coach/native-hud-scene-final-css-compile-20261012.log)
+  — 1 compiled/0 failed/0 skipped; [inventory](../../../../../build/dota_coach/native-hud-scene-final-compiled-20261012.json)
+  содержит `.vcss_c` 4171 bytes и SHA-256, совпадение всех 13 source hashes.
+- **Следующий раз:** любая правка зависимого XML/JS/CSS; читать compiled/skipped
+  counts и проверять фактический output, даже при exit 0.
+
+## 4. Обновлённый ресурс нужно увидеть в новом native кадре
+
+- **Действие:** CSS с новым отступом roster скомпилирован при работающем клиенте;
+  кадр shot_0018 сохранил прежнее расположение.
+- **Причина:** этот клиент не применил обновлённый CSS live; механизм или причина
+  отсутствия reload отдельно не установлены.
+- **Исправление:** штатно завершить свой клиент, проверить завершение и запустить
+  новую собственную сессию; не считать compile сигналом перерисовки.
+- **Проверка:** [shot_0018 evidence](../../../../../build/dota_coach/native-hud-scene-final-css-shot-20261012.jsonl)
+  предшествует [новому owned run](../../../../../build/dota_coach/native-hud-scene-final1280-owner-20261012.json);
+  [shot_0019](../../../../../build/dota_coach/native-hud-scene-final1280-shot-20261012.jsonl)
+  и [итоговый кадр 1280×720](../../../11-integration/02-addon-packaging/reports/native-hud-scene-2026-10-12.png)
+  подтверждают новое расположение.
+- **Следующий раз:** расхождение нового source/compiled hashes со старым видом;
+  native live reload считать отдельной проверкой, не предположением.
+
+## 5. Inert HUD: XML visible=false не закрыл пустые карточки
+
+- **Действие:** исходный HUD13 загрузился без bind, но показал пять пустых slots
+  и наложение статуса на штатную статистику.
+- **Причина:** в этом кадре XML `visible=false` не обеспечил требуемую начальную
+  видимость. Почему XML-атрибут не сработал, отдельно не установлено. Native
+  `dump_panorama_css_properties` определяет CSS `visibility: collapse` как
+  невидимость с исключением из layout.
+- **Исправление:** в canonical CSS задать default collapse; roster margin-left
+  320px, status margin-top 120px и читаемый фон. HUD13 остаётся definitions-only.
+- **Проверка:** [native CSS help](../../../../../build/dota_coach/native-hud-scene-css-help-20261012.jsonl);
+  [RED](../../../../../build/dota_coach/native-hud-scene-css-red-20261012.log)
+  — один default-collapse failure, [GREEN](../../../../../build/dota_coach/native-hud-scene-css-green-20261012.log)
+  — 20/20; [до](../../../11-integration/02-addon-packaging/reports/native-hud-scene-before-2026-10-12.png),
+  [после 1280×720](../../../11-integration/02-addon-packaging/reports/native-hud-scene-2026-10-12.png)
+  и [1920×1080](../../../11-integration/02-addon-packaging/reports/native-hud-scene-1920-2026-10-12.png)
+  показывают исчезновение пяти пустых slots. Это проверка начального inert вида.
+- **Следующий раз:** изменение default visibility проверять без запуска JS и в
+  движке. Совместимость будущего `Panel.visible=true` с CSS collapse требует
+  отдельного native setter evidence; эти кадры её не подтверждают. Полный bind,
+  hittest, сервер и визуальная приёмка всей карты остаются отдельными критериями.
+
+## 6. Engine screenshot сохранять без внешнего абсолютного пути
+
+- **Действие:** `screenshot` с абсолютным путём вне Game/Content вызвал abort.
+- **Причина:** native dump сообщил `Invalid screenshot path ...: D`; это
+  установленная ошибка команды, отдельно от более раннего DXGI crash.
+- **Исправление:** штатный `screenshot` без аргумента; проверить новый TGA в
+  `game/dota/screenshots`, затем подготовить PNG для отчёта.
+- **Проверка:** [foundation report](../reports/windows-foundation-2026-10-11.md)
+  отделяет два сбоя; свежие native [shot_0019](../../../../../build/dota_coach/native-hud-scene-final1280-shot-20261012.jsonl)
+  /[shot_0020](../../../../../build/dota_coach/native-hud-scene-final1920-shot-20261012.jsonl)
+  содержат новые live markers и штатные screenshot paths.
+- **Следующий раз:** экспорт native evidence; сверять новый timestamp и размер,
+  просматривать оригинальный кадр, не выдавать старый файл за новый.
+
+## 7. WGC timeout: фиксировать ограничение канала, не придумывать причину
+
+- **Действие:** sky capture Dota/Asset Browser и контрольного Блокнота дал
+  FrameArrived timeout; UIA Dota показывал рамку, не игровую кнопку.
+- **Причина:** не установлена. Проверка Блокнотом и запуск через sky не
+  подтвердили гипотезу о Hidden; повтор после reset также не дал кадра.
+- **Исправление:** для визуальной проверки использовать рабочий engine
+  screenshot; независимые source checks продолжать. Не менять ОС/драйвер и
+  не кликать по предполагаемым координатам.
+- **Проверка:** [foundation report](../reports/windows-foundation-2026-10-11.md)
+  описывает контроль, error `coordinate input geometry is unavailable` и
+  успешный native screenshot отдельно. Клик, hittest и lifecycle не приняты.
+- **Следующий раз:** недоступный capture/input канал; ограничить заключение
+  наблюдаемым отказом и выбрать независимый проверяемый результат.
+
+## 8. VConsole: TCP и buffered log не равны живому ответу
+
+- **Действие:** Tools однажды установил TCP без ответа; другой поток сначала
+  показывал buffered startup messages и ToolsStallMonitor.
+- **Причина:** ранняя готовность Tools не подтверждалась этими наблюдениями;
+  поздний поток ответил, поэтому окончательный отказ не установлен.
+- **Исправление:** новый уникальный echo после подключения; ждать ограниченно
+  свежий marker, native load/game-state и нужное событие отдельно.
+- **Проверка:** [foundation report](../reports/windows-foundation-2026-10-11.md)
+  фиксирует поздний live ответ и panel_ready в Tools, 18:11:06 UTC.
+- **Следующий раз:** новый процесс/порт/reload; API help, панель и ввод имеют
+  разные доказательства. Справка о методах не подтверждает JS return values,
+  адресность, полномочия или освобождение подписок.
+
+## 9. Windows stat: сравнивать разные API с проверенной identity
+
+- **Действие:** map audit выдавал ложный manifest_changed; 70 из 100 повторов.
+- **Причина:** lstat/fstat совпадали по dev/ino/size/mtime, расходились по legacy
+  ctime; st_birthtime_ns совпал в 50/50. Причина legacy ctime различия не установлена.
+- **Исправление:** existing helper использует birthtime для cross-API identity
+  на win32/Python 3.12; same-API snapshots сохраняют ctime mutation guards,
+  POSIX/legacy fallback — прежние.
+- **Проверка:** [identity report](../../../03-map-view/01-map-audit/reports/windows-identity-2026-10-11.md)
+  — 100/100 stable associations; 34 tests: 28 passed/6 existing skipped;
+  новые ctime-only mutation cases отвергаются. Bounded inventory не доказывает
+  геометрию, патч или загрузку карты.
+- **Следующий раз:** ложное «файл изменился» на Windows; сравнивать сырые поля
+  до tolerance/retry/sleep и сохранять guards от настоящей мутации.
+
+## 10. Timeout runner: сохранять настоящий ответ taskkill
+
+- **Действие:** owned child fixture переживал sandbox timeout, stderr терялся.
+- **Причина:** штатный taskkill вернул Access denied в sandbox; тот же owned
+  fixture вне sandbox завершился с returncode 0. Отдельный mock ошибочно скрывал
+  все shutil.which вместе с taskkill.
+- **Исправление:** stdout/stderr taskkill направлять в suite log; Node absence
+  mock скрывает только Node. Не менять privilege/kill scope/strict status.
+- **Проверка:** [runner report](../../../11-integration/03-end-to-end/reports/windows-runner-2026-10-11.md)
+  — три timeout tests прошли вне sandbox; synthetic refusal остаётся
+  timeout_termination_failed и verified=false с диагностикой.
+- **Следующий раз:** неизвестная причина timeout/termination error; сначала
+  прочитать returncode/stderr и режим исполнения, fallback kill не считать
+  доказательством завершения всего дерева.
+
+## 11. Junction evidence дополняет, но не заменяет file symlink tests
+
+- **Действие:** file symlink fixtures упали с WinError 1314; доступная Junction
+  использована для отдельной проверки directory redirect guards.
+- **Причина:** file symlink privilege отсутствовал; directory Junction — другое
+  условие, её создание не устраняет этот отказ.
+- **Исправление:** scoped Junction fixture, подтверждение ReparsePoint и запрета
+  external open; удалить только redirect после проверки пути и target.
+- **Проверка:** [reparse report](../../../11-integration/03-end-to-end/reports/windows-reparse-2026-10-11.md)
+  — 3/3 actual redirect tests, без skips/errors; external target сохранён.
+  File-symlink tests и отказ полного runner сохранены.
+- **Следующий раз:** недоступный fixture без прав; добавить самостоятельный
+  доказуемый сценарий, не подменять исходный и не ослаблять acceptance policy.
+
+## 12. Полная регрессия: смотреть failed suites и verified
+
+- **Действие:** первые Windows source runs дали encoding errors; UTF-8 убрал
+  два отказа, но не все. Targeted GREEN и hundreds passed не закрыли full run.
+- **Причина:** кроме encoding оставались WinError 1314, платформенные tests и
+  строгий invalid_summary для suites со skipped; aggregate не включает все
+  passed tests из неуспешных suites.
+- **Исправление:** process-local `PYTHONUTF8=1`; сохранять полный summary,
+  failures/skips/errors отдельно, не менять policy ради зелёного статуса.
+- **Проверка:** [foundation report](../reports/windows-foundation-2026-10-11.md);
+  [full-source log 12 октября](../../../../../build/dota_coach/native-hud-scene-final-full-source-20261012.log)
+  и [JSON](../../../../../build/dota_coach/source-checks-20261012T064424Z-e9261c/source-checks.json)
+  — 46 suites/752 passed_tests/6 failed suites, `verified=false`.
+- **Следующий раз:** перед заявлением о готовности проверять свежую сводку всего
+  требуемого объёма. Компиляция, screenshot, targeted source PASS, native input,
+  C1/server/lease/возврат ИИ и проверка второго владельца закрываются отдельно.
+
+## 13. Native фаза, getter и изображение — разные наблюдения
+
+- **Действие:** hidden predicate PASS при visible=false; cached layout оставался140×30.
+  Первый screenshot hidden попал между re-show setter и обновлением phase label.
+- **Причина:** getter/сохранённый размер не гарантируют изображение; label обновляется
+  отдельным scheduled callback и может ещё описывать предыдущую фазу.
+- **Исправление:** получать engine кадр через две секунды после phase record,
+  до следующего setter; проверять initial→shown→hidden→reshown по log и кадрам.
+- **Проверка:** [native CSS cycle](../../../11-integration/02-addon-packaging/reports/native-hud-scene-2026-10-12.md)
+  — четыре predicates PASS и четыре осмотренных кадра: отсутствует/виден/отсутствует/виден.
+- **Следующий раз:** timed UI проверять в устойчивом интервале; промежуточный label
+  и положительная ширина не заменяют actual frame. Setter fixture не закрывает полный bind.
+
+## 14. WindowsApps alias не является рабочим Python
+
+- **Действие:** проверка реестра175 через python --version дала ResourceUnavailable
+  для WindowsApps/python.exe.
+- **Причина:** обнаруженный alias недоступен в этой среде; это не отказ bundled runtime.
+- **Исправление:** получить путь через load_workspace_dependencies и использовать
+  проверенный C:/Users/Dagda/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe.
+- **Проверка:** [реестр и проверочный код](agent-activation-2026-10-12.md)
+  —175 matching IDs/names, JSON,75 local links, exit0 этим runtime.
+- **Следующий раз:** выбирать launcher по фактической доступности; не повторять alias
+  и не переустанавливать Python без необходимости.
+
+## Как продолжать обучение
+
+Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.
+После завершения задачи сохраняет фактический result/evidence; новый урок
+добавляет только при новом знании по пяти полям выше. Неустановленную причину
+так и помечает. Историческую проверку не переименовывает в свежий результат.
+Длинные raw logs остаются локально; в библиотеке — краткая причина, действие,
+критерий повторной проверки и ссылка. Поручение/файлы/непроведённые шаги остаются
+в [журнале действий](../../../00-action-log/README.md).

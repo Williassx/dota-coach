@@ -3,6 +3,7 @@ import copy
 import hashlib
 import importlib.util
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -115,6 +116,26 @@ class HudBundleTests(unittest.TestCase):
         self.assertEqual(scopes["CoachTargets"].get("hittestchildren"), "false")
         for n in range(5):
             self.assertEqual(scopes["RosterCard" + str(n)].get("visible"), "false")
+
+    def test_initial_roster_slots_have_collapsed_css_without_running_scripts(self):
+        root = ET.parse(self.source_for(HUD)).getroot()
+        css = self.source_for("content/panorama/styles/custom_game/coach_hud.css").read_text(encoding="utf-8")
+        rules = re.findall(r"([^{}]+)\{([^{}]*)\}", css)
+        for number in range(5):
+            slot = next(n for n in root.iter("Button") if n.get("id") == "RosterCard" + str(number))
+            classes = set(slot.get("class", "").split())
+            visibility = "visible"
+            # Resolve the plain class selectors applicable before any binding.
+            # XML visible=false alone did not collapse these slots in native Dota.
+            for selector, body in rules:
+                selector = selector.strip()
+                if not re.fullmatch(r"(?:\.[A-Za-z_][A-Za-z_0-9-]*)+", selector):
+                    continue
+                if set(selector.split(".")[1:]) <= classes:
+                    values = re.findall(r"\bvisibility\s*:\s*([^;]+);", body)
+                    if values:
+                        visibility = values[-1].strip()
+            self.assertEqual(visibility, "collapse", slot.get("id"))
 
     def test_loading_every_declared_script_has_no_native_or_startup_side_effects(self):
         root = ET.parse(self.source_for(HUD)).getroot()

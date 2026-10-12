@@ -127,3 +127,10 @@ Labels и 7 контейнеров. Отдельная панель пяти с�
 [Mouse targeting recipe](mouse-targeting-manifest.json) ·
 [Дизайн](mouse-targeting-design.md) · [План](mouse-targeting-plan.md) ·
 [Инструкция](notes/mouse-targeting-package.md).
+
+## Нативная сцена пустого HUD
+
+[План](native-scene-plan.md) · [Фактические кадры и проверки](reports/native-hud-scene-2026-10-12.md).
+HUD13/12 загружен в отдельной Dota fixture при1280×720 и1920×1080; исправлен
+canonical CSS initial slots и отступов от штатного UI. Kind/JS/bootstrap не расширены.
+Полная регрессия, input, bind, C1 и рассмотрение другого создателя остаются открытыми.

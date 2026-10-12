@@ -123,6 +123,19 @@ Map/bootstrap/bind не добавлены, runtime/input/сервер/втор�
 Все действия отдельно в creators/creator-2/00-action-log/YYYY-MM-DD.md, UTC.
 Новые исходники сначала в библиотеке создателя2. Прочие отделы/контракты не менять.
 Чекбоксы/graph только по evidence; source checks не заменяют native/second owner.
-Экономный порядок agents: root solo, один final critic после готового подпроекта,
+Порядок agents: полный каталог по этапам из agent-activation-2026-10-12.md,
+полезные независимые группы в пределах четырёх процессов; один final critic после готового подпроекта,
 точные token/cost неизвестны → null. Подходящие checks, docs/graph/Git diff check,
 normal fast-forward main push, remote SHA/clean; публикация ранее разрешена.
+
+Последнее native продолжение 12 октября: отдельная Dota fixture HUD13/12 реально
+показала пустые области при1280×720 и1920×1080. CSS исправлен по кадрам:
+collapse initial cards, roster справа от minimap, status ниже статистики.
+Manifest incremental skip не перекомпилировал CSS: явный CSS compile и owned
+restart обязательны при таком результате. Fixed kinds/JS/bootstrap сохранены.
+Отдельная test-only setter fixture проверяет переключение Panel.visible;
+она не является полным bind. Белый участок template minimap, full regression,
+input/C1/identity/lease/возврат ИИ и другой создатель остаются открытыми.
+[Native evidence](../../../11-integration/02-addon-packaging/reports/native-hud-scene-2026-10-12.md).
+Перед похожими действиями применяйте [уроки](windows-lessons.md); каталог всех
+175 ролей и условия назначения — [реестр](agent-activation-2026-10-12.md).

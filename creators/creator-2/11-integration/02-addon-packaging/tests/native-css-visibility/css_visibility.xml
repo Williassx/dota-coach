@@ -1,0 +1,16 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/coach_hud.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/css_visibility.js" />
+    </scripts>
+    <Panel hittest="false" hittestchildren="false" style="width: 100%; height: 100%;">
+        <Panel style="horizontal-align: center; vertical-align: center; flow-children: down; width: 300px;">
+            <Label id="NativeCssPhase" text="TEST: native CSS visibility" class="CoachHudHeading" html="false" />
+            <Button id="NativeCssSlot" class="CoachHudCard" hittest="false" hittestchildren="false">
+                <Label text="TEST: Panel.visible=true" class="CoachHudName" html="false" />
+            </Button>
+        </Panel>
+    </Panel>
+</root>
