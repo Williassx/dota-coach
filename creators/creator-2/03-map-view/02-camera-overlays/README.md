@@ -28,6 +28,7 @@
 - [Исходники](src/README.md): native gateway, отдельная панель, XML/CSS без bootstrap.
 - [Проверки](tests/README.md), [решения и API](notes/camera.md), [отчёт](reports/cloud-camera.md).
 - [Native TEST-дизайн](native-design.md), [план](native-plan.md), [фактический отчёт](reports/native-camera-2026-10-12.md): requested=true не arrival; distanceXY4520.37 через1,5s.
+- [Motion/input диагностика](reports/native-camera-motion-2026-10-12.md):100native samples/4actualframes, raw projection3, activeinput и baselinealreadynear. Причина прежнего возврата не установлена; progress не повышен.
 
 ```sh
 node --test creators/creator-2/03-map-view/02-camera-overlays/tests/camera.test.cjs

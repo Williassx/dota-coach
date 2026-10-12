@@ -405,6 +405,22 @@
 - **Проверка:** после исправления ownPID29544 закрыт черезquit/marker, процесс отсутствует, Steam12336 сохранён. [Отчёт](../../../03-map-view/02-camera-overlays/reports/native-camera-2026-10-12.md), initial safe refusal сохранён в журнале выполнения.
 - **Следующий раз:** нормализовать типы дат перед identity comparison; отдельно проверить mismatch и owned completion. Guard failure не является auto-review rejection или причиной завершать чужойPID.
 
+## 33. Имя native API не устанавливает форму возвращаемого массива
+
+- **Действие:** motion diagnostic ожидал2элемента WorldToScreenXYClamped и остановился доsample0; первое сообщение не называло поле.
+- **Причина:** runtime m3 вернул[0.5,0.45477646589279175,0], тогда как registeredAPI толькоjs_array безточной длины. Exact2 было догадкой поXY; третья компонента нерасшифрована.
+- **Исправление:** named/rawerror вместо слепого изменения; actualtriple вVM сначалаRED, затемraw3 сохранён безvisibility interpretation. Postrequestguard отдельно закрывает newlyunavailable hero доorigin.
+- **Проверка:** [Motion report](../../../03-map-view/02-camera-overlays/reports/native-camera-motion-2026-10-12.md): failedm2/m3 preserved, final100samples/raw3/5VMPASS, postguardRED→GREEN. OwnfailedPIDs quitgone.
+- **Следующий раз:** в первичном диагностическом сообщении сохранять API/ожидаемую форму/actualshape/value и scope. Callback/registeredtype/JSarray name не позволяют угадатьlength/units/meaning.
+
+## 34. Измерение с активным вводом не является управляемым сравнением
+
+- **Действие:** вокругnativefocus получены20baseline/80post samples; near0 вpost сначала выглядел как подтверждениеприбытия.
+- **Причина:** baselinealreadynear18/20, cursor68значений/buttontrue14samples/ownorigin8; одновременно менялись несколько условий. Index2 былtrue приrequest; семантика индекса отдельно не подтверждена.
+- **Исправление:** не заявлятьcause/удержание/edgepan fix; сохранитьoriginalfailedarrival, rawinput/position/time. Preferences не менять радиGREEN; отделить samplednear отcausalarrival.
+- **Проверка:** [100sample evidence](../../../03-map-view/02-camera-overlays/reports/native-camera-motion-samples-2026-10-12.jsonl), postnear2/80,min0,last312.7443/fouractualframes inspected; controlledcomparisonfalse.
+- **Следующий раз:** до причинного опыта определить inputcontrol/baseline, фиксировать hero motion и provenance. Nearthreshold не global acceptance, mouse state не C2hittest/permission/ИИreturn; однапеременная иrollback отдельнымпланом.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

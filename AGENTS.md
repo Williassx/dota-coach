@@ -217,3 +217,10 @@ dispose/rebind/idgetterreads0. LookAtdistanceXY4520.37 @1.5sec, позднее �
 не установлена. OwnPID29544quit→gone; JSON timestamp сравнивать по точным UTCticks,
 не stringvsDateTime. Full48/1031passed/28skipped/6incomplete/0errors/verifiedfalse.
 Source-onlyflagsfalse; humansecondowner остаётся открытым.
+
+C2-03-02 motion driver:20baseline/80post native samples, oneprogrammaticrequest,
+4actualframes. Exactcamera/motionvariants сохраняют fixedHUD13/default; postrequest
+guard доownorigin, rawprojectiontriple/thirdmeaningunknown. Baselinealreadynear18/20,
+postnear2/80, activecursor/buttons/hero means uncontrolledcomparison, неcausalarrival
+или edgepanfix. Native preferences/cvars unchanged; failedm2/m3 и100samples сохранены.
+All3ownPIDsquitgone. Full49/1039passed/28skip/0errors/false; humanowneropen.

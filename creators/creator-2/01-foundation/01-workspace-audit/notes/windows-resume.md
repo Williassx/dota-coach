@@ -227,3 +227,21 @@ humansecondowneropen. [Evidence](../../../03-map-view/02-camera-overlays/reports
 Следующий шаг: отдельная диагностика native motion/input state/границ template_map
 с существующимиAPI; заранее определить независимые измерения и сохранить failed
 arrival. Physicalinput/hittest/realmap/identity/markers/scaling/C1 остаются открытыми.
+
+C2-03-02 motion/input diagnostics: exact camera/motion builder allowlist preserves
+default/fixedHUD13; Python10/VM5(actualpanel+gateway) PASS. M1 compilednotlaunched;
+postrequestguard RED21originreads vs20→GREEN. M2/PID26612 failedgenericvector before
+sample0/request0, m3/PID29240 namedraw showed projectiontriple[0.5,0.454776…,0].
+Raw3 correctedafterVMRED; thirdmeaningunverified. Finalm4/PID18356:100samples/
+4actualframes1280×720 inspected;20baseline/80post, elapsed20016ms,1gatewayrequest.
+Baselinealreadynear18/20, postnear2/80/min0/last312.7443; cursor68values/buttontrue14/
+origin8: uncontrolled input, causalarrival/H1edgepan remainOPEN. No prefs/cvars/
+cursor movement bydiagnostics. All3ownedlaunchedPIDsquit→gone, Steam12336preserved.
+NativeUI1/canonical1/map13/0failed, fixture15/14active+1retained; sourceflagsfalse.
+Full180207Z-e4cd1649/1039passed/28skip/6incomplete/0errors/false/all49process0.
+ReadonlyAPIhelper1/finalcritic1 nofindings; humanowneropen. Lessons33/34,
+[report/data](../../../03-map-view/02-camera-overlays/reports/native-camera-motion-2026-10-12.md).
+Progress53/213 unchanged. Следующий причинныйnativecamera опыт требует заранее
+определённого контроля baseline/input/hero и отдельно singlevariable+rollback plan;
+не повторять неуправляемую серию радиgreen. Независимые C2задачи выбирать по текущим
+PLAN/PROGRESS/dependencies, C1/identity/physicalinput/map/markers/scaling открыты.

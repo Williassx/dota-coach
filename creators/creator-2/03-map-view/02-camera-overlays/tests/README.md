@@ -7,6 +7,10 @@
 callbacks/results и одинаковые имена. API позиции/приказов/слежения запрещены mock.
 Набор не подтверждает actual camera arrival, native hittest или связь игрока с entity.
 
-[7 Python builder checks](test_native_camera_fixture.py): canonical hashes/subtree,
+[10 Python builder checks](test_native_camera_fixture.py): canonical hashes/subtree,
 determinism, fresh output/escape/missing/recipe/executable manifest refusals.
 [Явный native smoke](01-native-camera/README.md) не запускается ordinary catalog.
+
+[Motion VM](camera-motion.test.cjs): actual production panel/native modules с TEST
+sampling driver; single activation, baseline/post sampling, missing API/guard loss/
+malformed vector/request exception. Native input или timing этими mocks не доказаны.

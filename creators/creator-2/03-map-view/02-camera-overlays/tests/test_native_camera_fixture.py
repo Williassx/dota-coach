@@ -140,6 +140,32 @@ class NativeCameraFixtureTests(unittest.TestCase):
         self.assertEqual(first['assets'], second['assets'])
         self.assertEqual(first['canonical_input_hashes'], second['canonical_input_hashes'])
 
+    def test_motion_variant_uses_exact_owned_driver_preserves_canonical(self):
+        motion = self.repo / FIXTURE / 'camera_motion.js'
+        raw = b'/* TEST ONLY: motion driver */\n'
+        motion.write_bytes(raw)
+        report = self.builder.build_fixture(self.repo, self.output, variant='motion')
+        self.assertEqual(report['diagnostic_variant'], 'motion')
+        self.assertEqual(len(report['assets']), 15)
+        entry = next(a for a in report['assets'] if a['target'] == DRIVER)
+        self.assertEqual(entry['source'], FIXTURE + 'camera_motion.js')
+        self.assertEqual((self.output / DRIVER).read_bytes(), raw)
+        self.assertFalse(report['runtime_verified'])
+        for source, before in self.before.items():
+            self.assertEqual((self.repo / source).read_bytes(), before)
+
+    def test_unknown_variant_refuses_before_reads_or_writes(self):
+        for variant in [None, True, '../escape', 'demo', {'path': 'camera_motion.js'}]:
+            with self.subTest(variant=variant):
+                with self.assertRaises(ValueError):
+                    self.builder.build_fixture(self.repo, self.output, variant=variant)
+                self.no_output()
+
+    def test_missing_motion_driver_refuses_before_output(self):
+        with self.assertRaises((OSError, ValueError)):
+            self.builder.build_fixture(self.repo, self.output, variant='motion')
+        self.no_output()
+
 
 if __name__ == '__main__':
     unittest.main()

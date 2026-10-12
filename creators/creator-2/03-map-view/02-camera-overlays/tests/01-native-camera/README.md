@@ -19,3 +19,11 @@ python creators/creator-2/03-map-view/02-camera-overlays/tests/01-native-camera/
 
 Повторный запуск требует нового Run/addon/bundle; ранее созданные файлы сохраняются.
 Скрипты имеют дату smoke в именах receipts и намеренно не являются product bootstrap.
+
+`camera_motion.js` — дополнительный explicit `--variant motion`,
+[дизайн](../../motion-design.md)/[план](../../motion-plan.md). Для него capture-command
+получает `--variant motion --run <fresh-run>` и ждёт окончания100samples. Native APIs
+могут вернуть иной shape; ошибка сохраняет имя/rawvalue, не игнорируется как приёмка.
+Перед origin read guard проверяется повторно после request; readonly cvar query
+`find dota_camera` не меняет preferences. Install отказывает и при существующих
+receipts/logs этого Run, даже если другое имя addon свободно.

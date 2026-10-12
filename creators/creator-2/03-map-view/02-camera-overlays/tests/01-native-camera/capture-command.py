@@ -6,6 +6,7 @@ from PIL import Image
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run', default='r1')
+    parser.add_argument('--variant', choices=('camera', 'motion'), default='camera')
     args = parser.parse_args()
     if not re.fullmatch(r'[a-z0-9_-]+', args.run): raise ValueError('Invalid run id')
     repo = Path(__file__).resolve().parents[6]
@@ -13,7 +14,9 @@ def main():
     log = Path(str(prefix) + '-console.log')
     reportdir = Path(__file__).resolve().parents[2] / 'reports'
     shots = Path('C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota/screenshots')
-    phases = ['bound', 'selected', 'refreshed', 'focused', 'rejected', 'disposed', 'rebound']
+    phases = (['baseline', 'early', 'settled', 'returned'] if args.variant == 'motion' else
+              ['bound', 'selected', 'refreshed', 'focused', 'rejected', 'disposed', 'rebound'])
+    marker = '[C2NativeCameraMotion]' if args.variant == 'motion' else '[C2NativeCamera]'
     records = []
     deadline = time.monotonic() + 420
     def body(): return log.read_text(encoding='utf-8', errors='replace') if log.exists() else ''
@@ -32,15 +35,16 @@ def main():
                 if re.findall(r'DOTA_GAMERULES_STATE_([A-Z_]+)', body())[-1] != 'HERO_SELECTION': raise RuntimeError('Hero-selection window changed')
                 query(command, suffix, 1000)
             print('phase_scoped_hero_commands_sent=true', flush=True)
+            if args.variant == 'motion': query('find dota_camera', 'camera-settings')
             break
         if state in ('STRATEGY_TIME', 'TEAM_SHOWCASE', 'PRE_GAME', 'GAME_IN_PROGRESS'): raise RuntimeError('Hero selection missed')
         time.sleep(.25)
     else: raise TimeoutError('Fresh hero-selection state missing')
     for phase in phases:
         while time.monotonic() < deadline:
-            lines = [line for line in body().splitlines() if '[C2NativeCamera]' in line]
+            lines = [line for line in body().splitlines() if marker in line]
             if any('pass=false' in line for line in lines): raise RuntimeError('Native assertion failed; inspect log')
-            if any('[C2NativeCamera] ' + phase + ' pass=true' in line for line in lines): break
+            if any(marker + ' ' + phase + ' pass=true' in line for line in lines): break
             time.sleep(.25)
         else: raise TimeoutError('Native phase missing: ' + phase)
         time.sleep(2)
@@ -53,5 +57,12 @@ def main():
         records.append({'phase': phase, 'utc': row['utc'], 'engine_tga': name, 'png': str(png)})
         print(json.dumps(records[-1]), flush=True)
     Path(str(prefix) + '-captures.json').write_text(json.dumps(records, indent=2) + '\n', encoding='utf-8')
+    if args.variant == 'motion':
+        while time.monotonic() < deadline:
+            lines = [line for line in body().splitlines() if marker in line]
+            if any('pass=false' in line for line in lines): raise RuntimeError('Native motion assertion failed')
+            if any(marker + ' done pass=true' in line for line in lines): break
+            time.sleep(.25)
+        else: raise TimeoutError('Native motion sample sequence incomplete')
 
 if __name__ == '__main__': main()

@@ -20,6 +20,10 @@ if ($Mode -eq 'Quit') {
 }
 if (Get-Process dota2 -ErrorAction SilentlyContinue) {throw 'Existing Dota client preserved'}
 if ($Mode -eq 'Install') {
+ if ((Test-Path -LiteralPath "$prefix-hashes.json") -or
+     (Test-Path -LiteralPath "$prefix-ui-compile.log") -or
+     (Test-Path -LiteralPath "$prefix-canonical-compile.log") -or
+     (Test-Path -LiteralPath "$prefix-map-compile.log")) {throw 'Fresh install receipt/log required'}
  if ((Test-Path -LiteralPath $contentRoot) -or (Test-Path -LiteralPath $gameRoot)) {throw 'Fresh addon directories required'}
  $sourceBundle=(Resolve-Path -LiteralPath $Bundle).Path
  $report=Get-Content -LiteralPath "$sourceBundle/native-fixture-report.json" -Raw | ConvertFrom-Json

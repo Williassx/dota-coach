@@ -240,6 +240,11 @@
       "id": "python-c2-03-02",
       "framework": "python-unittest",
       "path": "creators/creator-2/03-map-view/02-camera-overlays/tests"
+    },
+    {
+      "id": "node-camera-motion",
+      "framework": "node-test",
+      "path": "creators/creator-2/03-map-view/02-camera-overlays/tests/camera-motion.test.cjs"
     }
   ]
 }
