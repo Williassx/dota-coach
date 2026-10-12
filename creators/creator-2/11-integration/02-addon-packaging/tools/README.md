@@ -39,3 +39,7 @@
 - [build_native_observation_fixture.py](build_native_observation_fixture.py) —12outputs
   TEST scene opponents/history;10canonical composed outputs/12raw input hashes,
   strict manifest/path policy и retained generated layout, fixed10/9 без auto-bind.
+
+- [build_native_intervention_fixture.py](build_native_intervention_fixture.py) —15outputs
+  TEST scene карточек/запроса;13canonical outputs/15raw inputs с2XML inputs,
+  strict manifest/path guards, fixed13/12 и preserved source-only flags.

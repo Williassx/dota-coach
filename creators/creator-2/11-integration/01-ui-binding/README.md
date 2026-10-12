@@ -126,3 +126,10 @@ explicit local draft/reset/dispose проверены, physical input/C1/сер�
 [Native report](reports/native-observation-2026-10-12.md): final6фаз PASS, initial
 cycle failed из-за ожидания driver;11actual frames сохранены. Fixed10/9 сохранён,
 общий игровой HUD/C1/input и map render acceptance остаются открытыми.
+
+[Native intervention design](native-intervention-design.md) ·
+[План](native-intervention-plan.md) · [Fixture](tests/native-intervention/README.md).
+Отдельная TEST scene проверяет existing card/request APIs и actual ACK timeout,
+без production bootstrap/сервера/полномочия ручного ввода.
+
+[Native intervention evidence](reports/native-intervention-2026-10-12.md): восемь API фаз, два запуска и16actual кадров. Scoped composition CSS исправил невидимую область запроса; fixed13/12 сохранён. ACK TEST stub не даёт прав input; C1, lease, возврат ИИ и human owner открыты.

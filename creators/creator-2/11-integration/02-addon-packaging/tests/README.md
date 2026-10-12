@@ -41,3 +41,7 @@ test_preparation_bundle.py также проверяет anonymous outer/inner n
 [test_native_observation_fixture.py](test_native_observation_fixture.py) —7проверок
 12output fixture: exact canonical subtree,12raw input hashes/2XML inputs, refusal
 guards. Match observation package дополнительно проверяет anonymous outer shape.
+
+[test_native_intervention_fixture.py](test_native_intervention_fixture.py) —7проверок
+15output fixture и15raw input hashes. Screen package сохраняет50ID/root rename,
+дополнительно проверяет exact anonymous outer и bind inner scope в actual VM.

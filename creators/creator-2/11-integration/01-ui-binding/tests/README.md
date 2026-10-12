@@ -23,3 +23,6 @@ TEST driver и native scroll/geometry assertions, без production auto-bind/in
 
 [Native observation fixture](native-observation/README.md) — independent source
 gates, dispose/rebind и stale DTO inspection через existing public API.
+
+[Native intervention fixture](native-intervention/README.md) — local send/report,
+captured actor, actual native ACK timer и dispose/rebind; не physical input.

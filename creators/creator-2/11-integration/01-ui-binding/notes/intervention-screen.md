@@ -27,4 +27,8 @@ dispose/потеря required node закрывает flow/children и watcher/A
 отказ не скрывает через parent независимо занятую child scope.
 
 ACK/observed MANUAL не дают права ввода и не доказывают возврат ИИ. Это source
-binding существующего дерева, не native приёмка. Layout/recipe — следующий шаг.
+binding существующего дерева. [Source layout/recipe](../../02-addon-packaging/notes/intervention-screen-package.md)
+сохраняет fixed13/12; explicit bind получает inner CoachInterventionScreen внутри
+anonymous canvas. [Ограниченный native smoke](../reports/native-intervention-2026-10-12.md)
+проверил восемь API фаз и видимость панели после scoped CSS исправления. Physical
+input, серверные права, lease и возврат ИИ остаются открытыми.

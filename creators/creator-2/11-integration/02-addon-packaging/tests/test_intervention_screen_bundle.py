@@ -37,13 +37,22 @@ class ScreenBundleTests(unittest.TestCase):
   result=verifier.verify_bundle(self.repo,self.manifest,self.output)
   self.assertEqual(result['xml_resource_links'],12);self.assertTrue(result['package_verified'])
  def test_generated_scopes_equal_sources_with_only_declared_root_rename(self):
-  self.build();root=ET.parse(self.output/LAYOUT).getroot();ids=[n.get('id') for n in root.iter() if n.get('id')]
+  self.build();root=ET.parse(self.output/LAYOUT).getroot();self.assertNotIn('id',root.find('Panel').attrib);self.assertEqual(root.find('./Panel/Panel').get('id'),'CoachInterventionScreen');ids=[n.get('id') for n in root.iter() if n.get('id')]
   self.assertEqual(len(ids),50);self.assertEqual(len(ids),len(set(ids)))
   for e in self.manifest['layout_inputs']:
    expected=copy.deepcopy(next(n for n in ET.parse(self.repo/e['source']).getroot().iter('Panel') if n.get('id')==e['root_id']))
    expected.set('id',e['output_root_id']);expected.tail=None
    host=next(n for n in root.iter('Panel') if n.get('id')==e['host_id']);self.assertEqual(len(host),1)
    actual=copy.deepcopy(host[0]);actual.tail=None;self.assertEqual(ET.tostring(actual),ET.tostring(expected))
+ def test_anonymous_outer_and_binding_root_guards(self):
+  p=self.source(LAYOUT);original=p.read_bytes()
+  for mode in ('outer_id','outer_class','extra_child','binding_id'):
+   root=ET.fromstring(original);outer=root.find('Panel')
+   if mode=='outer_id':outer.set('id','Forbidden')
+   if mode=='outer_class':outer.set('class','OtherCanvas')
+   if mode=='extra_child':outer.append(ET.Element('Panel'))
+   if mode=='binding_id':outer[0].set('id','WrongRoot')
+   p.write_bytes(ET.tostring(root));self.reject();p.write_bytes(original)
  def test_fingerprints_change_when_raw_input_changes_outside_extracted_scope(self):
   prepared=builder.prepare_assets(self.repo,self.manifest)
   old=next(data for _,target,data in prepared if target==LAYOUT)
@@ -97,7 +106,7 @@ class ScreenBundleTests(unittest.TestCase):
  def test_actual_generated_context_bind_and_card_click_send_once(self):
   self.build();root=ET.parse(self.output/LAYOUT).getroot()
   def tree(n):return {'tag':n.tag,'attrs':n.attrib,'children':[tree(c) for c in n]}
-  probe=self.repo/'probe.json';probe.write_text(json.dumps({'tree':tree(root.find('Panel')),'scripts':[str(self.output/'content/panorama'/n.get('src').split('file://{resources}/')[1]) for n in root.findall('./scripts/include')]}))
+  probe=self.repo/'probe.json';probe.write_text(json.dumps({'tree':tree(root.find('./Panel/Panel')),'scripts':[str(self.output/'content/panorama'/n.get('src').split('file://{resources}/')[1]) for n in root.findall('./scripts/include')]}))
   js=r"""const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const input=JSON.parse(fs.readFileSync(process.argv[1],'utf8')),timers=new Map();let serial=0;
 function node(data){const attrs=data.attrs,children=data.children.map(node);return {id:attrs.id,visible:attrs.visible!=='false',enabled:false,text:attrs.text||'',events:{},classes:new Set(),IsValid(){return true;},FindChildTraverse(id){for(const c of children){if(c.id===id)return c;const found=c.FindChildTraverse(id);if(found)return found;}},SetPanelEvent(k,v){this.events[k]=v;},ClearPanelEvent(k){delete this.events[k];},SetHasClass(k,on){if(on)this.classes.add(k);else this.classes.delete(k);}};}

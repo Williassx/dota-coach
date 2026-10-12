@@ -26,3 +26,5 @@ fingerprints и байты всех outputs. Старые виды пакето�
 manifest: копирование поверх другого пакета заменило бы его декларацию Hud.
 Source-сборка не устанавливает аддон и не компилирует Source 2. Игровой transport,
 полномочия, lease, ручной ввод и возврат ИИ остаются зависимостями C1/native.
+
+[Native intervention report](../../01-ui-binding/reports/native-intervention-2026-10-12.md): canonical anonymous canvas содержит named binding root; exact guards сохраняют50ID и13/12. Scoped composition CSS адаптирует standalone request window к host. TEST fixture15sources/14active compiled +retained canonical XML отдельно; source-only handoff native flags не повышаются.

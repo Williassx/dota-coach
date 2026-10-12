@@ -66,7 +66,10 @@ def manual_scope(panel):
  button=panel[0][-1]
  if button.get('id')!='ManualRequestButton' or len(button)!=1 or button[0].get('id')!='ManualRequestHint':raise ValueError('Request hint must belong to the button')
 def shell(root):
- group=root.find('Panel')
+ outer=root.find('Panel')
+ if (outer is None or outer.attrib!={'class':'CoachInterventionCanvas','hittest':'false','hittestchildren':'true'} or len(outer)!=1 or outer[0].tag!='Panel'):raise ValueError('Exact anonymous intervention canvas required')
+ group=outer[0]
+ if group.attrib!={'id':'CoachInterventionScreen','class':'CoachInterventionScreen','hittest':'false','hittestchildren':'true'}:raise ValueError('Exact intervention binding root required')
  expected={'CoachInterventionScreen':'Panel','CoachInterventionStatus':'Label','CoachInterventionRosterHost':'Panel','CoachInterventionManualHost':'Panel'}
  if ids(group)!=expected or group.get('id')!='CoachInterventionScreen' or [n.tag for n in group]!=['Label','Label','Panel'] or group[1].get('id')!='CoachInterventionStatus':raise ValueError('Exact shell status/topology required')
  hosts=list(group[2])

@@ -333,6 +333,30 @@
 - **Следующий раз:** при переносе source scenarios в native driver сверять ready
   и slot availability отдельно; inferred blank не подменяет public panel semantics.
 
+## 24. Проверять standalone window внутри нового host на actual кадре
+
+- **Действие:** native intervention API cycle PASS, но request pane не видна.
+- **Причина:** standalone height100% в auto-height host и fixed720px centered window; CSS/after-frame inference, initial geometry и внутренний sizing алгоритм не измерены.
+- **Исправление:** только composition scope: root height:fit-children, window width100%/top/left; TEST driver проверяет положительные dimensions.
+- **Проверка:** [native intervention report](../../../11-integration/01-ui-binding/reports/native-intervention-2026-10-12.md): R1 восемь фаз, панель справа; unknown root/window374.4×281. Initial defect сохранён.
+- **Следующий раз:** непустой DTO/API PASS не заменяет actual кадр и geometry после native layout; адаптацию ограничивать новым host.
+
+## 25. Разделять scheduler parameter и wall-clock наблюдение
+
+- **Действие:** production Schedule(5) переводит request в unknown; Date.now samples4958/4952ms в двух native cycles.
+- **Причина:** clock domains не калиброваны; причина различия с5000ms не установлена.
+- **Исправление:** записывать API parameter и наблюдаемые samples отдельно, не заявлять точность deadline, permission или lease.
+- **Проверка:** [native intervention report](../../../11-integration/01-ui-binding/reports/native-intervention-2026-10-12.md): два timeout кадра и watcher без driver.expire, повтор блокируется.
+- **Следующий раз:** для серверного deadline нужен настоящий clock/contract; local timer наблюдение не подтверждает полномочия или возврат ИИ.
+
+## 26. Читать возвращённый путь свежего отчёта без реконструкции
+
+- **Действие:** Get-Content guessed source-checks-20261012T125713Z-* не нашёл файл; actual125720Z-c40c6d существовал.
+- **Причина:** свежий timestamp/random suffix не совпал с предположением.
+- **Исправление:** использовать точный output report path и results[].log, возвращённые исполнителем.
+- **Проверка:** initial125720Z-c40c6d и final130742Z-081143 прочитаны: packaging155tests/8WinError1314, full46/753/6failed.
+- **Следующий раз:** сохранять возвращённый путь один раз; не превращать ошибку чтения в результат проверок.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

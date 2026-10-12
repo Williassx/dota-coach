@@ -14,12 +14,14 @@
         <include src="file://{resources}/scripts/custom_game/intervention_selection_state.js" />
         <include src="file://{resources}/scripts/custom_game/intervention_screen_binding.js" />
     </scripts>
-    <Panel id="CoachInterventionScreen" class="CoachInterventionScreen" hittest="false" hittestchildren="true">
+    <Panel class="CoachInterventionCanvas" hittest="false" hittestchildren="true">
+      <Panel id="CoachInterventionScreen" class="CoachInterventionScreen" hittest="false" hittestchildren="true">
         <Label class="CoachInterventionTitle" html="false" text="Команда тренера" />
         <Label id="CoachInterventionStatus" class="CoachInterventionStatus" html="false" text="Игроки и данные игры не подключены." />
         <Panel class="CoachInterventionRow" hittest="false" hittestchildren="true">
             <Panel id="CoachInterventionRosterHost" class="CoachInterventionRosterHost" hittest="false" hittestchildren="true" />
             <Panel id="CoachInterventionManualHost" class="CoachInterventionManualHost" hittest="false" hittestchildren="true" />
         </Panel>
+      </Panel>
     </Panel>
 </root>

@@ -198,3 +198,5 @@ invalid/recovery и dispose/rebind/stale Proxy inspection0 проверены. T
 package8/9 с WinError1314; full46/753/6failed/false. accepted — presentation snapshot,
 sourceAuthorizationConfirmed/nativeConfirmed=false. Input/C1/commonHUD/human owner
 и map render открыты; final template minimap/голубая область не имеют установленной причины.
+
+12октября native intervention проверила8existing APIфаз в двух TEST launches1280×720/16actual frames. Initial API PASS при невидимой request pane; scoped composition CSS исправление подтверждено fresh launch и geometry guard. Canonical anonymous canvas/inner CoachInterventionScreen сохраняет fixed13/12/2inputs/50ID. Fixture15sources/14active compiled+retained XML отдельно. Selected B/captured A, ACK≠MANUAL, actual Schedule(5) timeout unknown, stale Proxy inspections0 проверены. Targeted27PASS; package11/12 с WinError1314; full46/753/6failed/false. Local stub/uncalibrated wall clock не server authority/lease; input/C1/AI return/commonHUD/map/human owner открыты.
