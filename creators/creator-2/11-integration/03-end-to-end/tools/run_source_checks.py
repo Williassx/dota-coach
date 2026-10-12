@@ -83,7 +83,7 @@ def load_catalog(repository):
 
 def summarize(framework, text, exit_code):
     text = '\n'.join(text.splitlines())
-    passed = 0
+    passed, skipped = 0, 0
     valid = False
     if framework == 'node-test':
         totals = {}
@@ -94,17 +94,24 @@ def summarize(framework, text, exit_code):
             totals[field] = int(found[0])
         if len(totals) == 6:
             passed = totals['pass']
-            valid = (totals['tests'] == passed and passed > 0 and
-                     all(totals[field] == 0 for field in ('fail', 'cancelled', 'skipped', 'todo')))
+            skipped = totals['skipped']
+            valid = (totals['tests'] == passed + skipped and totals['tests'] > 0 and
+                     all(totals[field] == 0 for field in ('fail', 'cancelled', 'todo')))
     elif framework == 'python-unittest':
         found = re.findall(r'^Ran (\d+) tests? in [^\r\n]+$', text, re.M)
-        successes = re.findall(r'^OK\s*$', text, re.M)
-        if len(found) == 1 and len(successes) == 1:
-            passed = int(found[0])
-            valid = passed > 0
-    verified = exit_code == 0 and valid
-    return {'passed': passed, 'verified': verified,
-            'reason': None if verified else ('process_exit' if exit_code != 0 else 'invalid_summary')}
+        successes = re.findall(r'^OK(?: \(skipped=(\d+)\))?\s*$', text, re.M)
+        terminals = re.findall(r'^(?:OK(?: \(skipped=\d+\))?|FAILED\b[^\n]*)\s*$', text, re.M)
+        if len(found) == 1 and len(successes) == 1 and len(terminals) == 1:
+            total, skipped = int(found[0]), int(successes[0] or 0)
+            valid = total > 0 and skipped <= total
+            passed = total - skipped if valid else 0
+    if not valid:
+        passed = 0
+    verified = exit_code == 0 and valid and skipped == 0
+    reason = None if verified else ('process_exit' if exit_code != 0 else
+        ('skipped_tests' if valid and skipped > 0 else 'invalid_summary'))
+    return {'passed': passed, 'skipped': skipped if valid else 0,
+            'verified': verified, 'reason': reason}
 
 
 def run_suite(root, target, entry, node, timeout, taskkill=None):
@@ -180,9 +187,13 @@ def run_checks(repository, suites=None, jobs=4, timeout=180, output=None):
     with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
         results = list(pool.map(lambda entry: run_suite(root, target, entry, node, timeout, taskkill), selected))
     failed = [row['id'] for row in results if not row['verified']]
+    incomplete = [row['id'] for row in results if row['reason'] == 'skipped_tests']
+    errors = [row['id'] for row in results if not row['verified'] and row['reason'] != 'skipped_tests']
     report_file = target / 'source-checks.json'
     summary = {'verified': not failed, 'selection': 'full' if len(selected) == len(catalog) else 'partial',
                'suites': len(results), 'passed_tests': sum(row['passed'] for row in results),
+               'skipped_tests': sum(row['skipped'] for row in results),
+               'incomplete_suites': incomplete, 'error_suites': errors,
                'failed_suites': failed, 'report': report_file.relative_to(root).as_posix(),
                'source2_compiled': False, 'runtime_verified': False}
     report = {**summary, 'schema_version': 1, 'stage': 'source_only', 'catalog': CATALOG,

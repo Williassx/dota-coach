@@ -11,3 +11,5 @@ regression диагностики и фактический full verified=false.
 
 [Actual Windows reparse](windows-reparse-2026-10-11.md) — три junction guards,
 сохранность external fixture и отдельный открытый file-symlink coverage.
+
+[Windows portability](windows-portability-2026-10-12.md) —1020PASS/28explicit skips,0error suites; строгие verifiedfalse/exit1 и отдельное incomplete coverage.

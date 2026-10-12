@@ -11,8 +11,8 @@ REPOSITORY = Path(__file__).resolve().parents[5]
 TOOL = TASK / 'tools/prepare_ui_handoff.py'
 
 
-def load():
-    spec = importlib.util.spec_from_file_location('ui_handoff_test', TOOL)
+def load(name='ui_handoff_test', filename=TOOL):
+    spec = importlib.util.spec_from_file_location(name, filename)
     module = importlib.util.module_from_spec(spec)
     old = sys.dont_write_bytecode
     sys.dont_write_bytecode = True
@@ -21,6 +21,10 @@ def load():
     finally:
         sys.dont_write_bytecode = old
     return module
+
+
+require_symlink = load('handoff_symlink_capability', REPOSITORY /
+    'creators/creator-2/11-integration/03-end-to-end/tests/symlink_capability.py').require_symlink
 
 
 class UIHandoffTests(unittest.TestCase):
@@ -102,6 +106,7 @@ class UIHandoffTests(unittest.TestCase):
             self.helper.prepare_handoff(self.repo)
 
     def test_recipe_and_source_symlinks_rejected_without_outputs(self):
+        require_symlink(self, self.repo)
         recipe, _ = self.copy_screen('probe')
         for relative in [self.helper.SCREENS['probe'][0], recipe['assets'][0]['source']]:
             file = self.repo / relative
@@ -155,15 +160,23 @@ class UIHandoffTests(unittest.TestCase):
             self.helper.prepare_handoff(self.repo, 'voice-text', Path(result['bundle']))
         self.assertFalse((self.repo / result['report']).exists())
 
-    def test_external_or_symlink_bundle_rejected(self):
+    def test_external_bundle_rejected(self):
+        self.copy_screen('probe')
+        result = self.helper.prepare_handoff(self.repo)
+        (self.repo / result['report']).unlink()
+        for bundle in [self.repo, self.repo / 'build/dota_coach']:
+            with self.assertRaises(ValueError):
+                self.helper.prepare_handoff(self.repo, bundle=bundle)
+
+    def test_symlink_bundle_rejected(self):
+        require_symlink(self, self.repo, directory=True)
         self.copy_screen('probe')
         result = self.helper.prepare_handoff(self.repo)
         (self.repo / result['report']).unlink()
         link = self.repo / 'build/dota_coach/link'
         link.symlink_to(self.repo / result['bundle'], target_is_directory=True)
-        for bundle in [self.repo, link, self.repo / 'build/dota_coach']:
-            with self.assertRaises(ValueError):
-                self.helper.prepare_handoff(self.repo, bundle=bundle)
+        with self.assertRaises(ValueError):
+            self.helper.prepare_handoff(self.repo, bundle=link)
 
     def test_wrong_screen_existing_bundle_rejected(self):
         self.copy_screen('probe')

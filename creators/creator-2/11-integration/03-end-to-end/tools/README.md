@@ -11,3 +11,5 @@
 Output штатного Windows taskkill и ошибка owned tree termination остаются в
 suite log. Sandbox Access denied не подтверждает остановку потомков;
 [проверенные режимы и ограничения](../reports/windows-runner-2026-10-11.md).
+
+Consistent success summaries с skipped cases дают skipped_tests/incomplete_suites и verified=false/exit1. error_suites содержит process/summary errors; legacy failed_suites сохраняет все unverified IDs. [Актуальные Windows результаты](../reports/windows-portability-2026-10-12.md).

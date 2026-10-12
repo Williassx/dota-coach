@@ -7,7 +7,7 @@ import subprocess
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
-from test_intervention_bundle import builder, verifier
+from test_intervention_bundle import builder, verifier, require_symlink
 
 TASK = Path(__file__).resolve().parents[1]
 REPO = TASK.parents[3]
@@ -102,11 +102,14 @@ class MatchObservationBundle(unittest.TestCase):
         file.write_bytes(raw); (self.output / LAYOUT).write_text('tampered')
         with self.assertRaises(ValueError): verifier.verify_bundle(self.repo, self.recipe, self.output)
 
-    def test_source_links_and_existing_output_preserved(self):
+    def test_source_links_rejected(self):
+        require_symlink(self, self.repo)
         file = self.repo / self.recipe['layout_inputs'][0]['source']; raw = file.read_bytes()
         other = self.repo / 'actual.xml'; other.write_bytes(raw); file.unlink(); file.symlink_to(other)
         with self.assertRaises(ValueError): self.build()
         self.assertFalse(self.output.exists()); file.unlink(); file.write_bytes(raw)
+
+    def test_existing_output_preserved(self):
         self.build(); marker = self.output / 'keep'; marker.write_text('keep')
         with self.assertRaises(FileExistsError): self.build()
         self.assertEqual(marker.read_text(), 'keep')

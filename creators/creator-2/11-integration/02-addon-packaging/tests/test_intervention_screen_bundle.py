@@ -13,6 +13,7 @@ def load(name,file):
  finally:sys.dont_write_bytecode=old
  return module
 builder=load('screen_builder',TOOLS/'build_probe_bundle.py')
+require_symlink=load('screen_symlink_capability',REPOSITORY/'creators/creator-2/11-integration/03-end-to-end/tests/symlink_capability.py').require_symlink
 sys.path.insert(0,str(TOOLS))
 try:verifier=load('screen_verifier',TOOLS/'verify_probe_bundle.py')
 finally:sys.path.pop(0)
@@ -94,9 +95,11 @@ class ScreenBundleTests(unittest.TestCase):
   p=self.repo/self.manifest['layout_inputs'][0]['source'];original=p.read_bytes()
   for edit in [original.replace(b'RosterHint4',b'WrongHint'),original.replace(b'id="RosterCard0"',b'id="RosterCard1"'),original.replace(b'id="RosterName0"',b'id="RosterName1"')]:
    p.write_bytes(edit);self.reject();p.write_bytes(original)
- def test_bounded_input_symlink_and_current_source_tamper(self):
+ def test_input_symlink_rejected(self):
+  require_symlink(self,self.repo)
   p=self.repo/self.manifest['layout_inputs'][0]['source'];raw=p.read_bytes();p.unlink()
   outside=self.repo/'outside.xml';outside.write_bytes(raw);p.symlink_to(outside);self.reject();p.unlink();p.write_bytes(raw)
+ def test_output_tamper_rejected(self):
   self.build();target=self.output/LAYOUT;target.write_bytes(target.read_bytes()+b'\n')
   with self.assertRaises(ValueError):verifier.verify_bundle(self.repo,self.manifest,self.output)
  def test_existing_output_is_preserved(self):

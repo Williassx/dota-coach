@@ -31,6 +31,9 @@ def load(name, filename):
         sys.dont_write_bytecode = old
     return module
 
+require_symlink = load('preparation_symlink_capability', REPOSITORY /
+    'creators/creator-2/11-integration/03-end-to-end/tests/symlink_capability.py').require_symlink
+
 builder = load('prep_builder', TOOLS / 'build_probe_bundle.py')
 sys.path.insert(0, str(TOOLS))
 try:
@@ -156,6 +159,7 @@ class PreparationBundleTests(unittest.TestCase):
         original = source.read_bytes()
         for mode in ['missing','symlink','size']:
             with self.subTest(mode=mode):
+                if mode == 'symlink': require_symlink(self, self.repo)
                 if source.exists() or source.is_symlink(): source.unlink()
                 if mode == 'symlink':
                     other = self.repo / 'foreign.xml'; other.write_bytes(original); source.symlink_to(other)

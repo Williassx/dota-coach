@@ -6,7 +6,7 @@ import subprocess
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
-from test_intervention_bundle import builder, verifier, load
+from test_intervention_bundle import builder, verifier, load, require_symlink
 
 TASK = Path(__file__).resolve().parents[1]
 REPOSITORY = Path(__file__).resolve().parents[5]
@@ -122,7 +122,8 @@ class VoiceTextBundle(unittest.TestCase):
         self.reject(MANIFEST, bypass)
         self.reject(MANIFEST, lambda r: r[0].set('class', 'extra'))
 
-    def test_symlink_source_and_current_source_tamper(self):
+    def test_symlink_source_rejected(self):
+        require_symlink(self, self.repo)
         file = self.source(LAYOUT)
         original = file.read_bytes()
         outside = self.repo / 'another.xml'
@@ -131,8 +132,13 @@ class VoiceTextBundle(unittest.TestCase):
         file.symlink_to(outside)
         with self.assertRaises(ValueError):
             self.build()
+        self.assertFalse(self.output.exists())
         file.unlink()
         file.write_bytes(original)
+
+    def test_current_source_tamper_rejected(self):
+        file = self.source(LAYOUT)
+        original = file.read_bytes()
         self.build()
         file.write_bytes(original + b'\n')
         with self.assertRaises(ValueError):

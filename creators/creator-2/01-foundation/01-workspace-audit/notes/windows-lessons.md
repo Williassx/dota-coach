@@ -355,7 +355,7 @@
 - **Причина:** свежий timestamp/random suffix не совпал с предположением.
 - **Исправление:** использовать точный output report path и results[].log, возвращённые исполнителем.
 - **Проверка:** initial125720Z-c40c6d и final130742Z-081143 прочитаны: packaging155tests/8WinError1314, full46/753/6failed.
-- **Следующий раз:** сохранять возвращённый путь один раз; не превращать ошибку чтения в результат проверок.
+- **Следующий раз:** сохранять возвращённый путь один раз; перед чтением подпункта использовать фактический href/rg --files вместо предположения имени. Ошибка чтения не является результатом проверок.
 
 ## 27. Fingerprints raw source и composed canonical output различаются
 
@@ -364,6 +364,14 @@
 - **Исправление:** metadata derived для retained canonical layout; отдельно сравнивать raw input hashes, exact prepare_assets outputs и preserved native subtree.
 - **Проверка:** [native targeting report](../../../11-integration/01-ui-binding/reports/native-mouse-targeting-2026-10-12.md): final7builder PASS,7raw input hashes/7canonical output hashes,9installed files,8native API фаз.
 - **Следующий раз:** source path в asset metadata не гарантирует byte-copy. Перед сравнением определить уровень преобразования; active graph проверять по уроку17 отдельно.
+
+## 28. Capability skip не должен скрывать доступные проверки
+
+- **Действие:** Windows symlink fixture creation далWinError1314 доguard; смешанный testcase также содержал tamper/preservation checks.
+- **Причина:** ссылка недоступна в этом контексте. Skip всего mixed case потерял бы независимые проверки; OK(skipped=N) не означает полный PASS или process error.
+- **Исправление:** общий real probe до mutation, skip толькоWindows1314; split cases/ограниченный subTest. Reporter отделяет incomplete отerrors, сохраняет strict verifiedfalse/exit1.
+- **Проверка:** [Windows portability report](../../../11-integration/03-end-to-end/reports/windows-portability-2026-10-12.md): final1020PASS/28skip/0errors, actual tamper/preservation/junction/ownedtimeout PASS; первое неправильное root expectation исправлено и full повторён.
+- **Следующий раз:** сначала установить, failed setup/guard/process или unsupported capability; сохранить независимые assertions и raw skip reasons. Не менять OS и не выдавать incomplete за приёмку.
 
 ## Как продолжать обучение
 

@@ -47,3 +47,5 @@ guards. Match observation package дополнительно проверяет 
 дополнительно проверяет exact anonymous outer и bind inner scope в actual VM.
 
 [test_native_mouse_targeting_fixture.py](test_native_mouse_targeting_fixture.py) —7refusal/isolation tests,9outputs/7canonical assets и7raw input hashes. Retained generated targeting layout совпадает с fixed policy output; derived subtree сохраняется.
+
+Windows portability: mixed symlink/tamper/preservation cases разделены;169tests/161PASS/8explicit WinError1314 skips. Общий [test-only capability helper](../../03-end-to-end/tests/symlink_capability.py) не меняет production guard. [Полный отчёт](../../03-end-to-end/reports/windows-portability-2026-10-12.md).

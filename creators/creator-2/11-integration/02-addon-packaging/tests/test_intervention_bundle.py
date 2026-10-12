@@ -28,6 +28,8 @@ def load(name, path):
 
 
 builder = load('intervention_builder', TOOLS / 'build_probe_bundle.py')
+require_symlink = load('packaging_symlink_capability', REPOSITORY /
+    'creators/creator-2/11-integration/03-end-to-end/tests/symlink_capability.py').require_symlink
 sys.path.insert(0, str(TOOLS))
 try:
     verifier = load('intervention_verifier', TOOLS / 'verify_probe_bundle.py')

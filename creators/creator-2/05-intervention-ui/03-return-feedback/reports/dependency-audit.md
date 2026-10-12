@@ -19,3 +19,7 @@ Windows клон/Dota/Workshop Tools подтверждены пользоват
 adapter зависит от настоящего серверного контракта; не добавлен fake transport.
 Native checklist остаётся полностью открытым, общий graph21.6% не увеличен документами.
 Рутинные вопросы не задавались, критик для планирования не запускался.
+
+## Обновление 12 октября 2026, Windows
+
+Локальный shell/Workshop Tools/native TEST scene теперь доступны; прежний cloud refusal остаётся историческим. C1-04-01/02/03 повторно прочитаны, в каталогах по-прежнему только README, реализации contract/server нет. Existing request/mouse API smoke не подтверждают cancel/lease/AI return. C2-05-03 implementation gate требует настоящего C1 contract; fake transport не добавлен. Независимые [Windows source checks](../../../11-integration/03-end-to-end/reports/windows-portability-2026-10-12.md) выполнены без изменения серверного отдела.

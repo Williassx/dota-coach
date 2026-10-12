@@ -51,12 +51,21 @@ python3 creators/creator-2/11-integration/03-end-to-end/tools/run_source_checks.
 в новом каталоге `build/dota_coach/source-checks-*`; существующий output сохраняется.
 Параметры: `--jobs 1..7` (по умолчанию 4), `--timeout` в секундах, максимум 600
 (по умолчанию 180), `--output` — только новый путь под `build/dota_coach`.
-Exit 0 — все выбранные наборы прошли без skipped/cancelled/todo; 1 — провал
+Exit 0 — все выбранные наборы прошли без skipped/cancelled/todo; 1 — incomplete или провал
 с сохранённым отчётом; 2 — ошибочные входы/среда, проверка не началась.
 
 Python запускается тем же интерпретатором, Node — из PATH с TAP reporter. При timeout
 POSIX убивает выделенную группу процессов; Windows использует `taskkill /T /F`
 только для PID запускаемого набора. Отсутствие Node для выбранного Node-набора,
 либо taskkill на Windows, блокирует запуск до создания output. Неудалённые процессы
-при ошибке termination отмечаются отдельным провалом. Полный Windows-прогон не выполнен.
+при ошибке termination отмечаются отдельным провалом. Полный Windows source-прогон
+выполняется с сохранёнными ограничениями; это не игровая приёмка.
 Ссылка на тесты не является серверным контрактом, приёмкой движка или учётом токенов.
+
+[Windows portability design](windows-portability-design.md) · [План](windows-portability-plan.md).
+В JSON skipped_tests считает пропуски, incomplete_suites отделяет согласованные
+exit0 summaries с пропусками от error_suites. Legacy failed_suites сохраняет все
+unverified IDs; verified=false/exit1 при любой incomplete suite. Passed не включает
+skipped cases. Source2/runtime flags остаются false.
+
+[Windows portability report](reports/windows-portability-2026-10-12.md): final46suites/1020passed/28skipped/6incomplete/0errors/verifiedfalse. Пропуски не закрывают security/native acceptance; taskkill проверен только для собственных test processes вне разрешённой песочницы.

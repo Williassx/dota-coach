@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
-from test_intervention_bundle import builder, verifier, load
+from test_intervention_bundle import builder, verifier, load, require_symlink
 
 TASK = Path(__file__).resolve().parents[1]
 REPO = TASK.parents[3]
@@ -95,7 +95,8 @@ class OrdersTimelineBundle(unittest.TestCase):
         policy = load('timeline_old_defaults', TASK / 'tools/intervention_screen_layout.py')
         with self.assertRaises(ValueError): policy.parse(b'<root><Panel visible="false" /></root>')
 
-    def test_source_links_current_source_and_output_integrity(self):
+    def test_source_links_rejected(self):
+        require_symlink(self, self.repo)
         file = self.source(LAYOUT)
         raw = file.read_bytes()
         actual = self.repo / 'actual.xml'
@@ -103,8 +104,13 @@ class OrdersTimelineBundle(unittest.TestCase):
         file.unlink()
         file.symlink_to(actual)
         with self.assertRaises(ValueError): self.build()
+        self.assertFalse(self.output.exists())
         file.unlink()
         file.write_bytes(raw)
+
+    def test_current_source_and_output_integrity(self):
+        file = self.source(LAYOUT)
+        raw = file.read_bytes()
         self.build()
         file.write_bytes(raw + b'\n')
         with self.assertRaises(ValueError): verifier.verify_bundle(self.repo, self.recipe, self.output)

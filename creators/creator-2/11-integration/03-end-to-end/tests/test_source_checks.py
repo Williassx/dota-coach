@@ -8,6 +8,7 @@ import tempfile
 import time
 import unittest
 from unittest.mock import patch
+from symlink_capability import require_symlink
 
 BASE = Path(__file__).resolve().parents[1]
 REPO = BASE.parents[3]
@@ -88,7 +89,8 @@ class SourceChecks(unittest.TestCase):
         self.catalog([{**self.entries[1], 'path': PYTHON}])
         with self.assertRaises(ValueError): runner.load_catalog(self.root)
 
-    def test_linked_catalog_test_file_and_nested_directory_are_rejected(self):
+    def test_linked_catalog_and_test_file_are_rejected(self):
+        require_symlink(self, self.root)
         catalogue = self.root / CATALOG
         raw = catalogue.read_bytes()
         actual = self.root / 'actual.json'
@@ -106,7 +108,11 @@ class SourceChecks(unittest.TestCase):
         with self.assertRaises(ValueError): runner.load_catalog(self.root)
         test.unlink()
         test.write_bytes(outside.read_bytes())
-        (test.parent / 'nested').symlink_to(self.root, target_is_directory=True)
+        self.no_output()
+
+    def test_linked_nested_directory_is_rejected(self):
+        require_symlink(self, self.root, directory=True)
+        (self.root / PYTHON / 'nested').symlink_to(self.root, target_is_directory=True)
         with self.assertRaises(ValueError): runner.load_catalog(self.root)
         self.no_output()
 
@@ -134,6 +140,55 @@ class SourceChecks(unittest.TestCase):
         node = '# tests 1\r\n# pass 1\r\n# fail 0\r\n# cancelled 0\r\n# skipped 0\r\n# todo 0\r\n'
         self.assertTrue(runner.summarize('python-unittest', python, 0)['verified'])
         self.assertTrue(runner.summarize('node-test', node, 0)['verified'])
+
+    def test_python_skip_summary_counts_only_executed_successes(self):
+        row = runner.summarize('python-unittest', 'Ran 3 tests in 0.01s\n\nOK (skipped=1)\n', 0)
+        self.assertEqual((row['passed'], row['skipped'], row['reason']), (2, 1, 'skipped_tests'))
+        self.assertFalse(row['verified'])
+
+    def test_all_skipped_summary_is_incomplete_not_passed(self):
+        row = runner.summarize('python-unittest', 'Ran 2 tests in 0.01s\n\nOK (skipped=2)\n', 0)
+        self.assertEqual((row['passed'], row['skipped'], row['reason']), (0, 2, 'skipped_tests'))
+        self.assertFalse(row['verified'])
+
+    def test_impossible_and_duplicate_skip_summaries_are_errors(self):
+        good = 'Ran 2 tests in 0.01s\n\nOK (skipped=1)\n'
+        for text in (good + good, good.replace('skipped=1', 'skipped=3'), good.replace('skipped=1', 'skipped=-1'),
+                     good + 'FAILED (failures=1)\n'):
+            row = runner.summarize('python-unittest', text, 0)
+            self.assertFalse(row['verified'])
+            self.assertEqual(row['reason'], 'invalid_summary')
+            self.assertEqual(row['passed'], 0)
+
+    def test_node_skip_summary_stays_unverified_with_exact_counts(self):
+        text = '# tests 3\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 1\n# todo 0\n'
+        row = runner.summarize('node-test', text, 0)
+        self.assertEqual((row['passed'], row['skipped'], row['reason']), (2, 1, 'skipped_tests'))
+        self.assertFalse(row['verified'])
+        self.assertEqual(runner.summarize('node-test', text, 1)['reason'], 'process_exit')
+        self.assertEqual(runner.summarize('node-test', text.replace('# tests 3', '# tests 2'), 0)['reason'], 'invalid_summary')
+
+    def test_real_skip_report_is_incomplete_with_preserved_legacy_ids(self):
+        self.write(PYTHON + '/test_example.py', 'import unittest\nclass Example(unittest.TestCase):\n def test_ok(self): pass\n @unittest.skip("fixture capability absent")\n def test_skip(self): pass\n')
+        result = runner.run_checks(self.root, suites=['python-fixture'])
+        self.assertFalse(result['verified'])
+        self.assertEqual(result['failed_suites'], ['python-fixture'])
+        self.assertEqual(result['incomplete_suites'], ['python-fixture'])
+        self.assertEqual(result['error_suites'], [])
+        self.assertEqual((result['passed_tests'], result['skipped_tests']), (1, 1))
+        report = json.loads((self.root / result['report']).read_text())
+        self.assertEqual(report['results'][0]['reason'], 'skipped_tests')
+        self.assertFalse(report['source2_compiled'])
+        self.assertFalse(report['runtime_verified'])
+        self.assertIn('fixture capability absent', (self.root / report['results'][0]['log']).read_text())
+
+    def test_real_skipped_cli_keeps_failure_exit(self):
+        self.write(PYTHON + '/test_example.py', 'import unittest\nclass Example(unittest.TestCase):\n @unittest.skip("fixture capability absent")\n def test_skip(self): pass\n')
+        result = subprocess.run([sys.executable, str(TOOL), '--repository', str(self.root), '--suite', 'python-fixture'], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 1)
+        report = json.loads(result.stdout)
+        self.assertFalse(report['verified'])
+        self.assertEqual((report['passed_tests'], report['skipped_tests']), (0, 1))
 
     def test_parameters_selection_and_missing_tools_fail_before_writes(self):
         for kwargs in ({'jobs': 0}, {'jobs': 8}, {'jobs': True}, {'timeout': 0},
@@ -175,26 +230,33 @@ class SourceChecks(unittest.TestCase):
         self.assertEqual((result['suites'], result['passed_tests'], result['selection']), (1, 1, 'partial'))
         self.assertTrue(result['verified'])
 
-    def test_existing_external_and_linked_output_is_preserved(self):
+    def test_existing_and_external_output_is_preserved(self):
         output = self.root / 'build/dota_coach/existing'
         output.mkdir(parents=True)
         (output / 'keep').write_text('keep')
         with self.assertRaises(FileExistsError): runner.run_checks(self.root, output=output)
         self.assertEqual((output / 'keep').read_text(), 'keep')
         with self.assertRaises(ValueError): runner.run_checks(self.root, output=self.root / 'external')
+    def test_linked_output_is_rejected_and_target_preserved(self):
+        require_symlink(self, self.root, directory=True)
+        output = self.root / 'build/dota_coach/existing'
+        output.mkdir(parents=True)
+        (output / 'keep').write_text('keep')
         linked = output.with_name('linked')
         linked.symlink_to(output, target_is_directory=True)
         with self.assertRaises((ValueError, FileExistsError)): runner.run_checks(self.root, output=linked)
         self.assertEqual(list(output.iterdir()), [output / 'keep'])
 
     def test_failure_and_zero_tests_create_failed_reports(self):
-        for source in ('import unittest\nclass Fail(unittest.TestCase):\n def test_fail(self): self.fail("expected")\n',
-                       '# no tests\n',
-                       'import unittest\nclass Skip(unittest.TestCase):\n @unittest.skip("expected")\n def test_skip(self): pass\n'):
+        for source, incomplete in (('import unittest\nclass Fail(unittest.TestCase):\n def test_fail(self): self.fail("expected")\n', False),
+                       ('# no tests\n', False),
+                       ('import unittest\nclass Skip(unittest.TestCase):\n @unittest.skip("expected")\n def test_skip(self): pass\n', True)):
             self.write(PYTHON + '/test_example.py', source)
             result = runner.run_checks(self.root, suites=['python-fixture'])
             self.assertFalse(result['verified'])
             self.assertEqual(result['failed_suites'], ['python-fixture'])
+            self.assertEqual(result['error_suites'], [] if incomplete else ['python-fixture'])
+            self.assertEqual(result['incomplete_suites'], ['python-fixture'] if incomplete else [])
             self.assertTrue((self.root / result['report']).exists())
 
     def test_timeout_is_a_failed_suite_with_a_log(self):
@@ -203,6 +265,8 @@ class SourceChecks(unittest.TestCase):
         report = json.loads((self.root / result['report']).read_text())
         self.assertFalse(result['verified'])
         self.assertEqual(report['results'][0]['reason'], 'timeout')
+        self.assertEqual(result['error_suites'], ['python-fixture'])
+        self.assertEqual(result['incomplete_suites'], [])
         self.assertIsNone(report['results'][0]['exit_code'])
 
     def test_timeout_termination_failure_is_preserved_in_suite_log(self):
