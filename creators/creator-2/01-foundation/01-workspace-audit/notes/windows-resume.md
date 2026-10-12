@@ -210,3 +210,20 @@ C2-06-01 bounded microphone audit12октября: WinMM4inputs/formatquery0, ac
 Finalmic review выявил одинP2loggingerrorbeforeunsafexit: исправлен finallyosexit,4noncapturing RED→GREEN tests вcatalog. Тотжеcritic подтвердилфикс, новыхзамечаний нет; finalfull160830Z-3a670b47/1024passed/28skipped/0error/false/exit1. Captureнеповторялсярадиpostcapturefix, actualcleanupfailureневызывался. Свежийsourcecatalog неактивируетmic.
 
 C2-06-01 offlineASRpilot12Oct: strictSystem.Speech/WinRT queries64/32bit далиemptycollections/non-null/errornull; этоограничениеконкретныхAPIcontexts. LocaltinyCPU/int8/threads2/language ru, commitd90ca5fe260221311c53c58e660288d3deb8d356/LFSmodelhashsizeverified. Faster1.2.1+av19 decodefailedmetadata_errors; отдельныйav18.0.0overlay solved, failedresult/env preserved. Finalrun-ebf535 loaded+generatorconsumed/input3s/VAD0/segments[]/decoderfalse/commands0/Pythonsocketattempts[]; native network notmonitored. OwnPID9416exit0/observedpeak226553856bytes, timing неpositivespeechlatency. [Отчёт](../../../06-voice/01-microphone-probe/reports/offline-asr-2026-10-12.md), урок30. Full162410Z-44326447/1024passed/28skipped/0error/false; critic1 nofindings/humanowneropen. Progress52/213 unchanged. NextpositiveASR требуетразборчивогореальногоinput/groundtruth, отдельногоASR→parser/C1transportплана; не повторятьquietclipрадиголосовойприёмки. IndependentC2этапы продолжатьпосверкеPLAN/PROGRESS. Model/deps/сыройaudioигнорируются; smoke неordinarytests/import.
+
+C2-03-02 camera TEST continuation: unchanged production/fixedHUD13, fixture15outputs/
+14activecompiled+1retainedinert, compilerUI1/canonical1/map13/0errors. Fresh own
+addon dota_coach_c2_camera_20261012, PID29544, HERO_SELECTION gate→Axe123.
+7APIphases/7actualframes1280×720 inspected; selected/refresh0focuscalls и immediate
+lookAt равны, programmatic native Activated→1gatewayfocus/requested. Через1.5s
+distanceXY4520.37, позднее исходная позиция: arrival criterion остаётся OPEN.
+Нативная причина возврата неизвестна; не менять на lock/инойAPI радиPASS.
+Negativeindexreject/dispose/rebind oldidgetterreads0 (неполнаяProxyinstrumentation).
+Quitguard initial false refusal stringvsDateTime→exactUTCticks corrected; ownPIDgone,
+Steam сохранён. Targeted34PASS; requiredfull172222Z-1386ef48/1031pass/28skip/
+6incomplete/0errors/false/CLI1/allprocess0. Finalcritic1 nosubstantialfindings;
+humansecondowneropen. [Evidence](../../../03-map-view/02-camera-overlays/reports/native-camera-2026-10-12.md),
+уроки31/32. Отмечено только сравнение/запись результата, progress53/213(24.9%).
+Следующий шаг: отдельная диагностика native motion/input state/границ template_map
+с существующимиAPI; заранее определить независимые измерения и сохранить failed
+arrival. Physicalinput/hittest/realmap/identity/markers/scaling/C1 остаются открытыми.

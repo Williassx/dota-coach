@@ -235,6 +235,11 @@
       "id": "python-c2-06-01",
       "framework": "python-unittest",
       "path": "creators/creator-2/06-voice/01-microphone-probe/tests"
+    },
+    {
+      "id": "python-c2-03-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/03-map-view/02-camera-overlays/tests"
     }
   ]
 }

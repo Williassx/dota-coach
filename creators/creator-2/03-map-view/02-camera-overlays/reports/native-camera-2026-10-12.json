@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "scope": "C2-03-02 bounded TEST camera API/render smoke",
+  "build_id": 25845666,
+  "addon": "dota_coach_c2_camera_20261012",
+  "owned_pid": 29544,
+  "owned_pid_gone": true,
+  "steam_pid_preserved": 12336,
+  "canonical_inputs": 13,
+  "fixture_outputs": 15,
+  "active_compiled_outputs": 14,
+  "retained_inert_compiled_outputs": 1,
+  "compiled_total_bytes": 98838,
+  "compiled": [
+    {
+      "path": "panorama/layout/custom_game/camera_fixture.vxml_c",
+      "sha256": "6141fd768f5ce351c3b9f557d3746d1932bc7ef2138f11d741d5bf7651c01e36",
+      "bytes": 3992
+    },
+    {
+      "path": "panorama/layout/custom_game/coach_hud.vxml_c",
+      "sha256": "29965588fa1c4075ddbb7674b4ca2ae8d0b1db437e79f07a55d92111c400d1c6",
+      "bytes": 3681
+    },
+    {
+      "path": "panorama/layout/custom_game/custom_ui_manifest.vxml_c",
+      "sha256": "72278b2f61cd3c972e02c9b4741406e5f101930ca5e4c19a88b40384ff9d7cc9",
+      "bytes": 1389
+    },
+    {
+      "path": "panorama/scripts/custom_game/camera_fixture.vjs_c",
+      "sha256": "8582fce3dbc58583cce77425f477036f4133138966b95ccdc3f09ff25ea9aa44",
+      "bytes": 5817
+    },
+    {
+      "path": "panorama/scripts/custom_game/camera_native.vjs_c",
+      "sha256": "3bbf0722e38db4554bb113616593dcbb21180948e70f536c9b7bcb556bc072cd",
+      "bytes": 3804
+    },
+    {
+      "path": "panorama/scripts/custom_game/camera_panel.vjs_c",
+      "sha256": "19e03b68e39a22d52d0e0a00a590f2da76f36df5b1cbf394e0d8cd47dff1be11",
+      "bytes": 9057
+    },
+    {
+      "path": "panorama/scripts/custom_game/coach_hud_binding.vjs_c",
+      "sha256": "2f60a187e512331d9d1c25ccaf18aaa57ef516ede1bdcad5fff5c14c832cf9bd",
+      "bytes": 11061
+    },
+    {
+      "path": "panorama/scripts/custom_game/input_routing.vjs_c",
+      "sha256": "b2e4c65d3ac751a5440b13399fff2b6207feb6657d40a477ff2eda15a27a8819",
+      "bytes": 4267
+    },
+    {
+      "path": "panorama/scripts/custom_game/orders_panel.vjs_c",
+      "sha256": "fa65a9eecb97c19cd6692b961eab30a46436109a3f6e01c71df93ea46692530e",
+      "bytes": 7161
+    },
+    {
+      "path": "panorama/scripts/custom_game/orders_state.vjs_c",
+      "sha256": "1acd2c5b3dbfa193d317e5d4f40bf6c1db27f689a4fc8577bf374610f3c6074f",
+      "bytes": 11727
+    },
+    {
+      "path": "panorama/scripts/custom_game/roster_cards_state.vjs_c",
+      "sha256": "883730901aea540455df7257bf6da483d409df1b670f5832eba996da2ae40af6",
+      "bytes": 6348
+    },
+    {
+      "path": "panorama/scripts/custom_game/roster_cards.vjs_c",
+      "sha256": "3e460f0ee6b0d408f8060e2433cdfb244601ce971622e3e54cee5bb20469e2a6",
+      "bytes": 10544
+    },
+    {
+      "path": "panorama/scripts/custom_game/targets_panel.vjs_c",
+      "sha256": "f5c3cf78eaa08c233e2319043ec053136493fb07cab4bfbb74f8f0059e43b206",
+      "bytes": 5619
+    },
+    {
+      "path": "panorama/scripts/custom_game/targets_state.vjs_c",
+      "sha256": "43206f061b25d344ea1ec59c8aca8d4f98d03bb38bbd72147830aca3cc63a2ff",
+      "bytes": 10200
+    },
+    {
+      "path": "panorama/styles/custom_game/coach_hud.vcss_c",
+      "sha256": "8bb195af25a4ecfb0923c74cd5b3d9d57bc95a0e2fddd6617c8285624556a9c9",
+      "bytes": 4171
+    }
+  ],
+  "map_bytes": 3033412,
+  "map_sha256": "19c9bd88ad5e0b1b818a0982091a85ac8bb2001b9a4ae9e4c645b5dc95b33302",
+  "canonical_input_hashes": [
+    {
+      "source": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "target": "content/panorama/layout/custom_game/custom_ui_manifest.xml",
+      "sha256": "2d470a497a628dc80b771c3c6b674b8027a25e3ef831022f773d36fdaf2f6b91"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/layout/custom_game/coach_hud.xml",
+      "target": "content/panorama/layout/custom_game/coach_hud.xml",
+      "sha256": "d4df7b4bd764cd52de547341d83d34b79bd88c6611ece3ed980cae28f3792f6a"
+    },
+    {
+      "source": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/styles/custom_game/coach_hud.css",
+      "target": "content/panorama/styles/custom_game/coach_hud.css",
+      "sha256": "531f1e549c8bcc75b9aebcd3e69240f98ede4c2fd7d1323d2f3f6170340561de"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_state.js",
+      "target": "content/panorama/scripts/custom_game/roster_cards_state.js",
+      "sha256": "8ead8e2f798d6778430e9921200b409b45cc56d7b8d0c215995fd149716094ab"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards.js",
+      "target": "content/panorama/scripts/custom_game/roster_cards.js",
+      "sha256": "a246c95ca8298b9a002585904ff40518a0e58308b3c6a0f0609bca2e0379c419"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_state.js",
+      "target": "content/panorama/scripts/custom_game/orders_state.js",
+      "sha256": "d93502069eb14b18696ffdca9674a4bbf74efa4d3a42a4d836a2ccbdba720868"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_panel.js",
+      "target": "content/panorama/scripts/custom_game/orders_panel.js",
+      "sha256": "b5cf2e8eb7724bc1e43042619ad5b0f535fe69c1e214a37f2441998316f330aa"
+    },
+    {
+      "source": "creators/creator-2/02-coach-interface/03-control-input/src/panorama/scripts/custom_game/input_routing.js",
+      "target": "content/panorama/scripts/custom_game/input_routing.js",
+      "sha256": "337a5f7f8a89cbaa2b4d18c29a8ecae4febc95bd8fb0de68da6fa63ac8d9e5a2"
+    },
+    {
+      "source": "creators/creator-2/03-map-view/02-camera-overlays/src/panorama/scripts/custom_game/camera_native.js",
+      "target": "content/panorama/scripts/custom_game/camera_native.js",
+      "sha256": "d34d2fbb58422c8e6b392deebbdeefa8ed41880a8648b5c086b1a5b62ca03068"
+    },
+    {
+      "source": "creators/creator-2/03-map-view/02-camera-overlays/src/panorama/scripts/custom_game/camera_panel.js",
+      "target": "content/panorama/scripts/custom_game/camera_panel.js",
+      "sha256": "1681bf081222664c876c017af6f81949233dc9c8acea4af8ed262ce505d249d0"
+    },
+    {
+      "source": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/scripts/custom_game/targets_state.js",
+      "target": "content/panorama/scripts/custom_game/targets_state.js",
+      "sha256": "5b0f5c2dfb43112942a678a9fcf484e5561d75af5fc7ccb5a9f40627371c211d"
+    },
+    {
+      "source": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/scripts/custom_game/targets_panel.js",
+      "target": "content/panorama/scripts/custom_game/targets_panel.js",
+      "sha256": "c05864e33262ddfe3dcbaa4f069712df773243f3fc36969e4db45a0e2777ce2b"
+    },
+    {
+      "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/coach_hud_binding.js",
+      "target": "content/panorama/scripts/custom_game/coach_hud_binding.js",
+      "sha256": "ad0f62ba5161bf8995f60d21fd53c92acebe5ab8313f90839158e4bad9d06694"
+    }
+  ],
+  "native_phases": [
+    {
+      "console_local_time": "19:24:04",
+      "phase": "bound",
+      "passed": true,
+      "data": {
+        "hero": 123,
+        "look": [
+          -127.99998474121094,
+          -7592,
+          127.99996185302734
+        ]
+      }
+    },
+    {
+      "console_local_time": "19:24:16",
+      "phase": "selected",
+      "passed": true,
+      "data": {
+        "calls": 0,
+        "before": [
+          -127.9999771118164,
+          -7592.00048828125,
+          127.99996185302734
+        ],
+        "after": [
+          -127.9999771118164,
+          -7592.00048828125,
+          127.99996185302734
+        ]
+      }
+    },
+    {
+      "console_local_time": "19:24:28",
+      "phase": "refreshed",
+      "passed": true,
+      "data": {
+        "calls": 0,
+        "before": [
+          -127.9999771118164,
+          -7592.00048828125,
+          127.99996185302734
+        ],
+        "after": [
+          -127.9999771118164,
+          -7592.00048828125,
+          127.99996185302734
+        ]
+      }
+    },
+    {
+      "console_local_time": "19:24:42",
+      "phase": "focused",
+      "passed": true,
+      "data": {
+        "calls": 1,
+        "eligible": true,
+        "look": [
+          -128,
+          -4584.36962890625,
+          128
+        ],
+        "ownOrigin": [
+          -128,
+          -64,
+          128
+        ],
+        "distanceXY": 4520.36962890625,
+        "arrivalCausedByRequest": "unproven",
+        "result": "Для TEST Axe: Запрос фокуса передан клиенту; положение камеры не подтверждено."
+      }
+    },
+    {
+      "console_local_time": "19:24:54",
+      "phase": "rejected",
+      "passed": true,
+      "data": {
+        "outcome": {
+          "requested": false,
+          "reason": "Герой выбранного игрока не определён."
+        },
+        "calls": 1,
+        "look": [
+          -128,
+          -7592.00048828125,
+          128
+        ]
+      }
+    },
+    {
+      "console_local_time": "19:25:06",
+      "phase": "disposed",
+      "passed": true,
+      "data": {}
+    },
+    {
+      "console_local_time": "19:25:18",
+      "phase": "rebound",
+      "passed": true,
+      "data": {
+        "staleDtoReads": 0,
+        "calls": 1
+      }
+    }
+  ],
+  "captures": [
+    {
+      "phase": "bound",
+      "utc": "2026-10-12T17:24:07.031Z",
+      "engine_tga": "shot_0094.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-bound-2026-10-12.png",
+      "bytes": 779828,
+      "sha256": "f0ade3c3eb5b1cd94713783e56d9d13816678408e0e5fb58007f2426033f4286"
+    },
+    {
+      "phase": "selected",
+      "utc": "2026-10-12T17:24:19.010Z",
+      "engine_tga": "shot_0095.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-selected-2026-10-12.png",
+      "bytes": 775087,
+      "sha256": "a7b7a4dc965f3cc84f20213e9b7fa82593ec19ae57fe706fa07a8a6a7d0f656c"
+    },
+    {
+      "phase": "refreshed",
+      "utc": "2026-10-12T17:24:30.964Z",
+      "engine_tga": "shot_0096.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-refreshed-2026-10-12.png",
+      "bytes": 777663,
+      "sha256": "dd4d7f852b2969397dff49019780402350c5f579aff8fc8d2d5a5968ce21184a"
+    },
+    {
+      "phase": "focused",
+      "utc": "2026-10-12T17:24:44.430Z",
+      "engine_tga": "shot_0097.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-focused-2026-10-12.png",
+      "bytes": 784187,
+      "sha256": "b5582765bbb0785f466190b357e6a4d4cc9256cbdbcac307e761035767d43641"
+    },
+    {
+      "phase": "rejected",
+      "utc": "2026-10-12T17:24:56.618Z",
+      "engine_tga": "shot_0098.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-rejected-2026-10-12.png",
+      "bytes": 782472,
+      "sha256": "5a9b6ccaa775dac2da1026523f33197bd2253cec0ccbaa52a4cb3ce52bdb0594"
+    },
+    {
+      "phase": "disposed",
+      "utc": "2026-10-12T17:25:08.571Z",
+      "engine_tga": "shot_0099.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-disposed-2026-10-12.png",
+      "bytes": 784217,
+      "sha256": "e55cc094845e6ae481767411d9f6ea685583db05e4c54861b3b40fa702f3dc7e"
+    },
+    {
+      "phase": "rebound",
+      "utc": "2026-10-12T17:25:20.526Z",
+      "engine_tga": "shot_0100.tga",
+      "png": "creators/creator-2/03-map-view/02-camera-overlays/reports/native-camera-r1-rebound-2026-10-12.png",
+      "bytes": 778963,
+      "sha256": "def0ae125aed8d785c1cb0d8dfd1a0b11632628f5b1e5a012fc22a81d7fc7e33"
+    }
+  ],
+  "requested_api_verified": true,
+  "arrival_verified": false,
+  "physical_input_verified": false,
+  "stable_player_identity_verified": false,
+  "markers_verified": false,
+  "full_source_report": "build/dota_coach/source-checks-20261012T172222Z-1386ef/source-checks.json",
+  "full_source_passed": 1031,
+  "full_source_skipped": 28,
+  "full_source_verified": false,
+  "human_second_owner": "open"
+}

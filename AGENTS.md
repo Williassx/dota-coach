@@ -208,3 +208,12 @@ sourceAuthorizationConfirmed/nativeConfirmed=false. Input/C1/commonHUD/human own
 C2-06-01 bounded Windows microphone audit: explicit FIFINE3s PCM/cleanup/hash подтверждены, sandboxopen1 vs approvedoutsideopen0; OS/privacy unchanged. 4inputs/query0 не permission/ASR. Raw audio толькоignoredlocalbuild; diagnostic capture command не ordinary test/import. Speech/ASR/русский runtime/bridge/C1/human owner открыты;52/213 отражает2documentary actions, не голосовуюприёмку.
 
 C2-06-01 localASRpilot: faster1.2.1/PyAV19decode несовместимы, отдельныйpinnedav18 overlay проверен; tiny model поexactHFrevision/LFSsizehash. Loaded+VAD quiet3s/segments[] не positive speech recognition; Python socket guard не native/OS networkproof. Actual speech/accuracy/bridge/C1/humanowner открыты. Model/deps ignoredlocal, smoke внеordinarycatalog; progress52/213неповышен.
+
+C2-03-02 native TEST camera:7API phases/7actual frames1280×720, existing gateway
+и panel unchanged. FixedHUD13, fixture15sources/14activecompiled+retainedinert1.
+Выбор/refresh0focuscalls; native activation1/requested, invalidindexreject,
+dispose/rebind/idgetterreads0. LookAtdistanceXY4520.37 @1.5sec, позднее исходная
+позиция: arrival/realidentity/hittest/markers/realmap открыты, причина возврата
+не установлена. OwnPID29544quit→gone; JSON timestamp сравнивать по точным UTCticks,
+не stringvsDateTime. Full48/1031passed/28skipped/6incomplete/0errors/verifiedfalse.
+Source-onlyflagsfalse; humansecondowner остаётся открытым.

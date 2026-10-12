@@ -389,6 +389,22 @@
 - **Проверка:** [offline ASR report](../../../06-voice/01-microphone-probe/reports/offline-asr-2026-10-12.md): repeat exit0/model_loaded/generatorconsumed/VAD0/segments[]; officialmodelLFShash/size match. Positive speech decoder/quality не проверены, Python socket guard не OSnetwork trace.
 - **Следующий раз:** проверять реальный native decode, не только import/model constructor. После compatibilitypin повторить тотже вход; пустойрезультатVAD не выдавать за точностьASR/речь/команду.
 
+## 31. Native запрос фокуса не доказывает совпадение камеры с героем
+
+- **Действие:** реальная активация native кнопки вызвала MoveCameraToEntity один раз и displayed requested; отдельно измерены lookAt и origin собственного проверенного живого героя.
+- **Причина:** actual distanceXY4520.37 через1,5s, позднее исходная позиция. Причина возврата неизвестна; input/template bounds/API semantics пока предположения.
+- **Исправление:** отделить pass семи API/render фаз от незакрытого критерия arrival; сохранить source gateway без origin/lock/orders, не подменять цель или API радиPASS.
+- **Проверка:** [Native camera report](../../../03-map-view/02-camera-overlays/reports/native-camera-2026-10-12.md):7actual кадров1280×720 осмотрены, selected/refresh calls0 и immediatepositions equal, focus1/requested/distance, invalid−1reject/dispose/rebind.
+- **Следующий раз:** измерять native motion/input/scene bounds раздельно. TEST id/API activation не real identity/hittest; origin читать только после guard собственного разрешённого героя.
+
+## 32. ConvertFrom-Json может вернуть DateTime вместо строки
+
+- **Действие:** строгая защита quit сравнила ToString('o') времени старта ownPID с JSON timestamp и отказала «identity changed».
+- **Причина:** ConvertFrom-Json дал System.DateTime; сравнение stringvsobject не было сравнением UTC timestamps. Actual и saved ticks одинаковы639274225179114656.
+- **Исправление:** сохранить строгую проверку PID/name и сравнивать точные UTCticks; не применять tolerance, отключениеguard или forcekill.
+- **Проверка:** после исправления ownPID29544 закрыт черезquit/marker, процесс отсутствует, Steam12336 сохранён. [Отчёт](../../../03-map-view/02-camera-overlays/reports/native-camera-2026-10-12.md), initial safe refusal сохранён в журнале выполнения.
+- **Следующий раз:** нормализовать типы дат перед identity comparison; отдельно проверить mismatch и owned completion. Guard failure не является auto-review rejection или причиной завершать чужойPID.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.
