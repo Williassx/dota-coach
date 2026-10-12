@@ -308,5 +308,7 @@
   "full_source_passed_tests": 1039,
   "full_source_skipped_tests": 28,
   "full_source_verified": false,
-  "human_second_owner": "open"
+  "human_second_owner": "open",
+  "samples_sha256_scope": "raw_windows_crlf",
+  "samples_sha256_lf": "620e9edcecb395191e0fdf3f2fd8592b547c6a142221f7d33e88a18c16d17d6e"
 }

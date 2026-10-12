@@ -245,3 +245,9 @@ Progress53/213 unchanged. Следующий причинныйnativecamera оп
 определённого контроля baseline/input/hero и отдельно singlevariable+rollback plan;
 не повторять неуправляемую серию радиgreen. Независимые C2задачи выбирать по текущим
 PLAN/PROGRESS/dependencies, C1/identity/physicalinput/map/markers/scaling открыты.
+
+Publication integrity follow-up: raw Windows CRLF `samples_sha256` сохранён;
+metadata содержит отдельные `samples_sha256_scope=raw_windows_crlf` и
+`samples_sha256_lf` для опубликованного Git blob. Normalized bytes совпадают,
+100 записей не менялись. Урок35; source/native результаты выше исторические,
+повтор native capture для metadata-only изменения не нужен.

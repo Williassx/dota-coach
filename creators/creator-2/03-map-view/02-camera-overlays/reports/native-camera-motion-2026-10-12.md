@@ -6,6 +6,14 @@
 [100 исходных образцов](native-camera-motion-samples-2026-10-12.jsonl).
 [Прежний failed arrival](native-camera-2026-10-12.md) сохранён без изменения.
 
+Хеш исходного Windows-файла образцов с CRLF (`samples_sha256`):
+`881e7441c88eee6848f6b4ff407896ae8a486d5bb13fd44583c8c83cb1da5d61`.
+Git публикует те же данные с LF (`samples_sha256_lf`):
+`620e9edcecb395191e0fdf3f2fd8592b547c6a142221f7d33e88a18c16d17d6e`.
+Побайтовое сравнение после замены CRLF→LF подтвердило совпадение с Git blob;
+100 записей не изменены. `canonical_input_hashes` относятся к фактическим
+Windows-входам компилятора, а не к нормализованным Git blob.
+
 В исправленном TEST-драйвере получены20baseline/80post samples вокруг ровно одного
 native panel Activated→gateway.focus. Actual elapsed20016ms, nominal Schedule0.2s;
 это не подтверждение точности clock или latency SLA. Own hero123/native guard

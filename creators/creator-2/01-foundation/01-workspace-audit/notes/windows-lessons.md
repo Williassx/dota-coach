@@ -421,6 +421,14 @@
 - **Проверка:** [100sample evidence](../../../03-map-view/02-camera-overlays/reports/native-camera-motion-samples-2026-10-12.jsonl), postnear2/80,min0,last312.7443/fouractualframes inspected; controlledcomparisonfalse.
 - **Следующий раз:** до причинного опыта определить inputcontrol/baseline, фиксировать hero motion и provenance. Nearthreshold не global acceptance, mouse state не C2hittest/permission/ИИreturn; однапеременная иrollback отдельнымпланом.
 
+## 35. Нормализация окончаний строк меняет хеш, сохраняя данные
+
+- **Действие:** после публикации SHA-256 Windows JSONL отличался от хеша Git blob.
+- **Причина:** исходные 100 записей имели CRLF, опубликованный blob — LF; побайтовая замена CRLF→LF дала точное совпадение. Это не изменение измерений.
+- **Исправление:** исходный `samples_sha256` сохранён с явным scope `raw_windows_crlf`; добавлен `samples_sha256_lf`. Хеши фактических входов компилятора отдельно обозначены как Windows-входы.
+- **Проверка:** [Отчёт и metadata](../../../03-map-view/02-camera-overlays/reports/native-camera-motion-2026-10-12.md): оба SHA-256 сверены, normalized bytes равны опубликованному Git blob, все 100 JSON-записей совпадают.
+- **Следующий раз:** при проверке опубликованных текстовых артефактов фиксировать область хеша и окончания строк; различать исходные байты и Git-нормализацию, не менять исторический digest ради совпадения.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.
