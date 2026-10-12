@@ -230,6 +230,11 @@
       "id": "node-mouse-targeting",
       "framework": "node-test",
       "path": "creators/creator-2/11-integration/01-ui-binding/tests/mouse-targeting.test.cjs"
+    },
+    {
+      "id": "python-c2-06-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/06-voice/01-microphone-probe/tests"
     }
   ]
 }

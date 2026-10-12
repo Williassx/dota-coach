@@ -69,3 +69,5 @@ unverified IDs; verified=false/exit1 при любой incomplete suite. Passed 
 skipped cases. Source2/runtime flags остаются false.
 
 [Windows portability report](reports/windows-portability-2026-10-12.md): final46suites/1020passed/28skipped/6incomplete/0errors/verifiedfalse. Пропуски не закрывают security/native acceptance; taskkill проверен только для собственных test processes вне разрешённой песочницы.
+
+C2-06-01 добавил только [четыре безопасных diagnostic cleanup tests](../../06-voice/01-microphone-probe/tests/README.md) в canonical source catalog. Actual microphone capture не выполняется обычнымиchecks/import. Свежийfull160830Z-3a670b47suites/1024passed/28skipped/0errors/verifiedfalse — [отчёт](../../06-voice/01-microphone-probe/reports/microphone.md); speech/ASR/bridge остаются открытыми.

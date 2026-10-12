@@ -373,6 +373,14 @@
 - **Проверка:** [Windows portability report](../../../11-integration/03-end-to-end/reports/windows-portability-2026-10-12.md): final1020PASS/28skip/0errors, actual tamper/preservation/junction/ownedtimeout PASS; первое неправильное root expectation исправлено и full повторён.
 - **Следующий раз:** сначала установить, failed setup/guard/process или unsupported capability; сохранить независимые assertions и raw skip reasons. Не менять OS и не выдавать incomplete за приёмку.
 
+## 29. Supported format не подтверждает открытие микрофона
+
+- **Действие:** все4WinMM format queries вернули0/не открывалиhandle; actual FIFINEopen вsandbox вернул1.
+- **Причина:** query и actualopen проверяют разные стадии. Та же команда outside approvedsandbox записалаPCM; низкоуровневая причина MMRESULT1 отдельно не установлена, privacy registry/CIM нельзя считать проверенными при отсутствии результата/access denied.
+- **Исправление:** отдельно query/open/WHDR_DONE/bytes/reset/unprepare/close; bounded3s/owned output, без измененийOS/default device. Context comparison вместо отключения privacy; независимое чтениеWAV. ReviewP2: write/print error не должен отменять emergencyexit, finallyosexit и4failure injection tests проверены.
+- **Проверка:** [microphone report](../../../06-voice/01-microphone-probe/reports/microphone.md): capture3.000s/48000frames/96044WAVbytes, все8APIresults0,cleanuptrue/hashmatch. RMS−51.715dBFS не доказательство речи; speech/ASR/bridgefalse.
+- **Следующий раз:** не объявлять наличие устройства/format0/nonzeroPCM голосом. Не включать activating capture в обычный test catalog или импорт; отделять capture overhead отASR latency/resources.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

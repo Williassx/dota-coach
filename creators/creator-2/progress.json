@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "metric": "checked_actions_over_all_actions",
-  "done": 50,
+  "done": 52,
   "total": 213,
-  "percent": 23.5,
+  "percent": 24.4,
   "sections": [
     {
       "number": 1,
@@ -134,13 +134,13 @@
       "number": 6,
       "title": "Голос тренера",
       "path": "06-voice/README.md",
-      "done": 3,
+      "done": 5,
       "total": 16,
-      "percent": 18.8,
+      "percent": 31.2,
       "subsections": [
         {
           "path": "06-voice/01-microphone-probe/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
