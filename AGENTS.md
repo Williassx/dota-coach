@@ -171,3 +171,10 @@ test-only HUD binding использует15source outputs/14active compiled UI 
 Не трактуйте TEST control AI как серверное наблюдение или selectPlayer как mouse click.
 Native input/hittest, C1/server/identity/lease/ИИreturn, полноценная карта/матч,
 полная source регрессия и другой создатель остаются открытыми.
+
+12октября отдельная native text-preview fixture проверила6фаз existing explicit
+VoicePanels,12кадров1280×720 в двух launches. Canonical voice XML теперь anonymous
+outer/inner VoiceTextRoot; TextEntry explicit readable styling. Fixed6/5 сохранён,
+test-only8sources/7active compiled+retained XML compiled отдельно. Public preview
+не keyboard/button/hittest; microphone/ASR/C1/сервер/реальные identity/второй владелец
+открыты. Full Windows46/753/6failed/verifiedfalse; targeted56PASS.

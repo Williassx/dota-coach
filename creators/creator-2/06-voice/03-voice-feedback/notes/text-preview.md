@@ -3,8 +3,10 @@
 [Подпункт](../README.md) · [Дизайн](../design.md).
 
 Загрузить Roster→VoiceText→VoicePanels в одном контексте XML voice_text.xml,
-затем явно вызвать `DotaCoachVoicePanels.bind(root)`. Сборка ресурсов/manifest и
-нативная загрузка этой панели ещё открыты. bind не запускает микрофон или игру.
+затем явно вызвать `DotaCoachVoicePanels.bind(root)` для внутреннего
+`VoiceTextRoot = $.GetContextPanel().FindChildTraverse("VoiceTextRoot")`.
+Внешний root Panel анонимный: native compiler запрещает ему id. bind не запускает
+микрофон или игру. Production bootstrap и физический ввод остаются открытыми.
 
 ```javascript
 var panel = DotaCoachVoicePanels.bind(root);

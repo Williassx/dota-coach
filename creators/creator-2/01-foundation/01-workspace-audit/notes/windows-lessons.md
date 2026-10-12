@@ -258,6 +258,30 @@
 - **Следующий раз:** при композиции fixture записывать copied/derived/retained inputs
   и active outputs явно; canonical source сохраняется единственным.
 
+## 18. Root Panel XML должен быть анонимным
+
+- **Действие:** скомпилировать native text preview fixture с id у внешнего Panel.
+- **Причина:** Source2 compiler явно запретил root panel id; VM/XML parsing этого
+  не проверяли. Canonical voice layout имел тот же дефект.
+- **Исправление:** anonymous outer Panel, прежний VoiceTextRoot внутри; exact package
+  policy принимает только новую topology, public bind получает inner scope.
+- **Проверка:** [native voice report](../../../06-voice/03-voice-feedback/reports/native-voice-text-2026-10-12.md)
+  — отдельные RED root regressions→GREEN; canonical XML и fixture compilation1/0.
+- **Следующий раз:** до scene launch компилировать canonical layout отдельно от
+  derived fixture; parsing и retained source не считать native compilation.
+
+## 19. TextEntry требует явного оформления
+
+- **Действие:** осмотреть пустое и заполненное поле в actual Dota screenshots.
+- **Причина:** canonical CSS задавал только размеры/отступ; default native appearance
+  не показывал границу пустого поля и рисовал красный текст. Причина default skin
+  не установлена, ошибкой парсера этот цвет не является.
+- **Исправление:** явные color/font-size/background/border/padding в canonical CSS.
+- **Проверка:** [native voice report](../../../06-voice/03-voice-feedback/reports/native-voice-text-2026-10-12.md)
+  — новый own launch, bound/ready кадры показывают рамку и светлый текст.
+- **Следующий раз:** проверять native input одновременно пустым и заполненным;
+  реальные dimensions и green assertions не доказывают читаемость поля.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

@@ -28,3 +28,6 @@
 - [build_native_hud_fixture.py](build_native_hud_fixture.py) — отдельный test-only
   builder15outputs из existing fixed HUD inputs. Не расширяет fixed kinds/probe policy;
   strict/bounded guards и source-only flags сохранены. [План](../../01-ui-binding/native-binding-plan.md).
+- [build_native_voice_fixture.py](build_native_voice_fixture.py) — отдельный test-only
+  builder8outputs из6canonical voice inputs; exact non-executable manifest,
+  strict mapping и preserved bytes. Не расширяет fixed kind/probe policy.

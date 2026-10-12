@@ -42,7 +42,11 @@ def prepare(repository, recipe, read_source):
     policy.hud_manifest(payloads[MANIFEST], 'voice_text.xml')
     layout = policy.parse(payloads[LAYOUT], extra_tags={'TextEntry': {'id', 'text', 'enabled'}})
     policy.dependencies(layout, SCRIPTS, ('voice_text.css',))
-    group = layout.find('Panel')
+    outer = layout.find('Panel')
+    if (outer.attrib != {'class': 'CoachVoiceText', 'hittest': 'false', 'hittestchildren': 'true'} or
+            len(outer) != 1 or outer[0].tag != 'Panel'):
+        raise ValueError('Exact anonymous native voice outer panel required')
+    group = outer[0]
     expected = {'VoiceTextRoot': 'Panel', 'VoiceTextInput': 'TextEntry',
                 'VoiceTextPreviewButton': 'Button', 'VoiceTextClearButton': 'Button'}
     expected.update({'VoiceText' + name: 'Label' for name in ('Status', 'Normalized', 'Address', 'Action', 'Hint')})

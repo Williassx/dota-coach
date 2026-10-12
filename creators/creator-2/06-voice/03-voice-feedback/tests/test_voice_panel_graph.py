@@ -9,6 +9,11 @@ class VoicePanelGraph(unittest.TestCase):
     def setUp(self):
         self.layout = ET.parse(BASE / 'src/panorama/layout/custom_game/voice_text.xml').getroot()
 
+    def test_native_root_anonymous_and_binding_scope_is_inner_panel(self):
+        outer = self.layout.find('./Panel')
+        self.assertNotIn('id', outer.attrib)
+        self.assertEqual(outer.find('./Panel').get('id'), 'VoiceTextRoot')
+
     def test_dependencies_exact_single_context(self):
         self.assertEqual([n.tag for n in self.layout], ['styles', 'scripts', 'Panel'])
         self.assertEqual([n.attrib for n in self.layout.find('scripts')], [

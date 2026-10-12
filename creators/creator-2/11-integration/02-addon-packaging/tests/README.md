@@ -30,3 +30,6 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
 [test_native_hud_fixture.py](test_native_hud_fixture.py) —7сценариев independent
 fixture builder: canonical bytes/derived graph, repeatable assets и отказ до writes
 для invalid mapping/manifest/missing driver/output escape/существующего output.
+[test_native_voice_fixture.py](test_native_voice_fixture.py) —7сценариев isolated
+native voice fixture; anonymous root, unchanged canonical bytes, deterministic
+assets и refusal до writes для unsafe mapping/manifest/missing/output paths.

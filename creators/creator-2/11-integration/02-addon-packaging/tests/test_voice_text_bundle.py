@@ -79,13 +79,15 @@ class VoiceTextBundle(unittest.TestCase):
         self.reject(LAYOUT, lambda r: r.find('Panel').append(ET.Element('include', {'src': 'nested.xml'})))
 
     def test_plain_scope_exact_required_ids_and_topology(self):
+        self.reject(LAYOUT, lambda r: r.find('Panel').set('id', 'UnexpectedRoot'))
+        self.reject(LAYOUT, lambda r: r.find('Panel').append(ET.Element('Panel')))
         self.reject(LAYOUT, lambda r: r.find('.//*[@id="VoiceTextHint"]').set('id', 'Wrong'))
         self.reject(LAYOUT, lambda r: r.find('.//*[@id="VoiceTextAddress"]').set('html', 'true'))
         self.reject(LAYOUT, lambda r: r.find('.//*[@id="VoiceTextAction"]').set('id', 'VoiceTextAddress'))
         self.reject(LAYOUT, lambda r: r.find('.//*[@id="VoiceTextPreviewButton"]').set('enabled', 'true'))
         self.reject(LAYOUT, lambda r: r.find('.//*[@id="VoiceTextPreviewButton"]').append(ET.Element('Panel')))
         def misplaced(r):
-            window = r.find('Panel')[0]
+            window = r.find('Panel/Panel/Panel')
             row = window[3]
             button = row[0]
             row.remove(button)
@@ -158,7 +160,7 @@ class VoiceTextBundle(unittest.TestCase):
         root = ET.parse(self.output / LAYOUT).getroot()
         def tree(node):
             return {'tag': node.tag, 'attrs': node.attrib, 'children': [tree(n) for n in node]}
-        payload = {'tree': tree(root.find('Panel')), 'scripts': [
+        payload = {'tree': tree(root.find('Panel/Panel')), 'scripts': [
             str(self.output / ('content/panorama/' + n.get('src').removeprefix('file://{resources}/')))
             for n in root.find('scripts')]}
         program = r'''

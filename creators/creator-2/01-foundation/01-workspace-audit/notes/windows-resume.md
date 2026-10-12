@@ -149,3 +149,16 @@ Test-only source15/active compiled14; retained inert layout не загружа�
 Targeted7builder/20HUDpackage/26binding PASS. Full080904Z-4ab77b всё ещё
 46suites/752passed/6failed/verified=false. Owned PID21460 закрыт черезquit;
 PID исчез после короткого завершения, безforcekill. [Отчёт и команды](../../../11-integration/01-ui-binding/reports/native-hud-binding-2026-10-12.md).
+
+Следующее независимое native продолжение: text preview в отдельной fixture.
+Canonical voice XML corrected anonymous outer / inner VoiceTextRoot; TextEntry
+получил explicit readable styling. Fixed voice6/5 сохранён; test-only8sources,
+7active compiled +canonical retained XML compiled отдельно. R1/R2 по6фаз PASS,
+12engine frames осмотрены; public preview не physical keyboard/button.
+Stale handle Proxy inspection0, source revision clear/history сохранены.
+UI1/0, canonical1/0, map13/0; PID18976/24436 gone черезquit. Targeted56PASS;
+voice package10/11 с WinError1314. Full085259Z-1dac4b:46/753/6failed/false.
+[Native voice report](../../../06-voice/03-voice-feedback/reports/native-voice-text-2026-10-12.md).
+Уроки18/19 применять перед native layout/input. Physical input/capture channel,
+C1 bootstrap/contracts, microphone/ASR и человеческая проверка остаются открытыми;
+независимая подготовка native preparation scene возможна по её existing source plan.

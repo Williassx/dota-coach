@@ -5,6 +5,7 @@
         <include src="file://{resources}/scripts/custom_game/voice_text_state.js" />
         <include src="file://{resources}/scripts/custom_game/voice_text_panel.js" />
     </scripts>
+    <Panel class="CoachVoiceText" hittest="false" hittestchildren="true">
     <Panel id="VoiceTextRoot" class="CoachVoiceText" hittest="false" hittestchildren="true">
         <Panel class="CoachVoiceTextWindow">
             <Label class="CoachVoiceTitle" html="false" text="Команды тренера" />
@@ -19,5 +20,6 @@
             <Label id="VoiceTextAddress" html="false" text="" />
             <Label id="VoiceTextAction" html="false" text="" />
         </Panel>
+    </Panel>
     </Panel>
 </root>

@@ -26,4 +26,6 @@ Root owner до discovery, обязательные nodes/identity/visibility, s
 busy и generation guards для setters/старых handlers, cleanup/one0.25watcher.
 Dispose при getter/renderer/scheduler нельзя сменить старым repaint; cancelled
 callbacks не трогают свежую привязку. Только plaintext; без native игровых API.
-Нативные XML/TextEntry/layout/hittest, микрофон, MANUAL и server остаются открытыми.
+Native XML требует anonymous outer Panel; explicit scope — внутренний VoiceTextRoot.
+Ограниченная test-only приёмка XML/TextEntry/preview описана в [native design](native-design.md).
+Физический ввод/hittest, микрофон, MANUAL и server остаются открытыми.

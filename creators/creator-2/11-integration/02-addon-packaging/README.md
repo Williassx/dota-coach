@@ -138,3 +138,7 @@ canonical CSS initial slots и отступов от штатного UI. Kind/J
 [Отдельный explicit native binding smoke](../01-ui-binding/reports/native-hud-binding-2026-10-12.md)
 проверяет TEST/synthetic bind/selection/removal/dispose/rebind. Test-only builder15
 source outputs даёт14active compiled UI outputs; fixed kind13/12 не меняется.
+[Native text preview evidence](../../06-voice/03-voice-feedback/reports/native-voice-text-2026-10-12.md)
+проверяет отдельную сцену и existing explicit VoicePanels. Canonical voice XML
+исправлен под native anonymous root; fixed6/5 сохранён. Test-only8sources/7active
+compiled dependencies; canonical inert XML также компилируется отдельно.
