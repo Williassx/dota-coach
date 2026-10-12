@@ -1,7 +1,7 @@
 # C2-05-02 — Перемещение и атака мышью
 
 **Отдел:** создатель 2. **Проверяющий:** создатель 1.
-**Статус:** частично выполнено: модель/source-панель проверены, native компиляция пакета 7/6 пройдена после исправления XML root; runtime bind, клики и права ввода открыты.
+**Статус:** частично выполнено: модель/source-панель и native компиляция пакета 7/6 проверены; explicit runtime bind координатора проверен в TEST сцене. Реальные клики и права ввода открыты.
 **Зависимости:** [C2-05-01](../01-request-ack/README.md), [C1-04-01](../../../creator-1/04-intervention/01-manual-actions/README.md).
 **Рабочая папка:** `creators/creator-2/05-intervention-ui/02-mouse-targeting/`.
 
@@ -44,3 +44,5 @@ API, сигнатуры, конкретные файлы и команды пр�
 [API панели](notes/mouse-panel.md) · [Отчёт](reports/cloud-mouse-panel.md).
 
 [Нативный план 7/6](native-plan.md) · [Windows компиляция и открытая приёмка](reports/native-mouse-2026-10-11.md).
+
+[Native coordinator API smoke](../../11-integration/01-ui-binding/reports/native-mouse-targeting-2026-10-12.md) проверил explicit bind/captured actor/action variants/controlled TTL/move/recovery/dispose/rebind в отдельной TEST сцене;8actual кадров. Это не реальные клики/права ввода/lease/возврат ИИ; критерии product и второй владелец остаются открытыми.

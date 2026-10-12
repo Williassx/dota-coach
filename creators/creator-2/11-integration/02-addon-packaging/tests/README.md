@@ -45,3 +45,5 @@ guards. Match observation package дополнительно проверяет 
 [test_native_intervention_fixture.py](test_native_intervention_fixture.py) —7проверок
 15output fixture и15raw input hashes. Screen package сохраняет50ID/root rename,
 дополнительно проверяет exact anonymous outer и bind inner scope в actual VM.
+
+[test_native_mouse_targeting_fixture.py](test_native_mouse_targeting_fixture.py) —7refusal/isolation tests,9outputs/7canonical assets и7raw input hashes. Retained generated targeting layout совпадает с fixed policy output; derived subtree сохраняется.

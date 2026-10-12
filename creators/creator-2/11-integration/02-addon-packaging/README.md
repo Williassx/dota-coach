@@ -151,3 +151,5 @@ compiled dependencies; canonical inert XML также компилируется
 визуальные подписи и API scroll исправлены; production переход/C1/input/owner открыты.
 
 [Native intervention smoke](../01-ui-binding/reports/native-intervention-2026-10-12.md): fixed13/12 и50ID сохранены,15fixture sources/14active compiled +retained canonical XML. Восемь API фаз и16frames проверяют выбранного B/captured A, actual ACK timer и dispose/rebind. Scoped CSS исправил pane visibility; TEST stub, source checks и screen evidence не подтверждают server/input authority.
+
+[Native targeting smoke](../01-ui-binding/reports/native-mouse-targeting-2026-10-12.md): fixed7/6/7ID не расширен. Девять TEST outputs/8active compiled +retained canonical XML отдельно. Raw inputs и composed output fingerprints разделены, required full verified=false сохранён.

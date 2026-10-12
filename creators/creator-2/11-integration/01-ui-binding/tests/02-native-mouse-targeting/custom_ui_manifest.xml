@@ -1,0 +1,3 @@
+<root>
+    <Panel><CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/mouse_targeting_fixture.xml" /></Panel>
+</root>

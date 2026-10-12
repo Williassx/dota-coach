@@ -43,3 +43,5 @@
 - [build_native_intervention_fixture.py](build_native_intervention_fixture.py) —15outputs
   TEST scene карточек/запроса;13canonical outputs/15raw inputs с2XML inputs,
   strict manifest/path guards, fixed13/12 и preserved source-only flags.
+
+- [build_native_mouse_targeting_fixture.py](build_native_mouse_targeting_fixture.py) —9outputs TEST scene,7canonical outputs/7raw inputs. Own manifest/driver/derived layout, strict refusal guards; fixed targeting7/6 не расширен.

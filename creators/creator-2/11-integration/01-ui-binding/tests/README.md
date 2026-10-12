@@ -26,3 +26,5 @@ gates, dispose/rebind и stale DTO inspection через existing public API.
 
 [Native intervention fixture](native-intervention/README.md) — local send/report,
 captured actor, actual native ACK timer и dispose/rebind; не physical input.
+
+[Native mouse targeting fixture](02-native-mouse-targeting/README.md) — captured actor, action variants, controlled TTL/invalid recovery и dispose/rebind без real mouse hook.

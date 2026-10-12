@@ -133,3 +133,7 @@ cycle failed из-за ожидания driver;11actual frames сохранен�
 без production bootstrap/сервера/полномочия ручного ввода.
 
 [Native intervention evidence](reports/native-intervention-2026-10-12.md): восемь API фаз, два запуска и16actual кадров. Scoped composition CSS исправил невидимую область запроса; fixed13/12 сохранён. ACK TEST stub не даёт прав input; C1, lease, возврат ИИ и human owner открыты.
+
+[Native mouse targeting design](native-mouse-targeting-design.md) · [План](native-mouse-targeting-plan.md) · [Fixture](tests/02-native-mouse-targeting/README.md). Existing coordinator API, TEST actor/targets/controlled clock; no physical input/server/lease.
+
+[Native mouse targeting report](reports/native-mouse-targeting-2026-10-12.md): восемь existing API фаз и8actual кадров. Captured actor, action variants, controlled TTL/invalid recovery/move independence/dispose/rebind; fixed7/6 и production sources сохранены. Input/C1/реальный clock/lease/human owner открыты.

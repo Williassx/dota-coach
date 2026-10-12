@@ -357,6 +357,14 @@
 - **Проверка:** initial125720Z-c40c6d и final130742Z-081143 прочитаны: packaging155tests/8WinError1314, full46/753/6failed.
 - **Следующий раз:** сохранять возвращённый путь один раз; не превращать ошибку чтения в результат проверок.
 
+## 27. Fingerprints raw source и composed canonical output различаются
+
+- **Действие:** новый mouse-targeting fixture test сравнил retained canonical XML с raw standalone source; first6PASS/1FAIL.
+- **Причина:** существующая fixed targeting policy добавляет Targets/coordinator scripts и source comment. Canonical targeting output уже generated, хотя исходный XML не меняется.
+- **Исправление:** metadata derived для retained canonical layout; отдельно сравнивать raw input hashes, exact prepare_assets outputs и preserved native subtree.
+- **Проверка:** [native targeting report](../../../11-integration/01-ui-binding/reports/native-mouse-targeting-2026-10-12.md): final7builder PASS,7raw input hashes/7canonical output hashes,9installed files,8native API фаз.
+- **Следующий раз:** source path в asset metadata не гарантирует byte-copy. Перед сравнением определить уровень преобразования; active graph проверять по уроку17 отдельно.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

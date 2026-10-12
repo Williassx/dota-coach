@@ -23,3 +23,5 @@
   opponents/history, failed initial driver expectation и11actual кадров.
 
 - [native-intervention-2026-10-12.md](native-intervention-2026-10-12.md) — восемь native API фаз, initial visual defect и исправление панели запроса;16actual кадров.
+
+- [native-mouse-targeting-2026-10-12.md](native-mouse-targeting-2026-10-12.md) — восемь native API фаз с TEST actor/targets/controlled clock и8actual кадров.

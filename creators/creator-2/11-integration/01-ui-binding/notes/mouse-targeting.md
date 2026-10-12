@@ -31,3 +31,5 @@ native callbacks; old closed API не читает новые входы и не
 гарантий last_hit/deny. Standalone mouse recipe включает только model+panel. Координатор включён в
 [отдельный пакет](../../02-addon-packaging/notes/mouse-targeting-package.md),
 не подменяет standalone recipe неучтёнными JS.
+
+[Ограниченный native API smoke](../reports/native-mouse-targeting-2026-10-12.md) проверил existing explicit bind, captured actor, target/move/controlled TTL и lifecycle. Это TEST clock и synthetic targets; native hooks/actual freshness/сервер/lease не подтверждены.
