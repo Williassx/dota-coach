@@ -178,3 +178,13 @@ outer/inner VoiceTextRoot; TextEntry explicit readable styling. Fixed6/5 сох�
 test-only8sources/7active compiled+retained XML compiled отдельно. Public preview
 не keyboard/button/hittest; microphone/ASR/C1/сервер/реальные identity/второй владелец
 открыты. Full Windows46/753/6failed/verifiedfalse; targeted56PASS.
+
+12октября native preparation fixture проверила existing three-draft flow:6APIфаз,
+12actual кадров1280×720 в двух launches. Canonical outer anonymous, inner
+CoachPreparationRoot; navigation Label sizing исправлен в трёх styles. Fixed
+preparation15/14 сохранён, fixture17sources/16active compiled +retained generated XML
+отдельно. Local complete/serverConfirmed=false; удаление пятого игрока очищает
+heroes/preparation, dispose/rebind блокирует stale DTO inspection. API scroll после
+layout не physical input. Targeted45PASS, package20/21 с WinError1314; full46/753/
+6failed/verifiedfalse. Общий UI transition/bootstrap, C1/server/реальные profiles,
+physical input/hittest, другая resolution и human second owner открыты.

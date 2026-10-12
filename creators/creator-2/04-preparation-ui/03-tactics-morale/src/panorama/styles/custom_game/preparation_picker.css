@@ -17,3 +17,4 @@
 .PreparationControl:disabled { wash-color: #73838b; }
 
 .PreparationSummary { width: 100%; height: 100px; flow-children: down; overflow: squish scroll; }
+.PreparationControl Label { width: fit-children; }

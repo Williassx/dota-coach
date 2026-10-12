@@ -16,6 +16,7 @@
         <include src="file://{resources}/scripts/custom_game/preparation_flow_state.js" />
         <include src="file://{resources}/scripts/custom_game/preparation_binding.js" />
     </scripts>
+    <Panel class="CoachPreparationCanvas" hittest="false" hittestchildren="true">
     <Panel id="CoachPreparationRoot" class="CoachPreparationScreen" hittest="false" hittestchildren="true">
         <Label class="CoachPreparationTitle" html="false" text="Подготовка команды" />
         <Label id="CoachPreparationStatus" class="CoachPreparationStatus" html="false" text="Данные подготовки не подключены; готовность не подтверждена." />
@@ -24,5 +25,6 @@
             <Panel id="CoachPreparationHeroHost" class="CoachPreparationHost" hittest="false" hittestchildren="true" />
             <Panel id="CoachPreparationTacticsHost" class="CoachPreparationHost" hittest="false" hittestchildren="true" />
         </Panel>
+    </Panel>
     </Panel>
 </root>

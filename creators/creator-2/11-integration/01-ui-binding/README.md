@@ -113,3 +113,10 @@ Generatedlayout содержит3canonicalroots/9definitions; native/автоп�
 
 [Отдельная упаковка](../02-addon-packaging/notes/mouse-targeting-package.md)
 включает dependency graph из 4 JS в generated layout; canonical XML не изменяется.
+
+[Native preparation design](native-preparation-design.md) ·
+[План](native-preparation-plan.md) · [Fixture](tests/native-preparation/README.md) ·
+[Отчёт](reports/native-preparation-2026-10-12.md).
+Два native runs по6фаз,12engine frames; fixed preparation15/14 сохранён.
+Anonymous shell и scoped Control Label sizing исправлены по native evidence;
+explicit local draft/reset/dispose проверены, physical input/C1/сервер остаются открытыми.

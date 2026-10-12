@@ -5,7 +5,10 @@
 `DotaCoachPreparationBindings.bind(root)` требует уже существующие отдельные области
 TeamPickerRoot, HeroRoleRoot, PreparationRoot и CoachPreparationStatus. Загрузите port,
 три модели и их адаптеры, flow и binding в одном контексте. Определения инертны;
-bootstrap, общий XML и пакет ресурсов здесь ещё не созданы.
+generated общий XML и fixed15/14 пакет создаёт preparation composer. Его anonymous
+outer содержит внутренний CoachPreparationRoot: bind получает именно inner scope.
+Production bootstrap остаётся открытым. [Native evidence](../reports/native-preparation-2026-10-12.md)
+использует отдельный TEST driver, не ресурс fixed kind.
 
 Одна частная цепь владеет состоянием. API: updateTeam/choosePlayer/removePlayer/clearTeam,
 updateHeroes/assignHero/removeHero/clearHeroes, updatePreparation/choosePlan/chooseTalk/

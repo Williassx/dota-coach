@@ -282,6 +282,42 @@
 - **Следующий раз:** проверять native input одновременно пустым и заполненным;
   реальные dimensions и green assertions не доказывают читаемость поля.
 
+## 20. Label100% внутри auto-width Button может скрыть подпись
+
+- **Действие:** native preparation кадр показал пустые navigation controls и
+  высокий узкий HeroRole control, хотя canonical XML содержал текст.
+- **Причина:** width100% у Label при parent Button без fixed width; вывод по CSS
+  и изменению кадров, внутренний native sizing алгоритм не исследован.
+- **Исправление:** scoped Control Label width:fit-children в трёх canonical styles.
+- **Проверка:** [native preparation report](../../../11-integration/01-ui-binding/reports/native-preparation-2026-10-12.md)
+  — fresh launch, семь labels с text/native dimensions, подписи видны на кадрах.
+- **Следующий раз:** отдельно смотреть статические control labels; непустая XML
+  подпись и активность кнопки не доказывают, что native layout показывает её.
+
+## 21. Прокручивать после расчёта нового content layout
+
+- **Действие:** сразу после заполнения three-pane draft вызвать ScrollToBottom.
+- **Причина:** scroll=-693 соответствовал предыдущему content1333/viewport640,
+  а после layout content2083; actual complete кадр не показывал тактику.
+- **Исправление:** test driver ждёт0.5s native layout перед API scroll.
+- **Проверка:** [native preparation report](../../../11-integration/01-ui-binding/reports/native-preparation-2026-10-12.md)
+  — final content1933/viewport640/scroll=-1293, выбранные plan/talk и summary видны.
+- **Следующий раз:** сверять geometry и actual frame после content changes;
+  nonzero scroll не доказывает нижний край, API scroll не означает physical input.
+
+## 22. Проверять текущую игровую фазу непосредственно перед командой
+
+- **Действие:** первый dota_pick_hero был отправлен после перехода в STRATEGY_TIME;
+  VConsole marker принят, но hero HUD остался пустым.
+- **Причина:** HERO_SELECTION окно закончилось; marker подтверждает соединение,
+  а не выполнение phase-sensitive команды. Внутренний отказ отдельно не исследован.
+- **Исправление:** fresh log state проверяется перед каждой командой; helper ждёт
+  HERO_SELECTION и не делает поздний повторный запрос.
+- **Проверка:** [native preparation report](../../../11-integration/01-ui-binding/reports/native-preparation-2026-10-12.md)
+  — R1 phase-scoped commands и actual disposed кадр с Axe; own PID gone послеquit.
+- **Следующий раз:** не ставить длинные проверки между state preflight и action;
+  записывать фактический game result отдельно от command/connection success.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

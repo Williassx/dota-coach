@@ -162,3 +162,21 @@ voice package10/11 с WinError1314. Full085259Z-1dac4b:46/753/6failed/false.
 Уроки18/19 применять перед native layout/input. Physical input/capture channel,
 C1 bootstrap/contracts, microphone/ASR и человеческая проверка остаются открытыми;
 независимая подготовка native preparation scene возможна по её existing source plan.
+
+Native preparation continuation завершило ограниченный API/render smoke existing
+трёх private drafts в отдельной fixture. Canonical anonymous outer / inner
+CoachPreparationRoot компилируется; fixed preparation15/14 сохранён. Test-only
+17sources:16active compiled +retained generated XML отдельно. В двух launches
+шесть фаз bound/team/complete/reset/disposed/rebound и12actual кадров1280×720.
+Первый run выявил пустые navigation labels и scroll до старого layout; scoped
+Label width:fit-children в трёх canonical styles и отложенный API scroll проверены
+повторным запуском. Local complete/serverConfirmed=false, remove fifth player
+очищает heroes/preparation; stale Proxy inspections0. PID27560/28100 gone черезquit.
+Targeted45PASS; preparation package20/21 с WinError1314. Required full101831Z-b01147:
+46suites/753passed/6failed/verified=false. Уроки20–22, source-only handoff15/14,
+один technical critic без замечаний; human second owner остаётся открытым.
+[Native preparation evidence](../../../11-integration/01-ui-binding/reports/native-preparation-2026-10-12.md).
+Следующее продолжение сначала сверяет текущий PLAN/PROGRESS и зависимости: physical
+input/hittest, другой размер экрана и общий UI transition ещё не проверены. API scroll
+не mouse evidence; TEST profiles/hero IDs не real identity. C1 bootstrap/contracts,
+server readiness/effects/start, права ручного ввода и возврат ИИ остаются открытыми.

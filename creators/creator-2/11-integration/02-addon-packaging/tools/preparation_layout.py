@@ -134,7 +134,11 @@ def prepare(repository, manifest, read_source):
     prepared = [(e['source'], e['target'], read_source(repository, e['source'])) for e in entries]
     payloads = {target: payload for _, target, payload in prepared}
     root = parse_xml(payloads[LAYOUT]); dependencies(root, SCRIPTS, STYLES)
-    group = root.find('Panel')
+    outer = root.find('Panel')
+    if (outer.attrib != {'class': 'CoachPreparationCanvas', 'hittest': 'false', 'hittestchildren': 'true'} or
+            len(outer) != 1 or outer[0].tag != 'Panel'):
+        raise ValueError('Preparation requires an exact anonymous outer panel')
+    group = outer[0]
     if group.get('id') != 'CoachPreparationRoot':
         raise ValueError('Preparation shell root is missing')
     statuses = [n for n in group.iter('Label') if n.get('id') == 'CoachPreparationStatus']

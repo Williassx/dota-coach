@@ -33,3 +33,7 @@ fixture builder: canonical bytes/derived graph, repeatable assets и отказ 
 [test_native_voice_fixture.py](test_native_voice_fixture.py) —7сценариев isolated
 native voice fixture; anonymous root, unchanged canonical bytes, deterministic
 assets и refusal до writes для unsafe mapping/manifest/missing/output paths.
+
+[test_native_preparation_fixture.py](test_native_preparation_fixture.py) —7проверок
+17output fixture: composed canonical subtree/raw fingerprints и refusal guards.
+test_preparation_bundle.py также проверяет anonymous outer/inner native topology.

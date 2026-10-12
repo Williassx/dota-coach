@@ -15,5 +15,6 @@
 .HeroRoleNavigation { width: 100%; flow-children: right; margin-top: 14px; margin-bottom: 10px; }
 .HeroRoleControl { padding: 9px 14px; margin-right: 12px; background-color: #305163; border: 1px solid #608696; }
 .HeroRoleControl:disabled { wash-color: #73838b; }
+.HeroRoleControl Label { width: fit-children; }
 
 .HeroRoleFocused { border: 2px solid #9fd8e4; background-color: #304c5e; }

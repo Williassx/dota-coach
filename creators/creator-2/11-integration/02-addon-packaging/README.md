@@ -142,3 +142,8 @@ source outputs даёт14active compiled UI outputs; fixed kind13/12 не мен
 проверяет отдельную сцену и existing explicit VoicePanels. Canonical voice XML
 исправлен под native anonymous root; fixed6/5 сохранён. Test-only8sources/7active
 compiled dependencies; canonical inert XML также компилируется отдельно.
+
+[Native preparation report](../01-ui-binding/reports/native-preparation-2026-10-12.md)
+проверяет existing три private drafts в отдельной TEST сцене. Source kind15/14
+сохранён,17fixture resources/16active compiled +retained layout отдельно. Native
+визуальные подписи и API scroll исправлены; production переход/C1/input/owner открыты.

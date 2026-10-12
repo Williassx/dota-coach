@@ -15,3 +15,6 @@
 - [cloud-intervention-screen.md](cloud-intervention-screen.md)
 
 - [cloud-mouse-targeting.md](cloud-mouse-targeting.md) — source composition и непроведённые native проверки.
+
+- [native-preparation-2026-10-12.md](native-preparation-2026-10-12.md) — шесть native
+  API фаз, первый visual defect run и исправленная сцена, границы source/runtime.

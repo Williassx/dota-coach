@@ -31,3 +31,7 @@
 - [build_native_voice_fixture.py](build_native_voice_fixture.py) — отдельный test-only
   builder8outputs из6canonical voice inputs; exact non-executable manifest,
   strict mapping и preserved bytes. Не расширяет fixed kind/probe policy.
+
+- [build_native_preparation_fixture.py](build_native_preparation_fixture.py) —17outputs
+  отдельной TEST сцены;15canonical composed outputs/18raw input hashes с3XML inputs,
+  strict manifest/path policy и retained generated layout, fixed15/14 без auto-bind.

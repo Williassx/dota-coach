@@ -77,6 +77,8 @@ class PreparationBundleTests(unittest.TestCase):
 
     def test_generated_roots_match_canonical_panels_and_preserve_unique_ids(self):
         self.build(); root = ET.parse(self.output / LAYOUT).getroot()
+        self.assertNotIn('id', root.find('./Panel').attrib)
+        self.assertEqual(root.find('./Panel/Panel').get('id'), 'CoachPreparationRoot')
         ids = [n.get('id') for n in root.iter() if n.get('id')]
         self.assertEqual(len(ids), len(set(ids)))
         for entry in self.manifest['layout_inputs']:
@@ -89,6 +91,23 @@ class PreparationBundleTests(unittest.TestCase):
             self.assertEqual(ET.tostring(left), ET.tostring(right))
         self.assertTrue(all(n.get('html') == 'false' for n in root.iter('Label')))
         self.assertTrue(all(n.get('enabled') == 'false' for n in root.iter('Button')))
+
+    def test_anonymous_outer_shape_and_binding_root_guards(self):
+        source = self.source(LAYOUT)
+        original = source.read_bytes()
+        mutations = [
+            lambda r: r.find('./Panel').set('id', 'UnexpectedRoot'),
+            lambda r: r.find('./Panel').set('class', 'UnexpectedCanvas'),
+            lambda r: r.find('./Panel').append(ET.Element('Panel')),
+            lambda r: r.find('./Panel/Panel').set('id', 'UnexpectedBindingScope'),
+        ]
+        for mutation in mutations:
+            with self.subTest(mutation=mutations.index(mutation)):
+                root = ET.fromstring(original)
+                mutation(root)
+                source.write_bytes(ET.tostring(root))
+                self.reject()
+        source.write_bytes(original)
 
     def test_dependencies_exact_order_and_plain_unconfirmed_status(self):
         self.build(); root = ET.parse(self.output / LAYOUT).getroot()

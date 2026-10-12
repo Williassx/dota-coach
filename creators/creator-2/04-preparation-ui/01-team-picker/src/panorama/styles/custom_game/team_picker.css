@@ -15,3 +15,4 @@
 .TeamPickerNavigation { width: 100%; flow-children: right; margin-top: 14px; margin-bottom: 10px; }
 .TeamPickerControl { padding: 9px 14px; margin-right: 12px; background-color: #305163; border: 1px solid #608696; }
 .TeamPickerControl:disabled { wash-color: #73838b; }
+.TeamPickerControl Label { width: fit-children; }

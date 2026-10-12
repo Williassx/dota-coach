@@ -17,3 +17,6 @@
   child panels: separate sources, lifecycle/reentry/partial bind/old owner.
 
 [mouse-targeting.test.cjs](mouse-targeting.test.cjs) — 20 VM интеграционных сценариев с real Targets/model/panel: expiry, clear-beforeDTO, immutable actor/move independence, clock/native reentry/dispose.
+
+[Native preparation fixture](native-preparation/README.md) — отдельный API-driven
+TEST driver и native scroll/geometry assertions, без production auto-bind/input.
