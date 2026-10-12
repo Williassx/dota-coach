@@ -381,6 +381,14 @@
 - **Проверка:** [microphone report](../../../06-voice/01-microphone-probe/reports/microphone.md): capture3.000s/48000frames/96044WAVbytes, все8APIresults0,cleanuptrue/hashmatch. RMS−51.715dBFS не доказательство речи; speech/ASR/bridgefalse.
 - **Следующий раз:** не объявлять наличие устройства/format0/nonzeroPCM голосом. Не включать activating capture в обычный test catalog или импорт; отделять capture overhead отASR latency/resources.
 
+## 30. Нижняя граница зависимости не гарантирует совместимость
+
+- **Действие:** wheels-only faster-whisper1.2.1 с av>=11 получил PyAV19.0.1; модель загрузилась, но WAV decode упал на metadata_errors.
+- **Причина:** PyAV19 удалил этот параметр, faster-whisper1.2.1 ещё передаёт его. Причина сверена по installed code/METADATA и официальному issue1589, не по догадке о микрофоне/сети.
+- **Исправление:** отдельный pinned av18.0.0 overlay с явным import precedence; плохойenvironment/result сохранены. Не monkeypatch стороннийкод и не изменять audio радиPASS; хранить фактическиеversions/modelrevision/hashes.
+- **Проверка:** [offline ASR report](../../../06-voice/01-microphone-probe/reports/offline-asr-2026-10-12.md): repeat exit0/model_loaded/generatorconsumed/VAD0/segments[]; officialmodelLFShash/size match. Positive speech decoder/quality не проверены, Python socket guard не OSnetwork trace.
+- **Следующий раз:** проверять реальный native decode, не только import/model constructor. После compatibilitypin повторить тотже вход; пустойрезультатVAD не выдавать за точностьASR/речь/команду.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

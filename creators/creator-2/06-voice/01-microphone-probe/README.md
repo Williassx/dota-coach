@@ -30,3 +30,5 @@
 Новый вложенный каталог получает README с назначением и ссылкой из этого файла.
 API, сигнатуры, конкретные файлы и команды проверки закрепляются в локальном
 техническом плане после исследования входов; не подменяйте их выдуманными командами.
+
+Продолжение: [ASR-дизайн](asr-design.md), [план](asr-plan.md), [offline runtime/VAD report](reports/offline-asr-2026-10-12.md). Runtime tiny/CPU иquietinput/VAD проверены; positive speech/accuracy/bridge открыты.
