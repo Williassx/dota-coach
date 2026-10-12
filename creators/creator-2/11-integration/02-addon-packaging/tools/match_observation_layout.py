@@ -41,7 +41,12 @@ policy = opponent.policy
 
 
 def shell(root, composed=False):
-    group = root.find('Panel')
+    outer = root.find('Panel')
+    if (outer is None or outer.attrib != {'class': 'CoachMatchObservationCanvas',
+            'hittest': 'false', 'hittestchildren': 'true'} or
+            len(outer) != 1 or outer[0].tag != 'Panel'):
+        raise ValueError('Exact anonymous match canvas required')
+    group = outer[0]
     if (group.attrib != {'id': 'CoachMatchObservation', 'class': 'CoachMatchObservation', 'visible': 'false',
                          'hittest': 'false', 'hittestchildren': 'true'} or
             [node.tag for node in group] != ['Label', 'Panel', 'Panel'] or

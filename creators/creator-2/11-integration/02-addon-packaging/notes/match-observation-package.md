@@ -27,3 +27,8 @@ Loader альтернативен другим пакетам, автомати�
 одну группу, доставляет два независимых источника и dispose. Полное объединение
 с собственной командой/приказами/голосом/камерой остаётся отдельным этапом.
 sourceAuthorizationConfirmed=false; native_checks=not_run, installation=false.
+
+Canonical shell теперь anonymous canvas с inner CoachMatchObservation; composer
+проверяет outer shape и сохраняет оба canonical child scopes/38ID. Отдельная
+[native fixture](../../01-ui-binding/reports/native-observation-2026-10-12.md) не
+меняет10/9 inventory и source-only flags/handoff status этого пакета.

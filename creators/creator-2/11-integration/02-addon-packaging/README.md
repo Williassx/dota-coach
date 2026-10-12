@@ -119,7 +119,9 @@ Labels и 7 контейнеров. Отдельная панель пяти с�
 Верхний ряд соперников и история справа управляются одним parent binding;
 поддерживается отдельная готовность источников. Source fingerprints и повторная
 композиция сохраняют единственные исходники. Selector: `match-observation`.
-Это read-only вариант; весь игровой HUD, bootstrap/native/C1 ещё открыты.
+Это read-only вариант; весь игровой HUD, bootstrap/C1 ещё открыты. Отдельный
+[native smoke](../01-ui-binding/reports/native-observation-2026-10-12.md) проверил
+existing explicit API/render; fixed10/9 сохранён, source flags не повышены.
 
 [Mouse proposal recipe](mouse-proposal-manifest.json) ·
 [Инструкция](notes/mouse-proposal-package.md).

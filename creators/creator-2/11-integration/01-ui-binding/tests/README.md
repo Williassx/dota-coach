@@ -20,3 +20,6 @@
 
 [Native preparation fixture](native-preparation/README.md) — отдельный API-driven
 TEST driver и native scroll/geometry assertions, без production auto-bind/input.
+
+[Native observation fixture](native-observation/README.md) — independent source
+gates, dispose/rebind и stale DTO inspection через existing public API.

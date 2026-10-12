@@ -11,9 +11,11 @@
         <include src="file://{resources}/scripts/custom_game/orders_timeline_panel.js" />
         <include src="file://{resources}/scripts/custom_game/match_observation_binding.js" />
     </scripts>
-    <Panel id="CoachMatchObservation" class="CoachMatchObservation" visible="false" hittest="false" hittestchildren="true">
+    <Panel class="CoachMatchObservationCanvas" hittest="false" hittestchildren="true">
+      <Panel id="CoachMatchObservation" class="CoachMatchObservation" visible="false" hittest="false" hittestchildren="true">
         <Label id="MatchObservationStatus" class="MatchObservationStatus" html="false" text="" hittest="false" />
         <Panel id="MatchOpponentHost" class="MatchOpponentHost" hittest="false" hittestchildren="true" />
         <Panel id="MatchHistoryHost" class="MatchHistoryHost" hittest="false" hittestchildren="true" />
+      </Panel>
     </Panel>
 </root>

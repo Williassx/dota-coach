@@ -318,6 +318,21 @@
 - **Следующий раз:** не ставить длинные проверки между state preflight и action;
   записывать фактический game result отдельно от command/connection success.
 
+## 23. Ready missing slot отличается от недоступного источника
+
+- **Действие:** first native observation cycle ожидал пустой OpponentName1 после
+  fresh rebind с ready roster одного игрока; rebound assertion failed.
+- **Причина:** TEST driver перепутал два existing presentation состояния. Canonical
+  panel.paint очищает имена при source ready=false; missing slot ready=true
+  показывает «Имя неизвестно». Production model не требовала изменения.
+- **Исправление:** изменить только fixture expectation на canonical missing label;
+  сохранить initial failed cycle и повторить fresh addon/launch.
+- **Проверка:** [native observation report](../../../11-integration/01-ui-binding/reports/native-observation-2026-10-12.md)
+  — final6phase cycle PASS, actual rebound TEST FRESH/четыре unknown names;
+  first5phase PASS/rebound failure не переименованы в полный PASS.
+- **Следующий раз:** при переносе source scenarios в native driver сверять ready
+  и slot availability отдельно; inferred blank не подменяет public panel semantics.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

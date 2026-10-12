@@ -37,3 +37,7 @@ assets и refusal до writes для unsafe mapping/manifest/missing/output path
 [test_native_preparation_fixture.py](test_native_preparation_fixture.py) —7проверок
 17output fixture: composed canonical subtree/raw fingerprints и refusal guards.
 test_preparation_bundle.py также проверяет anonymous outer/inner native topology.
+
+[test_native_observation_fixture.py](test_native_observation_fixture.py) —7проверок
+12output fixture: exact canonical subtree,12raw input hashes/2XML inputs, refusal
+guards. Match observation package дополнительно проверяет anonymous outer shape.

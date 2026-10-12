@@ -43,5 +43,9 @@ cleanup; старый closed API не пишет в новое открытие.
 После успешного приобретения обеих областей parent полностью принадлежит группе.
 
 Только read-only source-сцена. Нет приказов/голоса/своего состава/камеры/карты,
-доказанной серверной авторизации, игрового эффекта или нативной приёмки.
+доказанной серверной авторизации, игрового эффекта или полной нативной приёмки.
 sourceAuthorizationConfirmed=false у opponents; история — presentation snapshots.
+
+[Native smoke](../reports/native-observation-2026-10-12.md) отдельно проверил
+explicit public API/render/lifecycle в TEST addon. Bind получает inner named
+CoachMatchObservation внутри anonymous canvas; это не production bootstrap/input.

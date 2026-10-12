@@ -180,3 +180,19 @@ Targeted45PASS; preparation package20/21 с WinError1314. Required full101831Z-b
 input/hittest, другой размер экрана и общий UI transition ещё не проверены. API scroll
 не mouse evidence; TEST profiles/hero IDs не real identity. C1 bootstrap/contracts,
 server readiness/effects/start, права ручного ввода и возврат ИИ остаются открытыми.
+
+Следующий bounded native smoke выполнен для existing match observation. Anonymous
+canvas/inner CoachMatchObservation компилируется; fixed10/9/2XML inputs/38ID сохранён.
+Test-only12sources/11active compiled +retained generated XML отдельно. First5фаз
+PASS/rebound failed: ошибочное driver ожидание blank вместо ready missing slot
+«Имя неизвестно». Production JS не изменён, final6/cycle PASS;11actual frames1280×720.
+Invalid opponent source сохраняет history; invalid history сохраняет roster;
+history recovery duplicate не добавляет; rebind TEST FRESH, stale Proxy reads0.
+PID25624/10788 quit→gone; source-only handoff121608Z-e67cbc verified10/9/false flags.
+Targeted22PASS, package8/9 с WinError1314; full121351Z-60b1f6:46/753/6failed/false.
+[Evidence](../../../11-integration/01-ui-binding/reports/native-observation-2026-10-12.md).
+Урок23 применять перед ready/missing native assertions. Template map render остаётся
+ограниченным: final чёрный minimap/голубая область слева, причина неизвестна.
+CommonHUD/physical input/C1/real identity/server authorization/human second owner
+открыты. Следующий независимый шаг сверяет PLAN и existing intervention/mouse source
+зависимости; не объявлять accepted history исполнением и TEST heroName entity mapping.

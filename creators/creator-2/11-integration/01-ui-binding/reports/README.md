@@ -18,3 +18,6 @@
 
 - [native-preparation-2026-10-12.md](native-preparation-2026-10-12.md) — шесть native
   API фаз, первый visual defect run и исправленная сцена, границы source/runtime.
+
+- [native-observation-2026-10-12.md](native-observation-2026-10-12.md) — final6APIфаз
+  opponents/history, failed initial driver expectation и11actual кадров.

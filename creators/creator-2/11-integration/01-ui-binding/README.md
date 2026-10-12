@@ -120,3 +120,9 @@ Generatedlayout содержит3canonicalroots/9definitions; native/автоп�
 Два native runs по6фаз,12engine frames; fixed preparation15/14 сохранён.
 Anonymous shell и scoped Control Label sizing исправлены по native evidence;
 explicit local draft/reset/dispose проверены, physical input/C1/сервер остаются открытыми.
+
+[Native observation design](native-observation-design.md) ·
+[План](native-observation-plan.md) · [Fixture](tests/native-observation/README.md).
+[Native report](reports/native-observation-2026-10-12.md): final6фаз PASS, initial
+cycle failed из-за ожидания driver;11actual frames сохранены. Fixed10/9 сохранён,
+общий игровой HUD/C1/input и map render acceptance остаются открытыми.

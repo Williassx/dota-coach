@@ -35,3 +35,7 @@
 - [build_native_preparation_fixture.py](build_native_preparation_fixture.py) —17outputs
   отдельной TEST сцены;15canonical composed outputs/18raw input hashes с3XML inputs,
   strict manifest/path policy и retained generated layout, fixed15/14 без auto-bind.
+
+- [build_native_observation_fixture.py](build_native_observation_fixture.py) —12outputs
+  TEST scene opponents/history;10canonical composed outputs/12raw input hashes,
+  strict manifest/path policy и retained generated layout, fixed10/9 без auto-bind.

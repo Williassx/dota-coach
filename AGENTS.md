@@ -188,3 +188,13 @@ heroes/preparation, dispose/rebind блокирует stale DTO inspection. API 
 layout не physical input. Targeted45PASS, package20/21 с WinError1314; full46/753/
 6failed/verifiedfalse. Общий UI transition/bootstrap, C1/server/реальные profiles,
 physical input/hittest, другая resolution и human second owner открыты.
+
+12октября native match observation проверила6existing APIфаз opponents/history в
+отдельной TEST fixture1280×720. Initial5PASS/rebound failed из-за fixture ожидания
+missing ready slot; исправлен только TEST assertion, final6/cycle PASS,11actual frames.
+Canonical anonymous canvas/inner CoachMatchObservation, fixed10/9/2inputs/38ID
+сохранены;12fixture sources/11active compiled+retained XML отдельно. Independent
+invalid/recovery и dispose/rebind/stale Proxy inspection0 проверены. Targeted22PASS,
+package8/9 с WinError1314; full46/753/6failed/false. accepted — presentation snapshot,
+sourceAuthorizationConfirmed/nativeConfirmed=false. Input/C1/commonHUD/human owner
+и map render открыты; final template minimap/голубая область не имеют установленной причины.

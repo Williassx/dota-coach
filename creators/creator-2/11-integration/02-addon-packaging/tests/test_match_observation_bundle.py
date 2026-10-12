@@ -62,7 +62,7 @@ class MatchObservationBundle(unittest.TestCase):
 
     def test_exact_shell_empty_hosts_dependency_order_and_inert_state(self):
         source = next(e['source'] for e in self.recipe['assets'] if e['target'] == LAYOUT)
-        self.reject(source, lambda r: r.find('Panel').set('visible', 'true'))
+        self.reject(source, lambda r: r.find('./Panel/Panel').set('visible', 'true'))
         self.reject(source, lambda r: r.find('Panel').set('onload', 'run()'))
         self.reject(source, lambda r: r.find('.//*[@id="MatchObservationStatus"]').set('html', 'true'))
         self.reject(source, lambda r: r.find('.//*[@id="MatchObservationStatus"]').set('text', 'stale'))
@@ -78,6 +78,8 @@ class MatchObservationBundle(unittest.TestCase):
 
     def test_generated_scope_ids_and_hosts_are_exact(self):
         self.build(); tree = ET.parse(self.output / LAYOUT).getroot()
+        self.assertNotIn('id', tree.find('Panel').attrib)
+        self.assertEqual(tree.find('./Panel/Panel').get('id'), 'CoachMatchObservation')
         ids = [n.get('id') for n in tree.iter() if n.get('id')]
         self.assertEqual((len(ids), len(set(ids))), (38, 38))
         for item in self.recipe['layout_inputs']:
@@ -85,6 +87,13 @@ class MatchObservationBundle(unittest.TestCase):
             self.assertEqual(len(host), 1); self.assertEqual(host[0].get('id'), item['root_id'])
             original = ET.parse(self.repo / item['source']).getroot().find('Panel')
             self.assertEqual(ET.tostring(host[0]), ET.tostring(original))
+
+    def test_anonymous_outer_and_binding_root_shape_guards(self):
+        source = next(e['source'] for e in self.recipe['assets'] if e['target'] == LAYOUT)
+        self.reject(source, lambda r: r.find('Panel').set('id', 'Forbidden'))
+        self.reject(source, lambda r: r.find('Panel').set('class', 'OtherCanvas'))
+        self.reject(source, lambda r: r.find('Panel').append(ET.Element('Panel')))
+        self.reject(source, lambda r: r.find('./Panel/Panel').set('id', 'WrongRoot'))
 
     def test_input_fingerprint_current_source_and_output_tamper_detected(self):
         self.build(); file = self.repo / self.recipe['layout_inputs'][0]['source']; raw = file.read_bytes()
