@@ -86,7 +86,7 @@
 
 ## Текущее состояние
 
-Приложение и проверенная сцена Dota ещё не реализованы. Созданы библиотеки двух
+Продуктовая игра и общая приёмка Dota ещё не реализованы. Созданы библиотеки двух
 создателей, диагностические помощники и исходники панели Panorama с облачными
 поведенческими проверками; их команды не являются
 сборкой или тестами игры. Windows-путь — D:\AI\dota2coach; облачный Linux не означает
@@ -162,3 +162,12 @@ C2-05-01: отдельная панель запроса с явным bind/disp
 C2-11-01: локальная связь Roster/Requests, 27 новых сценариев и общий итог 635.
 Selected card и capturedactor разделены, roster дополнительно закрывает canRequest;
 сообщения учитывают общий gate. Панели/сервер/native/возврат ИИ/второй владелец открыты.
+
+12октября native empty HUD13/12 показан при двух разрешениях; default CSS/отступы
+исправлены по кадрам, отдельный visible setter cycle проверен. Следующий independent
+test-only HUD binding использует15source outputs/14active compiled UI outputs:
+пять TEST/synthetic карточек, selection/removal/dispose/rebind и stale handle,
+пять actual кадров1280×720. Production JS/XML и fixed kinds не расширены.
+Не трактуйте TEST control AI как серверное наблюдение или selectPlayer как mouse click.
+Native input/hittest, C1/server/identity/lease/ИИreturn, полноценная карта/матч,
+полная source регрессия и другой создатель остаются открытыми.

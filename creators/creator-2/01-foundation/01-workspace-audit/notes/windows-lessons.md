@@ -218,6 +218,46 @@
 - **Следующий раз:** выбирать launcher по фактической доступности; не повторять alias
   и не переустанавливать Python без необходимости.
 
+## 15. Direct UI API calls не доказывают native ввод
+
+- **Действие:** native fixture вызвала explicit bind/selectPlayer/remove/dispose/rebind
+  и получила пять PASS predicates/actual кадров.
+- **Причина:** это проверка существующих UI методов и layout. Mouse click/hittest,
+  серверный источник/clock/identity и исполнение не были частью этого пути.
+- **Исправление:** TEST/synthetic Labels и постоянный TEST banner; не передавать
+  sender/gateway/resolver, сохранять disabled actions. TEST control AI маркировать
+  как тестовый DTO, даже если существующий UI paint пишет «подтверждён».
+- **Проверка:** [native binding report](../../../11-integration/01-ui-binding/reports/native-hud-binding-2026-10-12.md)
+  — пять кадров и guards, no transport/gateway/identity; полноценный ввод остаётся открытым.
+- **Следующий раз:** ограничивать вывод тем, что реально наблюдалось; отдельная
+  test fixture не включается в fixed production kind и не заменяет C1 contract.
+
+## 16. Quit и завершение процесса разделены во времени
+
+- **Действие:** после fresh live quit PID21460 ещё существовал при первой
+  немедленной проверке, следующая проверка показала его отсутствие.
+- **Причина:** shutdown не завершился к первой проверке; механизм задержки отдельно
+  не исследован. Live response команды не является доказательством PIDgone.
+- **Исправление:** дать собственной сессии завершиться и повторно проверить owned PID;
+  не отправлять повторный quit и не forcekill без нового основания.
+- **Проверка:** [native binding report](../../../11-integration/01-ui-binding/reports/native-hud-binding-2026-10-12.md)
+  и ignored native-hud-binding-quit-20261012.jsonl; финально Dota client отсутствовал.
+- **Следующий раз:** перед новым launch проверять actual process state, сохранять Steam
+  и чужие процессы; shutdown state проверяется отдельно от TCP/echo.
+
+## 17. Source outputs и active compiled graph считать отдельно
+
+- **Действие:** test-only fixture содержит15source outputs, а manifest compile
+  дал14compiled UI files.
+- **Причина:** неизменённый canonical coach_hud.xml сохранён как input/output,
+  но test manifest загружает derived layout. Этот retained source не в active graph.
+- **Исправление:** проверять реальный dependency graph и compiled file list, не требовать
+  одинакового числа sources/compiled и не заявлять компиляцию неиспользованного файла.
+- **Проверка:** [native binding report](../../../11-integration/01-ui-binding/reports/native-hud-binding-2026-10-12.md)
+  —15matched payloads/14compiled hashes/95765UIbytes; fixed HUD13/12 неизменён.
+- **Следующий раз:** при композиции fixture записывать copied/derived/retained inputs
+  и active outputs явно; canonical source сохраняется единственным.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

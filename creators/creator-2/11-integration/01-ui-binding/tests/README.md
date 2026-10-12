@@ -2,6 +2,9 @@
 
 [Родитель](../README.md).
 
+- [native-hud-binding](native-hud-binding/README.md) — отдельная explicit native
+  fixture; TEST данные, no sender/gateway/identity. Не fixed source kind.
+
 - [hud-binding.test.cjs](hud-binding.test.cjs)
 - [preparation-flow.test.cjs](preparation-flow.test.cjs)
 - [panel-port.test.cjs](panel-port.test.cjs)

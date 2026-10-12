@@ -2,6 +2,9 @@
 
 [Родитель](../README.md).
 
+- [native-hud-binding-2026-10-12.md](native-hud-binding-2026-10-12.md) — пять фаз
+  реального Panorama binding; mouse/server/identity и другая приёмка открыты.
+
 - [cloud-match-observation.md](cloud-match-observation.md) — связка и packaged context.
 
 - [cloud-ui-binding.md](cloud-ui-binding.md)

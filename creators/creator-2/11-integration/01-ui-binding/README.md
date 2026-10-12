@@ -37,6 +37,11 @@ API, сигнатуры, конкретные файлы и команды пр�
 
 ## Подготовленная локальная часть
 
+[Native explicit binding smoke12октября](reports/native-hud-binding-2026-10-12.md):
+существующие модули выполнены в отдельном test-only Panorama HUD с TEST/synthetic
+данными: bind/selection/removal/dispose/rebind и stale handle. Пять actual кадров.
+Fixed source kinds/production JS сохранены; сервер/input/identity/другой создатель открыты.
+
 [Дизайн](design.md) · [План](implementation-plan.md) · [Исходники](src/README.md) ·
 [Тесты](tests/README.md) · [Заметки](notes/README.md) · [Отчёты](reports/README.md).
 

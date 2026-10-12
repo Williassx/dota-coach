@@ -26,3 +26,7 @@ repo. Проверяют fixed policy, graph/order/IDs/empty states, сохра�
 [test_mouse_proposal_bundle.py](test_mouse_proposal_bundle.py) — 8 сценариев fixed mapping, topology, strict XML, source/output integrity и actual packaged VM.
 
 [test_mouse_targeting_bundle.py](test_mouse_targeting_bundle.py) — 8 сценариев: 6 reused guards и 2 package graph/actual context проверки.
+
+[test_native_hud_fixture.py](test_native_hud_fixture.py) —7сценариев independent
+fixture builder: canonical bytes/derived graph, repeatable assets и отказ до writes
+для invalid mapping/manifest/missing driver/output escape/существующего output.

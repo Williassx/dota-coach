@@ -139,3 +139,13 @@ input/C1/identity/lease/возврат ИИ и другой создатель �
 [Native evidence](../../../11-integration/02-addon-packaging/reports/native-hud-scene-2026-10-12.md).
 Перед похожими действиями применяйте [уроки](windows-lessons.md); каталог всех
 175 ролей и условия назначения — [реестр](agent-activation-2026-10-12.md).
+
+Следующий actual native smoke: existing explicit HUD bind выполнен в отдельном
+addon dota_coach_c2_hud_binding_20261012. Пять TEST/synthetic фаз1280×720:
+bind5cards,selectTEST0,removeTEST0,dispose,rebindTEST-FRESH/stale methods false
+безDTOreads. Все predicates+5actual кадров проверены, sender/gateway/resolver нет.
+Это direct public API calls, не mouse/hittest; TEST control AI не серверное evidence.
+Test-only source15/active compiled14; retained inert layout не загружался.
+Targeted7builder/20HUDpackage/26binding PASS. Full080904Z-4ab77b всё ещё
+46suites/752passed/6failed/verified=false. Owned PID21460 закрыт черезquit;
+PID исчез после короткого завершения, безforcekill. [Отчёт и команды](../../../11-integration/01-ui-binding/reports/native-hud-binding-2026-10-12.md).

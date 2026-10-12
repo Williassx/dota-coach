@@ -134,3 +134,7 @@ Labels и 7 контейнеров. Отдельная панель пяти с�
 HUD13/12 загружен в отдельной Dota fixture при1280×720 и1920×1080; исправлен
 canonical CSS initial slots и отступов от штатного UI. Kind/JS/bootstrap не расширены.
 Полная регрессия, input, bind, C1 и рассмотрение другого создателя остаются открытыми.
+
+[Отдельный explicit native binding smoke](../01-ui-binding/reports/native-hud-binding-2026-10-12.md)
+проверяет TEST/synthetic bind/selection/removal/dispose/rebind. Test-only builder15
+source outputs даёт14active compiled UI outputs; fixed kind13/12 не меняется.

@@ -24,3 +24,7 @@
 - [mouse_proposal_layout.py](mouse_proposal_layout.py) — fixed 5/4, exact 7 IDs и 6 plain Labels; shared XML parser, отдельное разрешение root.visible.
 
 - [mouse_targeting_layout.py](mouse_targeting_layout.py) — reuse standalone mouse prepare/validate, generated four-script dependency order, raw fingerprint, exact7/6.
+
+- [build_native_hud_fixture.py](build_native_hud_fixture.py) — отдельный test-only
+  builder15outputs из existing fixed HUD inputs. Не расширяет fixed kinds/probe policy;
+  strict/bounded guards и source-only flags сохранены. [План](../../01-ui-binding/native-binding-plan.md).
