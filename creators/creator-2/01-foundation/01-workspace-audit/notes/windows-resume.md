@@ -251,3 +251,17 @@ metadata содержит отдельные `samples_sha256_scope=raw_windows_c
 `samples_sha256_lf` для опубликованного Git blob. Normalized bytes совпадают,
 100 записей не менялись. Урок35; source/native результаты выше исторические,
 повтор native capture для metadata-only изменения не нужен.
+
+13октября C2-09-02 preparation scaling завершил bounded measurement:1600×900 на
+build25845666/12октября и1024×768 наfresh25894101/13октября, по6APIphases/6actualPNG.
+Old secondrun/PID34752 interrupted доphase0; причина неизвестна, logs сохранены.
+После drift preflight собранаfreshfixture17outputs/17compiled/map13/0failed;
+canonical production sources/fixed15/14/HUD13/probe unchanged. Reset1600scroll−695
+при modelPASS,1024scroll0/4of5top видно; differentbuild/inputnotcontrolled значит
+не causal aspectcomparison/неfix. Own33548quitgone12октября; own18192quitgone13октября,
+finalDota0/Steam12964kept. Full054618Z-b3595e49/1039passed/28skip/6incomplete/0errors/
+false/CLI1; initial12октября cp1251/sandboxfailure preserved, UTF8/approvedrepeat.
+Helper explicit only/validatedsize,date,attempt,addon/PIDticks10squery; no ordinary
+capture. [Отчёт](../../../09-presentation/02-settings-layout/reports/preparation-scaling-2026-10-13.md),
+урок36. Progress53/213unchanged. Следующий bounded шаг — controlled reset scroll
+наодномbuild; physicalinput/support/storage/C2-07-03/C1/transition/humanowner открыты.

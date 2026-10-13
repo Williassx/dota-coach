@@ -429,6 +429,14 @@
 - **Проверка:** [Отчёт и metadata](../../../03-map-view/02-camera-overlays/reports/native-camera-motion-2026-10-12.md): оба SHA-256 сверены, normalized bytes равны опубликованному Git blob, все 100 JSON-записей совпадают.
 - **Следующий раз:** при проверке опубликованных текстовых артефактов фиксировать область хеша и окончания строк; различать исходные байты и Git-нормализацию, не менять исторический digest ради совпадения.
 
+## 36. Проверка reset модели не подтверждает возврат viewport
+
+- **Действие:** на native1600×900 existing preparation reset дал model predicate PASS после ScrollToTop, но actual scroll−695 и кадр середины состава. На1024×768 новый run дал scroll0 и начало4/5.
+- **Причина:** причина расхождения не установлена; возможны input/layout/runtime differences. Build_id между опытами изменился25845666→25894101, контроль ввода не фиксировался, это не чистое сравнение разрешений.
+- **Исправление:** отдельно оценить DTO reset, scroll geometry и actual frame; сохранить отрицательный visual result. После паузы сверить build_id, собрать новый отдельный addon вместо переноса старой compilation acceptance.
+- **Проверка:** [Scaling report](../../../09-presentation/02-settings-layout/reports/preparation-scaling-2026-10-13.md):12actualPNG/6predicates на каждом размере, failed visual reset сохранён; interrupted run не выдан за completed, final ownPIDgone/Steam сохранён.
+- **Следующий раз:** причинный опыт вести на одном build с before/after geometry и контролем ввода; ненулевой/нулевой sampled scroll и API success не заменяют physical wheel/hittest или поддержку resolution продуктом.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

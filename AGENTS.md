@@ -224,3 +224,10 @@ guard доownorigin, rawprojectiontriple/thirdmeaningunknown. Baselinealreadynea
 postnear2/80, activecursor/buttons/hero means uncontrolledcomparison, неcausalarrival
 или edgepanfix. Native preferences/cvars unchanged; failedm2/m3 и100samples сохранены.
 All3ownPIDsquitgone. Full49/1039passed/28skip/0errors/false; humanowneropen.
+
+C2-09-02 bounded native preparation scaling:12actualPNG,6APIphases накаждомразмере.
+1600×900/build25845666 reset modelPASS приscroll−695;1024×768/new25894101 scroll0.
+Interrupted secondrun/causeunknown preserved; builddrift требуетfreshcompile17outputs.
+Differentbuild/uncontrolledinput не causal comparison/productresolution support.
+Canonical/fixedkind unchanged, ownclientsgone, full49/1039pass/28skip/0errors/false.
+Physicalinput/storage/общийtransition/humansecondowner открыты; progress53/213unchanged.

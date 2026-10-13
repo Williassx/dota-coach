@@ -1,0 +1,564 @@
+{
+  "schema_version": 1,
+  "task": "C2-09-02/native-preparation-scaling",
+  "generated_at_utc": "2026-10-13T05:51:40.263202+00:00",
+  "baseline_commit": "8ec5063badbcae908e9959a2c04a7322554d3b12",
+  "runs": [
+    {
+      "run_id": "1600x900-20261012",
+      "build_id": "25845666",
+      "pid": 33548,
+      "launch_receipt": {
+        "log": "D:/AI/dota2coach/build/dota_coach/preparation-scale-1600x900-20261012-console.log",
+        "arguments": "-game \"C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota\" -steam -addon dota_coach_c2_preparation_r1_20261012 -novid -windowed -w 1600 -h 900 -console -dev -insecure -vconsole -vconport 29000 -con_logfile \"D:/AI/dota2coach/build/dota_coach/preparation-scale-1600x900-20261012-console.log\" +dota_launch_custom_game dota_coach_c2_preparation_r1_20261012 template_map",
+        "addon": "dota_coach_c2_preparation_r1_20261012",
+        "pid": 33548,
+        "start_utc_ticks": 639274268464868521
+      },
+      "native_phase_predicates_passed": 6,
+      "native_cycle_passed": true,
+      "frames_inspected": 6,
+      "captures": [
+        {
+          "phase": "bound",
+          "utc": "2026-10-12T18:35:56.950Z",
+          "engine_tga": "shot_0105.tga",
+          "png": "preparation-1600x900-bound-2026-10-12.png",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "sha256": "1f1eb947191d48a3422ff156d9253385855f8839c6b57a0f21759ed44310438d"
+        },
+        {
+          "phase": "team",
+          "utc": "2026-10-12T18:36:12.028Z",
+          "engine_tga": "shot_0106.tga",
+          "png": "preparation-1600x900-team-2026-10-12.png",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "sha256": "59dd69dbcba7a2325bbc037500d417ae88c1dc3873f5ead8943f8cb440b4963b"
+        },
+        {
+          "phase": "complete",
+          "utc": "2026-10-12T18:36:26.788Z",
+          "engine_tga": "shot_0107.tga",
+          "png": "preparation-1600x900-complete-2026-10-12.png",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "sha256": "c7ad8ccdc45674f654899139eacd580301600b8f92cf1e3a493ba7ed7a87cf43"
+        },
+        {
+          "phase": "reset",
+          "utc": "2026-10-12T18:36:42.064Z",
+          "engine_tga": "shot_0108.tga",
+          "png": "preparation-1600x900-reset-2026-10-12.png",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "sha256": "155d453ed4962142a6b0fac37ab990057bec1ae179bb440d6f2ab05aed8aaa19"
+        },
+        {
+          "phase": "disposed",
+          "utc": "2026-10-12T18:36:57.213Z",
+          "engine_tga": "shot_0109.tga",
+          "png": "preparation-1600x900-disposed-2026-10-12.png",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "sha256": "a977788e253743ab97f4a19b0dc7ee91c0880a1d87e683afc68e621eb539d507"
+        },
+        {
+          "phase": "rebound",
+          "utc": "2026-10-12T18:37:11.879Z",
+          "engine_tga": "shot_0110.tga",
+          "png": "preparation-1600x900-rebound-2026-10-12.png",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "sha256": "b7610aab24914f3abff874e0d7b37889699ccffa67dbbdc111fb762a2fcf36d1"
+        }
+      ],
+      "geometry_at_predicate": [
+        {
+          "phase": "bound",
+          "scroll": 0,
+          "content": 866,
+          "viewport": 801
+        },
+        {
+          "phase": "team",
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801
+        },
+        {
+          "phase": "complete",
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801
+        },
+        {
+          "phase": "reset",
+          "scroll": -695,
+          "content": 1496,
+          "viewport": 801
+        },
+        {
+          "phase": "disposed",
+          "scroll": -615,
+          "content": 1496,
+          "viewport": 801
+        },
+        {
+          "phase": "rebound",
+          "scroll": 0,
+          "content": 992,
+          "viewport": 801
+        }
+      ],
+      "visual_reset_top_confirmed": false,
+      "own_client_gone": true,
+      "capture_helper_sha256": null
+    },
+    {
+      "run_id": "1024x768-r2-20261013",
+      "build_id": "25894101",
+      "pid": 18192,
+      "launch_receipt": {
+        "pid": 18192,
+        "addon": "dota_coach_c2_preparation_scale_r2_20261013",
+        "arguments": "-game \"C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota\" -steam -addon dota_coach_c2_preparation_scale_r2_20261013 -novid -windowed -w 1024 -h 768 -console -dev -insecure -vconsole -vconport 29000 -con_logfile \"D:/AI/dota2coach/build/dota_coach/preparation-scale-1024x768-r2-20261013-console.log\" +dota_launch_custom_game dota_coach_c2_preparation_scale_r2_20261013 template_map",
+        "log": "D:/AI/dota2coach/build/dota_coach/preparation-scale-1024x768-r2-20261013-console.log",
+        "start_utc_ticks": 639274672186288659
+      },
+      "native_phase_predicates_passed": 6,
+      "native_cycle_passed": true,
+      "frames_inspected": 6,
+      "captures": [
+        {
+          "phase": "bound",
+          "utc": "2026-10-13T05:48:38.477Z",
+          "engine_tga": "shot_0111.tga",
+          "png": "preparation-1024x768-r2-bound-2026-10-13.png",
+          "dimensions": [
+            1024,
+            768
+          ],
+          "sha256": "bbb87cb0af7b4fb855f1b056d3b38a429053876be2e706a023d8c094abb96fe0"
+        },
+        {
+          "phase": "team",
+          "utc": "2026-10-13T05:48:53.568Z",
+          "engine_tga": "shot_0112.tga",
+          "png": "preparation-1024x768-r2-team-2026-10-13.png",
+          "dimensions": [
+            1024,
+            768
+          ],
+          "sha256": "a5c1367311b6034ff9e7b7c027a07cac9eb029bb21c7569c2704a8b01a6bb14a"
+        },
+        {
+          "phase": "complete",
+          "utc": "2026-10-13T05:49:08.508Z",
+          "engine_tga": "shot_0113.tga",
+          "png": "preparation-1024x768-r2-complete-2026-10-13.png",
+          "dimensions": [
+            1024,
+            768
+          ],
+          "sha256": "3b1b18059bfb318cb68d1050d9d547f594aa3193e3c2efca39821bf4258009d4"
+        },
+        {
+          "phase": "reset",
+          "utc": "2026-10-13T05:49:23.526Z",
+          "engine_tga": "shot_0114.tga",
+          "png": "preparation-1024x768-r2-reset-2026-10-13.png",
+          "dimensions": [
+            1024,
+            768
+          ],
+          "sha256": "f2842d34de6325d34e49e00b99ef9b88ddfa1fbd8b4483591525cbb2f7393858"
+        },
+        {
+          "phase": "disposed",
+          "utc": "2026-10-13T05:49:38.524Z",
+          "engine_tga": "shot_0115.tga",
+          "png": "preparation-1024x768-r2-disposed-2026-10-13.png",
+          "dimensions": [
+            1024,
+            768
+          ],
+          "sha256": "7e9187b8f2dd662b356aa0b3abdfa78b9cea8116751289ffd9ab7eef707bc158"
+        },
+        {
+          "phase": "rebound",
+          "utc": "2026-10-13T05:49:53.555Z",
+          "engine_tga": "shot_0116.tga",
+          "png": "preparation-1024x768-r2-rebound-2026-10-13.png",
+          "dimensions": [
+            1024,
+            768
+          ],
+          "sha256": "552f6283e0ce4306175cd158a27dd3e38cf4929b742ee9fa2316d4109bb61b63"
+        }
+      ],
+      "geometry_at_predicate": [
+        {
+          "phase": "bound",
+          "scroll": 0,
+          "content": 746,
+          "viewport": 682
+        },
+        {
+          "phase": "team",
+          "scroll": 0,
+          "content": 1301,
+          "viewport": 682
+        },
+        {
+          "phase": "complete",
+          "scroll": -1473,
+          "content": 2155,
+          "viewport": 682
+        },
+        {
+          "phase": "reset",
+          "scroll": 0,
+          "content": 1301,
+          "viewport": 682
+        },
+        {
+          "phase": "disposed",
+          "scroll": 0,
+          "content": 1301,
+          "viewport": 682
+        },
+        {
+          "phase": "rebound",
+          "scroll": 0,
+          "content": 857,
+          "viewport": 682
+        }
+      ],
+      "visual_reset_top_confirmed": true,
+      "own_client_gone": true,
+      "capture_helper_sha256": "5f485b9dad679b8f6b087e96d6ebe8aa4e234a5cfe61a4ad7693ef35f661dc9c"
+    }
+  ],
+  "interrupted_run": {
+    "run_id": "1024x768-20261012",
+    "pid": 34752,
+    "completed_preparation_phases": 0,
+    "actual_frames": 0,
+    "old_pid_absent_at_resume": true,
+    "termination_cause": "unestablished"
+  },
+  "controlled_aspect_ratio_comparison": false,
+  "supported_product_resolutions_confirmed": [],
+  "physical_hittest_verified": false,
+  "product_transition_verified": false,
+  "canonical_sources_changed": false,
+  "old_compile_evidence": {
+    "source_input_hashes_verified": 18,
+    "layout_inputs": 3,
+    "installed_source_outputs": 17,
+    "compiled_files": [
+      {
+        "path": "panorama/layout/custom_game/coach_preparation.vxml_c",
+        "bytes": 7586,
+        "sha256": "c6237beebc21a4788a3ffc587b5e97eb21970621b8f5a089c677e9a11853b185"
+      },
+      {
+        "path": "panorama/layout/custom_game/custom_ui_manifest.vxml_c",
+        "bytes": 1393,
+        "sha256": "de548c71df5e5aa35a414bb235cda9967c9cce73dbefeca4d44e892866d8093a"
+      },
+      {
+        "path": "panorama/layout/custom_game/preparation_fixture.vxml_c",
+        "bytes": 7886,
+        "sha256": "8d9c7bb34dbc2ab501d0ef5cc4699d7c0c24c75745dc27518432c24dc0366ebc"
+      },
+      {
+        "path": "panorama/scripts/custom_game/hero_role_panel.vjs_c",
+        "bytes": 14499,
+        "sha256": "b9250d0b3d9ba4bf573d9117b84c3ef555f48137573b3a9bad18209895ddad5b"
+      },
+      {
+        "path": "panorama/scripts/custom_game/hero_role_state.vjs_c",
+        "bytes": 16993,
+        "sha256": "07cb037caa0f248453ffd4ac9ab342e6472e02b2304bd2c9069b3be23f579485"
+      },
+      {
+        "path": "panorama/scripts/custom_game/preparation_binding.vjs_c",
+        "bytes": 10680,
+        "sha256": "314a9184e27e225306c6b2fae1ed31ca4e6a14e67fa6b405026fa69ce78c1dc9"
+      },
+      {
+        "path": "panorama/scripts/custom_game/preparation_fixture.vjs_c",
+        "bytes": 8042,
+        "sha256": "7c334531de9dd7989b57ea9b3fe215cf7c40bfcff07ebf5cf91b9018f8f2e778"
+      },
+      {
+        "path": "panorama/scripts/custom_game/preparation_flow_state.vjs_c",
+        "bytes": 8317,
+        "sha256": "7888876d0a912c5bc3ac124631ffda648f95192772eae4aafbae4d3e5eec3184"
+      },
+      {
+        "path": "panorama/scripts/custom_game/preparation_panel.vjs_c",
+        "bytes": 12862,
+        "sha256": "448f62efadc1b62418618a2e1c99a1f689961b513c510915510a3b26ea59700c"
+      },
+      {
+        "path": "panorama/scripts/custom_game/preparation_panel_port.vjs_c",
+        "bytes": 4313,
+        "sha256": "0c36a245ba709c1a9043060f57e50644bc54e3f3fc7d15ef7fdb8976ca5c4076"
+      },
+      {
+        "path": "panorama/scripts/custom_game/preparation_state.vjs_c",
+        "bytes": 14542,
+        "sha256": "b1e2b5f99e3ff818d847f4e35f800e9bb822efd3ef71eb1664630407f30f1cc0"
+      },
+      {
+        "path": "panorama/scripts/custom_game/team_picker_panel.vjs_c",
+        "bytes": 12353,
+        "sha256": "90f9b6e5d2723ea9804cb556d868f2e9bf900375e8729eca2906a0820009ecd6"
+      },
+      {
+        "path": "panorama/scripts/custom_game/team_picker_state.vjs_c",
+        "bytes": 10272,
+        "sha256": "7b4ff90b1479258ef3935cc205af243cd92d37bd919ce833ad2314e40ad82d4a"
+      },
+      {
+        "path": "panorama/styles/custom_game/coach_preparation.vcss_c",
+        "bytes": 3053,
+        "sha256": "1ac72f58a74050cdf998000b6e56c193a02994821d98eb410752034b614850ea"
+      },
+      {
+        "path": "panorama/styles/custom_game/hero_role_picker.vcss_c",
+        "bytes": 4607,
+        "sha256": "acb2f9636395757d5fece55cf4041aa23838ee22019535ed955c2dd553a1d949"
+      },
+      {
+        "path": "panorama/styles/custom_game/preparation_picker.vcss_c",
+        "bytes": 4712,
+        "sha256": "63146792a092eebb19c1af2a537d1ab03b287b04ea24e6a6ed8ad0102fb6c4de"
+      },
+      {
+        "path": "panorama/styles/custom_game/team_picker.vcss_c",
+        "bytes": 4469,
+        "sha256": "7904f5c1977e91f141b36e94adb296eaf7d1dd6088c23fd693c742aadfcf5269"
+      }
+    ],
+    "compiled_count": 17,
+    "compiled_bytes": 146579,
+    "canonical_generated_xml_sha256": "672f3d2461b412a5cb2728d7a50c5708250a2b47c368bf79a86c8beec9d8d214",
+    "canonical_css_sha256": "059cb004ca423a34b60477c04cea05d20f363a059085407f81886fe4de433a73",
+    "map": {
+      "sha256": "52e3317559fe45c97832f679a525843d25788633bfeacf9ef0fb3b73531d7b27",
+      "bytes": 3033460
+    }
+  },
+  "fresh_compile_evidence": {
+    "build_id": "25894101",
+    "map_bytes": 3033508,
+    "raw_inputs": [
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+        "sha256": "245555a3be0f77889e1d188f7449f0123864ab78eefde5896778f8327b3987c9"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_preparation.xml",
+        "sha256": "acb2d2149ef220f12e40a1350e771b0829c3543362f92b59ec9a99f8a01026e1"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_preparation.css",
+        "sha256": "059cb004ca423a34b60477c04cea05d20f363a059085407f81886fe4de433a73"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/styles/custom_game/team_picker.css",
+        "sha256": "195319886dbdaa1a869de7fed09010a410cb26839265fca157b29d35245e9633"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_state.js",
+        "sha256": "8e1b5e32d8175014fc5496c1f8777a9fe892b8d7213555fd0c109b37eee2037a"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_panel.js",
+        "sha256": "a5b90c753a0b5dcfe074a426ba54501635df16e06943db48487736ad3c7b1a8d"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/styles/custom_game/hero_role_picker.css",
+        "sha256": "1749d487c94871193c518dbe0b14515cba404708468ac26649023e62d1771911"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_state.js",
+        "sha256": "33152055bd9fb4b5550209af797e4c595c5e1b175a51f760bc69d215afdde97b"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_panel.js",
+        "sha256": "db96b7d48c811ace2bf5c3540edce35c56daea1352d1a57995d0da095a0b8df1"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/styles/custom_game/preparation_picker.css",
+        "sha256": "6ae81d63fcfde642ef6adf92f1233d208d453fd8330c5ee46cd64606b136c80f"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_state.js",
+        "sha256": "7b7bf3688a39b51eadddf87757d67da6c5f077bc8f8d82e7a7698e92bbd26954"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_panel.js",
+        "sha256": "f3365b2942e308636883f221a042d9572b8e358cfd0d79d457721796a471ed36"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_panel_port.js",
+        "sha256": "9f361986bc43108689486288d40ebf90e3cf37410790f8569d645d5a178fc9fd"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_flow_state.js",
+        "sha256": "22365b46535e852f994fe5a5727620fbb5ba766b29775312d8b868f18c654885"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_binding.js",
+        "sha256": "4cfbc58cb8b2010b452d4b9595d936f98cb2e83207725839eecead49fe09e338"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/layout/custom_game/team_picker.xml",
+        "sha256": "2fa9a6a4aba59f24e29fbce9578c7678d853832652e4bafed62dc93b61e01f28"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/layout/custom_game/hero_role_picker.xml",
+        "sha256": "6d3d84ac3f189ac55d13189404bee75252210716f0d975736d9ff91470f85b65"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/layout/custom_game/preparation_picker.xml",
+        "sha256": "17dfd2744bb4b57813413a867f43fb1bd2254112012eba6d8a90d3a4d350b612"
+      }
+    ],
+    "content": "C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/content/dota_addons/dota_coach_c2_preparation_scale_r2_20261013",
+    "installed_sources": 17,
+    "addon": "dota_coach_c2_preparation_scale_r2_20261013",
+    "bundle": "D:/AI/dota2coach/build/dota_coach/native-preparation-20261013T054508Z-d20b6f",
+    "game": "C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota_addons/dota_coach_c2_preparation_scale_r2_20261013",
+    "compiled": [
+      {
+        "bytes": 7586,
+        "sha256": "92fabe871e67d4279e90d59a5d8fe1210c7116b34c5ad0a1bf67c4e503b4be0d",
+        "path": "panorama/layout/custom_game/coach_preparation.vxml_c"
+      },
+      {
+        "bytes": 1393,
+        "sha256": "2f2f127192a0940e028e5fbb67f9a4f47e56971eaa6f15eb4388651aa7262643",
+        "path": "panorama/layout/custom_game/custom_ui_manifest.vxml_c"
+      },
+      {
+        "bytes": 7902,
+        "sha256": "31fda64c798cc996b6049c07300617fe1027cfe6d6bd211f0c8b107a8540d7ef",
+        "path": "panorama/layout/custom_game/preparation_fixture.vxml_c"
+      },
+      {
+        "bytes": 14515,
+        "sha256": "a04ed4cf2f41291642fb1604a87e3b373f691b3998e06863c308b89bab031b92",
+        "path": "panorama/scripts/custom_game/hero_role_panel.vjs_c"
+      },
+      {
+        "bytes": 17009,
+        "sha256": "437d23acce50a3de8852d0c1db2bc8f29faee75e2f59180e1f848a7acd377e2d",
+        "path": "panorama/scripts/custom_game/hero_role_state.vjs_c"
+      },
+      {
+        "bytes": 10680,
+        "sha256": "34f5cbfbd0224d5152e5230fc7e3bd2033ff5a0acbd4f1ea56500921b41bec5a",
+        "path": "panorama/scripts/custom_game/preparation_binding.vjs_c"
+      },
+      {
+        "bytes": 8042,
+        "sha256": "c99647adc73dea3f500e40d9621c0ef0319be2d5ab0ee4a1a47c9df83d698ded",
+        "path": "panorama/scripts/custom_game/preparation_fixture.vjs_c"
+      },
+      {
+        "bytes": 8317,
+        "sha256": "ef92e6f3818f44694328083df9ab273e29338c3e9fbbb8b2edb6d29fea7eec83",
+        "path": "panorama/scripts/custom_game/preparation_flow_state.vjs_c"
+      },
+      {
+        "bytes": 4313,
+        "sha256": "5c4b1fe01ea69b11f7b3c44ae12003800f56e85eac83ddfe7dc971383b486971",
+        "path": "panorama/scripts/custom_game/preparation_panel_port.vjs_c"
+      },
+      {
+        "bytes": 12862,
+        "sha256": "67a23aee1ddad8322e694b554b3008a6dcd4a7425c78a5e64e234a65585de79f",
+        "path": "panorama/scripts/custom_game/preparation_panel.vjs_c"
+      },
+      {
+        "bytes": 14542,
+        "sha256": "2312ee9f4ee7a979d6b16dc674aa616bfba3f6988fb64e9eafac1828d32c61d0",
+        "path": "panorama/scripts/custom_game/preparation_state.vjs_c"
+      },
+      {
+        "bytes": 12369,
+        "sha256": "1707889d75f9fd029b97922124ae3132c5b06fa2b9fabe0ce1c0f62e7edb52d1",
+        "path": "panorama/scripts/custom_game/team_picker_panel.vjs_c"
+      },
+      {
+        "bytes": 10288,
+        "sha256": "e447596ed3a122bf531d430b9e1b57ac76651b207dd2e7b73f933fa02e459c91",
+        "path": "panorama/scripts/custom_game/team_picker_state.vjs_c"
+      },
+      {
+        "bytes": 3069,
+        "sha256": "555f052e29733d75f5ccd2e25d8d67364ea18b48246985138a7681de7b42159d",
+        "path": "panorama/styles/custom_game/coach_preparation.vcss_c"
+      },
+      {
+        "bytes": 4607,
+        "sha256": "75a17b8953e45f09b04ec51f529f534eb5e33fff9bb75c18c95c6c6e9be4966d",
+        "path": "panorama/styles/custom_game/hero_role_picker.vcss_c"
+      },
+      {
+        "bytes": 4712,
+        "sha256": "b5fb3753eb8809dabf67fa2298a6b14001601d5178d3c8d6c8d4817a2f19f77c",
+        "path": "panorama/styles/custom_game/preparation_picker.vcss_c"
+      },
+      {
+        "bytes": 4469,
+        "sha256": "2cc91ab3780871ddab8f61d163c4edcca40b5dc4c6be867c0c47ee6a52ae1ea1",
+        "path": "panorama/styles/custom_game/team_picker.vcss_c"
+      }
+    ],
+    "map_sha256": "0ae390b0cd3a87130cf4a678e6755c087c9d28e92265b48e42b765d1473f2172"
+  },
+  "cleanup": {
+    "dota_client_count": 0,
+    "own_client_gone": true,
+    "steam_ids": [
+      12964
+    ],
+    "pid": 18192
+  },
+  "full_source_report": "build/dota_coach/source-checks-20261013T054618Z-b3595e/source-checks.json",
+  "full_source_report_sha256": "fa0b9babf267df3c3938b05370fba2631884deb4cefa513f078c4d9f7771b16b",
+  "source_suites": 49,
+  "source_passed_tests": 1039,
+  "source_skipped_tests": 28,
+  "source_incomplete_suites": 6,
+  "source_error_suites": 0,
+  "strict_source_verified": false,
+  "human_second_owner_review": "open",
+  "progress_completed": 53,
+  "progress_total": 213,
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  }
+}
