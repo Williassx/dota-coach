@@ -257,3 +257,10 @@ oldreceipts/default unchanged;12purePASS. Actual3IrinaWAV→same tiny/beam1/CPUi
 ru/VAD:6edits7wordsWER85.7% только3samples; refs3localready/hyps0readyunknown_action,
 commands/nativeattempts0. RootPCM/model/metric/actualparserguards verified,
 real speech/accuracy/bridgefalse, vocabulary/decoder unchanged; C254/213 unchanged.
+
+C2 posthandoff13октября: actual3synthetic pairs черезexistingVoicePanels показывают
+ready→unknown_action с Address/Action/proposal cleanup, capturedrev иstalehandle0reads.
+24VM/full85/1245PASS/28skip/6incomplete/0errors/false; production unchanged.
+C2-01-03 gapreview12sourcehashesLF/fields совпали, commoncontract/adapter несозданы.
+Nextsharedscope: trustedidentity+snapshot/outcome+revision/epoch/sequence+lease/gameclock;
+не связывать библиотеки прямым переименованиемполей. C254/213/nativehumanopen.

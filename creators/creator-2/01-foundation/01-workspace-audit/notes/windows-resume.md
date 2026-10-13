@@ -305,3 +305,12 @@ refs3ready/hyps0unknown_action,WER6/7 only3synthetic,12pure/full85/1242/28skip/
 Do not promote tinybasedonsyntheticdecoderpositive; no fuzzycorrection/revision
 substitution. Next C2 step: optional test-only feedback of actual decoded failure,
 then commoncontract review beforeliveC1 integration, no fabricated authority.
+
+C2 posthandoff: [syntheticfeedbackreport](../../../06-voice/03-voice-feedback/reports/synthetic-feedback-2026-10-13.md),
+24VM/3newtests actual3pairs ready→rejectclear/capturedrev/staleProxy0, productionunchanged.
+Full85/1245PASS/28skip/6incomplete/0errors/strictfalse, no native/audio/model activation.
+[Contract gap review](../../03-interface-contract/notes/c1-gap-review-2026-10-13.md):
+12sourcehashesLF matchpublished108b6dd, actualfields/enums; no adapter/schema approval.
+Next availableintegration step — versioned diagnosticping envelope separately from
+actor/permission/lease commands, onecontractauthorC1 thenC2review. Не начинатьlive
+C1→C2 transfer поодинаковым словамrevision/target; sourceauthority иnative открыты.

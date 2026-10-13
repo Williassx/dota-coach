@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "provenance": {
+    "date": "2026-10-13",
+    "source": "synthetic_system_tts",
+    "sample_set": "parser_grammar",
+    "raw_result": "build/dota_coach/asr-synthetic-20261013-12680e36bd3c4d4b8a9890bc93b6f771/decoder-8fb0be60579a441e98e468fc5c6f225b/asr-result.json",
+    "raw_result_sha256": "5620cd78d3fb53de278e4c9c198eb2c5fbee4d88ba14399a52ecca4dd7968416",
+    "model_revision": "d90ca5fe260221311c53c58e660288d3deb8d356",
+    "tts_receipt_sha256": "b6cf49e1c5cf9948dd81aa6b8357d0999f900af55de1c94c765d5aa87b7c9ea0",
+    "context_source": "build/dota_coach/asr-parser-probe-20261013-d147dc696187bca2.json",
+    "audio_included": false,
+    "real_player_profiles": false,
+    "real_microphone_accuracy_verified": false,
+    "bridge_verified": false
+  },
+  "context": {
+    "revision": 1,
+    "players": [
+      {"id":"TEST-p1","playerName":"TEST Игрок 1","heroName":null,"role":1,"source":"synthetic","side":"own","availability":"alive"},
+      {"id":"TEST-p2","playerName":"TEST Игрок 2","heroName":null,"role":2,"source":"synthetic","side":"own","availability":"alive"},
+      {"id":"TEST-p3","playerName":"TEST Игрок 3","heroName":null,"role":3,"source":"synthetic","side":"own","availability":"alive"},
+      {"id":"TEST-p4","playerName":"TEST Игрок 4","heroName":null,"role":4,"source":"synthetic","side":"own","availability":"alive"},
+      {"id":"TEST-p5","playerName":"TEST Игрок 5","heroName":null,"role":5,"source":"synthetic","side":"own","availability":"alive"}
+    ]
+  },
+  "cases": [
+    {
+      "sample": "sample-01.wav",
+      "reference": "керри отступай",
+      "raw_hypothesis": " Кириат Ступай.",
+      "expected_action": "retreat",
+      "expected_action_label": "Отступление",
+      "expected_recipient_ids": ["TEST-p1"],
+      "expected_recipient_names": ["TEST Игрок 1"]
+    },
+    {
+      "sample": "sample-02.wav",
+      "reference": "мидер держи позицию",
+      "raw_hypothesis": " Мидердерже позиции.",
+      "expected_action": "hold",
+      "expected_action_label": "Удержание позиции",
+      "expected_recipient_ids": ["TEST-p2"],
+      "expected_recipient_names": ["TEST Игрок 2"]
+    },
+    {
+      "sample": "sample-03.wav",
+      "reference": "команда соберитесь",
+      "raw_hypothesis": " Команда Сабиритесь.",
+      "expected_action": "regroup",
+      "expected_action_label": "Сбор команды",
+      "expected_recipient_ids": ["TEST-p1","TEST-p2","TEST-p3","TEST-p4","TEST-p5"],
+      "expected_recipient_names": ["TEST Игрок 1","TEST Игрок 2","TEST Игрок 3","TEST Игрок 4","TEST Игрок 5"]
+    }
+  ]
+}

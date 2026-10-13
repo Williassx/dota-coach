@@ -47,3 +47,5 @@ MANUAL/эффект, общий контракт и второй человеч�
 [Native report](reports/native-voice-text-2026-10-12.md).
 Canonical layout получает anonymous outer Panel для Source2; fixed пакет остаётся6/5.
 Text preview через public API не подтверждает физический ввод или работающий голос.
+
+[13 октября: actual synthetic decoded feedback](reports/synthetic-feedback-2026-10-13.md): threepairs ready→reject очищают предложение; capturedrevision/dispose guards подтверждены source VM, production/grammar unchanged.

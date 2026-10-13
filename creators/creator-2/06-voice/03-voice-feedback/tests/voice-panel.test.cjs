@@ -105,3 +105,81 @@ test('mutation reserves busy before native preflight can reenter another update'
 test('externally hidden root fails closed before event DTO is read',()=>{
  const p=fixture(),ui=prepared(p);p.root.visible=false;let reads=0;assert.equal(ui.receive(new Proxy({}, {getOwnPropertyDescriptor(){reads++;throw Error('read');}})),false);assert.equal(reads,0);assert.equal(ui.isDisposed(),true);assert.equal(p.timers.size,0);
 });
+
+const syntheticGrammar=JSON.parse(fs.readFileSync(path.join(__dirname,'synthetic-grammar-cases-2026-10-13.json'),'utf8'));
+
+test('synthetic grammar references become ready then raw actual hypotheses erase every proposal label',()=>{
+ assert.equal(syntheticGrammar.synthetic,true);assert.equal(syntheticGrammar.cases.length,3);
+ for(const [index,row]of syntheticGrammar.cases.entries()){
+  const p=fixture(),ui=p.bind();
+  try{
+   assert.equal(ui.updateRoster(plain(syntheticGrammar.context)),true);
+   assert.equal(ui.receive(event(row.reference,{utteranceId:'feedback-reference-'+index,rosterRevision:1})),true);
+   const ready=plain(ui.view());assert.equal(ready.result.status,'ready');
+   assert.equal(ready.result.proposal.action,row.expected_action);
+   assert.deepEqual(ready.result.proposal.recipientIds,row.expected_recipient_ids);
+   assert.equal(p.nodes.get('VoiceTextAddress').text,row.expected_recipient_names.join(', '));
+   assert.equal(p.nodes.get('VoiceTextAction').text,row.expected_action_label);
+   assert.equal(p.nodes.get('VoiceTextStatus').text,'Предложение готово. Ничего не отправлено.');
+   assert.equal(ui.receive(event(row.raw_hypothesis,{utteranceId:'feedback-hypothesis-'+index,rosterRevision:1})),false);
+   const rejected=plain(ui.view());assert.equal(rejected.result.status,'rejected');
+   assert.equal(rejected.result.reason,'unknown_action');assert.equal(rejected.result.proposal,null);
+   assert.equal(rejected.parser.revision,1);assert.equal(rejected.parser.consumed,2);
+   assert.equal(p.nodes.get('VoiceTextAddress').text,'');assert.equal(p.nodes.get('VoiceTextAction').text,'');
+   assert.equal(p.nodes.get('VoiceTextStatus').text,'Действие не распознано.');
+   assert.equal(p.nodes.get('VoiceTextNormalized').text,rejected.result.normalizedText);
+   for(const name of labels)assert.equal(p.nodes.get('VoiceText'+name).html,false);
+   assert.deepEqual(p.nativeCalls,[]);
+  }finally{ui.dispose();}
+  assert.equal(p.timers.size,0);assert.equal(p.root.visible,false);
+ }
+});
+
+test('synthetic feedback keeps captured revision one after roster two and refuses stale proposal',()=>{
+ for(const [index,row]of syntheticGrammar.cases.entries()){
+  const p=fixture(),ui=p.bind();
+  try{
+   assert.equal(ui.updateRoster(plain(syntheticGrammar.context)),true);
+   assert.equal(ui.receive(event(row.reference,{utteranceId:'captured-ready-'+index,rosterRevision:1})),true);
+   const captured=event(row.reference,{utteranceId:'captured-stale-'+index,rosterRevision:1}),original=plain(captured);
+   assert.equal(ui.updateRoster(snapshot(2,plain(syntheticGrammar.context.players))),true);
+   assert.equal(ui.view().result,null);assert.equal(ui.receive(captured),false);
+   assert.deepEqual(captured,original);const view=plain(ui.view());
+   assert.equal(view.sourceReady,true);assert.equal(view.parser.revision,2);
+   assert.equal(view.result.reason,'stale_roster');assert.equal(view.result.proposal,null);
+   assert.equal(p.nodes.get('VoiceTextStatus').text,'Состав изменился. Повторите команду.');
+   assert.equal(p.nodes.get('VoiceTextAddress').text,'');assert.equal(p.nodes.get('VoiceTextAction').text,'');
+   assert.deepEqual(p.nativeCalls,[]);
+  }finally{ui.dispose();}
+  assert.equal(p.timers.size,0);
+ }
+});
+
+test('synthetic feedback fresh owner remains isolated from unread stale DTOs and old callbacks',()=>{
+ for(const [index,row]of syntheticGrammar.cases.entries()){
+  const p=fixture(),old=p.bind();let fresh=null;
+  try{
+   assert.equal(old.updateRoster(plain(syntheticGrammar.context)),true);
+   assert.equal(old.receive(event(row.reference,{utteranceId:'disposed-reference-'+index,rosterRevision:1})),true);
+   const saved=p.nodes.get('VoiceTextPreviewButton').events.onactivate,timers=[...p.timers.values()].map(t=>t.callback);
+   old.dispose();assert.equal(p.timers.size,0);assert.equal(p.root.visible,false);
+   for(const name of labels)assert.equal(p.nodes.get('VoiceText'+name).text,'');
+   fresh=p.bind();assert.equal(fresh.updateRoster(plain(syntheticGrammar.context)),true);
+   assert.equal(fresh.view().parser.consumed,0);assert.equal(fresh.view().parser.revision,1);
+   assert.equal(fresh.receive(event(row.reference,{utteranceId:'rebound-reference-'+index,rosterRevision:1})),true);
+   const before=plain(fresh.view());let inspections=0,inputReads=0;
+   const unread=new Proxy({}, {get(){inspections++;throw Error('stale DTO get');},ownKeys(){inspections++;throw Error('stale DTO keys');},getOwnPropertyDescriptor(){inspections++;throw Error('stale DTO descriptor');}});
+   assert.equal(old.updateRoster(unread),false);assert.equal(old.receive(unread),false);
+   assert.equal(old.preview(row.reference),false);assert.equal(old.clear(),false);
+   p.options.onRead=id=>{if(id==='VoiceTextInput')inputReads++;};saved();for(const callback of timers)callback();p.options.onRead=null;
+   assert.equal(inspections,0);assert.equal(inputReads,0);assert.equal(old.view(),null);
+   assert.deepEqual(plain(fresh.view()),before);assert.equal(fresh.isDisposed(),false);assert.equal(p.timers.size,1);
+   assert.equal(fresh.receive(event(row.raw_hypothesis,{utteranceId:'rebound-hypothesis-'+index,rosterRevision:1})),false);
+   assert.equal(fresh.view().result.reason,'unknown_action');assert.equal(fresh.view().result.proposal,null);
+   assert.equal(fresh.view().parser.consumed,2);assert.equal(p.nodes.get('VoiceTextAddress').text,'');
+   assert.equal(p.nodes.get('VoiceTextAction').text,'');assert.equal(p.nodes.get('VoiceTextStatus').text,'Действие не распознано.');
+   assert.deepEqual(p.nativeCalls,[]);
+  }finally{old.dispose();if(fresh)fresh.dispose();}
+  assert.equal(p.timers.size,0);assert.equal(p.root.visible,false);
+ }
+});

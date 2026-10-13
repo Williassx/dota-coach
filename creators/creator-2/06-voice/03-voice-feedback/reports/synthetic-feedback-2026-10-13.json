@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "task": "C2-post-handoff/feedback-and-contract-review",
+  "generated_at_utc": "2026-10-13T11:18:11.187836+00:00",
+  "fixture_path": "creators/creator-2/06-voice/03-voice-feedback/tests/synthetic-grammar-cases-2026-10-13.json",
+  "fixture_sha256": "a394e207c1e0e83a3c0be31ca9a6e9a75780f65446879450dd1108857c6b94d3",
+  "actual_pairs": 3,
+  "new_vm_scenarios": 3,
+  "targeted_vm_passed": 24,
+  "source_files": [
+    {
+      "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_state.js",
+      "sha256_raw_windows": "8ead8e2f798d6778430e9921200b409b45cc56d7b8d0c215995fd149716094ab"
+    },
+    {
+      "path": "creators/creator-2/06-voice/02-recognition-parser/src/panorama/scripts/custom_game/voice_text_state.js",
+      "sha256_raw_windows": "21a1705c9c53fb030073d3433bb757a9bca35d758dc40f782ff967321c359151"
+    },
+    {
+      "path": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/scripts/custom_game/voice_text_panel.js",
+      "sha256_raw_windows": "ac3be73ff9cce057370eeed6fcb01cba85188e0b9ba22f50acd8055f267f4839"
+    }
+  ],
+  "production_changed": false,
+  "raw_hypotheses_byte_equivalent": true,
+  "previous_proposal_cleared_on_reject": true,
+  "captured_revision_preserved": true,
+  "stale_disposed_inspections": 0,
+  "native_api_attempts": 0,
+  "commands_sent": 0,
+  "full_report_path": "build/dota_coach/source-checks-20261013T111628Z-231765/source-checks.json",
+  "full_report_sha256": "10afd2fc503b4aa0554ecf91043c436e13a5b6d27e4700b5ea4347545dbe94ac",
+  "full_source_suites": 85,
+  "full_passed": 1245,
+  "full_skipped": 28,
+  "full_incomplete": 6,
+  "full_errors": 0,
+  "all_suite_processes_exit0": true,
+  "strict_verified": false,
+  "cli_exit_code": 1,
+  "contract_gap_review_sources": 12,
+  "common_contract_approved": false,
+  "runtime_adapter_implemented": false,
+  "microphone_used": false,
+  "tts_run": false,
+  "asr_run": false,
+  "native_ui_verified": false,
+  "human_second_owner_review": "open",
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  },
+  "old_test_prefix_preserved_normalized_lf": true
+}

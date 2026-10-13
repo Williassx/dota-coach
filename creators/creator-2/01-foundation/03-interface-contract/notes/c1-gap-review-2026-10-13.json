@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "stage": "c2_review_of_current_c1_and_c2_interface_gaps",
+  "generated_at_utc": "2026-10-13T11:15:11.306571+00:00",
+  "head": "108b6dd14959b76c414541d26af4d5c3477229c6",
+  "source_files": [
+    {
+      "path": "creators/creator-1/01-foundation/03-command-contract/notes/contract-review.md",
+      "sha256_raw_windows": "f74cf6865e6e12f0cb2e91a375387e5519d065bfdd866f7eb2eb18fa2e27d181",
+      "sha256_normalized_lf": "4be405dc0ea2f593e592fc527425464ebe45ee73af17a0fc2c1b81b0e87c368b"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/03-command-contract/tests/test_contract_examples.py",
+      "sha256_raw_windows": "6bb440117c9b6fe22e77014f2f67c28500a5e9d64d193e3fa72eefcb57c1bd54",
+      "sha256_normalized_lf": "6bb440117c9b6fe22e77014f2f67c28500a5e9d64d193e3fa72eefcb57c1bd54"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding/src/scripts/vscripts/actor_binding.lua",
+      "sha256_raw_windows": "396eb55146f80f20d1968cc201d13854ccf1cd99c78c560b51ab20b4ad212192",
+      "sha256_normalized_lf": "396eb55146f80f20d1968cc201d13854ccf1cd99c78c560b51ab20b4ad212192"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/src/scripts/vscripts/event_log.lua",
+      "sha256_raw_windows": "86b861d66af951863c23555b1d22b0f9a40b0cbba6366eeffbdc4192a667c3aa",
+      "sha256_normalized_lf": "86b861d66af951863c23555b1d22b0f9a40b0cbba6366eeffbdc4192a667c3aa"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/src/scripts/vscripts/order_arbiter.lua",
+      "sha256_raw_windows": "704e2b1a16246a99eeb68c2ba8a5b990deccd4350c797a688816c026886c1900",
+      "sha256_normalized_lf": "704e2b1a16246a99eeb68c2ba8a5b990deccd4350c797a688816c026886c1900"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_mode.lua",
+      "sha256_raw_windows": "7fac1ebd24d868cd08f96d5c9cc83ad277c2b070a6aea885ace4347a4750e855",
+      "sha256_normalized_lf": "7fac1ebd24d868cd08f96d5c9cc83ad277c2b070a6aea885ace4347a4750e855"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/02-return-ai/src/scripts/vscripts/return_manager.lua",
+      "sha256_raw_windows": "d85e4398ec9e49e8d6606348bc9e1bfd7889b56bd9514b5ec42e9560dbe4689f",
+      "sha256_normalized_lf": "d85e4398ec9e49e8d6606348bc9e1bfd7889b56bd9514b5ec42e9560dbe4689f"
+    },
+    {
+      "path": "creators/creator-1/11-integration/02-voice-commands/src/voice_gate.py",
+      "sha256_raw_windows": "f424484eadf27bbc2c62e6d580190ce320a15141637b7ec4438774bb042a08c7",
+      "sha256_normalized_lf": "f424484eadf27bbc2c62e6d580190ce320a15141637b7ec4438774bb042a08c7"
+    },
+    {
+      "path": "creators/creator-2/01-foundation/03-interface-contract/notes/ui-contract-input.md",
+      "sha256_raw_windows": "e04ac38681d191077e64d43ff5a59b683eac9a32fa845adbf6cf145e4531cff6",
+      "sha256_normalized_lf": "b714d8946ae7cb116cdd4777d3486ff3273766675ab6729d7f5069aff7093cbd"
+    },
+    {
+      "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_state.js",
+      "sha256_raw_windows": "d93502069eb14b18696ffdca9674a4bbf74efa4d3a42a4d836a2ccbdba720868",
+      "sha256_normalized_lf": "4ccf4428320763e97bdaa102e68c3919acd8c5c12d5f7d5682552957569e1661"
+    },
+    {
+      "path": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_state.js",
+      "sha256_raw_windows": "93c8f6fc920aa0bb493dde503299bafa56d1f20dd1da0ffd3f510a4db9e4cb07",
+      "sha256_normalized_lf": "052ae44d1d1c2af7c5e5847cbb6a4d1be3dd759c50bafceb10c4a5ac5f5c05c4"
+    },
+    {
+      "path": "creators/creator-2/06-voice/02-recognition-parser/src/panorama/scripts/custom_game/voice_text_state.js",
+      "sha256_raw_windows": "21a1705c9c53fb030073d3433bb757a9bca35d758dc40f782ff967321c359151",
+      "sha256_normalized_lf": "ac7aa47400bf7f70ee0395fd04d9f06a28e74c718f2a98fb102a5e16f55ae02b"
+    }
+  ],
+  "c1_proposal_required_order_fields": [
+    "orderId",
+    "orderType",
+    "actorEntity",
+    "revision"
+  ],
+  "c1_proposal_optional_action_fields": [
+    "position",
+    "targetEntity"
+  ],
+  "c2_order_begin_fields": [
+    "ticket",
+    "recipientId",
+    "epoch",
+    "action"
+  ],
+  "c2_snapshot_fields": [
+    "id",
+    "playerName",
+    "mode",
+    "epoch",
+    "revision",
+    "side",
+    "availability"
+  ],
+  "c2_report_fields": [
+    "sequence",
+    "stage",
+    "reason"
+  ],
+  "c2_voice_event_fields": [
+    "utteranceId",
+    "text",
+    "rosterRevision",
+    "final"
+  ],
+  "c2_voice_proposal_actions": [
+    "farm",
+    "retreat",
+    "regroup",
+    "hold"
+  ],
+  "c1_voice_payload_fields": [
+    "action",
+    "target",
+    "orderId",
+    "revision"
+  ],
+  "c1_voice_actions": [
+    "attack",
+    "retreat",
+    "farm",
+    "gather"
+  ],
+  "common_contract_approved": false,
+  "runtime_adapter_implemented": false,
+  "native_api_acceptance_confirmed": false,
+  "new_game_mechanics": false,
+  "progress_changed": false,
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  },
+  "human_second_owner_review": "open",
+  "source_fields_verified": true,
+  "source_hashes_equal_published_lf": true
+}

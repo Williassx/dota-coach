@@ -477,6 +477,14 @@
 - **Проверка:** [Grammar pilot](../../../06-voice/02-recognition-parser/reports/synthetic-grammar-2026-10-13.md): 12purePASS, refs3ready/hyps0ready, duplicate/stale/ambiguous guards и disposedProxy0; baseline4hashes unchanged, full85/1242/28skip/0errors/false. Критик без существенных замечаний.
 - **Следующий раз:** фиксировать test corpus до decoder outputs, сохранять errors/rawtexts и semantic outcomes отдельно. Случайная lexical удача, WER или no_speech score не server authority/semantic confidence. Пути сначала получать через rg --files; в apply_patch использовать только прочитанный exact context, иначе весь batch отклоняется без изменений.
 
+## 42. Сходные имена полей двух библиотек не образуют общий контракт
+
+- **Действие:** C2 сопоставил12actualC1/C2источников: C2recipientId/epoch/ticket противC1actorEntity/revision/orderId; hold/regroup противgather/attack, нет общегоsnapshot/outcomeproducer. Existing source панель tested на actual3synthetic decoded failures послеready.
+- **Причина:** scope revision/identity/target/correlation различается; прямое переименование/подстановка полей создаст неподтверждённую authority. Визуально старое ready могло бы вводить в заблуждение после нового reject — это риск, а не найденная production ошибка.
+- **Исправление:** [Gap review](../../03-interface-contract/notes/c1-gap-review-2026-10-13.md) фиксирует закрывающие решения и одного будущего автора общего envelope; runtime переходник не выдуман. Existing labels/action/address очищаются на failure, captured revision не заменяется, stale handle не читает DTO.
+- **Проверка:** 12raw/LFhashes совпали с published108b6dd, fields/enums извлечены из actualsource; [feedback](../../../06-voice/03-voice-feedback/reports/synthetic-feedback-2026-10-13.md): actual3pairs/context/hash/oldtestprefix/production unchanged,24VMPASS/full85/1245/28skip/0errors/strictfalse.
+- **Следующий раз:** сначала согласовать семантику и authoritative источник поля, затем один adapter; не превращать caller Confirm/revision/visible flag в server evidence. Проверять UI после последовательности ready→reject и ownership смены, не только одно состояние.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

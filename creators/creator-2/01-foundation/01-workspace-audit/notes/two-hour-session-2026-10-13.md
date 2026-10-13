@@ -67,3 +67,12 @@ PCM/model/metric/baselinehashes independentlyverified, actualNodeparserrerun,
 refs3ready/hyps0/staleProxy0/commands0. Report/lesson41/usage50saved; criticno findings.
 Двухчасовая непрерывность не заявляется: goal usageLimited, фактический перерыв
 зафиксирован выше; продолжение по новому user steering, не искусственный timer.
+
+## C2 дополнительная source проверка11:17UTC
+
+Existing feedback actual3pairs regressionproof24VM/3newtests; ready→rejectclears
+proposal/address/action, capturedrevision/staleownership0reads, nativeattempts0.
+Full85/1245/28skip/0errorsfalse. Contractgapreview12raw/LFhashes/actualfields verified,
+no new wire schema/adapter/nativeclaims. Rootshared+notes,helpertest-only,finalreview.
+Timedgoalпоendpoint остаётсяusageLimited; реальныеартефактыи новые steering actions
+сохраняются независимо, duration/weights не выдумывать.
