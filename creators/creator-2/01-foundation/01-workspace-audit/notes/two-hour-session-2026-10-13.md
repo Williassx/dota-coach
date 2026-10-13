@@ -76,3 +76,29 @@ Full85/1245/28skip/0errorsfalse. Contractgapreview12raw/LFhashes/actualfields ve
 no new wire schema/adapter/nativeclaims. Rootshared+notes,helpertest-only,finalreview.
 Timedgoalпоendpoint остаётсяusageLimited; реальныеартефактыи новые steering actions
 сохраняются независимо, duration/weights не выдумывать.
+
+## Active goal continuation12:19UTC после восстановления лимита
+
+Authoritativeendpoint active/timeUsed4269s (71мин9сек), originalwall deadline
+не означает отработанные2часа. Автономнаяработа продолжена доactiveaccounting7200s:
+C1/C2diagnosticwire/nativeping поresume.18phases/18actualframes/3freshaddons,
+source1271pass/28skip/0errorsfalse, originalautoAdapter2matchingnativeOK/dispose,
+ownedPIDsallgone. Nativeproof/scope/lesson43/usage52/progress55/213saved, finalcritic0findings.
+Completion requires publishedremoteSHA/currentartifacts+timeUsed>=7200;
+последняяпроверкаaccounting7124s13:06UTC, не объявлятьdoneраньшеauthoritativeaudit.
+
+## Финальный аудит активного времени и артефактов
+
+Authoritative goal endpoint после возобновления подтвердил active/timeUsed7452s
+(124мин12сек): требование двух часов активной работы достигнуто. Перерыв по
+usage limit сохранён выше; непрерывные два часа не заявляются.
+Итоговая независимая проверка:18/18phase PASS,18 PNG1280×720 с совпадающими
+SHA256/size,12verifiedsendercallbacks,3receipts9source/7compiledUI/canonical5,
+canonical source равен publishedHEAD после LF normalization. Все85suiteprocesses
+exit0;1271PASS/28skip/6incomplete/0errors/strictfalse. Учёт52unique rows сохраняет
+прежние51;43урока сохраняют прежние42,200local links без разрывов; генератор
+подтверждает55/213(25.8%). Все3ownedDotaPID закрыты, Steam сохранён.
+Завершение goal допускается только после commit/push и проверки равенства
+localHEAD/remoteSHA; публикация подтверждается отдельным Git audit, не обещанием.
+Реальные mouse/hittest, игровой общий контракт/authority и human second owner
+остаются открытыми и не подменяются diagnostic native evidence.

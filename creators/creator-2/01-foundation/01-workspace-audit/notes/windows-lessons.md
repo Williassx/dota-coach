@@ -485,6 +485,14 @@
 - **Проверка:** 12raw/LFhashes совпали с published108b6dd, fields/enums извлечены из actualsource; [feedback](../../../06-voice/03-voice-feedback/reports/synthetic-feedback-2026-10-13.md): actual3pairs/context/hash/oldtestprefix/production unchanged,24VMPASS/full85/1245/28skip/0errors/strictfalse.
 - **Следующий раз:** сначала согласовать семантику и authoritative источник поля, затем один adapter; не превращать caller Confirm/revision/visible flag в server evidence. Проверять UI после последовательности ready→reject и ownership смены, не только одно состояние.
 
+## 43. Native sender и исходный adapter нужно измерять отдельно от TEST glue
+
+- **Действие:** C1/C2 native ping на build25894101: три fresh9source/7compiledUI addons,18фаз/18actualframes. Sourceindex1 разрешился в nativeentity(table)/player0 и совпал с PlayerResource handle; originalautoAdapter тоже дал2correlatedOK иdispose.
+- **Причина:** прежние pure/static проверки не подтверждали callback source semantics, firstTESTglue не исполнял originaladapter, а отсутствие metadata trace не объясняло PlayerID spoof. Механизм engine internals не установлен; наблюдаемое значение изменилось между pre-send и callback.
+- **Исправление:** sender выбирается только nativeentity/getPlayerID/equality; metadataenum и presendJSONcopy добавлены TEST-only. Snapshot RED18PASS/1fail→19GREEN, Lua metadata RED13PASS/1error→14GREEN; nativeActivateddispatch проверяетoriginalonactivate, неphysical mouse/hittest.
+- **Проверка:** [Native ping](../../../01-foundation/02-panorama-capability/reports/native-ping-2026-10-13.md): fixedprobe5/sourcepolicy/production unchanged,18frames viewed,9builder/14Lua/19VM/full85/1271PASS/28skip/6incomplete/0errors/strictfalse; all3ownPIDsquitgone/Steam12964 retained. Одинкритикnofindings; толькоdiagnosticcheckbox→55/213.
+- **Следующий раз:** не считать helper missingdependency ошибкойbuilder: дождаться stableauthor inputs; sourcequery сначала inventory, rg наWindowsс--glob, не literal*. Полные registry/logblob не печатать вместо scoped строк. Не отождествлять sourceconnection с actor/lease/authority, metadatachange с конкретным engine механизмом и Activated mouse argument с настоящей мышью.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

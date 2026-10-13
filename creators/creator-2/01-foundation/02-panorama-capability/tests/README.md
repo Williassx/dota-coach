@@ -21,3 +21,5 @@ python3 -m unittest discover -s creators/creator-2/01-foundation/02-panorama-cap
 Python-набор включает проверки сборщика и read-only CLI готового пакета.
 Последние исполняются в реальном временном checkout с копиями инструментов;
 они проверяют и отсутствие новых/изменённых файлов после успеха и отказа.
+
+[Native ping fixture](native-ping/README.md) · [Builder tests](test_native_ping_fixture.py); source/VM/pureLua не native acceptance.

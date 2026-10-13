@@ -33,3 +33,5 @@
 Новый вложенный каталог получает README с назначением и ссылкой из этого файла.
 API, сигнатуры, конкретные файлы и команды проверки закрепляются в локальном
 техническом плане после исследования входов; не подменяйте их выдуманными командами.
+
+[Diagnostic source candidate](src/README.md) и [protocol candidate](../../../shared/contracts/diagnostic-probe-v1.md) добавлены для C2 native ping. Общая игровая wire version/human review остаются открытыми.

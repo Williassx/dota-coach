@@ -264,3 +264,12 @@ ready→unknown_action с Address/Action/proposal cleanup, capturedrev иstaleha
 C2-01-03 gapreview12sourcehashesLF/fields совпали, commoncontract/adapter несозданы.
 Nextsharedscope: trustedidentity+snapshot/outcome+revision/epoch/sequence+lease/gameclock;
 не связывать библиотеки прямым переименованиемполей. C254/213/nativehumanopen.
+
+13октября native diagnostic C1/C2 ping verified на25894101:3freshaddons9sources/
+7compiledUIeach,18phases/18actualframes. Native sourceindex1→player0/equality,
+metadata matching_native; presendPlayerID99999 стал0доcallback, internalsнеизмерены.
+OriginalautoAdapter active вr3,2correlatedOK+dispose черезnativeActivateddispatch;
+это programmatic event, неmouse/hittest. Fixedprobe5/production unchanged.
+Lua14/VM19/builder9/full85/1271PASS/28skip/6incomplete/0errors/strictfalse.
+Own21488/4452/22204quitgone/Steam12964 сохранён; onecriticnofindings. Толькопункт
+native diagnosticreply→C255/213(25.8%), foundation/game/humanowner ещёоткрыты.

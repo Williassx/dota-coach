@@ -31,3 +31,5 @@ Kind panorama_source_hud разрешает только13 закреплённ�
 [recipe](../../../11-integration/02-addon-packaging/preparation-manifest.json),15outputs/3inputs.
 Тот же boundedreader проверяет все copied/composed inputs; lazycomposer bytecode-free.
 [Команды и ограничения](../../../11-integration/02-addon-packaging/notes/preparation-package.md).
+
+[build_native_ping_fixture.py](build_native_ping_fixture.py) — separate TEST9output fixture, flow/default или original-adapter observer; fixedprobe5unchanged.

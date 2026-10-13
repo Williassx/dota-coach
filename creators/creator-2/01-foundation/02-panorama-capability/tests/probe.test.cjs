@@ -269,3 +269,47 @@ test("pending label failure disposes panel without a stranded request", () => {
     assert.equal(ui.button.handler, null);
     assert.match(ui.status.text, /недоступна/);
 });
+
+function nativePingDriverFixture(localPlayer=0,mutateWire=false) {
+    let clock=0,serial=0,listener=null; const timers=new Map(),config={},sends=[],messages=[];
+    const nodes={ProbeStatus:{text:''},ProbeButton:{enabled:false,SetPanelEvent(){},ClearPanelEvent(){}},NativePingFixtureStatus:{text:''}};
+    const context=vm.createContext({
+        Date:{now:()=>1000000+clock},Players:{GetLocalPlayer:()=>localPlayer},GameUI:{CustomUIConfig:()=>config},
+        $:{GetContextPanel:()=>({FindChildTraverse:id=>nodes[id]}),Msg:text=>messages.push(text),
+           Schedule:(delay,fn)=>{const id=serial++;timers.set(id,{at:clock+delay*1000,fn});return id;},CancelScheduled:id=>timers.delete(id)},
+        GameEvents:{Subscribe:(_name,fn)=>{listener=fn;return 0;},Unsubscribe:()=>{listener=null;},
+            SendCustomGameEventToServer:(_name,wire)=>{sends.push(wire);const bad=wire.unexpected===true;
+                // Mocked transport response only; actual C1 Lua is exercised separately.
+                if(listener)listener({protocol_version:1,request_id:wire.request_id,status:wire.protocol_version!==1||bad?'rejected':'ok',
+                    reason:wire.protocol_version!==1?'unsupported_version':bad?'invalid_request':'none'});
+                if(mutateWire)wire.PlayerID=0;}}
+    });
+    vm.runInContext(fs.readFileSync(path.join(scripts,'coach_probe_state.js'),'utf8'),context);
+    vm.runInContext(fs.readFileSync(path.join(__dirname,'native-ping/ping_fixture.js'),'utf8'),context);
+    function run(){let count=0;while(timers.size){assert.ok(++count<2000,'bounded fixture scheduling');const [id,item]=[...timers].sort((a,b)=>a[1].at-b[1].at)[0];timers.delete(id);clock=item.at;item.fn();}}
+    return {run,config,timers,sends,messages,nodes};
+}
+
+test('TEST native ping driver coordinates existing state phases and disposes subscription/timers',()=>{
+    const f=nativePingDriverFixture();f.run();const data=f.config.dotaCoachNativePingFixture;
+    assert.deepEqual(Array.from(data.records,row=>row.phase),['bound','valid','unsupported','extra','spoofed-player-id','valid-again','disposed']);
+    assert.equal(data.records.every(row=>row.pass===true),true);assert.equal(data.disposedReads,0);
+    assert.equal(data.gameCommandsSent,0);assert.equal(data.physicalInputTested,false);assert.equal(data.serverAuthorityConfirmed,false);
+    assert.equal(f.sends.length,5);assert.equal(new Set(f.sends.map(w=>w.request_id)).size,5);
+    assert.equal(f.nodes.ProbeStatus.text,'Проверка связи недоступна.');assert.equal(f.timers.size,0);
+});
+
+test('TEST native ping driver bounds missing local-player wait without sending or inventing reply',()=>{
+    const f=nativePingDriverFixture(-1);f.run();const data=f.config.dotaCoachNativePingFixture;
+    assert.equal(data.records.length,1);assert.equal(data.records[0].phase,'bound');assert.equal(data.records[0].pass,false);
+    assert.equal(data.records[0].details,'local-player-timeout');assert.equal(f.sends.length,0);assert.equal(f.timers.size,0);
+});
+
+test('TEST ping pre-send snapshots survive transport mutation and are retained at disposal',()=>{
+    const f=nativePingDriverFixture(0,true);f.run();const data=f.config.dotaCoachNativePingFixture;
+    const evidence=data.records[data.records.length-1].details;
+    assert.equal(evidence.sentWires.length,5);assert.equal(evidence.replies.length,5);
+    assert.equal(evidence.sentWires[3].variant,'spoofed-player-id');
+    assert.equal(evidence.sentWires[3].wire.PlayerID,99999);
+    assert.equal(f.sends[3].PlayerID,0);
+});

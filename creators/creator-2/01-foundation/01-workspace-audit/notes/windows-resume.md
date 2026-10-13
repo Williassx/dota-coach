@@ -314,3 +314,14 @@ Full85/1245PASS/28skip/6incomplete/0errors/strictfalse, no native/audio/model ac
 Next availableintegration step — versioned diagnosticping envelope separately from
 actor/permission/lease commands, onecontractauthorC1 thenC2review. Не начинатьlive
 C1→C2 transfer поодинаковым словамrevision/target; sourceauthority иnative открыты.
+
+Goal resumedactive13октября12:19UTC accounting4269s; nativepingtask completed:
+[report](../../../01-foundation/02-panorama-capability/reports/native-ping-2026-10-13.md).
+3freshaddons/18phases/18frames1280x720/build25894101, originalautoAdapternativeevent
+2matchingreplies+dispose; nativeEntitySource1→player0/equality observed, sender
+payloadneverselectsreplyrecipient. Metadata/nativewire scope documented, internalsopen.
+Fixedprobe5/production unchanged;Lua14/VM19/builder9/full85/1271/28skip/0errorsfalse.
+All3ownPIDsgone/Steam12964kept,criticnofindings;C255/213now25.8%. Actualmouse/hittest,
+reload/late-nativecases/multi-clientauthorization/actoridentity/lease/AIreturn/common
+HUD/realmap/humanowneropen. Next availabletask — native physical input/hittest for
+sameprobe with owned-window proof; do not replace it with programmaticActivated.

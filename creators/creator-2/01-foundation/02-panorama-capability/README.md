@@ -1,7 +1,7 @@
 # C2-01-02 — Минимальная проверка Panorama
 
 **Отдел:** создатель 2. **Проверяющий:** создатель 1.
-**Статус:** UI/карта скомпилированы, панель и кнопка видны в обычном клиенте и отдельном Workshop Tools прогоне; ввод, lifecycle и серверный ответ остаются открытыми.
+**Статус:** UI/карта скомпилированы, панель и кнопка видны в обычном клиенте и отдельном Workshop Tools прогоне; native diagnostic reply/programmatic activation/dispose проверены; physical input, полный lifecycle и human owner открыты.
 **Зависимости:** [C2-01-01](../01-workspace-audit/README.md), [C1-01-01](../../../creator-1/01-foundation/01-environment-audit/README.md).
 **Рабочая папка:** `creators/creator-2/01-foundation/02-panorama-capability/`.
 
@@ -11,7 +11,7 @@
 
 - [x] Найти пример интерфейса в установленном шаблоне: прочитан workshop_testbed/panorama/layout/custom_game/custom_ui_manifest.xml с CustomUIElement type=Hud.
 - [x] После рассмотрения локального плана показать простую панель и кнопку: подтверждены native panel_ready и проверенный скриншот 1280×720 в Windows-отчёте.
-- [ ] Сверить отправку события и получение серверного подтверждения.
+- [x] Сверить отправку diagnostic события и получение адресного native reply: three TEST runs, включая unchanged auto-adapter; programmatic activation не physical mouse/hittest.
 - [ ] Сопоставить фактический результат с критерием ниже и записать непроведённые проверки.
 - [ ] Передать изменение второму создателю для проверки, затем обновить этот статус.
 
@@ -40,3 +40,7 @@ UI подготавливается параллельно C1-01-02.
 Новый вложенный каталог получает README с назначением и ссылкой из этого файла.
 API, сигнатуры, конкретные файлы и команды проверки закрепляются в локальном
 техническом плане после исследования входов; не подменяйте их выдуманными командами.
+
+[Native ping13октября](reports/native-ping-2026-10-13.md) —18фаз/18actualкадров,
+originalautoAdapter/nativeC1response, отдельныйcandidate diagnostic contract.
+[Spec](native-ping-design-2026-10-13.md). Общая игровая приёмка не закрыта.

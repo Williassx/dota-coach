@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "task": "C2-01-02/native-diagnostic-ping",
+  "build_id": "25894101",
+  "runs": [
+    {
+      "run": "r1",
+      "bundle_receipt": "build/dota_coach/native-ping-20261013T123832Z-aaaec5/native-fixture-report.json",
+      "compile_receipt": "build\\dota_coach\\native-ping-r1-20261013-hashes.json",
+      "client_records": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {
+            "localPlayer": 0
+          },
+          "clientState": "idle",
+          "clientReason": "none",
+          "utcMs": 1791895351485
+        },
+        {
+          "phase": "valid",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6o8dsk-1",
+            "status": "ok",
+            "reason": "none"
+          },
+          "clientState": "ok",
+          "clientReason": "none",
+          "utcMs": 1791895364495
+        },
+        {
+          "phase": "unsupported",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6o8ntt-2",
+            "status": "rejected",
+            "reason": "unsupported_version"
+          },
+          "clientState": "rejected",
+          "clientReason": "unsupported_version",
+          "utcMs": 1791895377504
+        },
+        {
+          "phase": "extra",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6o8xv6-3",
+            "status": "rejected",
+            "reason": "invalid_request"
+          },
+          "clientState": "rejected",
+          "clientReason": "invalid_request",
+          "utcMs": 1791895390508
+        },
+        {
+          "phase": "spoofed-player-id",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6o97wj-4",
+            "status": "ok",
+            "reason": "none"
+          },
+          "clientState": "ok",
+          "clientReason": "none",
+          "utcMs": 1791895403521
+        },
+        {
+          "phase": "valid-again",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6o9hxu-5",
+            "status": "ok",
+            "reason": "none"
+          },
+          "clientState": "ok",
+          "clientReason": "none",
+          "utcMs": 1791895416523
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "details": {
+            "staleReads": 0,
+            "gameCommandsSent": 0
+          },
+          "clientState": "unavailable",
+          "clientReason": "none",
+          "utcMs": 1791895426523
+        }
+      ],
+      "server_traces": [
+        "sourceindex=- entity=nil player=- native-match=false result=activated",
+        "sourceindex=1 entity=table player=0 native-match=true result=ok:none",
+        "sourceindex=1 entity=table player=0 native-match=true result=rejected:unsupported_version",
+        "sourceindex=1 entity=table player=0 native-match=true result=rejected:invalid_request",
+        "sourceindex=1 entity=table player=0 native-match=true result=ok:none",
+        "sourceindex=1 entity=table player=0 native-match=true result=ok:none"
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T12:42:32.304Z",
+          "engine_tga": "shot_0123.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-bound-2026-10-13.png",
+          "png_sha256": "796e984368d409f64d9691e17eea662ef527fa9360bf046e215ff2a6530a08af",
+          "png_bytes": 369999
+        },
+        {
+          "phase": "valid",
+          "pass": true,
+          "utc": "2026-10-13T12:42:45.356Z",
+          "engine_tga": "shot_0124.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-valid-2026-10-13.png",
+          "png_sha256": "065efa335c469b3a6ea58dbdc7441aa21a49d142f95619ac76017dbeedba17a4",
+          "png_bytes": 1136390
+        },
+        {
+          "phase": "unsupported",
+          "pass": true,
+          "utc": "2026-10-13T12:42:58.173Z",
+          "engine_tga": "shot_0125.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-unsupported-2026-10-13.png",
+          "png_sha256": "9030df8f89bdcfc718f909fa8ebb6ef9261b342231936902e18eb2490d8794d3",
+          "png_bytes": 1134201
+        },
+        {
+          "phase": "extra",
+          "pass": true,
+          "utc": "2026-10-13T12:43:11.229Z",
+          "engine_tga": "shot_0126.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-extra-2026-10-13.png",
+          "png_sha256": "8432a556bc4f81dae38e743e189b927650bd2b78cf4c7e72d34b807f5c211ec4",
+          "png_bytes": 1139532
+        },
+        {
+          "phase": "spoofed-player-id",
+          "pass": true,
+          "utc": "2026-10-13T12:43:24.249Z",
+          "engine_tga": "shot_0127.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-spoofed-player-id-2026-10-13.png",
+          "png_sha256": "d548080268138a4b649dbe755da787dbcadf010f155cca41853a3112ff30799e",
+          "png_bytes": 1142240
+        },
+        {
+          "phase": "valid-again",
+          "pass": true,
+          "utc": "2026-10-13T12:43:37.366Z",
+          "engine_tga": "shot_0128.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-valid-again-2026-10-13.png",
+          "png_sha256": "834f5407163d21dbda315298cc11a993e1248c512f7f2890baf0cf4c1a500c10",
+          "png_bytes": 1140938
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "utc": "2026-10-13T12:43:47.362Z",
+          "engine_tga": "shot_0129.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r1-disposed-2026-10-13.png",
+          "png_sha256": "ccc03c0a8021d5a252409aa6e8c2203cfa05590befe638df7d31bb0fe07def11",
+          "png_bytes": 1139651
+        }
+      ],
+      "owned_process_confirmed_gone": true
+    },
+    {
+      "run": "r2",
+      "bundle_receipt": "build/dota_coach/native-ping-20261013T124833Z-6acb39/native-fixture-report.json",
+      "compile_receipt": "build\\dota_coach\\native-ping-r2-20261013-hashes.json",
+      "client_records": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {
+            "localPlayer": 0
+          },
+          "clientState": "idle",
+          "clientReason": "none",
+          "utcMs": 1791895980268
+        },
+        {
+          "phase": "valid",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6oluyq-1",
+            "status": "ok",
+            "reason": "none"
+          },
+          "clientState": "ok",
+          "clientReason": "none",
+          "utcMs": 1791895993275
+        },
+        {
+          "phase": "unsupported",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6om501-2",
+            "status": "rejected",
+            "reason": "unsupported_version"
+          },
+          "clientState": "rejected",
+          "clientReason": "unsupported_version",
+          "utcMs": 1791896006289
+        },
+        {
+          "phase": "extra",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6omf1j-3",
+            "status": "rejected",
+            "reason": "invalid_request"
+          },
+          "clientState": "rejected",
+          "clientReason": "invalid_request",
+          "utcMs": 1791896019295
+        },
+        {
+          "phase": "spoofed-player-id",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6omp2n-4",
+            "status": "ok",
+            "reason": "none"
+          },
+          "clientState": "ok",
+          "clientReason": "none",
+          "utcMs": 1791896032296
+        },
+        {
+          "phase": "valid-again",
+          "pass": true,
+          "details": {
+            "protocol_version": 1,
+            "request_id": "native-ping-mv6omz40-5",
+            "status": "ok",
+            "reason": "none"
+          },
+          "clientState": "ok",
+          "clientReason": "none",
+          "utcMs": 1791896045309
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "details": {
+            "staleReads": 0,
+            "gameCommandsSent": 0,
+            "sentWires": [
+              {
+                "variant": "valid",
+                "wire": {
+                  "protocol_version": 1,
+                  "request_id": "native-ping-mv6oluyq-1"
+                }
+              },
+              {
+                "variant": "unsupported",
+                "wire": {
+                  "protocol_version": 2,
+                  "request_id": "native-ping-mv6om501-2"
+                }
+              },
+              {
+                "variant": "extra",
+                "wire": {
+                  "protocol_version": 1,
+                  "request_id": "native-ping-mv6omf1j-3",
+                  "unexpected": true
+                }
+              },
+              {
+                "variant": "spoofed-player-id",
+                "wire": {
+                  "protocol_version": 1,
+                  "request_id": "native-ping-mv6omp2n-4",
+                  "PlayerID": 99999
+                }
+              },
+              {
+                "variant": "valid-again",
+                "wire": {
+                  "protocol_version": 1,
+                  "request_id": "native-ping-mv6omz40-5"
+                }
+              }
+            ],
+            "replies": [
+              {
+                "protocol_version": 1,
+                "request_id": "native-ping-mv6oluyq-1",
+                "status": "ok",
+                "reason": "none"
+              },
+              {
+                "protocol_version": 1,
+                "request_id": "native-ping-mv6om501-2",
+                "status": "rejected",
+                "reason": "unsupported_version"
+              },
+              {
+                "protocol_version": 1,
+                "request_id": "native-ping-mv6omf1j-3",
+                "status": "rejected",
+                "reason": "invalid_request"
+              },
+              {
+                "protocol_version": 1,
+                "request_id": "native-ping-mv6omp2n-4",
+                "status": "ok",
+                "reason": "none"
+              },
+              {
+                "protocol_version": 1,
+                "request_id": "native-ping-mv6omz40-5",
+                "status": "ok",
+                "reason": "none"
+              }
+            ]
+          },
+          "clientState": "unavailable",
+          "clientReason": "none",
+          "utcMs": 1791896055310
+        }
+      ],
+      "server_traces": [
+        "sourceindex=- entity=nil player=- native-match=false metadata=uninspected result=activated",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=ok:none",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=rejected:unsupported_version",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=rejected:invalid_request",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=ok:none",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=ok:none"
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T12:53:00.952Z",
+          "engine_tga": "shot_0130.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-bound-2026-10-13.png",
+          "png_sha256": "d3a9a3f3020a21db925a20cc0b8ba3180fef3e1f31532c89ff9f2892881bed11",
+          "png_bytes": 245059
+        },
+        {
+          "phase": "valid",
+          "pass": true,
+          "utc": "2026-10-13T12:53:13.945Z",
+          "engine_tga": "shot_0131.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-valid-2026-10-13.png",
+          "png_sha256": "03f6f4ea25a0c9f8d38cb05e1e93fa93984e3cce9f0fcc602162f70a9532a0b0",
+          "png_bytes": 1136608
+        },
+        {
+          "phase": "unsupported",
+          "pass": true,
+          "utc": "2026-10-13T12:53:26.984Z",
+          "engine_tga": "shot_0132.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-unsupported-2026-10-13.png",
+          "png_sha256": "ce6159ae390111d4525c32baba39e4eeabf8c87c32f23d52d7af0a8133ba2330",
+          "png_bytes": 1135466
+        },
+        {
+          "phase": "extra",
+          "pass": true,
+          "utc": "2026-10-13T12:53:40.108Z",
+          "engine_tga": "shot_0133.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-extra-2026-10-13.png",
+          "png_sha256": "76968d34ef180b5f5cae63ff60acb6a3e9d12f89703f7297b1a82f6096f066e5",
+          "png_bytes": 1141659
+        },
+        {
+          "phase": "spoofed-player-id",
+          "pass": true,
+          "utc": "2026-10-13T12:53:53.117Z",
+          "engine_tga": "shot_0134.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-spoofed-player-id-2026-10-13.png",
+          "png_sha256": "cd2197735f9ca84404ca6eec55710be7a193dc4e78f5768203feaadeb14fa244",
+          "png_bytes": 1140313
+        },
+        {
+          "phase": "valid-again",
+          "pass": true,
+          "utc": "2026-10-13T12:54:05.962Z",
+          "engine_tga": "shot_0135.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-valid-again-2026-10-13.png",
+          "png_sha256": "b10abd86bffecacc4e9407bfb1b9edea93c5b0b3bc037d5b008e4e37465c41d7",
+          "png_bytes": 1141410
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "utc": "2026-10-13T12:54:15.953Z",
+          "engine_tga": "shot_0136.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r2-disposed-2026-10-13.png",
+          "png_sha256": "d6c45ea4d7c8a644d39a83c252f738cbe7706e3472413195cfe08765803c67e4",
+          "png_bytes": 1139655
+        }
+      ],
+      "owned_process_confirmed_gone": true
+    },
+    {
+      "run": "r3",
+      "variant": "adapter",
+      "bundle_receipt": "build/dota_coach/native-ping-20261013T125743Z-0c4ea7/native-fixture-report.json",
+      "compile_receipt": "build\\dota_coach\\native-ping-r3-20261013-hashes.json",
+      "client_records": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {
+            "originalAdapter": true
+          },
+          "adapterStatus": "Нажмите «Проверить связь».",
+          "utcMs": 1791896562951
+        },
+        {
+          "phase": "activated",
+          "pass": true,
+          "details": {
+            "sequence": 1,
+            "buttonEnabled": true,
+            "physicalInputTested": false
+          },
+          "adapterStatus": "Сервер ответил. Связь подтверждена.",
+          "utcMs": 1791896575955
+        },
+        {
+          "phase": "repeated",
+          "pass": true,
+          "details": {
+            "sequence": 2,
+            "buttonEnabled": true,
+            "physicalInputTested": false
+          },
+          "adapterStatus": "Сервер ответил. Связь подтверждена.",
+          "utcMs": 1791896588962
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "details": null,
+          "adapterStatus": "Проверка связи недоступна.",
+          "utcMs": 1791896598971
+        }
+      ],
+      "server_traces": [
+        "sourceindex=- entity=nil player=- native-match=false metadata=uninspected result=activated",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=ok:none",
+        "sourceindex=1 entity=table player=0 native-match=true metadata=matching_native result=ok:none"
+      ],
+      "original_adapter_logs": [
+        "panel_ready",
+        "request_sentprobe-mv6oy4gx-1bfck66-1",
+        "okprobe-mv6oy4gx-1bfck66-1",
+        "request_sentprobe-mv6oy4gx-1bfck66-2",
+        "okprobe-mv6oy4gx-1bfck66-2"
+      ],
+      "captured_request_ids": [
+        "probe-mv6oy4gx-1bfck66-1",
+        "probe-mv6oy4gx-1bfck66-2"
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T13:02:43.691Z",
+          "engine_tga": "shot_0137.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r3-bound-2026-10-13.png",
+          "png_sha256": "33ee0176ef5b60a2a2e375a743ec8744e97cfd5dd11cc7473f6f3088681257d1",
+          "png_bytes": 276362
+        },
+        {
+          "phase": "activated",
+          "pass": true,
+          "utc": "2026-10-13T13:02:56.700Z",
+          "engine_tga": "shot_0138.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r3-activated-2026-10-13.png",
+          "png_sha256": "03de206b666adcf65e6ae29df4bcb1a4d894b1608de269858317dd2b6470824d",
+          "png_bytes": 1136315
+        },
+        {
+          "phase": "repeated",
+          "pass": true,
+          "utc": "2026-10-13T13:03:09.792Z",
+          "engine_tga": "shot_0139.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r3-repeated-2026-10-13.png",
+          "png_sha256": "b5bccda2ab1495cd911aca795ac0e5f2a32d4ffdd1a0bea41b68f8e2aff63197",
+          "png_bytes": 1136745
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "utc": "2026-10-13T13:03:19.798Z",
+          "engine_tga": "shot_0140.tga",
+          "png": "D:\\AI\\dota2coach\\creators\\creator-2\\01-foundation\\02-panorama-capability\\reports\\native-ping-r3-disposed-2026-10-13.png",
+          "png_sha256": "f8cdb71d199249997973921e2ca07d8a9d8197f3450baed3d7efb37874667b69",
+          "png_bytes": 1142877
+        }
+      ],
+      "owned_process_confirmed_gone": true
+    }
+  ],
+  "adapter_run_pending": false,
+  "native_diagnostic_exchange_verified": true,
+  "physical_input_verified": false,
+  "game_authority_confirmed": false,
+  "human_second_owner_review": "open",
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  },
+  "full_source_report": "build/dota_coach/source-checks-20261013T125920Z-7764f3/source-checks.json",
+  "full_suites": 85,
+  "full_passed": 1271,
+  "full_skipped": 28,
+  "full_incomplete": 6,
+  "full_errors": 0,
+  "strict_verified": false,
+  "original_auto_adapter_native_exchange_verified": true,
+  "native_phases": 18,
+  "actual_frames": 18,
+  "verified_sender_callbacks": 12,
+  "original_adapter_mouse_hittest_verified": false,
+  "all_owned_pids_gone": true,
+  "compile_each_sources": 9,
+  "compile_each_ui_outputs": 7,
+  "progress_completed": 55,
+  "progress_total": 213
+}
