@@ -21,6 +21,8 @@ import wave
 
 REPOSITORY = Path(__file__).resolve().parents[5]
 REFERENCES = ['Игрок два, отойди назад.', 'Игрок один, атакуй цель.', 'Команда, соберитесь вместе.']
+SAMPLE_SETS = {'baseline': REFERENCES,
+               'parser_grammar': ['керри отступай', 'мидер держи позицию', 'команда соберитесь']}
 AUDIO_FORMAT = {'sample_rate': 16000, 'sample_width_bytes': 2, 'channels': 1, 'encoding': 'PCM'}
 MODEL_REVISION = 'd90ca5fe260221311c53c58e660288d3deb8d356'
 MODEL_FILES = {
@@ -84,13 +86,17 @@ def validate_receipt(path, repository=REPOSITORY):
     if (format_header != AUDIO_FORMAT or not isinstance(format_header, dict) or
             any(type(format_header[key]) is not type(value) for key, value in AUDIO_FORMAT.items())):
         raise ValueError('Synthetic receipt requires 16000 Hz 16-bit mono PCM')
-    if 'references' in receipt and receipt['references'] != REFERENCES:
+    sample_set = receipt.get('sample_set', 'baseline')
+    if not isinstance(sample_set, str) or sample_set not in SAMPLE_SETS:
+        raise ValueError('Unknown exact synthetic sample_set')
+    references = list(SAMPLE_SETS[sample_set])
+    if 'references' in receipt and receipt['references'] != references:
         raise ValueError('Synthetic reference list changed')
     samples = receipt.get('samples')
     if not isinstance(samples, list) or len(samples) != 3:
         raise ValueError('Exactly three synthetic samples are required')
     validated = []
-    for index, (sample, reference) in enumerate(zip(samples, REFERENCES), 1):
+    for index, (sample, reference) in enumerate(zip(samples, references), 1):
         name = f'sample-{index:02d}.wav'
         if (not isinstance(sample, dict) or set(sample) != {'name', 'reference', 'bytes', 'sha256'} or
                 sample['name'] != name or sample['reference'] != reference or
@@ -114,6 +120,7 @@ def validate_receipt(path, repository=REPOSITORY):
                           'sample_width_bytes': 2, 'channels': 1, 'frames': frames,
                           'duration_seconds': frames / 16000}})
     return {**receipt, 'receipt_path': actual, 'directory': actual.parent,
+            'sample_set': sample_set, 'references': references,
             'receipt_sha256': hashlib.sha256(raw).hexdigest(), 'samples': validated}
 
 
@@ -172,7 +179,7 @@ def run_pilot(receipt_path, repository=REPOSITORY):
     started, cpu_started = time.perf_counter(), time.process_time()
     result = {'schema_version': 1, 'stage': 'synthetic_local_decoder_pilot',
               'generated_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              'source': 'synthetic_system_tts', 'references': REFERENCES,
+              'source': 'synthetic_system_tts', 'sample_set': None, 'references': None,
               'language_requested': 'ru', 'device': 'cpu', 'compute_type': 'int8', 'cpu_threads': 2,
               'beam_size': 1, 'vad_filter': True, 'preflight_completed': False, 'model_loaded': False,
               'samples': [], 'aggregate': None, 'synthetic_decoder_positive': False,
@@ -185,6 +192,8 @@ def run_pilot(receipt_path, repository=REPOSITORY):
     environment = {}
     try:
         receipt = validate_receipt(receipt_path, root)
+        result['sample_set'] = receipt['sample_set']
+        result['references'] = receipt['references']
         output = fresh_output(receipt['directory'], root, 'decoder-')
         model = validate_model(root)
         result['receipt_path'] = str(receipt['receipt_path'])

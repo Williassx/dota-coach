@@ -296,3 +296,12 @@ C1 подключён 13 октября: actual commits1c44da4/b1f2c48/71b20c0 �
 UI без общего authority/actor/lease/transport контракта. .freebuff не публиковалась.
 После C1 publication продолжить pending C2 grammar pilot: exact3WAV/ASR6edits7words/
 85.7%/refsready3,hypready0; rootacceptance/report/finalcritic/publication ещё нужны.
+
+C1publication подтверждён0edbd9fac9d96b7e3b04c08dbb7df5efbf24bc12/remoteequal.
+C2 grammar pilot [completed scopedreport](../../../06-voice/02-recognition-parser/reports/synthetic-grammar-2026-10-13.md):
+refs3ready/hyps0unknown_action,WER6/7 only3synthetic,12pure/full85/1242/28skip/
+6incomplete/0errors/false. Root hashes/metrics/actualparser/staleguard verified,
+1critic nofindings; speech/accuracy/bridge/authority/native/humanowner open.
+Do not promote tinybasedonsyntheticdecoderpositive; no fuzzycorrection/revision
+substitution. Next C2 step: optional test-only feedback of actual decoded failure,
+then commoncontract review beforeliveC1 integration, no fabricated authority.

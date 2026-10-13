@@ -1,6 +1,9 @@
 <# Explicit synthetic WAV experiment. Never microphone, speakers or default voice settings. #>
 [CmdletBinding()]
-param([string]$OutputDirectory)
+param(
+    [string]$OutputDirectory,
+    [ValidateSet('baseline', 'parser_grammar', IgnoreCase=$false)][string]$SampleSet = 'baseline'
+)
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
@@ -37,11 +40,16 @@ if (-not ([IO.Path]::GetDirectoryName($taskOutput)).Equals($taskBoundary, [Strin
 }
 if (Test-Path -LiteralPath $taskOutput) { throw 'Existing synthetic output is preserved' }
 [void](New-Item -ItemType Directory -Path $taskOutput -ErrorAction Stop)
-$taskReferences = @('Игрок два, отойди назад.', 'Игрок один, атакуй цель.', 'Команда, соберитесь вместе.')
+$taskReferences = if ($SampleSet -ceq 'parser_grammar') {
+    @('керри отступай', 'мидер держи позицию', 'команда соберитесь')
+} else {
+    @('Игрок два, отойди назад.', 'Игрок один, атакуй цель.', 'Команда, соберитесь вместе.')
+}
 $taskReceipt = [ordered]@{
     schema_version = 1
     stage = 'synthetic_tts'
     source = 'synthetic_system_tts'
+    sample_set = $SampleSet
     generated_at_utc = [DateTime]::UtcNow.ToString('o')
     voice_name = 'Microsoft Irina Desktop'
     voice_culture = 'ru-RU'
@@ -110,5 +118,5 @@ try {
     try { $taskReceiptStream.Write($taskBytes, 0, $taskBytes.Length) } finally { $taskReceiptStream.Dispose() }
 }
 [ordered]@{receipt=$taskReceiptPath;tts_completed=$taskReceipt.tts_completed;samples=$taskReceipt.samples.Count;
-    source=$taskReceipt.source;speakers_used=$false;microphone_used=$false;error=$taskReceipt.error} | ConvertTo-Json
+    source=$taskReceipt.source;sample_set=$taskReceipt.sample_set;speakers_used=$false;microphone_used=$false;error=$taskReceipt.error} | ConvertTo-Json
 if ($null -ne $taskReceipt.error -or -not $taskReceipt.tts_completed) { exit 1 }

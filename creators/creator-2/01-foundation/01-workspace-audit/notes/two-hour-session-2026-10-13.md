@@ -58,3 +58,12 @@ Actualmain неожиданно дополнен тремяC1коммитами;
 не перезаписывать/неreset. 172files/36suites; bounded Lua8+voice13, full85/1242PASS/
 28skip/0errors/strictfalse, reviewerfindingsresolved. Registrypublished99555eb.
 Root grammar acceptance/report остаётся отдельным следующим C2результатом.
+
+## Проверенный итог после возобновления
+
+C1published0edbd9f/remoteequal, allC1commits preserved;8actualLua/13voicegate/
+full85/1242/28skip/0errorsfalse. ЗатемC2grammarrootacceptance11:04UTC:
+PCM/model/metric/baselinehashes independentlyverified, actualNodeparserrerun,
+refs3ready/hyps0/staleProxy0/commands0. Report/lesson41/usage50saved; criticno findings.
+Двухчасовая непрерывность не заявляется: goal usageLimited, фактический перерыв
+зафиксирован выше; продолжение по новому user steering, не искусственный timer.

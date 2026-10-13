@@ -39,3 +39,8 @@ API, сигнатуры, конкретные файлы и команды пр�
 Модуль принимает текст и локальный snapshot существующих карточек. Он создаёт
 proposal с четырьмя действиями без отправки и не подтверждает распознавание голоса.
 Микрофон/ASR, связь с кастомкой, C1 контракт/authorization и второй владелец открыты.
+
+[Synthetic grammar pilot](reports/synthetic-grammar-2026-10-13.md): existing
+parser принял3/3 эталона, но actual tiny ASR дал0/3 proposals (WER6/7 только трёх
+synthetic samples). [Процедура](notes/synthetic-grammar.md). Production grammar
+не менялась, реальные речь/accuracy/authority не подтверждены.

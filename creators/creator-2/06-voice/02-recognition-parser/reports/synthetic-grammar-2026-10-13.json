@@ -1,0 +1,548 @@
+{
+  "schema_version": 1,
+  "task": "C2-06-02/synthetic-grammar-pilot",
+  "generated_at_utc": "2026-10-13T11:06:04.854110+00:00",
+  "source": "synthetic_system_tts",
+  "sample_set": "parser_grammar",
+  "predeclared_references": [
+    "керри отступай",
+    "мидер держи позицию",
+    "команда соберитесь"
+  ],
+  "tts_receipt_sha256": "b6cf49e1c5cf9948dd81aa6b8357d0999f900af55de1c94c765d5aa87b7c9ea0",
+  "tts_voice": "Microsoft Irina Desktop",
+  "audio_format": {
+    "sample_rate": 16000,
+    "sample_width_bytes": 2,
+    "channels": 1,
+    "encoding": "PCM"
+  },
+  "samples": [
+    {
+      "name": "sample-01.wav",
+      "reference": "керри отступай",
+      "sha256": "98ba34311ce544a05118eb185bc555ece5afa4187fbf51faad5dd5304cdc27f1",
+      "pcm": {
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "channels": 1,
+        "frames": 32640,
+        "duration_seconds": 2.04
+      },
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "text": " Кириат Ступай.",
+          "avg_logprob": -0.5853648619218306,
+          "no_speech_prob": 0.02261064015328884
+        }
+      ],
+      "generator_consumed": true,
+      "decoder_exercised": true,
+      "comparison": {
+        "reference_words": [
+          "керри",
+          "отступай"
+        ],
+        "hypothesis_words": [
+          "кириат",
+          "ступай"
+        ],
+        "edit_distance": 2,
+        "wer": 1.0
+      },
+      "error": null,
+      "input_duration_seconds": 2.04,
+      "duration_after_vad_seconds": 2.04,
+      "exact_reference_match": false,
+      "elapsed_seconds": 0.525224
+    },
+    {
+      "name": "sample-02.wav",
+      "reference": "мидер держи позицию",
+      "sha256": "1df45424c7f94a73a2e6e3e3b049d9488f6d3b3b570c4198d4d09fcc3c1e6a34",
+      "pcm": {
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "channels": 1,
+        "frames": 39360,
+        "duration_seconds": 2.46
+      },
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "text": " Мидердерже позиции.",
+          "avg_logprob": -0.5864472572620099,
+          "no_speech_prob": 0.027467967942357063
+        }
+      ],
+      "generator_consumed": true,
+      "decoder_exercised": true,
+      "comparison": {
+        "reference_words": [
+          "мидер",
+          "держи",
+          "позицию"
+        ],
+        "hypothesis_words": [
+          "мидердерже",
+          "позиции"
+        ],
+        "edit_distance": 3,
+        "wer": 1.0
+      },
+      "error": null,
+      "input_duration_seconds": 2.46,
+      "duration_after_vad_seconds": 2.46,
+      "exact_reference_match": false,
+      "elapsed_seconds": 0.374079
+    },
+    {
+      "name": "sample-03.wav",
+      "reference": "команда соберитесь",
+      "sha256": "21af9b936594933c6fd90cc2f07317043326a2e543f2acaf5630e78d56885eda",
+      "pcm": {
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "channels": 1,
+        "frames": 38480,
+        "duration_seconds": 2.405
+      },
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "text": " Команда Сабиритесь.",
+          "avg_logprob": -0.6696666181087494,
+          "no_speech_prob": 0.009935731068253517
+        }
+      ],
+      "generator_consumed": true,
+      "decoder_exercised": true,
+      "comparison": {
+        "reference_words": [
+          "команда",
+          "соберитесь"
+        ],
+        "hypothesis_words": [
+          "команда",
+          "сабиритесь"
+        ],
+        "edit_distance": 1,
+        "wer": 0.5
+      },
+      "error": null,
+      "input_duration_seconds": 2.405,
+      "duration_after_vad_seconds": 2.405,
+      "exact_reference_match": false,
+      "elapsed_seconds": 0.412226
+    }
+  ],
+  "aggregate": {
+    "samples": 3,
+    "reference_words": 7,
+    "edit_distance": 6,
+    "wer": 0.8571428571428571,
+    "scope": "only_three_synthetic_references"
+  },
+  "decoder_parameters": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "language_requested": "ru",
+    "beam_size": 1,
+    "vad_filter": true,
+    "cpu_threads": 2,
+    "model_revision": "d90ca5fe260221311c53c58e660288d3deb8d356"
+  },
+  "model_files": [
+    {
+      "name": "config.json",
+      "bytes": 2249,
+      "sha256": "a73a28cdfe1c43ccc7202fa333d1f89c202477271407ae9a7f19afa52039cac8"
+    },
+    {
+      "name": "model.bin",
+      "bytes": 75538270,
+      "sha256": "dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 2203239,
+      "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+    },
+    {
+      "name": "vocabulary.txt",
+      "bytes": 459861,
+      "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    }
+  ],
+  "versions": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "onnxruntime": "1.31.0",
+    "av": "18.0.0",
+    "numpy": "2.5.4",
+    "huggingface-hub": "2.2.0",
+    "tokenizers": "0.23.3"
+  },
+  "decoder_elapsed_seconds": 2.045625,
+  "process_cpu_seconds": 3.53125,
+  "parser_context": {
+    "revision": 1,
+    "players": [
+      {
+        "id": "TEST-p1",
+        "playerName": "TEST Игрок 1",
+        "heroName": null,
+        "role": 1,
+        "source": "synthetic",
+        "side": "own",
+        "availability": "alive"
+      },
+      {
+        "id": "TEST-p2",
+        "playerName": "TEST Игрок 2",
+        "heroName": null,
+        "role": 2,
+        "source": "synthetic",
+        "side": "own",
+        "availability": "alive"
+      },
+      {
+        "id": "TEST-p3",
+        "playerName": "TEST Игрок 3",
+        "heroName": null,
+        "role": 3,
+        "source": "synthetic",
+        "side": "own",
+        "availability": "alive"
+      },
+      {
+        "id": "TEST-p4",
+        "playerName": "TEST Игрок 4",
+        "heroName": null,
+        "role": 4,
+        "source": "synthetic",
+        "side": "own",
+        "availability": "alive"
+      },
+      {
+        "id": "TEST-p5",
+        "playerName": "TEST Игрок 5",
+        "heroName": null,
+        "role": 5,
+        "source": "synthetic",
+        "side": "own",
+        "availability": "alive"
+      }
+    ]
+  },
+  "parser_sources": [
+    {
+      "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_state.js",
+      "sha256": "8ead8e2f798d6778430e9921200b409b45cc56d7b8d0c215995fd149716094ab"
+    },
+    {
+      "path": "creators/creator-2/06-voice/02-recognition-parser/src/panorama/scripts/custom_game/voice_text_state.js",
+      "sha256": "21a1705c9c53fb030073d3433bb757a9bca35d758dc40f782ff967321c359151"
+    }
+  ],
+  "parser_outcomes": [
+    {
+      "origin": "predeclared_parser_grammar_reference",
+      "sample_index": 1,
+      "input_event": {
+        "utteranceId": "grammar-probe-1",
+        "text": "керри отступай",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "ready",
+        "reason": "none",
+        "normalizedText": "керри отступай",
+        "proposal": {
+          "utteranceId": "grammar-probe-1",
+          "rosterRevision": 1,
+          "action": "retreat",
+          "recipientIds": [
+            "TEST-p1"
+          ],
+          "recipientNames": [
+            "TEST Игрок 1"
+          ],
+          "addressKind": "role"
+        }
+      }
+    },
+    {
+      "origin": "predeclared_parser_grammar_reference",
+      "sample_index": 2,
+      "input_event": {
+        "utteranceId": "grammar-probe-2",
+        "text": "мидер держи позицию",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "ready",
+        "reason": "none",
+        "normalizedText": "мидер держи позицию",
+        "proposal": {
+          "utteranceId": "grammar-probe-2",
+          "rosterRevision": 1,
+          "action": "hold",
+          "recipientIds": [
+            "TEST-p2"
+          ],
+          "recipientNames": [
+            "TEST Игрок 2"
+          ],
+          "addressKind": "role"
+        }
+      }
+    },
+    {
+      "origin": "predeclared_parser_grammar_reference",
+      "sample_index": 3,
+      "input_event": {
+        "utteranceId": "grammar-probe-3",
+        "text": "команда соберитесь",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "ready",
+        "reason": "none",
+        "normalizedText": "команда соберитесь",
+        "proposal": {
+          "utteranceId": "grammar-probe-3",
+          "rosterRevision": 1,
+          "action": "regroup",
+          "recipientIds": [
+            "TEST-p1",
+            "TEST-p2",
+            "TEST-p3",
+            "TEST-p4",
+            "TEST-p5"
+          ],
+          "recipientNames": [
+            "TEST Игрок 1",
+            "TEST Игрок 2",
+            "TEST Игрок 3",
+            "TEST Игрок 4",
+            "TEST Игрок 5"
+          ],
+          "addressKind": "group"
+        }
+      }
+    },
+    {
+      "origin": "actual_local_asr_segments",
+      "sample_index": 1,
+      "input_event": {
+        "utteranceId": "grammar-probe-4",
+        "text": " Кириат Ступай.",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "rejected",
+        "reason": "unknown_action",
+        "normalizedText": "кириат ступай",
+        "proposal": null
+      }
+    },
+    {
+      "origin": "actual_local_asr_segments",
+      "sample_index": 2,
+      "input_event": {
+        "utteranceId": "grammar-probe-5",
+        "text": " Мидердерже позиции.",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "rejected",
+        "reason": "unknown_action",
+        "normalizedText": "мидердерже позиции",
+        "proposal": null
+      }
+    },
+    {
+      "origin": "actual_local_asr_segments",
+      "sample_index": 3,
+      "input_event": {
+        "utteranceId": "grammar-probe-6",
+        "text": " Команда Сабиритесь.",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "rejected",
+        "reason": "unknown_action",
+        "normalizedText": "команда сабиритесь",
+        "proposal": null
+      }
+    }
+  ],
+  "parser_guards": {
+    "duplicate": {
+      "input_event": {
+        "utteranceId": "grammar-probe-1",
+        "text": "керри отступай",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "rejected",
+        "reason": "duplicate",
+        "normalizedText": null,
+        "proposal": null
+      }
+    },
+    "stale": {
+      "input_event": {
+        "utteranceId": "grammar-guard-stale",
+        "text": "керри отступай",
+        "rosterRevision": 0,
+        "final": true
+      },
+      "outcome": {
+        "status": "rejected",
+        "reason": "stale_roster",
+        "normalizedText": null,
+        "proposal": null
+      }
+    },
+    "ambiguous": {
+      "context": {
+        "revision": 1,
+        "players": [
+          {
+            "id": "TEST-p1",
+            "playerName": "TEST Игрок 1",
+            "heroName": null,
+            "role": 1,
+            "source": "synthetic",
+            "side": "own",
+            "availability": "alive"
+          },
+          {
+            "id": "TEST-p2",
+            "playerName": "TEST Игрок 2",
+            "heroName": null,
+            "role": 1,
+            "source": "synthetic",
+            "side": "own",
+            "availability": "alive"
+          },
+          {
+            "id": "TEST-p3",
+            "playerName": "TEST Игрок 3",
+            "heroName": null,
+            "role": 3,
+            "source": "synthetic",
+            "side": "own",
+            "availability": "alive"
+          },
+          {
+            "id": "TEST-p4",
+            "playerName": "TEST Игрок 4",
+            "heroName": null,
+            "role": 4,
+            "source": "synthetic",
+            "side": "own",
+            "availability": "alive"
+          },
+          {
+            "id": "TEST-p5",
+            "playerName": "TEST Игрок 5",
+            "heroName": null,
+            "role": 5,
+            "source": "synthetic",
+            "side": "own",
+            "availability": "alive"
+          }
+        ]
+      },
+      "input_event": {
+        "utteranceId": "grammar-guard-ambiguous",
+        "text": "керри отступай",
+        "rosterRevision": 1,
+        "final": true
+      },
+      "outcome": {
+        "status": "rejected",
+        "reason": "ambiguous_address",
+        "normalizedText": "керри отступай",
+        "proposal": null
+      }
+    }
+  },
+  "root_independent_acceptance": {
+    "stage": "root_synthetic_grammar_acceptance",
+    "sample_set": "parser_grammar",
+    "pcm_verified": true,
+    "model_hashes_verified": true,
+    "word_metrics_recomputed": true,
+    "edits": 6,
+    "reference_words": 7,
+    "wer": 0.8571428571428571,
+    "same_decoder_parameters_as_baseline": {
+      "device": "cpu",
+      "compute_type": "int8",
+      "language_requested": "ru",
+      "beam_size": 1,
+      "vad_filter": true,
+      "cpu_threads": 2,
+      "model_revision": "d90ca5fe260221311c53c58e660288d3deb8d356"
+    },
+    "baseline_4_inputs_unchanged": true,
+    "reference_ready": 3,
+    "hypothesis_ready": 0,
+    "commands_sent": 0,
+    "native_api_attempts": [],
+    "stale_disposed_inspections": 0,
+    "tts_receipt_sha256": "b6cf49e1c5cf9948dd81aa6b8357d0999f900af55de1c94c765d5aa87b7c9ea0",
+    "asr_result_sha256": "5620cd78d3fb53de278e4c9c198eb2c5fbee4d88ba14399a52ecca4dd7968416",
+    "parser_probe_sha256": "ba8a99a567a5797b2da705d5a585d0a0db0ee1625c6009a45030e3c7ef73b793",
+    "generated_at_utc": "2026-10-13T11:04:47.204226+00:00"
+  },
+  "raw_result_path": "build/dota_coach/asr-synthetic-20261013-12680e36bd3c4d4b8a9890bc93b6f771/decoder-8fb0be60579a441e98e468fc5c6f225b/asr-result.json",
+  "raw_result_sha256": "5620cd78d3fb53de278e4c9c198eb2c5fbee4d88ba14399a52ecca4dd7968416",
+  "raw_probe_path": "build/dota_coach/asr-parser-probe-20261013-d147dc696187bca2.json",
+  "raw_probe_sha256": "ba8a99a567a5797b2da705d5a585d0a0db0ee1625c6009a45030e3c7ef73b793",
+  "root_acceptance_path": "build/dota_coach/asr-grammar-root-20261013T110447Z-919c6e51/root-acceptance.json",
+  "root_acceptance_sha256": "2cf86c2bca400e2f149bb6f1a66e362947f57ed81374b4ba8869f312da6fd54e",
+  "baseline_4_input_hashes_unchanged": true,
+  "same_decoder_parameters_as_baseline": true,
+  "reference_local_proposals": 3,
+  "decoded_local_proposals": 0,
+  "synthetic_decoder_positive": true,
+  "speech_verified": false,
+  "accuracy_verified": false,
+  "dota_bridge_verified": false,
+  "commands_sent": 0,
+  "microphone_used": false,
+  "speakers_used": false,
+  "python_socket_attempts": [],
+  "native_network_monitored": false,
+  "audio_published": false,
+  "full_source_report": "build/dota_coach/source-checks-20261013T105504Z-498303/source-checks.json",
+  "full_suites": 85,
+  "full_passed": 1242,
+  "full_skipped": 28,
+  "full_incomplete": 6,
+  "full_errors": 0,
+  "strict_verified": false,
+  "cli_exit_code": 1,
+  "human_second_owner_review": "open",
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  }
+}

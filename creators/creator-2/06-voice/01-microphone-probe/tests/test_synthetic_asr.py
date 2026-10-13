@@ -242,6 +242,54 @@ class SyntheticASRTests(unittest.TestCase):
             with no_inference_imports(), self.assertRaises((ValueError, OSError)):
                 self.asr.validate_model(repository=repository)
 
+    def test_parser_grammar_receipt_is_valid_and_baseline_default_is_preserved(self):
+        grammar = ['керри отступай', 'мидер держи позицию', 'команда соберитесь']
+        self.assertEqual(self.asr.REFERENCES, REFERENCES, 'existing baseline corpus must remain unchanged')
+        with tempfile.TemporaryDirectory() as temporary:
+            repository = Path(temporary).resolve()
+            path, original = fixture(repository)
+            # An older receipt with no sample_set keeps the original three references.
+            baseline = self.validate(path, repository)
+            self.assertEqual(baseline['sample_set'], 'baseline')
+            self.assertEqual([sample['reference'] for sample in baseline['samples']], REFERENCES)
+            explicit = copy.deepcopy(original)
+            explicit.update(sample_set='baseline', references=list(REFERENCES))
+            save_receipt(path, explicit)
+            validated = self.validate(path, repository)
+            self.assertEqual(validated['sample_set'], 'baseline')
+            self.assertEqual(validated['references'], REFERENCES)
+            proposal = copy.deepcopy(original)
+            proposal.update(sample_set='parser_grammar', references=list(grammar))
+            for sample, reference in zip(proposal['samples'], grammar):
+                sample['reference'] = reference
+            save_receipt(path, proposal)
+            validated = self.validate(path, repository)
+            self.assertEqual(validated['sample_set'], 'parser_grammar')
+            self.assertEqual(validated['references'], grammar)
+            self.assertEqual([sample['reference'] for sample in validated['samples']], grammar)
+            self.assertEqual(self.asr.REFERENCES, REFERENCES)
+
+    def test_unknown_sample_set_strings_numbers_booleans_and_arrays_refuse(self):
+        for sample_set in ('unknown', 'parser-grammar', 'BASELINE', '', 0, True, False, [], None):
+            with self.subTest(sample_set=sample_set), tempfile.TemporaryDirectory() as temporary:
+                repository = Path(temporary).resolve()
+                path, receipt = fixture(repository)
+                receipt['sample_set'] = sample_set
+                save_receipt(path, receipt)
+                self.refused(path, repository)
+
+    def test_sample_set_and_reference_corpus_mismatch_refuse_both_directions(self):
+        grammar = ['керри отступай', 'мидер держи позицию', 'команда соберитесь']
+        for sample_set, wrong_references in (('parser_grammar', REFERENCES), ('baseline', grammar)):
+            with self.subTest(sample_set=sample_set), tempfile.TemporaryDirectory() as temporary:
+                repository = Path(temporary).resolve()
+                path, receipt = fixture(repository)
+                receipt.update(sample_set=sample_set, references=list(wrong_references))
+                for sample, reference in zip(receipt['samples'], wrong_references):
+                    sample['reference'] = reference
+                save_receipt(path, receipt)
+                self.refused(path, repository)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -469,6 +469,14 @@
 - **Проверка:** [Рассмотрение C1](../../../11-integration/03-end-to-end/reports/creator-1-review-2026-10-13.md): Lua8/voice13 PASS; all85/1242passed/28skip/6incomplete/0errors/strictfalse. C1 36/188PASS, progress112/181 равен генератору, 69 open actions; критик подтвердил устранение ограниченных замечаний.
 - **Следующий раз:** дополнять static проверки исполнением настоящего source и actual producer/consumer; различать streaming epoch, server commit и engine effect. Перед интеграцией сверять полный каталог и Git HEAD, не доверять историческому handoff/progress.
 
+## 41. Decoder и lexical parser требуют раздельной проверки на фиксированном корпусе
+
+- **Действие:** baseline эталоны не принадлежали exact VoiceText grammar; заранее выбран новый parser_grammar корпус, TTS→tiny дал6wordedits/7words, все3 decoded hypotheses rejected.
+- **Причина:** даже понятная человеку phrase не обязательно совпадает с фиксированной грамматикой; lexical ASR ошибка не даёт оснований добавить fuzzy mapping или заменить captured revision. Три TTS sample не оценивают реальные речь/accuracy.
+- **Исправление:** exact sample_set сохраняет baseline/old receipts, refs фиксируются до наблюдения; модель/параметры/vocabulary unchanged. Root отдельно проверяет PCM/model/hash/метрику и actual parser refs/hyps/guards; commands0.
+- **Проверка:** [Grammar pilot](../../../06-voice/02-recognition-parser/reports/synthetic-grammar-2026-10-13.md): 12purePASS, refs3ready/hyps0ready, duplicate/stale/ambiguous guards и disposedProxy0; baseline4hashes unchanged, full85/1242/28skip/0errors/false. Критик без существенных замечаний.
+- **Следующий раз:** фиксировать test corpus до decoder outputs, сохранять errors/rawtexts и semantic outcomes отдельно. Случайная lexical удача, WER или no_speech score не server authority/semantic confidence. Пути сначала получать через rg --files; в apply_patch использовать только прочитанный exact context, иначе весь batch отклоняется без изменений.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

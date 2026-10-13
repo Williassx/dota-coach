@@ -251,3 +251,9 @@ binding guards исправлены; source каталог85/1242PASS/28skip/6in
 verifiedfalse. C1progress112/181 не повышен, 69 open actions. Исторические фразы
 «C1-04 отсутствует» относятся к прежнему срезу; новые pure модули доступны, но
 общий контракт/actor-authority/transport/native/lease/real AI return открыты.
+
+C2-06-02 grammar pilot13октября: exact sample_set baseline/parser_grammar,
+oldreceipts/default unchanged;12purePASS. Actual3IrinaWAV→same tiny/beam1/CPUint8/
+ru/VAD:6edits7wordsWER85.7% только3samples; refs3localready/hyps0readyunknown_action,
+commands/nativeattempts0. RootPCM/model/metric/actualparserguards verified,
+real speech/accuracy/bridgefalse, vocabulary/decoder unchanged; C254/213 unchanged.
