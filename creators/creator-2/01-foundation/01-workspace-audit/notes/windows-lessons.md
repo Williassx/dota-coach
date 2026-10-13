@@ -453,6 +453,14 @@
 - **Проверка:** [SyntheticASR](../../../06-voice/01-microphone-probe/reports/synthetic-asr-2026-10-13.md):thirdexact/twoincorrect,PCM/modelhashes/9puretests PASS, existingoutputrefusalpreservesbytes, full1059pass/28skip/0errors.
 - **Следующий раз:** decoder/text/no_speech score не semanticconfidence; WERinsertions можетпревысить100% отдельнойфразы. Реальнаяречь/команднаяточность/authority требуютотдельнойвыборки, не трёхTTSпроб.
 
+## 39. Source media inventory требует явного среза и не устанавливает права
+
+- **Действие:** readonlyinventoryнашёл83C2source/98literalrefs/98HEADmedia; послеnativecommitпоявилисьещё6PNG, progressSVGизменилсяпослеcheckbox.
+- **Причина:** HEAD/filesystem/generated-artifact scopesразличаются; literalfile refs неохватываютengine/transitive/dynamic assets. Git/SHA256/техническое происхождение не подтверждаютauthor/IPlicense.
+- **Исправление:** current104media deltaявноучтена, generator/data/SVGworkingoverride хешированы; sourceкод, diagnosticPNG, concept иruntime selectionразделены. Всеправаnot_assessed, неизвестноеacquisitionневыдумано.
+- **Проверка:** [Registry](../../../09-presentation/01-assets/reports/assets-register-2026-10-13.md):187filehashes/104media membership/10recipehashes/98internalrefs/31links,ниdeclaredmedia вrecipes. Толькоregistrycheckbox54/213, licenses/humanowneropen.
+- **Следующий раз:** указыватьHEAD/дату/workingdelta иневыдаватьотсутствиеexplicitURLsзаallruntimeaudit. Concept/mapreference/screenshot неlicensedruntimeasset; будущийinventoryобновлятьпослеmedia/progresschanges.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

@@ -278,3 +278,12 @@ Full062607Z-57578a50/1059passed/28skip/6incomplete/0errors/false/50process0.
 Eachboundedresult finalcritic1 nofindings/humanowneropen; lessons37/38,
 progress53/213beforeassetsregistry. ContinueavailableC2tasksuntildeadline,
 no repeattrace/ASRwithoutnewreason, no fabricatedC1/input/rights orallgamecomplete.
+
+C2-09-01 registry13октября completedscopedmetadata:83C2src/98internalrefs/104media/
+10recipes; rawold98media→+6tracePNG/currentHEADdd01f0b, progressSVGworkingoverride
+afterregistrycheckbox.187hashes/membership/recipehashes/31linksPASS,1finalcriticnofindings.
+Rights/ownershipnot_assessed; implicitengine/dynamicmedia/ignoredbuild/C1/releaseopen.
+Onlyregistryaction marked→54/213(25.4%); [report](../../../09-presentation/01-assets/reports/assets-register-2026-10-13.md),
+lesson39. Grammarprobe actual3references+3hyp allunknown_action; nextplannedcorpus
+exactexistingkerриretreat/mидерhold/командаregroup, no vocabexpand/commands.
+Userdeadline2hour08:01:04UTCstillactive; rootpreservesparalleluncommittedcorpusfiles.

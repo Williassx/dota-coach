@@ -35,3 +35,16 @@ SVGgenerator; fixedmanifest membership verification;1scopedcheckboxonly/progress
 Then choose independent C2tasks bydependencies untildeadline; frequentbriefupdates,
 knownUTF8/CRLF/exclusiveoutputs/ownPIDguards/rights/C1 limitations applied.
 Не писатьglobalCodexmemory, не запускать всех175процессов, unknowntoken/costnull.
+
+## Обновление07:00UTC
+
+First2boundedtasks publisheddd01f0b45c386970d53cda095d311d01b814a4ad/remoteequal;
+lessons37/38/usage46+47 verified. Assetregistryprepared/validated/reviewednofindings:
+187hashes/104media/83src/98refs/10recipes, registrycheckbox→54/213(25.4%).
+Prepareassetscommit exactpaths preservingparallelASRgrammarcode/tests.
+Newgrammarpilot C2-06-02 design/plan saved; helpers windows_learning2commands,
+agent_catalog_activation3additionalpuretests, REDbeforeimpl. Fixedparserrefs
+керриотступай/мидердержипозицию/командасоберитесь; no vocab/modelparamchanges,
+actualgrammarTTS/ASR+existingNodeparseroutcomes/commands0,1finalcritic afterdone.
+Cloudtask «Настройка dota-coach» read-onlyinspected:ещёCreator2resume, неC1owner;
+сообщениятуда не отправлялись/не считаетсявторымсоздателем. C1scopeunchanged.
