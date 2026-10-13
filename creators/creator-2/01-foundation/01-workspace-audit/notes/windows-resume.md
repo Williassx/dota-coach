@@ -325,3 +325,18 @@ All3ownPIDsgone/Steam12964kept,criticnofindings;C255/213now25.8%. Actualmouse/hi
 reload/late-nativecases/multi-clientauthorization/actoridentity/lease/AIreturn/common
 HUD/realmap/humanowneropen. Next availabletask — native physical input/hittest for
 sameprobe with owned-window proof; do not replace it with programmaticActivated.
+
+13 октября согласованный manual move реализован отдельным v1 TEST addon:
+[report](../../../05-intervention-ui/03-return-feedback/reports/native-manual-move-2026-10-13.md).
+C1 controller/native sender+owner+hero+lease/order guards, C2 panel/state/left world
+callback; cancel/arrival/expiry Stop→freshactualsyntheticAI. Normal7/compiled5,
+TEST9/compiled7, current r8/final2;8launches/28actualframes,all8ownPIDsgone.
+Lua26/Node26/bundle11/full88/1334PASS/28skip/6incomplete/0errors/strictfalse.
+C256/213(26.3%),C1112/181 unchanged; lesson44/usage53/onecriticfixes verified.
+Logical lease5, nativeexpiry5.033–5.067(nextThink), strictstop5.000not verified.
+Physicalmouse/hittest blocked by supportedwindowcapture timeout; no guessedinput.
+Pause/death/replacement/reload/late-event native/humanowner/fullgame open.
+Next: workingphysicalinputchannel + native lifecycle acceptance for sameonehero;
+never revive oldepoch/owner, ordinaryclientclose notservercancel. Launcher at
+C2-05-03/tools/launch_manual_move.ps1 selects installed normal final2 addon,
+preserves existingDota; buildoutput/sourceonlyflags separated, .freebuff unchanged.

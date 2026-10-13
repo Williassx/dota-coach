@@ -425,6 +425,21 @@
       "id": "python-c1-12-03",
       "framework": "python-unittest",
       "path": "creators/creator-1/12-release/03-release-package/tests"
+    },
+    {
+      "id": "node-manual-move",
+      "framework": "node-test",
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs"
+    },
+    {
+      "id": "node-manual-move-panel",
+      "framework": "node-test",
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs"
+    },
+    {
+      "id": "python-c2-05-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests"
     }
   ]
 }

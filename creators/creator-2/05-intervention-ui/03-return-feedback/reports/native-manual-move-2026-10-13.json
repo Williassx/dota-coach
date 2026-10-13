@@ -1,0 +1,4245 @@
+{
+  "schema_version": 1,
+  "task": "C2-05-03/native-manual-move",
+  "build_id": "25894101",
+  "generated_at_utc": "2026-10-13T17:49:38.157644+00:00",
+  "scenario": "one TEST/synthetic owned hero; manual move and AI return",
+  "runs": [
+    {
+      "run": "r1",
+      "scope": "failed_ui_bridge_diagnostic",
+      "owned_pid": 28416,
+      "owned_start_time_utc": "2026-10-13T15:57:02.1080771Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [],
+      "captures": [],
+      "metrics": {},
+      "wire_alive_types": [],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=79.066673278809",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=2 remaining=0 ai=0 manual=0 game=84.133338928223",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=0 manual=0 game=89.300003051758",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=4 remaining=0 ai=0 manual=0 game=94.366668701172",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=5 remaining=0 ai=0 manual=0 game=99.400001525879",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=6 remaining=0 ai=0 manual=0 game=104.46667480469",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=7 remaining=0 ai=0 manual=0 game=109.60000610352",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=8 remaining=0 ai=0 manual=0 game=114.66667175293",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=9 remaining=0 ai=0 manual=0 game=119.76667022705",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=10 remaining=0 ai=0 manual=0 game=124.83334350586",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=11 remaining=0 ai=0 manual=0 game=130",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=12 remaining=0 ai=0 manual=0 game=135.10000610352",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=13 remaining=0 ai=0 manual=0 game=140.20001220703",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=14 remaining=0 ai=0 manual=0 game=145.30000305176",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=15 remaining=0 ai=0 manual=0 game=150.40000915527",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=16 remaining=0 ai=0 manual=0 game=155.40000915527",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=17 remaining=0 ai=0 manual=0 game=160.5666809082",
+        "mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=18 remaining=0 ai=0 manual=0 game=165.73333740234",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=19 remaining=0 ai=1 manual=0 game=169.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=20 remaining=0 ai=2 manual=0 game=170.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=21 remaining=0 ai=2 manual=0 game=170.93334960938",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=22 remaining=0 ai=3 manual=0 game=171.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=23 remaining=0 ai=4 manual=0 game=172.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=24 remaining=0 ai=5 manual=0 game=173.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=25 remaining=0 ai=6 manual=0 game=174.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=26 remaining=0 ai=7 manual=0 game=175.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=27 remaining=0 ai=7 manual=0 game=175.93334960938",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=28 remaining=0 ai=8 manual=0 game=176.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=29 remaining=0 ai=9 manual=0 game=177.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=30 remaining=0 ai=10 manual=0 game=178.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=31 remaining=0 ai=11 manual=0 game=179.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=32 remaining=0 ai=12 manual=0 game=180.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=33 remaining=0 ai=12 manual=0 game=181.0333404541",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=34 remaining=0 ai=13 manual=0 game=181.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=35 remaining=0 ai=14 manual=0 game=182.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=36 remaining=0 ai=15 manual=0 game=183.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=37 remaining=0 ai=16 manual=0 game=184.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=38 remaining=0 ai=17 manual=0 game=185.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=39 remaining=0 ai=17 manual=0 game=186.0666809082",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=40 remaining=0 ai=18 manual=0 game=186.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=41 remaining=0 ai=19 manual=0 game=187.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=42 remaining=0 ai=20 manual=0 game=188.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=43 remaining=0 ai=21 manual=0 game=189.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=44 remaining=0 ai=22 manual=0 game=190.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=45 remaining=0 ai=23 manual=0 game=191.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=46 remaining=0 ai=23 manual=0 game=191.20001220703",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=47 remaining=0 ai=24 manual=0 game=192.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=48 remaining=0 ai=25 manual=0 game=193.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=49 remaining=0 ai=26 manual=0 game=194.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=50 remaining=0 ai=27 manual=0 game=195.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=51 remaining=0 ai=28 manual=0 game=196.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=52 remaining=0 ai=28 manual=0 game=196.36668395996",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=53 remaining=0 ai=29 manual=0 game=197.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=54 remaining=0 ai=30 manual=0 game=198.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=55 remaining=0 ai=31 manual=0 game=199.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=56 remaining=0 ai=32 manual=0 game=200.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=57 remaining=0 ai=33 manual=0 game=201.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=58 remaining=0 ai=33 manual=0 game=201.40000915527",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=59 remaining=0 ai=34 manual=0 game=202.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=60 remaining=0 ai=35 manual=0 game=203.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=61 remaining=0 ai=36 manual=0 game=204.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=62 remaining=0 ai=37 manual=0 game=205.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=63 remaining=0 ai=38 manual=0 game=206.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=64 remaining=0 ai=38 manual=0 game=206.43334960938",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=65 remaining=0 ai=39 manual=0 game=207.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=66 remaining=0 ai=40 manual=0 game=208.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=67 remaining=0 ai=41 manual=0 game=209.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=68 remaining=0 ai=42 manual=0 game=210.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=69 remaining=0 ai=43 manual=0 game=211.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=70 remaining=0 ai=43 manual=0 game=211.5333404541",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=71 remaining=0 ai=44 manual=0 game=212.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=72 remaining=0 ai=45 manual=0 game=213.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=73 remaining=0 ai=46 manual=0 game=214.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=74 remaining=0 ai=47 manual=0 game=215.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=75 remaining=0 ai=48 manual=0 game=216.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=76 remaining=0 ai=48 manual=0 game=216.60000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=77 remaining=0 ai=49 manual=0 game=217.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=78 remaining=0 ai=50 manual=0 game=218.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=79 remaining=0 ai=51 manual=0 game=219.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=80 remaining=0 ai=52 manual=0 game=220.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=81 remaining=0 ai=53 manual=0 game=221.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=82 remaining=0 ai=53 manual=0 game=221.70001220703",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=83 remaining=0 ai=54 manual=0 game=222.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=84 remaining=0 ai=55 manual=0 game=223.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=85 remaining=0 ai=56 manual=0 game=224.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=86 remaining=0 ai=57 manual=0 game=225.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=87 remaining=0 ai=58 manual=0 game=226.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=88 remaining=0 ai=58 manual=0 game=226.80001831055",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=89 remaining=0 ai=59 manual=0 game=227.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=90 remaining=0 ai=60 manual=0 game=228.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=91 remaining=0 ai=61 manual=0 game=229.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=92 remaining=0 ai=62 manual=0 game=230.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=93 remaining=0 ai=63 manual=0 game=231.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=94 remaining=0 ai=63 manual=0 game=231.86668395996",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=95 remaining=0 ai=64 manual=0 game=232.13334655762",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=96 remaining=0 ai=65 manual=0 game=233.13334655762"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-r1-20261013-hashes.json"
+    },
+    {
+      "run": "r2",
+      "scope": "failed_ui_bridge_diagnostic",
+      "owned_pid": 27072,
+      "owned_start_time_utc": "2026-10-13T16:03:42.5004661Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [],
+      "captures": [],
+      "metrics": {},
+      "wire_alive_types": [
+        "int"
+      ],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=32.933334350586",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=36",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=37.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=4 remaining=0 ai=2 manual=0 game=37.966667175293",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=5 remaining=0 ai=3 manual=0 game=38.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=6 remaining=0 ai=4 manual=0 game=39.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=7 remaining=0 ai=5 manual=0 game=40.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=8 remaining=0 ai=6 manual=0 game=41.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=9 remaining=0 ai=7 manual=0 game=42.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=10 remaining=0 ai=7 manual=0 game=42.966667175293",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=11 remaining=0 ai=8 manual=0 game=43.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=12 remaining=0 ai=9 manual=0 game=44.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=13 remaining=0 ai=10 manual=0 game=45.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=14 remaining=0 ai=11 manual=0 game=46.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=15 remaining=0 ai=12 manual=0 game=47.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=16 remaining=0 ai=13 manual=0 game=48.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=17 remaining=0 ai=13 manual=0 game=48.033336639404",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=18 remaining=0 ai=14 manual=0 game=49.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=19 remaining=0 ai=15 manual=0 game=50.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=20 remaining=0 ai=16 manual=0 game=51.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=21 remaining=0 ai=17 manual=0 game=52.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=22 remaining=0 ai=18 manual=0 game=53.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=23 remaining=0 ai=18 manual=0 game=53.100002288818",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=24 remaining=0 ai=19 manual=0 game=54.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=25 remaining=0 ai=20 manual=0 game=55.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=26 remaining=0 ai=21 manual=0 game=56.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=27 remaining=0 ai=22 manual=0 game=57.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=28 remaining=0 ai=23 manual=0 game=58.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=29 remaining=0 ai=23 manual=0 game=58.133335113525",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=30 remaining=0 ai=24 manual=0 game=59.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=31 remaining=0 ai=25 manual=0 game=60.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=32 remaining=0 ai=26 manual=0 game=61.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=33 remaining=0 ai=27 manual=0 game=62.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=34 remaining=0 ai=28 manual=0 game=63.000003814697",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=35 remaining=0 ai=28 manual=0 game=63.16667175293",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=36 remaining=0 ai=29 manual=0 game=64.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=37 remaining=0 ai=30 manual=0 game=65.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=38 remaining=0 ai=31 manual=0 game=66.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=39 remaining=0 ai=32 manual=0 game=67.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=40 remaining=0 ai=33 manual=0 game=68.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=41 remaining=0 ai=33 manual=0 game=68.16667175293",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=42 remaining=0 ai=34 manual=0 game=69.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=43 remaining=0 ai=35 manual=0 game=70.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=44 remaining=0 ai=36 manual=0 game=71.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=45 remaining=0 ai=37 manual=0 game=72.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=46 remaining=0 ai=38 manual=0 game=73.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=47 remaining=0 ai=38 manual=0 game=73.266670227051",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=48 remaining=0 ai=39 manual=0 game=74.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=49 remaining=0 ai=40 manual=0 game=75.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=50 remaining=0 ai=41 manual=0 game=76.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=51 remaining=0 ai=42 manual=0 game=77.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=52 remaining=0 ai=43 manual=0 game=78.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=53 remaining=0 ai=43 manual=0 game=78.300003051758",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=54 remaining=0 ai=44 manual=0 game=79.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=55 remaining=0 ai=45 manual=0 game=80.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=56 remaining=0 ai=46 manual=0 game=81.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=57 remaining=0 ai=47 manual=0 game=82.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=58 remaining=0 ai=48 manual=0 game=83.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=59 remaining=0 ai=48 manual=0 game=83.366668701172",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=60 remaining=0 ai=49 manual=0 game=84.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=61 remaining=0 ai=50 manual=0 game=85.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=62 remaining=0 ai=51 manual=0 game=86.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=63 remaining=0 ai=52 manual=0 game=87.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=64 remaining=0 ai=53 manual=0 game=88.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=65 remaining=0 ai=53 manual=0 game=88.433334350586",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=66 remaining=0 ai=54 manual=0 game=89.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=67 remaining=0 ai=55 manual=0 game=90.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=68 remaining=0 ai=56 manual=0 game=91.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=69 remaining=0 ai=57 manual=0 game=92.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=70 remaining=0 ai=58 manual=0 game=93.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=71 remaining=0 ai=58 manual=0 game=93.633338928223",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=72 remaining=0 ai=59 manual=0 game=94.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=73 remaining=0 ai=60 manual=0 game=95.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=74 remaining=0 ai=61 manual=0 game=96.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=75 remaining=0 ai=62 manual=0 game=97.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=76 remaining=0 ai=63 manual=0 game=98.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=77 remaining=0 ai=63 manual=0 game=98.800003051758",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=78 remaining=0 ai=64 manual=0 game=99.100006103516",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=79 remaining=0 ai=65 manual=0 game=100.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=80 remaining=0 ai=66 manual=0 game=101.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=81 remaining=0 ai=67 manual=0 game=102.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=82 remaining=0 ai=68 manual=0 game=103.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=83 remaining=0 ai=68 manual=0 game=103.83333587646",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=84 remaining=0 ai=69 manual=0 game=104.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=85 remaining=0 ai=70 manual=0 game=105.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=86 remaining=0 ai=71 manual=0 game=106.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=87 remaining=0 ai=72 manual=0 game=107.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=88 remaining=0 ai=73 manual=0 game=108.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=89 remaining=0 ai=73 manual=0 game=108.93334197998",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=90 remaining=0 ai=74 manual=0 game=109.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=91 remaining=0 ai=75 manual=0 game=110.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=92 remaining=0 ai=76 manual=0 game=111.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=93 remaining=0 ai=77 manual=0 game=112.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=94 remaining=0 ai=78 manual=0 game=113.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=95 remaining=0 ai=78 manual=0 game=113.96667480469",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=96 remaining=0 ai=79 manual=0 game=114.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=97 remaining=0 ai=80 manual=0 game=115.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=98 remaining=0 ai=81 manual=0 game=116.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=99 remaining=0 ai=82 manual=0 game=117.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=100 remaining=0 ai=83 manual=0 game=118.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=101 remaining=0 ai=83 manual=0 game=119.06667327881",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=102 remaining=0 ai=84 manual=0 game=119.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=103 remaining=0 ai=85 manual=0 game=120.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=104 remaining=0 ai=86 manual=0 game=121.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=105 remaining=0 ai=87 manual=0 game=122.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=106 remaining=0 ai=88 manual=0 game=123.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=107 remaining=0 ai=89 manual=0 game=124.10000610352",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=108 remaining=0 ai=89 manual=0 game=124.20000457764"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-r2-20261013-hashes.json"
+    },
+    {
+      "run": "r3",
+      "scope": "full_programmatic_native_cycle",
+      "owned_pid": 27864,
+      "owned_start_time_utc": "2026-10-13T16:08:06.2082616Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 0,
+            "revision": 2,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 1,
+            "manual_order_count": 0,
+            "server_time": 41.63333511352539,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            -89.84002685546875,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 1,
+              "request_id": "mmv6vlohr-k9p4pg-1",
+              "request_status": "accepted",
+              "transition": "state",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:09:02",
+          "logged_at_utc": "2026-10-13T16:09:02+00:00"
+        },
+        {
+          "phase": "granted",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "MANUAL",
+            "transition": "granted",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 13,
+            "request_status": "accepted",
+            "remaining": 5,
+            "ai_order_count": 11,
+            "manual_order_count": 0,
+            "server_time": 51.80000305175781,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "mmv6vlohr-k9p4pg-2",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            -90.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 1,
+              "request_id": "mmv6vlohr-k9p4pg-1",
+              "request_status": "accepted",
+              "transition": "state",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 3,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 4,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 5,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 6,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 7,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 8,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 9,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 10,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 11,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 12,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6vlohr-k9p4pg-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:09:12",
+          "logged_at_utc": "2026-10-13T16:09:12+00:00"
+        },
+        {
+          "phase": "move_sent",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "MANUAL",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 15,
+            "request_status": "none",
+            "remaining": 3.166667938232422,
+            "ai_order_count": 11,
+            "manual_order_count": 0,
+            "server_time": 53.63333511352539,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            -90.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 1,
+              "request_id": "mmv6vlohr-k9p4pg-1",
+              "request_status": "accepted",
+              "transition": "state",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 3,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 4,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 5,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 6,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 7,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 8,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 9,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 10,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 11,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 12,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6vlohr-k9p4pg-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 14,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 15,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:09:14",
+          "logged_at_utc": "2026-10-13T16:09:14+00:00"
+        },
+        {
+          "phase": "move_issued",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "MANUAL",
+            "transition": "move_issued",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 16,
+            "request_status": "accepted",
+            "remaining": 3.0666656494140625,
+            "ai_order_count": 11,
+            "manual_order_count": 1,
+            "server_time": 53.73333740234375,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "mmv6vlohr-k9p4pg-3",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            -79.25617980957031,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 1,
+              "request_id": "mmv6vlohr-k9p4pg-1",
+              "request_status": "accepted",
+              "transition": "state",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 3,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 4,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 5,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 6,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 7,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 8,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 9,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 10,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 11,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 12,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6vlohr-k9p4pg-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 14,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 15,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6vlohr-k9p4pg-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:09:14",
+          "logged_at_utc": "2026-10-13T16:09:14+00:00"
+        },
+        {
+          "phase": "moving",
+          "pass": true,
+          "details": {
+            "distanceXY": 327.6905975341797
+          },
+          "snapshot": {
+            "mode": "MANUAL",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 17,
+            "request_status": "none",
+            "remaining": 2.166667938232422,
+            "ai_order_count": 11,
+            "manual_order_count": 1,
+            "server_time": 54.63333511352539,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            237.1905975341797,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 1,
+              "request_id": "mmv6vlohr-k9p4pg-1",
+              "request_status": "accepted",
+              "transition": "state",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 3,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 4,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 5,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 6,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 7,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 8,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 9,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 10,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 11,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 12,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6vlohr-k9p4pg-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 14,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 15,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6vlohr-k9p4pg-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 17,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:09:15",
+          "logged_at_utc": "2026-10-13T16:09:15+00:00"
+        },
+        {
+          "phase": "returned",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 2,
+            "revision": 21,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 12,
+            "manual_order_count": 1,
+            "server_time": 56.833335876464844,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            881.96484375,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 1,
+              "request_id": "mmv6vlohr-k9p4pg-1",
+              "request_status": "accepted",
+              "transition": "state",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 3,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 4,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 5,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 6,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 7,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 8,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 9,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 10,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 11,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 12,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6vlohr-k9p4pg-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 14,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 15,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6vlohr-k9p4pg-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 17,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 18,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 19,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:09:17",
+          "logged_at_utc": "2026-10-13T16:09:17+00:00"
+        },
+        {
+          "phase": "cancelled_return",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 4,
+            "revision": 34,
+            "request_status": "accepted",
+            "remaining": 0,
+            "ai_order_count": 23,
+            "manual_order_count": 1,
+            "server_time": 66.96666717529297,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "mmv6vlohr-k9p4pg-5",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            1205.404296875,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 5,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 6,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 7,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 8,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 9,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 10,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 11,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 12,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6vlohr-k9p4pg-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 14,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 15,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6vlohr-k9p4pg-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 17,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 18,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 19,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 22,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 23,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 24,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 25,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 26,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 27,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 28,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 29,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 30,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 31,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 32,
+              "request_id": "mmv6vlohr-k9p4pg-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6vlohr-k9p4pg-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6vlohr-k9p4pg-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:09:27",
+          "logged_at_utc": "2026-10-13T16:09:27+00:00"
+        },
+        {
+          "phase": "arrived_return",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 6,
+            "revision": 48,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 34,
+            "manual_order_count": 2,
+            "server_time": 77.23333740234375,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            1222.6468505859375,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 19,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 22,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 23,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 24,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 25,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 26,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 27,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 28,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 29,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 30,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 31,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 32,
+              "request_id": "mmv6vlohr-k9p4pg-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6vlohr-k9p4pg-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6vlohr-k9p4pg-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 35,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 36,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 37,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 38,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 39,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 40,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 41,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 42,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 43,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 44,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 45,
+              "request_id": "mmv6vlohr-k9p4pg-6",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 46,
+              "request_id": "mmv6vlohr-k9p4pg-7",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 47,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "arrived",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 48,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:09:37",
+          "logged_at_utc": "2026-10-13T16:09:37+00:00"
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "AI",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 6,
+            "revision": 58,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 44,
+            "manual_order_count": 2,
+            "server_time": 87.23333740234375,
+            "alive": true,
+            "protocol_version": 1,
+            "session_id": "native_38633_1285997256",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "reason": "none",
+            "generation": 1
+          },
+          "origin": [
+            1522.97607421875,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 29,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 30,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 31,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 32,
+              "request_id": "mmv6vlohr-k9p4pg-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6vlohr-k9p4pg-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6vlohr-k9p4pg-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 35,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 36,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 37,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 38,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 39,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 40,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 41,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 42,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 43,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 44,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 45,
+              "request_id": "mmv6vlohr-k9p4pg-6",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 46,
+              "request_id": "mmv6vlohr-k9p4pg-7",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 47,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "arrived",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 48,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 49,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 50,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 51,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 52,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 53,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 54,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 55,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 56,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 57,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 58,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "state",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:09:47",
+          "logged_at_utc": "2026-10-13T16:09:47+00:00"
+        }
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T16:09:03.189Z",
+          "engine_tga": "shot_0141.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-bound-2026-10-13.png",
+          "sha256": "50f04cb490a0dbcd084e92c6e2d8dedee6feb2492841f4960f116bd8c42e3bf0",
+          "bytes": 1133508,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "bound",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "granted",
+          "pass": true,
+          "utc": "2026-10-13T16:09:13.143Z",
+          "engine_tga": "shot_0142.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-granted-2026-10-13.png",
+          "sha256": "2209fe1dbe6d24676b33d573cbf90ffa73e3ee75ecbde312432a16ad6fa2f63a",
+          "bytes": 1122112,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "granted",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "move_issued",
+          "pass": true,
+          "utc": "2026-10-13T16:09:15.784Z",
+          "engine_tga": "shot_0143.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-move_issued-2026-10-13.png",
+          "sha256": "25c56b82b4496f0f7a1d681ebbcdb51273ba80f52db52d019f58e4631dfd0a22",
+          "bytes": 1099065,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "moving",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "moving",
+          "pass": true,
+          "utc": "2026-10-13T16:09:18.307Z",
+          "engine_tga": "shot_0144.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-moving-2026-10-13.png",
+          "sha256": "c45be64fd95710fd825e95dfc6162ee3055212c0014879b7d21736d5b4412ef7",
+          "bytes": 993505,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "returned",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "returned",
+          "pass": true,
+          "utc": "2026-10-13T16:09:20.801Z",
+          "engine_tga": "shot_0145.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-returned-2026-10-13.png",
+          "sha256": "8860018387d1be50d23ae32f5f5f1ff7549fa6aed9650573f4dcdc462ab41043",
+          "bytes": 974198,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "returned",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "cancelled_return",
+          "pass": true,
+          "utc": "2026-10-13T16:09:28.354Z",
+          "engine_tga": "shot_0146.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-cancelled_return-2026-10-13.png",
+          "sha256": "2e427cd1f70a906834880df318d5a28f884f12e3a5b05508132dcecb1fbc7e32",
+          "bytes": 873520,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "cancelled_return",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "arrived_return",
+          "pass": true,
+          "utc": "2026-10-13T16:09:38.465Z",
+          "engine_tga": "shot_0147.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-arrived_return-2026-10-13.png",
+          "sha256": "9c57e46dcd63faffb983cbd3278094e17ba69847d338566befa3ea0393ac5865",
+          "bytes": 1068968,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "arrived_return",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "utc": "2026-10-13T16:09:48.541Z",
+          "engine_tga": "shot_0148.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r3-disposed-2026-10-13.png",
+          "sha256": "328139d6829222b64994a4a2d5aa8f9e07f72635414a3ef676215a3dfd19640c",
+          "bytes": 1060603,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "disposed",
+          "atomic_phase_frame_match_claimed": false
+        }
+      ],
+      "metrics": {
+        "grant_seconds": 5,
+        "observed_expiry_elapsed_game_seconds": 5.033332824707031,
+        "manual_movement_distance_xy": 327.6905975341797,
+        "post_return_actual_origins": [
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 885.99810791016,
+            "origin_y": -64.0,
+            "game_time": 56.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 885.99810791016,
+            "origin_y": -64.0,
+            "game_time": 57.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1185.998046875,
+            "origin_y": -64.0,
+            "game_time": 58.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 902.49719238281,
+            "origin_y": -64.0,
+            "game_time": 59.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1185.998046875,
+            "origin_y": -64.0,
+            "game_time": 60.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 902.49719238281,
+            "origin_y": -64.0,
+            "game_time": 61.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1185.998046875,
+            "origin_y": -64.0,
+            "game_time": 62.833335876465
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 902.49719238281,
+            "origin_y": -64.0,
+            "game_time": 63.833335876465
+          }
+        ]
+      },
+      "wire_alive_types": [
+        "int"
+      ],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=38.633335113525",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=41.633335113525",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=42.633335113525"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-r3-20261013-hashes.json"
+    },
+    {
+      "run": "r6",
+      "scope": "full_programmatic_native_cycle",
+      "owned_pid": 31284,
+      "owned_start_time_utc": "2026-10-13T16:28:04.4523260Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "AI",
+            "request_id": "",
+            "transition": "ai_resumed",
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 1,
+            "revision": 2,
+            "epoch": 0,
+            "manual_order_count": 0,
+            "server_time": 42.73333740234375
+          },
+          "origin": [
+            -104.43928527832031,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:29:01",
+          "logged_at_utc": "2026-10-13T16:29:01+00:00"
+        },
+        {
+          "phase": "granted",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "MANUAL",
+            "request_id": "mmv6wbdon-uvdcf4-2",
+            "transition": "granted",
+            "protocol_version": 1,
+            "request_status": "accepted",
+            "remaining": 5,
+            "ai_order_count": 11,
+            "revision": 13,
+            "epoch": 1,
+            "manual_order_count": 0,
+            "server_time": 52.866668701171875
+          },
+          "origin": [
+            -101,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:29:11",
+          "logged_at_utc": "2026-10-13T16:29:11+00:00"
+        },
+        {
+          "phase": "move_sent",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "MANUAL",
+            "request_id": "",
+            "transition": "state",
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 3.133331298828125,
+            "ai_order_count": 11,
+            "revision": 15,
+            "epoch": 1,
+            "manual_order_count": 0,
+            "server_time": 54.73333740234375
+          },
+          "origin": [
+            -101,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:29:13",
+          "logged_at_utc": "2026-10-13T16:29:13+00:00"
+        },
+        {
+          "phase": "move_issued",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "MANUAL",
+            "request_id": "mmv6wbdon-uvdcf4-3",
+            "transition": "move_issued",
+            "protocol_version": 1,
+            "request_status": "accepted",
+            "remaining": 3.0999984741210938,
+            "ai_order_count": 11,
+            "revision": 16,
+            "epoch": 1,
+            "manual_order_count": 1,
+            "server_time": 54.76667022705078
+          },
+          "origin": [
+            -81.07186889648438,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6wbdon-uvdcf4-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:29:13",
+          "logged_at_utc": "2026-10-13T16:29:13+00:00"
+        },
+        {
+          "phase": "moving",
+          "pass": true,
+          "details": {
+            "distanceXY": 336.1429901123047
+          },
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "MANUAL",
+            "request_id": "",
+            "transition": "state",
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 2.133331298828125,
+            "ai_order_count": 11,
+            "revision": 17,
+            "epoch": 1,
+            "manual_order_count": 1,
+            "server_time": 55.73333740234375
+          },
+          "origin": [
+            235.1429901123047,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6wbdon-uvdcf4-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 18:29:14",
+          "logged_at_utc": "2026-10-13T16:29:14+00:00"
+        },
+        {
+          "phase": "returned",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "AI",
+            "request_id": "",
+            "transition": "ai_resumed",
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 12,
+            "revision": 21,
+            "epoch": 2,
+            "manual_order_count": 1,
+            "server_time": 57.9333381652832
+          },
+          "origin": [
+            896.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6wbdon-uvdcf4-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:29:16",
+          "logged_at_utc": "2026-10-13T16:29:16+00:00"
+        },
+        {
+          "phase": "cancelled_return",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "AI",
+            "request_id": "mmv6wbdon-uvdcf4-5",
+            "transition": "ai_resumed",
+            "protocol_version": 1,
+            "request_status": "accepted",
+            "remaining": 0,
+            "ai_order_count": 22,
+            "revision": 34,
+            "epoch": 4,
+            "manual_order_count": 1,
+            "server_time": 68.13333892822266
+          },
+          "origin": [
+            1180,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6wbdon-uvdcf4-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 31,
+              "request_id": "mmv6wbdon-uvdcf4-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6wbdon-uvdcf4-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6wbdon-uvdcf4-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:29:26",
+          "logged_at_utc": "2026-10-13T16:29:26+00:00"
+        },
+        {
+          "phase": "arrived_return",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "AI",
+            "request_id": "",
+            "transition": "ai_resumed",
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 33,
+            "revision": 48,
+            "epoch": 6,
+            "manual_order_count": 2,
+            "server_time": 78.33333587646484
+          },
+          "origin": [
+            1190.5504150390625,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6wbdon-uvdcf4-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 31,
+              "request_id": "mmv6wbdon-uvdcf4-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6wbdon-uvdcf4-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6wbdon-uvdcf4-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 45,
+              "request_id": "mmv6wbdon-uvdcf4-6",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 46,
+              "request_id": "mmv6wbdon-uvdcf4-7",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 47,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "arrived",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 48,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:29:37",
+          "logged_at_utc": "2026-10-13T16:29:37+00:00"
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_39633_529891957",
+            "actor_id": "TEST_synthetic_1",
+            "reason": "none",
+            "generation": 1,
+            "alive": true,
+            "entity_index": 123,
+            "mode": "AI",
+            "request_id": "",
+            "transition": "state",
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 43,
+            "revision": 58,
+            "epoch": 6,
+            "manual_order_count": 2,
+            "server_time": 88.33333587646484
+          },
+          "origin": [
+            1196.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6wbdon-uvdcf4-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6wbdon-uvdcf4-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 31,
+              "request_id": "mmv6wbdon-uvdcf4-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6wbdon-uvdcf4-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6wbdon-uvdcf4-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 45,
+              "request_id": "mmv6wbdon-uvdcf4-6",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 46,
+              "request_id": "mmv6wbdon-uvdcf4-7",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 47,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "arrived",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 48,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:29:47",
+          "logged_at_utc": "2026-10-13T16:29:47+00:00"
+        }
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T16:29:02.099Z",
+          "engine_tga": "shot_0149.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-bound-2026-10-13.png",
+          "sha256": "2cbbdd61d0eab3e71a8ae19fe96999fee96e3ef141877990b7d2e22311cd2459",
+          "bytes": 1130172,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "bound",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "granted",
+          "pass": true,
+          "utc": "2026-10-13T16:29:12.304Z",
+          "engine_tga": "shot_0150.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-granted-2026-10-13.png",
+          "sha256": "a470bdc44c89804dc52637ae21ab01b5f36dee327d998f96c3ac99ce758f12c8",
+          "bytes": 1125827,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "granted",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "move_issued",
+          "pass": true,
+          "utc": "2026-10-13T16:29:14.804Z",
+          "engine_tga": "shot_0151.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-move_issued-2026-10-13.png",
+          "sha256": "e15a8feb09183c81556a3b6f06b8410762c4b9409acc5cb696404fce9dad45b6",
+          "bytes": 1110425,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "moving",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "moving",
+          "pass": true,
+          "utc": "2026-10-13T16:29:17.326Z",
+          "engine_tga": "shot_0152.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-moving-2026-10-13.png",
+          "sha256": "c13ca6766bc49ee67798f32358275d3475607772a662da203d634948b98110f5",
+          "bytes": 985150,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "returned",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "returned",
+          "pass": true,
+          "utc": "2026-10-13T16:29:19.794Z",
+          "engine_tga": "shot_0153.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-returned-2026-10-13.png",
+          "sha256": "b5eed88dfe3ac95faff879932be1d052614c9a3279470a7858fc8e2db2ce1924",
+          "bytes": 983645,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "returned",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "cancelled_return",
+          "pass": true,
+          "utc": "2026-10-13T16:29:27.691Z",
+          "engine_tga": "shot_0154.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-cancelled_return-2026-10-13.png",
+          "sha256": "b16ce9e43b270c2f7231969ca95874f66cbbb776f135651cba9f20258c3d7a7d",
+          "bytes": 968724,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "cancelled_return",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "arrived_return",
+          "pass": true,
+          "utc": "2026-10-13T16:29:37.817Z",
+          "engine_tga": "shot_0155.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-arrived_return-2026-10-13.png",
+          "sha256": "402b1b1e5f642002d9d041fce99da240cc8fe94114c9728cebc344bb70a7af37",
+          "bytes": 872190,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "arrived_return",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "utc": "2026-10-13T16:29:47.687Z",
+          "engine_tga": "shot_0156.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r6-disposed-2026-10-13.png",
+          "sha256": "f2e55bbbe15e7ff10ab310a79483c63d4d2f871bb4b4f1f1704e276ef6888768",
+          "bytes": 882091,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "disposed",
+          "atomic_phase_frame_match_claimed": false
+        }
+      ],
+      "metrics": {
+        "grant_seconds": 5,
+        "observed_expiry_elapsed_game_seconds": 5.066669464111328,
+        "manual_movement_distance_xy": 336.1429901123047,
+        "post_return_actual_origins": [
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 896.49914550781,
+            "origin_y": -64.0,
+            "game_time": 58.933338165283
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1196.4991455078,
+            "origin_y": -64.0,
+            "game_time": 59.933338165283
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 912.99945068359,
+            "origin_y": -64.0,
+            "game_time": 60.933338165283
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1196.4991455078,
+            "origin_y": -64.0,
+            "game_time": 61.933338165283
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 912.99945068359,
+            "origin_y": -64.0,
+            "game_time": 62.933338165283
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1196.4991455078,
+            "origin_y": -64.0,
+            "game_time": 63.933338165283
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 896.49914550781,
+            "origin_y": -64.0,
+            "game_time": 65.033340454102
+          }
+        ]
+      },
+      "wire_alive_types": [
+        "int"
+      ],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=39.633335113525",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=42.733337402344",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=43.733337402344"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-r6-20261013-hashes.json"
+    },
+    {
+      "run": "r7",
+      "scope": "short_world_api_probe",
+      "owned_pid": 26636,
+      "owned_start_time_utc": "2026-10-13T16:44:25.6606098Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "mode": "AI",
+            "alive": true,
+            "transition": "ai_resumed",
+            "epoch": 0,
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 1,
+            "reason": "none",
+            "manual_order_count": 0,
+            "server_time": 21.533334732055664,
+            "generation": 1,
+            "actor_id": "TEST_synthetic_1",
+            "session_id": "native_18500_1780875980",
+            "revision": 2,
+            "request_id": "",
+            "entity_index": 123
+          },
+          "origin": [
+            -90.77086639404297,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:45:02",
+          "logged_at_utc": "2026-10-13T16:45:02+00:00"
+        },
+        {
+          "phase": "world_point",
+          "pass": true,
+          "details": {
+            "screen": [
+              640,
+              360
+            ],
+            "world": [
+              -128,
+              -137.90081787109375,
+              128
+            ],
+            "inputInjected": false
+          },
+          "snapshot": {
+            "mode": "AI",
+            "alive": true,
+            "transition": "state",
+            "epoch": 0,
+            "protocol_version": 1,
+            "request_status": "none",
+            "remaining": 0,
+            "ai_order_count": 3,
+            "reason": "none",
+            "manual_order_count": 0,
+            "server_time": 23.533334732055664,
+            "generation": 1,
+            "actor_id": "TEST_synthetic_1",
+            "session_id": "native_18500_1780875980",
+            "revision": 4,
+            "request_id": "",
+            "entity_index": 123
+          },
+          "origin": [
+            -104.17877960205078,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 18:45:04",
+          "logged_at_utc": "2026-10-13T16:45:04+00:00"
+        }
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T16:45:03.421Z",
+          "engine_tga": "shot_0158.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r7-bound-2026-10-13.png",
+          "sha256": "c9cd343f510412fd98c1b84d37ff67182c20d7bc2dbaee10bb2ac1ab276630d6",
+          "bytes": 1110068,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "bound",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "world_point",
+          "pass": true,
+          "utc": "2026-10-13T16:45:05.903Z",
+          "engine_tga": "shot_0159.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r7-world_point-2026-10-13.png",
+          "sha256": "65cfeb4979bb1b6a88c264c0db67cad654e9e3f27c0f5109d13f784f7997e922",
+          "bytes": 1112651,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "world_point",
+          "atomic_phase_frame_match_claimed": false
+        }
+      ],
+      "metrics": {},
+      "wire_alive_types": [
+        "int"
+      ],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=18.500001907349",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=21.533334732056",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=22.533334732056"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-r7-20261013-hashes.json"
+    },
+    {
+      "run": "ui-20261013t163206799",
+      "scope": "normal_bundle_startup",
+      "owned_pid": 23260,
+      "owned_start_time_utc": "2026-10-13T16:32:06.9076084Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [],
+      "captures": [
+        {
+          "phase": "ready",
+          "pass": true,
+          "utc": "2026-10-13T16:32:44.210Z",
+          "engine_tga": "shot_0157.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-ui-20261013t163206799-ready-2026-10-13.png",
+          "sha256": "8e9d3beff363364e8c8293072156979b8625fe46ad011ed5ef573e4cc1b36b50",
+          "bytes": 1106128,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": null,
+          "atomic_phase_frame_match_claimed": false
+        }
+      ],
+      "metrics": {},
+      "wire_alive_types": [],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=16.933334350586",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=19.933334350586",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=20.933334350586"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-final-20261013-hashes.json"
+    },
+    {
+      "run": "r8",
+      "scope": "full_programmatic_cycle_current_core",
+      "owned_pid": 27556,
+      "owned_start_time_utc": "2026-10-13T17:43:11.7650533Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 0,
+            "revision": 2,
+            "remaining": 0,
+            "ai_order_count": 1,
+            "manual_order_count": 0,
+            "server_time": 17.600000381469727,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            -72.60419464111328,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 19:43:56",
+          "logged_at_utc": "2026-10-13T17:43:56+00:00"
+        },
+        {
+          "phase": "world_point",
+          "pass": true,
+          "details": {
+            "screen": [
+              640,
+              360
+            ],
+            "world": [
+              -128,
+              -137.90081787109375,
+              128
+            ],
+            "inputInjected": false
+          },
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "AI",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 0,
+            "revision": 4,
+            "remaining": 0,
+            "ai_order_count": 3,
+            "manual_order_count": 0,
+            "server_time": 19.600000381469727,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            -86.3028793334961,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 19:43:58",
+          "logged_at_utc": "2026-10-13T17:43:58+00:00"
+        },
+        {
+          "phase": "granted",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "mmv6yzpql-50ihjo-2",
+            "generation": 1,
+            "request_status": "accepted",
+            "reason": "none",
+            "mode": "MANUAL",
+            "transition": "granted",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 13,
+            "remaining": 5,
+            "ai_order_count": 11,
+            "manual_order_count": 0,
+            "server_time": 27.83333396911621,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            -69.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 19:44:06",
+          "logged_at_utc": "2026-10-13T17:44:06+00:00"
+        },
+        {
+          "phase": "move_sent",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "MANUAL",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 15,
+            "remaining": 3.2333316802978516,
+            "ai_order_count": 11,
+            "manual_order_count": 0,
+            "server_time": 29.60000228881836,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            -69.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 19:44:08",
+          "logged_at_utc": "2026-10-13T17:44:08+00:00"
+        },
+        {
+          "phase": "move_issued",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "mmv6yzpql-50ihjo-3",
+            "generation": 1,
+            "request_status": "accepted",
+            "reason": "none",
+            "mode": "MANUAL",
+            "transition": "move_issued",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 16,
+            "remaining": 3.0666656494140625,
+            "ai_order_count": 11,
+            "manual_order_count": 1,
+            "server_time": 29.76666831970215,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            -43.046321868896484,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6yzpql-50ihjo-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 19:44:08",
+          "logged_at_utc": "2026-10-13T17:44:08+00:00"
+        },
+        {
+          "phase": "moving",
+          "pass": true,
+          "details": {
+            "distanceXY": 342.3822021484375
+          },
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "MANUAL",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 1,
+            "revision": 17,
+            "remaining": 2.2333316802978516,
+            "ai_order_count": 11,
+            "manual_order_count": 1,
+            "server_time": 30.60000228881836,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            272.8822021484375,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6yzpql-50ihjo-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            }
+          ],
+          "console_local_time": "10/13 19:44:09",
+          "logged_at_utc": "2026-10-13T17:44:09+00:00"
+        },
+        {
+          "phase": "returned",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 2,
+            "revision": 21,
+            "remaining": 0,
+            "ai_order_count": 12,
+            "manual_order_count": 1,
+            "server_time": 32.900001525878906,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            917.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6yzpql-50ihjo-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 19:44:11",
+          "logged_at_utc": "2026-10-13T17:44:11+00:00"
+        },
+        {
+          "phase": "cancelled_return",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "mmv6yzpql-50ihjo-5",
+            "generation": 1,
+            "request_status": "accepted",
+            "reason": "none",
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 4,
+            "revision": 34,
+            "remaining": 0,
+            "ai_order_count": 23,
+            "manual_order_count": 1,
+            "server_time": 43.13333511352539,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            1217.9986572265625,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6yzpql-50ihjo-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 32,
+              "request_id": "mmv6yzpql-50ihjo-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6yzpql-50ihjo-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6yzpql-50ihjo-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 19:44:21",
+          "logged_at_utc": "2026-10-13T17:44:21+00:00"
+        },
+        {
+          "phase": "arrived_return",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "AI",
+            "transition": "ai_resumed",
+            "entity_index": 123,
+            "epoch": 6,
+            "revision": 48,
+            "remaining": 0,
+            "ai_order_count": 34,
+            "manual_order_count": 2,
+            "server_time": 53.400001525878906,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            1244.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6yzpql-50ihjo-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 32,
+              "request_id": "mmv6yzpql-50ihjo-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6yzpql-50ihjo-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6yzpql-50ihjo-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 45,
+              "request_id": "mmv6yzpql-50ihjo-6",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 46,
+              "request_id": "mmv6yzpql-50ihjo-7",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 47,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "arrived",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 48,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 19:44:31",
+          "logged_at_utc": "2026-10-13T17:44:31+00:00"
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "details": {},
+          "snapshot": {
+            "session_id": "native_14533_577480931",
+            "actor_id": "TEST_synthetic_1",
+            "request_id": "",
+            "generation": 1,
+            "request_status": "none",
+            "reason": "none",
+            "mode": "AI",
+            "transition": "state",
+            "entity_index": 123,
+            "epoch": 6,
+            "revision": 58,
+            "remaining": 0,
+            "ai_order_count": 44,
+            "manual_order_count": 2,
+            "server_time": 63.400001525878906,
+            "protocol_version": 1,
+            "alive": true
+          },
+          "origin": [
+            1544.5,
+            -64,
+            128
+          ],
+          "history": [
+            {
+              "revision": 2,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 13,
+              "request_id": "mmv6yzpql-50ihjo-2",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 16,
+              "request_id": "mmv6yzpql-50ihjo-3",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 20,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "expired",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 21,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 32,
+              "request_id": "mmv6yzpql-50ihjo-4",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 33,
+              "request_id": "mmv6yzpql-50ihjo-5",
+              "request_status": "accepted",
+              "transition": "cancelled",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 34,
+              "request_id": "mmv6yzpql-50ihjo-5",
+              "request_status": "accepted",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            },
+            {
+              "revision": 45,
+              "request_id": "mmv6yzpql-50ihjo-6",
+              "request_status": "accepted",
+              "transition": "granted",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 46,
+              "request_id": "mmv6yzpql-50ihjo-7",
+              "request_status": "accepted",
+              "transition": "move_issued",
+              "reason": "none",
+              "mode": "MANUAL"
+            },
+            {
+              "revision": 47,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "arrived",
+              "reason": "none",
+              "mode": "INACTIVE"
+            },
+            {
+              "revision": 48,
+              "request_id": "",
+              "request_status": "none",
+              "transition": "ai_resumed",
+              "reason": "none",
+              "mode": "AI"
+            }
+          ],
+          "console_local_time": "10/13 19:44:41",
+          "logged_at_utc": "2026-10-13T17:44:41+00:00"
+        }
+      ],
+      "captures": [
+        {
+          "phase": "bound",
+          "pass": true,
+          "utc": "2026-10-13T17:43:56.971Z",
+          "engine_tga": "shot_0160.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-bound-2026-10-13.png",
+          "sha256": "6ecb7ce1148cf81fe3571bbf4da565ef3919477840e96ea6a9fbdb09f64e3a11",
+          "bytes": 1129349,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "bound",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "granted",
+          "pass": true,
+          "utc": "2026-10-13T17:44:06.956Z",
+          "engine_tga": "shot_0161.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-granted-2026-10-13.png",
+          "sha256": "18c98d38b8670d204c695166f76a527c17abca276e0a1e434ef50bfd61646691",
+          "bytes": 1126690,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "granted",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "move_issued",
+          "pass": true,
+          "utc": "2026-10-13T17:44:09.439Z",
+          "engine_tga": "shot_0162.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-move_issued-2026-10-13.png",
+          "sha256": "347e5cf12b43935319289771c300bd7025d90372ea85928e504ede56f11deefb",
+          "bytes": 1110337,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "moving",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "moving",
+          "pass": true,
+          "utc": "2026-10-13T17:44:11.882Z",
+          "engine_tga": "shot_0163.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-moving-2026-10-13.png",
+          "sha256": "b7bdd6a5578b1a466039fb13311eaa9a3f88000b4fd14f2bf3d499a3f4368b21",
+          "bytes": 979690,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "returned",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "returned",
+          "pass": true,
+          "utc": "2026-10-13T17:44:14.415Z",
+          "engine_tga": "shot_0164.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-returned-2026-10-13.png",
+          "sha256": "89173f9f4648de43e61b5a63ca6d7d49221f93f22095543192b6f604120452cc",
+          "bytes": 978192,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "returned",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "cancelled_return",
+          "pass": true,
+          "utc": "2026-10-13T17:44:22.262Z",
+          "engine_tga": "shot_0165.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-cancelled_return-2026-10-13.png",
+          "sha256": "84c94825be7d57aaa6c999e688d4b782c1b7361e6960aca8686f5043c80b3132",
+          "bytes": 870750,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "cancelled_return",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "arrived_return",
+          "pass": true,
+          "utc": "2026-10-13T17:44:32.529Z",
+          "engine_tga": "shot_0166.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-arrived_return-2026-10-13.png",
+          "sha256": "87e147820a9cbac9e1c710024c51e421f9b8ac49be74eed3d9665586740c967c",
+          "bytes": 900590,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "arrived_return",
+          "atomic_phase_frame_match_claimed": false
+        },
+        {
+          "phase": "disposed",
+          "pass": true,
+          "utc": "2026-10-13T17:44:42.594Z",
+          "engine_tga": "shot_0167.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-r8-disposed-2026-10-13.png",
+          "sha256": "559ec0a4b64516c54e6507c490607e6ac7202a047374b132da45ec3f27f5a006",
+          "bytes": 879280,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": "disposed",
+          "atomic_phase_frame_match_claimed": false
+        }
+      ],
+      "metrics": {
+        "grant_seconds": 5,
+        "observed_expiry_elapsed_game_seconds": 5.066667556762695,
+        "manual_movement_distance_xy": 342.3822021484375,
+        "post_return_actual_origins": [
+          {
+            "order": 21,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 917.49938964844,
+            "origin_y": -64.0,
+            "game_time": 32.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 917.49938964844,
+            "origin_y": -64.0,
+            "game_time": 32.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 917.49938964844,
+            "origin_y": -64.0,
+            "game_time": 33.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1217.4993896484,
+            "origin_y": -64.0,
+            "game_time": 34.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 933.99835205078,
+            "origin_y": -64.0,
+            "game_time": 35.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1217.4993896484,
+            "origin_y": -64.0,
+            "game_time": 36.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 933.99835205078,
+            "origin_y": -64.0,
+            "game_time": 37.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 1217.4993896484,
+            "origin_y": -64.0,
+            "game_time": 38.900001525879
+          },
+          {
+            "order": 1,
+            "entity": 123,
+            "generation": 1,
+            "origin_x": 933.99835205078,
+            "origin_y": -64.0,
+            "game_time": 39.900001525879
+          }
+        ]
+      },
+      "wire_alive_types": [
+        "int"
+      ],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=14.533333778381",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=17.60000038147",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=18.60000038147"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-r8-20261013-hashes.json"
+    },
+    {
+      "run": "ui-20261013t174639276",
+      "scope": "normal_bundle_startup_current_core",
+      "owned_pid": 28892,
+      "owned_start_time_utc": "2026-10-13T17:46:39.3845391Z",
+      "owned_process_confirmed_gone": true,
+      "phases": [],
+      "captures": [
+        {
+          "phase": "ready",
+          "pass": true,
+          "utc": "2026-10-13T17:47:38.104Z",
+          "engine_tga": "shot_0168.tga",
+          "png": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/native-move-ui-20261013t174639276-ready-2026-10-13.png",
+          "sha256": "6558184667d266279e6b42f3e2785b7d5f717cccf0a2c305044273279d9b0109",
+          "bytes": 1069549,
+          "resolution": [
+            1280,
+            720
+          ],
+          "latest_preceding_logged_phase": null,
+          "atomic_phase_frame_match_claimed": false
+        }
+      ],
+      "metrics": {},
+      "wire_alive_types": [],
+      "safe_server_traces": [
+        "mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=36.400001525879",
+        "mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=39.433334350586",
+        "mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=40.433334350586"
+      ],
+      "compile_receipt": "build/dota_coach/native-move-final2-20261013-hashes.json"
+    }
+  ],
+  "normal_bundle": "build/dota_coach/manual-move-20261013T174214Z-f5ce54/bundle-report.json",
+  "final_fixture_bundle": "build/dota_coach/native-move-20261013T174214Z-d70b55/bundle-report.json",
+  "compiled_but_not_launched": [
+    "r4",
+    "r5"
+  ],
+  "full_programmatic_phases": 27,
+  "full_cycle_actual_frames": 24,
+  "world_probe_actual_frames": 2,
+  "normal_startup_actual_frames": 2,
+  "actual_frames_total": 28,
+  "native_world_position_api_verified": true,
+  "physical_input_hittest_verified": false,
+  "physical_input_limitation": {
+    "plugin": "computer-use",
+    "initial_capture_error": "FrameArrived timed out: timed out waiting on channel",
+    "recovery_error": "window capture timed out: timed out waiting on channel",
+    "accessibility_controls": "only window index0 / Raise; no card or world controls",
+    "coordinate_input_performed": false
+  },
+  "lua_checks": 26,
+  "node_checks": 26,
+  "bundle_checks": 11,
+  "full_source_report": "build/dota_coach/source-checks-20261013T175338Z-451750/source-checks.json",
+  "full_source_suites": 88,
+  "full_source_passed": 1334,
+  "full_source_skipped": 28,
+  "full_source_incomplete": 6,
+  "full_source_errors": 0,
+  "full_source_strict_verified": false,
+  "native_pause_death_replacement_verified": false,
+  "five_second_deadline_configured": true,
+  "strict_zero_overrun_native_stop_verified": false,
+  "human_second_owner_review": "open",
+  "full_game_acceptance": false,
+  "technical_review": {
+    "critic": "foundation_report_review",
+    "initial_substantial_findings": 2,
+    "resolved_findings": 2,
+    "cross_context_extension_regrade": "no substantive findings",
+    "deferred_stop_original_owner_regrade": "no substantive findings"
+  },
+  "all_owned_native_processes_gone": true,
+  "steam_pid_preserved": 12964,
+  "progress_done": 56,
+  "progress_total": 213,
+  "full_cycle_additional_world_api_phases": 1,
+  "native_launches": 8,
+  "compiled_addons": 10,
+  "native_source_scope": "r8/current normal final2 include final deferred cleanup and original owner safety fix; earlier runs retained as historical evidence"
+}

@@ -1,0 +1,15 @@
+<root>
+ <styles><include src="file://{resources}/styles/custom_game/manual_move.css" /></styles>
+ <scripts><include src="file://{resources}/scripts/custom_game/manual_move_state.js" /><include src="file://{resources}/scripts/custom_game/manual_move_panel.js" /></scripts>
+ <Panel hittest="false" class="MoveCanvas">
+  <Panel id="MoveRoot" class="MovePane" hittest="true">
+   <Label class="MoveTitle" text="DOTA COACH — ВРЕМЕННОЕ УПРАВЛЕНИЕ" hittest="false" />
+   <Label class="MoveHint" text="TEST: один синтетический игрок. Выберите карточку, запросите управление, нажмите левой кнопкой по миру. Максимум 5 игровых секунд." hittest="false" />
+   <Button id="MoveCard"><Label id="MoveCardText" text="TEST / герой не готов" hittest="false" /></Button>
+   <Panel class="MoveButtons"><Button id="MoveAcquire"><Label text="Запросить управление" hittest="false" /></Button><Button id="MoveCancel"><Label text="Отменить" hittest="false" /></Button><Button id="MoveSync"><Label text="Обновить" hittest="false" /></Button></Panel>
+   <Label id="MoveStatus" text="Ожидается сервер" hittest="false" />
+   <Label id="MoveMode" hittest="false" /><Label id="MoveResult" hittest="false" />
+   <Label id="MoveHistory" hittest="false" />
+  </Panel>
+ </Panel>
+</root>

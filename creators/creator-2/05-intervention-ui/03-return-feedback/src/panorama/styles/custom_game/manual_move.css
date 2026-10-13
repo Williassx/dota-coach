@@ -1,0 +1,10 @@
+.MoveCanvas { width: 100%; height: 100%; }
+.MovePane { horizontal-align: right; vertical-align: top; margin: 25px 25px 0 0; width: 430px; padding: 16px; background-color: #14212bf5; border: 1px solid #627587; flow-children: down; }
+.MoveTitle { color: #edd8a3; font-size: 20px; width: 100%; white-space: normal; }
+.MoveHint { color: #a9becf; font-size: 17px; width: 100%; white-space: normal; margin: 10px 0; }
+.MovePane Label { color: #e5edf5; font-size: 17px; width: 100%; white-space: normal; }
+.MovePane Button { background-color: #2d4c62; padding: 8px; margin: 4px 0; width: 100%; }
+.MovePane Button:hover { background-color: #3d647b; }
+.MovePane Button:disabled { opacity: 0.35; }
+.MoveButtons { width: 100%; flow-children: down; }
+#MoveHistory { color: #abbecd; font-size: 16px; margin-top: 12px; }

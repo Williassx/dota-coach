@@ -1,7 +1,7 @@
 # C2-05-03 — Отмена, завершение и причины
 
 **Отдел:** создатель 2. **Проверяющий:** создатель 1.
-**Статус:** дизайн и подробный план подготовлены; реализация зависит от настоящего C1 contract; native cancel/AI-return сценарии не проверены.
+**Статус:** частично — реализован ограниченный server-backed v1 для одного TEST/synthetic героя. В Dota проверены программные grant/move/cancel/expiry/arrival и фактический возврат synthetic ИИ; реальные mouse/hittest, native pause/death/replacement и человеческая проверка открыты.
 **Зависимости:** [C2-05-02](../02-mouse-targeting/README.md), [C1-04-03](../../../creator-1/04-intervention/03-lifecycle-guards/README.md).
 **Рабочая папка:** `creators/creator-2/05-intervention-ui/03-return-feedback/`.
 
@@ -9,7 +9,7 @@
 
 ## Действия
 
-- [ ] Добавить немедленную отмену с серверным подтверждением.
+- [x] Добавить немедленную отмену с серверным подтверждением — [ограниченный native v1](reports/native-manual-move-2026-10-13.md), cancel → Stop → fresh synthetic AI order. Во время паузы actions отвергаются.
 - [ ] Показать отдельно успех, отмену, потерю цели и истечение времени.
 - [ ] Проверить смерть, паузу и запоздалое состояние.
 - [ ] Сопоставить фактический результат с критерием ниже и записать непроведённые проверки.
@@ -32,3 +32,11 @@ API, сигнатуры, конкретные файлы и команды пр�
 
 [Спецификация](design.md) · [План исполнения](implementation-plan.md) ·
 [Аудит зависимостей](reports/README.md).
+
+## Первый согласованный игровой сценарий
+
+[Дизайн](native-move-design-2026-10-13.md) · [Технический план](native-move-plan-2026-10-13.md) · [Общий manual-move v1](../../../shared/contracts/manual-move-v1.md).
+
+[UI исходники](src/README.md) · [Проверки](tests/README.md) · [Упаковка и запуск](tools/README.md) · [Нативный отчёт](reports/native-manual-move-2026-10-13.md).
+
+Этот новый отдельный kind не расширяет существующие HUD/probe пакеты. API admission и issued order не означают arrival. Полная приёмка раздела ещё не завершена.

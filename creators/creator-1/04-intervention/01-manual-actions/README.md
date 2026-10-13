@@ -35,3 +35,9 @@
 Новый вложенный каталог получает README с назначением и ссылкой из этого файла.
 API, сигнатуры, конкретные файлы и команды проверки закрепляются в локальном
 техническом плане после исследования входов; не подменяйте их выдуманными командами.
+
+## Отдельный ограниченный native v1
+
+[Controller и native adapter](src/scripts/vscripts/README.md) · [Исполняемые Lua проверки](tests/README.md) · [Общий контракт](../../../shared/contracts/manual-move-v1.md) · [Отчёт C2](../../../creator-2/05-intervention-ui/03-return-feedback/reports/native-manual-move-2026-10-13.md).
+
+Новый controller/adapter для одного TEST/synthetic героя выполняет настоящие Stop/move и fresh synthetic AI order. Старый manual_mode.lua сохранён. Это не общая интеграция арбитра, атаки, реального клика или полная приёмка C1-04-01; существующий чек-лист не повышен.

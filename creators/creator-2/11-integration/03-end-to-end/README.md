@@ -77,3 +77,5 @@ skipped cases. Source2/runtime flags остаются false.
 [Windows portability report](reports/windows-portability-2026-10-12.md): final46suites/1020passed/28skipped/6incomplete/0errors/verifiedfalse. Пропуски не закрывают security/native acceptance; taskkill проверен только для собственных test processes вне разрешённой песочницы.
 
 C2-06-01 добавил только [четыре безопасных diagnostic cleanup tests](../../06-voice/01-microphone-probe/tests/README.md) в canonical source catalog. Actual microphone capture не выполняется обычнымиchecks/import. Свежийfull160830Z-3a670b47suites/1024passed/28skipped/0errors/verifiedfalse — [отчёт](../../06-voice/01-microphone-probe/reports/microphone.md); speech/ASR/bridge остаются открытыми.
+
+13 октября C2-05-03 добавил три source suites: state, panel, bundle/fixture. C1 discovery также исполняет controller/adapter в Lua5.1. [Native отчёт](../../05-intervention-ui/03-return-feedback/reports/native-manual-move-2026-10-13.md): full88/1334PASS/28skip/6incomplete/0errors/strictfalse. Native helpers не вызываются ordinary каталогом.

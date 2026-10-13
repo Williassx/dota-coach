@@ -493,6 +493,14 @@
 - **Проверка:** [Native ping](../../../01-foundation/02-panorama-capability/reports/native-ping-2026-10-13.md): fixedprobe5/sourcepolicy/production unchanged,18frames viewed,9builder/14Lua/19VM/full85/1271PASS/28skip/6incomplete/0errors/strictfalse; all3ownPIDsquitgone/Steam12964 retained. Одинкритикnofindings; толькоdiagnosticcheckbox→55/213.
 - **Следующий раз:** не считать helper missingdependency ошибкойbuilder: дождаться stableauthor inputs; sourcequery сначала inventory, rg наWindowsс--glob, не literal*. Полные registry/logblob не печатать вместо scoped строк. Не отождествлять sourceconnection с actor/lease/authority, metadatachange с конкретным engine механизмом и Activated mouse argument с настоящей мышью.
 
+## 44. Native bridge, lifecycle cleanup и callback ownership требуют исполнения
+
+- **Действие:** внедрён согласованный server-backed TEST manual move; r1/r2 UI отвергал native alive=1, paused disconnect оставлял старый путь после unpause, поздний dispose мог отключить callback нового JS context. RED и отрицательные native receipts сохранены.
+- **Причина:** Lua boolean транспорта не совпал с JS bool schema; cleanup и callback ownership должны переживать паузу/перезагрузку, а старое имя entity не доказывает текущего владельца. Причина Computer Use timeout и белой minimap не установлена.
+- **Исправление:** exact wire0/1 с internal boolean; deferred Stop после known unpause только original owner/live generation/entity; shared CustomUIConfig token; meaningful journal вместо refresh overwrite. Для документных read/write всегда explicit UTF-8: cp1251 чтение повредило task README, он восстановлен из проверенного HEAD и вновь отредактирован, пользовательские файлы не затронуты.
+- **Проверка:** [Native manual move](../../../05-intervention-ui/03-return-feedback/reports/native-manual-move-2026-10-13.md): current r8/final2, 8 launches/28actual PNG; Lua26/Node26/bundle11/full88/1334PASS/28skip/6incomplete/0errors/strictfalse. Paused disconnect и original owner mutant RED→GREEN; один критик подтвердил fixes, all8 ownPIDs gone/Steam kept.
+- **Следующий раз:** проверять DTO в самом native transport, stale cleanup против replacement и reload в разных contexts. Не считать успешный order arrival, programmatic API physical click, фазовое имя PNG атомарным снимком или logical5 deadline точным stop5.000: measured5.033–5.067 на Think tick. При window capture timeout применять только fresh supported channel; не подставлять guessed coordinates. Сохранять raw receipts в ignored build, source-only и native scopes отдельно.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

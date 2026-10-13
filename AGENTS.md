@@ -273,3 +273,13 @@ OriginalautoAdapter active вr3,2correlatedOK+dispose черезnativeActivatedd
 Lua14/VM19/builder9/full85/1271PASS/28skip/6incomplete/0errors/strictfalse.
 Own21488/4452/22204quitgone/Steam12964 сохранён; onecriticnofindings. Толькопункт
 native diagnosticreply→C255/213(25.8%), foundation/game/humanowner ещёоткрыты.
+
+13октября C2-05-03 ограниченный manual-move v1 реализован: C1 native controller/
+owner sender/hero lease5, C2 strictstate/panel/worldcallback, exact7normal/9TESToutputs.
+Current r8/final2: actualmove/cancel/arrival/expiry→newsyntheticAI nativePASS,
+8launches/28actual1280×720frames;Lua26/Node26/bundle11/full88/1334/28skip/0errors/false.
+Sharedcallbacktoken guards crosscontextreload; pauseddisconnect defersoneStop until
+knownunpause onlyoriginalowner/livegeneration/entity. Nativephysicalinput/hittest,
+pause/death/replacement/reload/lateevents/humanowner/fullgame remainopen.
+Logical5deadline observedreturn5.033–5.067nextThink; no strict5.000stop claim.
+All8ownPIDsgoneSteam12964retained; C256/213/C1112/181, sourceflagsnotnativeproof.
