@@ -31,3 +31,9 @@ Prefix получает `1024x768-r2-20261013`; PNG имеют настоящу�
 `--addon dota_coach_c2_preparation_scale_r2_20261013` для новой скомпилированной fixture.
 Exact allowlist не принимает произвольный addon. Query/identity subprocess
 ограничены10s, phase polling420s; импорт не активирует Dota или capture.
+
+Отдельнаяtracefixture: `--run 1600x900 --date 20261013 --attempt trace1 --variant reset
+--addon dota_coach_c2_preparation_reset_trace_20261013`. Exactpair variant/addon и
+receipt diagnostic_variant обязательны; defaultbaseline unchanged. Sourcebuilder
+`build_native_preparation_fixture.py --variant reset` сохраняет17outputs/fixed15/14;
+driver находитсяв [tests](../tests/README.md), normalcatalog запускаеттолькоVMsuite.

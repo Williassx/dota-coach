@@ -38,3 +38,7 @@ API, сигнатуры, конкретные файлы и команды пр�
 [Фактический отчёт12–13октября](reports/preparation-scaling-2026-10-13.md):12actual
 кадров,6APIphases на каждом размере; reset1600×900 не вернулся кверху,1024×768
 вернулся. Runtime build_id различается, причина не установлена. Progress не повышен.
+
+[Traceодногоbuild](reports/reset-trace-2026-10-13.md) выполнил4ABABcycles/131records/
+6frames1600×900:всеfinaltop0,старыйотказневоспроизведён. Physicalinput/cause/
+productacceptance всёещёopen; productionкоднеизменён.

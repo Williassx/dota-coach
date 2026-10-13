@@ -1,0 +1,1145 @@
+{
+  "schema_version": 1,
+  "task": "C2-09-02/native-reset-trace",
+  "build_id": "25894101",
+  "record_file": "reset-native-records-2026-10-13.jsonl",
+  "record_scope": "parsed_native_records_utf8_lf",
+  "record_sha256": "4a059efc23ca2629a62a8a590ba528fcb0f6abea5770fa3a6ab4baef31e07de6",
+  "records": 131,
+  "summary": [
+    {
+      "trial": "immediate-a",
+      "samples": 31,
+      "input_tainted": false,
+      "top_observed": true,
+      "final": {
+        "pass": true,
+        "trial": "immediate-a",
+        "boundary": "final",
+        "timeMs": 1791872601903,
+        "scroll": 0,
+        "content": 1496,
+        "viewport": 801,
+        "cursor": [
+          810,
+          234
+        ],
+        "buttons": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alt": false,
+        "control": false,
+        "shift": false,
+        "inputTainted": false,
+        "sampledInputQuiet": true,
+        "physicalInputControlled": false,
+        "topObserved": true,
+        "modelResetVerified": true
+      },
+      "boundaries": {
+        "prepared": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "prepared",
+          "timeMs": 1791872599390,
+          "scroll": 0,
+          "content": 866,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-bottom": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "after-bottom",
+          "timeMs": 1791872599411,
+          "scroll": 0,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-remove": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "before-remove",
+          "timeMs": 1791872599904,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-remove": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "after-remove",
+          "timeMs": 1791872599962,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-top": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "before-top",
+          "timeMs": 1791872599962,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-top": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "after-top",
+          "timeMs": 1791872599962,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "final": {
+          "pass": true,
+          "trial": "immediate-a",
+          "boundary": "final",
+          "timeMs": 1791872601903,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        }
+      },
+      "first_sampled_top_after_call_ms": 215
+    },
+    {
+      "trial": "delayed-a",
+      "samples": 31,
+      "input_tainted": false,
+      "top_observed": true,
+      "final": {
+        "pass": true,
+        "trial": "delayed-a",
+        "boundary": "final",
+        "timeMs": 1791872617417,
+        "scroll": 0,
+        "content": 1496,
+        "viewport": 801,
+        "cursor": [
+          810,
+          234
+        ],
+        "buttons": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alt": false,
+        "control": false,
+        "shift": false,
+        "inputTainted": false,
+        "sampledInputQuiet": true,
+        "physicalInputControlled": false,
+        "topObserved": true,
+        "modelResetVerified": true
+      },
+      "boundaries": {
+        "prepared": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "prepared",
+          "timeMs": 1791872614908,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-bottom": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "after-bottom",
+          "timeMs": 1791872614924,
+          "scroll": 0,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-remove": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "before-remove",
+          "timeMs": 1791872615416,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-remove": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "after-remove",
+          "timeMs": 1791872615486,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-top": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "before-top",
+          "timeMs": 1791872615921,
+          "scroll": -695,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-top": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "after-top",
+          "timeMs": 1791872615921,
+          "scroll": -695,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "final": {
+          "pass": true,
+          "trial": "delayed-a",
+          "boundary": "final",
+          "timeMs": 1791872617417,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        }
+      },
+      "first_sampled_top_after_call_ms": 301
+    },
+    {
+      "trial": "immediate-b",
+      "samples": 32,
+      "input_tainted": false,
+      "top_observed": true,
+      "final": {
+        "pass": true,
+        "trial": "immediate-b",
+        "boundary": "final",
+        "timeMs": 1791872632931,
+        "scroll": 0,
+        "content": 1496,
+        "viewport": 801,
+        "cursor": [
+          810,
+          234
+        ],
+        "buttons": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alt": false,
+        "control": false,
+        "shift": false,
+        "inputTainted": false,
+        "sampledInputQuiet": true,
+        "physicalInputControlled": false,
+        "topObserved": true,
+        "modelResetVerified": true
+      },
+      "boundaries": {
+        "prepared": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "prepared",
+          "timeMs": 1791872630381,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-bottom": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "after-bottom",
+          "timeMs": 1791872630395,
+          "scroll": 0,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-remove": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "before-remove",
+          "timeMs": 1791872630934,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-remove": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "after-remove",
+          "timeMs": 1791872630987,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-top": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "before-top",
+          "timeMs": 1791872630987,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-top": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "after-top",
+          "timeMs": 1791872630988,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "final": {
+          "pass": true,
+          "trial": "immediate-b",
+          "boundary": "final",
+          "timeMs": 1791872632931,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        }
+      },
+      "first_sampled_top_after_call_ms": 225
+    },
+    {
+      "trial": "delayed-b",
+      "samples": 30,
+      "input_tainted": false,
+      "top_observed": true,
+      "final": {
+        "pass": true,
+        "trial": "delayed-b",
+        "boundary": "final",
+        "timeMs": 1791872648442,
+        "scroll": 0,
+        "content": 1496,
+        "viewport": 801,
+        "cursor": [
+          810,
+          234
+        ],
+        "buttons": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alt": false,
+        "control": false,
+        "shift": false,
+        "inputTainted": false,
+        "sampledInputQuiet": true,
+        "physicalInputControlled": false,
+        "topObserved": true,
+        "modelResetVerified": true
+      },
+      "boundaries": {
+        "prepared": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "prepared",
+          "timeMs": 1791872646028,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-bottom": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "after-bottom",
+          "timeMs": 1791872646046,
+          "scroll": 0,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-remove": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "before-remove",
+          "timeMs": 1791872646435,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-remove": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "after-remove",
+          "timeMs": 1791872646493,
+          "scroll": -1674,
+          "content": 2475,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "before-top": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "before-top",
+          "timeMs": 1791872646943,
+          "scroll": -695,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "after-top": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "after-top",
+          "timeMs": 1791872646943,
+          "scroll": -695,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        },
+        "final": {
+          "pass": true,
+          "trial": "delayed-b",
+          "boundary": "final",
+          "timeMs": 1791872648442,
+          "scroll": 0,
+          "content": 1496,
+          "viewport": 801,
+          "cursor": [
+            810,
+            234
+          ],
+          "buttons": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alt": false,
+          "control": false,
+          "shift": false,
+          "inputTainted": false,
+          "sampledInputQuiet": true,
+          "physicalInputControlled": false
+        }
+      },
+      "first_sampled_top_after_call_ms": 302
+    }
+  ],
+  "captures": [
+    {
+      "phase": "bound",
+      "utc": "2026-10-13T06:23:09.120Z",
+      "engine_tga": "shot_0117.tga",
+      "png": "preparation-1600x900-trace1-bound-2026-10-13.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "0b37187c79efc3f2771e1c880d1087dc0c20e25290936dc8a79166cd731d3a58"
+    },
+    {
+      "phase": "immediate-a",
+      "utc": "2026-10-13T06:23:24.520Z",
+      "engine_tga": "shot_0118.tga",
+      "png": "preparation-1600x900-trace1-immediate-a-2026-10-13.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "428d30c69b61ac79e270451f2b355610f43ddb3e304dc5eba8ad56e178892fa4"
+    },
+    {
+      "phase": "delayed-a",
+      "utc": "2026-10-13T06:23:40.168Z",
+      "engine_tga": "shot_0119.tga",
+      "png": "preparation-1600x900-trace1-delayed-a-2026-10-13.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "b254ebe3f47529a72ad02bc6349c996b65386792ebeaea7f9fcff7ee33638351"
+    },
+    {
+      "phase": "immediate-b",
+      "utc": "2026-10-13T06:23:55.537Z",
+      "engine_tga": "shot_0120.tga",
+      "png": "preparation-1600x900-trace1-immediate-b-2026-10-13.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "f961c134735f819de3cdb1f8a87df3ad39c96057b1cb756e455d21f13caf5386"
+    },
+    {
+      "phase": "delayed-b",
+      "utc": "2026-10-13T06:24:11.183Z",
+      "engine_tga": "shot_0121.tga",
+      "png": "preparation-1600x900-trace1-delayed-b-2026-10-13.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "9926e67a9535bfde464462549270c4cf02d34a0352037a0a269015b1300a1843"
+    },
+    {
+      "phase": "disposed",
+      "utc": "2026-10-13T06:24:23.243Z",
+      "engine_tga": "shot_0122.tga",
+      "png": "preparation-1600x900-trace1-disposed-2026-10-13.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "sha256": "6a6f95829847b9eb7ce2e4a1e352eabaf2ecea801080737441d4912daa38379c"
+    }
+  ],
+  "compiled": {
+    "bundle": "D:/AI/dota2coach/build/dota_coach/native-preparation-20261013T061918Z-593520",
+    "build_id": "25894101",
+    "content": "C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/content/dota_addons/dota_coach_c2_preparation_reset_trace_20261013",
+    "map_bytes": 3033508,
+    "addon": "dota_coach_c2_preparation_reset_trace_20261013",
+    "game": "C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota_addons/dota_coach_c2_preparation_reset_trace_20261013",
+    "raw_inputs": [
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+        "sha256": "245555a3be0f77889e1d188f7449f0123864ab78eefde5896778f8327b3987c9"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_preparation.xml",
+        "sha256": "acb2d2149ef220f12e40a1350e771b0829c3543362f92b59ec9a99f8a01026e1"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_preparation.css",
+        "sha256": "059cb004ca423a34b60477c04cea05d20f363a059085407f81886fe4de433a73"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/styles/custom_game/team_picker.css",
+        "sha256": "195319886dbdaa1a869de7fed09010a410cb26839265fca157b29d35245e9633"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_state.js",
+        "sha256": "8e1b5e32d8175014fc5496c1f8777a9fe892b8d7213555fd0c109b37eee2037a"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_panel.js",
+        "sha256": "a5b90c753a0b5dcfe074a426ba54501635df16e06943db48487736ad3c7b1a8d"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/styles/custom_game/hero_role_picker.css",
+        "sha256": "1749d487c94871193c518dbe0b14515cba404708468ac26649023e62d1771911"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_state.js",
+        "sha256": "33152055bd9fb4b5550209af797e4c595c5e1b175a51f760bc69d215afdde97b"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_panel.js",
+        "sha256": "db96b7d48c811ace2bf5c3540edce35c56daea1352d1a57995d0da095a0b8df1"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/styles/custom_game/preparation_picker.css",
+        "sha256": "6ae81d63fcfde642ef6adf92f1233d208d453fd8330c5ee46cd64606b136c80f"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_state.js",
+        "sha256": "7b7bf3688a39b51eadddf87757d67da6c5f077bc8f8d82e7a7698e92bbd26954"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_panel.js",
+        "sha256": "f3365b2942e308636883f221a042d9572b8e358cfd0d79d457721796a471ed36"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_panel_port.js",
+        "sha256": "9f361986bc43108689486288d40ebf90e3cf37410790f8569d645d5a178fc9fd"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_flow_state.js",
+        "sha256": "22365b46535e852f994fe5a5727620fbb5ba766b29775312d8b868f18c654885"
+      },
+      {
+        "source": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_binding.js",
+        "sha256": "4cfbc58cb8b2010b452d4b9595d936f98cb2e83207725839eecead49fe09e338"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/layout/custom_game/team_picker.xml",
+        "sha256": "2fa9a6a4aba59f24e29fbce9578c7678d853832652e4bafed62dc93b61e01f28"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/layout/custom_game/hero_role_picker.xml",
+        "sha256": "6d3d84ac3f189ac55d13189404bee75252210716f0d975736d9ff91470f85b65"
+      },
+      {
+        "source": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/layout/custom_game/preparation_picker.xml",
+        "sha256": "17dfd2744bb4b57813413a867f43fb1bd2254112012eba6d8a90d3a4d350b612"
+      }
+    ],
+    "installed_sources": 17,
+    "map_sha256": "5d351e104fdc3a34bfd545bf958610dc9e8faf86d7f5119382aec0ea6d9c71a3",
+    "compiled": [
+      {
+        "bytes": 7586,
+        "path": "panorama/layout/custom_game/coach_preparation.vxml_c",
+        "sha256": "3d6e5235aa604b6189bee07c632cbe63ef88f0cdf772f94bfdb741fdcac867a1"
+      },
+      {
+        "bytes": 1409,
+        "path": "panorama/layout/custom_game/custom_ui_manifest.vxml_c",
+        "sha256": "012d264cc8738fae9a2df4eccd9a0aeb98488346e7afa718227c2306857f0ac1"
+      },
+      {
+        "bytes": 7902,
+        "path": "panorama/layout/custom_game/preparation_fixture.vxml_c",
+        "sha256": "f365ed8d639e2a7c875c82dcb51d43a533f3cf57c0b72d29ade1088f7e71a130"
+      },
+      {
+        "bytes": 14515,
+        "path": "panorama/scripts/custom_game/hero_role_panel.vjs_c",
+        "sha256": "c4cc3608031169efa32a9a0c79bdc3e2c8c652c3f0178b08fab780b2bd789b5f"
+      },
+      {
+        "bytes": 17009,
+        "path": "panorama/scripts/custom_game/hero_role_state.vjs_c",
+        "sha256": "d6b5c3fdac3925bb4c026e9c904dcd1ed7b450d1583321c73f854fce2ac6f0c9"
+      },
+      {
+        "bytes": 10680,
+        "path": "panorama/scripts/custom_game/preparation_binding.vjs_c",
+        "sha256": "890b94771d1115bc9b3324ab7d235ff8bb70cb6743d3dddb1815f5c6238f6961"
+      },
+      {
+        "bytes": 10060,
+        "path": "panorama/scripts/custom_game/preparation_fixture.vjs_c",
+        "sha256": "09fc95d4db7c5b4cb596a728cdf82f3540ea9ac1b2171b4b0f9f10c70463c5c9"
+      },
+      {
+        "bytes": 8333,
+        "path": "panorama/scripts/custom_game/preparation_flow_state.vjs_c",
+        "sha256": "2d47fd4e0bae50ffcf314d1465d36eb21be18209596cd61a59d4d62691940492"
+      },
+      {
+        "bytes": 4329,
+        "path": "panorama/scripts/custom_game/preparation_panel_port.vjs_c",
+        "sha256": "5e4daf1d6342d9be02c33b0b51dde0d1eb67763aaa7e8d7bc66c2e37506275b1"
+      },
+      {
+        "bytes": 12862,
+        "path": "panorama/scripts/custom_game/preparation_panel.vjs_c",
+        "sha256": "76008fe767bd0bd6d4ea748993621d022d4f108176cff83a941c857027d98011"
+      },
+      {
+        "bytes": 14542,
+        "path": "panorama/scripts/custom_game/preparation_state.vjs_c",
+        "sha256": "9a17112bfb848bea8d69b79f52f4eeb737417aea76d39e4d9888ea5f6fc8b177"
+      },
+      {
+        "bytes": 12369,
+        "path": "panorama/scripts/custom_game/team_picker_panel.vjs_c",
+        "sha256": "74c5d6639934e468847f4f88c9157cc3ec02b3764a561ab27bc6a703c9339741"
+      },
+      {
+        "bytes": 10288,
+        "path": "panorama/scripts/custom_game/team_picker_state.vjs_c",
+        "sha256": "5233437659f8c0f2078e18f5b48ee965942efff46b70c816e802823889450cc9"
+      },
+      {
+        "bytes": 3069,
+        "path": "panorama/styles/custom_game/coach_preparation.vcss_c",
+        "sha256": "6f9768cf06f792a808deea1d85ae1d6e796f56a81db5c98da6504ec9d8fe5602"
+      },
+      {
+        "bytes": 4623,
+        "path": "panorama/styles/custom_game/hero_role_picker.vcss_c",
+        "sha256": "311e678bdd1cadb0c798749126535c162f32303c18b3bc3daf2ce9992ed957e8"
+      },
+      {
+        "bytes": 4712,
+        "path": "panorama/styles/custom_game/preparation_picker.vcss_c",
+        "sha256": "7ad7b44335cc6ec635e10be7637309b524b0d3be2e3bdebfaeea77535cc0ad67"
+      },
+      {
+        "bytes": 4469,
+        "path": "panorama/styles/custom_game/team_picker.vcss_c",
+        "sha256": "89565a2e149a130e6ebc374584d88c38c5c7e7b74a982c2bdbd72e2594f18cda"
+      }
+    ]
+  },
+  "cleanup": {
+    "own_client_gone": true,
+    "pid": 2128,
+    "dota_client_count": 0,
+    "steam_ids": [
+      12964
+    ]
+  },
+  "cause_of_previous_failure_established": false,
+  "physical_input_controlled": false,
+  "global_mouse_callback_changed": false,
+  "production_source_changed": false,
+  "human_second_owner_review": "open",
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  },
+  "full_source_report": "build/dota_coach/source-checks-20261013T062607Z-57578a/source-checks.json"
+}

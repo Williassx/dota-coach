@@ -17,6 +17,7 @@ MANIFEST = RESOURCE + 'layout/custom_game/custom_ui_manifest.xml'
 LAYOUT = RESOURCE + 'layout/custom_game/coach_preparation.xml'
 DERIVED = RESOURCE + 'layout/custom_game/preparation_fixture.xml'
 DRIVER = RESOURCE + 'scripts/custom_game/preparation_fixture.js'
+RESET_DRIVER = 'creators/creator-2/09-presentation/02-settings-layout/tests/reset_fixture.js'
 
 spec = importlib.util.spec_from_file_location('native_preparation_fixture_fixed_policy',
     REPOSITORY / 'creators/creator-2/01-foundation/02-panorama-capability/tools/build_probe_bundle.py')
@@ -29,7 +30,9 @@ finally:
     sys.dont_write_bytecode = previous_bytecode
 
 
-def build_fixture(repository: Path, output: Path) -> dict:
+def build_fixture(repository: Path, output: Path, variant: str = 'baseline') -> dict:
+    if type(variant) is not str or variant not in ('baseline', 'reset'):
+        raise ValueError('Native preparation variant must be exactly baseline or reset')
     root = repository.resolve()
     destination = policy.output_path(root, output)
     recipe = json.loads(policy.read_source(root, PACKAGE + 'preparation-manifest.json'))
@@ -37,7 +40,8 @@ def build_fixture(repository: Path, output: Path) -> dict:
         raise ValueError('Native fixture requires the unchanged fixed preparation recipe')
     canonical = policy.prepare_assets(root, recipe)
     native_manifest = policy.read_source(root, FIXTURE + 'custom_ui_manifest.xml')
-    driver = policy.read_source(root, FIXTURE + 'preparation_fixture.js')
+    driver_source = RESET_DRIVER if variant == 'reset' else FIXTURE + 'preparation_fixture.js'
+    driver = policy.read_source(root, driver_source)
     if b'<!DOCTYPE' in native_manifest.upper() or b'<!ENTITY' in native_manifest.upper():
         raise ValueError('Native fixture manifest cannot declare DTD/entities')
     tree = ET.fromstring(native_manifest)
@@ -58,7 +62,7 @@ def build_fixture(repository: Path, output: Path) -> dict:
     derived = ET.tostring(layout, encoding='utf-8', xml_declaration=True) + b'\n'
     prepared = [(source, target, raw, target == LAYOUT) for source, target, raw in canonical if target != MANIFEST]
     prepared += [(FIXTURE + 'custom_ui_manifest.xml', MANIFEST, native_manifest, False),
-                 (FIXTURE + 'preparation_fixture.js', DRIVER, driver, False),
+                 (driver_source, DRIVER, driver, False),
                  (next(source for source, target, _ in canonical if target == LAYOUT), DERIVED, derived, True)]
     if len(prepared) != 17 or len({target.casefold() for _, target, _, _ in prepared}) != 17:
         raise ValueError('Native test fixture requires exactly17 unique outputs')
@@ -77,6 +81,7 @@ def build_fixture(repository: Path, output: Path) -> dict:
         assets.append({'source': source, 'target': target, 'derived': composed,
                        'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()})
     report = {'schema_version': 1, 'fixture_type': 'native_preparation_test_only',
+              'diagnostic_variant': variant,
               'canonical_outputs': len(canonical), 'assets': assets,
               'canonical_output_hashes': [{'source': source, 'target': target,
                  'sha256': hashlib.sha256(raw).hexdigest()} for source, target, raw in canonical],
@@ -93,12 +98,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--repository', type=Path, default=REPOSITORY)
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--variant', choices=('baseline', 'reset'), default='baseline')
     args = parser.parse_args()
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     output = args.output or args.repository / 'build/dota_coach' / (
         'native-preparation-' + stamp + '-' + secrets.token_hex(3))
     try:
-        report = build_fixture(args.repository, output)
+        report = build_fixture(args.repository, output, variant=args.variant)
     except (OSError, ValueError, ET.ParseError) as error:
         print('Native test fixture build refused: ' + str(error), file=sys.stderr)
         return 2

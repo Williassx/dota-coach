@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "task": "C2-06-01/synthetic-decoder-pilot",
+  "source": "synthetic_system_tts",
+  "tts_receipt_sha256": "9dee94c1347218dea8096faadce597b880c851281458ee0ef5866a3142dac98b",
+  "tts_voice": "Microsoft Irina Desktop",
+  "voice_culture": "ru-RU",
+  "tts_elapsed_seconds": 0.314727,
+  "audio_format": {
+    "sample_rate": 16000,
+    "sample_width_bytes": 2,
+    "channels": 1,
+    "encoding": "PCM"
+  },
+  "samples": [
+    {
+      "name": "sample-01.wav",
+      "reference": "Игрок два, отойди назад.",
+      "sha256": "c2e78c140a34ea6b9d911ec3a6635ab1ce945f75ab3abf36ba3d31f3fc798f11",
+      "pcm": {
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "channels": 1,
+        "frames": 48960,
+        "duration_seconds": 3.06
+      },
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.28,
+          "text": " Игрог 2, а той день назад.",
+          "avg_logprob": -0.6282311769632193,
+          "no_speech_prob": 0.005032407585531473
+        }
+      ],
+      "generator_consumed": true,
+      "decoder_exercised": true,
+      "comparison": {
+        "reference_words": [
+          "игрок",
+          "два",
+          "отойди",
+          "назад"
+        ],
+        "hypothesis_words": [
+          "игрог",
+          "2",
+          "а",
+          "той",
+          "день",
+          "назад"
+        ],
+        "edit_distance": 5,
+        "wer": 1.25
+      },
+      "error": null,
+      "input_duration_seconds": 3.06,
+      "duration_after_vad_seconds": 3.06,
+      "exact_reference_match": false,
+      "elapsed_seconds": 0.927086
+    },
+    {
+      "name": "sample-02.wav",
+      "reference": "Игрок один, атакуй цель.",
+      "sha256": "e3dae7fe2b8b0a1dd13e0ba34fc350a51356864d69aeb5bf616496825c9c47bf",
+      "pcm": {
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "channels": 1,
+        "frames": 47680,
+        "duration_seconds": 2.98
+      },
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "text": " Игра Уходин, атакует сель.",
+          "avg_logprob": -0.7728233188390732,
+          "no_speech_prob": 0.0035618979018181562
+        }
+      ],
+      "generator_consumed": true,
+      "decoder_exercised": true,
+      "comparison": {
+        "reference_words": [
+          "игрок",
+          "один",
+          "атакуй",
+          "цель"
+        ],
+        "hypothesis_words": [
+          "игра",
+          "уходин",
+          "атакует",
+          "сель"
+        ],
+        "edit_distance": 4,
+        "wer": 1.0
+      },
+      "error": null,
+      "input_duration_seconds": 2.98,
+      "duration_after_vad_seconds": 2.98,
+      "exact_reference_match": false,
+      "elapsed_seconds": 0.454644
+    },
+    {
+      "name": "sample-03.wav",
+      "reference": "Команда, соберитесь вместе.",
+      "sha256": "daeb4a4d16328e720b9e279cb550dd442c28174dc3d41d9ac9eda7601bf8edc0",
+      "pcm": {
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "channels": 1,
+        "frames": 53920,
+        "duration_seconds": 3.37
+      },
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.68,
+          "text": " Команда, соберитесь вместе.",
+          "avg_logprob": -0.5603340405684251,
+          "no_speech_prob": 0.047385625541210175
+        }
+      ],
+      "generator_consumed": true,
+      "decoder_exercised": true,
+      "comparison": {
+        "reference_words": [
+          "команда",
+          "соберитесь",
+          "вместе"
+        ],
+        "hypothesis_words": [
+          "команда",
+          "соберитесь",
+          "вместе"
+        ],
+        "edit_distance": 0,
+        "wer": 0.0
+      },
+      "error": null,
+      "input_duration_seconds": 3.37,
+      "duration_after_vad_seconds": 3.37,
+      "exact_reference_match": true,
+      "elapsed_seconds": 0.438633
+    }
+  ],
+  "aggregate": {
+    "samples": 3,
+    "reference_words": 11,
+    "edit_distance": 9,
+    "wer": 0.8181818181818182,
+    "scope": "only_three_synthetic_references"
+  },
+  "model_revision": "d90ca5fe260221311c53c58e660288d3deb8d356",
+  "model_files": [
+    {
+      "name": "config.json",
+      "bytes": 2249,
+      "sha256": "a73a28cdfe1c43ccc7202fa333d1f89c202477271407ae9a7f19afa52039cac8"
+    },
+    {
+      "name": "model.bin",
+      "bytes": 75538270,
+      "sha256": "dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 2203239,
+      "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+    },
+    {
+      "name": "vocabulary.txt",
+      "bytes": 459861,
+      "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    }
+  ],
+  "versions": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "onnxruntime": "1.31.0",
+    "av": "18.0.0",
+    "numpy": "2.5.4",
+    "huggingface-hub": "2.2.0",
+    "tokenizers": "0.23.3"
+  },
+  "decoder_elapsed_seconds": 5.087655,
+  "process_cpu_seconds": 3.90625,
+  "synthetic_decoder_positive": true,
+  "speech_verified": false,
+  "accuracy_verified": false,
+  "dota_bridge_verified": false,
+  "microphone_used": false,
+  "speakers_used": false,
+  "commands_sent": 0,
+  "python_socket_attempts": [],
+  "native_network_monitored": false,
+  "audio_published": false,
+  "human_second_owner_review": "open",
+  "technical_review": {
+    "agent": "foundation_report_review",
+    "substantial_findings": 0,
+    "human_review_substituted": false
+  },
+  "full_source_report": "build/dota_coach/source-checks-20261013T062607Z-57578a/source-checks.json"
+}

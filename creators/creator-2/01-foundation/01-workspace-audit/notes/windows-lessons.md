@@ -437,6 +437,22 @@
 - **Проверка:** [Scaling report](../../../09-presentation/02-settings-layout/reports/preparation-scaling-2026-10-13.md):12actualPNG/6predicates на каждом размере, failed visual reset сохранён; interrupted run не выдан за completed, final ownPIDgone/Steam сохранён.
 - **Следующий раз:** причинный опыт вести на одном build с before/after geometry и контролем ввода; ненулевой/нулевой sampled scroll и API success не заменяют physical wheel/hittest или поддержку resolution продуктом.
 
+## 37. ScrollToTop и наблюдаемый scroll не изменяются атомарно
+
+- **Действие:** resettrace записал geometry до/послеScrollToTop в одномcallback и последующиеsamples наодномbuild25894101.
+- **Причина:** немедленное чтение сохранило−1674/−695; первоеsampled0 было позднее215/301/225/302ms. Внутренниймеханизмдвижка и причинаисторическогоотказа неустановлены; этонаблюдаемаяраздельностьcall/read/layout, не timing guarantee.
+- **Исправление:** recordoperation boundaries/finalgeometry/actualframes отдельно; не менятьproductionкод по предположению. Context rechecked послеprepare/geometry доinputreads, postguardRED→GREEN.
+- **Проверка:** [Resettrace](../../../09-presentation/02-settings-layout/reports/reset-trace-2026-10-13.md):131records/124samples/4ABAB/finaltop0/6frames; VM8PASS/builder10PASS. Sampledquiet неphysicalcontrol, oldfailure сохранён.
+- **Следующий раз:** сверять результат послеnative layout, не толькоimmediategetter; wallclock/sampling неSLA. Не объявлятьневоспроизведённуюошибкуисправленной, guardпроверятьпослевнешнеговызова.
+
+## 38. Synthetic decoder positive не подтверждает правильность приказа
+
+- **Действие:**3фиксированныхрусскихreference синтезированыIrinaDesktop16kPCM16mono иполностьюдекодированыlocaltiny/PyAV18.
+- **Причина:**путьdecoderработал, нодвефразыошибочны;9правок/11referencewords WER81.8% толькоэтихsamples. Installedvoice inventory также не подтверждалSelectVoice вsandbox; причинаконтекстногоразличиянеустановлена. Недоступныйoverload сверятьlocalreflection, анеугадывать.
+- **Исправление:** раздельныеsynthetic_decoder_positive/real speech/accuracy/bridge flags, rawsegments/referencecomparison; false safety claims/команды0. Failedreceipts сохранены, WaveFileformat verified, thresholdsнеподгонялись.
+- **Проверка:** [SyntheticASR](../../../06-voice/01-microphone-probe/reports/synthetic-asr-2026-10-13.md):thirdexact/twoincorrect,PCM/modelhashes/9puretests PASS, existingoutputrefusalpreservesbytes, full1059pass/28skip/0errors.
+- **Следующий раз:** decoder/text/no_speech score не semanticconfidence; WERinsertions можетпревысить100% отдельнойфразы. Реальнаяречь/команднаяточность/authority требуютотдельнойвыборки, не трёхTTSпроб.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[5]
 PACK = Path(__file__).resolve().parents[1]
 FIXTURE = 'creators/creator-2/11-integration/01-ui-binding/tests/native-preparation/'
 BUILDER = PACK / 'tools/build_native_preparation_fixture.py'
+RESET = 'creators/creator-2/09-presentation/02-settings-layout/tests/reset_fixture.js'
 
 
 class NativePreparationFixtureTests(unittest.TestCase):
@@ -35,6 +36,34 @@ class NativePreparationFixtureTests(unittest.TestCase):
         manifest.parent.mkdir(parents=True, exist_ok=True)
         manifest.write_bytes((PACK / 'preparation-manifest.json').read_bytes())
         self.output = self.repo / 'build/dota_coach/native-preparation-fixture'
+
+    def test_reset_variant_retains_seventeen_outputs_and_default_driver(self):
+        reset = self.repo / RESET
+        reset.parent.mkdir(parents=True)
+        reset.write_bytes(b'// TEST-only reset diagnostic\n')
+        report = self.builder.build_fixture(self.repo, self.output, variant='reset')
+        self.assertEqual(report['diagnostic_variant'], 'reset')
+        self.assertEqual(len(report['assets']), 17)
+        driver = next(a for a in report['assets'] if a['target'].endswith('/preparation_fixture.js'))
+        self.assertEqual(driver['source'], RESET)
+        self.assertEqual((self.output / driver['target']).read_bytes(), reset.read_bytes())
+        default = self.builder.build_fixture(self.repo, self.repo / 'build/dota_coach/default')
+        driver = next(a for a in default['assets'] if a['target'].endswith('/preparation_fixture.js'))
+        self.assertEqual(driver['source'], FIXTURE + 'preparation_fixture.js')
+        self.assertEqual((self.repo / 'build/dota_coach/default' / driver['target']).read_bytes(),
+                         self.before[FIXTURE + 'preparation_fixture.js'])
+
+    def test_variant_allowlist_refuses_before_output_creation(self):
+        for variant in ('camera', 'Reset', '../escape', 0, True, None, ['reset']):
+            with self.subTest(variant=variant):
+                with self.assertRaises(ValueError):
+                    self.builder.build_fixture(self.repo, self.output, variant=variant)
+                self.assertFalse(self.output.exists())
+
+    def test_missing_reset_driver_refuses_before_output_creation(self):
+        with self.assertRaises((ValueError, FileNotFoundError)):
+            self.builder.build_fixture(self.repo, self.output, variant='reset')
+        self.assertFalse(self.output.exists())
 
     def test_preserves_canonical_bytes_and_exact_derived_graph(self):
         report = self.builder.build_fixture(self.repo, self.output)

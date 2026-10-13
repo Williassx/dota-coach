@@ -265,3 +265,16 @@ Helper explicit only/validatedsize,date,attempt,addon/PIDticks10squery; no ordin
 capture. [Отчёт](../../../09-presentation/02-settings-layout/reports/preparation-scaling-2026-10-13.md),
 урок36. Progress53/213unchanged. Следующий bounded шаг — controlled reset scroll
 наодномbuild; physicalinput/support/storage/C2-07-03/C1/transition/humanowner открыты.
+
+Порученная2часассессия13октября06:01:04–08:01:04UTC продолжается;
+[сессионныйledger](two-hour-session-2026-10-13.md). Completedresettrace на25894101:
+4ABAB/131records/124samples/6frames,allfinal0/oldfailureNOTreproduced,
+physicalInputControlledfalse/globalcallbackunchanged. OwnPID2128quitgone/Steam12964.
+Builder10/VM8; [evidence](../../../09-presentation/02-settings-layout/reports/reset-trace-2026-10-13.md).
+IndependentC2-06synthetic3IrinaPCM16k→decoderpositive,9edits11wordsWER81.8% only3,
+twoincorrect/thirdexact,real speech/accuracy/bridgefalse/commands0; pure9RED→GREEN,
+[report](../../../06-voice/01-microphone-probe/reports/synthetic-asr-2026-10-13.md).
+Full062607Z-57578a50/1059passed/28skip/6incomplete/0errors/false/50process0.
+Eachboundedresult finalcritic1 nofindings/humanowneropen; lessons37/38,
+progress53/213beforeassetsregistry. ContinueavailableC2tasksuntildeadline,
+no repeattrace/ASRwithoutnewreason, no fabricatedC1/input/rights orallgamecomplete.

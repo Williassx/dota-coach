@@ -231,3 +231,11 @@ Interrupted secondrun/causeunknown preserved; builddrift требуетfreshcomp
 Differentbuild/uncontrolledinput не causal comparison/productresolution support.
 Canonical/fixedkind unchanged, ownclientsgone, full49/1039pass/28skip/0errors/false.
 Physicalinput/storage/общийtransition/humansecondowner открыты; progress53/213unchanged.
+
+13октября resettrace вonebuild25894101:4ABAB/131records/124samples/6frames,
+allfinaltop0,oldfailureNOTreproduced. Immediategetteroldvalue неfinal layout,
+firstsample0observations неSLA; physicalInputControlledfalse/globalcallbackunchanged.
+SyntheticIrina3WAV decoderpositive при9edits11refwordsWER81.8% only3samples;
+real speech/accuracy/bridgefalse,commands0. Full50/1059pass/28skip/0errors/false,
+source/probe/fixedkinds productionunchanged;humanowneropen. Порученная2часассессия
+13октября06:01:04–08:01:04UTC продолжаетсяпоC2PLAN/зависимостям.

@@ -15,24 +15,31 @@ def main():
     parser.add_argument('--run', required=True, choices=('1600x900', '1024x768'))
     parser.add_argument('--date', default='20261012')
     parser.add_argument('--attempt', default='')
+    parser.add_argument('--variant', choices=('baseline', 'reset'), default='baseline')
     parser.add_argument('--addon', default='dota_coach_c2_preparation_r1_20261012',
                         choices=('dota_coach_c2_preparation_r1_20261012',
-                                 'dota_coach_c2_preparation_scale_r2_20261013'))
+                                 'dota_coach_c2_preparation_scale_r2_20261013',
+                                 'dota_coach_c2_preparation_reset_trace_20261013'))
     args = parser.parse_args()
     capture_date = datetime.datetime.strptime(args.date, '%Y%m%d').strftime('%Y-%m-%d')
     if len(args.date) != 8 or (args.attempt and not re.fullmatch(r'[a-z0-9_-]{1,24}', args.attempt)):
         raise ValueError('Invalid date/attempt')
+    if (args.variant == 'reset') != (args.addon == 'dota_coach_c2_preparation_reset_trace_20261013'):
+        raise ValueError('Diagnostic variant/addon mismatch')
     repo = Path(__file__).resolve().parents[5]
     run_id = args.run + ('-' + args.attempt if args.attempt else '')
     prefix = repo / ('build/dota_coach/preparation-scale-' + run_id + '-' + args.date)
     receipt = json.loads(Path(str(prefix) + '-owned.json').read_text(encoding='utf-8-sig'))
     log = Path(str(prefix) + '-console.log')
     addon = args.addon
-    if receipt['addon'] != addon or Path(receipt['log']) != log:
+    if (receipt['addon'] != addon or Path(receipt['log']) != log or
+            receipt.get('diagnostic_variant', 'baseline') != args.variant):
         raise ValueError('Wrong owned TEST receipt')
     reports = Path(__file__).resolve().parents[1] / 'reports'
     reports.mkdir(exist_ok=True)
-    phases = ('bound', 'team', 'complete', 'reset', 'disposed', 'rebound')
+    phases = (('bound', 'immediate-a', 'delayed-a', 'immediate-b', 'delayed-b', 'disposed')
+              if args.variant == 'reset' else ('bound', 'team', 'complete', 'reset', 'disposed', 'rebound'))
+    marker = '[C2NativePreparationReset]' if args.variant == 'reset' else '[C2NativePreparation]'
     outputs = [reports / ('preparation-' + run_id + '-' + p + '-' + capture_date + '.png') for p in phases]
     manifest = Path(str(prefix) + '-captures.json')
     if manifest.exists() or any(p.exists() for p in outputs):
@@ -77,10 +84,10 @@ def main():
         raise TimeoutError('Fresh hero selection missing')
     for phase, png in zip(phases, outputs):
         while time.monotonic() < deadline:
-            lines = [x for x in body().splitlines() if '[C2NativePreparation]' in x]
+            lines = [x for x in body().splitlines() if marker in x]
             if any('pass=false' in x for x in lines):
                 raise RuntimeError('Native assertion failed')
-            if any('[C2NativePreparation] ' + phase + ' pass=true' in x for x in lines):
+            if any(marker + ' ' + phase + ' pass=true' in x for x in lines):
                 break
             time.sleep(.25)
         else:
@@ -99,7 +106,7 @@ def main():
         print(json.dumps(records[-1]), flush=True)
         if dimensions != [int(x) for x in args.run.split('x')]:
             raise RuntimeError('Actual dimensions differ from requested flags; preserve failed capture')
-    if '[C2NativePreparation] cycle pass=true' not in body():
+    if marker + ' cycle pass=true' not in body():
         raise RuntimeError('Native cycle incomplete')
 
 

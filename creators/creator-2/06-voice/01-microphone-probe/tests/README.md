@@ -9,3 +9,7 @@ python -m unittest discover -s creators/creator-2/06-voice/01-microphone-probe/t
 ```
 
 Набор входит в [общий source catalog](../../../11-integration/03-end-to-end/suite-catalog.json); import native command не активирует микрофон.
+## Synthetic pure checks
+
+[test_synthetic_asr.py](test_synthetic_asr.py):9nonactivatingmetric/receipt/PCM/refusal/
+inertimportchecks. ActualTTS/ASR не запускаютсяordinary sourcecatalog.

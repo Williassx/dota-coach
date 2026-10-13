@@ -245,6 +245,11 @@
       "id": "node-camera-motion",
       "framework": "node-test",
       "path": "creators/creator-2/03-map-view/02-camera-overlays/tests/camera-motion.test.cjs"
+    },
+    {
+      "id": "node-preparation-reset-trace",
+      "framework": "node-test",
+      "path": "creators/creator-2/09-presentation/02-settings-layout/tests/reset-trace.test.cjs"
     }
   ]
 }

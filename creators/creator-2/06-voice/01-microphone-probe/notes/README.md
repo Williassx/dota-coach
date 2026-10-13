@@ -9,3 +9,9 @@
 
 - [Windows inventory](system-speech-inventory.ps1): read-only языки/engines64/32bit.
 - [ASR setup](asr-setup.md) и [smoke source](asr-smoke.py): pinnedlocalCPUmodel, existing WAV, никакогоmiccapture/приказов. Неordinarytests/import.
+## Explicit synthetic pilot
+
+[synthetic-tts.ps1](synthetic-tts.ps1) пишет3fixedIrinaWAV вfreshignoreddir;
+[synthetic-asr.py](synthetic-asr.py) проверяетreceipt/PCM/model доlocalinference.
+No mic/speakers/defaultOS changes. [Spec](../synthetic-design.md)/[plan](../synthetic-plan.md)/
+[result](../reports/synthetic-asr-2026-10-13.md). Реальнаяречь/bridgefalse.
