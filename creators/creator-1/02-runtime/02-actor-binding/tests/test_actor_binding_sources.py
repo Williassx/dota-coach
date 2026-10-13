@@ -29,6 +29,21 @@ class ActorBindingSourceTests(unittest.TestCase):
         self.assertIn("revision", text)
         self.assertIn("seat-or-entity-taken", text)
 
+    def test_owner_from_trusted_event(self):
+        text = source()
+        self.assertIn("function CD1C202Binding:CheckOwner", text)
+        self.assertIn("trustedOwner", text)
+        self.assertIn("b.owner == trustedOwner", text)
+
+    def test_death_respawn_reconnect(self):
+        text = source()
+        self.assertIn("function CD1C202Binding:OnDeath", text)
+        self.assertIn("function CD1C202Binding:OnRespawn", text)
+        self.assertIn("function CD1C202Binding:OnReconnect", text)
+        self.assertIn("alive = false", text)
+        self.assertIn("seat-moved", text)
+        self.assertIn("not-dead", text)
+
     def test_stale_entity_and_revision_rejected(self):
         text = source()
         self.assertIn("b.entity ~= entity", text)

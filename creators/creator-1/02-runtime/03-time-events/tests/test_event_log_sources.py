@@ -42,6 +42,14 @@ class EventLogSourceTests(unittest.TestCase):
         self.assertIn("bad-type", text)
         self.assertIn("bad-actor", text)
 
+    def test_links_orders_modes_actions(self):
+        text = source()
+        self.assertIn("function CD1C203EventLog:LinkOrder", text)
+        self.assertIn("function CD1C203EventLog:TagMode", text)
+        self.assertIn("function CD1C203EventLog:GetByOrder", text)
+        self.assertIn("unknown-seq", text)
+        self.assertIn("bad-mode", text)
+
 
 if __name__ == "__main__":
     unittest.main()
