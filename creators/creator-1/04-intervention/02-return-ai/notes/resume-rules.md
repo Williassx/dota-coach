@@ -14,8 +14,13 @@
 
 ## Реализация
 
-`src/scripts/vscripts/return_manager.lua` (`StartReturn`/`FinishReturn`,
-счётчик `completedCycles`); проверки — `tests/test_return_sources.py` (4/4 OK).
+`src/scripts/vscripts/return_manager.lua` (`EnterManual`/`StartReturn`/`FinishReturn`,
+счётчик `completedCycles`); статические проверки — `tests/test_return_sources.py`.
+При рассмотрении C2 введён публичный вход в MANUAL с captured observationRevision;
+выход требует строго новой finite integer revision. Три pure цикла исполняются в
+[Lua-наборе](../../../11-integration/01-ui-contracts/tests/test_lua_execution.py).
+Переданное число остаётся обязанностью authoritative caller; оно не подтверждает
+действительную переоценку наблюдения или различимое действие ИИ в Dota.
 
 ## Сопоставление с критерием
 

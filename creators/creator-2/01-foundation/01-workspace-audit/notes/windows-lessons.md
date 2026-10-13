@@ -461,6 +461,14 @@
 - **Проверка:** [Registry](../../../09-presentation/01-assets/reports/assets-register-2026-10-13.md):187filehashes/104media membership/10recipehashes/98internalrefs/31links,ниdeclaredmedia вrecipes. Толькоregistrycheckbox54/213, licenses/humanowneropen.
 - **Следующий раз:** указыватьHEAD/дату/workingdelta иневыдаватьотсутствиеexplicitURLsзаallruntimeaudit. Concept/mapreference/screenshot неlicensedruntimeasset; будущийinventoryобновлятьпослеmedia/progresschanges.
 
+## 40. Статический source PASS не доказывает исполнение Lua и совместимость модулей
+
+- **Действие:** C2 рассмотрел 172 переданных файла C1; actual Lua 5.1 RED воспроизвёл семь разрывов, хотя существующие строковые проверки проходили. Voice producer source=voice не принимался арбитром; каталог не охватывал 35 новых наборов.
+- **Причина:** проверки наличия строк и отдельные DTO shape assertions не исполняли переходы/межмодульную передачу. Верхняя граница 64 уже не вмещала 85 реальных наборов; sandbox timeout отказ отдельно совпал с ранее установленным ограничением.
+- **Исправление:** bounded guards/public return/copy binding/source=coach+origin=voice; executable Lua5.1 harness, actual producer→arbiter; каталог85/max128 при сохранённых byte/path/schema guards. Реальную authority не выдумывать.
+- **Проверка:** [Рассмотрение C1](../../../11-integration/03-end-to-end/reports/creator-1-review-2026-10-13.md): Lua8/voice13 PASS; all85/1242passed/28skip/6incomplete/0errors/strictfalse. C1 36/188PASS, progress112/181 равен генератору, 69 open actions; критик подтвердил устранение ограниченных замечаний.
+- **Следующий раз:** дополнять static проверки исполнением настоящего source и actual producer/consumer; различать streaming epoch, server commit и engine effect. Перед интеграцией сверять полный каталог и Git HEAD, не доверять историческому handoff/progress.
+
 ## Как продолжать обучение
 
 Каждый исполнитель перед подходящей задачей применяет соответствующий пункт.

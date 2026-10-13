@@ -13,6 +13,11 @@ if CD1C202Binding == nil then
 	CD1C202Binding = class({})
 end
 
+local function validIndex(value)
+	return type(value) == "number" and value == value and value >= 0
+		and value <= 9007199254740991 and value % 1 == 0
+end
+
 function CD1C202Binding:Init()
 	self.bindings = {}
 	self.revision = 0
@@ -25,10 +30,10 @@ function CD1C202Binding:Bind(projectId, seat, entity, owner)
 	if type(projectId) ~= "string" or projectId == "" then
 		return nil, "bad-project-id"
 	end
-	if type(seat) ~= "number" or type(entity) ~= "number" then
+	if not validIndex(seat) or not validIndex(entity) then
 		return nil, "bad-seat-or-entity"
 	end
-	if owner ~= nil and type(owner) ~= "number" then
+	if owner ~= nil and not validIndex(owner) then
 		return nil, "bad-owner"
 	end
 	-- One seat/entity serves one project id at a time.
@@ -45,7 +50,10 @@ end
 
 -- Resolve the current binding for a project id (nil if none).
 function CD1C202Binding:Resolve(projectId)
-	return self.bindings[projectId]
+	local b = self.bindings[projectId]
+	if b == nil then return nil end
+	return { seat = b.seat, entity = b.entity, owner = b.owner,
+		alive = b.alive, revision = b.revision }
 end
 
 -- Check whether an order targets the current live binding.
@@ -101,9 +109,10 @@ function CD1C202Binding:OnRespawn(projectId, newEntity, owner)
 	if b.alive == true then
 		return nil, "not-dead"
 	end
-	if type(newEntity) ~= "number" then
+	if not validIndex(newEntity) then
 		return nil, "bad-entity"
 	end
+	if owner ~= nil and not validIndex(owner) then return nil, "bad-owner" end
 	for pid, other in pairs(self.bindings) do
 		if pid ~= projectId and other.entity == newEntity then
 			return nil, "seat-or-entity-taken"

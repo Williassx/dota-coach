@@ -23,7 +23,9 @@ function CD1C401Manual:Request(actorEntity)
 	if self.state ~= "AI" then
 		return nil, "not-in-ai"
 	end
-	if type(actorEntity) ~= "number" then
+	if type(actorEntity) ~= "number" or actorEntity ~= actorEntity
+		or actorEntity < 0 or actorEntity > 9007199254740991
+		or actorEntity % 1 ~= 0 then
 		return nil, "bad-actor"
 	end
 	self.state = "REQUESTED"
@@ -38,6 +40,7 @@ function CD1C401Manual:Confirm(serverConfirmed)
 	end
 	if serverConfirmed ~= true then
 		self.state = "AI"
+		self.actor = nil
 		return nil, "server-refused"
 	end
 	self.state = "MANUAL"

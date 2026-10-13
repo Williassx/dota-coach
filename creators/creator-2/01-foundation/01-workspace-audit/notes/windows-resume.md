@@ -287,3 +287,12 @@ Onlyregistryaction marked→54/213(25.4%); [report](../../../09-presentation/01-
 lesson39. Grammarprobe actual3references+3hyp allunknown_action; nextplannedcorpus
 exactexistingkerриretreat/mидерhold/командаregroup, no vocabexpand/commands.
 Userdeadline2hour08:01:04UTCstillactive; rootpreservesparalleluncommittedcorpusfiles.
+
+C1 подключён 13 октября: actual commits1c44da4/b1f2c48/71b20c0 теперь в main;
+172файла рассмотрены по [отчёту](../../../11-integration/03-end-to-end/reports/creator-1-review-2026-10-13.md).
+Исправлены bounded Lua/voice integration guards; Lua8/voice13/full85/1242PASS/
+28skip/6incomplete/0errors/strictfalse, C1 36/188PASS. C1progress112/181/C254/213
+не повышены, 69 C1open. C1-04 pure source теперь доступен; не включать его в live
+UI без общего authority/actor/lease/transport контракта. .freebuff не публиковалась.
+После C1 publication продолжить pending C2 grammar pilot: exact3WAV/ASR6edits7words/
+85.7%/refsready3,hypready0; rootacceptance/report/finalcritic/publication ещё нужны.

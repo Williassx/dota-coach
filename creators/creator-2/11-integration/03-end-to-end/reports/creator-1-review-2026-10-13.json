@@ -1,0 +1,741 @@
+{
+  "schema_version": 1,
+  "task": "C2-11-03/creator-1-handoff-review",
+  "generated_at_utc": "2026-10-13T11:01:21.299289+00:00",
+  "transfer_commits": [
+    "1c44da4",
+    "b1f2c48",
+    "71b20c0"
+  ],
+  "transfer_files": 172,
+  "snapshot_scope": "current Windows bytes after bounded review fixes; unpublished working delta included",
+  "file_hashes": [
+    {
+      "path": "creators/creator-1/00-progress/README.md",
+      "current_windows_sha256": "7e91eac76ac9d6fd3972f0042cfe1a83fea13a6f8de33d0442828dad2d777ce1"
+    },
+    {
+      "path": "creators/creator-1/00-progress/tools/update_progress.py",
+      "current_windows_sha256": "7f39d6c67d665f36f3e107cb902fd69e16b71878e25106d380db474007a2ab6b"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/01-environment-audit/README.md",
+      "current_windows_sha256": "6680af213aeb164a2839da13471ea6ec147a37b2aaa52f3d4cfd545ba59a5467"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/01-environment-audit/implementation-plan.md",
+      "current_windows_sha256": "898cb3c0654ae1735f4656c1101e59b518654ccff4df94b6ce4d66ab20aec53e"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/01-environment-audit/notes/handoff-creator-2-review.md",
+      "current_windows_sha256": "743ba070dd3a6fb876924b59963f93f356d358fb994bdf5d33f831ed1bfd0d30"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/01-environment-audit/reports/README.md",
+      "current_windows_sha256": "4cebd22eae189e8537b404969598a39b8ed6aabf74ad56eb606230acef5c278b"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/01-environment-audit/reports/windows-audit.md",
+      "current_windows_sha256": "c0abde3a29a3b4078a38452e57cbed3b94e27b85c3b46c39fe37dc4031076f0b"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/README.md",
+      "current_windows_sha256": "329d51a444a3ebcfa155143f4f66092d0ee16d661ad23c4d82a67a9a0f80d628"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/design.md",
+      "current_windows_sha256": "6037f81208cbf737b68fb400bf71ffb84321f54a2b86a075e2abda5bb95169f2"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/implementation-plan.md",
+      "current_windows_sha256": "e66b3c589bd9db3122022cda5c842d81e00b0bd20128970cb184c0396c63766b"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/notes/capabilities.md",
+      "current_windows_sha256": "e2fef861252537465ae5038a863750d019af774d92606146b0c517445ecacc36"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/reports/probe-run-20261013.md",
+      "current_windows_sha256": "ddc5bd53cac30089c10a1a969e3dd532f315e9b88dfab775b35efad84f403b04"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/reports/probe-run-r2-20261013.md",
+      "current_windows_sha256": "f1f85289b51995383d6a7ba9bec2e17ebf54289657fe1f7717a304ed0854f69f"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/reports/probe-run-r3-r5-20261013.md",
+      "current_windows_sha256": "8544319dc90e0cec29670743af256b9a0d24d842fb03c0b6d18b9256dd3a8193"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/src/addoninfo.txt",
+      "current_windows_sha256": "380e243e39dc2f9967d9c2736b9248566c8ef3cca5ae1289cf488d8015a07f48"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/src/scripts/vscripts/addon_game_mode.lua",
+      "current_windows_sha256": "a934f37e16d22f998c3345e9d88f1d5caf3f9290c2a8920b884bd00d7bf4d34d"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/tests/test_probe_sources.py",
+      "current_windows_sha256": "1e84e3acfb86399b3e39e70772a2e2f0c5cc1ecf3437edcd6707dd2ed7834d69"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability/tools/probe-command.ps1",
+      "current_windows_sha256": "fe2b76d683bdb99a84478ec819d289d9b90e426549a9395e341436fe646ebb78"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/03-command-contract/README.md",
+      "current_windows_sha256": "1fb7c8e4e51124c244985ef614713a8df28c2c33061aa100e9c5c68e108c866a"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/03-command-contract/notes/contract-review.md",
+      "current_windows_sha256": "f74cf6865e6e12f0cb2e91a375387e5519d065bfdd866f7eb2eb18fa2e27d181"
+    },
+    {
+      "path": "creators/creator-1/01-foundation/03-command-contract/tests/test_contract_examples.py",
+      "current_windows_sha256": "6bb440117c9b6fe22e77014f2f67c28500a5e9d64d193e3fa72eefcb57c1bd54"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/README.md",
+      "current_windows_sha256": "7062ce997850285d9f2501319b89b6d124eeec75bc62ae2b4dfa1fb0d28109d4"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/design.md",
+      "current_windows_sha256": "9cdc48b41bed979d442d01ab14e45e391d3006460e3dffaafa53a816fddb0ba8"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/implementation-plan.md",
+      "current_windows_sha256": "b5ce45144fdca0b647e886c8884d698a0b430b1019eab8c806affbcceecba6ed"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/notes/lifecycle.md",
+      "current_windows_sha256": "27fe975ff53f15479ee899f6c176742f0dcef433a7cb4517113707af2d25c0a7"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/reports/lifecycle-r6-r7-20261013.md",
+      "current_windows_sha256": "03d1e954055292bba9192a66d779c5a3d53e44d319b390799a2e49ed5d1f4b4f"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/src/addoninfo.txt",
+      "current_windows_sha256": "380e243e39dc2f9967d9c2736b9248566c8ef3cca5ae1289cf488d8015a07f48"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/src/scripts/vscripts/addon_game_mode.lua",
+      "current_windows_sha256": "8b8ff299f0379f31d29e47fd1496fd394ccc318e6658637a1c6459b062ad51bc"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/tests/test_lifecycle_sources.py",
+      "current_windows_sha256": "d5594d7d2f83531d2112e76bc0dce11fd8f212aef870354f79123f2ec053f567"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/tools/lifecycle-command.ps1",
+      "current_windows_sha256": "04a51e724ce59487a67b3d2324221dab063feb4e0dbb6bae64a1cdd73a398eed"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/tools/vcon-send.py",
+      "current_windows_sha256": "b6d8416623abe6d4330399d2110c889731495ea21e1623c481157a5f2f091133"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding/README.md",
+      "current_windows_sha256": "1a232bc26d5b37b9c3ea26671f26029d8dc8802d1175f37c98fe4420b851907c"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding/design.md",
+      "current_windows_sha256": "679b33f483e93de016fe471b92a19133b95710d6c255386fcd6b90ea89f5725b"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding/notes/actor-binding.md",
+      "current_windows_sha256": "724831647b1788c7842586114d4d8145f39b762cc805470336fae628b632884f"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding/src/scripts/vscripts/actor_binding.lua",
+      "current_windows_sha256": "396eb55146f80f20d1968cc201d13854ccf1cd99c78c560b51ab20b4ad212192"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding/tests/test_actor_binding_sources.py",
+      "current_windows_sha256": "bb4ba3fed4556a0f122af0e85ea5228147397cd2d3317c31050666ef2f147559"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/README.md",
+      "current_windows_sha256": "b45d02a3ce5af6226b7b2950b192d2ee71ff7a32c2519201f6f1019c20cea0ef"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/notes/event-format.md",
+      "current_windows_sha256": "9cfcbe4493f3d0a4ddc706a6c04c047c39969ab802038e291893ec5d72ee640c"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/src/scripts/vscripts/event_log.lua",
+      "current_windows_sha256": "86b861d66af951863c23555b1d22b0f9a40b0cbba6366eeffbdc4192a667c3aa"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/tests/test_event_log_sources.py",
+      "current_windows_sha256": "1c0a0d6fbb6bd2c044c8769cceb6684bbb875fcffdd4ceb424751e6705567f6c"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/01-observation/README.md",
+      "current_windows_sha256": "0e9de5cf6a0d99e99f0e21d6e3c00c5b9dea9c01a01d0d719870a36fad24bb79"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/01-observation/notes/observation-scope.md",
+      "current_windows_sha256": "8ee4861ba132726afb1698d5514163d5b563bc670d4ba71c7002cbdd4c18214b"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/01-observation/src/scripts/vscripts/observation.lua",
+      "current_windows_sha256": "9f9b3e275454859ec903aac7376489fc9aa6a939d0ea5a44865a415232ea25ba"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/01-observation/tests/test_observation_sources.py",
+      "current_windows_sha256": "4c09388275e77740a30cf610d9b8ef537623ba7c5f20130b0f4c4478ecb3a7d7"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/README.md",
+      "current_windows_sha256": "f10bf6bcbd78ea9077a1a1e5f9a4a29c13fef63680eeeef5afe6b54d4ad2147d"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/src/scripts/vscripts/synthetic_policy.lua",
+      "current_windows_sha256": "91de1fa21bd8b29b38578c7aeddc9c412ab7bd18a14d64ba79513ed50a8431d9"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests/fixtures/synthetic-intents.json",
+      "current_windows_sha256": "06680807d75abb43044c11de7fd837bd9fc0db9b7000774f9213d187914e1738"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests/test_synthetic_policy_sources.py",
+      "current_windows_sha256": "799da582044bb83881c50db860171eec8cc123068c71f30ff562ad927693aa34"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/README.md",
+      "current_windows_sha256": "add60ed54ba246bcaecc0b226c017713cdb15122b18e1d80f01f2011ba3d15e6"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/notes/priorities.md",
+      "current_windows_sha256": "c8914cc42957981eacf38e932e2e9de296f13aa89950fcf32878fbec5f164fd1"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/src/scripts/vscripts/order_arbiter.lua",
+      "current_windows_sha256": "704e2b1a16246a99eeb68c2ba8a5b990deccd4350c797a688816c026886c1900"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/tests/test_arbiter_sources.py",
+      "current_windows_sha256": "4b7a498b818171b24c2bf493042f440deb017ab9f5e7410e06f8a69ec92e7cae"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+      "current_windows_sha256": "8cef305e3f1266ca5225ecd24d322c921a53e2553af2adfbfc5db43f1c459fd8"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/notes/manual-actions.md",
+      "current_windows_sha256": "a5718518020df7be9aa8cf3414d4d7dc1666b778398d93cf4dbf28aa58534d11"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_mode.lua",
+      "current_windows_sha256": "7fac1ebd24d868cd08f96d5c9cc83ad277c2b070a6aea885ace4347a4750e855"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_mode_sources.py",
+      "current_windows_sha256": "c8a6ac8252ab129da7e6081a73b7af12230b3cc9437d9ba863b97eab495808d9"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/02-return-ai/README.md",
+      "current_windows_sha256": "bec1dc08cada0d5a07a87d16ff7e78c68dd632bb1c7f97e4bafc816685171988"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/02-return-ai/notes/resume-rules.md",
+      "current_windows_sha256": "70f7dae418651558e86214ea6e6956db47af9ef8d085b9a9934c1b00f55b37a3"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/02-return-ai/src/scripts/vscripts/return_manager.lua",
+      "current_windows_sha256": "d85e4398ec9e49e8d6606348bc9e1bfd7889b56bd9514b5ec42e9560dbe4689f"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/02-return-ai/tests/test_return_sources.py",
+      "current_windows_sha256": "df82215d5493113590c51535289d2e3f3384b5fe2d8d5810bed33288452f55fb"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/03-lifecycle-guards/README.md",
+      "current_windows_sha256": "e144045ddeac46c19502c0fe5ef3cf0067a08cdf947820ea91620133bb8d67fd"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/03-lifecycle-guards/src/scripts/vscripts/generation_guards.lua",
+      "current_windows_sha256": "06d0af4e8d681b86366c6b6e3b7e94a29f4ef5fefbe7f6b52be4d5c913788b37"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/03-lifecycle-guards/tests/test_generation_guards_sources.py",
+      "current_windows_sha256": "393c56cd39c1a6a1f06715e8757478a4bcb3869de914ce3c8b33afe7fcc8a130"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/README.md",
+      "current_windows_sha256": "885170fba14f5c6b21b9188e9511af1c22329d47644dd8804ed4ff0336372d7e"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/fixtures/README.md",
+      "current_windows_sha256": "e43e958874cc24de4035eca9771f823c3d240dfdee889f19a43ccb31287017fa"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/fixtures/dota2ru-matches-page-head.json",
+      "current_windows_sha256": "7c329486c1e76b537b4a4d18826335c389ae74684c2780864e69a07672602785"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/fixtures/dota2ru-robots.txt",
+      "current_windows_sha256": "f90b21c9dcef2d67b7b2840a2cc48d6fda24fd7e6f76db26fd4324f2ea029409"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/fixtures/opendota-herostats-sample.json",
+      "current_windows_sha256": "49f05634e7006b6fcc3583595c1ea7f89148dcadc0a8b9e239637cdd15d94179"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/fixtures/opendota-publicmatches-sample.json",
+      "current_windows_sha256": "d98f7568624113d1b99d5ecfb5859b4047ca7a91b58b4d8e3b095a980219e79e"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/notes/source-audit.md",
+      "current_windows_sha256": "0fe1253d0ac78d8c64d1e6536a3daeaa5644939e59830ac3de9258916d0bf629"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/tests/test_fixtures_integrity.py",
+      "current_windows_sha256": "2cfeac2348c67d75365199eb421f22f6ee6b5b309fc3b3cf8b4891603c19dd60"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit/tools/fetch-opendota-sample.py",
+      "current_windows_sha256": "f653bb9de10b6db110ce908e170684d46173d2fda1d024be676ea5d5f3b3b9e0"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/02-import/README.md",
+      "current_windows_sha256": "241eb134a383eb52e87ef3fb4ca77d33aa2adefc35fefe498febc5c529fd25bb"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/02-import/src/importer.py",
+      "current_windows_sha256": "1b6ae0f33c51b5ed0d833af23eb83aab265c8f4fa5fbbf34426ccb719ce02842"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/02-import/tests/fixtures/raw-sample.json",
+      "current_windows_sha256": "b5f6e9bbf034e042b03ddbe57bd64c0d262d1571bc534154c653dd46ada707ca"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/02-import/tests/test_importer.py",
+      "current_windows_sha256": "d17eceb0e352c9923e263b6a39b2eae144aad88316a6d947fe2e734843ed8741"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/03-replay-normalization/README.md",
+      "current_windows_sha256": "db3e332649c60797de44aadd76a9b4932160f46078c7d46f0af34d4c11e54ae4"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/03-replay-normalization/notes/replay-coverage.md",
+      "current_windows_sha256": "68f550363a69ba69a2b8cf32f277eb2ef07d608715895d339715f3e15c612039"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/03-replay-normalization/src/replay_gate.py",
+      "current_windows_sha256": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb"
+    },
+    {
+      "path": "creators/creator-1/05-match-data/03-replay-normalization/tests/test_replay_gate.py",
+      "current_windows_sha256": "203a21188c01e369f7c85f864ec84da24ee4003d5e1fbc1768e691f0f0684ab4"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/01-profiles/README.md",
+      "current_windows_sha256": "cb7cf5e2a02104d6e05d55dc91f30f00ce1a14cef753feca0841e73d71c1c759"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/01-profiles/notes/evaluation-protocol.md",
+      "current_windows_sha256": "3bc2fe4aec7462552c211a6821f8d0dc8fd1e9d5e78fda93623a2d00c9d9abb2"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/01-profiles/notes/profile-schema.md",
+      "current_windows_sha256": "043b807ce5582deec84cc5cc6714f8f1beabf7043a6f69b5d3c02f5e30570e61"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/01-profiles/tests/fixtures/synthetic-profile.json",
+      "current_windows_sha256": "714764a5d8947f0d5550b56831be53af2c33966a54a5557bf9c638267ee0b8ec"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/01-profiles/tests/test_profile_schema.py",
+      "current_windows_sha256": "7006ca7ed4c252f50a54602c1c6b8f22eba39818d9cd73ac550d58ceaf559064"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/02-personal-policy/README.md",
+      "current_windows_sha256": "c37fe0a5cdcbb7d02592286611e776dc030d3fdb7b80349b4d2fed916d464057"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/02-personal-policy/src/personal_policy.py",
+      "current_windows_sha256": "a5d7482c419a963620639c572fe6c047d100c2a7a7de0bb33b8224f8dce309a8"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/02-personal-policy/tests/fixtures/policy-contexts.json",
+      "current_windows_sha256": "5689b87df259dbb1be0303707d379c6c5019c43c7d223d9bfc80ab273f07e788"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/02-personal-policy/tests/test_personal_policy.py",
+      "current_windows_sha256": "fcd514d20afa41ba6f513bb27786e3a04c54e5e9764c0d0ec80c5943eca13318"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation/README.md",
+      "current_windows_sha256": "927a48eb75b3b429d62b0462a0ef9304462b078286a335ce20925b1d8a4a01ec"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation/reports/evaluation.md",
+      "current_windows_sha256": "68403bad557be4dbfc657efbf96b9ad46a6a4844a65ebae45113643c68c591eb"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation/src/evaluate.py",
+      "current_windows_sha256": "fcad5fb40172307a2b621d2a1d7aa307fb49ffb9aabb1219094b39e38be667b3"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation/tests/fixtures/synthetic-heldout.json",
+      "current_windows_sha256": "61e24211f407daaaa15480f086e0066082ec1d51195616d5b5cf28fe949826c4"
+    },
+    {
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation/tests/test_evaluation.py",
+      "current_windows_sha256": "378dfd15b4b68d587d563c12252fccd11136e94c187e40700722633e025ef497"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/README.md",
+      "current_windows_sha256": "0060b4afc7db4a260e811ce9d6738dde5c71742923e4cb8153190bff5f030a1b"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/notes/roster.md",
+      "current_windows_sha256": "b81453b301b7eff3c91d868a55dd20636c1a13eb689b91fd018a80ca79af26a1"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/fixtures/synthetic-roster.json",
+      "current_windows_sha256": "0ec5c20a3af38ce0dcb9b99d3cc73b0ba137f5ebdbfa436c40b43bb6f378ca67"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_validator.py",
+      "current_windows_sha256": "8ce792b75ad31de1357074e9ef5cd396fc29ba42724af24172aa5fb79ab4effb"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/02-tactics/README.md",
+      "current_windows_sha256": "64f47974dcfa7ab8906c207f360b403362bd79d1062b019d99ff21bbec4dc4e9"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/02-tactics/notes/tactics.md",
+      "current_windows_sha256": "15d01455551987740dcfcd9151fe1852fb94165055d81891b74071a81e47a510"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/02-tactics/src/tactics.py",
+      "current_windows_sha256": "dd2c54296a5403b3705ada0ec729125f5bd720754a4084610bf9586c93a32574"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/02-tactics/tests/test_tactics.py",
+      "current_windows_sha256": "e0a945c470dfbfc1e96bf8e33e1452b29485101ab80eacad17351ffa94cb0204"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/03-morale-trust/README.md",
+      "current_windows_sha256": "0c37a1c30e1500214c17e5d487f4ef9a00bc2144c7755e9d4d5fb3d6d97644d2"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/03-morale-trust/notes/morale.md",
+      "current_windows_sha256": "d0176979e568df504680ffbf5bc0dc667204cfd12e9d2466b4f1f4080cb2fe0f"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/03-morale-trust/src/morale.py",
+      "current_windows_sha256": "d059524428e6edcdbd3fb5278f753326507c6e45d8e5f04fb30fc7aff59ab7ee"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/03-morale-trust/tests/test_morale.py",
+      "current_windows_sha256": "ea22b42b2eefe468cc334d05a3db7aeb5f592ecd25f0f706db1b32bad8c613d0"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/01-farming-economy/README.md",
+      "current_windows_sha256": "b8bac51908b4ee2121b62834381f88d6c5beff122148b4f16767aeabedee1541"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/01-farming-economy/notes/economy.md",
+      "current_windows_sha256": "3ac6682cab8adeac325656a1a4d9c1fdb6e475ff00a0c783235d2e7dcc32e06d"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/01-farming-economy/src/economy.py",
+      "current_windows_sha256": "8fe2439d12171c4d9c57420fd5341a75f94e5c219cf11056a7fbcee5f526aa72"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/01-farming-economy/tests/test_economy.py",
+      "current_windows_sha256": "a1c4404ff3ef14137699df596584df03bfcf620de9cb3b2b0c9474a72807d1ab"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/02-hero-actions/README.md",
+      "current_windows_sha256": "427882363227d079764534845ca6affdc6b31ad7c41536f8dcd26c93be97b840"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/02-hero-actions/src/hero_actions.py",
+      "current_windows_sha256": "2c8093fa9611501f907d5236b10761a5c30712949c15928de8e84e875365e17e"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/02-hero-actions/tests/fixtures/supported-actions.json",
+      "current_windows_sha256": "88fce185ce1cd6d420a4adfc6a1fd07be4d352d9052c076f103470fb113f03d8"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/02-hero-actions/tests/test_hero_actions.py",
+      "current_windows_sha256": "6133d2acde1b1d5bc47ad0e316409a49d922843fba9652361855cf25f1b55154"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/03-team-coordination/README.md",
+      "current_windows_sha256": "5890e45efb0f823fc1786ef8d2bf4ff33f54c8078c3a671ffe32d66b374ab3c3"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/03-team-coordination/notes/team-orders.md",
+      "current_windows_sha256": "fbd4f3bfa3663ba320eaf4ad57915da8ea4210b4f335f71449038bdaddf268f9"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/03-team-coordination/src/team_orders.py",
+      "current_windows_sha256": "ab166fedd798b87cb65064fedaebef212d12944d3dcca458b5a814fcd518206f"
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/03-team-coordination/tests/test_team_orders.py",
+      "current_windows_sha256": "7594d3c311bb006b05e382e0681db48e34bd19cbf271afe8354e0fd0e7eb7cad"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/01-match-configuration/README.md",
+      "current_windows_sha256": "7a359c8d3dafdcbc8ef42579b8f29482447aa9eba9469721a8c291ce14248539"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/01-match-configuration/notes/match-spec.md",
+      "current_windows_sha256": "577257bd02e69bbf7168c24d94b9a08b894497b77796ae6f2053b5e1afafa994"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/01-match-configuration/src/match_config.py",
+      "current_windows_sha256": "3825fa2297af274889eb138fbe077e2e8b2e7b2e59f51ce80684b30a751b57d3"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/01-match-configuration/tests/test_match_config.py",
+      "current_windows_sha256": "e72c65205483e7d11feca6133d67d31464f51489987fc358b8901113d5c3a513"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/02-opponent-policy/README.md",
+      "current_windows_sha256": "7a321856437e685f6bb4b5e500a261bc92bac62b9b210bd71a25945f3c29f669"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/02-opponent-policy/src/opponent.py",
+      "current_windows_sha256": "c7e2be54ef9d9d97592d20695ad472ae28b43a215711954605c81240367078f0"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/02-opponent-policy/tests/test_opponent.py",
+      "current_windows_sha256": "4f0a919bf87e2eed9fa728b95d12f0a277a8b889a28350f3fb00b2fd5e1b33a8"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/03-result-replay/README.md",
+      "current_windows_sha256": "a5c761155e80d570a3785aadb6b82af52a2cce2adaf72286ad35db0a1f4a73b8"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/03-result-replay/notes/replay-format.md",
+      "current_windows_sha256": "9d06221b73b5211787bd7a20a16167139555db6d8ed8b7d08b55d43b611e0dea"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/03-result-replay/src/result_bundle.py",
+      "current_windows_sha256": "801419e2812ec85939bd9285072392fa328cede8d5ea9b4386ac7323c0fd1570"
+    },
+    {
+      "path": "creators/creator-1/09-full-match/03-result-replay/tests/test_result_bundle.py",
+      "current_windows_sha256": "467d29bd99de507baaf2d9ada9a8880d331b384d7c9e9eef9544545098b3b2b5"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/01-saves-versions/README.md",
+      "current_windows_sha256": "d80e4b0133d13058f30fe815f97974566d0444de76b8693a58e58b1f19f0534e"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/01-saves-versions/src/save_compat.py",
+      "current_windows_sha256": "e63215a113b9e52370e63911363896fccd31525492b106d7cafe6da13ab783f8"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/01-saves-versions/tests/fixtures/corrupt-save.json",
+      "current_windows_sha256": "f99974b6da169924eb9d9ab7e5f2f75cdeaece33c5f5157ea28556c50e4a2ed2"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/01-saves-versions/tests/fixtures/old-save.json",
+      "current_windows_sha256": "82c31a29698da3b41af7eff71e2d76f48466e983221a0151c1225995fb74e0ba"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/01-saves-versions/tests/test_save_compat.py",
+      "current_windows_sha256": "f6bf4e5609e650335e1beaa1915b19a2db9f5a168983c9d6cb8b3c6ae6b69f19"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/02-diagnostics/README.md",
+      "current_windows_sha256": "024e991cb55b386116461fc6edf94027ee708808f6a28f86ef06764d649a6e14"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/02-diagnostics/notes/diagnostics.md",
+      "current_windows_sha256": "274ef5cb10999e17162084e950c091c1d0a14784b38c4a27baa667ea4297dad6"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/02-diagnostics/src/diag_report.py",
+      "current_windows_sha256": "7ec540a8cc4815c3f7b2cbda785b782c27670ee62ac399f738f6bd42db9df805"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/02-diagnostics/tests/test_diag_report.py",
+      "current_windows_sha256": "e0457643ac97d5f216d98baae5f5050e999ee654bbf88dc3d5063709863315da"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/03-performance/README.md",
+      "current_windows_sha256": "bd40e0117d9f42328fddfb8534ab06e8dd219fb19b3c6c38c42f3da847ffef89"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/03-performance/reports/performance.md",
+      "current_windows_sha256": "c47e637e071c9f2fa9b01e174370eac695338d6e8686ebb0dce377ef3ae3c6c9"
+    },
+    {
+      "path": "creators/creator-1/10-reliability/03-performance/tests/test_performance_note.py",
+      "current_windows_sha256": "b6d89edd5ca5fb10fe4f8f151a126d13ccf33fcf4947d81601e31711e7240ce4"
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+      "current_windows_sha256": "88b937c8e2b37418f45f937509e7827ab6281f4b48e6fbd674ff841b434562d0"
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts/reports/ui-integration.md",
+      "current_windows_sha256": "06b724ff0cf05a25b487cb6367609af58b79c5be09271f0a21a15a862af5753d"
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts/tests/fixtures/snapshots.json",
+      "current_windows_sha256": "1c120d659a22620646252b39c6b8c5ba2fc6502f27f2c12a3a65741a189033dc"
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_command_shapes.py",
+      "current_windows_sha256": "6f2a1e48f4a7d51de4d27757a5eb9d8d23520ec9b8808b0016ad3a4b6844d870"
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_ui_contracts.py",
+      "current_windows_sha256": "d49890eb3aecf41c43d0c814bdf8941c3310108ba35832f3d69cd830c423d21d"
+    },
+    {
+      "path": "creators/creator-1/11-integration/02-voice-commands/README.md",
+      "current_windows_sha256": "d08abb09c151ddaeba21a8202f136c090a6ca3c6e42b38bab27505468a320207"
+    },
+    {
+      "path": "creators/creator-1/11-integration/02-voice-commands/reports/voice-integration.md",
+      "current_windows_sha256": "5dec90ac0eea85975ea6c1c0d33e6177ee6cf7a9cff2830d47304639a1317df3"
+    },
+    {
+      "path": "creators/creator-1/11-integration/02-voice-commands/src/voice_gate.py",
+      "current_windows_sha256": "f424484eadf27bbc2c62e6d580190ce320a15141637b7ec4438774bb042a08c7"
+    },
+    {
+      "path": "creators/creator-1/11-integration/02-voice-commands/tests/test_voice_gate.py",
+      "current_windows_sha256": "9cce17dec772aa4f660f2cab099d2db3f531d0155dfff871d0bbfae79ac27a8c"
+    },
+    {
+      "path": "creators/creator-1/11-integration/03-joint-acceptance/README.md",
+      "current_windows_sha256": "a5312a7c4ffbdd38953cf935e3151bef2e65e3d931c7d037c31061469e7c3f93"
+    },
+    {
+      "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/acceptance.md",
+      "current_windows_sha256": "13ac14b5bf5f9b68e02300e1dcf048fdcfe3bd426cfb99f6b1446e994ed89aad"
+    },
+    {
+      "path": "creators/creator-1/11-integration/03-joint-acceptance/tests/test_acceptance_split.py",
+      "current_windows_sha256": "5520029f9da3e5f90d3cb9160310d2a6a1caa7181c7e4d7dc06be4be8f6b5088"
+    },
+    {
+      "path": "creators/creator-1/12-release/01-source-rights/README.md",
+      "current_windows_sha256": "5e38f52a5f69b681cb686cbea7b7d7d6c803cd01020cd712858c33acb6b92c4e"
+    },
+    {
+      "path": "creators/creator-1/12-release/01-source-rights/notes/rights-register.md",
+      "current_windows_sha256": "54103269151a9d1eb3b6fdba4370ccea9897e59f375b4abe5dcb7f955822af39"
+    },
+    {
+      "path": "creators/creator-1/12-release/01-source-rights/reports/legal-review.md",
+      "current_windows_sha256": "4a058817d2af0e35a3d6f36ce6b46d06e1429a91375e1dc2bfcf7a0fff69db2b"
+    },
+    {
+      "path": "creators/creator-1/12-release/01-source-rights/tests/test_rights_register.py",
+      "current_windows_sha256": "b18d8016d11f7b8936ef8978c0b75f6d9f26246ba21d57d0206145870fe6553d"
+    },
+    {
+      "path": "creators/creator-1/12-release/02-valve-demo/README.md",
+      "current_windows_sha256": "3b251d27b23f5a3a6c64cb9383575425a35ee036c8910c9d573fc31b5e815f0d"
+    },
+    {
+      "path": "creators/creator-1/12-release/02-valve-demo/notes/demo-checklist.md",
+      "current_windows_sha256": "3b66283ea96ac38c93773c993ad9b8166dc4cd1a7738d2f55975ceeb0f1f3c6e"
+    },
+    {
+      "path": "creators/creator-1/12-release/02-valve-demo/reports/proposal.md",
+      "current_windows_sha256": "2b887900bcc6603a8aca900d200320cde12d39055f2445fc099ba05584eed717"
+    },
+    {
+      "path": "creators/creator-1/12-release/02-valve-demo/tests/test_demo_guards.py",
+      "current_windows_sha256": "191397645adc83ca88ede27d10f8ac7363c2687ec4b13dd4a1411f8eb1fb51fe"
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package/README.md",
+      "current_windows_sha256": "1194b3ca43a86feb6ca2f63d9eddf0b857b071e21b7ac3fceceaa8e1ea8d43ef"
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package/notes/release-checklist.md",
+      "current_windows_sha256": "a7d9a3bc8141b1a7675e21c6df635c23f2d3d972d8f1d84e185e7ffae6e507aa"
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package/reports/release.md",
+      "current_windows_sha256": "51e8e8402189108be2cff281ea465a649169d655ceb5ab4fa14ca6e77da431f3"
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package/tests/test_release_guards.py",
+      "current_windows_sha256": "6a27f5d2a26d88446ecd77e3fcafaa4ebb70ac286bef45d6682ea03747963e89"
+    },
+    {
+      "path": "creators/creator-1/BLOCKERS-100.md",
+      "current_windows_sha256": "bee711fd3889b3d7796517ddc195b3e48a29a1b0d066199486e353fe05171c64"
+    },
+    {
+      "path": "creators/creator-1/CLOUD-WORK-LESSONS.md",
+      "current_windows_sha256": "5f827c1bffac5081db4926e8a51d0dbaeb38cae4d9a74a740f5057829dee44b6"
+    },
+    {
+      "path": "creators/creator-1/PROGRESS.md",
+      "current_windows_sha256": "dbd26f1096534aa95880975caeed158541308d7112291ffc2b957d39781f40fd"
+    },
+    {
+      "path": "creators/creator-1/README.md",
+      "current_windows_sha256": "6cdedf5cdca3fab0012c908893bd5f84958d0b4253b6d25368a7b7659179b56a"
+    },
+    {
+      "path": "creators/creator-1/handoff-2026-10-13.md",
+      "current_windows_sha256": "26830cbe559b6cfb22d2b6390eec57fee28e5aa99c3233f84a9946945698551d"
+    },
+    {
+      "path": "creators/creator-1/progress.json",
+      "current_windows_sha256": "63cd6f33146250360316e65d7fc46c79c53ef7cd1e5436afb2d8b919ab91362c"
+    },
+    {
+      "path": "creators/creator-1/progress.svg",
+      "current_windows_sha256": "1cbdda6d2ae8b201b4cb782a451c3de740e298aa2f92c440f5beb1fccb212efd"
+    }
+  ],
+  "c1_suites": 36,
+  "c1_passed": 188,
+  "c1_skipped": 0,
+  "full_source_report": "build/dota_coach/source-checks-20261013T105504Z-498303/source-checks.json",
+  "full_source_sha256": "7d4ded9b22578018e961c336f7a52af43c15faba9b32bb2a9f0f439bfacd1854",
+  "full_suites": 85,
+  "full_passed": 1242,
+  "full_skipped": 28,
+  "full_incomplete": 6,
+  "full_error_suites": 0,
+  "all_suite_processes_exit0": true,
+  "strict_verified": false,
+  "cli_exit_code": 1,
+  "lua_executable_scenarios": 8,
+  "voice_gate_tests": 13,
+  "lua_version": "Lua 5.1",
+  "test_dependency": {
+    "package": "lupa",
+    "version": "2.6",
+    "wheel": "lupa-2.6-cp312-cp312-win_amd64.whl",
+    "bytes": 1688529,
+    "sha256": "c735a1ce8ee60edb0fe71d665f1e6b7c55c6021f1d340eb8c865952c602cd36f",
+    "published_sha256": "c735a1ce8ee60edb0fe71d665f1e6b7c55c6021f1d340eb8c865952c602cd36f",
+    "source": "https://pypi.org/pypi/lupa/2.6/json",
+    "verified_at_utc": "2026-10-13T10:48:38.6119278Z"
+  },
+  "root_lua_red_log": "build/dota_coach/c1-review-lua-20261013/red.log",
+  "root_lua_green_log": "build/dota_coach/c1-review-lua-20261013/final-green.log",
+  "voice_red_log": "build/dota_coach/c1-voice-gate-red-20261013-97101381.log",
+  "voice_green_log": "build/dota_coach/c1-voice-gate-green-20261013-ed1a67cb.log",
+  "technical_review": "prior findings addressed; no new substantial findings in bounded scope",
+  "c1_progress": "112/181",
+  "c2_progress": "54/213",
+  "open_c1_actions": 69,
+  "common_contract_approved": false,
+  "native_acceptance_confirmed": false,
+  "game_acceptance_confirmed": false,
+  "human_second_owner_review": "open",
+  "raw_audio_published": false
+}

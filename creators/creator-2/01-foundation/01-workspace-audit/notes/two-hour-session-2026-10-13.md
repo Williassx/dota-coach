@@ -48,3 +48,13 @@ agent_catalog_activation3additionalpuretests, REDbeforeimpl. Fixedparserrefs
 actualgrammarTTS/ASR+existingNodeparseroutcomes/commands0,1finalcritic afterdone.
 Cloudtask «Настройка dota-coach» read-onlyinspected:ещёCreator2resume, неC1owner;
 сообщениятуда не отправлялись/не считаетсявторымсоздателем. C1scopeunchanged.
+
+## Возобновление после лимита и поручение C1
+
+Goal endpoint10:46UTC вернул status=usageLimited/timeUsed4269s; непрерывные2часа
+не подтверждены. Первоначальныйdeadline08:01:04UTC прошёл во время ограничения.
+Новый пользовательский запрос возобновил обычную работу: C1review/publish затемC2.
+Actualmain неожиданно дополнен тремяC1коммитами; проверенычерезgitdiff двухrefs,
+не перезаписывать/неreset. 172files/36suites; bounded Lua8+voice13, full85/1242PASS/
+28skip/0errors/strictfalse, reviewerfindingsresolved. Registrypublished99555eb.
+Root grammar acceptance/report остаётся отдельным следующим C2результатом.

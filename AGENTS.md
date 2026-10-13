@@ -244,3 +244,10 @@ C2-09-01 registry83C2src/98internalrefs/104trackedmedia/10source recipes сох�
 datedscope/dd01f0b+progressSVGoverride, rightsnot_assessed/implicitengineexcluded.
 Concept/reportPNG/generatedgraph неpromotedruntimeasset; onlyregistrycheckbox
 marked54/213(25.4%).187hashes/membership/references/docs verified;humanowneropen.
+
+13 октября подключены actual C1 коммиты 1c44da4/b1f2c48/71b20c0 (172 файла),
+C2 рассмотрел pure core: Lua8/voice13 PASS, MANUAL/priority/revision/source/return/
+binding guards исправлены; source каталог85/1242PASS/28skip/6incomplete/0errors/
+verifiedfalse. C1progress112/181 не повышен, 69 open actions. Исторические фразы
+«C1-04 отсутствует» относятся к прежнему срезу; новые pure модули доступны, но
+общий контракт/actor-authority/transport/native/lease/real AI return открыты.

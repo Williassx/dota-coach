@@ -72,6 +72,10 @@ class SourceChecks(unittest.TestCase):
             with self.assertRaises(ValueError): runner.load_catalog(self.root)
 
     def test_catalog_size_and_json_are_bounded(self):
+        self.assertEqual(runner.MAX_SUITES, 128)
+        self.catalog(self.entries * 65)
+        with self.assertRaises(ValueError): runner.run_checks(self.root)
+        self.no_output()
         for raw in ('{', ' ' * (128 * 1024 + 1)):
             self.write(CATALOG, raw)
             with self.assertRaises(ValueError): runner.run_checks(self.root)

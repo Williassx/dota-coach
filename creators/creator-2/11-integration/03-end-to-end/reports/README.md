@@ -13,3 +13,6 @@ regression диагностики и фактический full verified=false.
 сохранность external fixture и отдельный открытый file-symlink coverage.
 
 [Windows portability](windows-portability-2026-10-12.md) —1020PASS/28explicit skips,0error suites; строгие verifiedfalse/exit1 и отдельное incomplete coverage.
+
+[Рассмотрение C1](creator-1-review-2026-10-13.md) — переданные исходники,
+Lua/voice исправления и 85-наборная регрессия с открытой native приёмкой.

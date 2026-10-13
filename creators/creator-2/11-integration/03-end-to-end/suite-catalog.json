@@ -250,6 +250,181 @@
       "id": "node-preparation-reset-trace",
       "framework": "node-test",
       "path": "creators/creator-2/09-presentation/02-settings-layout/tests/reset-trace.test.cjs"
+    },
+    {
+      "id": "python-c1-01-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/01-foundation/02-addon-capability/tests"
+    },
+    {
+      "id": "python-c1-01-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/01-foundation/03-command-contract/tests"
+    },
+    {
+      "id": "python-c1-02-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle/tests"
+    },
+    {
+      "id": "python-c1-02-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/02-runtime/02-actor-binding/tests"
+    },
+    {
+      "id": "python-c1-02-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/02-runtime/03-time-events/tests"
+    },
+    {
+      "id": "python-c1-03-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/03-ai-baseline/01-observation/tests"
+    },
+    {
+      "id": "python-c1-03-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests"
+    },
+    {
+      "id": "python-c1-03-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/tests"
+    },
+    {
+      "id": "python-c1-04-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/04-intervention/01-manual-actions/tests"
+    },
+    {
+      "id": "python-c1-04-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/04-intervention/02-return-ai/tests"
+    },
+    {
+      "id": "python-c1-04-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/04-intervention/03-lifecycle-guards/tests"
+    },
+    {
+      "id": "python-c1-05-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/05-match-data/01-source-audit/tests"
+    },
+    {
+      "id": "python-c1-05-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/05-match-data/02-import/tests"
+    },
+    {
+      "id": "python-c1-05-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/05-match-data/03-replay-normalization/tests"
+    },
+    {
+      "id": "python-c1-06-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/06-player-models/01-profiles/tests"
+    },
+    {
+      "id": "python-c1-06-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/06-player-models/02-personal-policy/tests"
+    },
+    {
+      "id": "python-c1-06-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation/tests"
+    },
+    {
+      "id": "python-c1-07-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests"
+    },
+    {
+      "id": "python-c1-07-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/07-coach-preparation/02-tactics/tests"
+    },
+    {
+      "id": "python-c1-07-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/07-coach-preparation/03-morale-trust/tests"
+    },
+    {
+      "id": "python-c1-08-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/08-match-mechanics/01-farming-economy/tests"
+    },
+    {
+      "id": "python-c1-08-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/08-match-mechanics/02-hero-actions/tests"
+    },
+    {
+      "id": "python-c1-08-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/08-match-mechanics/03-team-coordination/tests"
+    },
+    {
+      "id": "python-c1-09-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/09-full-match/01-match-configuration/tests"
+    },
+    {
+      "id": "python-c1-09-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/09-full-match/02-opponent-policy/tests"
+    },
+    {
+      "id": "python-c1-09-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/09-full-match/03-result-replay/tests"
+    },
+    {
+      "id": "python-c1-10-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/10-reliability/01-saves-versions/tests"
+    },
+    {
+      "id": "python-c1-10-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/10-reliability/02-diagnostics/tests"
+    },
+    {
+      "id": "python-c1-10-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/10-reliability/03-performance/tests"
+    },
+    {
+      "id": "python-c1-11-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/11-integration/01-ui-contracts/tests"
+    },
+    {
+      "id": "python-c1-11-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/11-integration/02-voice-commands/tests"
+    },
+    {
+      "id": "python-c1-11-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/11-integration/03-joint-acceptance/tests"
+    },
+    {
+      "id": "python-c1-12-01",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/12-release/01-source-rights/tests"
+    },
+    {
+      "id": "python-c1-12-02",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/12-release/02-valve-demo/tests"
+    },
+    {
+      "id": "python-c1-12-03",
+      "framework": "python-unittest",
+      "path": "creators/creator-1/12-release/03-release-package/tests"
     }
   ]
 }

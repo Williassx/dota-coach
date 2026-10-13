@@ -19,6 +19,7 @@ import time
 REPOSITORY = Path(__file__).resolve().parents[5]
 CATALOG = 'creators/creator-2/11-integration/03-end-to-end/suite-catalog.json'
 MAX_CATALOG_BYTES = 128 * 1024
+MAX_SUITES = 128
 SUMMARY_BYTES = 64 * 1024
 IDENTITY = re.compile(r'[a-z][a-z0-9-]{0,63}')
 
@@ -42,7 +43,7 @@ def load_catalog(repository):
     data = json.loads(raw.decode('utf-8'))
     if (not isinstance(data, dict) or set(data) != {'schema_version', 'suites'} or
             type(data['schema_version']) is not int or data['schema_version'] != 1 or
-            not isinstance(data['suites'], list) or not 1 <= len(data['suites']) <= 64):
+            not isinstance(data['suites'], list) or not 1 <= len(data['suites']) <= MAX_SUITES):
         raise ValueError('Suite catalog schema is invalid')
     ids, sources = set(), set()
     for entry in data['suites']:

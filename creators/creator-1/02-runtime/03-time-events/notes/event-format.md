@@ -1,8 +1,8 @@
 # C1-02-03: время и журнал событий (факты и подход)
 
 Дата: 13 октября 2026. Основание — behaviour-факты прогонов r1–r8 и шаблонного
-Think-цикла ([отчёты](../../01-foundation/02-addon-capability/reports/),
-[lifecycle](../01-session-lifecycle/reports/lifecycle-r6-r7-20261013.md)).
+Think-цикла ([отчёты](../../../01-foundation/02-addon-capability/reports/),
+[lifecycle](../../01-session-lifecycle/reports/lifecycle-r6-r7-20261013.md)).
 
 ## Подтверждено
 
@@ -14,7 +14,7 @@ Think-цикла ([отчёты](../../01-foundation/02-addon-capability/reports
   после — как в отчёте C1-02-01.
 - Реальное игровое время и пауза шаблонным сценарием не проверялись; в
   проверках r1–r7 фактически тайминги оценивались wall-часами логов
-  ([вопросы точного clock](../../01-foundation/03-command-contract/notes/contract-review.md)).
+  ([вопросы точного clock](../../../01-foundation/03-command-contract/notes/contract-review.md)).
 
 ## Подход к журналу (черновик, договор фактически после факта clock)
 
