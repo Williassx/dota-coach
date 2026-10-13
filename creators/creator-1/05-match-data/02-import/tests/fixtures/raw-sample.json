@@ -1,0 +1,13 @@
+{
+  "_note": "TEST import sample: finished, unfinished, bad-teams and duplicate rows",
+  "records": [
+    {"match_id": 1, "match_seq_num": 11, "duration": 2400, "radiant_win": true,
+     "radiant_team": [1, 2, 3, 4, 5], "dire_team": [6, 7, 8, 9, 10]},
+    {"match_id": 2, "match_seq_num": 12, "duration": 0, "radiant_win": false,
+     "radiant_team": [0, 0, 0, 0, 0], "dire_team": [0, 0, 0, 0, 0]},
+    {"match_id": 3, "match_seq_num": 13, "duration": 1800, "radiant_win": true,
+     "radiant_team": [1, 2, 3, 4], "dire_team": [6, 7, 8, 9, 10]},
+    {"match_id": 1, "match_seq_num": 11, "duration": 2400, "radiant_win": true,
+     "radiant_team": [1, 2, 3, 4, 5], "dire_team": [6, 7, 8, 9, 10]}
+  ]
+}

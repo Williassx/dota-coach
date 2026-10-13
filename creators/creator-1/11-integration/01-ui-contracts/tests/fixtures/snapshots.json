@@ -1,0 +1,13 @@
+{
+  "_note": "TEST UI-contract cases: stale, repeat, foreign-sender, fresh",
+  "cases": [
+    {"name": "fresh", "revision": 5, "current_revision": 5, "orderId": "u1",
+     "seen": [], "sender": "coach-seat-0", "expect": "ok"},
+    {"name": "stale", "revision": 3, "current_revision": 5, "orderId": "u2",
+     "seen": [], "sender": "coach-seat-0", "expect": "stale-snapshot"},
+    {"name": "repeat", "revision": 5, "current_revision": 5, "orderId": "u1",
+     "seen": ["u1"], "sender": "coach-seat-0", "expect": "repeat"},
+    {"name": "foreign", "revision": 5, "current_revision": 5, "orderId": "u3",
+     "seen": [], "sender": "stranger", "expect": "foreign-sender"}
+  ]
+}

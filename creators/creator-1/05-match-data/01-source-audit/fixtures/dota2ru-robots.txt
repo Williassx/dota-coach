@@ -1,0 +1,74 @@
+User-agent: Yandex
+Disallow: /forum/members/*.*/followers*
+Disallow: /forum/members/*.*/followings*
+Disallow: /forum/members/*.*/about*
+Disallow: /forum/members/*.*/rewards*
+Disallow: /forum/members/*.*/wall*
+Disallow: /forum/members/*.*/activity*
+Disallow: /forum/members/*.*/warns*
+Disallow: /*?*
+Disallow: /shop/sort/
+Disallow: /find/
+Disallow: /shop/orders/
+Disallow: /esport/match/*-tbd*
+Disallow: /privacy/
+Disallow: /amp/*
+Disallow: /questions/*
+
+Disallow: /leave/
+Disallow: /plain/
+Disallow: /gobet/
+
+Allow: /news/?page
+Allow: /away.php?
+Allow: /news/*/?page
+Allow: /news/*/?utm_source
+Allow: /video/?page
+Allow: /memes/?page
+Allow: /news/?category
+Allow: /blogs/?page
+Allow: /esport/matches/?team=*
+Allow: /esport/matches/?tournament=*
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /fonts/
+
+User-agent: *
+Disallow: /forum/members/*.*/followers*
+Disallow: /forum/members/*.*/followings*
+Disallow: /forum/members/*.*/about*
+Disallow: /forum/members/*.*/rewards*
+Disallow: /forum/members/*.*/wall*
+Disallow: /forum/members/*.*/activity*
+Disallow: /forum/members/*.*/warns*
+Disallow: /*?*
+Disallow: /shop/sort/
+Disallow: /find/
+Disallow: /shop/orders/
+Disallow: /esport/match/*-tbd*
+Disallow: /privacy/
+Disallow: /questions/*
+
+Disallow: /leave/
+Disallow: /plain/
+Disallow: /gobet/
+
+Allow: /news/?page
+Allow: /away.php?
+Allow: /news/*/?page
+Allow: /news/*/?utm_source
+Allow: /video/?page
+Allow: /memes/?page
+Allow: /news/?category
+Allow: /blogs/?page
+Allow: /esport/matches/?team=*
+Allow: /esport/matches/?tournament=*
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /fonts/
+Host: https://dota2.ru
+
+Sitemap: https://dota2.ru/sitemap.xml
+Sitemap: https://dota2.ru/forum/sitemap.php

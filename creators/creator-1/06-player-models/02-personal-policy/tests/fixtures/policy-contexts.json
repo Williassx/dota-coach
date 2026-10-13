@@ -1,0 +1,13 @@
+{
+  "_note": "TEST contexts: same scenes for baseline vs personal comparison",
+  "contexts": [
+    {"visible": [{"id": 511}, {"id": 512}]},
+    {"visible": []}
+  ],
+  "profiles": {
+    "TEST-aggressive": {"identity": "TEST-aggressive", "synthetic": true,
+      "measured": [{"name": "aggression", "value": 0.8, "matches": 10, "origin": "TEST"}]},
+    "TEST-cautious": {"identity": "TEST-cautious", "synthetic": true,
+      "measured": [{"name": "aggression", "value": 0.2, "matches": 10, "origin": "TEST"}]}
+  }
+}

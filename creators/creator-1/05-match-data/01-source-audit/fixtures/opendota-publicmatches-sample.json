@@ -1,0 +1,138 @@
+{
+  "source": "https://api.opendota.com/api/publicMatches",
+  "record_count": 100,
+  "sample_count": 5,
+  "description": "small trimmed sample; not a full dataset, no personal data",
+  "sample": [
+    {
+      "match_id": 9042775486,
+      "match_seq_num": 7594955962,
+      "radiant_win": false,
+      "start_time": 1791879077,
+      "duration": 0,
+      "lobby_type": 4,
+      "game_mode": 1,
+      "avg_rank_tier": 23,
+      "num_rank_tier": 1,
+      "cluster": 184,
+      "radiant_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dire_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "match_id": 9042772942,
+      "match_seq_num": 7594953793,
+      "radiant_win": false,
+      "start_time": 1791878897,
+      "duration": 0,
+      "lobby_type": 14,
+      "game_mode": 13,
+      "avg_rank_tier": 51,
+      "num_rank_tier": 1,
+      "cluster": 181,
+      "radiant_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dire_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "match_id": 9042772330,
+      "match_seq_num": 7594953120,
+      "radiant_win": false,
+      "start_time": 1791878842,
+      "duration": 0,
+      "lobby_type": 4,
+      "game_mode": 1,
+      "avg_rank_tier": 35,
+      "num_rank_tier": 1,
+      "cluster": 413,
+      "radiant_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dire_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "match_id": 9042771408,
+      "match_seq_num": 7594957837,
+      "radiant_win": false,
+      "start_time": 1791878767,
+      "duration": 443,
+      "lobby_type": 0,
+      "game_mode": 23,
+      "avg_rank_tier": 25,
+      "num_rank_tier": 3,
+      "cluster": 415,
+      "radiant_team": [
+        29,
+        44,
+        110,
+        21,
+        6
+      ],
+      "dire_team": [
+        86,
+        103,
+        112,
+        155,
+        101
+      ]
+    },
+    {
+      "match_id": 9042769879,
+      "match_seq_num": 7594952059,
+      "radiant_win": false,
+      "start_time": 1791878657,
+      "duration": 0,
+      "lobby_type": 14,
+      "game_mode": 13,
+      "avg_rank_tier": 33,
+      "num_rank_tier": 1,
+      "cluster": 417,
+      "radiant_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dire_team": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

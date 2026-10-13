@@ -1,0 +1,8 @@
+{
+  "_note": "TEST-only intents from the synthetic policy; not a human model",
+  "synthetic_only": true,
+  "intents": [
+    {"synthetic": true, "kind": "move", "position": [0, 0]},
+    {"synthetic": true, "kind": "attack", "target": 511}
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "metric": "checked_actions_over_all_actions",
+  "done": 106,
+  "total": 181,
+  "percent": 58.6,
+  "sections": [
+    {
+      "number": 1,
+      "title": "Среда и техническая проверка",
+      "path": "01-foundation/README.md",
+      "done": 8,
+      "total": 15,
+      "percent": 53.3,
+      "subsections": [
+        {
+          "path": "01-foundation/01-environment-audit/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "01-foundation/02-addon-capability/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "01-foundation/03-command-contract/README.md",
+          "done": 1,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Серверная основа",
+      "path": "02-runtime/README.md",
+      "done": 4,
+      "total": 15,
+      "percent": 26.7,
+      "subsections": [
+        {
+          "path": "02-runtime/01-session-lifecycle/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "02-runtime/02-actor-binding/README.md",
+          "done": 0,
+          "total": 5
+        },
+        {
+          "path": "02-runtime/03-time-events/README.md",
+          "done": 0,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Синтетический ИИ и арбитр",
+      "path": "03-ai-baseline/README.md",
+      "done": 9,
+      "total": 15,
+      "percent": 60.0,
+      "subsections": [
+        {
+          "path": "03-ai-baseline/01-observation/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "03-ai-baseline/02-synthetic-policy/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "03-ai-baseline/03-order-arbiter/README.md",
+          "done": 3,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Временное вмешательство",
+      "path": "04-intervention/README.md",
+      "done": 8,
+      "total": 15,
+      "percent": 53.3,
+      "subsections": [
+        {
+          "path": "04-intervention/01-manual-actions/README.md",
+          "done": 2,
+          "total": 5
+        },
+        {
+          "path": "04-intervention/02-return-ai/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "04-intervention/03-lifecycle-guards/README.md",
+          "done": 3,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Источники матчей",
+      "path": "05-match-data/README.md",
+      "done": 12,
+      "total": 15,
+      "percent": 80.0,
+      "subsections": [
+        {
+          "path": "05-match-data/01-source-audit/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "05-match-data/02-import/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "05-match-data/03-replay-normalization/README.md",
+          "done": 4,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Персональные модели",
+      "path": "06-player-models/README.md",
+      "done": 12,
+      "total": 16,
+      "percent": 75.0,
+      "subsections": [
+        {
+          "path": "06-player-models/01-profiles/README.md",
+          "done": 4,
+          "total": 6
+        },
+        {
+          "path": "06-player-models/02-personal-policy/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "06-player-models/03-heldout-evaluation/README.md",
+          "done": 4,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Подготовка команды",
+      "path": "07-coach-preparation/README.md",
+      "done": 11,
+      "total": 15,
+      "percent": 73.3,
+      "subsections": [
+        {
+          "path": "07-coach-preparation/01-roster-roles/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "07-coach-preparation/02-tactics/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "07-coach-preparation/03-morale-trust/README.md",
+          "done": 4,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Тренерское влияние на механики Dota",
+      "path": "08-match-mechanics/README.md",
+      "done": 11,
+      "total": 15,
+      "percent": 73.3,
+      "subsections": [
+        {
+          "path": "08-match-mechanics/01-farming-economy/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "08-match-mechanics/02-hero-actions/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "08-match-mechanics/03-team-coordination/README.md",
+          "done": 4,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Матч 5×5",
+      "path": "09-full-match/README.md",
+      "done": 9,
+      "total": 15,
+      "percent": 60.0,
+      "subsections": [
+        {
+          "path": "09-full-match/01-match-configuration/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "09-full-match/02-opponent-policy/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "09-full-match/03-result-replay/README.md",
+          "done": 3,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Надёжность и производительность",
+      "path": "10-reliability/README.md",
+      "done": 9,
+      "total": 15,
+      "percent": 60.0,
+      "subsections": [
+        {
+          "path": "10-reliability/01-saves-versions/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "10-reliability/02-diagnostics/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "10-reliability/03-performance/README.md",
+          "done": 1,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Интеграция отделов",
+      "path": "11-integration/README.md",
+      "done": 8,
+      "total": 15,
+      "percent": 53.3,
+      "subsections": [
+        {
+          "path": "11-integration/01-ui-contracts/README.md",
+          "done": 2,
+          "total": 5
+        },
+        {
+          "path": "11-integration/02-voice-commands/README.md",
+          "done": 4,
+          "total": 5
+        },
+        {
+          "path": "11-integration/03-joint-acceptance/README.md",
+          "done": 2,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Права, демо и выпуск",
+      "path": "12-release/README.md",
+      "done": 5,
+      "total": 15,
+      "percent": 33.3,
+      "subsections": [
+        {
+          "path": "12-release/01-source-rights/README.md",
+          "done": 3,
+          "total": 5
+        },
+        {
+          "path": "12-release/02-valve-demo/README.md",
+          "done": 1,
+          "total": 5
+        },
+        {
+          "path": "12-release/03-release-package/README.md",
+          "done": 1,
+          "total": 5
+        }
+      ]
+    }
+  ]
+}

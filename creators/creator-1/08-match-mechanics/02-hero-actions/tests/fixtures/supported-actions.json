@@ -1,0 +1,14 @@
+{
+  "_note": "TEST proposal set: actual patch unknown, patch-gated, not a claim",
+  "patch": null,
+  "heroes": {
+    "npc_dota_hero_crystal_maiden": {
+      "abilities": ["crystal_nova", "frostbite"],
+      "items": ["tango", "branches"]
+    },
+    "npc_dota_hero_axe": {
+      "abilities": ["berserkers_call"],
+      "items": ["boots"]
+    }
+  }
+}

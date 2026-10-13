@@ -1,0 +1,17 @@
+{
+  "_note": "TEST-only roster: all ids/profiles synthetic, no real people",
+  "assignments": [
+    {"projectId": "TEST-player-001", "hero": "npc_dota_hero_crystal_maiden", "role": 5},
+    {"projectId": "TEST-player-002", "hero": "npc_dota_hero_juggernaut", "role": 1},
+    {"projectId": "TEST-player-003", "hero": "npc_dota_hero_lina", "role": 2},
+    {"projectId": "TEST-player-004", "hero": "npc_dota_hero_axe", "role": 3},
+    {"projectId": "TEST-player-005", "hero": "npc_dota_hero_lion", "role": 4}
+  ],
+  "profiles": {
+    "TEST-player-001": {"coverage": 0.8, "synthetic": true},
+    "TEST-player-002": {"coverage": 0.2, "synthetic": true},
+    "TEST-player-003": {"coverage": 0.7, "synthetic": true},
+    "TEST-player-004": {"coverage": 0.9, "synthetic": true},
+    "TEST-player-005": {"coverage": 0.6, "synthetic": true}
+  }
+}

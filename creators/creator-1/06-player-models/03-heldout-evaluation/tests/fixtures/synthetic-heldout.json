@@ -1,0 +1,12 @@
+{
+  "_note": "TEST heldout: whole-match disjoint parts, synthetic references only",
+  "parts": {
+    "train": [101, 102, 103],
+    "validation": [104, 105],
+    "test": [106, 107]
+  },
+  "test_matches": [
+    {"match_id": 106, "reference": "attack"},
+    {"match_id": 107, "reference": "hold"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "identity": "TEST-player-001",
+  "version": "test-v1",
+  "synthetic": true,
+  "measured": [
+    {"name": "bracket5_pick_share", "value": 0.31, "matches": 120,
+     "origin": "TEST synthetic numbers, not OpenDota aggregates"}
+  ],
+  "traits": [
+    {"name": "patient-farmer",
+     "note": "TEST game-trait label; NOT proven by aggregates"}
+  ],
+  "coverage": 0.2,
+  "uncertainty": {"level": "high",
+                  "note": "TEST profile: no real data behind it"}
+}
