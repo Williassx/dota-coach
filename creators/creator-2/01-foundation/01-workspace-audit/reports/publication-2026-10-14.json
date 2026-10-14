@@ -1,0 +1,12 @@
+{
+  "observed_at_utc": "2026-10-14T10:50:12.286646+00:00",
+  "implementation_commit": "a77e054a57a085c92100158dc953f08c644d45c8",
+  "remote": "https://github.com/Williassx/dota-coach.git",
+  "branch": "main",
+  "push_exit_code": 0,
+  "remote_sha_equals_local_head_at_verification": true,
+  "c1_new": 55,
+  "c2_new": 83,
+  "claim_scope": "source_and_evidence_publication_not_workshop_game_release",
+  "generated_build_or_freebuff_committed": false
+}

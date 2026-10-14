@@ -141,7 +141,7 @@ source flags strictfalse for known28skips, no fabricated native claim.
 oldusageprefix/.freebuff/userchanges preserved; onefinalcritic/regrade; appendlesson/usage.
 - [x] Evaluate --require-target: C1new>=55, C2new>=64 plus evidence/peer receipts.
 If blocker prevents a criterion, retain unchecked and report exactshortfall, no falsecomplete.
-- [ ] Commit/push authorisedmain withoutforce; remoteSHA==HEAD; finalreport actualcounts
+- [x] Commit/push authorisedmain withoutforce; remoteSHA==HEAD; finalreport actualcounts
 newdeliverables/remainingblocks, no percent-as-game-readiness statement.
 
 ## Task H — Очередь после текущей цели

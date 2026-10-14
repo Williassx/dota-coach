@@ -16,3 +16,5 @@
 - [Итог автономного этапа](autonomous-result-2026-10-14.md) · [Delta138records](autonomous-delta-2026-10-14.json).
 
 - [Один финальный independentcritic](final-autonomous-review-2026-10-14.md) · [Проверки/границы JSON](final-autonomous-review-2026-10-14.json).
+
+- [Проверенная публикация исходников](publication-2026-10-14.json).

@@ -33,3 +33,6 @@ Fresh full source:89suites/1391PASS/28skipped/6incomplete/0error suites; allsuit
 
 
 Один [финальный independentcritic](final-autonomous-review-2026-10-14.md) не обнаружилP1/P2; independently27Node+9Lua scene+5Lua rosterPASS, actualdelta/38archive/165registry/14PNG проверены.12отказов от оценкиfullgame/physicalinput/legal/etc перечислены явно. [Новые решения пользователя](../../../../../docs/decisions.md): следующий полноценный5×5, короткийlimit→AIreturn, тренер/пул20/характеристики, голосовыеfarm/target/itembuild, отдалённаякамера; videos ещёнет.
+
+
+Исходники и доказательства опубликованы в main: [коммит a77e054](https://github.com/Williassx/dota-coach/commit/a77e054a57a085c92100158dc953f08c644d45c8). `git ls-remote origin refs/heads/main` совпал с локальнымHEAD. [Receipt](publication-2026-10-14.json). Это Git-публикация проекта, не Workshop/release игры.
