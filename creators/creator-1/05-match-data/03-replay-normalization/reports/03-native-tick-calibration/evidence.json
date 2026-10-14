@@ -1,0 +1,944 @@
+{
+  "schema": "native-tick-calibration-evidence-v1",
+  "match_id": 9042986015,
+  "client_build": 25894101,
+  "dem_sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330",
+  "csv_sha256": "f1e9491a62727e86e4cfd7e76b8f3177cea69634dea85f67256c1fca7376345c",
+  "cases": [
+    {
+      "id": "pilot",
+      "png": "build/dota_coach/replay-9042986015/native-calibration/pilot.png",
+      "sha256": "6c4bd96d345a3e352d8e0f6baa93f258310ce958b70404df77fbcfc5b99d1b5b",
+      "utc": "2026-10-14T18:41:26.622Z",
+      "before_tick": 21207,
+      "before_receipt": "build/dota_coach/replay-9042986015/native-calibration/pilot-before.jsonl",
+      "after_tick": 21208,
+      "after_receipt": "build/dota_coach/replay-9042986015/native-calibration/pilot-after.jsonl",
+      "unchanged": false,
+      "exact_real_record": false,
+      "decoded": null
+    },
+    {
+      "id": "paused",
+      "png": "build/dota_coach/replay-9042986015/native-calibration/paused.png",
+      "sha256": "6a958c89e5f46271cc1f9854b47474d01bf7779c720bffc9a2bf7b861f848870",
+      "utc": "2026-10-14T18:43:27.560Z",
+      "before_tick": 21243,
+      "before_receipt": "build/dota_coach/replay-9042986015/native-calibration/paused-before.jsonl",
+      "after_tick": 21243,
+      "after_receipt": "build/dota_coach/replay-9042986015/native-calibration/paused-after.jsonl",
+      "unchanged": true,
+      "exact_real_record": false,
+      "decoded": null
+    },
+    {
+      "id": "fixed",
+      "png": "build/dota_coach/replay-9042986015/native-calibration/fixed.png",
+      "sha256": "0804ee92f9ce08d5201522b100b2bdecafd52597e151281c60f1c100518302fa",
+      "utc": "2026-10-14T18:45:26.660Z",
+      "before_tick": 21190,
+      "before_receipt": "build/dota_coach/replay-9042986015/native-calibration/fixed-before.jsonl",
+      "after_tick": 21190,
+      "after_receipt": "build/dota_coach/replay-9042986015/native-calibration/fixed-after.jsonl",
+      "unchanged": true,
+      "exact_real_record": true,
+      "decoded": {
+        "demo_tick": "21190",
+        "server_tick": "21654",
+        "game_seconds_raw": "491.63332999999994",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "66",
+        "max_hp": "956",
+        "mana": "57.187553",
+        "max_mana": "651.0006",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "0",
+        "replicating_model_raw": "16777215",
+        "cell_x": "106",
+        "vec_x": "28.21875",
+        "cell_y": "126",
+        "vec_y": "138.81248",
+        "cell_z": "128",
+        "vec_z": "128.03125"
+      }
+    },
+    {
+      "id": "slow",
+      "png": "build/dota_coach/replay-9042986015/native-calibration/slow.png",
+      "sha256": "bce437adfe6565b167c9e95970d566fb4b820898e661e3e2e64b357d957fa23f",
+      "utc": "2026-10-14T18:49:22.988Z",
+      "before_tick": 21190,
+      "before_receipt": "build/dota_coach/replay-9042986015/native-calibration/slow-before.jsonl",
+      "after_tick": 21191,
+      "after_receipt": "build/dota_coach/replay-9042986015/native-calibration/slow-after.jsonl",
+      "unchanged": false,
+      "exact_real_record": true,
+      "decoded": {
+        "demo_tick": "21190",
+        "server_tick": "21654",
+        "game_seconds_raw": "491.63332999999994",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "66",
+        "max_hp": "956",
+        "mana": "57.187553",
+        "max_mana": "651.0006",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "0",
+        "replicating_model_raw": "16777215",
+        "cell_x": "106",
+        "vec_x": "28.21875",
+        "cell_y": "126",
+        "vec_y": "138.81248",
+        "cell_z": "128",
+        "vec_z": "128.03125"
+      }
+    },
+    {
+      "id": "normal",
+      "png": "build/dota_coach/replay-9042986015/native-calibration/normal.png",
+      "sha256": "21081a0165afe4015d027431bc87c2e0ae66faa2bd1c1505b0e2cbd6d5cf4b00",
+      "utc": "2026-10-14T18:56:13.588Z",
+      "before_tick": 21212,
+      "before_receipt": "build/dota_coach/replay-9042986015/native-calibration/normal-before.jsonl",
+      "after_tick": 21212,
+      "after_receipt": "build/dota_coach/replay-9042986015/native-calibration/normal-after.jsonl",
+      "unchanged": true,
+      "exact_real_record": true,
+      "decoded": {
+        "demo_tick": "21212",
+        "server_tick": "21676",
+        "game_seconds_raw": "492.3666633333333",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "71",
+        "max_hp": "956",
+        "mana": "62.18756",
+        "max_mana": "651.0006",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "0",
+        "replicating_model_raw": "16777215",
+        "cell_x": "106",
+        "vec_x": "189.1875",
+        "cell_y": "124",
+        "vec_y": "225.15625",
+        "cell_z": "128",
+        "vec_z": "128.0"
+      }
+    },
+    {
+      "index": 0,
+      "requested_tick": 21090,
+      "before_tick": 21113,
+      "after_tick": 21113,
+      "cursor_unchanged": true,
+      "decoded_real_tick": 21112,
+      "decoded_exact_real_tick": false,
+      "decoded": {
+        "demo_tick": "21112",
+        "server_tick": "21576",
+        "game_seconds_raw": "489.03333000000003",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "94",
+        "max_hp": "956",
+        "mana": "208.5627",
+        "max_mana": "651.0006",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "0",
+        "replicating_model_raw": "16777215",
+        "cell_x": "110",
+        "vec_x": "30.5625",
+        "cell_y": "134",
+        "vec_y": "48.71875",
+        "cell_z": "128",
+        "vec_z": "0.0"
+      },
+      "png": "build\\dota_coach\\replay-9042986015\\native-calibration\\batch\\frame-0.png",
+      "native_source": "shot_0228.png",
+      "sha256": "9e1d43792d9ac2029aaef6e2017a6b98a9ce6603d49ed7fddd9fc6eaffe98aa7",
+      "bytes": 1452047,
+      "utc": "2026-10-14T18:59:20.246Z",
+      "HUD_readback": null,
+      "physical_input_controlled": false,
+      "id": "batch0",
+      "tick_gap": 1
+    },
+    {
+      "index": 1,
+      "requested_tick": 21170,
+      "before_tick": 21223,
+      "after_tick": 21223,
+      "cursor_unchanged": true,
+      "decoded_real_tick": 21222,
+      "decoded_exact_real_tick": false,
+      "decoded": {
+        "demo_tick": "21222",
+        "server_tick": "21686",
+        "game_seconds_raw": "492.69999666666666",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "72",
+        "max_hp": "956",
+        "mana": "64.18756",
+        "max_mana": "651.0006",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "0",
+        "replicating_model_raw": "16777215",
+        "cell_x": "106",
+        "vec_x": "241.25",
+        "cell_y": "124",
+        "vec_y": "128.25",
+        "cell_z": "128",
+        "vec_z": "128.0"
+      },
+      "png": "build\\dota_coach\\replay-9042986015\\native-calibration\\batch\\frame-1.png",
+      "native_source": "shot_0229.png",
+      "sha256": "9183a35087c386db6c2d8d1cb33577cc5fe04f2a599f9b4facf6156010d07cd0",
+      "bytes": 1476024,
+      "utc": "2026-10-14T18:59:24.098Z",
+      "HUD_readback": null,
+      "physical_input_controlled": false,
+      "id": "batch1",
+      "tick_gap": 1
+    },
+    {
+      "index": 2,
+      "requested_tick": 34320,
+      "before_tick": 34359,
+      "after_tick": 34359,
+      "cursor_unchanged": true,
+      "decoded_real_tick": 34358,
+      "decoded_exact_real_tick": false,
+      "decoded": {
+        "demo_tick": "34358",
+        "server_tick": "34822",
+        "game_seconds_raw": "930.5666633333333",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "945",
+        "max_hp": "1220",
+        "mana": "913.93835",
+        "max_mana": "1148.0011",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "35184372088832",
+        "replicating_model_raw": "16777215",
+        "cell_x": "136",
+        "vec_x": "92.15624",
+        "cell_y": "92",
+        "vec_y": "96.375",
+        "cell_z": "128",
+        "vec_z": "222.96875"
+      },
+      "png": "build\\dota_coach\\replay-9042986015\\native-calibration\\batch\\frame-2.png",
+      "native_source": "shot_0230.png",
+      "sha256": "3b9b75a61e453fb1e2b091e273e1a6e56c95c825d63b66b06c3c5f4e9307e6de",
+      "bytes": 1565067,
+      "utc": "2026-10-14T18:59:27.976Z",
+      "HUD_readback": null,
+      "physical_input_controlled": false,
+      "id": "batch2",
+      "tick_gap": 1
+    },
+    {
+      "index": 3,
+      "requested_tick": 41670,
+      "before_tick": 41706,
+      "after_tick": 41706,
+      "cursor_unchanged": true,
+      "decoded_real_tick": 41706,
+      "decoded_exact_real_tick": true,
+      "decoded": {
+        "demo_tick": "41706",
+        "server_tick": "42170",
+        "game_seconds_raw": "1175.4999966666667",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "1215",
+        "max_hp": "1308",
+        "mana": "734.2507",
+        "max_mana": "1376.0013",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "32",
+        "replicating_model_raw": "16777215",
+        "cell_x": "94",
+        "vec_x": "13.875",
+        "cell_y": "156",
+        "vec_y": "118.25",
+        "cell_z": "130",
+        "vec_z": "47.5625"
+      },
+      "png": "build\\dota_coach\\replay-9042986015\\native-calibration\\batch\\frame-3.png",
+      "native_source": "shot_0231.png",
+      "sha256": "5105dbe61066ad36c7f2d83a6c73280186a78ab3a19ef7b0eb5bb03227fc2df8",
+      "bytes": 1574946,
+      "utc": "2026-10-14T18:59:31.863Z",
+      "HUD_readback": null,
+      "physical_input_controlled": false,
+      "id": "batch3",
+      "tick_gap": 0
+    },
+    {
+      "index": 4,
+      "requested_tick": 45820,
+      "before_tick": 45846,
+      "after_tick": 45846,
+      "cursor_unchanged": true,
+      "decoded_real_tick": 45846,
+      "decoded_exact_real_tick": true,
+      "decoded": {
+        "demo_tick": "45846",
+        "server_tick": "46310",
+        "game_seconds_raw": "1313.4999966666667",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "782",
+        "max_hp": "1528",
+        "mana": "1335.6262",
+        "max_mana": "1376.0013",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "32",
+        "replicating_model_raw": "16777215",
+        "cell_x": "130",
+        "vec_x": "200.21875",
+        "cell_y": "94",
+        "vec_y": "54.0625",
+        "cell_z": "128",
+        "vec_z": "155.375"
+      },
+      "png": "build\\dota_coach\\replay-9042986015\\native-calibration\\batch\\frame-4.png",
+      "native_source": "shot_0232.png",
+      "sha256": "453cc449753c123286011aca19894c5a5069204b16e20c0cfc6f95764d6b880d",
+      "bytes": 1647736,
+      "utc": "2026-10-14T18:59:35.759Z",
+      "HUD_readback": null,
+      "physical_input_controlled": false,
+      "id": "batch4",
+      "tick_gap": 0
+    },
+    {
+      "index": 5,
+      "requested_tick": 52450,
+      "before_tick": 52485,
+      "after_tick": 52485,
+      "cursor_unchanged": true,
+      "decoded_real_tick": 52484,
+      "decoded_exact_real_tick": false,
+      "decoded": {
+        "demo_tick": "52484",
+        "server_tick": "52948",
+        "game_seconds_raw": "1534.7666633333333",
+        "game_state_raw": "5",
+        "pause_total_ticks": "0",
+        "paused": "False",
+        "actor_account_id": "70388657",
+        "handle": "14926170",
+        "entity_index": "346",
+        "entity_serial": "911",
+        "player_id_raw": "14",
+        "hp": "324",
+        "max_hp": "1660",
+        "mana": "846.5008",
+        "max_mana": "1484.0015",
+        "life_state_raw": "0",
+        "unit_state_uint64_decimal": "72057594037927936",
+        "replicating_model_raw": "16777215",
+        "cell_x": "124",
+        "vec_x": "13.40625",
+        "cell_y": "190",
+        "vec_y": "92.46875",
+        "cell_z": "128",
+        "vec_z": "136.53125"
+      },
+      "png": "build\\dota_coach\\replay-9042986015\\native-calibration\\batch\\frame-5.png",
+      "native_source": "shot_0233.png",
+      "sha256": "0501cd79dd62c12a4b5ca29cac030ed1abc4066aa5cc79f5bb458d0e344a5d45",
+      "bytes": 1333143,
+      "utc": "2026-10-14T18:59:39.616Z",
+      "HUD_readback": null,
+      "physical_input_controlled": false,
+      "id": "batch5",
+      "tick_gap": 1
+    }
+  ],
+  "artifact_manifest": [
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/actor.jsonl",
+      "bytes": 66,
+      "sha256": "551a962d9a8ffa0aa4325d179060d394ff9afeb04d6e0f87594ce6def02d42a8"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-after.jsonl",
+      "bytes": 456,
+      "sha256": "23c9dbb6c81bf51b440009a568cbb9d47e76d5580f8e3b4ad43f1c334ce4af6d"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-before.jsonl",
+      "bytes": 456,
+      "sha256": "39264a46033d7efa41cf8514a660c248620fc0cce51489fcfb778650e5926df1"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-pause.jsonl",
+      "bytes": 66,
+      "sha256": "081579bf8ce24d16fac2c9ee85b5bada2ebc4de4ac170d9b1ffe40a4da9ae45e"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-resume.jsonl",
+      "bytes": 66,
+      "sha256": "670fe89d63ea115585efd1abc5d95ae40c4f411c08ed310faf4e70bea5158908"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-seek.jsonl",
+      "bytes": 6304,
+      "sha256": "758b30da7c73b0d9e908cf728c455504bdbc52b77eef2c2991592fc77e3da5f7"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-shot.jsonl",
+      "bytes": 162,
+      "sha256": "97956d76361dd7edd3894fd8eb54000ae63e8af81a5a98bbdfc398f4b89262a5"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-after.jsonl",
+      "bytes": 456,
+      "sha256": "598c600418b9ca28a7570ace46038aa0e2a007a734a3f9cf5360321711ec98cf"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-before.jsonl",
+      "bytes": 456,
+      "sha256": "ea3eb783b4b899a23b1ef2247df3b3d960ebcba2333dca064adfad5322645ec4"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-pause.jsonl",
+      "bytes": 66,
+      "sha256": "78502b0e4fde4d21933e495dcea9c01deb5c27bcf3d1984facd38edef4d25829"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-resume.jsonl",
+      "bytes": 260,
+      "sha256": "bddd5e5be0778e50bb71da770835cc49240b82f137874e5e3d228c76d952a40c"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-seek.jsonl",
+      "bytes": 626,
+      "sha256": "8fdc5e829638fb73b5e50680e5a1059e4e104978d49d93750fe3dcb45d433366"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-shot.jsonl",
+      "bytes": 162,
+      "sha256": "e82e4b85155772ef99ac6329b77ef0b1253cbcf5f3ef05e6451d88dd03055527"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-after.jsonl",
+      "bytes": 456,
+      "sha256": "ce3db4c216cd0c674e02b9304c277b33870aea9eaa4a7d8d6418366272a7d665"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-before.jsonl",
+      "bytes": 456,
+      "sha256": "9538b2e404e12982cb2e45f7eac6d2238caa2091c9ba1790c898244e2969fc76"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-pause.jsonl",
+      "bytes": 66,
+      "sha256": "3ed25e04b36eb4708ee8b8b871d260cefc1fc048dbe33d4f1e39dc344ebb726c"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-resume.jsonl",
+      "bytes": 66,
+      "sha256": "c73206fe7dee1d2bfc5fbbc46e6a21488b3a645b84038cebcd93ac4dc82616ec"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-seek.jsonl",
+      "bytes": 7508,
+      "sha256": "387e342a4a3086cfc322d7aeaa3a02f0e7c4cba223b9e3d57d01b3b929bb2dcd"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-shot.jsonl",
+      "bytes": 162,
+      "sha256": "545189019f18bdd7ccff3da4948dcf70fd95b99ba2056165287577e608e45908"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-after.jsonl",
+      "bytes": 456,
+      "sha256": "84cf02b9d28622dbccd25a4979cbd6b21516a693b41a3edcdf35c515e8edd167"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-before.jsonl",
+      "bytes": 456,
+      "sha256": "4c2632544872a87e2c7246f2ff6c89767bf9d1ea87df58a817af96cd75365247"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-pause.jsonl",
+      "bytes": 66,
+      "sha256": "94b0a05bdaeef11f966ee7c04e617c395446e29f6950e72dda86fc0e7836a3da"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-resume.jsonl",
+      "bytes": 861,
+      "sha256": "54bf7110e5181518434ad5d3df230d86fcfff124a34eead2a482310293f92c97"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-seek.jsonl",
+      "bytes": 7377,
+      "sha256": "7e4b30a0690603b1d7fbcf18613d792df5cb68a1e97af7e6dcd8a45636385fa1"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-shot.jsonl",
+      "bytes": 162,
+      "sha256": "1e0bd5b5f566f2d9cd01f4e67818ca94df1f1d4eecb74062021b80cf81ddbd8d"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-after.jsonl",
+      "bytes": 456,
+      "sha256": "d90c0f680bdccbd56dd17a849baab8ec812963cf6024ee05826343ccb480f8f1"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-before.jsonl",
+      "bytes": 456,
+      "sha256": "8026e928d9e47707a75875d28cb0571c9c72cdf2dade6dc3f8ac8796c8f01ab7"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-pause.jsonl",
+      "bytes": 66,
+      "sha256": "3ce3648a401a0b72fd2c7efc9238cae17e6cc0d6b9dd294472238d318484d651"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-resume.jsonl",
+      "bytes": 66,
+      "sha256": "5030243928beccaa5b067e6c5b9bcb6918b58c180bf4975be9990f00dfb5ecdb"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-seek.jsonl",
+      "bytes": 8141,
+      "sha256": "afe4e18f237415e43f6eeb3fa24ee21f84af0ab6e21901fe8764f5735e6b0548"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-shot.jsonl",
+      "bytes": 162,
+      "sha256": "2a2fbef36279abb33fb9168e9e28aae5dee21d94820e394634a73be60813d8c1"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-after.jsonl",
+      "bytes": 456,
+      "sha256": "7cc75c1d13814af7d2770a503b67986f01f07f662bf4db83e965c23e4d90df23"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-before.jsonl",
+      "bytes": 456,
+      "sha256": "62bc9cacaa86928a16cf88422b68cd21d102d8b8210554384470106cbd1b6757"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-pause.jsonl",
+      "bytes": 66,
+      "sha256": "0c2cdddb86a211073937f08463a18d9638bc68ae8c9231c8edc2b492b0622935"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-resume.jsonl",
+      "bytes": 66,
+      "sha256": "ed03e470c54cb0f5a776ba5c599e79a1a6515660092095ece6655ca47c39e63f"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-seek.jsonl",
+      "bytes": 7298,
+      "sha256": "e54f394cff8fb3d676607ca8bdef0ffa2ec935c7c01370ce4b3da2fcc26ff1c1"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-shot.jsonl",
+      "bytes": 162,
+      "sha256": "27f3aafc51b9dcd53d8782e323074fe3dc6d4352b75fd9f2fdc9012c3116acdc"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/contact.png",
+      "bytes": 2251076,
+      "sha256": "f7de44168f707757161f0abbd09025c8afe1813c59822dec84373e85bc0aeab0"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-0.png",
+      "bytes": 1452047,
+      "sha256": "9e1d43792d9ac2029aaef6e2017a6b98a9ce6603d49ed7fddd9fc6eaffe98aa7"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-1.png",
+      "bytes": 1476024,
+      "sha256": "9183a35087c386db6c2d8d1cb33577cc5fe04f2a599f9b4facf6156010d07cd0"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-2.png",
+      "bytes": 1565067,
+      "sha256": "3b9b75a61e453fb1e2b091e273e1a6e56c95c825d63b66b06c3c5f4e9307e6de"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-3.png",
+      "bytes": 1574946,
+      "sha256": "5105dbe61066ad36c7f2d83a6c73280186a78ab3a19ef7b0eb5bb03227fc2df8"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-4.png",
+      "bytes": 1647736,
+      "sha256": "453cc449753c123286011aca19894c5a5069204b16e20c0cfc6f95764d6b880d"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-5.png",
+      "bytes": 1333143,
+      "sha256": "0501cd79dd62c12a4b5ca29cac030ed1abc4066aa5cc79f5bb458d0e344a5d45"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frames.json",
+      "bytes": 7898,
+      "sha256": "4f39072944e779a2f04af5324dd27b7e76b9d1885aafc4288a47b0490c4f0a13"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/c1-health-diagnostic.png",
+      "bytes": 318197,
+      "sha256": "52398a5a194931e44f72f48c4df89af0d2fb72387b89d52be0d0baadc7c60f50"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/c1-hud-diagnostic.png",
+      "bytes": 1397904,
+      "sha256": "328aa54fde185a97680ec439a90f1176e00a706a6842ff6a20b400edc7d0ea4b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/capture-batch.py",
+      "bytes": 2226,
+      "sha256": "70269cdf5c37da2afef7b50fe8e07046519c5250f0167c150d91f66486e72a45"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/cleanup-cursor.jsonl",
+      "bytes": 456,
+      "sha256": "523a0163024334861cb5f133173c54fe9c8d39338261a98e074256dd54f9842e"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/cleanup-final.json",
+      "bytes": 171,
+      "sha256": "81b64ebc08e47d1be4c09cb43b8644c1f242bde6de2b83e79975703a6ccc3fad"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/cleanup.json",
+      "bytes": 173,
+      "sha256": "287e214470abcb070aaa6d111fec613639b08cab0f125e53964e0e5f255fe639"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/enable-focus.jsonl",
+      "bytes": 66,
+      "sha256": "2b7120eddfd3e24e05eb03056545a3cffe1b18377812ebb786e5623304e138d1"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/enable-shot.jsonl",
+      "bytes": 66,
+      "sha256": "a165b385dfd6d5720c0b86f91a89c639b374637c8b1fc3f4916962292e9d339b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/fixed-after.jsonl",
+      "bytes": 456,
+      "sha256": "cc4dd838bd1fbcd4a93b2b44f8bc51a34034eca8b35817c09ddac351fed071db"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/fixed-before.jsonl",
+      "bytes": 456,
+      "sha256": "6c2e9e8f83d68c2ebcdb2f3977df8bd78e3378255a5cb3fd7ae6d4d4eee463c6"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/fixed-shot.jsonl",
+      "bytes": 162,
+      "sha256": "ea0529992246c5811d41f0bfd2e05482a02a973ce8d2c15a72c2a8956b85a258"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/fixed.png",
+      "bytes": 1260012,
+      "sha256": "0804ee92f9ce08d5201522b100b2bdecafd52597e151281c60f1c100518302fa"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/initial-focus-setting.jsonl",
+      "bytes": 171,
+      "sha256": "6888b2b750ca144a077f767d2693b8fd05cf48fc4fcae094dfdcd94b2ec050a3"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/initial-mode.jsonl",
+      "bytes": 136,
+      "sha256": "fa2fc0e8fdff15a3b25ddbdce8ce2296b49783b9520a335ce12007a33e41427f"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/initial-shot-setting.jsonl",
+      "bytes": 144,
+      "sha256": "371be6da31e1ce460cef4b1c67b28f93e9ee6c335af40bd7ec447d6382ca296f"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/load.jsonl",
+      "bytes": 10608,
+      "sha256": "bcb79238a85abaa8cb4d4b214bb01090706c459e74fe1d3cbd5032b7a4a1d85a"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/normal-after.jsonl",
+      "bytes": 456,
+      "sha256": "fa7a2d81a8926027f7561183f20ffe8115ca568adf1382c4d7c874ca823fdbe5"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/normal-before.jsonl",
+      "bytes": 456,
+      "sha256": "6f6b15b548e9c1e4c57a62975643e84d69992215ea8aba3868bed899c71f07ee"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/normal-engine-pause.jsonl",
+      "bytes": 66,
+      "sha256": "75923bd7cddbbc68620f6fd08ba0aa4687b6cc4914510b6675ee353b01e9683e"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/normal-seek.jsonl",
+      "bytes": 7390,
+      "sha256": "b6d48157b1bc32eaa68ad4640ad029cd9632695ede06e2235648a582c833a7ac"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/normal-shot.jsonl",
+      "bytes": 162,
+      "sha256": "5e4d68c4267e057e029f12511fdb6d98226406540fc2b7aff2de15449ddbd634"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/normal.png",
+      "bytes": 1478599,
+      "sha256": "21081a0165afe4015d027431bc87c2e0ae66faa2bd1c1505b0e2cbd6d5cf4b00"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/owned.json",
+      "bytes": 496,
+      "sha256": "72b3dbc0dd5dadc4417f5b1b50b09ef8f55e0d1573b65bc3d2bf4a293bfdd4e7"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pause-help.jsonl",
+      "bytes": 175,
+      "sha256": "83669eacc52694fe18822e6ffc90b8a1622950fa924afb05d9884b9b302c818e"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/paused-after.jsonl",
+      "bytes": 456,
+      "sha256": "3828507142aafc3ef9a5d199d50f60042cd103f98d716913c34824dd7898cd19"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/paused-before.jsonl",
+      "bytes": 456,
+      "sha256": "ea65d134cb38ee47f19a80751192cdb09a4379d613b0eaa5f8f9a3ae07339da0"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/paused-shot.jsonl",
+      "bytes": 162,
+      "sha256": "f1f5e43333a19694628ce0d77507c56d19b0e7d7549593257cb511ac3e7bcd17"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/paused.png",
+      "bytes": 1465688,
+      "sha256": "6a958c89e5f46271cc1f9854b47474d01bf7779c720bffc9a2bf7b861f848870"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-after.jsonl",
+      "bytes": 456,
+      "sha256": "32e35c32cb69ae1957134cd17dc138cce0b32c6736b9ffbf648cf6aef0fa4fdd"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-before.jsonl",
+      "bytes": 456,
+      "sha256": "9e45641f2f05e00176c46ead4a79641d244b581450be68bf868ed39d64bec8cd"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-manifest.json",
+      "bytes": 2414,
+      "sha256": "9c7685a31027291da5bef8481ef495ab9cb6452f9d27ac400d805dd9cac64f4b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-shot.jsonl",
+      "bytes": 162,
+      "sha256": "fd07cb8576fd8afa2ff6373241b125b807c7bcdb7b39f9e751075f3cea170fed"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pilot.png",
+      "bytes": 1673878,
+      "sha256": "6c4bd96d345a3e352d8e0f6baa93f258310ce958b70404df77fbcfc5b99d1b5b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/quit.jsonl",
+      "bytes": 5515,
+      "sha256": "7d538a372931334d0d53f49e51230a37fc331e5dd9e39de91e0b7ac70d7355e9"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/rate-normal.jsonl",
+      "bytes": 66,
+      "sha256": "451640bd8673541be664ea53b7d4ce5a6956f2e7553906a450a39aa3887bf3df"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/reload-normal.jsonl",
+      "bytes": 11385,
+      "sha256": "e90eb5a6579d300ffb82cd200048fd525920910c754f2bab27a2b0207c344e7a"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-0.jsonl",
+      "bytes": 66,
+      "sha256": "ccd4ff5486be33747fc8d71ef9b47069e5779f2337bb627edcc2c9ea19c5bce0"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-1.jsonl",
+      "bytes": 66,
+      "sha256": "8009d8a4287b34ba3dc7847a74439963fe4ff12e83fdb5c96dbb7bb5b46a5af3"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-2.jsonl",
+      "bytes": 66,
+      "sha256": "b18c2e1215c3ee0930de94ae79c75c1fbdedf1b0b3c2f9aa16edc71a1cfce563"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-3.jsonl",
+      "bytes": 66,
+      "sha256": "62946a003ed527654fa96657e298f37cbc9dab46a83c6cc798dc8b6f735c9111"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-4.jsonl",
+      "bytes": 144,
+      "sha256": "9a2ae4dd1558edf9da1743eb7d321e767aa19b0b8ed094f51d23778c401ce6fd"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-5.jsonl",
+      "bytes": 171,
+      "sha256": "b4d99745fd5af7628277020da98647a4c2aba562308cef9675415b9dd9dea886"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-6.jsonl",
+      "bytes": 136,
+      "sha256": "aeb2f18320212443063a08fd0d757bbba4901327c31a1ced82e1f0f850c2fd55"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/restore-7.jsonl",
+      "bytes": 66,
+      "sha256": "c4959f48c1311b070101b525b3d7e4e150bc97e7b0ddddb4754b56cebd0ef955"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/resume-ui.jsonl",
+      "bytes": 184,
+      "sha256": "c8b3ff22b1e0cd079607d314d01c6d58c14aef1114761a8ebeaba670bb4a71d6"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/seek-first.jsonl",
+      "bytes": 7745,
+      "sha256": "b8e59bc7dbde8f14ab37644fe25106f310fc27f8a5dc3c5bdc38ef12e5dc0ffa"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/seek-fixed.jsonl",
+      "bytes": 6024,
+      "sha256": "3b834c832ac835fdf1c1bc9456bf98fee01e9c17422daa3f2f03e25fa7aa1122"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/set-actor.jsonl",
+      "bytes": 66,
+      "sha256": "577acc926ef2dadf78a8aaadd768afce643816db584bb2cd1de61e1e002f481b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/set-mode.jsonl",
+      "bytes": 66,
+      "sha256": "4427c195c3844a72f5ae8259af0130d92c8d4f9fbe6fc67750a5150169d76f0d"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/slow-after.jsonl",
+      "bytes": 456,
+      "sha256": "19490317f289c9e72397abe31170d4624e99a00b2244a6ed6323766df06d866e"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/slow-before.jsonl",
+      "bytes": 456,
+      "sha256": "1d38cdf739ff805f5a727245fe65270ce93103e34926594f4acaae0a20aee894"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/slow-shot.jsonl",
+      "bytes": 273,
+      "sha256": "5cbe303834c4852bee593ba447ad5aa13768eb2f79945d7316d23a8d26fcd1a9"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/slow.jsonl",
+      "bytes": 66,
+      "sha256": "3eba33bff2229eca1de22a4102f2b1aa151d30872c2000ec0bff44e4b2ee1b6e"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/slow.png",
+      "bytes": 1237851,
+      "sha256": "bce437adfe6565b167c9e95970d566fb4b820898e661e3e2e64b357d957fa23f"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/tick-first.jsonl",
+      "bytes": 456,
+      "sha256": "0266d9fce342d137cc6fbfc40f9eeb7c0b314abefb1d8632dd229f7747bd372b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/toggle-pause.jsonl",
+      "bytes": 66,
+      "sha256": "f6d609aeb73c69c85ba618734fc102efe960d9bb3b82e2c9c9068fee567898b3"
+    }
+  ],
+  "checks": {
+    "png_hash_dimensions": 11,
+    "readback_pairs": 11,
+    "batch_decoded_rows": 6,
+    "exact_positive_cases": [
+      "normal",
+      "batch3",
+      "batch4"
+    ],
+    "fixed_clock_mismatch_preserved": true,
+    "raw_published": false,
+    "physical_input_controlled": false,
+    "model_trained": false,
+    "runtime_source_changed": false
+  },
+  "cleanup": {
+    "checked_utc": "2026-10-14T19:18:20.1546920Z",
+    "own_pid": 32720,
+    "own_gone": true,
+    "steam_13704_alive": true,
+    "remaining_dota_pids": [
+      null
+    ]
+  }
+}

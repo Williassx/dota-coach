@@ -1,0 +1,882 @@
+{
+  "schema": "c1-native-tick-hud-observations-v1",
+  "date": "2026-10-14",
+  "prepared_at_utc": "2026-10-14T19:19:10.666320+00:00",
+  "match_id": 9042986015,
+  "analyst_creator": 1,
+  "purpose": "independent documentary native HUD vs decoded CSV calibration",
+  "native_controls_used_by_this_analyst": false,
+  "whole_match_or_full_fidelity_acceptance": false,
+  "inputs": [
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-manifest.json",
+      "bytes": 2414,
+      "sha256": "9c7685a31027291da5bef8481ef495ab9cb6452f9d27ac400d805dd9cac64f4b"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frames.json",
+      "bytes": 7898,
+      "sha256": "4f39072944e779a2f04af5324dd27b7e76b9d1885aafc4288a47b0490c4f0a13"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/storm-telemetry.csv",
+      "bytes": 4665741,
+      "sha256": "f1e9491a62727e86e4cfd7e76b8f3177cea69634dea85f67256c1fca7376345c"
+    }
+  ],
+  "points": [
+    {
+      "id": "pilot",
+      "origin": "pilot",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/pilot.png",
+        "bytes": 1673878,
+        "sha256": "6c4bd96d345a3e352d8e0f6baa93f258310ce958b70404df77fbcfc5b99d1b5b",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:41:26.622Z"
+      },
+      "native_cursor": {
+        "before": 21207,
+        "after": 21208,
+        "stable": false,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-before.jsonl",
+            "bytes": 456,
+            "sha256": "9e45641f2f05e00176c46ead4a79641d244b581450be68bf868ed39d64bec8cd"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/pilot-after.jsonl",
+            "bytes": 456,
+            "sha256": "32e35c32cb69ae1957134cd17dc138cce0b32c6736b9ffbf648cf6aef0fa4fdd"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "8:12",
+        "clock_seconds": 492,
+        "hp": 70,
+        "max_hp": 956,
+        "mana": 61,
+        "max_mana": 651,
+        "camera_caption": "automatic_camera",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21206,
+        "cursor_minus_csv_tick": 1,
+        "csv_row_exact_native_before_tick": false,
+        "fields": {
+          "demo_tick": "21206",
+          "server_tick": "21670",
+          "game_seconds_raw": "492.16666333333336",
+          "hp": "70",
+          "max_hp": "956",
+          "mana": "61.187557",
+          "max_mana": "651.0006",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "moving_cursor_not_exact",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.1875569999999982,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "paused",
+      "origin": "pilot",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/paused.png",
+        "bytes": 1465688,
+        "sha256": "6a958c89e5f46271cc1f9854b47474d01bf7779c720bffc9a2bf7b861f848870",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:43:27.560Z"
+      },
+      "native_cursor": {
+        "before": 21243,
+        "after": 21243,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/paused-before.jsonl",
+            "bytes": 456,
+            "sha256": "ea65d134cb38ee47f19a80751192cdb09a4379d613b0eaa5f8f9a3ae07339da0"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/paused-after.jsonl",
+            "bytes": 456,
+            "sha256": "3828507142aafc3ef9a5d199d50f60042cd103f98d716913c34824dd7898cd19"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "8:13",
+        "clock_seconds": 493,
+        "hp": 0,
+        "max_hp": 956,
+        "mana": 66,
+        "max_mana": 651,
+        "camera_caption": "automatic_camera",
+        "selected_actor_caption": "death_summary_timer28",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21242,
+        "cursor_minus_csv_tick": 1,
+        "csv_row_exact_native_before_tick": false,
+        "fields": {
+          "demo_tick": "21242",
+          "server_tick": "21706",
+          "game_seconds_raw": "493.3666633333333",
+          "hp": "0",
+          "max_hp": "956",
+          "mana": "66.18756",
+          "max_mana": "651.0006",
+          "life_state_raw": "1",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "bounded_previous_csv_tick_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.18756000000000483,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "fixed",
+      "origin": "pilot",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/fixed.png",
+        "bytes": 1260012,
+        "sha256": "0804ee92f9ce08d5201522b100b2bdecafd52597e151281c60f1c100518302fa",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:45:26.660Z"
+      },
+      "native_cursor": {
+        "before": 21190,
+        "after": 21190,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/fixed-before.jsonl",
+            "bytes": 456,
+            "sha256": "6c2e9e8f83d68c2ebcdb2f3977df8bd78e3378255a5cb3fd7ae6d4d4eee463c6"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/fixed-after.jsonl",
+            "bytes": 456,
+            "sha256": "cc4dd838bd1fbcd4a93b2b44f8bc51a34034eca8b35817c09ddac351fed071db"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "7:25",
+        "clock_seconds": 445,
+        "hp": 66,
+        "max_hp": 956,
+        "mana": 57,
+        "max_mana": 651,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21190,
+        "cursor_minus_csv_tick": 0,
+        "csv_row_exact_native_before_tick": true,
+        "fields": {
+          "demo_tick": "21190",
+          "server_tick": "21654",
+          "game_seconds_raw": "491.63332999999994",
+          "hp": "66",
+          "max_hp": "956",
+          "mana": "57.187553",
+          "max_mana": "651.0006",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "clock_mismatch_resources_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": false,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.1875530000000012,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "slow",
+      "origin": "pilot",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/slow.png",
+        "bytes": 1237851,
+        "sha256": "bce437adfe6565b167c9e95970d566fb4b820898e661e3e2e64b357d957fa23f",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:49:22.988Z"
+      },
+      "native_cursor": {
+        "before": 21190,
+        "after": 21191,
+        "stable": false,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/slow-before.jsonl",
+            "bytes": 456,
+            "sha256": "1d38cdf739ff805f5a727245fe65270ce93103e34926594f4acaae0a20aee894"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/slow-after.jsonl",
+            "bytes": 456,
+            "sha256": "19490317f289c9e72397abe31170d4624e99a00b2244a6ed6323766df06d866e"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "7:25",
+        "clock_seconds": 445,
+        "hp": 66,
+        "max_hp": 956,
+        "mana": 57,
+        "max_mana": 651,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21190,
+        "cursor_minus_csv_tick": 0,
+        "csv_row_exact_native_before_tick": true,
+        "fields": {
+          "demo_tick": "21190",
+          "server_tick": "21654",
+          "game_seconds_raw": "491.63332999999994",
+          "hp": "66",
+          "max_hp": "956",
+          "mana": "57.187553",
+          "max_mana": "651.0006",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "clock_mismatch_resources_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": false,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.1875530000000012,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "normal",
+      "origin": "pilot",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/normal.png",
+        "bytes": 1478599,
+        "sha256": "21081a0165afe4015d027431bc87c2e0ae66faa2bd1c1505b0e2cbd6d5cf4b00",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:56:13.588Z"
+      },
+      "native_cursor": {
+        "before": 21212,
+        "after": 21212,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/normal-before.jsonl",
+            "bytes": 456,
+            "sha256": "6f6b15b548e9c1e4c57a62975643e84d69992215ea8aba3868bed899c71f07ee"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/normal-after.jsonl",
+            "bytes": 456,
+            "sha256": "fa7a2d81a8926027f7561183f20ffe8115ca568adf1382c4d7c874ca823fdbe5"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "8:12",
+        "clock_seconds": 492,
+        "hp": 71,
+        "max_hp": 956,
+        "mana": 62,
+        "max_mana": 651,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21212,
+        "cursor_minus_csv_tick": 0,
+        "csv_row_exact_native_before_tick": true,
+        "fields": {
+          "demo_tick": "21212",
+          "server_tick": "21676",
+          "game_seconds_raw": "492.3666633333333",
+          "hp": "71",
+          "max_hp": "956",
+          "mana": "62.18756",
+          "max_mana": "651.0006",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "exact_csv_tick_fields_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.18755999999999773,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "batch-0",
+      "origin": "batch",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-0.png",
+        "bytes": 1452047,
+        "sha256": "9e1d43792d9ac2029aaef6e2017a6b98a9ce6603d49ed7fddd9fc6eaffe98aa7",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:59:20.246Z"
+      },
+      "native_cursor": {
+        "before": 21113,
+        "after": 21113,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-before.jsonl",
+            "bytes": 456,
+            "sha256": "39264a46033d7efa41cf8514a660c248620fc0cce51489fcfb778650e5926df1"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/0-after.jsonl",
+            "bytes": 456,
+            "sha256": "23c9dbb6c81bf51b440009a568cbb9d47e76d5580f8e3b4ad43f1c334ce4af6d"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "8:09",
+        "clock_seconds": 489,
+        "hp": 94,
+        "max_hp": 956,
+        "mana": 208,
+        "max_mana": 651,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21112,
+        "cursor_minus_csv_tick": 1,
+        "csv_row_exact_native_before_tick": false,
+        "fields": {
+          "demo_tick": "21112",
+          "server_tick": "21576",
+          "game_seconds_raw": "489.03333000000003",
+          "hp": "94",
+          "max_hp": "956",
+          "mana": "208.5627",
+          "max_mana": "651.0006",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "bounded_previous_csv_tick_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.5627000000000066,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "batch-1",
+      "origin": "batch",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-1.png",
+        "bytes": 1476024,
+        "sha256": "9183a35087c386db6c2d8d1cb33577cc5fe04f2a599f9b4facf6156010d07cd0",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:59:24.098Z"
+      },
+      "native_cursor": {
+        "before": 21223,
+        "after": 21223,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-before.jsonl",
+            "bytes": 456,
+            "sha256": "ea3eb783b4b899a23b1ef2247df3b3d960ebcba2333dca064adfad5322645ec4"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/1-after.jsonl",
+            "bytes": 456,
+            "sha256": "598c600418b9ca28a7570ace46038aa0e2a007a734a3f9cf5360321711ec98cf"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "8:12",
+        "clock_seconds": 492,
+        "hp": 72,
+        "max_hp": 956,
+        "mana": 64,
+        "max_mana": 651,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 21222,
+        "cursor_minus_csv_tick": 1,
+        "csv_row_exact_native_before_tick": false,
+        "fields": {
+          "demo_tick": "21222",
+          "server_tick": "21686",
+          "game_seconds_raw": "492.69999666666666",
+          "hp": "72",
+          "max_hp": "956",
+          "mana": "64.18756",
+          "max_mana": "651.0006",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "0",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "bounded_previous_csv_tick_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.18756000000000483,
+        "max_mana_difference_hud_minus_decoded": -0.0005999999999630745,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "batch-2",
+      "origin": "batch",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-2.png",
+        "bytes": 1565067,
+        "sha256": "3b9b75a61e453fb1e2b091e273e1a6e56c95c825d63b66b06c3c5f4e9307e6de",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:59:27.976Z"
+      },
+      "native_cursor": {
+        "before": 34359,
+        "after": 34359,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-before.jsonl",
+            "bytes": 456,
+            "sha256": "9538b2e404e12982cb2e45f7eac6d2238caa2091c9ba1790c898244e2969fc76"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/2-after.jsonl",
+            "bytes": 456,
+            "sha256": "ce3db4c216cd0c674e02b9304c277b33870aea9eaa4a7d8d6418366272a7d665"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "15:30",
+        "clock_seconds": 930,
+        "hp": 945,
+        "max_hp": 1220,
+        "mana": 914,
+        "max_mana": 1148,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 34358,
+        "cursor_minus_csv_tick": 1,
+        "csv_row_exact_native_before_tick": false,
+        "fields": {
+          "demo_tick": "34358",
+          "server_tick": "34822",
+          "game_seconds_raw": "930.5666633333333",
+          "hp": "945",
+          "max_hp": "1220",
+          "mana": "913.93835",
+          "max_mana": "1148.0011",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "35184372088832",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "bounded_previous_csv_tick_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": 0.061649999999985994,
+        "max_mana_difference_hud_minus_decoded": -0.001099999999951251,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "batch-3",
+      "origin": "batch",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-3.png",
+        "bytes": 1574946,
+        "sha256": "5105dbe61066ad36c7f2d83a6c73280186a78ab3a19ef7b0eb5bb03227fc2df8",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:59:31.863Z"
+      },
+      "native_cursor": {
+        "before": 41706,
+        "after": 41706,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-before.jsonl",
+            "bytes": 456,
+            "sha256": "4c2632544872a87e2c7246f2ff6c89767bf9d1ea87df58a817af96cd75365247"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/3-after.jsonl",
+            "bytes": 456,
+            "sha256": "84cf02b9d28622dbccd25a4979cbd6b21516a693b41a3edcdf35c515e8edd167"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "19:35",
+        "clock_seconds": 1175,
+        "hp": 1215,
+        "max_hp": 1308,
+        "mana": 734,
+        "max_mana": 1376,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 41706,
+        "cursor_minus_csv_tick": 0,
+        "csv_row_exact_native_before_tick": true,
+        "fields": {
+          "demo_tick": "41706",
+          "server_tick": "42170",
+          "game_seconds_raw": "1175.4999966666667",
+          "hp": "1215",
+          "max_hp": "1308",
+          "mana": "734.2507",
+          "max_mana": "1376.0013",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "32",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "exact_csv_tick_fields_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.25070000000005166,
+        "max_mana_difference_hud_minus_decoded": -0.001299999999901047,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "batch-4",
+      "origin": "batch",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-4.png",
+        "bytes": 1647736,
+        "sha256": "453cc449753c123286011aca19894c5a5069204b16e20c0cfc6f95764d6b880d",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:59:35.759Z"
+      },
+      "native_cursor": {
+        "before": 45846,
+        "after": 45846,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-before.jsonl",
+            "bytes": 456,
+            "sha256": "8026e928d9e47707a75875d28cb0571c9c72cdf2dade6dc3f8ac8796c8f01ab7"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/4-after.jsonl",
+            "bytes": 456,
+            "sha256": "d90c0f680bdccbd56dd17a849baab8ec812963cf6024ee05826343ccb480f8f1"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "21:53",
+        "clock_seconds": 1313,
+        "hp": 782,
+        "max_hp": 1528,
+        "mana": 1335,
+        "max_mana": 1376,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 45846,
+        "cursor_minus_csv_tick": 0,
+        "csv_row_exact_native_before_tick": true,
+        "fields": {
+          "demo_tick": "45846",
+          "server_tick": "46310",
+          "game_seconds_raw": "1313.4999966666667",
+          "hp": "782",
+          "max_hp": "1528",
+          "mana": "1335.6262",
+          "max_mana": "1376.0013",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "32",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "exact_csv_tick_fields_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.6261999999999261,
+        "max_mana_difference_hud_minus_decoded": -0.001299999999901047,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    },
+    {
+      "id": "batch-5",
+      "origin": "batch",
+      "image": {
+        "path": "build/dota_coach/replay-9042986015/native-calibration/batch/frame-5.png",
+        "bytes": 1333143,
+        "sha256": "0501cd79dd62c12a4b5ca29cac030ed1abc4066aa5cc79f5bb458d0e344a5d45",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "utc_capture": "2026-10-14T18:59:39.616Z"
+      },
+      "native_cursor": {
+        "before": 52485,
+        "after": 52485,
+        "stable": true,
+        "receipts": [
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-before.jsonl",
+            "bytes": 456,
+            "sha256": "62bc9cacaa86928a16cf88422b68cd21d102d8b8210554384470106cbd1b6757"
+          },
+          {
+            "path": "build/dota_coach/replay-9042986015/native-calibration/batch/5-after.jsonl",
+            "bytes": 456,
+            "sha256": "7cc75c1d13814af7d2770a503b67986f01f07f662bf4db83e965c23e4d90df23"
+          }
+        ]
+      },
+      "hud_readback": {
+        "clock_text": "25:34",
+        "clock_seconds": 1534,
+        "hp": 324,
+        "max_hp": 1660,
+        "mana": 846,
+        "max_mana": 1484,
+        "camera_caption": "player_view_v_o_i_d",
+        "selected_actor_caption": "Storm Spirit",
+        "read_method": "manual inspection of original PNG diagnostic crops"
+      },
+      "decoded_source": {
+        "csv_tick": 52484,
+        "cursor_minus_csv_tick": 1,
+        "csv_row_exact_native_before_tick": false,
+        "fields": {
+          "demo_tick": "52484",
+          "server_tick": "52948",
+          "game_seconds_raw": "1534.7666633333333",
+          "hp": "324",
+          "max_hp": "1660",
+          "mana": "846.5008",
+          "max_mana": "1484.0015",
+          "life_state_raw": "0",
+          "player_id_raw": "14",
+          "unit_state_uint64_decimal": "72057594037927936",
+          "actor_account_id": "70388657",
+          "handle": "14926170"
+        }
+      },
+      "comparison": {
+        "status": "bounded_previous_csv_tick_consistent",
+        "displayed_clock_matches_floor_decoded_game_seconds": true,
+        "hp_and_max_hp_match": true,
+        "mana_difference_hud_minus_decoded": -0.5008000000000266,
+        "max_mana_difference_hud_minus_decoded": -0.0015000000000782165,
+        "mana_within_one_display_unit": true,
+        "display_rounding_rule_inferred": false,
+        "whole_native_payload_verified": false,
+        "fog_verified": false,
+        "enum_meanings_verified": false
+      },
+      "inferred_cause": null
+    }
+  ],
+  "summary": {
+    "points": 11,
+    "all_png_hashes_verified": true,
+    "all_before_after_receipts_rechecked": true,
+    "status_counts": {
+      "clock_mismatch_resources_consistent": 2,
+      "moving_cursor_not_exact": 1,
+      "exact_csv_tick_fields_consistent": 3,
+      "bounded_previous_csv_tick_consistent": 5
+    },
+    "exact_tick_consistent_points": [
+      "normal",
+      "batch-3",
+      "batch-4"
+    ],
+    "stable_cursor_but_previous_row_points": [
+      "paused",
+      "batch-0",
+      "batch-1",
+      "batch-2",
+      "batch-5"
+    ],
+    "retained_clock_mismatches": [
+      "fixed",
+      "slow"
+    ],
+    "retained_moving_cursor_points": [
+      "pilot",
+      "slow"
+    ],
+    "all_resource_comparisons_within_hud_precision": true
+  },
+  "limitations": [
+    "Exact CSV tick and selected HUD fields do not prove full native payload identity, continuous fidelity, visibility, input, state enums or causality.",
+    "Odd native cursor points compare to the nearest previous CSV tick, one tick earlier; bounded comparison only.",
+    "HUD integer mana can differ by less than one unit from decoded float; no fixed floor/rounding rule asserted.",
+    "Fixed/slow retained mismatched HUD clocks7:25 vs decoded491.633sec while resources agree; reason unknown.",
+    "Camera automatic vs player-view captions are observed UI labels, not independently validated fog modes."
+  ]
+}
