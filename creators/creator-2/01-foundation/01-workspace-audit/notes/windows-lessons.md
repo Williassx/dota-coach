@@ -550,3 +550,11 @@
 - **Подход:** новая загрузка на обычной скорости и явный `demo_pause`; проверять actual path, before/after cursor, POV, clock и ресурсы вместе. Requested tick не заменяет actual. Межпакетный cursor с prior real row хранить как gap1, без interpolation/exact claim.
 - **Проверка:** [калибровка](../../../../creator-1/05-match-data/03-replay-normalization/reports/03-native-tick-calibration/result.md):11actual PNG/SHA/readback pairs, три exact real-row положительных, четыре batch prior-row случая. Settingsfalse/1/mode0 восстановлены readback; owned32720 quit подтверждён gone после отложенного чтения, Steam13704 retained. Непосредственное own_gonefalse сохранено отдельно.
 - **Следующий раз:** применить связку cursor+clock+resources до длинного capture. Не переносить эту ограниченную калибровку на другие реплеи/паузы/bit semantics; macro capture и perceptual model export остаются отдельными задачами. `+con_logfile` в этом запуске не дал ожидаемый файл; применять ранее проверенный `-con_logfile`, а не считать отсутствие файла отсутствием native receipts.
+
+## 49. Freeze схемы требует значений свойств, а не runtime адресов
+
+- **Факт:** actual storm-field-schema.json содержит `ProtoSerializerProperties@...`; это identity Javaobject, не стабильные quantization parameters. `javap` pinnedprotobuf7.1 подтвердил metadata presence/getter API до фиксации технического плана.
+- **Причина:** строковое представление объекта не объясняет декодирование и меняется между запусками. Полагаться на него как schemahash означало бы ложный drift или пропуск несовместимости.
+- **Подход:** [план импортёра](../../../../creator-1/05-match-data/03-replay-normalization/telemetry-import-implementation-plan.md),Task2: structured field/type/decoder/quantization audit, failclosed unknownprofile и только измеренные entries; не менять decoded values подHUD. Source/eventnames сами по себе не actoridentity.
+- **Проверка:** на этапе планирования проверены actualJSON/source и getter signatures, выполнена self-review покрытия. Runtime fingerprint extractor ещё не реализован; его приёмка — futureTask2, не текущий PASS.
+- **Следующий раз:** перед frozen profile читать реальные numerical metadata и сравнивать одинаковый input в двух запусках. ВPowerShell передавать globs черезrg`-g` ссуществующим каталогом, а не нераскрытым позиционным путём.
