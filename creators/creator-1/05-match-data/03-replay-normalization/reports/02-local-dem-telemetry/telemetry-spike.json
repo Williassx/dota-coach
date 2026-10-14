@@ -1,0 +1,694 @@
+{
+  "schema": "dota-coach-local-dem-telemetry-spike-v1",
+  "match_id": 9042986015,
+  "scope": "one-match experimental spectator telemetry; not production importer",
+  "parser": "Clarity5.0.1",
+  "protobuf": "7.1",
+  "runtime": "Temurin21.0.12.1+1",
+  "maven": "3.9.11",
+  "replay_sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330",
+  "run_summary": {
+    "parse_completed": true,
+    "real_ticks": 34051,
+    "synthetic_ticks": 34050,
+    "last_tick": 68100,
+    "elapsed_seconds": 18.2175346,
+    "dumped_entities": 3,
+    "parser": "clarity5.0.1/protobuf7.1"
+  },
+  "records": 34051,
+  "actor_records": 32178,
+  "unknown_unassigned_records": 1873,
+  "actor_handles": [
+    14926170
+  ],
+  "player_ids_raw": [
+    14
+  ],
+  "playerID_semantics_verified": false,
+  "identity_source": "PlayerResource SteamID0007 to selected full handle incl serial, not raw m_iPlayerID",
+  "server_minus_demo_tick_histogram": {
+    "463": 1,
+    "464": 34050
+  },
+  "clock_source": "CNETMsg_Tick minus GameRules pause ticks, pause-start tick when paused, /30 minus current nonzero m_flGameStartTime; no HUD fitted offset",
+  "start_times_seen": [
+    0.0,
+    230.16667
+  ],
+  "pause_seen": false,
+  "life_state_histogram": {
+    "0": 29833,
+    "1": 81,
+    "2": 2264
+  },
+  "position_basis": "raw cell/vec; world transform and map units uncalibrated",
+  "unit_state_encoding": "uint64 decimal string; semantic bit enum not assumed",
+  "control_source": "raw state64 plus named target CombatLog modifier events; not player knowledge",
+  "combat_records": 11341,
+  "target_deaths": [
+    {
+      "demo_tick": 21232,
+      "server_tick": 21696,
+      "combat_timestamp": 723.1667,
+      "type": "DOTA_COMBATLOG_DEATH",
+      "target": "npc_dota_hero_storm_spirit",
+      "attacker": "npc_dota_hero_rubick",
+      "inflictor": "rubick_fade_bolt",
+      "is_target_illusion": false,
+      "value": 73,
+      "relative_game_seconds": 493.00003
+    },
+    {
+      "demo_tick": 34406,
+      "server_tick": 34870,
+      "combat_timestamp": 1162.3,
+      "type": "DOTA_COMBATLOG_DEATH",
+      "target": "npc_dota_hero_storm_spirit",
+      "attacker": "npc_dota_hero_mirana",
+      "inflictor": "mirana_starfall",
+      "is_target_illusion": false,
+      "value": 107,
+      "relative_game_seconds": 932.1333299999999
+    },
+    {
+      "demo_tick": 41758,
+      "server_tick": 42222,
+      "combat_timestamp": 1407.3667,
+      "type": "DOTA_COMBATLOG_DEATH",
+      "target": "npc_dota_hero_storm_spirit",
+      "attacker": "npc_dota_hero_dragon_knight",
+      "inflictor": "dragon_knight_breathe_fire",
+      "is_target_illusion": false,
+      "value": 182,
+      "relative_game_seconds": 1177.20003
+    },
+    {
+      "demo_tick": 45886,
+      "server_tick": 46350,
+      "combat_timestamp": 1545.0001,
+      "type": "DOTA_COMBATLOG_DEATH",
+      "target": "npc_dota_hero_storm_spirit",
+      "attacker": "npc_dota_hero_mirana",
+      "inflictor": "mirana_starfall",
+      "is_target_illusion": false,
+      "value": 187,
+      "relative_game_seconds": 1314.83343
+    }
+  ],
+  "HUD_cases": [
+    {
+      "id": "episode-samples-r4/0",
+      "PNG_sha256": "8cc37d67bfed6de592b3ee17cd0be6311521c1c77b5d9e12ec3a64f29d182149",
+      "HUD_clock": "7:16",
+      "requested_tick": 19540,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 698,
+          "decoded": 698,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 1044,
+          "decoded": 1044,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 426,
+          "decoded": 426.3754,
+          "absolute_difference": 0.3754000000000133,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 651,
+          "decoded": 651.0006,
+          "absolute_difference": 0.0005999999999630745,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 436.63332999999994,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-samples-r4/4",
+      "PNG_sha256": "dd146574224c86fa7ab90c3bf9edf1d50e58a2cb4dc17994535ad6790c9aecfd",
+      "HUD_clock": "8:08",
+      "requested_tick": 21100,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 88,
+          "decoded": 88,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 956,
+          "decoded": 956,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 205,
+          "decoded": 205.8127,
+          "absolute_difference": 0.8127000000000066,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 651,
+          "decoded": 651.0006,
+          "absolute_difference": 0.0005999999999630745,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 488.63332999999994,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-samples-r4/5",
+      "PNG_sha256": "9a7376b8694d01ef12db42fe30b2fb18697a99e97d1261626ba7e0aa73fde974",
+      "HUD_clock": "8:11",
+      "requested_tick": 21190,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 66,
+          "decoded": 66,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 956,
+          "decoded": 956,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 57,
+          "decoded": 57.187553,
+          "absolute_difference": 0.1875530000000012,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 651,
+          "decoded": 651.0006,
+          "absolute_difference": 0.0005999999999630745,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 491.63332999999994,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-confirm-r4/0",
+      "PNG_sha256": "1492e3ed9e3eb8d55dfc96d8bd5acf78a0c0daeddabc7658b1657a7e10c7a4a2",
+      "HUD_clock": "8:16",
+      "requested_tick": 21340,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 0,
+          "decoded": 0,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 956,
+          "decoded": 956,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 496.63332999999994,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-samples-r4/7",
+      "PNG_sha256": "b33741b3a9e4121673a1b3ff989506e86bc637c90fb4d3d11305267e6eb4da50",
+      "HUD_clock": "15:26",
+      "requested_tick": 34240,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 1220,
+          "decoded": 1220,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 1220,
+          "decoded": 1220,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 1056,
+          "decoded": 1055.9385,
+          "absolute_difference": 0.06150000000002365,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 1148,
+          "decoded": 1148.0011,
+          "absolute_difference": 0.001099999999951251,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 926.6333299999999,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-samples-r4/8",
+      "PNG_sha256": "3dcc6b838dc9af9477108969a128d33814ec8d0863b0329de3e9b4f50168c744",
+      "HUD_clock": "15:30",
+      "requested_tick": 34360,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 947,
+          "decoded": 947,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 1220,
+          "decoded": 1220,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 915,
+          "decoded": 914.93835,
+          "absolute_difference": 0.061649999999985994,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 1148,
+          "decoded": 1148.0011,
+          "absolute_difference": 0.001099999999951251,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 930.6333299999999,
+      "unit_state_uint64_decimal": "35184372088832"
+    },
+    {
+      "id": "episode-samples-r4/11",
+      "PNG_sha256": "2d357d6b309d63346e287929dd650082625cbb2c40bffce0090c3a7ccaaf4042",
+      "HUD_clock": "19:35",
+      "requested_tick": 41710,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 1217,
+          "decoded": 1217,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 1308,
+          "decoded": 1308,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 736,
+          "decoded": 736.25073,
+          "absolute_difference": 0.2507299999999759,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 1376,
+          "decoded": 1376.0013,
+          "absolute_difference": 0.001299999999901047,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 1175.63333,
+      "unit_state_uint64_decimal": "32"
+    },
+    {
+      "id": "episode-confirm-r4/2",
+      "PNG_sha256": "7b987d4ba75e779012cce1baf3384ee3fa505b6fca1ce79d2b222cff0309c966",
+      "HUD_clock": "19:43",
+      "requested_tick": 41950,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 0,
+          "decoded": 0,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 1308,
+          "decoded": 1308,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 1183.63333,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-samples-r4/14",
+      "PNG_sha256": "4ae2904294492840b8e7e2cea96cc5ac5cf2f3df98f995ec56da18a03c56c4e4",
+      "HUD_clock": "21:53",
+      "requested_tick": 45850,
+      "actual_capture_tick_independently_verified": false,
+      "status": "CONSISTENT_AT_REQUESTED_SEEK_TICK_NOT_EXACT_CAPTURE_PROOF",
+      "checks": {
+        "hp": {
+          "HUD": 786,
+          "decoded": 786,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "max_hp": {
+          "HUD": 1528,
+          "decoded": 1528,
+          "absolute_difference": 0,
+          "within_one_unit": true
+        },
+        "mana": {
+          "HUD": 1337,
+          "decoded": 1337.6262,
+          "absolute_difference": 0.6261999999999261,
+          "within_one_unit": true
+        },
+        "max_mana": {
+          "HUD": 1376,
+          "decoded": 1376.0013,
+          "absolute_difference": 0.001299999999901047,
+          "within_one_unit": true
+        }
+      },
+      "decoded_game_seconds": 1313.63333,
+      "unit_state_uint64_decimal": "32"
+    },
+    {
+      "id": "overview-r4-v4/74",
+      "PNG_sha256": "7843075dd6e90d97270847ff4b59664166e7edf716aae849c820371e509f94b3",
+      "HUD_clock": "25:34",
+      "requested_tick": null,
+      "actual_capture_tick_independently_verified": false,
+      "status": "UNRESOLVED",
+      "checks": {},
+      "all_second_candidates": [
+        {
+          "demo_tick": 52462,
+          "game_seconds_raw": 1534.03333,
+          "hp": 309,
+          "mana": 1051.3135,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52464,
+          "game_seconds_raw": 1534.0999966666666,
+          "hp": 310,
+          "mana": 1032.8135,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52466,
+          "game_seconds_raw": 1534.1666633333332,
+          "hp": 311,
+          "mana": 1014.1885,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52468,
+          "game_seconds_raw": 1534.23333,
+          "hp": 312,
+          "mana": 995.5635,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52470,
+          "game_seconds_raw": 1534.2999966666666,
+          "hp": 314,
+          "mana": 956.2509,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52472,
+          "game_seconds_raw": 1534.3666633333332,
+          "hp": 316,
+          "mana": 938.6259,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52474,
+          "game_seconds_raw": 1534.4333299999998,
+          "hp": 317,
+          "mana": 919.93835,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52476,
+          "game_seconds_raw": 1534.4999966666667,
+          "hp": 318,
+          "mana": 901.43835,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52478,
+          "game_seconds_raw": 1534.5666633333333,
+          "hp": 320,
+          "mana": 863.1883,
+          "unit_state_uint64_decimal": "72057594046316800"
+        },
+        {
+          "demo_tick": 52480,
+          "game_seconds_raw": 1534.63333,
+          "hp": 321,
+          "mana": 844.5008,
+          "unit_state_uint64_decimal": "72057594037927936"
+        },
+        {
+          "demo_tick": 52482,
+          "game_seconds_raw": 1534.6999966666665,
+          "hp": 322,
+          "mana": 844.5008,
+          "unit_state_uint64_decimal": "72057594037927936"
+        },
+        {
+          "demo_tick": 52484,
+          "game_seconds_raw": 1534.7666633333333,
+          "hp": 324,
+          "mana": 846.5008,
+          "unit_state_uint64_decimal": "72057594037927936"
+        },
+        {
+          "demo_tick": 52486,
+          "game_seconds_raw": 1534.83333,
+          "hp": 325,
+          "mana": 847.5008,
+          "unit_state_uint64_decimal": "72057594037927936"
+        },
+        {
+          "demo_tick": 52488,
+          "game_seconds_raw": 1534.8999966666665,
+          "hp": 326,
+          "mana": 848.6883,
+          "unit_state_uint64_decimal": "72057594037927936"
+        },
+        {
+          "demo_tick": 52490,
+          "game_seconds_raw": 1534.9666633333334,
+          "hp": 328,
+          "mana": 850.6883,
+          "unit_state_uint64_decimal": "72057594037927936"
+        }
+      ],
+      "reason": "no independently recorded exact native capture tick; no nearest-value selection"
+    },
+    {
+      "id": "episode-samples-r4/20",
+      "PNG_sha256": "5b964d74a743541958fed6e31788a730c8ec491f02973db027d4015f76342bb7",
+      "HUD_clock": "31:45",
+      "requested_tick": 63610,
+      "actual_capture_tick_independently_verified": false,
+      "status": "NOT_RESOURCE_COMPARISON",
+      "checks": {},
+      "decoded_game_seconds": 1905.6333300000001,
+      "unit_state_uint64_decimal": "0"
+    },
+    {
+      "id": "episode-confirm-r4/4",
+      "PNG_sha256": "c2f221f801b1bd8857d34ca4425cb0e2eeb13df50c9354f4d3032ffdebd097f2",
+      "HUD_clock": "31:45",
+      "requested_tick": 63790,
+      "actual_capture_tick_independently_verified": false,
+      "status": "NOT_RESOURCE_COMPARISON",
+      "checks": {},
+      "decoded_game_seconds": 1911.6333300000001,
+      "unit_state_uint64_decimal": "0"
+    }
+  ],
+  "exact_native_capture_alignment_verified": false,
+  "learned_player_model": false,
+  "player_fidelity_verified": false,
+  "dependency_lock": [
+    {
+      "name": "clarity-5.0.1.jar",
+      "bytes": 666198,
+      "sha256": "8d42d78f383b25bd23ed2d1f61d6efe06866b14f98e0a4852163022b44320bd9"
+    },
+    {
+      "name": "clarity-protobuf-7.1.jar",
+      "bytes": 8884549,
+      "sha256": "7a17d3d97189482319a65337bf7e65ad3c2d8c6162d2c26115acb8419c497c8d"
+    },
+    {
+      "name": "error_prone_annotations-2.27.0.jar",
+      "bytes": 19370,
+      "sha256": "24c923372c58e35d0b9f16a028929bb9aedc77521867c274f2bd0735df5ba1f5"
+    },
+    {
+      "name": "fastutil-core-8.5.12.jar",
+      "bytes": 6428331,
+      "sha256": "f31c20f5b06312f3d5e06e6160a32e274d819aa6cebf27528b26b6b5c0c1df19"
+    },
+    {
+      "name": "gson-2.11.0.jar",
+      "bytes": 298435,
+      "sha256": "57928d6e5a6edeb2abd3770a8f95ba44dce45f3b23b7a9dc2b309c581552a78b"
+    },
+    {
+      "name": "slf4j-api-2.0.17.jar",
+      "bytes": 69908,
+      "sha256": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+    },
+    {
+      "name": "slf4j-simple-2.0.17.jar",
+      "bytes": 15716,
+      "sha256": "ddfea59ac074c6d3e24ac2c38622d2d963895e17f70b38ed4bdae4d780be6964"
+    },
+    {
+      "name": "snappy-java-1.1.10.7.jar",
+      "bytes": 2338496,
+      "sha256": "4c766cb3f855415ee734b2392949a0b6f12a60879334a74518deaf6270d32e36"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/samples.jsonl",
+      "bytes": 62052648,
+      "sha256": "1b4ef1b55dfb554a19b7fe98beb1daf5e94c000771513909dadcdf6df7626b02"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/combat-events.jsonl",
+      "bytes": 2818165,
+      "sha256": "8c4192f4a9c0fe77cfaa3687f5f7de2e461423728cde57d91a129e8e10d0b42f"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/modifier-events.txt",
+      "bytes": 1385022,
+      "sha256": "2d5677027ecd6d3d406b0db3e925add430ebb7b16030e2e976d39b5f160247a7"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/storm-telemetry.csv",
+      "bytes": 4665741,
+      "sha256": "f1e9491a62727e86e4cfd7e76b8f3177cea69634dea85f67256c1fca7376345c"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/storm-field-schema.json",
+      "bytes": 789,
+      "sha256": "16caff3217eefa52379f6cc1e62e62b847c50d88a98580fd3d404af3e611a306"
+    },
+    {
+      "path": "build/dota_coach/replay-9042986015/telemetry-spike/run-3/summary.json",
+      "bytes": 170,
+      "sha256": "4816ce6a788492665211f4926a6631df4f815a901a302af9780e9d849c5b2256"
+    }
+  ],
+  "probe_source_sha256": "a157b18465b15ef54a2c13eda93f3d62a5153c9bd6155d7a533df1af3d9ec651",
+  "replicated_state_output_between_instrumented_runs": {
+    "hashes": {
+      "run-2": "1b4ef1b55dfb554a19b7fe98beb1daf5e94c000771513909dadcdf6df7626b02",
+      "run-3": "1b4ef1b55dfb554a19b7fe98beb1daf5e94c000771513909dadcdf6df7626b02"
+    },
+    "identical": true,
+    "scope": "same replay/version/settings; added combat/schema observers in run3; not independent parser implementation"
+  },
+  "actual_field_schema": {
+    "m_iPlayerID": {
+      "type": "PlayerID_t",
+      "decoder": "skadistats.clarity.io.decoder.IntVarUnsignedDecoder",
+      "serializer_properties": "opaque object.toString; encoder metadata not inspected"
+    },
+    "m_iHealth": {
+      "type": "int32",
+      "decoder": "skadistats.clarity.io.decoder.IntVarSignedDecoder",
+      "serializer_properties": "opaque object.toString; encoder metadata not inspected"
+    },
+    "m_flMana": {
+      "type": "float32",
+      "decoder": "skadistats.clarity.io.decoder.FloatQuantizedDecoder",
+      "serializer_properties": "opaque object.toString; encoder metadata not inspected"
+    },
+    "m_nUnitState64": {
+      "type": "uint64",
+      "decoder": "skadistats.clarity.io.decoder.LongVarUnsignedDecoder",
+      "serializer_properties": "opaque object.toString; encoder metadata not inspected"
+    }
+  },
+  "local_toolchain_receipts": {
+    "jdk_download_url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+    "jdk_actual_sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+    "jdk_published_sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+    "maven_download_url": "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip",
+    "maven_actual_sha512": "03e2d65d4483a3396980629f260e25cac0d8b6f7f2791e4dc20bc83f9514db8d0f05b0479e699a5f34679250c49c8e52e961262ded468a20de0be254d8207076",
+    "maven_published_sha512": "03e2d65d4483a3396980629f260e25cac0d8b6f7f2791e4dc20bc83f9514db8d0f05b0479e699a5f34679250c49c8e52e961262ded468a20de0be254d8207076"
+  },
+  "synthetic_callbacks_not_samples": 34050,
+  "validation_complete": false,
+  "strict_HUD_alignment_complete": false,
+  "note": "candidate seek-time numeric consistency is not independently measured PNG capture tick",
+  "actor_record_game_state_histogram": {
+    "4": 1348,
+    "5": 28655,
+    "6": 1800,
+    "7": 375
+  },
+  "includes_pre_and_postgame": true,
+  "verification": {
+    "CSV_actor_rows": 32178,
+    "identity_mismatches": 0,
+    "finite_numeric_fields_verified": true,
+    "strictly_increasing_demo_ticks": true,
+    "uint64_decimal_strings_valid": true,
+    "artifact_hashes": 6,
+    "dependency_hashes": 8,
+    "relative_links_checked": 13,
+    "broken_links": [],
+    "phase_histogram": {
+      "4": 1348,
+      "5": 28655,
+      "6": 1800,
+      "7": 375
+    },
+    "scope": "local research validation; exact HUD capture tick and world/fog/bit mapping remain open"
+  },
+  "technical_review": {
+    "report": "technical-review.md",
+    "creator": 2,
+    "artifact_and_CSV_independent_check_completed": true,
+    "text_findings_resolved": 1,
+    "unresolved_P1_P2": 0,
+    "exact_native_alignment_accepted": false,
+    "general_importer_accepted": false
+  }
+}
