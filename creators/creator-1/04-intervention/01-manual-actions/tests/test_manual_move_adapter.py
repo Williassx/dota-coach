@@ -41,13 +41,25 @@ class AdapterTests(unittest.TestCase):
   ExecuteOrderFromTable=function(o)if orderfail then error('failed')end assert(filter(filterctx,{units={['0']=o.UnitIndex}}));orders[#orders+1]=o end
   function sync(id,extra)local r={protocol_version=1,request_id=id or 'sync',kind='sync'};if extra then r.PlayerID=extra end;listener(1,r)end
   ''')
-  self.lua.execute((SOURCE/'manual_move_game_mode.lua').read_text())
+  self.lua.globals().native_module=self.lua.execute((SOURCE/'manual_move_game_mode.lua').read_text())
  def check(self,s):self.lua.execute(s)
  def test_sender_verified_before_payload_and_matching_metadata_only(self):
   self.check('''Activate(); local reads=0;local bad=setmetatable({}, {__index=function()reads=reads+1;error('read')end})
   listener(2,bad);assert(reads==0 and #emits==0)
   sync('good',3);assert(emits[#emits].request_status=='accepted')
   sync('bad',999);assert(emits[#emits].reason=='invalid_request')''')
+ def test_server_hooks_configure_once_before_activate_with_owned_copies(self):
+  self.check('''
+  local snapshot=nil;local decisions=0
+  assert(type(native_module.resolve_sender)=='function')
+  assert(native_module.configure_server_hooks({decide_ai=function(o)
+    decisions=decisions+1;o.x=99999;return {x=300,y=0,z=0}
+  end,on_snapshot=function(s)snapshot=s;s.mode='spoof' end}))
+  assert(not native_module.configure_server_hooks({decide_ai=function()end,on_snapshot=function()end}))
+  Activate();sync();think();assert(decisions==1 and #orders==1)
+  assert(emits[#emits].mode=='AI' and snapshot.mode=='spoof')
+  assert(not native_module.configure_server_hooks({decide_ai=function()end,on_snapshot=function()end}))
+  ''')
  def test_real_controller_to_adapter_to_filter_sequence(self):
   self.check('''Activate();sync();think();assert(#orders==1 and emits[#emits].mode=='AI')
   assert(not filter(filterctx,{units={['0']=42}}));assert(filter(filterctx,{units={['0']=99}}))

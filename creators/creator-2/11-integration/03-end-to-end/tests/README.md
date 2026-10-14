@@ -19,3 +19,5 @@ file/directory ссылки в owned fixture. Только Windows1314 даёт 
 мутаций; production guards не меняются. [test_symlink_capability.py](test_symlink_capability.py)
 содержит8проверок known/unknown errors, fake probe и настоящих capabilities.
 Всего36tests; source suite с пропусками остаётся incomplete/verified=false.
+
+[01-native-coach-scene](01-native-coach-scene/README.md) — explicit owned native lifecycle acceptance, never ordinary test activation.

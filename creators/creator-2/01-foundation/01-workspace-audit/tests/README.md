@@ -8,3 +8,5 @@
 ```sh
 python -m unittest discover -s creators/creator-2/01-foundation/01-workspace-audit/tests -v
 ```
+
+[test_autonomous_progress.py](test_autonomous_progress.py) — old flags/format correction, independent creator review, missing evidence and denominator guards.

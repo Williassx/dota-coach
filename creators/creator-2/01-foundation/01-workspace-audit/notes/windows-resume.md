@@ -1,5 +1,17 @@
 # Продолжение в локальной Windows-задаче Codex
 
+## Текущая точка продолжения — 14 октября 2026
+
+Читайте [автономный план](autonomous-30pp-plan-2026-10-13.md), [общий аудит](../reports/repository-audit-2026-10-14.md) и evidence-backed delta `tools/autonomous_progress.py --require-target`. Frozenbaseline113/182C1 (перенос старогоcheckbox, не новое выполнение) и56/213C2; пользователь поручил+55/+64новых actions и разрешил technical AIpeer другого создателя. Product/legal/data/native claims требуют отдельных фактов.
+
+Actual coach_scene связывает C1 policy/observation/arbiter/journal/manual authority и C2 readonly server TEST roster. Normal15/compiled7, TEST18/compiled9; [native14frames/API report](../../../11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md). R2pause/expiry/cancel/arrival/death/respawn/stalegeneration/rebind подтверждены programmatic API; physical input, реальная карта5×5, реальные профили и речь открыты. Собственные6264/5708/22208/9516 завершены; Steam13704 не затрагивался, старый12964 уже отсутствовал (причина неизвестна).
+
+Свежий fullsource89/1391PASS/28skip/6incomplete/0error suites, strictfalse: build/dota_coach/source-checks-20261014T063405Z-e89689/source-checks.json. Independentpeer исправил5sourceP2; delta shortactionbug8RED/GREEN +C1regrade. Lesson45, source-only flags не становятся native proof.
+
+[Конкретный несент prototype packet](../../../12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md) и exact38 internal archive имеют unknown rights, безValveengine/template/rawlogs. Ничего внешне не отправлено. Не менять frozenbaseline ради процентов и не повторятьnative install в занятые dirs.
+
+Пользователь14октября запросил подробное видение и сведения для корректировки: [proposal](game-vision-proposal-2026-10-14.md). Пользователь ответил: перваяdemo5×5; короткоеограниченноеокно→AIreturn; тренер/пул20/неперегруженныехарактеристики; голос лес/цельsupport/itembuild; отдалённаяDotaкамера; планирует10POVвидеоматчейнаигрока. Видео ещё не получены; точные секунды/cooldown/native5×5 остаются designзависимостями. Следующая механика требует локального design/plan; рутинные команды остаются автономными. Исторические записи ниже относятся к прежним срезам.
+
 [Родитель](README.md) · [Порядок аудита](windows-start.md) ·
 [Source handoff](../../../10-user-testing/01-install-guide/notes/install-guide.md).
 

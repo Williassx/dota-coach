@@ -1,0 +1,1971 @@
+[
+  {
+    "task": "creators/creator-1/01-foundation/01-environment-audit/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/01-foundation/02-addon-capability/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/02-runtime/01-session-lifecycle/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/02-runtime/02-actor-binding/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/02-runtime/03-time-events/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/03-ai-baseline/01-observation/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/03-ai-baseline/02-synthetic-policy/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/03-ai-baseline/03-order-arbiter/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/04-intervention/02-return-ai/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/04-intervention/03-lifecycle-guards/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/05-match-data/01-source-audit/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/05-match-data/02-import/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/05-match-data/03-replay-normalization/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/06-player-models/01-profiles/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/06-player-models/02-personal-policy/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/06-player-models/03-heldout-evaluation/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/07-coach-preparation/01-roster-roles/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/07-coach-preparation/02-tactics/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/07-coach-preparation/03-morale-trust/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/08-match-mechanics/01-farming-economy/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/08-match-mechanics/02-hero-actions/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/08-match-mechanics/03-team-coordination/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/09-full-match/01-match-configuration/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/09-full-match/02-opponent-policy/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/09-full-match/03-result-replay/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/10-reliability/01-saves-versions/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/10-reliability/02-diagnostics/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/10-reliability/03-performance/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/11-integration/02-voice-commands/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/11-integration/03-joint-acceptance/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/12-release/01-source-rights/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/12-release/03-release-package/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/02-panorama-capability/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/02-panorama-capability/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/02-panorama-capability/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/03-interface-contract/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/02-coach-interface/01-roster-cards/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/02-coach-interface/02-status-orders/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/02-coach-interface/03-control-input/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/03-map-view/01-map-audit/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/03-map-view/03-visibility-targets/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/04-preparation-ui/01-team-picker/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/04-preparation-ui/02-hero-role-picker/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/04-preparation-ui/03-tactics-morale/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/05-intervention-ui/01-request-ack/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/05-intervention-ui/02-mouse-targeting/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/05-intervention-ui/03-return-feedback/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/06-voice/01-microphone-probe/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/06-voice/02-recognition-parser/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/06-voice/03-voice-feedback/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/07-match-screen/01-own-cards/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/07-match-screen/02-opponent-cards/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/07-match-screen/03-orders-timeline/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/08-analysis-ui/01-event-replay/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/08-analysis-ui/02-profile-evidence/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/08-analysis-ui/03-post-match/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/09-presentation/01-assets/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/09-presentation/01-assets/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/09-presentation/01-assets/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/09-presentation/02-settings-layout/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/09-presentation/03-accessibility-localization/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/10-user-testing/01-install-guide/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/10-user-testing/02-user-scenarios/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/10-user-testing/03-usability-fixes/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+    "actions": [
+      8
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/11-integration/01-ui-binding/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+    "actions": [
+      9
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+    "actions": [
+      14
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/11-integration/02-addon-packaging/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+    "actions": [
+      15
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/11-integration/03-end-to-end/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/01-rights-display/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/12-release/01-rights-display/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/01-rights-display/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/12-release/02-valve-presentation/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/03-release-guide/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/12-release/03-release-guide/reports/autonomous-acceptance-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/03-release-guide/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/01-foundation/02-addon-capability/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_game_mode.lua",
+      "creators/creator-1/11-integration/01-ui-contracts/tests/test_coach_scene.py"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+    "actions": [
+      2
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_adapter.py",
+      "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-01-03.log"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+      "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_adapter.py",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/02-runtime/03-time-events/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/creator-1/02-runtime/03-time-events/src/scripts/vscripts/event_log.lua",
+      "creators/creator-1/11-integration/01-ui-contracts/src/scripts/vscripts/coach_scene_game_mode.lua",
+      "creators/creator-1/02-runtime/03-time-events/tests/01-native-lifecycle/verification-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/02-runtime/03-time-events/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "build/dota_coach/c2-native-peer-verification-20261014.json",
+      "creators/creator-1/02-runtime/03-time-events/tests/test_event_log_sources.py",
+      "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-02-03.log"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/03-ai-baseline/01-observation/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/03-ai-baseline/01-observation/tests/test_execution.py",
+      "creators/creator-1/03-ai-baseline/01-observation/src/scripts/vscripts/observation.lua",
+      "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-03-01.log"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/03-ai-baseline/02-synthetic-policy/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-ready-2026-10-14.png",
+      "creators/creator-1/03-ai-baseline/02-synthetic-policy/src/scripts/vscripts/synthetic_policy.lua",
+      "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-03-02.log"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/03-ai-baseline/03-order-arbiter/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/03-ai-baseline/03-order-arbiter/notes/priorities.md",
+      "creators/creator-1/03-ai-baseline/03-order-arbiter/src/scripts/vscripts/order_arbiter.lua",
+      "creators/creator-1/11-integration/01-ui-contracts/tests/test_lua_execution.py",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_controller.lua",
+      "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-04-01.log"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/04-intervention/02-return-ai/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "build/dota_coach/c2-native-peer-verification-20261014.json",
+      "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_controller.lua",
+      "creators/creator-1/04-intervention/02-return-ai/tests/test_return_sources.py"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/07-coach-preparation/01-roster-roles/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/creator-1/07-coach-preparation/01-roster-roles/src/scripts/vscripts/roster_confirmation.lua",
+      "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_confirmation.py",
+      "creators/creator-2/11-integration/01-ui-binding/tests/server-roster.test.cjs"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/creator-1/11-integration/01-ui-contracts/tests/test_coach_scene.py",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_state.js",
+      "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/server_roster_panel.js"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-dead-2026-10-14.png",
+      "creators/creator-2/11-integration/03-end-to-end/tests/01-native-coach-scene/fixture.js",
+      "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-11-01.log"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators\\creator-2\\01-foundation\\01-workspace-audit\\notes\\autonomous-30pp-plan-2026-10-13.md",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+      "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+    "actions": [
+      2
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/creator-1/11-integration/01-ui-contracts/tests/test_command_shapes.py",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+    "actions": [
+      2
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_state.js",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+    "actions": [
+      4
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+      "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+    "actions": [
+      5
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/creator-1/11-integration/01-ui-contracts/src/scripts/vscripts/coach_scene_game_mode.lua",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+    "actions": [
+      6
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+      "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+      "creators/creator-2/11-integration/01-ui-binding/tests/server-roster.test.cjs",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+    "actions": [
+      7
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+      "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+      "creators/shared/contracts/preparation-roster-v1.md",
+      "creators/shared/contracts/manual-move-v1.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+    "actions": [
+      8
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+      "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+    "actions": [
+      9
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+      "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+    "actions": [
+      13
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md",
+      "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+      "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+    "actions": [
+      2
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+      "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+      "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "build/dota_coach/c1-peer-packet-verify-20261014.log"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 2,
+    "reviewer_creator": 1,
+    "report": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-functional-peer-decisions-2026-10-14.json",
+    "proofs": [
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+      "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+      "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "build/dota_coach/c1-peer-packet-verify-20261014.log"
+    ],
+    "scope": "documentary"
+  },
+  {
+    "task": "creators/creator-1/12-release/01-source-rights/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/12-release/01-source-rights/reports/current-material-register-2026-10-14.json",
+      "creators/creator-1/12-release/01-source-rights/reports/current-material-register-2026-10-14.md",
+      "docs/legal/plan.md",
+      "docs/legal/initial-review.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+    "actions": [
+      1
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+    "actions": [
+      2
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/12-release/02-valve-demo/notes/rights-requests-2026-10-14.md",
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+    "actions": [
+      3
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+      "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+      "build/dota_coach/c1-peer-packet-verify-20261014.log",
+      "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md"
+    ],
+    "scope": "mixed"
+  },
+  {
+    "task": "creators/creator-1/12-release/03-release-package/README.md",
+    "actions": [
+      2
+    ],
+    "author_creator": 1,
+    "reviewer_creator": 2,
+    "report": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-functional-peer-review-2026-10-14.json",
+    "proofs": [
+      "creators/creator-1/11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md",
+      "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+      "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+      "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "build/dota_coach/c2-native-peer-verification-20261014.json"
+    ],
+    "scope": "mixed"
+  }
+]

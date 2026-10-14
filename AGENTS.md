@@ -283,3 +283,13 @@ knownunpause onlyoriginalowner/livegeneration/entity. Nativephysicalinput/hittes
 pause/death/replacement/reload/lateevents/humanowner/fullgame remainopen.
 Logical5deadline observedreturn5.033–5.067nextThink; no strict5.000stop claim.
 All8ownPIDsgoneSteam12964retained; C256/213/C1112/181, sourceflagsnotnativeproof.
+
+## Уточнение пользователя 13 октября 2026: автономный технический обзор
+
+Пользователь поручил общий аудит и +30 процентных пунктов каждого отдела (+55C1/+64C2).
+Для технических подпунктов он явно разрешил независимую проверку отдельным ИИ-
+исполнителем другого создателя; это уточняет прежний human-only gate технической передачи.
+Нужны реальные файлы/команды/границы приёмки и отдельный reviewer, не самооценка автора.
+Нативные эффекты, реальные данные, продуктовая приёмка, права и выпуск по-прежнему
+требуют собственных доказательств; technicalreview не утверждает человека/лицензию.
+План и frozenbaseline: creators/creator-2/01-foundation/01-workspace-audit/notes/autonomous-30pp-plan-2026-10-13.md.

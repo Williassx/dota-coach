@@ -1,0 +1,1900 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "reviewer": "independent C1 runtime agent; not C2 source/report author",
+  "author_creator": 2,
+  "reviewer_creator": 1,
+  "review_scope": "36 technical handoff/criterion comparisons; selected actual source boundaries plus current Node regression; not exhaustive security or product review",
+  "native_coach_scene_status": "R2 bounded programmatic lifecycle receipt plus UI3 normal15/compiled7 visual receipt independently checked; physical/fullgame remain open",
+  "tests": [
+    {
+      "command": "node --test all C2 *.test.cjs paths",
+      "passed": 773,
+      "failed": 0,
+      "skipped": 0,
+      "proof": "build/dota_coach/c2-peer-node-20261014.log"
+    },
+    {
+      "command": "python C2-01-01/tests/test_autonomous_progress.py",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "proof": "build/dota_coach/c2-peer-progress-20261014.log"
+    },
+    {
+      "command": "python C2-11-02/tests/test_coach_scene_bundle.py",
+      "passed": 8,
+      "failed": 0,
+      "skipped": 0,
+      "proof": "build/dota_coach/c2-peer-coach-bundle-20261014.log"
+    },
+    {
+      "command": "node --test server-roster.test.cjs manual-move-panel.test.cjs after author fix",
+      "passed": 27,
+      "failed": 0,
+      "skipped": 0,
+      "proof": "build/dota_coach/c2-peer-required-panels-regrade-20261014.log"
+    },
+    {
+      "command": "python test_autonomous_progress.py after short-prefix fix",
+      "passed": 8,
+      "failed": 0,
+      "skipped": 0,
+      "proof": "build/dota_coach/c2-peer-progress-short-regrade-20261014.log"
+    }
+  ],
+  "author_hashes_checked": 169,
+  "rows": [
+    {
+      "task": "C2-01-01",
+      "path": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+      "criterion": "Определены реальные пути; исходники отдела B не смешаны с серверными файлами A.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "9d900c297a5490c2962445f33ffe4e10673dfb39305d22cd07388892de439f7f"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "01b38e533fa044a943013f47e32215bb0905fdae0d4c034581b88ee38cdda3b2"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/tools/autonomous_progress.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "2be7efa3b7486af8bfb45585563e958cc882d6f82e9785b106dbb460ffcf9bde"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/tools/inspect_ui_workspace.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "6c1f41249712f7c1da9ef14bee5eaabae7f7025549fe1e8b889f22553f926c19"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Bounded file audit keeps runtime_verified false and separate C1 helper provenance; path inventory is not full foundation acceptance.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Согласование владельцев общего контракта и полная native foundation не подтверждены самим аудитом.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-01-02",
+      "path": "creators/creator-2/01-foundation/02-panorama-capability/README.md",
+      "criterion": "В реальном клиенте работают панель, событие и подтверждение; текстовый макет не считается запуском.\n\nUI подготавливается параллельно C1-01-02.\nДо локального доступа автономно подготовлены исходники и отдельная упаковка;\nэто не закрывает аудиты и нативную приёмку. Минимальный серверный\nобработчик делает создатель 1 в своей папке; оба совместно проверяют соединение.\nГотовое серверное подтверждение в штатном шаблоне заранее не предполагается.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "7448ce797e1efa450180cd11a5bdfe0fdb86947145e33ce70c5aad1a3bd57599"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "a99852ab616c5ffbce0ada72feb56321a218141988933639dfdafeb762f6b84c"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/layout/custom_game/coach_probe.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "d62f0e478a73253ec19f9320c85130160975e96bc2879c9cfb16039accd4a6f2"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "3719e4d29330ded724bdd39d3efd45d25510323992a4170f601fa24e31a80582"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/scripts/custom_game/coach_probe.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "5f9097c0d5429466c3d9c0baec14d8d22af871f46ded80ff89b0e2ec60b72773"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/scripts/custom_game/coach_probe_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "29c2ecf466a39b8c0d8ea4b83962a9cd17b37fb52bece1f43a993fe5a79a9cea"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/src/panorama/styles/custom_game/coach_probe.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "b3895055f7c7b911f0f38980fedfad1a22a6edf02db2e07860cecb3bdaef2c84"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/tests/probe.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "394584d8b7eaf5f4dc75534a0cce3a2839a8a2ce3605366f4638c73661e49a94"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/tools/build_native_ping_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "ad660ba98dba4cdf232d08737c9c6a759d7b8245a9c8f01e14dba384aac04b02"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/tools/build_probe_bundle.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "99ee71a7c0044f00e04138e525471473f39901953e0bc2927802b7ca5747e12d"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/02-panorama-capability/tools/verify_probe_bundle.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "a368a58da86a0d367fb7e48c764da8075896f5a3a0dd5ad00e6221ccb3325c02"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Probe pending/correlation/dispose semantics align with addressed diagnostic exchange; historical native receipt is programmatic activation.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Программная активация не проверяет physical mouse/hittest; этот diagnostic exchange не игровой протокол приказов.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-01-03",
+      "path": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+      "criterion": "Примеры оформлены до общего согласования; этот подпункт не зависит циклически от C1-01-03.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "584c18ba780dde7f201a8a24a42573bd02f02a1698376b68af87649df34a2fee"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/03-interface-contract/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "b8d022b6e02dfd8e567ceb21cbb2148428fd9e0223e01342c6e60a529980ff1d"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Proposed fields/examples and C1 gap review remain explicit proposals; no general approved wire protocol exists.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Общий versioned контракт для всего HUD не принят; manual-move-v1 отдельный ограниченный протокол, не замена всех примеров.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-02-01",
+      "path": "creators/creator-2/02-coach-interface/01-roster-cards/README.md",
+      "criterion": "Выбор не меняет режим; синтетический профиль явно отмечен.\n\nПодготовка модели и демонстрации не требует сетевого контракта. Для подключения\nсерверных данных нужен C1-01-03; внутренние семь полей карточки не являются общим\nпротоколом. Компиляция Source 2, рендеринг/мышь в Dota и проверка другим владельцем\nещё не выполнены. Задача целиком не закрыта.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "880a986dca617593b7d9295b29e2e5b8d3a73501793ed92d5ff77d74c024d515"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "41c0bca376e675351d9ed96f316ef62cb5f15d38f6f4d065db76025aa19177c8"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/layout/custom_game/roster_cards_demo.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "41c4e9ef493b84ed095d180cc25026e0e7b9ce3472767b7e23999dd6748233eb"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "a246c95ca8298b9a002585904ff40518a0e58308b3c6a0f0609bca2e0379c419"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_demo.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "89f89beb7869b8b43c12fcfe028d9240b125cf2c370d758a0f1e676c3feb364e"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_demo_data.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "293f1bf460bcb819e450b56f0af1078c447713f78365bc9bd40e6b329dfdb9b3"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/scripts/custom_game/roster_cards_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "8ead8e2f798d6778430e9921200b409b45cc56d7b8d0c215995fd149716094ab"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/src/panorama/styles/custom_game/roster_cards.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "e3288e1b038d83ce4778a974f4dbfb75608989cf4775376a9778ddbaa0143155"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/01-roster-cards/tests/roster-cards.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "8b09756180e52d443632797a6ceb6cc02f930bc4f3008ea73304fff93ec65606"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Roster separates playerName/heroName/source and local selection; synthetic tags are explicit, actual identity and physical input remain open.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Реальная player identity, measured profile fidelity и физический выбор мышью не проверены; native fixture не серверное наблюдение режима.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-02-02",
+      "path": "creators/creator-2/02-coach-interface/02-status-orders/README.md",
+      "criterion": "Обе команды меняют действие того же героя; отказ остаётся читаемым.\n\nЭтот критерий ещё не проверен в Dota. Подготовлены два локальных намерения через\nявно передаваемый переходник, без GameEvents и игровых приказов. Внутренние\nsnapshot/ticket/report не задают общий wire-контракт. Нужны C1-01-03, интеграция\nкарточек, настоящие цели/серверная сцена, Windows/Source 2 и второй владелец.\n\nСмена карточки не снимает блокировку незавершённого приказа. Тайм-аут означает\nнеизвестный результат; accepted не означает completed. Режим меняется только\nвходящим снимком. Причина результата и доступность новой команды показаны отдельно.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "9fb9faee0453ecb0227e42c71e1d72fce2bfea8b78e7dfada6cee3bc5ae28c53"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "fcab9a0223d8d4b214c07740ea549c1595b3d3e6cc8dbc200ba64f1a7b1a38d6"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/layout/custom_game/orders_demo.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "f5a21989a9585cd459816a32555d0ea1c97d1067d95ddcd7a5d4fdf8e08768a3"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_demo.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "151f4f97b5facc8f52ad6604568331ba095f3070c9f23fad28c22b608115476e"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_demo_data.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "a657ea17111fcf5ce320984bdec629e13629a1bc1426307ba105afe662a2524f"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "b5cf2e8eb7724bc1e43042619ad5b0f535fe69c1e214a37f2441998316f330aa"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/scripts/custom_game/orders_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "d93502069eb14b18696ffdca9674a4bbf74efa4d3a42a4d836a2ccbdba720868"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/src/panorama/styles/custom_game/orders.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "5ea6c1b698e7bf0989eaaa6bf9d9811a0d8e8ebdc0d435f57916526aa1b0f0ef"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/02-status-orders/tests/orders.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "778d31a3a925b5feeb61d7cefb0773f8205accde73e0ad9bc01382c800f964e3"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Orders retain pending capture and distinguish accepted/executing/completed/unknown; actual move+attack through this adapter remains absent.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Два действия move/attack одного героя с реальным сервером не показаны. Ограниченный native manual move не реализует attack через эту панель.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-02-03",
+      "path": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+      "criterion": "Клик по панели не превращается в неожиданный приказ карте.\n\nЭтот критерий внутри Dota ещё не проверен. Координатор связывает существующие\nадаптеры, не устанавливает обработчик мыши карты и не выполняет команды игры.\nНовая общая разметка, серверный переходник и ручное вмешательство не подключены.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "53e6fbf6b34b3157fedd27112ec6aa74ee258ca45418653642c486b9f299edd3"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/03-control-input/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "479194b90f8b34eb7c7c58bb85d6a132fffdac51a9891a58986246ff9dd87116"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/03-control-input/src/panorama/scripts/custom_game/input_routing.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "337a5f7f8a89cbaa2b4d18c29a8ecae4febc95bd8fb0de68da6fa63ac8d9e5a2"
+        },
+        {
+          "path": "creators/creator-2/02-coach-interface/03-control-input/tests/input-routing.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "9260487041f52b49cff8829636c147c1aa4b6857d29a02f8e185a9eb6bea4964"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Input routing coordinates existing ports with guarded callback lifecycle; no native map-click exclusion is established.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Клики панели и карты в Dota, настоящий world hittest и общий manual transport в этом координаторе не проверены.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-03-01",
+      "path": "creators/creator-2/03-map-view/01-map-audit/README.md",
+      "criterion": "Фактическая карта и сборка записаны; изображение не заменяет игровую структуру.\n\nИнвентаризация не определяет загруженную карту, совместимость, координаты и\nпроходимость. Эти признаки всегда остаются неизвестными/непроверенными до Tools.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/03-map-view/01-map-audit/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "1fc5b1f4edf78591b9b267a44557906ef9b9befca16bcac06383ea48604181ce"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/01-map-audit/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "6348e4d920097ad8754e21ec154de92ba7badd0bf39f68ac73608106a8365d77"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/01-map-audit/tools/inspect_map_workspace.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "fc4fb8e56c41c3f9d32ac398a22115c063bced6fc206a32a6fcf00d859e72eea"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Map audit keeps actual_loaded_map/patch/geometry unknown; build association cannot establish loaded geometry.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Координаты/проходимость/актуальный patch/полная игровая структура template_map не установлены. Референс 7.40 не runtime evidence.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-03-02",
+      "path": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+      "criterion": "Выбранная цель совпадает с объектом карты; обозначения не раскрывают скрытые данные.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "4b83ceb0d5fd7e90e1055c3f13a14b9f97259b94151f6c8b538cd61a2f52fb0c"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "df6b08ce0673d682907f2f293c4cd5aed4fe86d3c7e2af973c0056aa23b42830"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/src/panorama/layout/custom_game/camera_focus.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "4198c0419dd18a8842639ae8eb4bb2d7cef912547ff6f1c42312188bf3261c92"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/src/panorama/scripts/custom_game/camera_native.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "d34d2fbb58422c8e6b392deebbdeefa8ed41880a8648b5c086b1a5b62ca03068"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/src/panorama/scripts/custom_game/camera_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "1681bf081222664c876c017af6f81949233dc9c8acea4af8ed262ce505d249d0"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/src/panorama/styles/custom_game/camera_focus.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "982ef24cbea4a5a15f06e0a2cf741683199173e2930fdeb1b479c86e3f18d9fa"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/tests/camera-motion.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "9564ff13596ae4b467008b1437c5ea743a0f4c39f6f4b4c5c3e1e1cfb7e625f3"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/tests/camera.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "60e6df184684c5954157578b7a5d238521f9a8f51bbe61548348ba28f2319d09"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/02-camera-overlays/tools/build_native_camera_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "eb293f8a2a8f0301a42745d0e2ba8b30ef4562a6b766f1e2ab25e733eab1b278"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Native gateway checks live own-team real hero before requesting focus; requested does not prove camera arrival or stable player identity.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "distanceXY4520.37 через1.5s не arrival; baseline уже near18/20, post near2/80 при active input. Причина возврата камеры и identity→entity не установлены, маркеры открыты.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-03-03",
+      "path": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+      "criterion": "UI не показывает недоступные позиции и не гарантирует исполнение недопустимой цели.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "693dd45648a7039c745c3ff9e7d24f0184581bfcfa5affd69de18f1a8392ca1d"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "6fc0a6a78c48ebd1e959391ce3dc4d72a3dac004f04a8340e450ceaa30acb444"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/layout/custom_game/target_observation.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "ddaa03406deb6d61508fd1153f28f43ace3e88edb3db1f6f273ad303cafb62f7"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/scripts/custom_game/targets_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "c05864e33262ddfe3dcbaa4f069712df773243f3fc36969e4db45a0e2777ce2b"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/scripts/custom_game/targets_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "5b0f5c2dfb43112942a678a9fcf484e5561d75af5fc7ccb5a9f40627371c211d"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/src/panorama/styles/custom_game/target_observation.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "9f78e2223bdf99dbf7092a74751e0b4276b9d82e7dc564e0b2fa91feade256ab"
+        },
+        {
+          "path": "creators/creator-2/03-map-view/03-visibility-targets/tests/targets.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "f756d21c1a681e153ee4ebbdca39d36d4c4ce7549cbcddfdbc864d65cd148310"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Target projection uses local freshness/revision guards; caller visibility is not trusted server privacy or admission.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Источник обзора C1 и настоящая native visibility не подключены. frontend filtering не авторизация, gone не смерть, ready не законность приказа.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-04-01",
+      "path": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+      "criterion": "Смешанный состав возможен; повтор и слабое покрытие обозначены до старта.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "015c6675be5636fed6ff22135470b96682c8263f81d83fdbb9080280900541a3"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "b9b722e29487d3d776002e184a64eee3b525c256b852266e37bfe34af05c4d8e"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/layout/custom_game/team_picker.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "2fa9a6a4aba59f24e29fbce9578c7678d853832652e4bafed62dc93b61e01f28"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "a5b90c753a0b5dcfe074a426ba54501635df16e06943db48487736ad3c7b1a8d"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/scripts/custom_game/team_picker_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "8e1b5e32d8175014fc5496c1f8777a9fe892b8d7213555fd0c109b37eee2037a"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/src/panorama/styles/custom_game/team_picker.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "195319886dbdaa1a869de7fed09010a410cb26839265fca157b29d35245e9633"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/tests/team-picker-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "0562a5dec63c8f191514852f183bc5f04769d7ad3153427352977d0747244298"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/01-team-picker/tests/team-picker.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "056bec734401752cf9239b24058c80b4dce763e7784a94e8a0c7b60a047f8d38"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Team count5 and unique virtual ids make a local draft; serverConfirmed false prevents private draft pretending to be submitted.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "serverConfirmed остаётся false; реальные профили, сохранение и отправка данного private draft серверу не реализованы. Отдельный TEST roster sync не подтверждает private draft.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-04-02",
+      "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+      "criterion": "Интерфейс не утверждает владение героем без данных профиля.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "c42a2bfd4f609d4932434b071077d5eb1f131297d87c2e55b096c0b8823d8b34"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "544a4606547df1d29ac9b4a1003c3d38df78e004ebeb572a78acc61279c03e79"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/layout/custom_game/hero_role_picker.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "6d3d84ac3f189ac55d13189404bee75252210716f0d975736d9ff91470f85b65"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "db96b7d48c811ace2bf5c3540edce35c56daea1352d1a57995d0da095a0b8df1"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/scripts/custom_game/hero_role_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "33152055bd9fb4b5550209af797e4c595c5e1b175a51f760bc69d215afdde97b"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/src/panorama/styles/custom_game/hero_role_picker.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "1749d487c94871193c518dbe0b14515cba404708468ac26649023e62d1771911"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/tests/hero-role-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "1342eafcbdf75143005aaa0937acd07ecefd7871918c54b0fbfdb6f7ce517f67"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/02-hero-role-picker/tests/hero-role.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "053bd19457268bcd42e760643e9499fe8d4d669d6f1bc6e9e29d91655f1736cb"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Hero-role draft preserves coverage/proposal kind and preliminary conflict policy; no real player hero mastery or server support claimed.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Локальная uniqueness предварительная policy; serverConfirmed=false, профильное владение героем и server acceptance состава здесь не доказаны.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-04-03",
+      "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+      "criterion": "Тренер понимает ожидаемый эффект; игровые черты имеют явную маркировку.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "5098e52bb5baadc901979556782a81ca7ddf83ce8935f0144a82d12497518c40"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "15bd52730fe664d224c99405a52aecc147f9adf2b0a9da6ff61b809c03519cd1"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/layout/custom_game/preparation_picker.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "17dfd2744bb4b57813413a867f43fb1bd2254112012eba6d8a90d3a4d350b612"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "f3365b2942e308636883f221a042d9572b8e358cfd0d79d457721796a471ed36"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/scripts/custom_game/preparation_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "7b7bf3688a39b51eadddf87757d67da6c5f077bc8f8d82e7a7698e92bbd26954"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/src/panorama/styles/custom_game/preparation_picker.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "6ae81d63fcfde642ef6adf92f1233d208d453fd8330c5ee46cd64606b136c80f"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/tests/preparation-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "5a6fcf86eb0f29de1ac91444b66b81efc1c7ce080ea56dc99a97e3e980c00c52"
+        },
+        {
+          "path": "creators/creator-2/04-preparation-ui/03-tactics-morale/tests/preparation.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "bd0a9229d5f31b8c8e2f1b1d066415dd1b951070a9cd9c19317102b3ca86d77e"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Preparation choices reset with upstream context; a declared intent is not actual tactic/morale effect or understood UX.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Намерение не эффект морали/тактики. Ответ сервера и понимание ожидаемого эффекта реальным тренером не измерены.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-05-01",
+      "path": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+      "criterion": "До подтверждения права не присваиваются; причина отказа видна.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "2fd825a021056a8fa6ea96c044c26f187550e85be991c9c458777adc21021b8f"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "a1ca1cdaaf17cfa514e3432ed18946a14dd768def3ae7600ec9994bbf831a9e2"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "13fb12fb2dc02142a64b212f9869269c4dc9c452ca75adf1ebb79d3625e608c9"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/layout/custom_game/intervention_request.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "fdb814b4176b5c47021dfd1f255f77a235964c494ca5831d01590e7d7d7b908e"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "dde7e38ba4b5b5c5651a3ff57b6f64d7ba5019839e64733a965c6c24f9559379"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/scripts/custom_game/intervention_request_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "93c8f6fc920aa0bb493dde503299bafa56d1f20dd1da0ffd3f510a4db9e4cb07"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/src/panorama/styles/custom_game/intervention_request.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "23cd96ac7bfb0cdb6fb39d5ba9c483ba089e9c012d98bbbb6930eefe32ad1432"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/tests/intervention-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "9e1c511fc15b15baedc9a3dbcae99566ab367f09975d841736154be9ad061463"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/01-request-ack/tests/intervention-request.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "3152c63d85dc2806b3678e621fbf19bfa000ef2f7f26119b95eb48163f7d8ee9"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Request ACK/timeout and captured actor are distinct from observed mode; the ACK timer supplies no lease authority.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Пятсекундный ACK timeout не lease. Этот local adapter не выдаёт server authority; manual move работает в другой ограниченной сцене, общий HUD не подключён.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-05-02",
+      "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+      "criterion": "Вмешательство относится к прежнему назначенному герою, а не переносится выделением.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "a1e57ccec8cb0958bf6e6dc9888a25744f3845e228a1d952cd6ceeae6634d494"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "3d3727583361872cd00f7c57a3cbac54fa2a8a3b8e22cef11be3ee1f08c7bd37"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "8bba3c653e712ca59634683afb6661cfdb3491f034a0880f1ee5d15c639b31d8"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/layout/custom_game/mouse_proposal.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "c2da028b9c4bc2866305deb0a1ba2dddf29ef5713cb7a314f08fa6d359618938"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/scripts/custom_game/mouse_proposal_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "01993bbe1e67339fc4d72ab3d9a047f43107faff32d49ed00e9b7844c22eb2b9"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/scripts/custom_game/mouse_proposal_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "48b963d5a60f1a144f38ec4794581eef8b0e81181b3857f200d61217f88c1b57"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/src/panorama/styles/custom_game/mouse_proposal.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "3891f281daf6c7ad87597d1d524af6d15085c36a35193716f4aca57386f5ea96"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests/mouse-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "981166c6e815b3745a74a2a238d5df6c92ec321da802eeaecb341d8df45f9910"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/02-mouse-targeting/tests/mouse-proposals.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "2848f764bbd2b73a4293365ef250b4438c74ab28362d4469085fa629a71d204a"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Mouse proposal pins captured actor and retains canSend/nativeConfirmed/sourceAuthorizationConfirmed false; native API fixture is not hittest.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Настоящий physical world callback, текущий lease и authoritative target admission в этой proposal панели не проверены. TEST clock не server freshness.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-05-03",
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+      "criterion": "Новый пользователь понимает, кто управляет героем; неуспех не подписан успехом.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "9012945eb8882ccb6635dd1b428d007d7d9c4ad60ffdb4659ff24c0e1d4586ba"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "a113b7a6c823d19cd18099896204489513870d96ce09250ec0ef8ef480177cc4"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/layout/custom_game/manual_move.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "df10d10bfcc164153c0698ac8f7a7e066adf91983bde4824e834b20baefea450"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "d06c6551586ea04042fd971b7f6996a081912ec8f6494617e61f66cbcfb55554"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "514824f2d52de820d3889ff3f4cf017e1b3647094b126a4502d0cd47350a9a01"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/styles/custom_game/manual_move.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "36eb15d1eb61713aec7d6fb2cf5e16548b106c91bbbd13a13b30b5232bcfe594"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "63ad205d877bfe056d3ce60499a250220aed63fe40e7cdcc0f453fba9dae9cbc"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tools/build_manual_move_bundle.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "1a3db96b44e63be0e06cd48ae99c4d1cc60ca7d8c1f9820e2330552c0148fb5f"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tools/build_native_move_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "a87d24a1e276dc239caf53236eabf0fa30e9ade26be478fc90ea8941619e95a8"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Actual strict17 consumer/manual scene supports bounded server observations; newcomer understanding and production mouse scope remain unproved.",
+      "findings": [
+        {
+          "priority": 2,
+          "type": "source",
+          "file": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+          "line": 11,
+          "reason": "Existing manual panel uses the same truthiness-only required-node gate and lacks active tree liveness checks before action/mouse. Lifecycle validity not covered by current Node tests.",
+          "status": "resolved_source_regrade",
+          "resolution": "Actual required-node liveness guard before bind/callback; independent 27 Node PASS, 0 skipped/errors.",
+          "regrade_proof": "build/dota_coach/c2-peer-required-panels-regrade-20261014.log"
+        }
+      ],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Понимание нового пользователя не исследовано; physical input/hittest открыты. Старый native report не доказывает новую coach scene или native pause/death/replacement/reload.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false,
+        "bounded_native_receipt_reviewed": true,
+        "native_receipt": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+        "post_r2_ui_visual_change_verified": true,
+        "normal_ui3_scope": "caption and five TEST assignments visible; no physical input/complete game"
+      }
+    },
+    {
+      "task": "C2-06-01",
+      "path": "creators/creator-2/06-voice/01-microphone-probe/README.md",
+      "criterion": "Есть настоящая запись речи и проверенный путь; текстовая кнопка не названа голосом.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/06-voice/01-microphone-probe/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "c39ced00a87276df945833c41757402bf00f5dd143f2e871ca62111d655379d0"
+        },
+        {
+          "path": "creators/creator-2/06-voice/01-microphone-probe/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "3a7df62fdc6d5b15f80642e47e7cd3a3181ebd1976be1adc1a7fea50ffbf73b5"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Capture/decoder scripts are explicit diagnostics; quiet recording and three synthetic samples do not establish real speech acceptance.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Распознанная настоящая речь пользователя и Dota bridge не доказаны. WER81.8% лишь3synthetic samples; silence/decoder loaded не voice acceptance.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-06-02",
+      "path": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+      "criterion": "Неоднозначность не выбирает случайную цель; нормализация имеет проверенные примеры.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "1967665dedd74433a18c09d9d877a22186996b0acc2acb52bea89046af0ff104"
+        },
+        {
+          "path": "creators/creator-2/06-voice/02-recognition-parser/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "43230c8f8665d598f02f8bf015f01755170685e52f8321e1474e6936ff4854db"
+        },
+        {
+          "path": "creators/creator-2/06-voice/02-recognition-parser/src/panorama/scripts/custom_game/voice_text_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "21a1705c9c53fb030073d3433bb757a9bca35d758dc40f782ff967321c359151"
+        },
+        {
+          "path": "creators/creator-2/06-voice/02-recognition-parser/tests/voice-text.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "49b6f9a0085ef3c19e3ab9b35443d061e45b293f54546aaf2c102a11f3efc1f4"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Text parser resolves ambiguity without random recipients; actual tested supplied text is independent of microphone/ASR accuracy.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "WER85.7% на3synthetic grammar samples не production accuracy. Microphone ASR stream/transport и реальное исполнение речевого приказа не подключены.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-06-03",
+      "path": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+      "criterion": "Голос и кнопки имеют одинаковую семантику, отказ записи не ломает матч.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "3ab2a605b66bd328441f0d385a16a87594b272f7e358e823bf648b3da7002cb9"
+        },
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "50e4c4444a27b8c4ade2822245d3599fdba9c50e5d8c5b9416996b3aecb49709"
+        },
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "4cda3fbb0a6058d77fe1ad8bda36d7c49df6865b103041821e532ed87d91f2f4"
+        },
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/layout/custom_game/voice_text.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "4ddb604790706c9ccad52f53d008f846339b98f2a476d54b761d4f5837b74324"
+        },
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/scripts/custom_game/voice_text_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "ac3be73ff9cce057370eeed6fcb01cba85188e0b9ba22f50acd8055f267f4839"
+        },
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/src/panorama/styles/custom_game/voice_text.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "3db1765b6af377d5fbcb594bfdc7668caa20dd379aebade5640d209b24dcdd46"
+        },
+        {
+          "path": "creators/creator-2/06-voice/03-voice-feedback/tests/voice-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "a3c51aaef917ff34c7614c43f30c3d86596f847448a02774ff376c8ec39ddef3"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Voice panel previews parser output and expires stale DTO access; native text preview is not voice/button execution equivalence.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Text preview не keyboard/button/hittest и не голос. Равенство реального voice/button execution, microphone failure во время матча и ASR integration открыты.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-07-01",
+      "path": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+      "criterion": "Карточки не смешивают человека и героя; выбор действия остаётся однозначным.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "534ba225b5cb2aaff7497b7b502abb1fc8e8b75921acd3b61955cb61768d8a1f"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/01-own-cards/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "a4356aaf931d4db3a172a9f08903dd3863a8f10c79f8ea1a955ced29b060d294"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/layout/custom_game/coach_hud.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "d4df7b4bd764cd52de547341d83d34b79bd88c6611ece3ed980cae28f3792f6a"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "2d470a497a628dc80b771c3c6b674b8027a25e3ef831022f773d36fdaf2f6b91"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/01-own-cards/src/panorama/styles/custom_game/coach_hud.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "531f1e549c8bcc75b9aebcd3e69240f98ede4c2fd7d1323d2f3f6170340561de"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "An inert own-cards HUD template exists, but it imports single existing implementations and does not supply match-state authority itself.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Нельзя считать размещение пяти карточек полным own-cards экраном: native input, match state и общий HUD contract остаются открытыми; дублирование source не требуется.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-07-02",
+      "path": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+      "criterion": "Карточки не раскрывают недоступные позиции и характеристики.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "4a5c08d025e15f8c7714946fdafbae153fe686f2687542b7c96be28bc402e97c"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "8d2ae95fa85cc3fa54c6e96a9766c5af7ab44fcfe6df44ed16328f85b563431c"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "c5efacef8824ff3015593147942a8a7ef49a2a922871fd8f9aa32241576485e8"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/layout/custom_game/opponent_roster.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "4b871a3d293a0836c783855544b8d6865cf12eda6cf8e2f2edc98b84d1a91ba4"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/scripts/custom_game/opponent_roster_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "1cec1cfe3254902e6eb3087811c7ea7c7b49268ef287477f7bf6e6b0d84f393b"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/scripts/custom_game/opponent_roster_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "11e07cb87611d0b50dc353e7fcf92d48664c34cfe896aabd61032d2692184fc5"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/src/panorama/styles/custom_game/opponent_roster.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "45eb209491527204fc307ff6e1836d4b8e8ce146494e30c204c4bb9d05475eb7"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/tests/opponent-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "dd05239e908b8ab9243eb838d98cc1afddbfa0acf930c01dffb34404ae5a6a20"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/02-opponent-cards/tests/opponent-roster.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "5f6cb026fb2bdffd92bf1ae090d6294e282c95e9a4b5f1b2e9bb2c56f5275c1f"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Opponent roster declares supplied_public_roster and sourceAuthorizationConfirmed false; privacy depends on trusted server producer.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Настоящий authorized C1 public roster/обзор/hidden invariance в двигателе не доказаны. Presentation rejection недостаточен для server privacy.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-07-03",
+      "path": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+      "criterion": "В центре карта, снизу свои, сверху соперники, справа связь; важные отказы читаемы.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "6ae754f730010f4b06b6834224c65bfb42e8893a024d33367d0f25040b6dc09a"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "cc2460264b3bdf08fa083e62407036070f9f95419e55833fbee905201a9115dd"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "f43734b202633bf9d06a42efcb7164d43fe31ddac7905219f2e01e15d43bd413"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/layout/custom_game/orders_timeline.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "0c6ef24abc1371f08b9764d5304add3748e3e2b65ef49be21d590e9c61e1c798"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/scripts/custom_game/orders_timeline_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "b09a75b7eba82dbd41dd3c15d50318a35109c4f10b58a4eb5de14f7e8eba0acb"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/scripts/custom_game/orders_timeline_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "c2c6576159c8e6c3584b0f7bf2fd2866213e890e2ed1a2a076811f703b8352c5"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/src/panorama/styles/custom_game/orders_timeline.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "33d4355bc7bb1a0ba0e3e986da2e11dc0971b2e0195fa452355d66b9621bee17"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/tests/orders-timeline-panel.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "37304e19f66a7e30cc6fcd2b46b162c891fe4c9276a2a1b7739dde505b28aeb5"
+        },
+        {
+          "path": "creators/creator-2/07-match-screen/03-orders-timeline/tests/orders-timeline.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "6a1fbacb03eb14ad06142fcb346cfec22b50d29825b2b162c3d8ccead9882fcb"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Timeline is copied presentation history, not the authoritative full event journal or full match screen layout.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Это не server event journal и не полный match HUD с центром карты/снизу свои/сверху соперники/справа связь. Читаемость отказов новым игроком открыта.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-08-01",
+      "path": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+      "criterion": "Просмотр не назван полным replay, если журнал его не обеспечивает.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "760dcecf80e1740dc63f7cdb4a559f21bbf2fde4cc341733bfb5c527c744b139"
+        },
+        {
+          "path": "creators/creator-2/08-analysis-ui/01-event-replay/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "4943b350630e27e91499aafe7dca47211a00cb175202e7d0054330f0bbe3e7b0"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "No event-replay runtime exists; comparison correctly retains replay/state reconstruction as open.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Полный replay/журнал позиции/восстановление матчевого состояния не реализованы. C1 event_log pure module не создаёт UI replay автоматически.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-08-02",
+      "path": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+      "criterion": "Экран не обещает точного характера без подтверждения.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "cca2f7286580a270913b2e491afea48429b2d7ecd9c462787012672eff937413"
+        },
+        {
+          "path": "creators/creator-2/08-analysis-ui/02-profile-evidence/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "9b07e448755042734c8d69facced9f300c555f56cb325af16163d44df75c595e"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "No profile-evidence runtime exists; measured/estimate labels in other cards do not prove heldout fidelity.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Нет provenance реальных матчей, heldout fidelity и понятного evidence экрана; синтетическая разница моделей не персональное сходство.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-08-03",
+      "path": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+      "criterion": "Итог понятен, корреляция не выдаётся за доказанную причину победы.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "d9ef9c1947de94c932c37887c7d4042626419d8083293bbd0bb92090cce37c77"
+        },
+        {
+          "path": "creators/creator-2/08-analysis-ui/03-post-match/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "dd0b1996f1b4a5e81dd69893f8c1ecd62ac17721ef66a37892d4a024a31180e8"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "No post-match runtime/result source exists; causal victory explanations cannot be accepted.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Нет полного матча/результата/событий для объяснения поражения или победы; causal attribution не проверена и не заявляется.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-09-01",
+      "path": "creators/creator-2/09-presentation/01-assets/README.md",
+      "criterion": "У каждого материала есть происхождение; концепт не принят за лицензированный ассет.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/09-presentation/01-assets/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "7298b68736f362b5edb02126f1c200c958c3c344ab29e513e3b003a2a7bdf230"
+        },
+        {
+          "path": "creators/creator-2/09-presentation/01-assets/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "19765575e440b647175d7cf916c70c638b71efe99378bf182705d2d99e33ac4b"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Dated source/media register explicitly excludes engine/transitive inputs and keeps rights_not_assessed; hashes are not licenses.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Происхождение/хеш не лицензия. Generated concept/report PNG не promoted runtime asset; права на distribution требуют отдельного подтверждения.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-09-02",
+      "path": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+      "criterion": "Изменение масштаба не меняет соответствие клика и цели.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "88342c6822bcba4524831c4362d6ba937b8da9a9619d146086544881b6212ae3"
+        },
+        {
+          "path": "creators/creator-2/09-presentation/02-settings-layout/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "2ae1a2ef505449f7faf8f662d7fcaf0c68c341d153bb045bd2710511ebc74324"
+        },
+        {
+          "path": "creators/creator-2/09-presentation/02-settings-layout/tests/reset-trace.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "348b3befe6ffc590d008da688c246e2087af89b1db92eb6a857d112d31b1b6f7"
+        },
+        {
+          "path": "creators/creator-2/09-presentation/02-settings-layout/tools/capture_preparation.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "27511e4890e0f36756e22a0d69ef6091a5bab07556871ca0f6ceb391cd11ba17"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Reset/scaling receipts are bounded observations with uncontrolled input and historical build distinction; click-target scaling is unverified.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Different build/uncontrolled input не causal comparison. Physical click→target при масштабе, пользовательские настройки и production resolution support открыты.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-09-03",
+      "path": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+      "criterion": "Ключевые действия доступны с резервным вводом; подписи не обрезают смысл.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "4d8d50593813abfbf704315f7a8d441ff14201901bbc85b9797a621aa0bb2b3b"
+        },
+        {
+          "path": "creators/creator-2/09-presentation/03-accessibility-localization/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "ee43ddb5a6f90c5d03cdc4cf3ab76a95b5d2277760ec0e0ae3bfb6a63ae0efe1"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "No dedicated accessibility runtime exists; label styling alone cannot establish hotkeys/fallback input or unclipped meaning.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Нет проверки длинных ников/hotkeys/клавиатурного резервного управления/обрезки всех подписей; native text preview не испытание доступности.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-10-01",
+      "path": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+      "criterion": "Инструкция приводит к сцене в Dota; облачный файл не выдан за установку на Windows.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "45903e73241627ca4da7e651579e3b0bc3aa0e859982712756e1bb186541f6a4"
+        },
+        {
+          "path": "creators/creator-2/10-user-testing/01-install-guide/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "6d7c7e7aab5e5ef85ef5ceefa8257d4b6876bc54b72da8a7ace66c86c5633046"
+        },
+        {
+          "path": "creators/creator-2/10-user-testing/01-install-guide/tools/prepare_ui_handoff.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "1475129d1d9377cafafa8da007cf88256081572c63e9a30907f2220eedce2700"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Handoff tooling sets source2_compiled/runtime_verified false and does not silently install; novice clean install remains open.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Чистая пользовательская установка полного аддона по руководству не пройдена. Source archive не установленная игра, native test commands не инструкция для новичка.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-10-02",
+      "path": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+      "criterion": "Отчёт содержит сценарии, реальные результаты и воспроизводимые проблемы.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "54befe2a802423cda5a4e1068e366918565a33e547dd85b2bb754f46607c21b1"
+        },
+        {
+          "path": "creators/creator-2/10-user-testing/02-user-scenarios/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "c564065e46c4f03689f138164ef3c1c4e78a7c3f4509a8352670373d6ca830d9"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "No user-task playtest report exists; API fixture testing cannot establish newcomer usability.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "TEST API driver не плейтест. Непонятный UI, ошибка ИИ и недостаток данных не разделены по наблюдениям нового пользователя.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-10-03",
+      "path": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+      "criterion": "Исправления подтверждены повтором; файл не скопирован в новую папку ради обхода владельца.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "ccb81bc296ecc44ce73b962041d6acccd9930265ee1f11b9bb2b86edd8976bc2"
+        },
+        {
+          "path": "creators/creator-2/10-user-testing/03-usability-fixes/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "df51947305e85b0941c1e10b60926f7641e5ec466bc4b7152183e8d0358bbb57"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Existing native layout fixes remain in source owners; no user-observed task/retest evidence closes usability acceptance.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Проблемы подтверждённого пользовательского плейтеста и повтор задач пользователя отсутствуют; API fixture QA не usability acceptance.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-11-01",
+      "path": "creators/creator-2/11-integration/01-ui-binding/README.md",
+      "criterion": "Одна версия контракта работает с реальным сервером, без локального ложного подтверждения.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "cf2d2a012eec0ed8f832deb4a4ddb7b133076fc61d3e48d2e586e16fe674d557"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "eb494abfe9c1d1e7476b372b44e8b58ba367e1c59196347740997741c25d9731"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_intervention.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "f2f63a4440d7212a1c48aa800a3f6c3b5f094ab752e00582a983aa02f2911555"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_match_observation.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "9e90f02b8f18af06793b0c341cef8366d480398b96076c7a7d1bcf97e89a4a94"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/coach_preparation.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "acb2d2149ef220f12e40a1350e771b0829c3543362f92b59ec9a99f8a01026e1"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/custom_ui_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "245555a3be0f77889e1d188f7449f0123864ab78eefde5896778f8327b3987c9"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/intervention_screen_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "c837986179ddae0ba2411411e1ff44fc60453c21201047b63211b201bca69be9"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/layout/custom_game/match_observation_manifest.xml",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "f969d96015ca70b159d92ec3bb1088725baf8a80e282c7fb1b635ec1d2268e87"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/coach_hud_binding.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "ad0f62ba5161bf8995f60d21fd53c92acebe5ab8313f90839158e4bad9d06694"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/intervention_screen_binding.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "14047fd3afffe550bec16cf1a6fe5ee8dfc26f8a51725a633bf9f631c27e969e"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/intervention_selection_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "832bd62056adf341ec382f514ab718e9f6e34c99ca1f210f1781d4db6d6f291d"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/match_observation_binding.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "bd0424fcebcb263da6de62765ee156b2b1d51e936d3f2fe2be3a47796370b570"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/mouse_targeting_binding.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "cda43b4264cfcf1061bb68bc00ed7456ebafa48659c4897fd51d623ad49265fe"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_binding.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "4cfbc58cb8b2010b452d4b9595d936f98cb2e83207725839eecead49fe09e338"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_flow_state.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "22365b46535e852f994fe5a5727620fbb5ba766b29775312d8b868f18c654885"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/preparation_panel_port.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "9f361986bc43108689486288d40ebf90e3cf37410790f8569d645d5a178fc9fd"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/server_roster_panel.js",
+          "scope": "source_inventory_hash_and_boundary_scan",
+          "sha256": "26a83f962669b71867d0e4857014db2911526edb7f345b37a59fd07674724465"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_intervention.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "93bfb456276e37e7ace79393c4d6c0daca3a20d6dabcaea5c53f7af5c319e853"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_match_observation.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "8e1a729fe43153996eb1618e81f2fcbb1415b59c2b9999bbc137fd5cd191afd5"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/styles/custom_game/coach_preparation.css",
+          "scope": "asset_inventory_hash_and_dependency_scope",
+          "sha256": "059cb004ca423a34b60477c04cea05d20f363a059085407f81886fe4de433a73"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/hud-binding.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "7c354e6f09ba9571960fb2ab0927d64b695d0be3c6f98e7d14b6da59c54e96e0"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/intervention-port-binding.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "334c044bfbbbc74bfda52a8695f5ccb1be088b4a3b4e96476357b03707e63bed"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/intervention-screen.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "22199bcdb548ab2f02ee43955feb1a6a6b7fbc79132f7b4907ecbba7953a2666"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/intervention-selection.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "9ce4fb93d4b5c835c8d79603c99cf5ab27dd5f96021c173121395bc1643d6e12"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/match-observation.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "1c43c6132e01ce11b73e8dcf17384d7c44b060207815f6372453c43df0785405"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/mouse-targeting.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "94616bac49afeec588e7b4e4ae28a232276b08b9562c36741ca342662729fc53"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/panel-port.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "305414384d5b969be83021b04e4fb1d667f83ffc53527c62cd458b352792ca53"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/preparation-binding.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "61ae23f4e4c3d633a5f612e621318558a8defd359cb65d196b7039dcc0626994"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/preparation-flow.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "2a488152c25ef4e0c6a4c121389867cb50e2944416252736b555022736e5e71d"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/server-roster.test.cjs",
+          "scope": "actual_node_execution_and_test_case_boundary",
+          "sha256": "c5506e1012a15774c0ccc7c2a0cee92da75afd151740159b44b6ffbda3304a85"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Private lifecycle bindings have independent regression evidence; required-node liveness findings fixed and independently regraded 27 Node PASS; general contract/native coach scene still open.",
+      "findings": [
+        {
+          "priority": 2,
+          "type": "source",
+          "file": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/server_roster_panel.js",
+          "line": 29,
+          "reason": "bind accepts a truthy invalid required row; actual reproduction IsValid(false) still binds and sends one initial request. No subsequent tree liveness guard.",
+          "proof": "build/dota_coach/c2-peer-invalid-node-20261014.log",
+          "status": "resolved_source_regrade",
+          "resolution": "Actual required-node liveness guard before bind/callback; independent 27 Node PASS, 0 skipped/errors.",
+          "regrade_proof": "build/dota_coach/c2-peer-required-panels-regrade-20261014.log"
+        }
+      ],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Ранее native fixtures проверяли synthetic adapters; новая coach-scene ещё не имеет native receipt в этом срезе. Общий contract всей игры, bootstrap и реальные identity открыты.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false,
+        "bounded_native_receipt_reviewed": true,
+        "native_receipt": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+        "post_r2_ui_visual_change_verified": true,
+        "normal_ui3_scope": "caption and five TEST assignments visible; no physical input/complete game"
+      }
+    },
+    {
+      "task": "C2-11-02",
+      "path": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+      "criterion": "Сборка использует единственные исходники и не перезаписывает установку без отдельного действия.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "c98a694a1526c9181cd60540ac1052f2f5733d4aa6aa2195a44f584a967e5503"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "c716f534861de453a02e0ef52ff61a6bc89f28b045ff3320f98ad6e53351c5c5"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_native_hud_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "b11414cc273fb329f0cfafd6acbc1dfdc219a97a49b1e5f2f01fe3785a93a721"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_native_intervention_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "75d975844cf6aa962303502e3671e0549426534314ad772e130caec2066d7c71"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_native_mouse_targeting_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "14b400548d75101501c0d0cea24cab3c29fbeb8e1fa2bb53eea422641310ff68"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_native_observation_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "dfce6ac03326381494fc4a6f1b2dc630ff4f86b957b9394988f70bd4ebf08aca"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_native_preparation_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "0ef2892ffc03f7dd1c1b6ef2402f20b15d71403abd8fe6b79048a32c1723f385"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_native_voice_fixture.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "84f1a16d9768aba6655dea6c62ed97a617a28c02ac0126096d6c7840ee34082b"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/intervention_screen_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "119e9ecef7906c473526080cf7b9810372185480310d80ca521a80f80989f34d"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/match_observation_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "0ac1b482379d1c5e7f3a3085e5db262cbc1188b7e92b57f124803725a4f5c4ee"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/mouse_proposal_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "909ce194f6a33c8958922b096793871a0564479a2ebf74733b5ead880d61a646"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/mouse_targeting_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "5587024b961ce5b6df5a29216080293b03757510088b81ae53b8c64ee627660f"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/opponent_roster_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "ad136248a4f87e5c39afc6a8ec008747c1a2001b6075d22d89cadcea45fdc468"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/orders_timeline_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "6eb6dfcd6816dfc872a4901173364c5c128096d55c0e92cbabdd21673fdd37d7"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/preparation_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "a036172c4ab086ec603f8dc574543d2981f2e60414b24324320ec7aa2e3c4145"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/voice_text_layout.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "060889e57b043aac32354b1bac3f78c097c3bc505a0b5e198dfe36c6e5126df5"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Exact coach recipe uses single sources and isolated TEST18/normal15 outputs; fresh eight-test run passes; source receipt is not compile/install.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Source build не устанавливает полный аддон. Windows WinError1314 skips сохраняют strictfalse; новый15/18 recipe/native compile проверяет root отдельно, здесь не утверждается успех.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false,
+        "bounded_native_receipt_reviewed": true,
+        "native_receipt": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+        "post_r2_ui_visual_change_verified": true,
+        "normal_ui3_scope": "caption and five TEST assignments visible; no physical input/complete game"
+      }
+    },
+    {
+      "task": "C2-11-03",
+      "path": "creators/creator-2/11-integration/03-end-to-end/README.md",
+      "criterion": "Цепочка выполнена на клиенте; скриншот макета не заменяет запуск.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "1628c485940349a969c4974458a00a7ce3bd24c4133dc971ef48acaea5cb1050"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "79e9ab155ed0627e34ede2eb14967cf55fa51f81ec0e92aeacff9563c8d08515"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/tools/run_source_checks.py",
+          "scope": "tool_inventory_and_documented_effect_boundary",
+          "sha256": "b23fae208ea1d4ddd1f4312412bcc084d088761e53a15a26ac6c72c45d206274"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Canonical runner separates incomplete/skips from errors and strict verifiedfalse; a full coach preparation/voice/match chain remains absent.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Полная клиентская цепь состав→подготовка→приказы→мышь→итог не выполнена. Native one TEST hero не матч5×5, voice failure/readability не end-to-end acceptance.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false,
+        "bounded_native_receipt_reviewed": true,
+        "native_receipt": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+        "post_r2_ui_visual_change_verified": true,
+        "normal_ui3_scope": "caption and five TEST assignments visible; no physical input/complete game"
+      }
+    },
+    {
+      "task": "C2-12-01",
+      "path": "creators/creator-2/12-release/01-rights-display/README.md",
+      "criterion": "Тексты не утверждают разрешение Valve без подтверждения.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/12-release/01-rights-display/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "c9862eedf0ec44573356038e3d090085d4593ebf718b2f71aa81e07f89f0cbe7"
+        },
+        {
+          "path": "creators/creator-2/12-release/01-rights-display/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "6dbb55c4b61cc699ec0a11c7dadcd1ed69b9f2e83f21b34b43365cf10fae485b"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Rights-related comparison correctly avoids a Valve permission claim; no local product rights display acceptance or current legal conclusion.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Нет подтверждённых применимых оснований выпуска/окончательных подписей; неизвестная лицензия не разрешение Valve. Этот отчёт не юридическое заключение.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-12-02",
+      "path": "creators/creator-2/12-release/02-valve-presentation/README.md",
+      "criterion": "Презентация показывает реальное управление и ограничения модели; пакет не отправлен автоматически.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "3e4a668600589987b7c6a23ef50a7bec1db28b4b6564aac6dd14246928a3966d"
+        },
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "d9f47a67a93cf9ffa1d3134b184553bc40141053497206c612f29b6659cf054a"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Historical real manual-scene frames are bounded evidence, not a completed Valve packet; no external send occurred in this review.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Нет готового пакета демонстрации полной тренерской игры и отправки Valve. Новая coach scene ещё не показана этим старым footage; реальная fidelity не подтверждена.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    },
+    {
+      "task": "C2-12-03",
+      "path": "creators/creator-2/12-release/03-release-guide/README.md",
+      "criterion": "Инструкция соответствует проверенному пакету; отдельная игра описывается только при необходимых правах.",
+      "reviewedfiles": [
+        {
+          "path": "creators/creator-2/12-release/03-release-guide/README.md",
+          "scope": "criterion_and_current_actions",
+          "sha256": "0b722f68dace273da9f617eb477a971e2c1a69d25fda3b20ddfeddb70cb7367c"
+        },
+        {
+          "path": "creators/creator-2/12-release/03-release-guide/reports/autonomous-acceptance-2026-10-14.md",
+          "scope": "complete_author_comparison",
+          "sha256": "4ef23fb66c2540e8bd208e6046bdbc7e364a70ee4e285e1f3bbcff6ee41cbd37"
+        }
+      ],
+      "grade": "documentary_peer_reviewed_with_open_functional_scope",
+      "assessment": "Release guide remains incomplete and cannot inherit native TEST launch evidence as a clean-user installation guarantee.",
+      "findings": [],
+      "scopes": {
+        "accepted": "technical comparison and transfer review only",
+        "open": "Не пройдена конечная пользовательская установка/типичные ошибки и review выпуска. Независимая игра требует применимых письменных прав, пока их доказательства нет.",
+        "functional_complete": false,
+        "native_coach_scene_verified": false,
+        "human_product_legal_acceptance": false
+      }
+    }
+  ],
+  "author_receipt_drift": [],
+  "native_supplement": {
+    "schema_version": 1,
+    "peer_scope": "C2 native receipt/internal consistency and historical artifact hashes; not self-review of C1 authored TEST wrapper",
+    "passed": true,
+    "receipt_sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f",
+    "phase_count": 12,
+    "verified_png": 14,
+    "r2_png": 10,
+    "game_pause_delta": 0,
+    "native_time_pause_interval": 2.1999969482421875,
+    "client_wall_pause_ms": 2202,
+    "expiry_game_elapsed": 5.033336639405,
+    "journal_monotonic_seq_clock": true,
+    "journal_is_parsed_subset_not_complete_payload": true,
+    "expiry_engine_order_kinds": [
+      21,
+      1
+    ],
+    "orders_are_successful_pcall_issuance_not_engine_completion": true,
+    "raw_hero_motion_and_alive_observations_present": true,
+    "current_source_inputs_drift_from_r2": [],
+    "post_r2_generated_visual_fix_not_native_verified": false,
+    "current_normal_ui2_not_launched_in_review": false,
+    "physical_input_verified": false,
+    "real_profiles_verified": false,
+    "full_game_verified": false,
+    "normal_ui3_review": {
+      "source_output_count": 15,
+      "compiled_ui_count": 7,
+      "hash_matched_png": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-ui3-ready-2026-10-14.png",
+      "normal_bundle_bytes_verified": true,
+      "test_driver_absent_from_verified_recipe": true,
+      "sync_caption_and_5assignments_weak_warning_visually_inspected": true,
+      "owned_pid": 9516,
+      "owned_gone_from_receipt": true,
+      "own_pids_all_gone_from_receipt": [
+        6264,
+        5708,
+        22208,
+        9516
+      ],
+      "steam_at_final_check": {
+        "pid": 13704,
+        "process": "steam",
+        "action": "none",
+        "prior_pid_12964_not_running": "reason unknown; do not claim identity preservation across sessions"
+      },
+      "helper_hashes": [
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/launch_coach_scene.ps1",
+          "sha256": "a5eeb3f5d0eaebb74d8fec8c4e2c9100f27549a10c49d1c6c5c9c4d9c3ea48f9",
+          "review_scope": "read current source and bounded delegation/ownership/recipe; not proof this hash was measured at launch"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/tests/01-native-coach-scene/native-command.ps1",
+          "sha256": "e551e299506aa78659753c8d8fbbf89d471c2fd1bbd693cc2aeff1026e93d3cf",
+          "review_scope": "read current source and bounded delegation/ownership/recipe; not proof this hash was measured at launch"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/native-move/native-command.ps1",
+          "sha256": "0b38896c06a30b85600f5a2e73872636ecc747ba3dec732cee1a430587bd53b6",
+          "review_scope": "read current source and bounded delegation/ownership/recipe; not proof this hash was measured at launch"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+          "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac",
+          "review_scope": "read current source and bounded delegation/ownership/recipe; not proof this hash was measured at launch"
+        }
+      ],
+      "limits": "one screenshot/API bootstrap, no physical click or full game; UI3 run uses normal ui2 addon name; helper hashes are current not historical measurements"
+    },
+    "inspected_images": [
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-ready-2026-10-14.png",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-dead-2026-10-14.png",
+      "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-ui3-ready-2026-10-14.png"
+    ]
+  },
+  "progress_prefix_regrade": {
+    "status": "accept_source",
+    "meaning_prefix": "all original tokens if fewer6; existing first6tokens rule otherwise",
+    "source_hash": "7cd074851843729c17b31031ab2f8e6f777ccd4750be6730e2ea068b81f48ffc",
+    "test_hash": "82cf3ed613ca2ad49ca2ee535ed0c639ae4bb52f7a8163c3c7ab6754c11ffc8c",
+    "limits": "evidence-presence delta check, not game readiness"
+  }
+}

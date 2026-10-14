@@ -1,5 +1,7 @@
 # C2-11-02 — Сборка аддона из библиотек
 
+**Техническое рассмотрение14октября:** [отдельный peer другого создателя](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.md). Выполненная передача относится к техническому объёму; полная функциональная, продуктовая и правовая приёмка не следует из этого checkbox. Более ранние статусы ниже относятся к указанному в них срезу.
+
 **Отдел:** создатель 2. **Проверяющий:** создатель 1.
 **Статус:** частично подготовлено: ранний source-пакет общего HUD с проверкой
 целостности; native HUD13 установлен отдельно и скомпилирован на Windows.
@@ -8,6 +10,20 @@
 **Рабочая папка:** `creators/creator-2/11-integration/02-addon-packaging/`.
 
 [Раздел](../README.md) · [План создателя](../../PLAN.md) · [Общие правила](../../../shared/WORKFLOW.md)
+
+## Отдельная source-сцена тренера
+
+[Упаковщик](tools/build_coach_scene.py) · [Проверки](tests/test_coach_scene_bundle.py).
+Новый отдельный helper сохраняет прежние fixed kinds: normal 15 outputs
+(8 Lua, 3 JS, canonical manual XML, derived scene XML, CSS, manifest);
+`--test-fixture` 18 outputs добавляет отдельные Lua/JS/derived XML fixtures.
+Normal содержит 6 active UI outputs и 1 retained layout; TEST — 7 active и
+2 retained layouts. API: `prepare(repo, test_fixture=False)`,
+`build_bundle(repo, output, test_fixture=False)`, `verify_bundle(repo, output)`.
+CLI: `--output <fresh build/dota_coach child>`, `--test-fixture`, `--verify <bundle>`.
+Проверка повторно читает canonical sources, композицию и receipt hashes;
+недоступные inputs, лишние файлы и reparse paths отклоняются. Source flags
+`source2_compiled/runtime_verified=false`; установка и native запуск отдельны.
 
 ## Действия
 
@@ -20,14 +36,14 @@
 - [x] Собрать и проверить отдельный source-пакет истории приказов из 5 ресурсов.
 - [x] Собрать и проверить source-сцену карточек/запроса: 13 ресурсов, один контекст, fingerprints исходных XML.
 - [x] Собрать и проверить отдельный source-пакет text preview из 6 ресурсов.
-- [ ] После локального аудита согласовать manifest исходников и конечные game/content пути.
-- [ ] Собирать отдельный создаваемый каталог, сохраняя оригиналы в папках авторов.
+- [x] После локального аудита согласовать manifest исходников и конечные game/content пути. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md).
+- [x] Собирать отдельный создаваемый каталог, сохраняя оригиналы в папках авторов. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md).
 - [x] Создать и проверить отдельный source-пакет из 13 UI-ресурсов без установки.
 - [x] Собрать и проверить отдельный source-пакет подготовки из 15 ресурсов.
 - [x] Собрать и проверить отдельный source-пакет ручного запроса из 6 ресурсов.
-- [ ] Проверить полноту и отсутствие дублей серверных/UI исходников.
-- [ ] Сопоставить фактический результат с критерием ниже и записать непроведённые проверки.
-- [ ] Передать изменение второму создателю для проверки, затем обновить этот статус.
+- [x] Проверить полноту и отсутствие дублей серверных/UI исходников. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md).
+- [x] Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md).
+- [x] Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json).
 
 ## Результат и приёмка
 

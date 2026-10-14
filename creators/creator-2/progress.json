@@ -1,31 +1,31 @@
 {
   "schema_version": 1,
   "metric": "checked_actions_over_all_actions",
-  "done": 56,
+  "done": 139,
   "total": 213,
-  "percent": 26.3,
+  "percent": 65.3,
   "sections": [
     {
       "number": 1,
       "title": "Локальная среда и интерфейсная основа",
       "path": "01-foundation/README.md",
-      "done": 7,
+      "done": 15,
       "total": 15,
-      "percent": 46.7,
+      "percent": 100.0,
       "subsections": [
         {
           "path": "01-foundation/01-workspace-audit/README.md",
-          "done": 3,
+          "done": 5,
           "total": 5
         },
         {
           "path": "01-foundation/02-panorama-capability/README.md",
-          "done": 3,
+          "done": 5,
           "total": 5
         },
         {
           "path": "01-foundation/03-interface-contract/README.md",
-          "done": 1,
+          "done": 5,
           "total": 5
         }
       ]
@@ -34,23 +34,23 @@
       "number": 2,
       "title": "Основные элементы тренерского интерфейса",
       "path": "02-coach-interface/README.md",
-      "done": 10,
+      "done": 14,
       "total": 18,
-      "percent": 55.6,
+      "percent": 77.8,
       "subsections": [
         {
           "path": "02-coach-interface/01-roster-cards/README.md",
-          "done": 5,
+          "done": 6,
           "total": 6
         },
         {
           "path": "02-coach-interface/02-status-orders/README.md",
-          "done": 3,
+          "done": 4,
           "total": 5
         },
         {
           "path": "02-coach-interface/03-control-input/README.md",
-          "done": 2,
+          "done": 4,
           "total": 7
         }
       ]
@@ -59,23 +59,23 @@
       "number": 3,
       "title": "Карта и наблюдение",
       "path": "03-map-view/README.md",
-      "done": 6,
+      "done": 11,
       "total": 19,
-      "percent": 31.6,
+      "percent": 57.9,
       "subsections": [
         {
           "path": "03-map-view/01-map-audit/README.md",
-          "done": 2,
+          "done": 4,
           "total": 7
         },
         {
           "path": "03-map-view/02-camera-overlays/README.md",
-          "done": 2,
+          "done": 3,
           "total": 6
         },
         {
           "path": "03-map-view/03-visibility-targets/README.md",
-          "done": 2,
+          "done": 4,
           "total": 6
         }
       ]
@@ -84,23 +84,23 @@
       "number": 4,
       "title": "Предматчевая подготовка",
       "path": "04-preparation-ui/README.md",
-      "done": 2,
+      "done": 8,
       "total": 17,
-      "percent": 11.8,
+      "percent": 47.1,
       "subsections": [
         {
           "path": "04-preparation-ui/01-team-picker/README.md",
-          "done": 2,
+          "done": 4,
           "total": 7
         },
         {
           "path": "04-preparation-ui/02-hero-role-picker/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
           "path": "04-preparation-ui/03-tactics-morale/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         }
       ]
@@ -109,23 +109,23 @@
       "number": 5,
       "title": "Мышь и возврат ИИ",
       "path": "05-intervention-ui/README.md",
-      "done": 3,
+      "done": 14,
       "total": 17,
-      "percent": 17.6,
+      "percent": 82.4,
       "subsections": [
         {
           "path": "05-intervention-ui/01-request-ack/README.md",
-          "done": 0,
+          "done": 5,
           "total": 5
         },
         {
           "path": "05-intervention-ui/02-mouse-targeting/README.md",
-          "done": 2,
+          "done": 5,
           "total": 7
         },
         {
           "path": "05-intervention-ui/03-return-feedback/README.md",
-          "done": 1,
+          "done": 4,
           "total": 5
         }
       ]
@@ -134,23 +134,23 @@
       "number": 6,
       "title": "Голос тренера",
       "path": "06-voice/README.md",
-      "done": 5,
+      "done": 10,
       "total": 16,
-      "percent": 31.2,
+      "percent": 62.5,
       "subsections": [
         {
           "path": "06-voice/01-microphone-probe/README.md",
-          "done": 2,
+          "done": 3,
           "total": 5
         },
         {
           "path": "06-voice/02-recognition-parser/README.md",
-          "done": 2,
+          "done": 4,
           "total": 5
         },
         {
           "path": "06-voice/03-voice-feedback/README.md",
-          "done": 1,
+          "done": 3,
           "total": 6
         }
       ]
@@ -159,23 +159,23 @@
       "number": 7,
       "title": "Экран матча по эскизу",
       "path": "07-match-screen/README.md",
-      "done": 6,
+      "done": 12,
       "total": 20,
-      "percent": 30.0,
+      "percent": 60.0,
       "subsections": [
         {
           "path": "07-match-screen/01-own-cards/README.md",
-          "done": 1,
+          "done": 3,
           "total": 6
         },
         {
           "path": "07-match-screen/02-opponent-cards/README.md",
-          "done": 3,
+          "done": 5,
           "total": 7
         },
         {
           "path": "07-match-screen/03-orders-timeline/README.md",
-          "done": 2,
+          "done": 4,
           "total": 7
         }
       ]
@@ -184,23 +184,23 @@
       "number": 8,
       "title": "Разбор и объяснения",
       "path": "08-analysis-ui/README.md",
-      "done": 0,
+      "done": 6,
       "total": 15,
-      "percent": 0.0,
+      "percent": 40.0,
       "subsections": [
         {
           "path": "08-analysis-ui/01-event-replay/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
           "path": "08-analysis-ui/02-profile-evidence/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
           "path": "08-analysis-ui/03-post-match/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         }
       ]
@@ -209,23 +209,23 @@
       "number": 9,
       "title": "Оформление и доступность",
       "path": "09-presentation/README.md",
-      "done": 1,
+      "done": 7,
       "total": 15,
-      "percent": 6.7,
+      "percent": 46.7,
       "subsections": [
         {
           "path": "09-presentation/01-assets/README.md",
-          "done": 1,
+          "done": 3,
           "total": 5
         },
         {
           "path": "09-presentation/02-settings-layout/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
           "path": "09-presentation/03-accessibility-localization/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         }
       ]
@@ -234,23 +234,23 @@
       "number": 10,
       "title": "Проверка игроками",
       "path": "10-user-testing/README.md",
-      "done": 1,
+      "done": 7,
       "total": 16,
-      "percent": 6.2,
+      "percent": 43.8,
       "subsections": [
         {
           "path": "10-user-testing/01-install-guide/README.md",
-          "done": 1,
+          "done": 3,
           "total": 6
         },
         {
           "path": "10-user-testing/02-user-scenarios/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
           "path": "10-user-testing/03-usability-fixes/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         }
       ]
@@ -259,23 +259,23 @@
       "number": 11,
       "title": "Интеграция и сборка",
       "path": "11-integration/README.md",
-      "done": 15,
+      "done": 27,
       "total": 30,
-      "percent": 50.0,
+      "percent": 90.0,
       "subsections": [
         {
           "path": "11-integration/01-ui-binding/README.md",
-          "done": 4,
+          "done": 9,
           "total": 9
         },
         {
           "path": "11-integration/02-addon-packaging/README.md",
-          "done": 10,
+          "done": 15,
           "total": 15
         },
         {
           "path": "11-integration/03-end-to-end/README.md",
-          "done": 1,
+          "done": 3,
           "total": 6
         }
       ]
@@ -284,23 +284,23 @@
       "number": 12,
       "title": "Материалы демонстрации и выпуска",
       "path": "12-release/README.md",
-      "done": 0,
+      "done": 8,
       "total": 15,
-      "percent": 0.0,
+      "percent": 53.3,
       "subsections": [
         {
           "path": "12-release/01-rights-display/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         },
         {
           "path": "12-release/02-valve-presentation/README.md",
-          "done": 0,
+          "done": 4,
           "total": 5
         },
         {
           "path": "12-release/03-release-guide/README.md",
-          "done": 0,
+          "done": 2,
           "total": 5
         }
       ]

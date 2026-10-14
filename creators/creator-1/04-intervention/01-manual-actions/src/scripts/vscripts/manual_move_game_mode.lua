@@ -8,8 +8,11 @@ local issuing=false
 local filter_ready=false
 local ai_direction=1
 local last_alive=false
+local server_hooks=nil
+local hook_fault=false
 local function index(v) return type(v)=='number' and v==v and v>=0 and v<=2147483647 and v%1==0 end
 local function observe()
+    if hook_fault then return {valid=false} end
     if PlayerResource:GetPlayer(owner)~=owner_player then return {valid=false} end
     local h=PlayerResource:GetSelectedHeroEntity(owner)
     if h==nil or h:IsNull() or not h:IsRealHero() or h:GetPlayerOwnerID()~=owner
@@ -43,6 +46,22 @@ end
 local function ai(o)
     local fresh=observe()
     if not fresh.valid or not fresh.alive or fresh.entity_index~=o.entity_index or fresh.generation~=o.generation then return false end
+    if server_hooks then
+        local input={};for k,v in pairs(fresh) do input[k]=v end
+        local ok,point=pcall(server_hooks.decide_ai,input)
+        if not ok or type(point)~='table' or getmetatable(point)~=nil then return false end
+        local count=0;for k in pairs(point)do if k~='x' and k~='y' and k~='z' then return false end;count=count+1 end
+        if count~=3 then return false end
+        for _,axis in ipairs({'x','y','z'})do
+            local value=point[axis]
+            if type(value)~='number' or value~=value or value==math.huge or value==-math.huge then return false end
+        end
+        if math.abs(point.x)>16000 or math.abs(point.y)>16000 or math.abs(point.z)>2048
+            or (point.x-fresh.x)^2+(point.y-fresh.y)^2>2000^2 then return false end
+        local checked=observe()
+        if not checked.valid or not checked.alive or checked.entity_index~=fresh.entity_index or checked.generation~=fresh.generation then return false end
+        return move(point.x,point.y,point.z)
+    end
     local offsets={{300*ai_direction,0},{0,300*ai_direction},{-300*ai_direction,0},{0,-300*ai_direction}}
     for _,delta in ipairs(offsets) do
         local x,y=fresh.x+delta[1],fresh.y+delta[2]
@@ -65,11 +84,24 @@ end
 local function emit(id,s)
     local p=PlayerResource:GetPlayer(id)
     if p~=owner_player then return end
+    if server_hooks then
+        local copy={};for k,v in pairs(s)do copy[k]=v end
+        local ok=pcall(server_hooks.on_snapshot,copy)
+        if not ok then hook_fault=true;print('DCCOACH hook=snapshot failed=true');return end
+    end
     local wire={};for k,v in pairs(s) do wire[k]=v end
     -- Native custom events transported Lua true as numeric1 in runr2.
     wire.alive=s.alive and 1 or 0
     CustomGameEventManager:Send_ServerToPlayer(p,'dota_coach_manual_state',wire)
     print('DCMOVE state mode='..s.mode..' transition='..s.transition..' reason='..s.reason..' generation='..s.generation..' epoch='..s.epoch..' revision='..s.revision..' remaining='..s.remaining..' ai='..s.ai_order_count..' manual='..s.manual_order_count..' game='..s.server_time)
+end
+local function configure_server_hooks(hooks)
+    if registered or server_hooks~=nil then return false,'already_configured' end
+    if type(hooks)~='table' or getmetatable(hooks)~=nil then return false,'invalid_hooks' end
+    local n=0;for k in pairs(hooks)do if k~='decide_ai' and k~='on_snapshot' then return false,'invalid_hooks' end;n=n+1 end
+    if n~=2 or type(hooks.decide_ai)~='function' or type(hooks.on_snapshot)~='function' then return false,'invalid_hooks' end
+    server_hooks={decide_ai=hooks.decide_ai,on_snapshot=hooks.on_snapshot}
+    return true
 end
 local function request(source,payload)
     local player,id=sender(source)
@@ -123,3 +155,4 @@ function Activate()
     registered=true
     print('DCMOVE activated filter='..tostring(filter_ready)..' synthetic=true')
 end
+return {resolve_sender=sender,configure_server_hooks=configure_server_hooks}

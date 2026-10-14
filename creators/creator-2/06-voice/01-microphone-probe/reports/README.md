@@ -9,3 +9,5 @@
 
 [Положительныйdecoderpilot,13октября](synthetic-asr-2026-10-13.md):3TTSWAV,
 decoderpositive,WER81.8% only3samples. Это неrealmicrophone/accuracy/bridge.
+
+- [Сопоставление буквального критерия и открытых проверок, 14 октября](autonomous-acceptance-2026-10-14.md).

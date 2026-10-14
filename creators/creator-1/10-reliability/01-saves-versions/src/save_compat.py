@@ -4,13 +4,15 @@ Compatible data restores; anything else (corrupt, ancient, foreign) is
 refused without touching current state — the loader never mutates its
 input and returns fresh structures only.
 """
+from copy import deepcopy
+
 CURRENT_VERSION = 1
 MIN_SUPPORTED_VERSION = 1
 
 
 def save_state(payload):
     """Wrap payload into a versioned save."""
-    return {"save_version": CURRENT_VERSION, "payload": payload}
+    return {"save_version": CURRENT_VERSION, "payload": deepcopy(payload)}
 
 
 def load_state(blob, current=None):
@@ -26,5 +28,5 @@ def load_state(blob, current=None):
         return None, "too-old"
     if "payload" not in blob:
         return None, "corrupt"
-    return {"payload": blob["payload"],
+    return {"payload": deepcopy(blob["payload"]),
             "loaded_version": version}, "ok"

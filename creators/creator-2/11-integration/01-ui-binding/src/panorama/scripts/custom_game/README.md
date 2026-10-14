@@ -13,3 +13,5 @@
   публичных соперников и истории, независимые источники, без нового transport.
 
 - [mouse_targeting_binding.js](mouse_targeting_binding.js) — existing Targets + MouseProposalPanel, явная свежесть цели и общий lifecycle.
+
+[server_roster_panel.js](server_roster_panel.js) — standalone strict read-only server confirmation of TEST roster; server success is not start/profile fidelity.

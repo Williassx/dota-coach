@@ -1,0 +1,16 @@
+{
+  "links_checked": 113,
+  "missing_links": [],
+  "archive_members": 38,
+  "archive_tamper_rejected": true,
+  "extra_rejected": true,
+  "existing_output_preserved": true,
+  "archive": "build/dota_coach/coach-review-packet-final3-20261014/review-packet.zip",
+  "archive_sha256": "aa81ccc532fcecfb488e9d4ba79acb3cae3adb6183dfd893e7d091f93f9e4c68",
+  "source_tests_passed": 8,
+  "normal_outputs": 15,
+  "test_outputs": 18,
+  "rights": "not_assessed",
+  "sent": false,
+  "public_release": false
+}

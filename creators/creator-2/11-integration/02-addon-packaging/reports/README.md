@@ -21,3 +21,5 @@ Source integrity не заменяет установку/компиляцию/r
 - [cloud-opponent-roster-package.md](cloud-opponent-roster-package.md).
 
 - [cloud-mouse-targeting-package.md](cloud-mouse-targeting-package.md) — fixed7/6 и непроведённые native случаи.
+
+- [Сопоставление буквального критерия и открытых проверок, 14 октября](autonomous-acceptance-2026-10-14.md).

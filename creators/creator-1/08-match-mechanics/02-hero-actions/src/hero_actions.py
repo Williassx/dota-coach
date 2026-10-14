@@ -26,9 +26,9 @@ def attempt(action_set, hero, action, kind, profile_heroes=(),
         return False, "incompatible-profile"
     if on_cooldown:
         return False, "on-cooldown"
-    pool = heroes[hero].get("abilities", []) + heroes[hero].get("items", [])
-    if action not in pool:
-        return False, "ability-unavailable"
     if kind not in ("ability", "item"):
         return False, "bad-kind"
+    pool = heroes[hero].get("abilities" if kind == "ability" else "items", [])
+    if action not in pool:
+        return False, "ability-unavailable"
     return True, "ok"

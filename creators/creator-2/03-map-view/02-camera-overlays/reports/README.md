@@ -9,3 +9,5 @@
 
 [Motion/input диагностика](native-camera-motion-2026-10-12.md):100samples/fourframes,
 разбор vector shape и неуправляемого input; previousfailedarrival сохранён.
+
+- [Сопоставление буквального критерия и открытых проверок, 14 октября](autonomous-acceptance-2026-10-14.md).

@@ -12,6 +12,17 @@ POLICIES = {"r1": ["t1", "t2"], "r4": ["t2"], "r5": ["t1", "t2"]}
 
 
 class TeamOrderTests(unittest.TestCase):
+    def test_too_few_unique_targets_rejects_whole_batch(self):
+        roles, targets = ["a", "b"], ["x"]
+        policies = {"a": ["x"], "b": ["x"]}
+        for order in TEAM_ORDERS:
+            with self.subTest(order=order):
+                self.assertEqual(distribute(order, roles, targets, policies),
+                                 (None, "resource-conflict"))
+        self.assertEqual(roles, ["a", "b"])
+        self.assertEqual(targets, ["x"])
+        self.assertEqual(policies, {"a": ["x"], "b": ["x"]})
+
     def test_agreed_order_set(self):
         self.assertEqual(set(TEAM_ORDERS),
                          {"attack", "retreat", "farm", "gather"})

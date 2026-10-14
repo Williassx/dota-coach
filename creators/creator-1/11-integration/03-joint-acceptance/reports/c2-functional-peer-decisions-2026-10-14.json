@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "reviewer": "independent C1 reviewer, not C2 recommendation/source author",
+  "author_recommendation": "creators/creator-2/01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.json",
+  "author_recommendation_sha256": "69634dfa5f896b1b7df5f95a6b6a0dd074f28a6437078514c0d1c1959588fa33",
+  "baseline_sha256": "fe041e36cf3998a7cadedc753e5f5efe6f61d491c99313646016d75291085fb6",
+  "rows": [
+    {
+      "task": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+      "action_index": 3,
+      "baseline_action_key": "ff03e41be9030773",
+      "literal_action": "Согласовать с создателем 1 владение исходными и создаваемыми файлами.",
+      "literal_criterion": "Определены реальные пути; исходники отдела B не смешаны с серверными файлами A.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept technical ownership agreement: single actual C1 Lua/C2 JS sources, one root shared-contract author, exact generated separate bundle; reviewed deliverables match plan allocation.",
+      "author_scope": "Ownership of this limited integration agreed; not all future full-game contracts.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators\\creator-2\\01-foundation\\01-workspace-audit\\notes\\autonomous-30pp-plan-2026-10-13.md",
+          "sha256": "0f8cef43e3a659fe784824570f6fae821744ded79970ace2ca63ffee93f88c0b"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        },
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+          "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+      "action_index": 2,
+      "baseline_action_key": "5cb3fce4a6f34f1c",
+      "literal_action": "Передать примеры сообщений создателю 1 для C1-01-03.",
+      "literal_criterion": "Примеры оформлены до общего согласования; этот подпункт не зависит циклически от C1-01-03.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept delivered exact minimal manual/roster examples: C1 producer and actual Lua conformance tests use these shared definitions; no general voice/attack contract claim.",
+      "author_scope": "Examples are limited manual move/read-only TEST roster; voice/attack/general match contract open.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_command_shapes.py",
+          "sha256": "6f2a1e48f4a7d51de4d27757a5eb9d8d23520ec9b8808b0016ad3a4b6844d870"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+      "action_index": 3,
+      "baseline_action_key": "381f95e16d561d8b",
+      "literal_action": "Вместе проверить, что UI не устанавливает серверный режим сам.",
+      "literal_criterion": "Примеры оформлены до общего согласования; этот подпункт не зависит циклически от C1-01-03.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept source/native check: local selection/acquire remains canMove=false until correlated server MANUAL grant; native lease/controller authority independent of UI labels.",
+      "author_scope": "Programmatic source/native scenario; no physical click or all-client authorization proof.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        },
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+      "action_index": 1,
+      "baseline_action_key": "10e5a7a018c479eb",
+      "literal_action": "Показать ожидание разрешения и подтверждённый MANUAL.",
+      "literal_criterion": "До подтверждения права не присваиваются; причина отказа видна.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept feature-level waiting/MANUAL display through single owned C2-05-03 manual panel. C2-05-01 original local request panel is not server-integrated and must retain explicit cross-reference/qualification.",
+      "author_scope": "Feature realized in shared limited manual panel owned C2-05-03; old intervention_request_panel stays local, do not claim its transport replaced.",
+      "required_qualification": "Point to the single shared manual feature source C2-05-03; leave original local/proposal panels and their transport/lease status explicitly unimplemented.",
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+          "sha256": "d06c6551586ea04042fd971b7f6996a081912ec8f6494617e61f66cbcfb55554"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+          "sha256": "63ad205d877bfe056d3ce60499a250220aed63fe40e7cdcc0f453fba9dae9cbc"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+      "action_index": 2,
+      "baseline_action_key": "c7d3fa7a3f2e4b16",
+      "literal_action": "Разрешать ручной ввод только после ответа сервера.",
+      "literal_criterion": "До подтверждения права не присваиваются; причина отказа видна.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept scoped permission gating through same shared manual feature path: alive/remaining/captured session-generation-epoch and pending guards before input. No physical hittest proof implied.",
+      "author_scope": "Actual API/programmatic world callback; physical input/hittest untested.",
+      "required_qualification": "Point to the single shared manual feature source C2-05-03; leave original local/proposal panels and their transport/lease status explicitly unimplemented.",
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_state.js",
+          "sha256": "514824f2d52de820d3889ff3f4cf017e1b3647094b126a4502d0cd47350a9a01"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        },
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+      "action_index": 3,
+      "baseline_action_key": "984ed480b19c1227",
+      "literal_action": "Проверить чужого/мёртвого героя и отказ.",
+      "literal_criterion": "До подтверждения права не присваиваются; причина отказа видна.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept mixed-level refusal checks: original engine source equality drops foreign sender before DTO; permitted owner wrong actor returns unauthorized in actual Lua test; dead binding prevents acquire/move; native death displays INACTIVE/not_ready. Foreign native second client untested.",
+      "author_scope": "Foreign case is executed Lua/source, not independent second native client. One TEST actor; no real profile identity acceptance.",
+      "required_qualification": "Point to the single shared manual feature source C2-05-03; leave original local/proposal panels and their transport/lease status explicitly unimplemented.",
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+          "sha256": "51f6e2754f3a17f1efd97b90b4cc75ed3fa3cccbd473fd2452c8615a17bbeba0"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+      "action_index": 4,
+      "baseline_action_key": "0e3c9623655eecc4",
+      "literal_action": "Показать текущее действие и остаток времени.",
+      "literal_criterion": "Вмешательство относится к прежнему назначенному герою, а не переносится выделением.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept shared feature display of actual action/remaining via C2-05-03 MoveResult/MoveMode; original C2-05-02 proposal remains unsendable/lease unknown. No claim that proposal-only pane receives actual lease.",
+      "author_scope": "Display provided by shared manual panel; proposal-only model remains canSend=false/unknown lease. No real mouse capture proof.",
+      "required_qualification": "Point to the single shared manual feature source C2-05-03; leave original local/proposal panels and their transport/lease status explicitly unimplemented.",
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+          "sha256": "d06c6551586ea04042fd971b7f6996a081912ec8f6494617e61f66cbcfb55554"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+          "sha256": "63ad205d877bfe056d3ce60499a250220aed63fe40e7cdcc0f453fba9dae9cbc"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+      "action_index": 3,
+      "baseline_action_key": "4cd352287f628278",
+      "literal_action": "Проверить смерть, паузу и запоздалое состояние.",
+      "literal_criterion": "Новый пользователь понимает, кто управляет героем; неуспех не подписан успехом.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept named lifecycle checks: R2 game-pause invariance, death/new generation, stale command rejection and disposed DTO0. Does not cover every disconnect/session/server reload case.",
+      "author_scope": "Only one owned TEST scene and named lifecycle cases; disconnected replacement/reload adversarial multiplayer not generally accepted.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+          "sha256": "51f6e2754f3a17f1efd97b90b4cc75ed3fa3cccbd473fd2452c8615a17bbeba0"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+      "action_index": 5,
+      "baseline_action_key": "c3329399e815aa55",
+      "literal_action": "Сверить каналы событий с общим контрактом.",
+      "literal_criterion": "Одна версия контракта работает с реальным сервером, без локального ложного подтверждения.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept channel/field conformance for shared minimum manual-v1 and readonly roster-v1 only, with actual addressed native receipts; private preparation/orders/voice are not silently connected.",
+      "author_scope": "Two limited versioned channels, not all private preparation/orders/voice/public visibility ports.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/src/scripts/vscripts/coach_scene_game_mode.lua",
+          "sha256": "136baf329b728dd203afa8e70c5230ac8be84635f3e8ba39c1dd817a83bc4d0e"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+          "sha256": "d06c6551586ea04042fd971b7f6996a081912ec8f6494617e61f66cbcfb55554"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+      "action_index": 6,
+      "baseline_action_key": "3472a1e8c0c2cf7f",
+      "literal_action": "Проверить поздний снимок, смену героя и старое подключение.",
+      "literal_criterion": "Одна версия контракта работает с реальным сервером, без локального ложного подтверждения.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept actual-source stale/equal/session/counter/generation guards plus R2 newgen and owned rebind; disposed old UI does not obtain/revoke new lease. Not generic live server reload.",
+      "author_scope": "No claim that every private panel/server adapter is integrated; old disposed UI cannot cancel new binding, server lease independent.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move-panel.test.cjs",
+          "sha256": "63ad205d877bfe056d3ce60499a250220aed63fe40e7cdcc0f453fba9dae9cbc"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/server-roster.test.cjs",
+          "sha256": "c5506e1012a15774c0ccc7c2a0cee92da75afd151740159b44b6ffbda3304a85"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        },
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+      "action_index": 7,
+      "baseline_action_key": "eee83c48d7c93780",
+      "literal_action": "Передать результаты создателю 1 для общей интеграции.",
+      "literal_criterion": "Одна версия контракта работает с реальным сервером, без локального ложного подтверждения.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept technical transfer: C1 received and independently reviewed exact C2 integrations/receipts; both author sources used in integrated fixed package, no human/product approval.",
+      "author_scope": "Technical integration handoff under user AI peer override, no human/product approval.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+      "action_index": 8,
+      "baseline_action_key": "76fa47dddbed1531",
+      "literal_action": "После локального аудита согласовать manifest исходников и конечные game/content пути.",
+      "literal_criterion": "Сборка использует единственные исходники и не перезаписывает установку без отдельного действия.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept exact fresh normal15/TEST18 source manifests using one author source per module and explicit game/content destinations; actual normal15 verify and compiled7/source inputs matched ui3 receipt.",
+      "author_scope": "Existing fixed kinds remain unchanged; scoped coach scene manifest only, not entire future game.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+          "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+          "sha256": "eb470c76b951d204d5c5a0ca528d5e13864c548f48a0956e450db19dcd2c8cb9"
+        },
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+      "action_index": 9,
+      "baseline_action_key": "6362752ad58f2de9",
+      "literal_action": "Собирать отдельный создаваемый каталог, сохраняя оригиналы в папках авторов.",
+      "literal_criterion": "Сборка использует единственные исходники и не перезаписывает установку без отдельного действия.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept actual separate guarded output construction and preservation/existing-output failure tests; current verified output keeps originals in author libraries; installs are explicit owned actions.",
+      "author_scope": "Generated output separate from creator libraries; raw build outputs are not edited source or distributable licence evidence.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+          "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+          "sha256": "eb470c76b951d204d5c5a0ca528d5e13864c548f48a0956e450db19dcd2c8cb9"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+      "action_index": 13,
+      "baseline_action_key": "96f48d245f0c4af8",
+      "literal_action": "Проверить полноту и отсутствие дублей серверных/UI исходников.",
+      "literal_criterion": "Сборка использует единственные исходники и не перезаписывает установку без отдельного действия.",
+      "recommendation": "accept",
+      "accept_scope": "limited shared feature/source/native API checks",
+      "reason": "Accept completeness/deduplication relative to exact scoped recipe: expected counts, no extra/missing/tampered files, exact hashes/canonical graph, original source references. Not completeness of full Dota game/assets.",
+      "author_scope": "Completeness relative to fixed recipe; not full Dota game/native all assets, known Windows symlink skips retain strictfalse.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+          "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac"
+        },
+        {
+          "path": "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+          "sha256": "eb470c76b951d204d5c5a0ca528d5e13864c548f48a0956e450db19dcd2c8cb9"
+        },
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json",
+          "sha256": "20c2d6c5e4c906a20b068e8564d02026c24de0fff16257849fd69729c42b6ff8"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+          "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+      "action_index": 2,
+      "baseline_action_key": "dd2014746f87cab0",
+      "literal_action": "Отделить работающий результат от следующих обещаний.",
+      "literal_criterion": "Презентация показывает реальное управление и ограничения модели; пакет не отправлен автоматически.",
+      "recommendation": "accept",
+      "accept_scope": "concrete unsent internal prototype packet and C1 receipt only",
+      "reason": "Actual presentation packet separates implemented TEST scene/API results from future physical/voice/real models/5x5; C1 received/read files and verified exact38-member archive SHA256 aa81ccc532fcecfb488e9d4ba79acb3cae3adb6183dfd893e7d091f93f9e4c68. Local transfer established, no external send/publication.",
+      "author_scope": "Updated by independent peer after actual completed packet receipt; original author hold was historical.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+          "sha256": "9b15c8715fa20b2a5fbc846ca334e4e82e372eb113e79879814b91cc7655f49c"
+        },
+        {
+          "path": "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+          "sha256": "32dde94011dc12ab7551d49535b3945c39ac8f49795898c4624b9681a270c790"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+          "sha256": "d76a65dbc6ff036bbeb217caeebd0fc596f1610efc6210358fcf164c8a26e337"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+          "sha256": "f4236f94706fe47c2aed993cc0bcee1d714e4ca616c25aa2fbc3a2abeb76aba0"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "build/dota_coach/c1-peer-packet-verify-20261014.log",
+          "sha256": "8b6996dcbd8628163756f21fa15658e63bbbc998f4eefe167e18e9183f5d3525"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    },
+    {
+      "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+      "action_index": 3,
+      "baseline_action_key": "1057154cca8237cc",
+      "literal_action": "Передать пакет создателю 1 без самостоятельной отправки.",
+      "literal_criterion": "Презентация показывает реальное управление и ограничения модели; пакет не отправлен автоматически.",
+      "recommendation": "accept",
+      "accept_scope": "concrete unsent internal prototype packet and C1 receipt only",
+      "reason": "Actual presentation packet separates implemented TEST scene/API results from future physical/voice/real models/5x5; C1 received/read files and verified exact38-member archive SHA256 aa81ccc532fcecfb488e9d4ba79acb3cae3adb6183dfd893e7d091f93f9e4c68. Local transfer established, no external send/publication.",
+      "author_scope": "Updated by independent peer after actual completed packet receipt; original author hold was historical.",
+      "required_qualification": null,
+      "proofs_reviewed": [
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+          "sha256": "9b15c8715fa20b2a5fbc846ca334e4e82e372eb113e79879814b91cc7655f49c"
+        },
+        {
+          "path": "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+          "sha256": "32dde94011dc12ab7551d49535b3945c39ac8f49795898c4624b9681a270c790"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+          "sha256": "d76a65dbc6ff036bbeb217caeebd0fc596f1610efc6210358fcf164c8a26e337"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+          "sha256": "f4236f94706fe47c2aed993cc0bcee1d714e4ca616c25aa2fbc3a2abeb76aba0"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "build/dota_coach/c1-peer-packet-verify-20261014.log",
+          "sha256": "8b6996dcbd8628163756f21fa15658e63bbbc998f4eefe167e18e9183f5d3525"
+        }
+      ],
+      "full_criterion_complete": false,
+      "physical_input_verified": false,
+      "product_or_human_or_rights_approval": false,
+      "reviewer_creator": 1,
+      "author_creator": 2,
+      "checklists_changed": false
+    }
+  ],
+  "accept_scoped": 16,
+  "hold_packet": 0,
+  "native_review_data": "build/dota_coach/c2-native-peer-verification-20261014.json",
+  "prior_source_commands": "C2 Node773/progress7/coach bundle8; fixed required panels27 PASS; current normal15 exact verifier checked",
+  "scope": "separate per-action acceptance review; earlier general36review alone was not used as blanket acceptance",
+  "packet_regrade": {
+    "archive_members": 38,
+    "sha256": "aa81ccc532fcecfb488e9d4ba79acb3cae3adb6183dfd893e7d091f93f9e4c68",
+    "verify_command": "python C1-12-03/tools/build_review_packet.py --verify build/dota_coach/coach-review-packet-final3-20261014",
+    "exit_code": 0,
+    "proof": "build/dota_coach/c1-peer-packet-verify-20261014.log",
+    "received_by": "independent C1 reviewer via authorized agent handoff",
+    "full_product_or_rights_accepted": false
+  }
+}

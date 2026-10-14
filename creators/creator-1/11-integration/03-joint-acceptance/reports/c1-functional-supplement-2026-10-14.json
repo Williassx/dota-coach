@@ -1,0 +1,676 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "author_creator": 1,
+  "reviewer_creator_expected": 2,
+  "author": "C1 runtime agent",
+  "baseline": "creators/creator-2/01-foundation/01-workspace-audit/notes/autonomous-30pp-baseline-2026-10-13.json",
+  "baseline_sha256": "fe041e36cf3998a7cadedc753e5f5efe6f61d491c99313646016d75291085fb6",
+  "selection": "14 source/native/documentary actions plus 5 pending release actions; excludes physical C1-04-01 action3; excludes all technical transfer checkboxes",
+  "status": "author supplement; 14 initial actions accepted scoped by C2 peer, 5 new release supplements pending independent C2 per-action review",
+  "action_count": 19,
+  "evidence_available_count": 19,
+  "pending_release_count": 0,
+  "native_scope": "R2 owned TEST hero/programmatic API; historical source flags false; R1 negative preserved",
+  "source_full_receipt": "build/dota_coach/source-checks-20261014T055503Z-5b8543/source-checks.json",
+  "source_strict_verified": false,
+  "rows": [
+    {
+      "task": "C1-01-02",
+      "path": "creators/creator-1/01-foundation/02-addon-capability/README.md",
+      "index": 4,
+      "baseline_action_key": "966ae2ad1389ea7c",
+      "baseline_done": false,
+      "wording": "Проверить серверный приказ, событие Panorama и реальную передачу управления тому же герою: серверные факты получены (движение по координатам r1, атака до гибели цели r2); событие Panorama и передача управления остаются с C2-01-02/C1-01-03.",
+      "criterion": "Реальный клиент выполняет движение и атаку; лог и наблюдение подтверждают идентичность героя.\n\nПодготовка C1-01-02 и C2-01-02 начинается после соответствующих аудитов; затем\nавторы совместно проверяют событие и подтверждение, изменяя разные серверные/UI\nфайлы. Завершение UI заранее не требуется для начала серверной работы.\nЭто проверка механизмов. Полный цикл ИИ/мышь/возврат принимается позже по\n[распределению сценариев](probe-design.md), а не закрывается этой карточкой.",
+      "scope": "mixed",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "R2 fixed hero entity123 receives correlated server MANUAL grant, manual move, expiry/cancel/arrival and subsequent synthetic AI moves through actual Panorama/manual v1. Previous probe supplied engine attack facts separately.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_game_mode.lua",
+          "sha256": "fbe2a0de05900456dc7964cbf755a15925ec14e457bb8ec1a071580eebf159f4"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_coach_scene.py",
+          "sha256": "fabfa97de777b7fa66033f3f005d0890caeddf1b80debf79c4079dd5a08bc673"
+        }
+      ],
+      "limits": "Physical click and native attack inside this new integrated scene are not tested; player identity here is owned TEST hero, not real-person fidelity.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-01-03",
+      "path": "creators/creator-1/01-foundation/03-command-contract/README.md",
+      "index": 1,
+      "baseline_action_key": "371a9ecb51da49bd",
+      "baseline_done": false,
+      "wording": "Вместе с создателем 2 определить минимальную версию команд, акторов и серверных снимков; черновик предложения от создателя 1 готов — [notes/contract-review.md](notes/contract-review.md).",
+      "criterion": "Один общий контракт имеет одну рассмотренную версию и примеры допустимых/отклонённых сообщений.",
+      "scope": "documentary_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "The minimum actor/request/snapshot versions are manual-move-v1 and read-only preparation-roster-v1, each one shared source; C1 producers/C2 consumers implement these scoped contracts.",
+      "proof_files": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        }
+      ],
+      "limits": "No global contract for 5x5, preparation submission, general coach commands, ASR or real player identities.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-01-03",
+      "path": "creators/creator-1/01-foundation/03-command-contract/README.md",
+      "index": 2,
+      "baseline_action_key": "d0ab8c6a77f940cd",
+      "baseline_done": false,
+      "wording": "Закрепить отправителя из движка, ревизии и причины принятия/отказа в общем контракте.",
+      "criterion": "Один общий контракт имеет одну рассмотренную версию и примеры допустимых/отклонённых сообщений.",
+      "scope": "documentary_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "Manual v1 documents source entity/GetPlayerID/original PlayerResource equality, session/generation/epoch/revision, addressed exact17 snapshot and rejection reasons; roster v1 exact8 response follows the verified sender.",
+      "proof_files": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_adapter.py",
+          "sha256": "4316741c4ff5141c0d608aa62bd376b9bd3b1c39186e582ae2b13050b808eb00"
+        },
+        {
+          "path": "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-01-03.log",
+          "sha256": "5cd46d1974f4c3d15a822cca16d5205eb0ba10023c201b4a4b902e82046f7001"
+        }
+      ],
+      "limits": "Engine metadata matching is stripped from a copy only; correlation IDs are not authority. Native controller owns the lease, not client draft or label.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-01-03",
+      "path": "creators/creator-1/01-foundation/03-command-contract/README.md",
+      "index": 3,
+      "baseline_action_key": "3565b4e82c8fed85",
+      "baseline_done": false,
+      "wording": "Проверить примеры повторной, чужой и устаревшей команды обоими отделами.",
+      "criterion": "Один общий контракт имеет одну рассмотренную версию и примеры допустимых/отклонённых сообщений.",
+      "scope": "source_native",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "Actual Lua5.1 controller/adapter tests exercise repeat/conflict, unknown sender before DTO, old session/generation/epoch; actual C2 consumer tests exercise correlation/highwater/stale/dispose. R2 old-generation native move rejected/stale_generation with manual counter unchanged.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+          "sha256": "51f6e2754f3a17f1efd97b90b4cc75ed3fa3cccbd473fd2452c8615a17bbeba0"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_adapter.py",
+          "sha256": "4316741c4ff5141c0d608aa62bd376b9bd3b1c39186e582ae2b13050b808eb00"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests/manual-move.test.cjs",
+          "sha256": "d15f919c609b5fc15afc94a1788fbb5502ff33f1769f46305808660e1b5c0270"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        }
+      ],
+      "limits": "Repeated and foreign commands are source engine-stub tests; R2 specifically establishes native stale_generation, not every abuse case in a full live match.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-02-03",
+      "path": "creators/creator-1/02-runtime/03-time-events/README.md",
+      "index": 1,
+      "baseline_action_key": "13cf3b183728a4be",
+      "baseline_done": false,
+      "wording": "Использовать проверенное игровое время и явно определить поведение паузы; основание — [notes/event-format.md](notes/event-format.md) (спорный вопрос эксперимента: факт доступного игрового времени).",
+      "criterion": "Пауза не расходует время вмешательства; записи позволяют восстановить причины переходов.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "R2 actual GetGameTime and separate Time/client wall reports: game32.43333435058594 unchanged for client wall2202ms; remaining4.799999237 unchanged. Event log receives server game time.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/src/scripts/vscripts/event_log.lua",
+          "sha256": "96f8bd9a1416f9ed97c8ef49745f8a03b439837965626f9ccdd5ad72fcfc7ce8"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/src/scripts/vscripts/coach_scene_game_mode.lua",
+          "sha256": "136baf329b728dd203afa8e70c5230ac8be84635f3e8ba39c1dd817a83bc4d0e"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/tests/01-native-lifecycle/verification-2026-10-14.md",
+          "sha256": "b213b6fa1644e57f99c784121469a4e0278f9d01a78555e2fa82df04dc01ca65"
+        }
+      ],
+      "limits": "Time/Date.now raw diagnostics are not calibrated clock sources; exact5.000s stop is not demonstrated.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-02-03",
+      "path": "creators/creator-1/02-runtime/03-time-events/README.md",
+      "index": 3,
+      "baseline_action_key": "c45a1e04436c4fe1",
+      "baseline_done": false,
+      "wording": "Проверить паузу, предел времени и порядок событий.",
+      "criterion": "Пауза не расходует время вмешательства; записи позволяют восстановить причины переходов.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "R2 paused/unpaused counters AI6/manual1 and remaining unchanged; grant32.233333587646 to expired37.266670227051 is5.033336639405 game seconds; journal seq14 grant,15 move,23 expired,25 AI resume, Stop21 then move1 issuance at return.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "build/dota_coach/c2-native-peer-verification-20261014.json",
+          "sha256": "ac63450f1547cdecc79133a1b2a8d11f60f7cd7c342f5f5488a5258fed302883"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/tests/test_event_log_sources.py",
+          "sha256": "1c0a0d6fbb6bd2c044c8769cceb6684bbb875fcffdd4ceb424751e6705567f6c"
+        },
+        {
+          "path": "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-02-03.log",
+          "sha256": "5935d3a72dd2c652600e6c4edc9442950d926c18dd9bd1537c6b14a28df44ef2"
+        }
+      ],
+      "limits": "Parsed journal is snapshot subset; seq gaps include other admitted-intent entries. Full payload/order-link replay is not demonstrated; logs show successful API invocation, not every engine completion.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-03-01",
+      "path": "creators/creator-1/03-ai-baseline/01-observation/README.md",
+      "index": 3,
+      "baseline_action_key": "71110076956a92fd",
+      "baseline_done": false,
+      "wording": "Изменить скрытое состояние при одинаковом видимом входе и проверить выбор.",
+      "criterion": "Одинаковое разрешённое наблюдение и seed дают одинаковый выбор; скрытое состояние не влияет.",
+      "scope": "source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "Actual Lua FilterVisible/BuildProjection/Choose tests compare hidden/future changes with identical allowed input/seed and preserve the choice; hidden/future projection entries rejected.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/tests/test_execution.py",
+          "sha256": "35efba1dcce546e785ef6898d6b23386e029f40812457291e5263bc84f26d818"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/src/scripts/vscripts/observation.lua",
+          "sha256": "9f9b3e275454859ec903aac7376489fc9aa6a939d0ea5a44865a415232ea25ba"
+        },
+        {
+          "path": "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-03-01.log",
+          "sha256": "3e59d8d3bc6797666df8deb3e8d6450c294f37b0d0fec050d138b88b26a4a667"
+        }
+      ],
+      "limits": "Caller visibility flags are synthetic source inputs; trusted native visibility/hidden-state privacy for real Dota opponents remains open.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-03-02",
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/README.md",
+      "index": 3,
+      "baseline_action_key": "3dcc5f63bf35db92",
+      "baseline_done": false,
+      "wording": "Проверить самостоятельные действия без тренера и понятную маркировку.",
+      "criterion": "Герой автономно двигается и атакует; политика не названа моделью реального человека.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "R2 starts in AI with native own-origin alternating synthetic move orders before trainer intervention; actual producer intents synthetic=true, TEST labels visible in ready/dead PNG, later actual fresh AI orders after manual cycles.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-ready-2026-10-14.png",
+          "sha256": "980f49d72c654922c0219dcf58928fb0f3e80bf69a89c86d4ac0257a48f3b3b5"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/src/scripts/vscripts/synthetic_policy.lua",
+          "sha256": "afa22b0b6a0fc8a8aa93348292749ced535c7f13896832beab34faae20f0b5de"
+        },
+        {
+          "path": "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-03-02.log",
+          "sha256": "ab35ecb0e6f72521dfe73f3d5c3b01228765ba88c5b3e8ab34bfebbf61504ef1"
+        }
+      ],
+      "limits": "This integrated policy uses no visible attack target, so autonomous attack criterion is not closed by R2. Prior standalone engine attack probe is distinct from autonomous policy attack. No real player-model similarity claim.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-03-03",
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/README.md",
+      "index": 1,
+      "baseline_action_key": "a207023af4da38b5",
+      "baseline_done": false,
+      "wording": "Определить источники и приоритеты приказов в рассмотренной спецификации.",
+      "criterion": "Один разрешённый источник управляет действием; повтор не исполняется дважды.",
+      "scope": "source_documentary",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "Reviewed priority scope is MANUAL>coach>AI; while MANUAL only manual is admitted, same-revision lower priority rejected, fresh revision begins decision epoch. Actual Lua tests cover IDs/NaN/revision/duplicate and manual blocking; scene wrapper uses the single actual arbiter.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/notes/priorities.md",
+          "sha256": "c8914cc42957981eacf38e932e2e9de296f13aa89950fcf32878fbec5f164fd1"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/src/scripts/vscripts/order_arbiter.lua",
+          "sha256": "704e2b1a16246a99eeb68c2ba8a5b990deccd4350c797a688816c026886c1900"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_lua_execution.py",
+          "sha256": "c4be06e9cad71588fd06d96e39cdfdd54640f7cd6d58b82771be3ffcdf82fedd"
+        },
+        {
+          "path": "creators/creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json",
+          "sha256": "8f993c6dbb7717945ab737f15c76baec48f0b8937a244c6110c5971b21025f63"
+        }
+      ],
+      "limits": "This is streaming admission, not batch scheduling or undo of an already executed effect. Live general coach-command arbitration/attack/5x5 integration not proven; source specification here awaits C2 peer acceptance.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-04-01",
+      "path": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+      "index": 1,
+      "baseline_action_key": "4bbbc943adfcec1d",
+      "baseline_done": false,
+      "wording": "Согласовать подтверждённый сервером переход в MANUAL.",
+      "criterion": "Ручной приказ тому же герою исполняется без перебивания и последующего старого приказа ИИ.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "User-approved manual v1 grants maximum5 game seconds only from native owner/current AI/live binding. R2 actual grant/epoch, manual counts and same entity123 motion; client selection never grants authority.",
+      "proof_files": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_controller.lua",
+          "sha256": "d812056fa18d99fba30552e0aa9d57f625245d9fe905d1304dac3a483574d674"
+        },
+        {
+          "path": "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-04-01.log",
+          "sha256": "8ab45112aa3ab8873f1a08c93ffd48e5bf8970f4b5bd30698dba693a0efecc83"
+        }
+      ],
+      "limits": "Movement-only one TEST hero and programmatic acquisition. No physical click, native AI attack interruption, real profiles or global UI transition.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-04-02",
+      "path": "creators/creator-1/04-intervention/02-return-ai/README.md",
+      "index": 3,
+      "baseline_action_key": "e361dc261296e2ba",
+      "baseline_done": false,
+      "wording": "Проверить завершение, отмену и таймер минимум в трёх циклах.",
+      "criterion": "После каждого выхода герой реально продолжает различимое действие ИИ; смены надписи недостаточно.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "R2 contains three distinct exit cycles: expiry, cancel, arrival. Each has its own transition, subsequent ai_resumed and fresh successful move API log; own origins then change. Death/respawn is separate INACTIVE/new-generation cycle.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "build/dota_coach/c2-native-peer-verification-20261014.json",
+          "sha256": "ac63450f1547cdecc79133a1b2a8d11f60f7cd7c342f5f5488a5258fed302883"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_controller.lua",
+          "sha256": "d812056fa18d99fba30552e0aa9d57f625245d9fe905d1304dac3a483574d674"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/02-return-ai/tests/test_return_sources.py",
+          "sha256": "df82215d5493113590c51535289d2e3f3384b5fe2d8d5810bed33288452f55fb"
+        }
+      ],
+      "limits": "Three cycles total, one per exit reason, not three repetitions of every reason. Return manager pure API and native manual controller are distinct single-source modules; generic return_manager is not claimed to execute this scene.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-07-01",
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/README.md",
+      "index": 3,
+      "baseline_action_key": "8f42a37d5d97c89c",
+      "baseline_done": false,
+      "wording": "Передавать подтверждённый состав интерфейсу.",
+      "criterion": "Нельзя скрыто назначить неподдерживаемый профиль; пять назначений однозначны.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "Actual server confirm() validates fixed five TEST IDs/heroes/roles/coverage and addressed roster exact8 wire; R2 native C2 consumer received string slots1..5, weak-coverage slot2 and displayed all five. Client query cannot provide profiles or assignments.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/src/scripts/vscripts/roster_confirmation.lua",
+          "sha256": "32ae6561f348384b22a5d866d90adadeb04f18c5b26bf7ecacdd8b8c094cb1d5"
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_confirmation.py",
+          "sha256": "f544e11acdbb4d76feaac2b6c2a3145286961469ce59cd83622f8571be1678a1"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/tests/server-roster.test.cjs",
+          "sha256": "c5506e1012a15774c0ccc7c2a0cee92da75afd151740159b44b6ffbda3304a85"
+        }
+      ],
+      "limits": "Read-only fixed server assignments, not private preparation draft submit, match start, actual five heroes spawn or real-profile fidelity.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-11-01",
+      "path": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+      "index": 1,
+      "baseline_action_key": "e19923147edc4c7c",
+      "baseline_done": false,
+      "wording": "Сверить реализацию с единой версией общего контракта.",
+      "criterion": "Интерфейс отражает сервер; старый ответ не возвращает прежний режим.",
+      "scope": "source_documentary",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "Scoped shared manual-move-v1 exact17 and roster-v1 exact8 agree with actual producer/consumer fields, finite numeric counters, exact0/1 wire booleans/string slots, sender metadata and reasons; same shared documents are used by both libraries.",
+      "proof_files": [
+        {
+          "path": "creators/shared/contracts/manual-move-v1.md",
+          "sha256": "c56931ed0f76c33fae702bd0cdac7bfff0ad34e5b0d9e0967253412c46cbf216"
+        },
+        {
+          "path": "creators/shared/contracts/preparation-roster-v1.md",
+          "sha256": "a2b7130116f5c8c460c64110221f409eb51b74ac5faca9e0774ccd1bd1a37309"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_coach_scene.py",
+          "sha256": "fabfa97de777b7fa66033f3f005d0890caeddf1b80debf79c4079dd5a08bc673"
+        },
+        {
+          "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_state.js",
+          "sha256": "514824f2d52de820d3889ff3f4cf017e1b3647094b126a4502d0cd47350a9a01"
+        },
+        {
+          "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/server_roster_panel.js",
+          "sha256": "26a83f962669b71867d0e4857014db2911526edb7f345b37a59fd07674724465"
+        }
+      ],
+      "limits": "Two explicit event families within minimum version1, not a universal contract for every existing local UI model. Shared contract author is root; independent C2 functional peer must assess this scoped conformance.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-11-01",
+      "path": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+      "index": 3,
+      "baseline_action_key": "df6d70b2425aa45f",
+      "baseline_done": false,
+      "wording": "Проверить показ принятия и реального результата.",
+      "criterion": "Интерфейс отражает сервер; старый ответ не возвращает прежний режим.",
+      "scope": "native_source",
+      "author_assessment": "evidence_available_for_scoped_action_pending_C2_peer",
+      "evidence": "R2 UI reflects MANUAL grant, server remaining, requested/issued/result history and INACTIVE death; native movement delta and explicit expiry/cancel/arrival→freshAI issued orders accompany labels. Stale generation rejection and stale disposed consumer Proxy0 are recorded.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-dead-2026-10-14.png",
+          "sha256": "8f484a010c72abde1d8e0d653ae9102e6009f1917db73f25e3b57a30c5218cfc"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/tests/01-native-coach-scene/fixture.js",
+          "sha256": "b5ed3d42876eeeb3c0c8f28f9e3953965c61db28b6f740c4d6a9a4f509d6208f"
+        },
+        {
+          "path": "build/dota_coach/source-checks-20261014T055503Z-5b8543/python-c1-11-01.log",
+          "sha256": "f3f80649ee4c0ffb0f17c0bb9314bb51b52f4d2f3afc67713a4271c129276cd4"
+        }
+      ],
+      "limits": "move_issued is successful API issuance, not arrival. Arrival is explicit server observation; asynchronous PNG phase capture is not atomic. Physical UX/newcomer comprehension/full game chain remain open.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false
+    },
+    {
+      "task": "C1-12-01",
+      "path": "creators/creator-1/12-release/01-source-rights/README.md",
+      "index": 1,
+      "baseline_action_key": "a7e3043d3813f34f",
+      "baseline_done": false,
+      "wording": "Вместе с ролями 161–172 составить реестр материалов и источников.",
+      "criterion": "Ни доступность файла, ни кастомка не объявлены лицензией на отдельную игру.",
+      "scope": "documentary_source_native_internal_packet",
+      "author_assessment": "evidence_available_for_scoped_action_independently_reviewed_C2",
+      "evidence": "Actual dated material register165 entries with size/hash/purpose/origin/runtime_assetfalse/unknownrights; roles161/162/169/172 document source/authority/unknown scope. Independently checked165current file hashes0drift; two official sources read and project_permission_confirmedfalse.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/12-release/01-source-rights/reports/current-material-register-2026-10-14.json",
+          "sha256": "1c9cdb173938cf1a25a9c00df21f5c81674607cdfe855d3a0240037207dc04a0"
+        },
+        {
+          "path": "creators/creator-1/12-release/01-source-rights/reports/current-material-register-2026-10-14.md",
+          "sha256": "5bf8fd66cb69b1fd9e675dc160d9fc5c957dea0d3e035477e3728151e154a5e8"
+        },
+        {
+          "path": "docs/legal/plan.md",
+          "sha256": "4a2e0da73b46eacaf809a4f9a27a8c0379a40c93641ef4aa17c210a11babf3a2"
+        },
+        {
+          "path": "docs/legal/initial-review.md",
+          "sha256": "ba75b87f51e8466bb7c30fcc92384f0cdde3a161d3ac2b0c723f858446f91bbc"
+        }
+      ],
+      "limits": "Internal technical review only: guide requires full checkout and fresh allowlisted addon, archive excludes Valve engine/map and is not an installer. User installation/physical input/full game/applicable rights/human acceptance unverified. No external send or public release. Reviewer technical source/archive acceptance does not approve distribution.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false,
+      "peer_review_completed": true,
+      "peer_decision": "accept_scoped"
+    },
+    {
+      "task": "C1-12-02",
+      "path": "creators/creator-1/12-release/02-valve-demo/README.md",
+      "index": 1,
+      "baseline_action_key": "4eaa92e9d21532a3",
+      "baseline_done": false,
+      "wording": "Подготовить демонстрацию и проверяемые результаты.",
+      "criterion": "Пакет конкретен и не утверждает одобрение; отправка отдельно авторизуется.",
+      "scope": "documentary_source_native_internal_packet",
+      "author_assessment": "evidence_available_for_scoped_action_independently_reviewed_C2",
+      "evidence": "Concrete prototype storyboard references10actualR2 frames plus normalUI3, records12API phases, pause/expiry/death/stale/movement and separates future full coach game.",
+      "proof_files": [
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+          "sha256": "9b15c8715fa20b2a5fbc846ca334e4e82e372eb113e79879814b91cc7655f49c"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+          "sha256": "d76a65dbc6ff036bbeb217caeebd0fc596f1610efc6210358fcf164c8a26e337"
+        }
+      ],
+      "limits": "Internal technical review only: guide requires full checkout and fresh allowlisted addon, archive excludes Valve engine/map and is not an installer. User installation/physical input/full game/applicable rights/human acceptance unverified. No external send or public release. Reviewer technical source/archive acceptance does not approve distribution.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false,
+      "peer_review_completed": true,
+      "peer_decision": "accept_scoped"
+    },
+    {
+      "task": "C1-12-02",
+      "path": "creators/creator-1/12-release/02-valve-demo/README.md",
+      "index": 2,
+      "baseline_action_key": "17bbfd77e6aa8ba9",
+      "baseline_done": false,
+      "wording": "Сформулировать отдельно запросы на кастомку и самостоятельный продукт.",
+      "criterion": "Пакет конкретен и не утверждает одобрение; отправка отдельно авторизуется.",
+      "scope": "documentary_source_native_internal_packet",
+      "author_assessment": "evidence_available_for_scoped_action_independently_reviewed_C2",
+      "evidence": "Actual separate unsent questions for custom-game and possible independent-product rights; operator/jurisdiction/territories/recipient unknown rather than fabricated; no inferred rights approval.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/12-release/02-valve-demo/notes/rights-requests-2026-10-14.md",
+          "sha256": "f26b559c1ac30efc38fcf3b4f2c91dbe743783ee33a576e35bd3d9ec4cac474d"
+        },
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+          "sha256": "9b15c8715fa20b2a5fbc846ca334e4e82e372eb113e79879814b91cc7655f49c"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+          "sha256": "d76a65dbc6ff036bbeb217caeebd0fc596f1610efc6210358fcf164c8a26e337"
+        }
+      ],
+      "limits": "Internal technical review only: guide requires full checkout and fresh allowlisted addon, archive excludes Valve engine/map and is not an installer. User installation/physical input/full game/applicable rights/human acceptance unverified. No external send or public release. Reviewer technical source/archive acceptance does not approve distribution.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false,
+      "peer_review_completed": true,
+      "peer_decision": "accept_scoped"
+    },
+    {
+      "task": "C1-12-02",
+      "path": "creators/creator-1/12-release/02-valve-demo/README.md",
+      "index": 3,
+      "baseline_action_key": "91d6a79d80859635",
+      "baseline_done": false,
+      "wording": "Сохранить пакет для рассмотрения, отправлять только по явному поручению.",
+      "criterion": "Пакет конкретен и не утверждает одобрение; отправка отдельно авторизуется.",
+      "scope": "documentary_source_native_internal_packet",
+      "author_assessment": "evidence_available_for_scoped_action_independently_reviewed_C2",
+      "evidence": "Saved exact38-member internal review archive and linked manifest read/verified by independent C1 reviewer; actualverify exit0/current source bytes/hash, no upload/send/publicrelease.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+          "sha256": "d76a65dbc6ff036bbeb217caeebd0fc596f1610efc6210358fcf164c8a26e337"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+          "sha256": "f4236f94706fe47c2aed993cc0bcee1d714e4ca616c25aa2fbc3a2abeb76aba0"
+        },
+        {
+          "path": "build/dota_coach/c1-peer-packet-verify-20261014.log",
+          "sha256": "8b6996dcbd8628163756f21fa15658e63bbbc998f4eefe167e18e9183f5d3525"
+        },
+        {
+          "path": "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+          "sha256": "9b15c8715fa20b2a5fbc846ca334e4e82e372eb113e79879814b91cc7655f49c"
+        }
+      ],
+      "limits": "Internal technical review only: guide requires full checkout and fresh allowlisted addon, archive excludes Valve engine/map and is not an installer. User installation/physical input/full game/applicable rights/human acceptance unverified. No external send or public release. Reviewer technical source/archive acceptance does not approve distribution.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false,
+      "peer_review_completed": true,
+      "peer_decision": "accept_scoped"
+    },
+    {
+      "task": "C1-12-03",
+      "path": "creators/creator-1/12-release/03-release-package/README.md",
+      "index": 2,
+      "baseline_action_key": "9c61dc200c26b5cd",
+      "baseline_done": false,
+      "wording": "Проверить версии, установку и состав пакета.",
+      "criterion": "Выпуск имеет техническую проверку и применимые права; перенос вне Dota отдельно разрешён.",
+      "scope": "documentary_source_native_internal_packet",
+      "author_assessment": "evidence_available_for_scoped_action_independently_reviewed_C2",
+      "evidence": "Versions/source package composition verified normal15/TEST18, exact38 archive; historical actual installed/compiled R2 TEST18/9 and current normalUI3 normal15/compiled7 inspected. Current normal bundle verified against compile source inputs/assets and actual frame.",
+      "proof_files": [
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.json",
+          "sha256": "d76a65dbc6ff036bbeb217caeebd0fc596f1610efc6210358fcf164c8a26e337"
+        },
+        {
+          "path": "creators/creator-1/12-release/03-release-package/reports/packet-validation-2026-10-14.json",
+          "sha256": "f4236f94706fe47c2aed993cc0bcee1d714e4ca616c25aa2fbc3a2abeb76aba0"
+        },
+        {
+          "path": "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+          "sha256": "32dde94011dc12ab7551d49535b3945c39ac8f49795898c4624b9681a270c790"
+        },
+        {
+          "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+          "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f"
+        },
+        {
+          "path": "build/dota_coach/c2-native-peer-verification-20261014.json",
+          "sha256": "ac63450f1547cdecc79133a1b2a8d11f60f7cd7c342f5f5488a5258fed302883"
+        }
+      ],
+      "limits": "Internal technical review only: guide requires full checkout and fresh allowlisted addon, archive excludes Valve engine/map and is not an installer. User installation/physical input/full game/applicable rights/human acceptance unverified. No external send or public release. Reviewer technical source/archive acceptance does not approve distribution.",
+      "full_criterion_complete": false,
+      "peer_review_required": true,
+      "checklist_mutated": false,
+      "peer_review_completed": true,
+      "peer_decision": "accept_scoped"
+    }
+  ],
+  "native_normal_ui3_visual_receipt": "normal15/compiled7, no TEST driver, actual14totalPNG; source display only, no physical input"
+}

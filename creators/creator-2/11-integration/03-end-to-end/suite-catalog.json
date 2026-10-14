@@ -440,6 +440,11 @@
       "id": "python-c2-05-03",
       "framework": "python-unittest",
       "path": "creators/creator-2/05-intervention-ui/03-return-feedback/tests"
+    },
+    {
+      "id": "node-server-roster",
+      "framework": "node-test",
+      "path": "creators/creator-2/11-integration/01-ui-binding/tests/server-roster.test.cjs"
     }
   ]
 }

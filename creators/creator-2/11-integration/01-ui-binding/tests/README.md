@@ -28,3 +28,5 @@ gates, dispose/rebind и stale DTO inspection через existing public API.
 captured actor, actual native ACK timer и dispose/rebind; не physical input.
 
 [Native mouse targeting fixture](02-native-mouse-targeting/README.md) — captured actor, action variants, controlled TTL/invalid recovery и dispose/rebind без real mouse hook.
+
+[server-roster.test.cjs](server-roster.test.cjs) — actual consumer/bind string-slot wire/weak coverage/highwater/dispose.

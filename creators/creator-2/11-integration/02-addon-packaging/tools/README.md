@@ -45,3 +45,5 @@
   strict manifest/path guards, fixed13/12 и preserved source-only flags.
 
 - [build_native_mouse_targeting_fixture.py](build_native_mouse_targeting_fixture.py) —9outputs TEST scene,7canonical outputs/7raw inputs. Own manifest/driver/derived layout, strict refusal guards; fixed targeting7/6 не расширен.
+
+[launch_coach_scene.ps1](launch_coach_scene.ps1) — explicit ownPID launch of installed normal15 scene, noTESTdriver; preserves existing Dota client.

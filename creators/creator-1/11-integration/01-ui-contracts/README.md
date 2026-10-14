@@ -1,5 +1,7 @@
 # C1-11-01 — Сервер и Panorama
 
+**Техническое рассмотрение14октября:** [отдельный peer другого создателя](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.md). Выполненная передача относится к техническому объёму; полная функциональная, продуктовая и правовая приёмка не следует из этого checkbox. Более ранние статусы ниже относятся к указанному в них срезу.
+
 **Отдел:** создатель 1. **Проверяющий:** создатель 2.
 **Статус:** частично — правило серверной стороны готово (3/3 OK); единая версия контракта, Panorama и передача открыты.
 **Зависимости:** [C1-04-03](../../04-intervention/03-lifecycle-guards/README.md), [C2-11-01](../../../creator-2/11-integration/01-ui-binding/README.md).
@@ -9,11 +11,11 @@
 
 ## Действия
 
-- [ ] Сверить реализацию с единой версией общего контракта.
+- [x] Сверить реализацию с единой версией общего контракта. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md).
 - [x] Проверить устаревшие снимки, повтор и чужого отправителя — правило `judge`, [tests/fixtures/snapshots.json](tests/fixtures/snapshots.json), [тесты](tests/test_ui_contracts.py) (3/3 OK).
-- [ ] Проверить показ принятия и реального результата.
+- [x] Проверить показ принятия и реального результата. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md).
 - [x] Сопоставить фактический результат с критерием ниже и записать непроведённые проверки — [reports/ui-integration.md](reports/ui-integration.md).
-- [ ] Передать изменение второму создателю для проверки, затем обновить этот статус.
+- [x] Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json).
 
 ## Результат и приёмка
 
@@ -29,6 +31,10 @@
 - Единая версия контракта, Panorama и передача создателю 2 открыты; приёмка не заявляется.
 
 ## Где размещать материалы
+
+- [Server source index](src/README.md) — single scene wrapper and nested script documentation.
+
+- [Coach scene wrapper](src/scripts/vscripts/coach_scene_game_mode.lua), [actual Lua 5.1 tests](tests/test_coach_scene.py), and [separate TEST lifecycle probe](../../02-runtime/03-time-events/tests/01-native-lifecycle/README.md). Source checks are not native scene acceptance.
 
 - `tests/` — проверки поведения и отказов.
 - `fixtures/` — малые разрешённые примеры; реальные массовые данные хранятся отдельно.

@@ -1,0 +1,1235 @@
+{
+  "author_creator": 2,
+  "reviewed_creator": 1,
+  "technical_only": true,
+  "rows": [
+    {
+      "path": "creators/creator-1/01-foundation/01-environment-audit",
+      "tests": [
+        {
+          "path": "creators/creator-1/01-foundation/01-environment-audit/tests/test_inspect_environment.py",
+          "exit_code": 0,
+          "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 1.793s\n\nOK\n"
+        }
+      ],
+      "id": "C1-01-01",
+      "criterion": "Отчёт содержит ОС, Git, пути и сборку; отсутствие локального доступа указано явно, чтение API не выдано за запуск.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/01-foundation/01-environment-audit/tests/test_inspect_environment.py",
+          "sha256": "50e18301479126c46770d7369bd37da6f68219bc65d3a15ce5d27944ac055f89",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Read-only environment inventory plus Windows paths/build25894101 report; filesystem audit does not prove Tools/game acceptance.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/01-foundation/02-addon-capability",
+      "tests": [
+        {
+          "path": "creators/creator-1/01-foundation/02-addon-capability/tests/test_probe_sources.py",
+          "exit_code": 0,
+          "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.017s\n\nOK\n"
+        }
+      ],
+      "id": "C1-01-02",
+      "criterion": "Реальный клиент выполняет движение и атаку; лог и наблюдение подтверждают идентичность героя.\n\nПодготовка C1-01-02 и C2-01-02 начинается после соответствующих аудитов; затем\nавторы совместно проверяют событие и подтверждение, изменяя разные серверные/UI\nфайлы. Завершение UI заранее не требуется для начала серверной работы.\nЭто проверка механизмов. Полный цикл ИИ/мышь/возврат принимается позже по\n[распределению сценариев](probe-design.md), а не закрывается этой карточкой.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/01-foundation/02-addon-capability/src/scripts/vscripts/addon_game_mode.lua",
+          "sha256": "a934f37e16d22f998c3345e9d88f1d5caf3f9290c2a8920b884bd00d7bf4d34d",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/01-foundation/02-addon-capability/tests/test_probe_sources.py",
+          "sha256": "1e84e3acfb86399b3e39e70772a2e2f0c5cc1ecf3437edcd6707dd2ed7834d69",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual native historical move/attack receipts exist; source static assertions passed; no current native launch or human input reviewed here.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/01-foundation/03-command-contract",
+      "tests": [
+        {
+          "path": "creators/creator-1/01-foundation/03-command-contract/tests/test_contract_examples.py",
+          "exit_code": 0,
+          "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/01-foundation/03-command-contract/tests/test_diagnostic_ping.py",
+          "exit_code": 0,
+          "output": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.030s\n\nOK\n"
+        }
+      ],
+      "id": "C1-01-03",
+      "criterion": "Один общий контракт имеет одну рассмотренную версию и примеры допустимых/отклонённых сообщений.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/01-foundation/03-command-contract/src/scripts/vscripts/diagnostic_ping.lua",
+          "sha256": "6af0a88e48f3a902d8b46a85b7b9d51bf2467f6c1565932b8a18ec336df88538",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/01-foundation/03-command-contract/src/scripts/vscripts/ping_game_mode.lua",
+          "sha256": "bd4be6ecdf08c908a782dfd8dd480bdf446e95e73248e8a7b7b9093a88a49ed8",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/01-foundation/03-command-contract/tests/test_contract_examples.py",
+          "sha256": "6bb440117c9b6fe22e77014f2f67c28500a5e9d64d193e3fa72eefcb57c1bd54",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/01-foundation/03-command-contract/tests/test_diagnostic_ping.py",
+          "sha256": "8c0f898392e5129feef8d2df8b0ff269d1a1a03eecef938d58ef2a5672753f11",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Diagnostic sender equality/addressed reply tests execute Lua; diagnostic ping and limited manual v1 are not one agreed full-game contract.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/02-runtime/01-session-lifecycle",
+      "tests": [
+        {
+          "path": "creators/creator-1/02-runtime/01-session-lifecycle/tests/test_lifecycle_sources.py",
+          "exit_code": 0,
+          "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.044s\n\nOK\n"
+        }
+      ],
+      "id": "C1-02-01",
+      "criterion": "Перезапуск не дублирует события, таймеры и состояние прошлого матча.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/02-runtime/01-session-lifecycle/src/scripts/vscripts/addon_game_mode.lua",
+          "sha256": "8b8ff299f0379f31d29e47fd1496fd394ccc318e6658637a1c6459b062ad51bc",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/01-session-lifecycle/tests/test_lifecycle_sources.py",
+          "sha256": "d5594d7d2f83531d2112e76bc0dce11fd8f212aef870354f79123f2ec053f567",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Single _G activation guard/one Think and two historical fresh-process reports; same-process reload/end-to-end session cleanup remains open.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/02-runtime/02-actor-binding",
+      "tests": [
+        {
+          "path": "creators/creator-1/02-runtime/02-actor-binding/tests/test_actor_binding_sources.py",
+          "exit_code": 0,
+          "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.010s\n\nOK\n"
+        }
+      ],
+      "id": "C1-02-02",
+      "criterion": "Приказы старой привязки не воздействуют на нового героя; чужое назначение отклоняется.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/02-runtime/02-actor-binding/src/scripts/vscripts/actor_binding.lua",
+          "sha256": "396eb55146f80f20d1968cc201d13854ccf1cd99c78c560b51ab20b4ad212192",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/02-actor-binding/tests/test_actor_binding_sources.py",
+          "sha256": "bb4ba3fed4556a0f122af0e85ea5228147397cd2d3317c31050666ef2f147559",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Pure binding returns copied snapshots, accepts exact live entity/revision and owner; native death/respawn/reconnect integration remains open.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events",
+      "tests": [
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/tests/test_event_log_sources.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/tests/test_execution.py",
+          "exit_code": 0,
+          "output": "test_game_clock_finite_monotonic_with_equal_pause_entries (test_execution.EventExecutionTests.test_game_clock_finite_monotonic_with_equal_pause_entries) ... ok\ntest_owned_records_cannot_be_mutated_via_input_or_read (test_execution.EventExecutionTests.test_owned_records_cannot_be_mutated_via_input_or_read) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+          "command": [
+            "C:\\Users\\Dagda\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "creators\\creator-1\\02-runtime\\03-time-events\\tests",
+            "-p",
+            "test_execution.py",
+            "-v"
+          ]
+        }
+      ],
+      "id": "C1-02-03",
+      "criterion": "Пауза не расходует время вмешательства; записи позволяют восстановить причины переходов.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/src/scripts/vscripts/event_log.lua",
+          "sha256": "96f8bd9a1416f9ed97c8ef49745f8a03b439837965626f9ccdd5ad72fcfc7ce8",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/tests/test_event_log_sources.py",
+          "sha256": "1c0a0d6fbb6bd2c044c8769cceb6684bbb875fcffdd4ceb424751e6705567f6c",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/02-runtime/03-time-events/tests/test_execution.py",
+          "sha256": "b71310c33bbd0c2ec32485edde2a4c58a5ab2bc8b9930506eba256ab33a429b0",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual event_log Append/Get copies payloads and rejects regressed game clock; new wrapper links observed transitions; native pause proof is not yet supplied for new scene.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/01-observation",
+      "tests": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/tests/test_execution.py",
+          "exit_code": 0,
+          "output": "test_hidden_and_future_changes_preserve_actual_visible_choice (test_execution.ObservationExecutionTests.test_hidden_and_future_changes_preserve_actual_visible_choice) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "command": [
+            "C:\\Users\\Dagda\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "creators\\creator-1\\03-ai-baseline\\01-observation\\tests",
+            "-p",
+            "test_execution.py",
+            "-v"
+          ]
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/tests/test_observation_sources.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n"
+        }
+      ],
+      "id": "C1-03-01",
+      "criterion": "Одинаковое разрешённое наблюдение и seed дают одинаковый выбор; скрытое состояние не влияет.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/src/scripts/vscripts/observation.lua",
+          "sha256": "9f9b3e275454859ec903aac7376489fc9aa6a939d0ea5a44865a415232ea25ba",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/tests/test_execution.py",
+          "sha256": "35efba1dcce546e785ef6898d6b23386e029f40812457291e5263bc84f26d818",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/01-observation/tests/test_observation_sources.py",
+          "sha256": "4c09388275e77740a30cf610d9b8ef537623ba7c5f20130b0f4c4478ecb3a7d7",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual Lua projection/filter/seed hidden-future invariance test executed; caller-supplied visible flag is not engine authorization and BuildProjection stores caller tables.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy",
+      "tests": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests/test_execution.py",
+          "exit_code": 0,
+          "output": "test_fresh_own_position_patrol_and_manual_arbiter_block (test_execution.SyntheticExecutionTests.test_fresh_own_position_patrol_and_manual_arbiter_block) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+          "command": [
+            "C:\\Users\\Dagda\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "creators\\creator-1\\03-ai-baseline\\02-synthetic-policy\\tests",
+            "-p",
+            "test_execution.py",
+            "-v"
+          ]
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests/test_synthetic_policy_sources.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.014s\n\nOK\n"
+        }
+      ],
+      "id": "C1-03-02",
+      "criterion": "Герой автономно двигается и атакует; политика не названа моделью реального человека.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/src/scripts/vscripts/synthetic_policy.lua",
+          "sha256": "afa22b0b6a0fc8a8aa93348292749ced535c7f13896832beab34faae20f0b5de",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests/test_execution.py",
+          "sha256": "12819b5b28a6939dd296ecd7601ed59fae32ea6749daf1f4a54fdfa95009f396",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/tests/test_synthetic_policy_sources.py",
+          "sha256": "799da582044bb83881c50db860171eec8cc123068c71f30ff562ad927693aa34",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual Lua Decide patrol uses fresh allowed own point and synthetic=true, arbiter rejects AI during MANUAL; new wrapper native attack/scene outcome remains unperformed.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter",
+      "tests": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/tests/test_arbiter_sources.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.008s\n\nOK\n"
+        }
+      ],
+      "id": "C1-03-03",
+      "criterion": "Один разрешённый источник управляет действием; повтор не исполняется дважды.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/src/scripts/vscripts/order_arbiter.lua",
+          "sha256": "704e2b1a16246a99eeb68c2ba8a5b990deccd4350c797a688816c026886c1900",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/tests/test_arbiter_sources.py",
+          "sha256": "4b7a498b818171b24c2bf493042f440deb017ab9f5e7410e06f8a69ec92e7cae",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual Resolve dedup/revision/priority and MANUAL guards run through Lua suite; streaming admission does not cancel already executed order or arbitrate a batch.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions",
+      "tests": [
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_mode_sources.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_adapter.py",
+          "exit_code": 0,
+          "output": "DCMOVE activated filter=true synthetic=true\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=100\nDCMOVE state mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=100\nDCMOVE order=4 entity=42 generation=1 x=0 y=0 game=100\nDCMOVE state mode=MANUAL transition=granted reason=none generation=1 epoch=1 revision=3 remaining=5 ai=1 manual=0 game=100\nDCMOVE activated filter=false synthetic=true\nDCMOVE state mode=INACTIVE transition=state reason=none generation=0 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCMOVE activated filter=true synthetic=true\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCMOVE state mode=INACTIVE transition=engine_failed reason=engine_failed generation=1 epoch=1 revision=2 remaining=0 ai=0 manual=0 game=100\nDCMOVE state mode=INACTIVE transition=engine_failed reason=engine_failed generation=1 epoch=1 revision=3 remaining=0 ai=0 manual=0 game=100\nDCMOVE activated filter=true synthetic=true\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=100\nDCMOVE state mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=100\nDCMOVE order=4 entity=42 generation=1 x=0 y=0 game=100\nDCMOVE state mode=MANUAL transition=granted reason=none generation=1 epoch=1 revision=3 remaining=5 ai=1 manual=0 game=100\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=100\nDCMOVE state mode=MANUAL transition=move_issued reason=none generation=1 epoch=1 revision=4 remaining=5 ai=1 manual=1 game=100\nDCMOVE order=4 entity=42 generation=1 x=0 y=0 game=105\nDCMOVE state mode=INACTIVE transition=expired reason=none generation=1 epoch=2 revision=5 remaining=0 ai=1 manual=1 game=105\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=105\nDCMOVE state mode=AI transition=ai_resumed reason=none generation=1 epoch=2 revision=6 remaining=0 ai=2 manual=1 game=105\nDCMOVE activated filter=true synthetic=true\nDCMOVE sender=unverified drop=true\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCMOVE state mode=INACTIVE transition=state reason=invalid_request generation=1 epoch=0 revision=2 remaining=0 ai=0 manual=0 game=100\nDCMOVE activated filter=true synthetic=true\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=100\nDCMOVE state mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=100\n......\n----------------------------------------------------------------------\nRan 6 tests in 0.023s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+          "exit_code": 0,
+          "output": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 0.047s\n\nOK\n"
+        }
+      ],
+      "id": "C1-04-01",
+      "criterion": "Ручной приказ тому же герою исполняется без перебивания и последующего старого приказа ИИ.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_mode.lua",
+          "sha256": "7fac1ebd24d868cd08f96d5c9cc83ad277c2b070a6aea885ace4347a4750e855",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_controller.lua",
+          "sha256": "d812056fa18d99fba30552e0aa9d57f625245d9fe905d1304dac3a483574d674",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_game_mode.lua",
+          "sha256": "fbe2a0de05900456dc7964cbf755a15925ec14e457bb8ec1a071580eebf159f4",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_mode_sources.py",
+          "sha256": "c8a6ac8252ab129da7e6081a73b7af12230b3cc9437d9ba863b97eab495808d9",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_adapter.py",
+          "sha256": "4316741c4ff5141c0d608aa62bd376b9bd3b1c39186e582ae2b13050b808eb00",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/01-manual-actions/tests/test_manual_move_controller.py",
+          "sha256": "51f6e2754f3a17f1efd97b90b4cc75ed3fa3cccbd473fd2452c8615a17bbeba0",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual controller/adapter Lua tests exercise lease5, pause/deferredStop, sender/owner and generation guards. Historical native move/cancel/arrival/expiry proven in separate prior scene only.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/04-intervention/02-return-ai",
+      "tests": [
+        {
+          "path": "creators/creator-1/04-intervention/02-return-ai/tests/test_return_sources.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.032s\n\nOK\n"
+        }
+      ],
+      "id": "C1-04-02",
+      "criterion": "После каждого выхода герой реально продолжает различимое действие ИИ; смены надписи недостаточно.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/04-intervention/02-return-ai/src/scripts/vscripts/return_manager.lua",
+          "sha256": "d85e4398ec9e49e8d6606348bc9e1bfd7889b56bd9514b5ec42e9560dbe4689f",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/02-return-ai/tests/test_return_sources.py",
+          "sha256": "df82215d5493113590c51535289d2e3f3384b5fe2d8d5810bed33288452f55fb",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure Return EnterManual/StartReturn/FinishReturn requires newer observation; historical native manual controller emits new AI movement, not proof this pure Return module is engine-wired.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/04-intervention/03-lifecycle-guards",
+      "tests": [
+        {
+          "path": "creators/creator-1/04-intervention/03-lifecycle-guards/tests/test_generation_guards_sources.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.008s\n\nOK\n"
+        }
+      ],
+      "id": "C1-04-03",
+      "criterion": "Старое событие не завершает новое вмешательство; возрождение не повторяет старый приказ.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/04-intervention/03-lifecycle-guards/src/scripts/vscripts/generation_guards.lua",
+          "sha256": "06d0af4e8d681b86366c6b6e3b7e94a29f4ef5fefbe7f6b52be4d5c913788b37",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/04-intervention/03-lifecycle-guards/tests/test_generation_guards_sources.py",
+          "sha256": "393c56cd39c1a6a1f06715e8757478a4bcb3869de914ce3c8b33afe7fcc8a130",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Pure generation/action gate rejects stale completions; native pause/death/replacement/reload/late events for new coach scene await receipts.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/05-match-data/01-source-audit",
+      "tests": [
+        {
+          "path": "creators/creator-1/05-match-data/01-source-audit/tests/test_fixtures_integrity.py",
+          "exit_code": 0,
+          "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.045s\n\nOK\n"
+        }
+      ],
+      "id": "C1-05-01",
+      "criterion": "Есть образец с происхождением либо конкретный отказ; агрегаты не названы данными микродействий.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/05-match-data/01-source-audit/tests/test_fixtures_integrity.py",
+          "sha256": "2cfeac2348c67d75365199eb421f22f6ee6b5b309fc3b3cf8b4891603c19dd60",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Read source fetcher/fixtures provenance/integrity tests; publicMatches aggregates lack microaction/replay coverage and do not establish individual player fidelity or licence.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/05-match-data/02-import",
+      "tests": [
+        {
+          "path": "creators/creator-1/05-match-data/02-import/tests/test_importer.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
+        }
+      ],
+      "id": "C1-05-02",
+      "criterion": "Повтор не создаёт дублей; каждое поле имеет источник и версию преобразования.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/05-match-data/02-import/src/importer.py",
+          "sha256": "1b6ae0f33c51b5ed0d833af23eb83aab265c8f4fa5fbbf34426ccb719ce02842",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/05-match-data/02-import/tests/test_importer.py",
+          "sha256": "d17eceb0e352c9923e263b6a39b2eae144aad88316a6d947fe2e734843ed8741",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual importer dedup/quarantine/raw-normalized source/version pipeline passed nominal tests; external dataset provenance/patch and malformed-type hardening remain outside tested scope.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/05-match-data/03-replay-normalization",
+      "tests": [
+        {
+          "path": "creators/creator-1/05-match-data/03-replay-normalization/tests/test_replay_gate.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.006s\n\nOK\n"
+        }
+      ],
+      "id": "C1-05-03",
+      "criterion": "Нормализация воспроизводится; при отсутствии событий персонализация ограничена явно.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/05-match-data/03-replay-normalization/src/replay_gate.py",
+          "sha256": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/05-match-data/03-replay-normalization/tests/test_replay_gate.py",
+          "sha256": "203a21188c01e369f7c85f864ec84da24ee4003d5e1fbc1768e691f0f0684ab4",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual replay_gate rejects explicitly flagged hidden/future events; compatible replay parser and native event provenance absent, intent retained explicitly as guess.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/06-player-models/01-profiles",
+      "tests": [
+        {
+          "path": "creators/creator-1/06-player-models/01-profiles/tests/test_profile_schema.py",
+          "exit_code": 0,
+          "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.016s\n\nOK\n"
+        }
+      ],
+      "id": "C1-06-01",
+      "criterion": "Профиль имеет версии и границы; характер не объявлен доказанным по агрегатам.\nРазбиение и протокол оценки закреплены до вычисления/настройки признаков и модели;\nпреобразования обучаются на train, выбор вариантов — на validation. Итоговый test\nне открывается для настройки C1-06-01/C1-06-02.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/06-player-models/01-profiles/tests/test_profile_schema.py",
+          "sha256": "7006ca7ed4c252f50a54602c1c6b8f22eba39818d9cd73ac550d58ceaf559064",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "validate function exists ONLY in test_profile_schema.py; synthetic fixture/protocol documentation passed. No runtime profile producer, measured model or human fidelity implementation.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/06-player-models/02-personal-policy",
+      "tests": [
+        {
+          "path": "creators/creator-1/06-player-models/02-personal-policy/tests/test_personal_policy.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.009s\n\nOK\n"
+        }
+      ],
+      "id": "C1-06-02",
+      "criterion": "Различия объяснимы входными признаками; правила героя и обзор не обходятся.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/06-player-models/02-personal-policy/src/personal_policy.py",
+          "sha256": "a5d7482c419a963620639c572fe6c047d100c2a7a7de0bb33b8224f8dce309a8",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/06-player-models/02-personal-policy/tests/test_personal_policy.py",
+          "sha256": "fcd514d20afa41ba6f513bb27786e3a04c54e5e9764c0d0ec80c5943eca13318",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual personal_policy pure TEST aggression rules passed; consuming allowed context depends on caller and never proves real player likeness or native hero/vision enforcement.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/06-player-models/03-heldout-evaluation",
+      "tests": [
+        {
+          "path": "creators/creator-1/06-player-models/03-heldout-evaluation/tests/test_evaluation.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.015s\n\nOK\n"
+        }
+      ],
+      "id": "C1-06-03",
+      "criterion": "Метрики и ограничения опубликованы; отличие ботов само по себе не доказывает сходство.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/06-player-models/03-heldout-evaluation/src/evaluate.py",
+          "sha256": "fcad5fb40172307a2b621d2a1d7aa307fb49ffb9aabb1219094b39e38be667b3",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/06-player-models/03-heldout-evaluation/tests/test_evaluation.py",
+          "sha256": "378dfd15b4b68d587d563c12252fccd11136e94c187e40700722633e025ef497",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual evaluate pure harness/check_split run on TEST examples; run_evaluation itself does not enforce locked/disjoint splits. Published TEST rates do not establish heldout human fidelity.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles",
+      "tests": [
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_confirmation.py",
+          "exit_code": 0,
+          "output": "test_bool_nan_malformed_and_nonsynthetic_profiles_refused (test_roster_confirmation.RosterConfirmationTests.test_bool_nan_malformed_and_nonsynthetic_profiles_refused) ... ok\ntest_count_duplicates_role_and_hero_compatibility (test_roster_confirmation.RosterConfirmationTests.test_count_duplicates_role_and_hero_compatibility) ... ok\ntest_defaults_and_confirmed_records_are_owned_copies (test_roster_confirmation.RosterConfirmationTests.test_defaults_and_confirmed_records_are_owned_copies) ... ok\ntest_exact_five_string_slots_and_weak_coverage (test_roster_confirmation.RosterConfirmationTests.test_exact_five_string_slots_and_weak_coverage) ... ok\ntest_metatable_dto_never_calls_getters (test_roster_confirmation.RosterConfirmationTests.test_metatable_dto_never_calls_getters) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.011s\n\nOK\n",
+          "command": [
+            "C:\\Users\\Dagda\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "creators\\creator-1\\07-coach-preparation\\01-roster-roles\\tests",
+            "-p",
+            "test_roster_confirmation.py",
+            "-v"
+          ]
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_validator.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
+        }
+      ],
+      "id": "C1-07-01",
+      "criterion": "Нельзя скрыто назначить неподдерживаемый профиль; пять назначений однозначны.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/src/scripts/vscripts/roster_confirmation.lua",
+          "sha256": "32ae6561f348384b22a5d866d90adadeb04f18c5b26bf7ecacdd8b8c094cb1d5",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_confirmation.py",
+          "sha256": "f544e11acdbb4d76feaac2b6c2a3145286961469ce59cd83622f8571be1678a1",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/01-roster-roles/tests/test_roster_validator.py",
+          "sha256": "8ce792b75ad31de1357074e9ef5cd396fc29ba42724af24172aa5fb79ab4effb",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Legacy Python validator lives in tests only; new actual roster_confirmation Lua source validates five server TEST definitions, exact shape/count/compatibility/coverage and copied string slots. Native exchange new scene not yet confirmed.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/02-tactics",
+      "tests": [
+        {
+          "path": "creators/creator-1/07-coach-preparation/02-tactics/tests/test_tactics.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.007s\n\nOK\n"
+        }
+      ],
+      "id": "C1-07-02",
+      "criterion": "Подготовка имеет заранее описанное наблюдаемое влияние.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/07-coach-preparation/02-tactics/src/tactics.py",
+          "sha256": "dd2c54296a5403b3705ada0ec729125f5bd720754a4084610bf9586c93a32574",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/02-tactics/tests/test_tactics.py",
+          "sha256": "e0a945c470dfbfc1e96bf8e33e1452b29485101ab80eacad17351ffa94cb0204",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure tactics plan/declared bias tests passed; no engine effects or runtime preparation link. Context/profile compatibility with choice_fn remains interface dependency.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/03-morale-trust",
+      "tests": [
+        {
+          "path": "creators/creator-1/07-coach-preparation/03-morale-trust/tests/test_morale.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.006s\n\nOK\n"
+        }
+      ],
+      "id": "C1-07-03",
+      "criterion": "Поддержка меняет согласованные игровые параметры без ложного вывода о личности.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/07-coach-preparation/03-morale-trust/src/morale.py",
+          "sha256": "d059524428e6edcdbd3fb5278f753326507c6e45d8e5f04fb30fc7aff59ab7ee",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/07-coach-preparation/03-morale-trust/tests/test_morale.py",
+          "sha256": "ea22b42b2eefe468cc334d05a3db7aeb5f592ecd25f0f706db1b32bad8c613d0",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure bounded focus/steadiness game-only params passed; not measured human morale, no server-native effect or product interpretation acceptance.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/01-farming-economy",
+      "tests": [
+        {
+          "path": "creators/creator-1/08-match-mechanics/01-farming-economy/tests/test_economy.py",
+          "exit_code": 0,
+          "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n"
+        }
+      ],
+      "id": "C1-08-01",
+      "criterion": "Результат соответствует правилам клиента; неуспех имеет понятную причину.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/08-match-mechanics/01-farming-economy/src/economy.py",
+          "sha256": "8fe2439d12171c4d9c57420fd5341a75f94e5c219cf11056a7fbcee5f526aa72",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/08-match-mechanics/01-farming-economy/tests/test_economy.py",
+          "sha256": "a1c4404ff3ef14137699df596584df03bfcf620de9cb3b2b0c9474a72807d1ab",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure action/shop proposal tests passed; hardcoded TEST item prices and last-hit/deny rules are not verified current Dota patch or native execution.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/02-hero-actions",
+      "tests": [
+        {
+          "path": "creators/creator-1/08-match-mechanics/02-hero-actions/tests/test_hero_actions.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.011s\n\nOK\n"
+        }
+      ],
+      "id": "C1-08-02",
+      "criterion": "Приказы не обходят ограничения героя; поддерживаемые действия перечислены.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/08-match-mechanics/02-hero-actions/src/hero_actions.py",
+          "sha256": "2ec0448d3545cbcb2de811b27b5172c7ed10c89c4301e181d925050fd641718f",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/08-match-mechanics/02-hero-actions/tests/test_hero_actions.py",
+          "sha256": "c2206cebafe89d69b0deba940d4a3e7d1fa8b094b0b4daace7a35bd17f6f660e",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual hero gate tests passed existing cases, but item accepted with kind ability: concrete defect blocks technical handoff pending fix. Patch/cooldown supplied by caller not engine. Independent regrade: original repro no longer reproduces; actual changed tests pass. No native claim.",
+      "findings": [
+        {
+          "priority": "P2",
+          "file": "src/hero_actions.py",
+          "line": 29,
+          "repro": "attempt({'patch':'test','heroes':{'axe':{'abilities':['call'],'items':['blink']}}},'axe','blink','ability') returns (True,'ok')",
+          "action": "Select pool by kind; add regression that item cannot be ability and converse.",
+          "status": "resolved",
+          "resolution": "wrong kinds refused; correct pools regression PASS"
+        }
+      ],
+      "regrade": {
+        "test": "creators/creator-1/08-match-mechanics/02-hero-actions/tests/test_hero_actions.py",
+        "exit_code": 0,
+        "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n",
+        "independent_repro": "wrong kinds refused; correct pools regression PASS"
+      }
+    },
+    {
+      "path": "creators/creator-1/08-match-mechanics/03-team-coordination",
+      "tests": [
+        {
+          "path": "creators/creator-1/08-match-mechanics/03-team-coordination/tests/test_team_orders.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
+        }
+      ],
+      "id": "C1-08-03",
+      "criterion": "Командный приказ имеет адресатов, подтверждение и наблюдаемые действия.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/08-match-mechanics/03-team-coordination/src/team_orders.py",
+          "sha256": "aa19062c214c60bf0faa583a95ef4f391fb1cbc61614b01f13c4eb53a6872dcc",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/08-match-mechanics/03-team-coordination/tests/test_team_orders.py",
+          "sha256": "399be22881fd2bf59d55a3385e02540f8c8263934d07527b6bc4a88c43dd237f",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure distribution tests passed existing cases, but modulo assignment repeats one target across multiple addresses: concrete conflict defect blocks handoff pending fix. Confirmation not native action. Independent regrade: original repro no longer reproduces; actual changed tests pass. No native claim.",
+      "findings": [
+        {
+          "priority": "P2",
+          "file": "src/team_orders.py",
+          "line": 26,
+          "repro": "distribute('attack',['a','b'],['x'],{'a':['x'],'b':['x']}) returns ok with target x twice",
+          "action": "Reject insufficient unique targets/resource conflicts; regression roles>targets.",
+          "status": "resolved",
+          "resolution": "all4 orders shortage rejected atomically"
+        }
+      ],
+      "regrade": {
+        "test": "creators/creator-1/08-match-mechanics/03-team-coordination/tests/test_team_orders.py",
+        "exit_code": 0,
+        "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n",
+        "independent_repro": "all4 orders shortage rejected atomically"
+      }
+    },
+    {
+      "path": "creators/creator-1/09-full-match/01-match-configuration",
+      "tests": [
+        {
+          "path": "creators/creator-1/09-full-match/01-match-configuration/tests/test_match_config.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
+        }
+      ],
+      "id": "C1-09-01",
+      "criterion": "Все акторы, карта и правила принадлежат согласованному запуску и патчу.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/09-full-match/01-match-configuration/src/match_config.py",
+          "sha256": "3825fa2297af274889eb138fbe077e2e8b2e7b2e59f51ce80684b30a751b57d3",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/09-full-match/01-match-configuration/tests/test_match_config.py",
+          "sha256": "e72c65205483e7d11feca6133d67d31464f51489987fc358b8901113d5c3a513",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure version bind checks two lists of five; caller patch/content/version not independently engine-verified, full roster identities/map/version coherence absent.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/09-full-match/02-opponent-policy",
+      "tests": [
+        {
+          "path": "creators/creator-1/09-full-match/02-opponent-policy/tests/test_opponent.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n"
+        }
+      ],
+      "id": "C1-09-02",
+      "criterion": "Обе стороны действуют автономно; соперник не читает скрытую информацию.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/09-full-match/02-opponent-policy/src/opponent.py",
+          "sha256": "c7e2be54ef9d9d97592d20695ad472ae28b43a215711954605c81240367078f0",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/09-full-match/02-opponent-policy/tests/test_opponent.py",
+          "sha256": "4f0a919bf87e2eed9fa728b95d12f0a277a8b889a28350f3fb00b2fd5e1b33a8",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure opponent choices reject explicitly hidden/future flags; no independent native side/vision source, two autonomous engine teams not built.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/09-full-match/03-result-replay",
+      "tests": [
+        {
+          "path": "creators/creator-1/09-full-match/03-result-replay/tests/test_result_bundle.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nOK\n"
+        }
+      ],
+      "id": "C1-09-03",
+      "criterion": "Результат однозначен; ограниченный журнал не назван полным повтором Dota.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/09-full-match/03-result-replay/src/result_bundle.py",
+          "sha256": "801419e2812ec85939bd9285072392fa328cede8d5ea9b4386ac7323c0fd1570",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/09-full-match/03-result-replay/tests/test_result_bundle.py",
+          "sha256": "467d29bd99de507baaf2d9ada9a8880d331b384d7c9e9eef9544545098b3b2b5",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual pure limited result bundle/restore passed supplied endings; no real full-match winner/replay engine source. Bundles store supplied mutable nested records and remain local.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/10-reliability/01-saves-versions",
+      "tests": [
+        {
+          "path": "creators/creator-1/10-reliability/01-saves-versions/tests/test_save_compat.py",
+          "exit_code": 0,
+          "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.011s\n\nOK\n"
+        }
+      ],
+      "id": "C1-10-01",
+      "criterion": "Совместимые данные восстанавливаются, остальные отклоняются без порчи текущих.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/10-reliability/01-saves-versions/src/save_compat.py",
+          "sha256": "79600298d6da3b3b03de499fefa6372aa419af62a616b1ddf0236d60f131fcf7",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/10-reliability/01-saves-versions/tests/test_save_compat.py",
+          "sha256": "6ce8a1816536a0b2c46fa3068d7e5b74daca0465f92953e1eddfba3d40aa6f07",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual save/load nominal compatibility tests passed; returned nested payload aliases original, contradicts fresh-structures guarantee and blocks handoff pending fix. No disk/runtime persistence. Independent regrade: original repro no longer reproduces; actual changed tests pass. No native claim.",
+      "findings": [
+        {
+          "priority": "P2",
+          "file": "src/save_compat.py",
+          "line": 29,
+          "repro": "x={'nested':[]}; restored=load_state(save_state(x))[0]; restored['payload']['nested'].append('mutation') mutates x",
+          "action": "Deep-copy nested payload at save/load boundary; regress mutations in all directions.",
+          "status": "resolved",
+          "resolution": "save/load nested independent copies PASS"
+        }
+      ],
+      "regrade": {
+        "test": "creators/creator-1/10-reliability/01-saves-versions/tests/test_save_compat.py",
+        "exit_code": 0,
+        "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n",
+        "independent_repro": "save/load nested independent copies PASS"
+      }
+    },
+    {
+      "path": "creators/creator-1/10-reliability/02-diagnostics",
+      "tests": [
+        {
+          "path": "creators/creator-1/10-reliability/02-diagnostics/tests/test_diag_report.py",
+          "exit_code": 0,
+          "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nOK\n"
+        }
+      ],
+      "id": "C1-10-02",
+      "criterion": "Отчёт позволяет повторить сбой и не содержит токенов или полного окружения.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/10-reliability/02-diagnostics/src/diag_report.py",
+          "sha256": "7ec540a8cc4815c3f7b2cbda785b782c27670ee62ac399f738f6bd42db9df805",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/10-reliability/02-diagnostics/tests/test_diag_report.py",
+          "sha256": "e0457643ac97d5f216d98baae5f5050e999ee654bbf88dc3d5063709863315da",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual diagnostic allowlist/forbidden-hint gate tests passed; minimal pure reports not telemetry system; string-hint screening cannot prove all possible secret values absent.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/10-reliability/03-performance",
+      "tests": [
+        {
+          "path": "creators/creator-1/10-reliability/03-performance/tests/test_performance_note.py",
+          "exit_code": 0,
+          "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.009s\n\nOK\n"
+        }
+      ],
+      "id": "C1-10-03",
+      "criterion": "Есть сравнимые измерения; облачная оценка не выдана за производительность Dota.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/10-reliability/03-performance/tests/test_performance_note.py",
+          "sha256": "b6d89edd5ca5fb10fe4f8f151a126d13ccf33fcf4947d81601e31711e7240ce4",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Documentation/marker tests only, no profiler/runtime measurements; cloud figures not native frame/tick benchmark or bottleneck proof.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts",
+      "tests": [
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_coach_scene.py",
+          "exit_code": 0,
+          "output": "status=rejected reason=invalid_request game=100 wall=1\nDCCOACH TEST lifecycle kind=kill status=rejected reason=unsupported_version game=100 wall=1\nDCCOACH TEST lifecycle kind=kill status=rejected reason=invalid_request game=100 wall=1\nDCCOACH TEST lifecycle kind=kill status=rejected reason=invalid_request game=100 wall=1\nDCCOACH TEST lifecycle kind=kill status=unsupported reason=capability_unavailable game=100 wall=1\nDCCOACH TEST lifecycle kind=respawn status=unsupported reason=capability_unavailable game=100 wall=1\nDCMOVE activated filter=true synthetic=true\nDCCOACH TEST lifecycle kind=kill status=rejected reason=invalid_request game=100 wall=1\nDCCOACH TEST lifecycle kind=pause status=unsupported reason=capability_unavailable game=100 wall=1\nDCMOVE activated filter=true synthetic=true\nDCCOACH journal seq=1 game=100 transition=state mode=INACTIVE\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCCOACH decision source=ai synthetic=true revision=1 seq=2\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=100\nDCCOACH journal seq=3 game=100 transition=ai_resumed mode=AI\nDCMOVE state mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=100\nDCCOACH decision source=ai synthetic=true revision=2 seq=4\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=101\nDCCOACH journal seq=5 game=101 transition=state mode=AI\nDCMOVE state mode=AI transition=state reason=none generation=1 epoch=0 revision=3 remaining=0 ai=2 manual=0 game=101\nDCMOVE activated filter=true synthetic=true\nDCCOACH journal seq=1 game=100 transition=state mode=INACTIVE\nDCMOVE state mode=INACTIVE transition=state reason=none generation=1 epoch=0 revision=1 remaining=0 ai=0 manual=0 game=100\nDCCOACH decision source=ai synthetic=true revision=1 seq=2\nDCMOVE order=1 entity=42 generation=1 x=0 y=0 game=100\nDCCOACH journal seq=3 game=100 transition=ai_resumed mode=AI\nDCMOVE state mode=AI transition=ai_resumed reason=none generation=1 epoch=0 revision=2 remaining=0 ai=1 manual=0 game=100\nDCMOVE order=4 entity=42 generation=1 x=0 y=0 game=100\nDCCOACH journal seq=4 game=100 transition=granted mode=MANUAL\nDCMOVE state mode=MANUAL transition=granted reason=none generation=1 epoch=1 revision=3 remaining=5 ai=1 manual=0 game=100\nDCCOACH journal seq=5 game=102 transition=state mode=MANUAL\nDCMOVE state mode=MANUAL transition=state reason=none generation=1 epoch=1 revision=4 remaining=3 ai=1 manual=0 game=102\nDCMOVE activated filter=true synthetic=true\nDCCOACH roster status=confirmed revision=1 reason=none synthetic=1\nDCMOVE activated filter=true synthetic=true\nDCCOACH roster status=confirmed revision=1 reason=none synthetic=1\nDCCOACH roster status=rejected revision=2 reason=invalid_request synthetic=1\nDCCOACH roster status=rejected revision=3 reason=unsupported_version synthetic=1\n.........\n----------------------------------------------------------------------\nRan 9 tests in 0.055s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_command_shapes.py",
+          "exit_code": 0,
+          "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_lua_execution.py",
+          "exit_code": 0,
+          "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.006s\n\nOK\n"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_ui_contracts.py",
+          "exit_code": 0,
+          "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.195s\n\nOK\n"
+        }
+      ],
+      "id": "C1-11-01",
+      "criterion": "Интерфейс отражает сервер; старый ответ не возвращает прежний режим.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/src/scripts/vscripts/coach_scene_game_mode.lua",
+          "sha256": "136baf329b728dd203afa8e70c5230ac8be84635f3e8ba39c1dd817a83bc4d0e",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_coach_scene.py",
+          "sha256": "fabfa97de777b7fa66033f3f005d0890caeddf1b80debf79c4079dd5a08bc673",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_command_shapes.py",
+          "sha256": "6f2a1e48f4a7d51de4d27757a5eb9d8d23520ec9b8808b0016ad3a4b6844d870",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_lua_execution.py",
+          "sha256": "c4be06e9cad71588fd06d96e39cdfdd54640f7cd6d58b82771be3ffcdf82fedd",
+          "kind": "test"
+        },
+        {
+          "path": "creators/creator-1/11-integration/01-ui-contracts/tests/test_ui_contracts.py",
+          "sha256": "d49890eb3aecf41c43d0c814bdf8941c3310108ba35832f3d69cd830c423d21d",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual Lua coach wrapper requires observation/policy/arbiter/event_log/manual native sources; once-only hooks and sender-first roster guarded. Current mock Lua tests passed; new native compile/run not yet claimed.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/11-integration/02-voice-commands",
+      "tests": [
+        {
+          "path": "creators/creator-1/11-integration/02-voice-commands/tests/test_voice_gate.py",
+          "exit_code": 0,
+          "output": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.008s\n\nOK\n"
+        }
+      ],
+      "id": "C1-11-02",
+      "criterion": "Настоящая речь меняет поведение, ошибки не создают произвольный приказ.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/11-integration/02-voice-commands/src/voice_gate.py",
+          "sha256": "f424484eadf27bbc2c62e6d580190ce320a15141637b7ec4438774bb042a08c7",
+          "kind": "source"
+        },
+        {
+          "path": "creators/creator-1/11-integration/02-voice-commands/tests/test_voice_gate.py",
+          "sha256": "9cce17dec772aa4f660f2cab099d2db3f531d0155dfff871d0bbfae79ac27a8c",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Actual voice_gate structured exact schema/source coach/origin voice, MANUAL fail-closed and nonmutating preliminary gate passed; no ASR/audio/native orders.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/11-integration/03-joint-acceptance",
+      "tests": [
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/tests/test_acceptance_split.py",
+          "exit_code": 0,
+          "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.031s\n\nOK\n"
+        }
+      ],
+      "id": "C1-11-03",
+      "criterion": "Полная цепочка выполнена в Dota; ограничения модели и клиента записаны.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/11-integration/03-joint-acceptance/tests/test_acceptance_split.py",
+          "sha256": "5520029f9da3e5f90d3cb9160310d2a6a1caa7181c7e4d7dc06be4be8f6b5088",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Acceptance-split doc tests preserve incomplete full-chain scope; no actual5x5/preparation/voice/manual/postmatch joint acceptance.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/12-release/01-source-rights",
+      "tests": [
+        {
+          "path": "creators/creator-1/12-release/01-source-rights/tests/test_rights_register.py",
+          "exit_code": 0,
+          "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.006s\n\nOK\n"
+        }
+      ],
+      "id": "C1-12-01",
+      "criterion": "Ни доступность файла, ни кастомка не объявлены лицензией на отдельную игру.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/12-release/01-source-rights/tests/test_rights_register.py",
+          "sha256": "b18d8016d11f7b8936ef8978c0b75f6d9f26246ba21d57d0206145870fe6553d",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Rights register/doc guards preserve unverified licence and primary-source access limits; technical review is not legal opinion or Valve permission. Current registry independently hash/size checked; rights_not_assessed preserved. Official SSA/requirements were read by author but no licence approval inferred.",
+      "findings": [],
+      "current_registry_review": {
+        "path": "creators/creator-1/12-release/01-source-rights/reports/current-material-register-2026-10-14.json",
+        "entries": 164,
+        "hash_size_mismatches": [],
+        "scope": "technical inventory reviewed; official-source reading reported by author, not legal release permission",
+        "sha256": "ee7c3b5d16dea583f8da19e9405800571d79989ec0157e31912f4e9f49a6e037"
+      }
+    },
+    {
+      "path": "creators/creator-1/12-release/02-valve-demo",
+      "tests": [
+        {
+          "path": "creators/creator-1/12-release/02-valve-demo/tests/test_demo_guards.py",
+          "exit_code": 0,
+          "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.026s\n\nOK\n"
+        }
+      ],
+      "id": "C1-12-02",
+      "criterion": "Пакет конкретен и не утверждает одобрение; отправка отдельно авторизуется.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/12-release/02-valve-demo/tests/test_demo_guards.py",
+          "sha256": "191397645adc83ca88ede27d10f8ac7363c2687ec4b13dd4a1411f8eb1fb51fe",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Unsent proposal/demo guards distinguish concept and implementation; ready complete demo packet/Valve approval not established.",
+      "findings": []
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package",
+      "tests": [
+        {
+          "path": "creators/creator-1/12-release/03-release-package/tests/test_release_guards.py",
+          "exit_code": 0,
+          "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.030s\n\nOK\n"
+        }
+      ],
+      "id": "C1-12-03",
+      "criterion": "Выпуск имеет техническую проверку и применимые права; перенос вне Dota отдельно разрешён.",
+      "source_test_inventory": [
+        {
+          "path": "creators/creator-1/12-release/03-release-package/tests/test_release_guards.py",
+          "sha256": "6a27f5d2a26d88446ecd77e3fcafaa4ebb70ac286bef45d6682ea03747963e89",
+          "kind": "test"
+        }
+      ],
+      "grade": "reviewed_scoped",
+      "review_completed": true,
+      "functional_acceptance": false,
+      "scope": "Release guards/docs retain missing applicable rights/install acceptance; source tests are not publication, Workshop approval or independent-product permission.",
+      "findings": []
+    }
+  ],
+  "review_scope": "independent technical peer review only; no native run; historical reports separated",
+  "python": "C:/Users/Dagda/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "pythonpath": "build/dota_coach/c1-review-lua-20261013/deps;build/python-deps",
+  "reviewed_scoped_count": 36,
+  "changes_required_count": 0,
+  "regrade_3_findings": [
+    "C1-08-02 wrong kinds refused; correct pools regression PASS OK",
+    "C1-08-03 all4 orders shortage rejected atomically OK",
+    "C1-10-01 save/load nested independent copies PASS OK"
+  ]
+}

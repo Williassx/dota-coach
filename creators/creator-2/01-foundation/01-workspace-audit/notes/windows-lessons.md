@@ -510,3 +510,18 @@
 Длинные raw logs остаются локально; в библиотеке — краткая причина, действие,
 критерий повторной проверки и ссылка. Поручение/файлы/непроведённые шаги остаются
 в [журнале действий](../../../00-action-log/README.md).
+
+
+## 45. Автономный аудит требует исполнения и отдельной проверки каждого утверждения
+
+- **Действие:** frozen inventory 1180 tracked files/72 tasks; исправление переноса C1 восстановило старый пункт и denominator, не новое выполнение. Независимый C2 обзор обнаружил смешение ability/item, конфликт целей команды и alias вложенного save; реальные RED→GREEN исправлены в C1.
+- **Причина:** тесты, повторяющие happy path, не проверяли границы данных; технический обзор не равен функциональной приёмке. Native R1 прибыл до expiry при distance1200 — это отрицательный результат конкретного TEST ожидания, не неисправность lease.
+- **Изменение подхода:** read-only autonomous_progress проверяет новые original action indices и peer/evidence paths; actual imports/Lua executions вместо параллельной модели. TEST distance1800 дал expiry после паузы gameDelta0; запись приказа различается с engine completion.
+- **Проверка:** независимые 17 regression PASS; [native scene](../../../11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md), R2 12 API phases/10 actual frames; strict source verified=false при28 skipped.
+- **Следующий раз:** подключать bounded capture сразу после Launch: запоздалый normal UI2 capture пропустил hero selection и не доказал AI readiness; отрицательный запуск сохранён, собственный PID завершён. Regex чисел разбирать построчно через\S+, не [^ ]+ через весь console. Невидимая Sync-кнопка требует actual fresh frame, JS API успех не доказывает видимость.
+
+
+Дополнение к45: actual delta проверка обнаружила ложный action_meaning_changed для исходной четырёхсловной строки с добавленной ссылкой. RED8:1fail; сравнение сохранённого префикса теперь использует фактическую длину исходных min(6,words), изменённые исходные слова по-прежнему отклоняются. GREEN8PASS, independent regrade C1; не меняет baseline/denominator/evidence requirement. Логи build/dota_coach/progress-short-action-{red,green}-20261014.log.
+
+
+Дополнение к45: git diff --check с transient core.autocrlf=false трактовал CRLF как trailing whitespace и дал огромный шум, хотя нормальная Git-проверка ранее проходила. Не переписывать source bytes/нативные receipts ради inspection config. Повтор с core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol и обычным autocrlf далexit0; длинный вывод сохранять вbuildlog.

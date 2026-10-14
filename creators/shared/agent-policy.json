@@ -23,7 +23,15 @@
     "during_each_subtask": false,
     "extra_critics": "only_for_unresolved_specific_findings_or_explicit_user_request",
     "human_second_owner_required": true,
-    "ai_critic_is_not_human_second_owner": true
+    "ai_critic_is_not_human_second_owner": true,
+    "human_second_owner_scope": "product_acceptance_legal_rights_external_release",
+    "independent_ai_technical_peer_review": {
+      "authorised_by_user": "2026-10-13",
+      "different_creator_required": true,
+      "separate_executor_required": true,
+      "requires_evidence_and_findings": true,
+      "does_not_confirm_native_data_or_rights": true
+    }
   },
   "context": {
     "default_fork_turns": "none",

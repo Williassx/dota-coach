@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "scope": "early limited internal prototype review excerpt",
+  "sent": false,
+  "public_release": false,
+  "engine_assets_included": false,
+  "rights": "not_assessed",
+  "normal_source_outputs": 15,
+  "test_source_outputs": 18,
+  "archive": "build/dota_coach/coach-review-packet-final3-20261014/review-packet.zip",
+  "archive_sha256": "aa81ccc532fcecfb488e9d4ba79acb3cae3adb6183dfd893e7d091f93f9e4c68",
+  "archive_bytes": 10799266,
+  "members": [
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/src/scripts/vscripts/event_log.lua",
+      "bytes": 3498,
+      "sha256": "96f8bd9a1416f9ed97c8ef49745f8a03b439837965626f9ccdd5ad72fcfc7ce8",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/02-runtime/03-time-events/tests/01-native-lifecycle/coach_scene_fixture.lua",
+      "bytes": 4092,
+      "sha256": "9da6244c4ee3bab50d290112e416d73ee9982a2e8eca1a3d3ec804db7b226501",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/01-observation/src/scripts/vscripts/observation.lua",
+      "bytes": 2218,
+      "sha256": "9f9b3e275454859ec903aac7376489fc9aa6a939d0ea5a44865a415232ea25ba",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/02-synthetic-policy/src/scripts/vscripts/synthetic_policy.lua",
+      "bytes": 1634,
+      "sha256": "afa22b0b6a0fc8a8aa93348292749ced535c7f13896832beab34faae20f0b5de",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/03-ai-baseline/03-order-arbiter/src/scripts/vscripts/order_arbiter.lua",
+      "bytes": 2155,
+      "sha256": "704e2b1a16246a99eeb68c2ba8a5b990deccd4350c797a688816c026886c1900",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_controller.lua",
+      "bytes": 13983,
+      "sha256": "d812056fa18d99fba30552e0aa9d57f625245d9fe905d1304dac3a483574d674",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/04-intervention/01-manual-actions/src/scripts/vscripts/manual_move_game_mode.lua",
+      "bytes": 7945,
+      "sha256": "fbe2a0de05900456dc7964cbf755a15925ec14e457bb8ec1a071580eebf159f4",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/07-coach-preparation/01-roster-roles/src/scripts/vscripts/roster_confirmation.lua",
+      "bytes": 2829,
+      "sha256": "32ae6561f348384b22a5d866d90adadeb04f18c5b26bf7ecacdd8b8c094cb1d5",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/11-integration/01-ui-contracts/src/scripts/vscripts/coach_scene_game_mode.lua",
+      "bytes": 5368,
+      "sha256": "136baf329b728dd203afa8e70c5230ac8be84635f3e8ba39c1dd817a83bc4d0e",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/12-release/02-valve-demo/notes/rights-requests-2026-10-14.md",
+      "bytes": 6763,
+      "sha256": "f26b559c1ac30efc38fcf3b4f2c91dbe743783ee33a576e35bd3d9ec4cac474d",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package/reports/technical-packet-2026-10-14.md",
+      "bytes": 3012,
+      "sha256": "fd97c056915c4f9462b70d2934735204aa71f237049355810a8e48203ec6be9f",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-1/12-release/03-release-package/tools/build_review_packet.py",
+      "bytes": 5730,
+      "sha256": "a26f98aee45798438aeeac2715288d223fbaddec8f387e4d475117bda0183d10",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/01-foundation/02-panorama-capability/tools/build_probe_bundle.py",
+      "bytes": 20146,
+      "sha256": "99ee71a7c0044f00e04138e525471473f39901953e0bc2927802b7ca5747e12d",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/layout/custom_game/manual_move.xml",
+      "bytes": 1437,
+      "sha256": "df10d10bfcc164153c0698ac8f7a7e066adf91983bde4824e834b20baefea450",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_panel.js",
+      "bytes": 6545,
+      "sha256": "d06c6551586ea04042fd971b7f6996a081912ec8f6494617e61f66cbcfb55554",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/scripts/custom_game/manual_move_state.js",
+      "bytes": 6418,
+      "sha256": "514824f2d52de820d3889ff3f4cf017e1b3647094b126a4502d0cd47350a9a01",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/05-intervention-ui/03-return-feedback/src/panorama/styles/custom_game/manual_move.css",
+      "bytes": 806,
+      "sha256": "36eb15d1eb61713aec7d6fb2cf5e16548b106c91bbbd13a13b30b5232bcfe594",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/01-ui-binding/src/panorama/scripts/custom_game/server_roster_panel.js",
+      "bytes": 6395,
+      "sha256": "26a83f962669b71867d0e4857014db2911526edb7f345b37a59fd07674724465",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/02-addon-packaging/tests/test_coach_scene_bundle.py",
+      "bytes": 8876,
+      "sha256": "eb470c76b951d204d5c5a0ca528d5e13864c548f48a0956e450db19dcd2c8cb9",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/02-addon-packaging/tools/build_coach_scene.py",
+      "bytes": 11734,
+      "sha256": "51c851a52217e7b1cf39ef12c75b5c23e5cac9584fb762b702bddd8074ca5cac",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-arrived_return-2026-10-14.png",
+      "bytes": 807951,
+      "sha256": "ab1261a467aeb69e3b7201446dfa60701af3be97af77db813e3874aaff560da7",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-cancelled_return-2026-10-14.png",
+      "bytes": 805011,
+      "sha256": "a6db46fff64c190b352606ce4308d6ae6c89c089407545aa5c09bc68d213aff2",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-dead-2026-10-14.png",
+      "bytes": 771219,
+      "sha256": "8f484a010c72abde1d8e0d653ae9102e6009f1917db73f25e3b57a30c5218cfc",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-expired_return-2026-10-14.png",
+      "bytes": 833817,
+      "sha256": "5e2351cc52c435dc947dc30c3c5ebd4d5d7e49622472af9e3ab14dbfccba494c",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-manual_moving-2026-10-14.png",
+      "bytes": 804022,
+      "sha256": "1a91f1d59979bc4bee916ef9a4d547918be4c0a471ea8c0336b886193bff8093",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-paused-2026-10-14.png",
+      "bytes": 1100746,
+      "sha256": "2f172e196944cf96e826634173b4f6b21034825158aca460720a45ef6ee70a84",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-ready-2026-10-14.png",
+      "bytes": 1123474,
+      "sha256": "980f49d72c654922c0219dcf58928fb0f3e80bf69a89c86d4ac0257a48f3b3b5",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-rebound-2026-10-14.png",
+      "bytes": 1113665,
+      "sha256": "bec95e900e62a7cb6c23651463fdad6820e5acc7699e1eb80898cd2300f60d7f",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-reloaded-2026-10-14.png",
+      "bytes": 1112867,
+      "sha256": "45731fd59f9d74bbdc6b8edf27b402f8fb8a968de92a36fdb516ed0307c7a464",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-r2-stale_rejected-2026-10-14.png",
+      "bytes": 1116427,
+      "sha256": "1544b8468dc3bc74f2e2e60388b8acd9e1bb14c93c2674c22756873eeb6fb2fb",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.json",
+      "bytes": 208486,
+      "sha256": "b1106f764b8083e8c785c4cc3ef62c9db97496363950f36c7ce1cb0db19c661f",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-scene-2026-10-14.md",
+      "bytes": 6395,
+      "sha256": "7e1ae60fa4265abb395975cc921cd08e59c704bd70157e1ef4334b0922c892fb",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/reports/native-coach-ui3-ready-2026-10-14.png",
+      "bytes": 1128570,
+      "sha256": "26cf7b3703f8a2e43d7bc478fb1740f7708259669a7e75ae17b92e0410076bcc",
+      "purpose": "native-proof",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/11-integration/03-end-to-end/tests/01-native-coach-scene/fixture.js",
+      "bytes": 6950,
+      "sha256": "b5ed3d42876eeeb3c0c8f28f9e3953965c61db28b6f740c4d6a9a4f509d6208f",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/12-release/02-valve-presentation/notes/prototype-packet-2026-10-14.md",
+      "bytes": 7584,
+      "sha256": "9b15c8715fa20b2a5fbc846ca334e4e82e372eb113e79879814b91cc7655f49c",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "creators/creator-2/12-release/03-release-guide/notes/prototype-local-guide-2026-10-14.md",
+      "bytes": 7047,
+      "sha256": "32dde94011dc12ab7551d49535b3945c39ac8f49795898c4624b9681a270c790",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "docs/legal/initial-review.md",
+      "bytes": 11314,
+      "sha256": "ba75b87f51e8466bb7c30fcc92384f0cdde3a161d3ac2b0c723f858446f91bbc",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    },
+    {
+      "path": "docs/legal/plan.md",
+      "bytes": 10209,
+      "sha256": "4a2e0da73b46eacaf809a4f9a27a8c0379a40c93641ef4aa17c210a11babf3a2",
+      "purpose": "project-source-or-document",
+      "rights": "not_assessed"
+    }
+  ]
+}

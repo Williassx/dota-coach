@@ -16,3 +16,7 @@ regression диагностики и фактический full verified=false.
 
 [Рассмотрение C1](creator-1-review-2026-10-13.md) — переданные исходники,
 Lua/voice исправления и 85-наборная регрессия с открытой native приёмкой.
+
+- [Сопоставление буквального критерия и открытых проверок, 14 октября](autonomous-acceptance-2026-10-14.md).
+
+[Native coach scene](native-coach-scene-2026-10-14.md) · [JSON](native-coach-scene-2026-10-14.json): actualserverclock/life/roster proof, notphysical/fullmatch.

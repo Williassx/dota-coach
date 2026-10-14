@@ -12,3 +12,5 @@
 [Diagnostic probe v1 candidate](diagnostic-probe-v1.md) — отдельный рассмотренный технический кандидат для TEST native ping, не утверждённый контракт игровых команд. Human owner/common game version открыты.
 
 [Manual move v1](manual-move-v1.md) — пользователь согласовал ограниченный игровой сценарий одного TEST/synthetic героя; native server/consumer реализованы отдельно. Полный 5×5 контракт и human second-owner review открыты.
+
+[Preparation roster v1](preparation-roster-v1.md) — read-only server confirmation пяти TEST assignments для отдельной coach scene; не старт матча и не submit client draft.

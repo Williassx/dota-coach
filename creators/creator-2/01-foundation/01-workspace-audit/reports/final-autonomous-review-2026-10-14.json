@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "reviewer": "independent_final_critic",
+  "base_sha": "b267b5fb844f385ffc37be448c15cf841800089c",
+  "head_scope": "working_tree_before_final_commit",
+  "technical_only": true,
+  "source_index_head_mutated": false,
+  "private_files_inspected": false,
+  "subagents_used": false,
+  "findings": [],
+  "assessment": "no_P1_P2_findings_in_reviewed_limited_implementation",
+  "progress": {
+    "verified": true,
+    "target_achieved": true,
+    "ledger_records": 138,
+    "creator_1": {"done": 168, "total": 182, "new": 55, "reopened": 0},
+    "creator_2": {"done": 139, "total": 213, "new": 83, "reopened": 0}
+  },
+  "focused_test_results": {"node_panels": 27, "lua_scene_fixture": 9, "lua_roster_validator": 5, "all_exit_zero": true},
+  "latest_full_source_receipt": {
+    "path": "build/dota_coach/source-checks-20261014T063405Z-e89689/source-checks.json",
+    "suites": 89,
+    "passed": 1391,
+    "skipped": 28,
+    "incomplete_suites": 6,
+    "error_suites": 0,
+    "all_process_exit_zero": true,
+    "strict_verified": false,
+    "rerun_by_final_reviewer": false
+  },
+  "packet": {
+    "verified": true,
+    "path": "build/dota_coach/coach-review-packet-final3-20261014/review-packet.zip",
+    "members": 38,
+    "sha256": "aa81ccc532fcecfb488e9d4ba79acb3cae3adb6183dfd893e7d091f93f9e4c68",
+    "sent": false,
+    "public_release": false
+  },
+  "materials": {"entries": 165, "hash_drift": 0, "rights_assessed": false},
+  "native_evidence": {
+    "build_id": "25894101",
+    "frames": 14,
+    "resolution": [1280, 720],
+    "frame_hash_drift": 0,
+    "r2_api_phases_passed": 12,
+    "normal_source_outputs": 15,
+    "test_source_outputs": 18,
+    "normal_compiled_outputs": 7,
+    "test_compiled_outputs": 9,
+    "normal_fixture_paths_absent": true,
+    "normal_source_flags_false": true,
+    "new_native_launch_by_reviewer": false
+  },
+  "declined_judgments": [
+    {"behavior": "full_5x5_game_general_transition_and_commands", "reason": "one_owned_TEST_hero_and_readonly_roster_only"},
+    {"behavior": "physical_input_hittest_and_new_user_comprehension", "reason": "programmatic_API_evidence_only"},
+    {"behavior": "real_player_model_fidelity", "reason": "fixed_TEST_profiles_no_provenance_or_heldout_validation"},
+    {"behavior": "real_speech_ASR_voice_bridge", "reason": "no_positive_end_to_end_real_speech_evidence"},
+    {"behavior": "native_map_visibility_patch_authorization", "reason": "template_map_and_own_point_do_not_prove_opponent_visibility"},
+    {"behavior": "strict_5_000_second_stop_SLA", "reason": "observed_5_0333_seconds_next_Think_not_strict_deadline"},
+    {"behavior": "all_multiplayer_disconnect_reload_replacement_races", "reason": "named_source_and_native_one_hero_cases_only"},
+    {"behavior": "autonomous_attack_economy_general_team_scheduler", "reason": "integrated_synthetic_move_policy_only"},
+    {"behavior": "full_product_performance_save_replay", "reason": "pure_modules_and_parsed_journal_subset_not_full_match"},
+    {"behavior": "third_party_install_distribution_Valve_rights", "reason": "internal_excerpt_unsent_requests_and_rights_not_assessed"},
+    {"behavior": "28_unverified_Windows_cases", "reason": "known_skips_preserved_incomplete_strictfalse"},
+    {"behavior": "future_game_vision_implementation", "reason": "discussion_only_no_new_mechanics_authorized"}
+  ],
+  "token_usage": null,
+  "cost": null
+}

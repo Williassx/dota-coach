@@ -15,6 +15,25 @@ def load_fixture(name):
 
 
 class SaveCompatTests(unittest.TestCase):
+    def test_save_owns_nested_payload_independent_from_original(self):
+        payload = {"roster": [{"orders": ["move"]}]}
+        blob = save_state(payload)
+        payload["roster"][0]["orders"].append("attack")
+        self.assertEqual(blob["payload"], {"roster": [{"orders": ["move"]}]})
+        blob["payload"]["roster"][0]["orders"].append("farm")
+        self.assertEqual(payload["roster"][0]["orders"], ["move", "attack"])
+
+    def test_load_owns_nested_payload_independent_from_saved_blob(self):
+        blob = {"save_version": 1, "payload": {"orders": [["move"]]}}
+        current = {"live": {"orders": []}}
+        restored, reason = load_state(blob, current=current)
+        self.assertEqual(reason, "ok")
+        restored["payload"]["orders"][0].append("attack")
+        self.assertEqual(blob["payload"], {"orders": [["move"]]})
+        blob["payload"]["orders"][0].append("farm")
+        self.assertEqual(restored["payload"], {"orders": [["move", "attack"]]})
+        self.assertEqual(current, {"live": {"orders": []}})
+
     def test_roundtrip_current(self):
         blob = save_state({"rosters": 2})
         restored, reason = load_state(blob)

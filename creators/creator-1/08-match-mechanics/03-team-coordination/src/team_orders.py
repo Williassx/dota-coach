@@ -18,12 +18,12 @@ def distribute(order, roles, targets, policies):
     for addr in roles:
         if addr not in policies:
             return None, f"unreachable:{addr}"
-    if len(set(targets)) != len(targets):
+    if len(set(targets)) != len(targets) or len(roles) > len(targets):
         return None, "resource-conflict"
     assignments = {}
     for i, addr in enumerate(roles):
         allowed = policies[addr]
-        pick = targets[i % len(targets)]
+        pick = targets[i]
         if pick not in allowed:
             return None, f"policy-refuses:{addr}:{pick}"
         assignments[addr] = {"order": order, "target": pick,

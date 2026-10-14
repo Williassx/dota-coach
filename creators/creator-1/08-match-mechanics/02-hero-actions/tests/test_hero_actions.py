@@ -17,6 +17,16 @@ def test_set():
 
 
 class HeroActionTests(unittest.TestCase):
+    def test_action_kind_cannot_borrow_other_capability_pool(self):
+        doc = {"patch": "test", "heroes": {"axe": {
+            "abilities": ["call"], "items": ["blink"]}}}
+        self.assertEqual(attempt(doc, "axe", "blink", "ability"),
+                         (False, "ability-unavailable"))
+        self.assertEqual(attempt(doc, "axe", "call", "item"),
+                         (False, "ability-unavailable"))
+        self.assertEqual(attempt(doc, "axe", "call", "ability"), (True, "ok"))
+        self.assertEqual(attempt(doc, "axe", "blink", "item"), (True, "ok"))
+
     def test_supported_lists_allowed(self):
         ok, reason = attempt(test_set(), "npc_dota_hero_crystal_maiden",
                              "crystal_nova", "ability")

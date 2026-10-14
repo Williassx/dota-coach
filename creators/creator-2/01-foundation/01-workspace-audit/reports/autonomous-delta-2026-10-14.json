@@ -1,0 +1,1171 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "target_achieved": true,
+  "creators": [
+    {
+      "creator": 1,
+      "baseline_done": 113,
+      "done": 168,
+      "total": 182,
+      "new": 55,
+      "reopened": 0,
+      "net_new": 55,
+      "required_new": 55,
+      "target_done": 168,
+      "target_achieved": true,
+      "new_actions": [
+        {
+          "task": "creators/creator-1/01-foundation/01-environment-audit/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/01-foundation/02-addon-capability/README.md",
+          "action": 4,
+          "label": "Проверить серверный приказ, событие Panorama и реальную передачу управления тому же герою: серверные факты получены (движение по координатам r1, атака до гибели цели r2); событие Panorama и передача управления остаются с C2-01-02/C1-01-03. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/01-foundation/02-addon-capability/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+          "action": 1,
+          "label": "Вместе с создателем 2 определить минимальную версию команд, акторов и серверных снимков; черновик предложения от создателя 1 готов — [notes/contract-review.md](notes/contract-review.md). Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+          "action": 2,
+          "label": "Закрепить отправителя из движка, ревизии и причины принятия/отказа в общем контракте. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+          "action": 3,
+          "label": "Проверить примеры повторной, чужой и устаревшей команды обоими отделами. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/01-foundation/03-command-contract/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/02-runtime/01-session-lifecycle/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/02-runtime/02-actor-binding/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/02-runtime/03-time-events/README.md",
+          "action": 1,
+          "label": "Использовать проверенное игровое время и явно определить поведение паузы; основание — [notes/event-format.md](notes/event-format.md) (спорный вопрос эксперимента: факт доступного игрового времени). Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/02-runtime/03-time-events/README.md",
+          "action": 3,
+          "label": "Проверить паузу, предел времени и порядок событий. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/02-runtime/03-time-events/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/03-ai-baseline/01-observation/README.md",
+          "action": 3,
+          "label": "Изменить скрытое состояние при одинаковом видимом входе и проверить выбор. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/03-ai-baseline/01-observation/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/03-ai-baseline/02-synthetic-policy/README.md",
+          "action": 3,
+          "label": "Проверить самостоятельные действия без тренера и понятную маркировку. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/03-ai-baseline/02-synthetic-policy/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/03-ai-baseline/03-order-arbiter/README.md",
+          "action": 1,
+          "label": "Определить источники и приоритеты приказов в рассмотренной спецификации. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/03-ai-baseline/03-order-arbiter/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+          "action": 1,
+          "label": "Согласовать подтверждённый сервером переход в MANUAL. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/04-intervention/02-return-ai/README.md",
+          "action": 3,
+          "label": "Проверить завершение, отмену и таймер минимум в трёх циклах. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/04-intervention/02-return-ai/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/04-intervention/03-lifecycle-guards/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/05-match-data/01-source-audit/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/05-match-data/02-import/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/05-match-data/03-replay-normalization/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/06-player-models/01-profiles/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/06-player-models/02-personal-policy/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/06-player-models/03-heldout-evaluation/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/07-coach-preparation/01-roster-roles/README.md",
+          "action": 3,
+          "label": "Передавать подтверждённый состав интерфейсу. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/07-coach-preparation/01-roster-roles/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/07-coach-preparation/02-tactics/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/07-coach-preparation/03-morale-trust/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/08-match-mechanics/01-farming-economy/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/08-match-mechanics/02-hero-actions/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/08-match-mechanics/03-team-coordination/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/09-full-match/01-match-configuration/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/09-full-match/02-opponent-policy/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/09-full-match/03-result-replay/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/10-reliability/01-saves-versions/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/10-reliability/02-diagnostics/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/10-reliability/03-performance/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+          "action": 1,
+          "label": "Сверить реализацию с единой версией общего контракта. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+          "action": 3,
+          "label": "Проверить показ принятия и реального результата. Выполнено14октября в ограниченной TEST/source спецификации; общий критерий и непроведённые случаи отдельно в отчёте. [Доказательства](../03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/11-integration/01-ui-contracts/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/11-integration/02-voice-commands/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/11-integration/03-joint-acceptance/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/12-release/01-source-rights/README.md",
+          "action": 1,
+          "label": "Вместе с ролями 161–172 составить реестр материалов и источников. Выполнено14октября: documentary/internal prototype scope, independent C2review; release rights и полный продукт открыты. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/12-release/01-source-rights/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+          "action": 1,
+          "label": "Подготовить демонстрацию и проверяемые результаты. Выполнено14октября: documentary/internal prototype scope, independent C2review; release rights и полный продукт открыты. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+          "action": 2,
+          "label": "Сформулировать отдельно запросы на кастомку и самостоятельный продукт. Выполнено14октября: documentary/internal prototype scope, independent C2review; release rights и полный продукт открыты. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+          "action": 3,
+          "label": "Сохранить пакет для рассмотрения, отправлять только по явному поручению. Выполнено14октября: documentary/internal prototype scope, independent C2review; release rights и полный продукт открыты. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/12-release/02-valve-demo/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-1/12-release/03-release-package/README.md",
+          "action": 2,
+          "label": "Проверить версии, установку и состав пакета. Выполнено14октября: documentary/internal prototype scope, independent C2review; release rights и полный продукт открыты. [Доказательства](../../11-integration/03-joint-acceptance/reports/c1-functional-supplement-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-1/12-release/03-release-package/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-2/01-foundation/01-workspace-audit/notes/c1-technical-review-2026-10-14.json)."
+        }
+      ],
+      "remaining_actions": [
+        {
+          "task": "creators/creator-1/04-intervention/01-manual-actions/README.md",
+          "action": 3,
+          "label": "Проверить реальный клик во время движения и атаки ИИ."
+        },
+        {
+          "task": "creators/creator-1/04-intervention/03-lifecycle-guards/README.md",
+          "action": 3,
+          "label": "Проверить поздний снаряд и событие заменённого ручного действия."
+        },
+        {
+          "task": "creators/creator-1/06-player-models/01-profiles/README.md",
+          "action": 1,
+          "label": "Выбрать первую роль, героя, патч и измеримый класс решений (ждёт импорта C1-05-02)."
+        },
+        {
+          "task": "creators/creator-1/08-match-mechanics/02-hero-actions/README.md",
+          "action": 1,
+          "label": "Выбрать небольшой поддерживаемый набор по фактическому патчу (патч не установлен — только TEST-предложение [tests/fixtures/supported-actions.json](tests/fixtures/supported-actions.json) с `patch: null`; гейт без подтверждённого патча блокирует)."
+        },
+        {
+          "task": "creators/creator-1/09-full-match/01-match-configuration/README.md",
+          "action": 3,
+          "label": "Проверить старт смешанного состава 5×5."
+        },
+        {
+          "task": "creators/creator-1/09-full-match/02-opponent-policy/README.md",
+          "action": 3,
+          "label": "Проверить автономный матч без тренера."
+        },
+        {
+          "task": "creators/creator-1/09-full-match/03-result-replay/README.md",
+          "action": 3,
+          "label": "Проверить новый матч и восстановление поддерживаемого разбора."
+        },
+        {
+          "task": "creators/creator-1/10-reliability/03-performance/README.md",
+          "action": 1,
+          "label": "Измерить серверные шаги и задержки на Windows с реальным матчем."
+        },
+        {
+          "task": "creators/creator-1/10-reliability/03-performance/README.md",
+          "action": 2,
+          "label": "Найти подтверждённое узкое место и изменить только его."
+        },
+        {
+          "task": "creators/creator-1/10-reliability/03-performance/README.md",
+          "action": 3,
+          "label": "Повторить тот же сценарий после изменения."
+        },
+        {
+          "task": "creators/creator-1/11-integration/03-joint-acceptance/README.md",
+          "action": 1,
+          "label": "Пройти состав, подготовку, голос, мышь, возврат и результат."
+        },
+        {
+          "task": "creators/creator-1/11-integration/03-joint-acceptance/README.md",
+          "action": 3,
+          "label": "Оба владельца рассматривают отчёт и назначают исправления."
+        },
+        {
+          "task": "creators/creator-1/12-release/03-release-package/README.md",
+          "action": 1,
+          "label": "Выбрать только подтверждённый способ распространения."
+        },
+        {
+          "task": "creators/creator-1/12-release/03-release-package/README.md",
+          "action": 3,
+          "label": "Совместно рассмотреть результаты и основание выпуска."
+        }
+      ]
+    },
+    {
+      "creator": 2,
+      "baseline_done": 56,
+      "done": 139,
+      "total": 213,
+      "new": 83,
+      "reopened": 0,
+      "net_new": 83,
+      "required_new": 64,
+      "target_done": 120,
+      "target_achieved": true,
+      "new_actions": [
+        {
+          "task": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+          "action": 3,
+          "label": "Согласовать с создателем 1 владение исходными и создаваемыми файлами. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/01-workspace-audit/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/02-panorama-capability/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/02-panorama-capability/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+          "action": 2,
+          "label": "Передать примеры сообщений создателю 1 для C1-01-03. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+          "action": 3,
+          "label": "Вместе проверить, что UI не устанавливает серверный режим сам. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/01-foundation/03-interface-contract/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/01-roster-cards/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/02-status-orders/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+          "action": 6,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+          "action": 7,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+          "action": 6,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+          "action": 7,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+          "action": 5,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+          "action": 6,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+          "action": 7,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+          "action": 1,
+          "label": "Показать ожидание разрешения и подтверждённый MANUAL. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+          "action": 2,
+          "label": "Разрешать ручной ввод только после ответа сервера. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+          "action": 3,
+          "label": "Проверить чужого/мёртвого героя и отказ. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/01-request-ack/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+          "action": 4,
+          "label": "Показать текущее действие и остаток времени. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+          "action": 6,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+          "action": 7,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+          "action": 3,
+          "label": "Проверить смерть, паузу и запоздалое состояние. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/06-voice/01-microphone-probe/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+          "action": 5,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+          "action": 5,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+          "action": 6,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+          "action": 7,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+          "action": 6,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+          "action": 7,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/01-assets/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/01-assets/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+          "action": 5,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+          "action": 5,
+          "label": "Сверить каналы событий с общим контрактом. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+          "action": 6,
+          "label": "Проверить поздний снимок, смену героя и старое подключение. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+          "action": 7,
+          "label": "Передать результаты создателю 1 для общей интеграции. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+          "action": 8,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/01-ui-binding/README.md",
+          "action": 9,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+          "action": 8,
+          "label": "После локального аудита согласовать manifest исходников и конечные game/content пути. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+          "action": 9,
+          "label": "Собирать отдельный создаваемый каталог, сохраняя оригиналы в папках авторов. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+          "action": 13,
+          "label": "Проверить полноту и отсутствие дублей серверных/UI исходников. Выполнено14октября в limited manual/roster scene; physical input/полная игра отдельно открыты. [Доказательства](../../01-foundation/01-workspace-audit/reports/c2-functional-closure-recommendations-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+          "action": 14,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/02-addon-packaging/README.md",
+          "action": 15,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+          "action": 5,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+          "action": 6,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/12-release/01-rights-display/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/12-release/01-rights-display/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+          "action": 2,
+          "label": "Отделить работающий результат от следующих обещаний. Early prototype packet рассмотрен independent C1; отправки и полного выпуска нет. [Доказательства](notes/prototype-packet-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+          "action": 3,
+          "label": "Передать пакет создателю 1 без самостоятельной отправки. Early prototype packet рассмотрен independent C1; отправки и полного выпуска нет. [Доказательства](notes/prototype-packet-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        },
+        {
+          "task": "creators/creator-2/12-release/03-release-guide/README.md",
+          "action": 4,
+          "label": "Сопоставить фактический результат с критерием ниже и записать непроведённые проверки. Сопоставление source/native и непроведённых сценариев оформлено14октября. [Доказательства](reports/autonomous-acceptance-2026-10-14.md)."
+        },
+        {
+          "task": "creators/creator-2/12-release/03-release-guide/README.md",
+          "action": 5,
+          "label": "Передать изменение второму создателю для проверки, затем обновить этот статус. Техническая передача и independent peer review14октября выполнены; функциональные ограничения сохранены. [Доказательства](../../../creator-1/11-integration/03-joint-acceptance/reports/c2-technical-review-2026-10-14.json)."
+        }
+      ],
+      "remaining_actions": [
+        {
+          "task": "creators/creator-2/02-coach-interface/02-status-orders/README.md",
+          "action": 2,
+          "label": "Добавить движение к контрольной точке и атаку тестовой цели в AI."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+          "action": 3,
+          "label": "Согласовать выбор героя, цели и запрос вмешательства."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+          "action": 4,
+          "label": "Передавать намерение без назначения себе права управления."
+        },
+        {
+          "task": "creators/creator-2/02-coach-interface/03-control-input/README.md",
+          "action": 5,
+          "label": "Проверить клики по карте и элементам панели."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+          "action": 3,
+          "label": "Определить карту доступного шаблона и совместимость с клиентом."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+          "action": 4,
+          "label": "Описать проходимость, координаты и объекты для интерфейса."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/01-map-audit/README.md",
+          "action": 5,
+          "label": "Отделить текущую карту от референса 7.40 в концепте."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+          "action": 2,
+          "label": "Подтвердить штатные средства камеры и маркеров в установленной Dota."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+          "action": 3,
+          "label": "Добавить позиционирование камеры и допустимые тренерские отметки."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/02-camera-overlays/README.md",
+          "action": 4,
+          "label": "Проверить масштабирование и совпадение целей с миром."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+          "action": 1,
+          "label": "Использовать серверное состояние допустимого обзора."
+        },
+        {
+          "task": "creators/creator-2/03-map-view/03-visibility-targets/README.md",
+          "action": 4,
+          "label": "Проверить эти случаи с настоящим источником наблюдений в Dota."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+          "action": 1,
+          "label": "Показать профили, охват и источник сведений."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+          "action": 4,
+          "label": "Проверить native экран и согласовать постоянное сохранение, если потребуется."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/01-team-picker/README.md",
+          "action": 5,
+          "label": "Передать черновик серверу на проверку."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+          "action": 1,
+          "label": "Показать поддерживаемые сочетания героя и роли."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+          "action": 2,
+          "label": "Проверить конфликты состава и неподдерживаемое назначение."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/02-hero-role-picker/README.md",
+          "action": 3,
+          "label": "Показать подтверждённый сервером состав."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+          "action": 1,
+          "label": "Разместить ограниченные варианты плана и разговора."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+          "action": 2,
+          "label": "Отделить игровые параметры морали от измеренных характеристик."
+        },
+        {
+          "task": "creators/creator-2/04-preparation-ui/03-tactics-morale/README.md",
+          "action": 3,
+          "label": "Показать выбранную подготовку и ответ сервера."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+          "action": 3,
+          "label": "Связать реальные клики с точкой или допустимой целью."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/02-mouse-targeting/README.md",
+          "action": 5,
+          "label": "Проверить второй клик и смену выделения."
+        },
+        {
+          "task": "creators/creator-2/05-intervention-ui/03-return-feedback/README.md",
+          "action": 2,
+          "label": "Показать отдельно успех, отмену, потерю цели и истечение времени."
+        },
+        {
+          "task": "creators/creator-2/06-voice/01-microphone-probe/README.md",
+          "action": 1,
+          "label": "Проверить поддерживаемый путь микрофона и связи с кастомкой."
+        },
+        {
+          "task": "creators/creator-2/06-voice/01-microphone-probe/README.md",
+          "action": 2,
+          "label": "Измерить реальный ввод на Windows, требования сети и ресурсов."
+        },
+        {
+          "task": "creators/creator-2/06-voice/02-recognition-parser/README.md",
+          "action": 2,
+          "label": "Преобразовать распознанный текст в общий контракт команды."
+        },
+        {
+          "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+          "action": 2,
+          "label": "Показать услышанное, адресата, принятие и результат."
+        },
+        {
+          "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+          "action": 3,
+          "label": "Подключить кнопочный/текстовый эквивалент к той же команде."
+        },
+        {
+          "task": "creators/creator-2/06-voice/03-voice-feedback/README.md",
+          "action": 4,
+          "label": "Проверить отказ микрофона, задержку и MANUAL."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+          "action": 1,
+          "label": "Собрать нижний ряд с игроком, героем, режимом и состоянием."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+          "action": 3,
+          "label": "Показать очереди покупок и текущие намерения по проверенному контракту."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/01-own-cards/README.md",
+          "action": 4,
+          "label": "Проверить выбор, смерть и слабый профиль."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+          "action": 3,
+          "label": "Показать только разрешённые данные соперника."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/02-opponent-cards/README.md",
+          "action": 5,
+          "label": "Проверить скрытого врага и доступный публичный состав."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+          "action": 3,
+          "label": "Собрать панель связи, приказов и журнал событий."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+          "action": 4,
+          "label": "Связать объяснение с принятием и наблюдаемым результатом."
+        },
+        {
+          "task": "creators/creator-2/07-match-screen/03-orders-timeline/README.md",
+          "action": 5,
+          "label": "Проверить частые события и актуальность выбранного адресата."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+          "action": 1,
+          "label": "Показать поддерживаемую последовательность событий и команд."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+          "action": 2,
+          "label": "Дать переход к связанному игроку и моменту."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/01-event-replay/README.md",
+          "action": 3,
+          "label": "Проверить пропуски и несовместимую версию."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+          "action": 1,
+          "label": "Показать охват героя/роли/патча и источник признаков."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+          "action": 2,
+          "label": "Разделить измеренное, оценённое и игровое."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/02-profile-evidence/README.md",
+          "action": 3,
+          "label": "Проверить слабый профиль и отсутствие наблюдений."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+          "action": 1,
+          "label": "Связать результат с командами и наблюдаемыми событиями."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+          "action": 2,
+          "label": "Показать ограничения причинных выводов."
+        },
+        {
+          "task": "creators/creator-2/08-analysis-ui/03-post-match/README.md",
+          "action": 3,
+          "label": "Проверить матч без приказов и прерванный матч."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/01-assets/README.md",
+          "action": 2,
+          "label": "Зафиксировать условия имён, портретов, голосов и знаков игроков."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/01-assets/README.md",
+          "action": 3,
+          "label": "Использовать только материалы с установленным основанием в пакете."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+          "action": 1,
+          "label": "Определить поддерживаемые разрешения и настройки интерфейса."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+          "action": 2,
+          "label": "Проверить размер карты, карточек и попадание кликов."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/02-settings-layout/README.md",
+          "action": 3,
+          "label": "Сохранить настройки через согласованный интерфейс."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+          "action": 1,
+          "label": "Сделать режимы различимыми текстом, а не только цветом."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+          "action": 2,
+          "label": "Проверить русский текст, длинные ники и горячие клавиши."
+        },
+        {
+          "task": "creators/creator-2/09-presentation/03-accessibility-localization/README.md",
+          "action": 3,
+          "label": "Проверить видимость отказов и управления без голоса."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+          "action": 2,
+          "label": "Описать только проверенные пути установки и запуска."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+          "action": 3,
+          "label": "Пройти инструкцию на согласованной Windows-среде."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/01-install-guide/README.md",
+          "action": 4,
+          "label": "Записать ограничения и действия пользователя в Tools."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+          "action": 1,
+          "label": "Подготовить задачи выбора, приказа и временного вмешательства."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+          "action": 2,
+          "label": "Провести плейтест с наблюдением фактических действий."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/02-user-scenarios/README.md",
+          "action": 3,
+          "label": "Отделить непонятный интерфейс от ошибки ИИ или данных."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+          "action": 1,
+          "label": "Приоритизировать подтверждённые проблемы плейтеста."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+          "action": 2,
+          "label": "Исправить их в исходном подпункте, сохраняя его ответственность."
+        },
+        {
+          "task": "creators/creator-2/10-user-testing/03-usability-fixes/README.md",
+          "action": 3,
+          "label": "Повторить только затронутые сценарии."
+        },
+        {
+          "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+          "action": 2,
+          "label": "Пройти состав, подготовку, приказы, мышь и итог с сервером."
+        },
+        {
+          "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+          "action": 3,
+          "label": "Проверить отказ голоса и читаемость режима."
+        },
+        {
+          "task": "creators/creator-2/11-integration/03-end-to-end/README.md",
+          "action": 4,
+          "label": "Передать фактический отчёт в совместную приёмку."
+        },
+        {
+          "task": "creators/creator-2/12-release/01-rights-display/README.md",
+          "action": 1,
+          "label": "Сверить реестр материалов с подтверждёнными основаниями."
+        },
+        {
+          "task": "creators/creator-2/12-release/01-rights-display/README.md",
+          "action": 2,
+          "label": "Подготовить необходимые подписи и уведомления."
+        },
+        {
+          "task": "creators/creator-2/12-release/01-rights-display/README.md",
+          "action": 3,
+          "label": "Оба владельца рассматривают тексты до публикации."
+        },
+        {
+          "task": "creators/creator-2/12-release/02-valve-presentation/README.md",
+          "action": 1,
+          "label": "Записать проверенную сцену и показать собственные механики."
+        },
+        {
+          "task": "creators/creator-2/12-release/03-release-guide/README.md",
+          "action": 1,
+          "label": "Описать только согласованный и правомерный способ запуска."
+        },
+        {
+          "task": "creators/creator-2/12-release/03-release-guide/README.md",
+          "action": 2,
+          "label": "Пройти пользовательскую установку и типичные ошибки."
+        },
+        {
+          "task": "creators/creator-2/12-release/03-release-guide/README.md",
+          "action": 3,
+          "label": "Сверить руководство и версии пакета обоими владельцами."
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "claim_scope": "checklist_delta_and_evidence_presence_not_game_readiness"
+}
