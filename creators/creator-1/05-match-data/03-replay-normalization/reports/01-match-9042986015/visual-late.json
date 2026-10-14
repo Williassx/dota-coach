@@ -1,0 +1,589 @@
+{
+  "schema_version": "c1-native-visual-late-observations-v2",
+  "date": "2026-10-14",
+  "match_id": "9042986015",
+  "status": "actual sparse late gameplay observed10:31–30:00; final1:50 still pending",
+  "source": {
+    "manifest_path": "build/dota_coach/replay-9042986015/overview-r4-v4/frames.json",
+    "records": 88,
+    "unique_hashes": 88,
+    "all_hashes_verified": true,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "physical_input_controlled": false,
+    "requested_timescale": 8,
+    "UI_timescale_label": "8x visible in inspected full frames",
+    "exact_simulation_rate_measured": false
+  },
+  "visual_inspection": {
+    "contacts": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "full_frame_indices": [
+      30,
+      32,
+      33,
+      38,
+      44,
+      45,
+      50,
+      53,
+      54,
+      56,
+      57,
+      60,
+      63,
+      64,
+      65,
+      67,
+      70,
+      73,
+      74,
+      75,
+      81,
+      87
+    ],
+    "selected_observation_count": 22,
+    "sparse_overview": true,
+    "approx_game_gap_seconds": 20,
+    "old_duplicate_history": {
+      "manifest_path": "build/dota_coach/replay-9042986015/overview-r4/frames.json",
+      "final_records": 88,
+      "unique_hashes": 1,
+      "all_hashes_verified": true,
+      "hash": "73ff4b7e3f1ff817eca3027e9756163a428e53e8a65327bfd6059a5bee4d5f4e",
+      "finding": "88identical result-screen frames; no gameplay coverage",
+      "earlier_review_snapshot": {
+        "manifest_path": "build/dota_coach/replay-9042986015/overview-r4/frames.json",
+        "checked_indices": [
+          0,
+          66
+        ],
+        "records_checked": 67,
+        "unique_hashes": 1,
+        "all_bytes_hashes_verified": true,
+        "hash": "73ff4b7e3f1ff817eca3027e9756163a428e53e8a65327bfd6059a5bee4d5f4e",
+        "utc_start": "2026-10-14T12:32:03.948Z",
+        "utc_end": "2026-10-14T12:35:21.953Z",
+        "requested_timescale": 8,
+        "requested_timescale_proven": false
+      },
+      "earlier_literal_result_observation": [
+        {
+          "id": "result-screen-01",
+          "source_frame_index": 55,
+          "game_clock": null,
+          "displayed_match_duration": "31:50",
+          "literal_observation": "Result screen displays Radiant victory36:12, All Pick, match9042986015. Storm Spirit card label v o i d shows5/4/3 and16602networth.",
+          "source": "native screenshot image only",
+          "api_comparison": "Matches API duration1910/radiant_win=true and actor aggregate5/4/3/networth16602; no dynamic episode correspondence established",
+          "confidence": "high for readable labels and counters",
+          "available_knowledge": "not applicable: post-match result screen",
+          "intent_hypothesis": null
+        }
+      ],
+      "cause": "unestablished; original evidence retained"
+    }
+  },
+  "observations": [
+    {
+      "frame_index": 30,
+      "game_clock_UI": "10:31",
+      "game_time_seconds_UI": 631,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-030.png",
+      "sha256": "f5aacf97308f19d4c4311b68d375612e0c08662cd08662e67be5e98e1a32e5a0",
+      "literal_visible": "Storm near allied Io and another allied hero; enemy Rubick visible at left; combat/light effects between heroes.",
+      "HUD_readings": {
+        "KDA": "2/1/1",
+        "LH_denies": "77/2",
+        "level": 8,
+        "HP": "1079/1088",
+        "mana": "601/812"
+      },
+      "unknown": "Exact commands, target ordering and damage attribution not shown by still image.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 32,
+      "game_clock_UI": "11:12",
+      "game_time_seconds_UI": 672,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-032.png",
+      "sha256": "46eb9affb3b554f9c7ec07b5731c9ce651397a4f4e5ed5aae24d690a6d9af19d",
+      "literal_visible": "Storm and allied Io in river-side combat scene, blue lightning/effects; kill feed contains void→Eru record.",
+      "HUD_readings": {
+        "KDA": "3/1/1",
+        "LH_denies": "84/2",
+        "level": 9,
+        "HP": "1079/1132",
+        "mana": "546/860"
+      },
+      "unknown": "Frame after API10:42 Rubick kill; not exact kill timestamp or exact causal skill sequence.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 33,
+      "game_clock_UI": "11:33",
+      "game_time_seconds_UI": 693,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-033.png",
+      "sha256": "64558522b4edd2e0951f1708ee31fbd67ee1e00b8934f50fcb7a383f32f8f08f",
+      "literal_visible": "Dragon Knight tooltip identifies enemy level7 with ПРИВЯЗКА label; Storm and lane creeps adjacent in scene.",
+      "HUD_readings": {
+        "KDA": "3/1/1",
+        "LH_denies": "93/2",
+        "level": 9,
+        "HP": "889/1132",
+        "mana": "771/860"
+      },
+      "unknown": "Visible bound state does not establish exact issued input or duration; observe sequence with short clip.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 38,
+      "game_clock_UI": "13:15",
+      "game_time_seconds_UI": 795,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-038.png",
+      "sha256": "58130039be69f99c0cf2af31bb0f9ba848f7c40fdc1379e211b7622b9e71a8d2",
+      "literal_visible": "Storm with allied Io near river cliff/wards and neutral units; kill feed contains void→Sentry Ward.",
+      "HUD_readings": {
+        "KDA": "5/1/1",
+        "LH_denies": "103/2",
+        "level": 10,
+        "HP": "970/1176",
+        "mana": "464/1100"
+      },
+      "unknown": "Source of every damage effect, precise route and intentions unknown; API Kaya purchase13:13 not equated to delivery.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 44,
+      "game_clock_UI": "15:18",
+      "game_time_seconds_UI": 918,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-044.png",
+      "sha256": "3ec2eb0c1a6b87ea20698a82a75c0345b74332e15f439aba811248305d5ba950",
+      "literal_visible": "Storm with allied Io and bright combat effects near wooded high ground; alive with full displayed HP.",
+      "HUD_readings": {
+        "KDA": "5/1/1",
+        "LH_denies": "138/2",
+        "level": 11,
+        "HP": "1220/1220",
+        "mana": "1062/1148"
+      },
+      "unknown": "Enemy threat source and player vision before encounter unverified.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 45,
+      "game_clock_UI": "15:38",
+      "game_time_seconds_UI": 938,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-045.png",
+      "sha256": "82b4e7a7b970bce351361fefa67f100d992596496e903112fea6a602bf9eb9ab",
+      "literal_visible": "Storm death summary, HP0 and respawn countdown30; camera shows river stairs/ward, kill feed contains misses→void.",
+      "HUD_readings": {
+        "KDA": "5/2/1",
+        "LH_denies": "141/2",
+        "HP": "0/1220",
+        "respawn_seconds_displayed": 30
+      },
+      "unknown": "Exact death moment between sampled frames, cause and escape possibilities require detailed clip. API15:32 remains separate.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 50,
+      "game_clock_UI": "17:22",
+      "game_time_seconds_UI": 1042,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-050.png",
+      "sha256": "31f80abf921bfdbf054c5bed2ecaca3f93f9baabb1dea26f3372155f2550e689",
+      "literal_visible": "Camera shows enemy Ursa and surrounding scene; selected Storm HUD remains alive; no Storm model clearly identified in camera centre.",
+      "HUD_readings": {
+        "KDA": "5/2/2",
+        "LH_denies": "161/2",
+        "level": 12,
+        "HP": "1264/1264",
+        "mana": "1304/1304"
+      },
+      "unknown": "Player camera mode label does not prove attention, available fog knowledge or Storm route.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 53,
+      "game_clock_UI": "18:23",
+      "game_time_seconds_UI": 1103,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-053.png",
+      "sha256": "12deb6216f4b2e54aec5f1eac845ac5939db2bc8522b1aeb913fb16ecbeb3527",
+      "literal_visible": "Storm and Io visible on river stairs; green ground marker; lower inventory differs from18:43.",
+      "HUD_readings": {
+        "KDA": "5/2/2",
+        "LH_denies": "189/2",
+        "level": 12,
+        "HP": "1147/1264",
+        "mana": "1271/1304"
+      },
+      "unknown": "Ground marker is not complete verified command log; item identities/delivery require tooltip or parser.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 54,
+      "game_clock_UI": "18:43",
+      "game_time_seconds_UI": 1123,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-054.png",
+      "sha256": "f3c8d357124e2ac8036394f52ed243f8966c0206bf735da628e2657fa5207dc1",
+      "literal_visible": "Storm/Io in scene at upper-left; new red inventory icon lower middle; right-side notification associates Storm icon with same red item icon.",
+      "HUD_readings": {
+        "KDA": "5/2/2",
+        "LH_denies": "192/2",
+        "HP": "1264/1264",
+        "mana": "1306/1328"
+      },
+      "unknown": "Item identification from icon only not tooltip-verified; no activation or strategic effect proved. APIOrchid18:38 logged separately.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 56,
+      "game_clock_UI": "19:25",
+      "game_time_seconds_UI": 1165,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-056.png",
+      "sha256": "42c7b4610d35cf48c22d64017f5ccb8e638d0fe6d92ea25ce0460db609066cb9",
+      "literal_visible": "Storm and Io among trees/light effects; nearby hostile lane creeps; actor alive.",
+      "HUD_readings": {
+        "KDA": "5/2/2",
+        "LH_denies": "200/2",
+        "level": 13,
+        "HP": "1143/1308",
+        "mana": "1546/1546"
+      },
+      "unknown": "Cannot reconstruct next12s or assert enemy knowledge from this still.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 57,
+      "game_clock_UI": "19:45",
+      "game_time_seconds_UI": 1185,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-057.png",
+      "sha256": "0572a38097d61525d71ce5db366042d6ec8651ed385ba966acbdd23a0720985b",
+      "literal_visible": "Death summary HP0, countdown38; kill feed DragonKnight player→void; enemies and fire effects near trees.",
+      "HUD_readings": {
+        "KDA": "5/3/2",
+        "LH_denies": "205/2",
+        "HP": "0/1308",
+        "respawn_seconds_displayed": 38
+      },
+      "unknown": "Exact event19:37 is API-only, no causal positioning assessment from spaced frames.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 60,
+      "game_clock_UI": "20:47",
+      "game_time_seconds_UI": 1247,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-060.png",
+      "sha256": "f43945e51236e61e001b364c1c820b5a0e93df0c09e022ebcdb5fe080215f584",
+      "literal_visible": "Storm under large pink lightning effect near enemyMirana-shaped model; alive with reduced HP.",
+      "HUD_readings": {
+        "KDA": "5/3/2",
+        "LH_denies": "214/2",
+        "level": 13,
+        "HP": "677/1528",
+        "mana": "837/1376"
+      },
+      "unknown": "Precise caster and sequence of disable/damage unidentified; not a reaction-latency measurement.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 63,
+      "game_clock_UI": "21:48",
+      "game_time_seconds_UI": 1308,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-063.png",
+      "sha256": "0f714c84d52dc15d5e75aafd3d533eb3200be988c5ab6b15a7ec7242ac9d78f3",
+      "literal_visible": "Storm and Io on river scene with lane creeps and bright effects, alive.",
+      "HUD_readings": {
+        "KDA": "5/3/2",
+        "LH_denies": "220/2",
+        "HP": "1401/1528",
+        "mana": "1281/1376"
+      },
+      "unknown": "No exact attack order, subsequent incoming threat or available knowledge proved.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 64,
+      "game_clock_UI": "22:09",
+      "game_time_seconds_UI": 1329,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-064.png",
+      "sha256": "d924e7d2f2b5bede9e6bd43e37e5d62d957810045101bf4cdc97110cf265d018",
+      "literal_visible": "Death summary HP0, countdown32; LH220; kill feed misses→void. Camera is away from Storm.",
+      "HUD_readings": {
+        "KDA": "5/4/2",
+        "LH_denies": "220/2",
+        "HP": "0/1440",
+        "respawn_seconds_displayed": 32
+      },
+      "unknown": "Death timestamp21:55 API separate; return duration and reason for no LH22–23 need sequence.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 65,
+      "game_clock_UI": "22:30",
+      "game_time_seconds_UI": 1350,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-065.png",
+      "sha256": "dd4624d4eef1a2402bb297a1fef59a325c53a2fa98a637cbf8e2289400ac8be4",
+      "literal_visible": "Death summary countdown11 and LH220; camera follows enemy lane/tower scene.",
+      "HUD_readings": {
+        "KDA": "5/4/2",
+        "LH_denies": "220/2",
+        "HP": "0/1440",
+        "respawn_seconds_displayed": 11
+      },
+      "unknown": "No player-position trajectory while dead; camera view does not prove strategic attention.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 67,
+      "game_clock_UI": "23:11",
+      "game_time_seconds_UI": 1391,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-067.png",
+      "sha256": "e33b4c30c1b58138fb194997a96e9e278f0e6ff4b662820ea0aee6b4d91efdac",
+      "literal_visible": "Storm and Io alive next to clustered lane creeps; blue/white effects around creep wave.",
+      "HUD_readings": {
+        "KDA": "5/4/2",
+        "LH_denies": "221/2",
+        "level": 13,
+        "HP": "1528/1528",
+        "mana": "422/1376"
+      },
+      "unknown": "Individual last-hit inputs and origin of all resource changes unknown.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 70,
+      "game_clock_UI": "24:12",
+      "game_time_seconds_UI": 1452,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-070.png",
+      "sha256": "64b26398790729a7694c35026ba4133a979954b89184ecaa5318a0d23c82cdac",
+      "literal_visible": "Storm and Io near trees/path, alive; several prior transient effects absent.",
+      "HUD_readings": {
+        "KDA": "5/4/3",
+        "LH_denies": "241/2",
+        "level": 14,
+        "HP": "1572/1572",
+        "mana": "1339/1424"
+      },
+      "unknown": "LH increase20 from23:11 to24:12 does not locate every farm source or continuous route.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 73,
+      "game_clock_UI": "25:14",
+      "game_time_seconds_UI": 1514,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-073.png",
+      "sha256": "82f46501fe5105afde12cd53e419c6143e6e4bbfdf072c105ea9dc16252ecb2e",
+      "literal_visible": "Storm/Io near trees, alive; allied chat states Eru used Smoke of Deceit.",
+      "HUD_readings": {
+        "KDA": "5/4/3",
+        "LH_denies": "272/2",
+        "level": 15,
+        "HP": "1626/1660",
+        "mana": "1320/1484"
+      },
+      "unknown": "Chat notification not proof of planned strategy; actual buff/visibility effects not independently calibrated.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 74,
+      "game_clock_UI": "25:34",
+      "game_time_seconds_UI": 1534,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-074.png",
+      "sha256": "7843075dd6e90d97270847ff4b59664166e7edf716aae849c820371e509f94b3",
+      "literal_visible": "HP322, TP-scroll channel bar Применяется1.9с; pink beam/light effect; lower-left inventory item cooldown93; rightStorm-associated notification shows golden item icon.",
+      "HUD_readings": {
+        "KDA": "5/4/3",
+        "LH_denies": "274/2",
+        "HP": "322/1660",
+        "mana": "844/1484",
+        "TP_channel_remaining_label_seconds": 1.9,
+        "item_cooldown_label_seconds": 93
+      },
+      "unknown": "Golden icon resembles BKB and API purchase25:31, but tooltip/exact activation not verified here. TP success/cause of survival requires clip.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 75,
+      "game_clock_UI": "25:55",
+      "game_time_seconds_UI": 1555,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-075.png",
+      "sha256": "e1af9a90259c038ab520fe5c00632fa5aaf994a0578ae32f18a96563eea9b2af",
+      "literal_visible": "Storm/Io alive near trees at different camera position; HP/mana full.",
+      "HUD_readings": {
+        "KDA": "5/4/3",
+        "LH_denies": "274/2",
+        "HP": "1660/1660",
+        "mana": "1484/1484"
+      },
+      "unknown": "No continuous path/destination proof between25:34 and25:55, therefore not proof of exact teleport endpoint or BKB causal rescue.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 81,
+      "game_clock_UI": "27:57",
+      "game_time_seconds_UI": 1677,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-081.png",
+      "sha256": "3441336849fe6d2c3b4df1b2518674aac3ff2316bb1fdbec4cc505ec9cdeef85",
+      "literal_visible": "EnemyDragonKnight tooltip and enemy heroes/creeps near Dire base structures; selected StormHUD alive.",
+      "HUD_readings": {
+        "KDA": "5/4/3",
+        "LH_denies": "293/2",
+        "level": 15,
+        "HP": "1650/1660",
+        "mana": "1448/1484"
+      },
+      "unknown": "Exact defence commands and target selection not reconstructed.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    },
+    {
+      "frame_index": 87,
+      "game_clock_UI": "30:00",
+      "game_time_seconds_UI": 1800,
+      "png": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9042986015\\overview-r4-v4\\frame-087.png",
+      "sha256": "56f97facbed29c6137a946caedd99cd66cb69b3be11e202980f220775b328cce",
+      "literal_visible": "Storm and Io near Dire base structures; multiple enemy/allied units in scene; actor alive.",
+      "HUD_readings": {
+        "KDA": "5/4/3",
+        "LH_denies": "317/2",
+        "level": 16,
+        "HP": "1512/1748",
+        "mana": "1061/1556",
+        "match_score": "33/12"
+      },
+      "unknown": "Final31:50 outcome not covered by this current overview; API final aggregates separate.",
+      "intent_hypothesis": null,
+      "available_knowledge": "fog/player visibility not independently verified",
+      "confidence": "high for readable HUD; descriptive image content only",
+      "source": "actual native screenshot viewed full resolution1280x720"
+    }
+  ],
+  "coverage": {
+    "first_late_UI_clock": "10:31",
+    "last_late_UI_clock": "30:00",
+    "complete_match_end_viewed": false,
+    "continuous_action_coverage": false,
+    "microcontrol_or_latency_measured": false,
+    "fog_verified": false,
+    "native_account_identity_verified_from_frame": false,
+    "UI_camera_label": "ГЛАЗАМИ ИГРОКА / v o i d",
+    "available_knowledge": "unknown until independent fog/visibility verification"
+  },
+  "hypotheses_to_test": [
+    {
+      "question": "What sequence preceded deaths near15:32,19:37,21:55?",
+      "clips_requested_game_seconds": [
+        [
+          910,
+          945
+        ],
+        [
+          1155,
+          1195
+        ],
+        [
+          1305,
+          1335
+        ]
+      ],
+      "purpose": "resources/targets/visible threat/exit alternatives; no positioning blame before sequence"
+    },
+    {
+      "question": "What happened at low-HP TP around25:34?",
+      "clip_requested_game_seconds": [
+        1525,
+        1560
+      ],
+      "purpose": "identify BKB via tooltip/state, actual activation, TP completion/destination; no causal save claim now"
+    },
+    {
+      "question": "How did Orchid acquisition change actual targets/actions?",
+      "clip_requested_game_seconds": [
+        1110,
+        1150
+      ],
+      "purpose": "delivery/activation/target observation; no build-quality conclusion"
+    },
+    {
+      "question": "Io-supported versus unsupported decisions?",
+      "purpose": "Several sampled episodes have alliedIo nearby/connected; condition future features on teammate/context, do not call this stableDendi trait or friendliness."
+    }
+  ],
+  "limitations": [
+    "sampled screenshots not continuous replay analysis or tick-level parser",
+    "API fields and event timestamps kept separate from UI-clock visual observations",
+    "UIplayerPOV label does not independently establish fog or real player attention",
+    "one exploratory match does not confirm stable personal style, causal strategy, personality or trained imitation",
+    "capture ends30:00, final31:50 needs extension"
+  ]
+}

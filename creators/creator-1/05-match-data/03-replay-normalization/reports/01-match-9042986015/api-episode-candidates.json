@@ -1,0 +1,531 @@
+{
+  "schema_version": "c1-api-episode-candidates-v1",
+  "date": "2026-10-14",
+  "match_id": "9042986015",
+  "actor": {
+    "account_id": 70388657,
+    "player_slot": 130,
+    "players_array_index": 7,
+    "hero_id": 17,
+    "api_name": "Dendi",
+    "api_personaname": "v o i d",
+    "team": "Dire"
+  },
+  "source": {
+    "url": "https://api.opendota.com/api/matches/9042986015",
+    "local_path": "build/dota_coach/replay-9042986015/match.json",
+    "sha256": "e5d141bc6f7841999cb8afb75a107788287e46d3b9e2e6f85221413ab0147fb1",
+    "bytes": 227598,
+    "api_version_field": 22,
+    "has_parsed": true,
+    "exact_deployed_parser_revision": null
+  },
+  "clock": {
+    "field": "time / times / teamfights.start,end",
+    "unit": "integer seconds",
+    "origin": "OpenDota event time relative to gameStartTime",
+    "basis": "official parser output() subtracts gameStartTime; inspected master source on2026-10-14, not proof deployed parser revision",
+    "reference": "https://github.com/odota/parser/blob/master/src/main/java/opendota/Parse.java#L157-L174",
+    "native_HUD_crosscheck": false,
+    "demo_tick_mapping": null,
+    "start_time_unix": 1791892318,
+    "duration_seconds": 1910,
+    "pre_game_negative_purchase": -89,
+    "pauses": []
+  },
+  "status": "API candidates only; no native frame examined by this analyst",
+  "selection_complete_match": false,
+  "heldout": "already examined exploratory/train candidate; never untouched final test",
+  "rows": [
+    {
+      "id": "early-resource-01",
+      "category": "farm_and_inventory",
+      "start_seconds": 60,
+      "end_seconds": 200,
+      "start_clock": "01:00",
+      "end_clock": "03:20",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/times,lh_t,dn_t,networth_t",
+          "samples": [
+            {
+              "time": 60,
+              "lh": 3,
+              "denies": 1,
+              "networth": 880
+            },
+            {
+              "time": 120,
+              "lh": 8,
+              "denies": 1,
+              "networth": 1098
+            },
+            {
+              "time": 180,
+              "lh": 16,
+              "denies": 1,
+              "networth": 1515
+            }
+          ]
+        },
+        {
+          "source_pointer": "/players/7/purchase_log/6",
+          "record": {
+            "time": 86,
+            "key": "bottle"
+          }
+        },
+        {
+          "source_pointer": "/players/7/purchase_log/7",
+          "record": {
+            "time": 140,
+            "key": "magic_stick"
+          }
+        },
+        {
+          "source_pointer": "/players/7/purchase_log/10",
+          "record": {
+            "time": 187,
+            "key": "magic_wand"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Check actual lane and wave context, last hits/denies and delivery vs purchase. No movement path recoverable from these samples."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "mana-and-stack-02",
+      "category": "farm_and_item",
+      "start_seconds": 285,
+      "end_seconds": 355,
+      "start_clock": "04:45",
+      "end_clock": "05:55",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/purchase_log/16",
+          "record": {
+            "time": 330,
+            "key": "soul_ring"
+          }
+        },
+        {
+          "source_pointer": "/players/7/times,camps_stacked_t",
+          "samples": [
+            {
+              "time": 300,
+              "camps_stacked": 0
+            },
+            {
+              "time": 360,
+              "camps_stacked": 1
+            }
+          ]
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect actual farming/stacking context; API count transition does not give stack camp or exact time. Verify Soul Ring inventory acquisition/use independently."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "first-kill-sequence-03",
+      "category": "combat",
+      "start_seconds": 425,
+      "end_seconds": 465,
+      "start_clock": "07:05",
+      "end_clock": "07:45",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/kills_log/0",
+          "record": {
+            "time": 449,
+            "key": "npc_dota_hero_dragon_knight"
+          }
+        },
+        {
+          "source_pointer": "/players/7/kills_log/1",
+          "record": {
+            "time": 455,
+            "key": "npc_dota_hero_undying"
+          }
+        },
+        {
+          "source_pointer": "/players/7/purchase_log/18",
+          "record": {
+            "time": 432,
+            "key": "boots"
+          }
+        },
+        {
+          "source_pointer": "/players/7/purchase_log/21",
+          "record": {
+            "time": 458,
+            "key": "ring_of_basilius"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect attack/ability targets, joining allies, resources and visible enemy knowledge before the two API kill entries."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "first-death-04",
+      "category": "death",
+      "start_seconds": 470,
+      "end_seconds": 530,
+      "start_clock": "07:50",
+      "end_clock": "08:50",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/deaths_log/0",
+          "record": {
+            "gold_fed": 388,
+            "time": 493,
+            "gold_lost": 83,
+            "key": "npc_dota_hero_rubick",
+            "time_dead": 28
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect lead-in to death, available vision and escape alternatives. Killer attribution is an API record; do not infer cause without replay."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "arcane-boots-05",
+      "category": "purchase",
+      "start_seconds": 580,
+      "end_seconds": 610,
+      "start_clock": "09:40",
+      "end_clock": "10:10",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/purchase_log/24",
+          "record": {
+            "time": 594,
+            "key": "arcane_boots"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Check purchase/delivery/equipped timing; do not infer item-build intent from purchase alone."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "fight-kills-06",
+      "category": "combat",
+      "start_seconds": 620,
+      "end_seconds": 710,
+      "start_clock": "10:20",
+      "end_clock": "11:50",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/kills_log/2",
+          "record": {
+            "time": 642,
+            "key": "npc_dota_hero_rubick"
+          }
+        },
+        {
+          "source_pointer": "/players/7/kills_log/3",
+          "record": {
+            "time": 698,
+            "key": "npc_dota_hero_dragon_knight"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect separate engagements around10:42 and11:38; they are not one continuous fight just because grouped for seeking."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "tracked-kill-07",
+      "category": "parser_attribution_check",
+      "start_seconds": 749,
+      "end_seconds": 789,
+      "start_clock": "12:29",
+      "end_clock": "13:09",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/kills_log/4",
+          "record": {
+            "tracked_death": true,
+            "tracked_sourcename": "npc_dota_hero_bounty_hunter",
+            "time": 769,
+            "key": "npc_dota_hero_rubick"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Source entry has tracked_death=true and tracked_sourcename=Bounty Hunter. Resolve attribution against actual replay before labeling this episode as Storm last-hit kill."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "kaya-08",
+      "category": "purchase",
+      "start_seconds": 780,
+      "end_seconds": 810,
+      "start_clock": "13:00",
+      "end_clock": "13:30",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/purchase_log/28",
+          "record": {
+            "time": 793,
+            "key": "kaya"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Check acquired item and nearby farm/combat context; no automatic conclusion that Kaya caused subsequent actions."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "second-death-and-teamfight-09",
+      "category": "combat_death",
+      "start_seconds": 900,
+      "end_seconds": 975,
+      "start_clock": "15:00",
+      "end_clock": "16:15",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/deaths_log/1",
+          "record": {
+            "gold_fed": 577,
+            "time": 932,
+            "gold_lost": 180,
+            "key": "npc_dota_hero_mirana",
+            "time_dead": 36
+          }
+        },
+        {
+          "source_pointer": "/teamfights/0",
+          "start": 916,
+          "end": 966,
+          "last_death": 951,
+          "deaths": 4,
+          "actor_record": {
+            "deaths_pos": {
+              "137": {
+                "93": 1
+              }
+            },
+            "ability_uses": {
+              "storm_spirit_static_remnant": 3,
+              "storm_spirit_ball_lightning": 1
+            },
+            "ability_targets": {},
+            "item_uses": {
+              "madstone_bundle": 1
+            },
+            "killed": {},
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 410,
+            "healing": 48,
+            "gold_delta": -20,
+            "xp_delta": 111,
+            "xp_start": 7480,
+            "xp_end": 7591
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect15:16–16:06 API teamfight; player death15:32. API fight is an extracted heuristic segment, not proof of all continuous player decisions."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "orchid-10",
+      "category": "purchase",
+      "start_seconds": 1095,
+      "end_seconds": 1135,
+      "start_clock": "18:15",
+      "end_clock": "18:55",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/purchase_log/34",
+          "record": {
+            "time": 1118,
+            "key": "orchid"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect18:38 purchase and subsequent opportunities separately; event does not prove courier delivery or use at18:38."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "third-death-11",
+      "category": "death",
+      "start_seconds": 1157,
+      "end_seconds": 1227,
+      "start_clock": "19:17",
+      "end_clock": "20:27",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/deaths_log/2",
+          "record": {
+            "gold_fed": 605,
+            "time": 1177,
+            "gold_lost": 257,
+            "key": "npc_dota_hero_dragon_knight",
+            "time_dead": 46
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect19:37 death, resources/vision/team context and return to play."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "fourth-death-12",
+      "category": "death",
+      "start_seconds": 1295,
+      "end_seconds": 1365,
+      "start_clock": "21:35",
+      "end_clock": "22:45",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/deaths_log/3",
+          "record": {
+            "gold_fed": 589,
+            "time": 1315,
+            "gold_lost": 275,
+            "key": "npc_dota_hero_mirana",
+            "time_dead": 46
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect21:55 death; avoid calling repeated deaths a stable personality trait."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "bkb-13",
+      "category": "purchase",
+      "start_seconds": 1511,
+      "end_seconds": 1551,
+      "start_clock": "25:11",
+      "end_clock": "25:51",
+      "source_records": [
+        {
+          "source_pointer": "/players/7/purchase_log/38",
+          "record": {
+            "time": 1531,
+            "key": "black_king_bar"
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect25:31 purchase and item delivery; later fight segment lists no BKB use, overall item_uses lists1, so do not assume late fight is that activation."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    },
+    {
+      "id": "late-teamfight-14",
+      "category": "combat",
+      "start_seconds": 1795,
+      "end_seconds": 1865,
+      "start_clock": "29:55",
+      "end_clock": "31:05",
+      "source_records": [
+        {
+          "source_pointer": "/teamfights/1",
+          "start": 1809,
+          "end": 1853,
+          "last_death": 1838,
+          "deaths": 3,
+          "actor_record": {
+            "deaths_pos": {},
+            "ability_uses": {
+              "storm_spirit_static_remnant": 3,
+              "storm_spirit_electric_vortex": 1,
+              "storm_spirit_ball_lightning": 7
+            },
+            "ability_targets": {},
+            "item_uses": {
+              "arcane_boots": 1,
+              "mana_draught": 1,
+              "soul_ring": 1,
+              "magic_wand": 1
+            },
+            "killed": {},
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1978,
+            "healing": 748,
+            "gold_delta": 44,
+            "xp_delta": 22,
+            "xp_start": 14725,
+            "xp_end": 14747
+          }
+        },
+        {
+          "source_pointer": "/players/7/max_hero_hit",
+          "record": {
+            "time": 1815,
+            "type": "max_hero_hit",
+            "unit": "npc_dota_hero_storm_spirit",
+            "key": "npc_dota_hero_dragon_knight",
+            "value": 295,
+            "slot": 7,
+            "player_slot": 130,
+            "inflictor": "storm_spirit_static_remnant",
+            "max": true
+          }
+        }
+      ],
+      "native_inspection_questions": [
+        "Inspect30:09–30:53 ability sequence and context. 7 Ball Lightning uses and1978damage are API segment totals, not evidence of aggression or strategic quality."
+      ],
+      "native_verified": false,
+      "player_available_knowledge": "unknown",
+      "intent": null
+    }
+  ],
+  "limitations": [
+    "API parsing is a third-party derived event source, separate from Valve replay bytes and native playback proof",
+    "API minute aggregates do not reconstruct movement routes, camera, target visibility, reaction latency or intentions",
+    "API times are candidates for HUD seeking; demo ticks/startup/pregame offsets need native calibration",
+    "exact parser deployment revision is absent from match JSON; version22 is not pinned parser executable identity",
+    "single-match loss and kill/farm totals do not establish stable player style or training accuracy"
+  ]
+}

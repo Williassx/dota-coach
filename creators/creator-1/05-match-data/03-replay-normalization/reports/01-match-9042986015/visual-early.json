@@ -1,0 +1,295 @@
+{
+  "schema": "dota-coach-replay-visual-observations-v1",
+  "match_id": 9042986015,
+  "author_creator": 1,
+  "analyst_role": "early_lane_camera_visual",
+  "prepared_at_utc": "2026-10-14T12:53:40.660293+00:00",
+  "analysis_scope_requested": "early_lane_camera_and_first_reactions_0_to_10_game_minutes",
+  "scope_completed": "sparse_frame_observations_0:14_to_9:50",
+  "continuous_scope_completed": false,
+  "gameplay_visible": true,
+  "native_controller_used_by_analyst": false,
+  "source_manifest_snapshot": {
+    "path": "build/dota_coach/replay-9042986015/overview-r4-v4/frames.json",
+    "bytes": 37483,
+    "sha256_at_read": "0d5150488bb38ba687a9064a63ced7308a085c158200fd81595dcb89ffec3573",
+    "frame_count_at_read": 88,
+    "distinct_frame_sha256_count_at_read": 88
+  },
+  "images_inspected": [
+    "build/dota_coach/replay-9042986015/overview-r4-v4/contact-1.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/contact-2.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-000.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-008.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-013.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-015.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-017.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-021.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-023.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-024.png",
+    "build/dota_coach/replay-9042986015/overview-r4-v4/frame-028.png"
+  ],
+  "contact_page_hashes": {
+    "contact-1.png": "e5c9c43bfb6435af4ba9164ec0940a48120a053fc159087ffe9e8a93926155bb",
+    "contact-2.png": "5897a800b3b9e13b064e0ba6ff23464970565ec594a5ff52ee13bb4fddd8f648"
+  },
+  "observations": [
+    {
+      "id": "early-frame-000",
+      "frame_index": 0,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-000.png",
+      "screenshot_bytes": 1683372,
+      "screenshot_sha256": "b2570cc56e936752ddb0813af4f5e61691cdff60b45a7533febd2f1de6964efc",
+      "capture_utc": "2026-10-14T12:47:46.127Z",
+      "game_clock_text_read_from_frame": "0:14",
+      "game_clock_seconds_read_from_frame": 14,
+      "observed_action": "Storm Spirit первого уровня находится на средней линии рядом с союзными крипами. В HUD0/0/0, LH0/denies0; player-view indicator v o i d.",
+      "inferred_intent": null,
+      "uncertainty": "Один кадр не доказывает выданную команду атаки или выбранный маршрут.",
+      "api_episode_reference": null
+    },
+    {
+      "id": "early-frame-008",
+      "frame_index": 8,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-008.png",
+      "screenshot_bytes": 1542732,
+      "screenshot_sha256": "ab81744c935ed26a99cf26198222b42c44637fba88f1157a1f0f15c956019bf7",
+      "capture_utc": "2026-10-14T12:48:10.154Z",
+      "game_clock_text_read_from_frame": "2:58",
+      "game_clock_seconds_read_from_frame": 178,
+      "observed_action": "Storm уровня4 и Mirana уровня4 видны на миде рядом с волной крипов; вокруг волны электрические эффекты. HUD LH16/denies1, HP504/802.",
+      "inferred_intent": null,
+      "uncertainty": "Источник каждого эффекта, порядок применения способностей и точный last-hit input не восстановлены.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "early-resource-01",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    },
+    {
+      "id": "early-frame-013",
+      "frame_index": 13,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-013.png",
+      "screenshot_bytes": 1578803,
+      "screenshot_sha256": "3ab9a01752371937e608d657fb12983f441e13b5bd4e112f3144d8363c3164fc",
+      "capture_utc": "2026-10-14T12:48:25.111Z",
+      "game_clock_text_read_from_frame": "4:41",
+      "game_clock_seconds_read_from_frame": 281,
+      "observed_action": "Storm уровня5 находится у лагеря нейтральных крипов на стороне Dire; видны эффекты рядом с крипами. HUD LH26/denies2.",
+      "inferred_intent": {
+        "text": "Эпизод совместим с фармом лагеря нейтралов.",
+        "confidence": "context_only"
+      },
+      "uncertainty": "Почему покинул мид и как выбирал лагерь, по кадру неизвестно.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "mana-and-stack-02",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    },
+    {
+      "id": "early-frame-015",
+      "frame_index": 15,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-015.png",
+      "screenshot_bytes": 1515955,
+      "screenshot_sha256": "0cf4aa3906c4f0078b1018d0ce37ee80de9bc22cc339fd430d1534687bc27974",
+      "capture_utc": "2026-10-14T12:48:31.092Z",
+      "game_clock_text_read_from_frame": "5:22",
+      "game_clock_seconds_read_from_frame": 322,
+      "observed_action": "Storm находится у нейтрального лагеря; виден направленный к нейтралу светящийся снаряд/эффект. HUD LH34/denies2, level5.",
+      "inferred_intent": {
+        "text": "Продолжение получения ресурсов с нейтральных крипов вероятно.",
+        "confidence": "context_only"
+      },
+      "uncertainty": "Это не подтверждает точный stack timing или оптимальность маршрута.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "mana-and-stack-02",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    },
+    {
+      "id": "early-frame-017",
+      "frame_index": 17,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-017.png",
+      "screenshot_bytes": 1396426,
+      "screenshot_sha256": "d3df1b7d9a6f108175dcfa9f1b3c7846fe9136ef1beae8ced7229a51498d15de",
+      "capture_utc": "2026-10-14T12:48:37.107Z",
+      "game_clock_text_read_from_frame": "6:03",
+      "game_clock_seconds_read_from_frame": 363,
+      "observed_action": "Storm уровня6 и Mirana уровня6 находятся близко друг к другу у реки/спуска с Dire mid. HPStorm468/1022. HUD LH44/denies2; combat effects visible.",
+      "inferred_intent": null,
+      "uncertainty": "Нельзя определить скорость реакции, момент обнаружения противника или весь обмен уроном.",
+      "api_episode_reference": null
+    },
+    {
+      "id": "early-frame-021",
+      "frame_index": 21,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-021.png",
+      "screenshot_bytes": 1539951,
+      "screenshot_sha256": "47a3153dc7072f24d90700447c930fbf32ffe69ed3f5bc47fb39abd4a0bdd907",
+      "capture_utc": "2026-10-14T12:48:49.128Z",
+      "game_clock_text_read_from_frame": "7:26",
+      "game_clock_seconds_read_from_frame": 446,
+      "observed_action": "Storm уровня7 участвует в видимом столкновении с Dragon Knight и Undying; несколько героев и эффекты находятся в одной области. HUD0/0/0,LH55/denies2.",
+      "inferred_intent": null,
+      "uncertainty": "До/после кадра есть пропуски; точные убийства и применение каждой способности отдельно здесь не наблюдаются.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "first-kill-sequence-03",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    },
+    {
+      "id": "early-frame-023",
+      "frame_index": 23,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-023.png",
+      "screenshot_bytes": 1467993,
+      "screenshot_sha256": "a67690685183d59cd4b33bb05f53ed258adfe0e16c04edd57cdc05edc45cd2c8",
+      "capture_utc": "2026-10-14T12:48:55.117Z",
+      "game_clock_text_read_from_frame": "8:07",
+      "game_clock_seconds_read_from_frame": 487,
+      "observed_action": "Storm остаётся в многостороннем столкновении; HP252/956 и mana196/651. HUD2/0/1,LH57/denies2.",
+      "inferred_intent": null,
+      "uncertainty": "Низкое HP само по себе не доказывает ошибку, рискованную черту или намерение отступать.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "first-death-04",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    },
+    {
+      "id": "early-frame-024",
+      "frame_index": 24,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-024.png",
+      "screenshot_bytes": 1469524,
+      "screenshot_sha256": "5cce5b514a64ece47ad25e7be67f00633eb21d2a23083539eca69ebf80a189b6",
+      "capture_utc": "2026-10-14T12:48:58.144Z",
+      "game_clock_text_read_from_frame": "8:28",
+      "game_clock_seconds_read_from_frame": 508,
+      "observed_action": "HUD выбранного Storm показывает смерть,0HP,таймер13секунд и2/1/1; камера показывает участок Dire mid, а не живого Storm.",
+      "inferred_intent": null,
+      "uncertainty": "Момент смерти между кадрами8:07 и8:28; точное время8:13 берётся из API, а не этого кадра.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "first-death-04",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    },
+    {
+      "id": "early-frame-028",
+      "frame_index": 28,
+      "screenshot": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-028.png",
+      "screenshot_bytes": 1450472,
+      "screenshot_sha256": "cc533332877fbeb547efeee8225e95523229793b799b6ab855f94cfb29ba2c84",
+      "capture_utc": "2026-10-14T12:49:10.110Z",
+      "game_clock_text_read_from_frame": "9:50",
+      "game_clock_seconds_read_from_frame": 590,
+      "observed_action": "Storm снова жив на миде: level8, HP842/1088; рядом Io, Mirana и волна крипов. HUD2/1/1,LH69/denies2.",
+      "inferred_intent": null,
+      "uncertainty": "Это не доказывает когда именно возродился/вернулся или что сделает следующей покупкой.",
+      "api_episode_reference": {
+        "file": "api-episode-candidates.json",
+        "id": "arcane-boots-05",
+        "source_is_separate": "OpenDota API; timing is not derived from screenshot capture wall time"
+      }
+    }
+  ],
+  "capture_quality": {
+    "requested_timescale": 8,
+    "replay_ui_speed_indicator": "8x",
+    "requested_timescale_is_measured_playback_speed": false,
+    "physical_input_controlled": false,
+    "clocks_read_from_images": true,
+    "tick_to_game_time_mapping_verified": false,
+    "player_view_ui_indicator": "ГЛАЗАМИ ИГРОКА v o i d",
+    "player_perspective_ui_label_verified": true,
+    "fog_visibility_independently_verified": false,
+    "full_player_click_or_camera_trajectory_verified": false,
+    "frame_sampling_game_interval": "contact pages approximately20–21 game seconds; not every input"
+  },
+  "not_performed": [
+    "Precise input timings/last hits",
+    "Continuous camera trajectory",
+    "Visibility available to the player at every decision",
+    "Exact neutral-stack trigger",
+    "Causal explanation of death or lineup outcome",
+    "Stable personal style validation"
+  ],
+  "conclusions": [
+    "Sparse early gameplay scenes now visibly progress: mid lane, neutral camps, early multihero fight, death state and return to mid.",
+    "This is one-match observation; no personality, skill grade, moral state or stable risk preference inferred."
+  ],
+  "historical_capture_failures": [
+    {
+      "schema": "dota-coach-replay-visual-observations-v1",
+      "match_id": 9042986015,
+      "author_creator": 1,
+      "analyst_role": "early_lane_camera_visual",
+      "prepared_at_utc": "2026-10-14T12:36:40.594309+00:00",
+      "analysis_scope_requested": "early_lane_camera_and_first_reactions_0_to_10_game_minutes",
+      "scope_completed": false,
+      "gameplay_visible": false,
+      "native_controller_used_by_analyst": false,
+      "source_manifest_snapshot": {
+        "path": "build/dota_coach/replay-9042986015/overview-r4/frames.json",
+        "bytes": 37131,
+        "sha256_at_read": "8b590258fb275cab84bdc18558976a0cce160efd9dc4c4e4a354b4cf37756ebf",
+        "frame_count_at_read": 88,
+        "distinct_frame_sha256_count": 1,
+        "capture_utc_start": "2026-10-14T12:32:03.948Z",
+        "capture_utc_end": "2026-10-14T12:36:24.936Z",
+        "first_frame_sha256": "73ff4b7e3f1ff817eca3027e9756163a428e53e8a65327bfd6059a5bee4d5f4e",
+        "identical_frames_at_read": 88
+      },
+      "images_inspected": [
+        "build/dota_coach/replay-9042986015/overview-r4/contact-1.png",
+        "build/dota_coach/replay-9042986015/overview-r4/contact-2.png",
+        "build/dota_coach/replay-9042986015/overview-r4/frame-000.png"
+      ],
+      "observations": [
+        {
+          "observation_id": "visual-menu-result-01",
+          "screenshot": "build/dota_coach/replay-9042986015/overview-r4/frame-000.png",
+          "capture_utc": "2026-10-14T12:32:03.948Z",
+          "game_clock_seconds": null,
+          "displayed_match_duration": "31:50",
+          "observed_scene": "post_match_results_ui",
+          "observed_action": null,
+          "observed_facts": [
+            "UI displays match ID9042986015.",
+            "UI displays Radiant victory and score36:12.",
+            "Storm Spirit card label v o i d, K/D/A5/4/3, net worth16602."
+          ],
+          "inferred_intent": null,
+          "uncertainty": [
+            "This image contains no early-lane action or camera movement.",
+            "Displayed31:50 is match duration, not observed current gameplay time."
+          ]
+        }
+      ],
+      "capture_quality": {
+        "requested_timescale": 8,
+        "requested_timescale_is_observed_playback_speed": false,
+        "physical_input_controlled": false,
+        "game_clock_read_from_scene": false,
+        "clock_mapping_verified": false,
+        "duplicate_frame_test": "all hashes equal within source manifest snapshot",
+        "viewport_or_capture_failure_cause": "unknown",
+        "player_perspective_and_fog_verified": false
+      },
+      "not_performed": [
+        "Early-lane visual decisions",
+        "Camera trajectory",
+        "First reactions",
+        "Continuous replay watch",
+        "Position/input reconstruction",
+        "Player-only visibility verification"
+      ],
+      "conclusions": [
+        "Real native exported image exists, but the inspected sequence repeats the result screen.",
+        "No gameplay decisions or intention/personality conclusions can be supported by these frames."
+      ]
+    }
+  ]
+}

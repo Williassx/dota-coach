@@ -1,0 +1,301 @@
+{
+  "schema": "dota-coach-root-replay-evidence-v1",
+  "match_id": 9042986015,
+  "actor_account_id": 70388657,
+  "actor_hero_id": 17,
+  "groups": {
+    "overview-r4-v4": {
+      "manifest": "build/dota_coach/replay-9042986015/overview-r4-v4/frames.json",
+      "manifest_sha256": "0d5150488bb38ba687a9064a63ced7308a085c158200fd81595dcb89ffec3573",
+      "frames": 88,
+      "unique_sha256": 88
+    },
+    "episode-samples-r4": {
+      "manifest": "build/dota_coach/replay-9042986015/episode-samples-r4/frames.json",
+      "manifest_sha256": "2572c856a3e28df63eebeff9c0f21b302390fd1c48e7da81bd63e31e43c0c226",
+      "frames": 21,
+      "unique_sha256": 21
+    },
+    "episode-confirm-r4": {
+      "manifest": "build/dota_coach/replay-9042986015/episode-confirm-r4/frames.json",
+      "manifest_sha256": "9613b4e7cb4a63f7ddaedb586755087485931821bcf2009020814066d0fa21f2",
+      "frames": 5,
+      "unique_sha256": 5
+    }
+  },
+  "validated_gameplay_frames": 114,
+  "observations": [
+    {
+      "id": "episode-samples-r4/0",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-000.png",
+      "sha256": "8cc37d67bfed6de592b3ee17cd0be6311521c1c77b5d9e12ec3a64f29d182149",
+      "bytes": 1336601,
+      "capture_utc": "2026-10-14T12:58:21.585Z",
+      "clock_text_read_from_native_HUD": "7:16",
+      "visible_fields": {
+        "hp": 698,
+        "max_hp": 1044,
+        "mana": 426,
+        "max_mana": 651
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/4",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-004.png",
+      "sha256": "dd146574224c86fa7ab90c3bf9edf1d50e58a2cb4dc17994535ad6790c9aecfd",
+      "bytes": 1496222,
+      "capture_utc": "2026-10-14T12:58:35.060Z",
+      "clock_text_read_from_native_HUD": "8:08",
+      "visible_fields": {
+        "hp": 88,
+        "max_hp": 956,
+        "mana": 205,
+        "max_mana": 651,
+        "kda": [
+          2,
+          0,
+          1
+        ]
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/5",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-005.png",
+      "sha256": "9a7376b8694d01ef12db42fe30b2fb18697a99e97d1261626ba7e0aa73fde974",
+      "bytes": 1517341,
+      "capture_utc": "2026-10-14T12:58:38.434Z",
+      "clock_text_read_from_native_HUD": "8:11",
+      "visible_fields": {
+        "hp": 66,
+        "max_hp": 956,
+        "mana": 57,
+        "max_mana": 651,
+        "ball_lightning_displayed_mana_cost": 73
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-confirm-r4/0",
+      "source_png": "build/dota_coach/replay-9042986015/episode-confirm-r4/frame-000.png",
+      "sha256": "1492e3ed9e3eb8d55dfc96d8bd5acf78a0c0daeddabc7658b1657a7e10c7a4a2",
+      "bytes": 1139824,
+      "capture_utc": "2026-10-14T13:01:13.671Z",
+      "clock_text_read_from_native_HUD": "8:16",
+      "visible_fields": {
+        "hp": 0,
+        "max_hp": 956,
+        "respawn_displayed_seconds": 25,
+        "kda": [
+          2,
+          1,
+          1
+        ]
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/7",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-007.png",
+      "sha256": "b33741b3a9e4121673a1b3ff989506e86bc637c90fb4d3d11305267e6eb4da50",
+      "bytes": 1386917,
+      "capture_utc": "2026-10-14T12:58:45.171Z",
+      "clock_text_read_from_native_HUD": "15:26",
+      "visible_fields": {
+        "hp": 1220,
+        "max_hp": 1220,
+        "mana": 1056,
+        "max_mana": 1148
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/8",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-008.png",
+      "sha256": "3dcc6b838dc9af9477108969a128d33814ec8d0863b0329de3e9b4f50168c744",
+      "bytes": 1525908,
+      "capture_utc": "2026-10-14T12:58:48.513Z",
+      "clock_text_read_from_native_HUD": "15:30",
+      "visible_fields": {
+        "hp": 947,
+        "max_hp": 1220,
+        "mana": 915,
+        "max_mana": 1148,
+        "visible_status_text": "ПРИВЯЗКА"
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/11",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-011.png",
+      "sha256": "2d357d6b309d63346e287929dd650082625cbb2c40bffce0090c3a7ccaaf4042",
+      "bytes": 1546072,
+      "capture_utc": "2026-10-14T12:58:58.617Z",
+      "clock_text_read_from_native_HUD": "19:35",
+      "visible_fields": {
+        "hp": 1217,
+        "max_hp": 1308,
+        "mana": 736,
+        "max_mana": 1376,
+        "visible_status_text": "ОГЛУШЕНИЕ"
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-confirm-r4/2",
+      "source_png": "build/dota_coach/replay-9042986015/episode-confirm-r4/frame-002.png",
+      "sha256": "7b987d4ba75e779012cce1baf3384ee3fa505b6fca1ce79d2b222cff0309c966",
+      "bytes": 1397548,
+      "capture_utc": "2026-10-14T13:01:20.460Z",
+      "clock_text_read_from_native_HUD": "19:43",
+      "visible_fields": {
+        "hp": 0,
+        "max_hp": 1308,
+        "respawn_displayed_seconds": 40,
+        "kda": [
+          5,
+          3,
+          2
+        ]
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/14",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-014.png",
+      "sha256": "4ae2904294492840b8e7e2cea96cc5ac5cf2f3df98f995ec56da18a03c56c4e4",
+      "bytes": 1682140,
+      "capture_utc": "2026-10-14T12:59:08.741Z",
+      "clock_text_read_from_native_HUD": "21:53",
+      "visible_fields": {
+        "hp": 786,
+        "max_hp": 1528,
+        "mana": 1337,
+        "max_mana": 1376,
+        "visible_status_text": "ОГЛУШЕНИЕ"
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "overview-r4-v4/74",
+      "source_png": "build/dota_coach/replay-9042986015/overview-r4-v4/frame-074.png",
+      "sha256": "7843075dd6e90d97270847ff4b59664166e7edf716aae849c820371e509f94b3",
+      "bytes": 1437841,
+      "capture_utc": "2026-10-14T12:51:28.148Z",
+      "clock_text_read_from_native_HUD": "25:34",
+      "visible_fields": {
+        "hp": 322,
+        "max_hp": 1660,
+        "mana": 844,
+        "max_mana": 1484,
+        "visible_channel_text": "Применяется 1.9с"
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-samples-r4/20",
+      "source_png": "build/dota_coach/replay-9042986015/episode-samples-r4/frame-020.png",
+      "sha256": "5b964d74a743541958fed6e31788a730c8ec491f02973db027d4015f76342bb7",
+      "bytes": 1447759,
+      "capture_utc": "2026-10-14T12:59:29.613Z",
+      "clock_text_read_from_native_HUD": "31:45",
+      "visible_fields": {
+        "kda": [
+          5,
+          4,
+          3
+        ],
+        "last_hits": 343,
+        "denies": 2,
+        "radiant_score": 36,
+        "dire_score": 12
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    },
+    {
+      "id": "episode-confirm-r4/4",
+      "source_png": "build/dota_coach/replay-9042986015/episode-confirm-r4/frame-004.png",
+      "sha256": "c2f221f801b1bd8857d34ca4425cb0e2eeb13df50c9354f4d3032ffdebd097f2",
+      "bytes": 1072662,
+      "capture_utc": "2026-10-14T13:01:27.129Z",
+      "clock_text_read_from_native_HUD": "31:45",
+      "visible_fields": {
+        "kda": [
+          5,
+          4,
+          3
+        ],
+        "last_hits": 343,
+        "denies": 2,
+        "radiant_score": 36,
+        "dire_score": 12,
+        "scene": "postgame_camera_black_letterbox"
+      },
+      "cause": null,
+      "intent": null,
+      "stable_trait": null,
+      "review": "root_visual; independent C2 artifact review sampled8 full frames, not all causal claims"
+    }
+  ],
+  "coverage": "sparse overview0:14-30:00 plus26 close samples through31:45; no continuous every-second viewing",
+  "API_duration_clock": "31:50",
+  "HUD_last_observed_clock": "31:45",
+  "clock_mapping_verified": false,
+  "physical_input_controlled": false,
+  "personal_model_trained": false,
+  "player_fidelity_verified": false,
+  "input_tokens": null,
+  "cost": null,
+  "verification": "all114 image bytes and SHA256 matched their local manifests",
+  "review_status": "independent_C2_technical_review_completed_scope_sparse_research_only",
+  "temporary_settings_restored": {
+    "cl_playback_screenshots": false,
+    "dota_video_config.setting.fullscreen_min_on_focus_loss": 1
+  },
+  "restoration_receipts": [
+    "build/dota_coach/replay-9042986015/verify-screenshots-r4.jsonl",
+    "build/dota_coach/replay-9042986015/verify-focus-r4.jsonl"
+  ],
+  "technical_review": {
+    "report": "technical-review.md",
+    "reviewed_image_bytes_and_hashes": 114,
+    "full_frames_sampled": 8,
+    "P1": 0,
+    "P2": 0,
+    "causal_model_or_fidelity_verified": false
+  }
+}

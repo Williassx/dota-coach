@@ -1,0 +1,20 @@
+{
+  "match_id": 9042986015,
+  "source_url": "http://replay273.valve.net/570/9042986015_1640170138.dem.bz2",
+  "verified_at_utc": "2026-10-14T11:42:33.911871+00:00",
+  "packed": {
+    "path": "build/dota_coach/replay-9042986015/9042986015.dem.bz2",
+    "bytes": 37843886,
+    "sha256": "3fdd04f2491c628b50e3d7cdcd2581345e8de34be222c8ed3314dbc2f2bc78ff"
+  },
+  "demo": {
+    "path": "build/dota_coach/replay-9042986015/9042986015.verified.dem",
+    "bytes": 64095154,
+    "sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330"
+  },
+  "compression": "Zstandard_magic_28b52ffd",
+  "decompressor": "python-zstandard0.25.0",
+  "header_hex": "504244454d5332001002d2039b01d20301ffffffff0fb8010a08504244454d53",
+  "native_playback_verified": false,
+  "prior_bzip2_attempt": "Invalid data stream; preserved empty9042986015.dem"
+}

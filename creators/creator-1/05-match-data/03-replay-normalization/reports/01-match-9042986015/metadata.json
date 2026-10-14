@@ -1,0 +1,305 @@
+{
+  "schema": "dota-coach-public-match-metadata-v1",
+  "match_id": 9042986015,
+  "author_creator": 1,
+  "analyst_role": "public_match_source_identity_audit",
+  "prepared_at_utc": "2026-10-14T12:00:29.007012+00:00",
+  "native_replay_watched_by_this_analyst": false,
+  "local_dem_parsed_by_this_analyst": false,
+  "sources": [
+    {
+      "url": "https://api.opendota.com/api/matches/9042986015",
+      "fetched_at_utc": "2026-10-14T11:38:39.747389+00:00",
+      "http_status": 200,
+      "bytes": 227598,
+      "sha256": "e5d141bc6f7841999cb8afb75a107788287e46d3b9e2e6f85221413ab0147fb1"
+    },
+    {
+      "url": "https://api.opendota.com/api/proPlayers",
+      "fetched_at_utc": "2026-10-14T11:38:40.825032+00:00",
+      "http_status": 200,
+      "bytes": 4946421,
+      "sha256": "6cc772e51f985bd65e14e9bad28d3dbcfc3c4fe61debac700d055562cb075a97"
+    },
+    {
+      "url": "https://api.opendota.com/api/constants/heroes",
+      "fetched_at_utc": "2026-10-14T11:39:26.200194+00:00",
+      "http_status": 200,
+      "bytes": 92569,
+      "sha256": "5fe8f41250b5f705232f58d3238eaf89720e554958191ba3f323187803b73650"
+    },
+    {
+      "url": "https://api.opendota.com/api/constants/patch",
+      "fetched_at_utc": "2026-10-14T11:39:26.962577+00:00",
+      "http_status": 200,
+      "bytes": 3417,
+      "sha256": "f947c676dbe2c919ec42841c9fb4ee868249297087bad07bad7c6f63a2b92484"
+    },
+    {
+      "url": "https://api.opendota.com/api/players/70388657",
+      "fetched_at_utc": "2026-10-14T11:39:27.442210+00:00",
+      "http_status": 200,
+      "bytes": 2458,
+      "sha256": "64243104d1d55ba04ec7cf2adfaf16a01b622703a988954a8a998f0643acae85"
+    }
+  ],
+  "network_boundary": {
+    "web_tool_api": "inaccessible",
+    "sandbox_python": "WinError 10051",
+    "approved_readonly_public_http": "HTTP 200; actual bytes hashed"
+  },
+  "match": {
+    "start_time_unix": 1791892318,
+    "start_time_utc": "2026-10-13T11:51:58+00:00",
+    "duration_seconds": 1910,
+    "duration_clock": "31:50",
+    "radiant_win": true,
+    "radiant_score": 36,
+    "dire_score": 12,
+    "human_players": 10,
+    "game_mode_id": 22,
+    "lobby_type_id": 7,
+    "region_id": 3,
+    "cluster": 273,
+    "open_dota_parser_version": 22,
+    "open_dota_data_flags": {
+      "has_api": true,
+      "has_gcdata": true,
+      "has_parsed": true,
+      "has_archive": false
+    },
+    "patch": {
+      "open_dota_id": 60,
+      "open_dota_constant_name": "7.41",
+      "exact_suffix": null,
+      "replay_engine_build": 10939,
+      "installed_client_build_match_confirmed": false,
+      "native_header_patch_version": 48,
+      "patch_number_domains_are_distinct": true
+    }
+  },
+  "identity": {
+    "user_attribution": "Dendi",
+    "account_id": 70388657,
+    "steamid64_public_profile": "76561198030654385",
+    "profile_url": "https://steamcommunity.com/id/DendiQ/",
+    "match_display_name": "v o i d",
+    "match_pro_name": "Dendi",
+    "directory_pro_name": "Dendi",
+    "directory_team_name_at_fetch": "B8",
+    "association_status": "same_account_id_in_match_pro_directory_and_profile",
+    "independent_identity_authentication": false,
+    "consent_or_image_rights_confirmed": false,
+    "native_header_same_steamid_confirmed": true
+  },
+  "player": {
+    "side": "Dire",
+    "player_slot": 130,
+    "hero_id": 17,
+    "hero_name": "Storm Spirit",
+    "hero_internal_name": "npc_dota_hero_storm_spirit",
+    "lane_role_id": 2,
+    "lane_id": 2,
+    "position_estimate": 2,
+    "lane_is_provider_classification": true,
+    "outcome": "loss",
+    "aggregate_stats": {
+      "kills": 5,
+      "deaths": 4,
+      "assists": 3,
+      "gold_per_min": 551,
+      "xp_per_min": 487,
+      "last_hits": 343,
+      "denies": 2,
+      "level": 16,
+      "hero_damage": 12448,
+      "tower_damage": 84,
+      "hero_healing": 0,
+      "net_worth": 16602,
+      "neutral_kills": 164,
+      "lane_kills": 166
+    }
+  },
+  "replay": {
+    "url": "http://replay273.valve.net/570/9042986015_1640170138.dem.bz2",
+    "replay_salt": 1640170138,
+    "head": {
+      "url": "http://replay273.valve.net/570/9042986015_1640170138.dem.bz2",
+      "requested_method": "HEAD",
+      "status": 200,
+      "content_length": "37843886",
+      "content_type": "application/octet-stream",
+      "checked_at_utc": "2026-10-14T11:39:27.681546+00:00"
+    },
+    "download_completed_by_this_analyst": false,
+    "binary_sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330",
+    "official_payload_local_bytes_verified": true,
+    "compressed": {
+      "filename_suffix": "dem.bz2",
+      "actual_magic_hex": "28b52ffd",
+      "actual_codec": "Zstandard",
+      "bytes": 37843886,
+      "sha256": "3fdd04f2491c628b50e3d7cdcd2581345e8de34be222c8ed3314dbc2f2bc78ff"
+    },
+    "decompressed": {
+      "bytes": 64095154,
+      "sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330",
+      "magic_hex": "504244454d533200"
+    }
+  },
+  "parsed_coverage": {
+    "player_fields": {
+      "kills_log": {
+        "present": true,
+        "type": "list",
+        "entries": 5
+      },
+      "deaths_log": {
+        "present": true,
+        "type": "list",
+        "entries": 4
+      },
+      "purchase_log": {
+        "present": true,
+        "type": "list",
+        "entries": 40
+      },
+      "runes_log": {
+        "present": true,
+        "type": "list",
+        "entries": 5
+      },
+      "obs_log": {
+        "present": true,
+        "type": "list",
+        "entries": 1
+      },
+      "sen_log": {
+        "present": true,
+        "type": "list",
+        "entries": 1
+      },
+      "times": {
+        "present": true,
+        "type": "list",
+        "entries": 32
+      },
+      "gold_t": {
+        "present": true,
+        "type": "list",
+        "entries": 32
+      },
+      "lh_t": {
+        "present": true,
+        "type": "list",
+        "entries": 32
+      },
+      "xp_t": {
+        "present": true,
+        "type": "list",
+        "entries": 32
+      },
+      "networth_t": {
+        "present": true,
+        "type": "list",
+        "entries": 32
+      },
+      "ability_upgrades_arr": {
+        "present": true,
+        "type": "list",
+        "entries": 16
+      },
+      "actions": {
+        "present": true,
+        "type": "dict",
+        "entries": 19
+      },
+      "lane_pos": {
+        "present": true,
+        "type": "dict",
+        "entries": 83
+      },
+      "position_data": {
+        "present": false,
+        "type": "NoneType",
+        "entries": null
+      }
+    },
+    "match_objectives_count": 29,
+    "match_teamfights_count": 2,
+    "sample_time_min": 0,
+    "sample_time_max": 1860,
+    "sample_time_step_seconds": 60,
+    "has_timestamped_action_stream": false,
+    "has_continuous_player_position_stream": false,
+    "has_player_camera_or_input_stream": false,
+    "hidden_information_filter_applied": false
+  },
+  "limitations": [
+    "OpenDota parsed API is an external derived dataset, not our independent .dem parse.",
+    "lane_pos is a spatial histogram; actions is a count dictionary. Neither reconstructs a timestamped trajectory.",
+    "API whole-match fields can include omniscient or future information; no decision-state inputs or training examples produced here.",
+    "One observed match does not establish stable style, skill rating, moral state, friendliness or personality.",
+    "OpenDota patch family 7.41 does not establish exact client/replay engine build compatibility."
+  ],
+  "raw_local_directory": "build/dota_coach/replay-9042986015",
+  "raw_tracked_or_distributed": false,
+  "native_header_supplement": {
+    "source_local_path": "build/dota_coach/replay-9042986015/native-r2-info.jsonl",
+    "source_sha256": "93a8c42f215333f5bac9ed653c2a763949d6abf0cec148599c161d5f92a54292",
+    "source_bytes": 2957,
+    "native_command_receipt_utc": "2026-10-14T11:50:25.185Z",
+    "native_command": "demo_info",
+    "verified_match_id": 9042986015,
+    "demo_file_stamp": "PBDEMS2\\000",
+    "header_patch_version": 48,
+    "build_num": 10939,
+    "game_directory": "/opt/srcds/dota/dota_v6958/dota",
+    "server_start_tick": 464,
+    "playback_time_seconds": 2270.0,
+    "playback_ticks": 68100,
+    "playback_frames": 34050,
+    "dendi_player": {
+      "hero_internal_name": "npc_dota_hero_storm_spirit",
+      "name": "v o i d",
+      "steamid64": "76561198030654385",
+      "account_id_low32": 70388657,
+      "game_team": 3,
+      "is_fake_client": false
+    },
+    "native_header_read_confirmed": true,
+    "visual_playback_confirmed_by_this_supplement": false,
+    "whole_replay_watched_confirmed": false,
+    "other_player_steamids_published": false
+  },
+  "clock_alignment": {
+    "api_game_duration_seconds": 1910,
+    "native_header_playback_time_seconds": 2270,
+    "numerical_duration_difference_seconds": 360,
+    "difference_is_verified_clock_offset": false,
+    "game_start_time_entity_value": null,
+    "pause_ticks_observed_in_this_replay": null,
+    "seek_tick_to_game_time_mapping_verified": false,
+    "primary_parser_source": {
+      "url": "https://raw.githubusercontent.com/odota/parser/master/src/main/java/opendota/Parse.java",
+      "http_status": 200,
+      "fetched_at_utc": "2026-10-14T11:59:21.373490+00:00",
+      "bytes": 55531,
+      "sha256": "406d0b6bae12812c4103b533375f206ee5f93f61ca3249ddabcacb34225139d1"
+    },
+    "source_lines": {
+      "output_subtracts_game_start_time": 173,
+      "time_pause_correction": [
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512
+      ],
+      "game_start_time_property": 540
+    },
+    "note": "Source inspected only; this Java parser was not run on the local .dem."
+  }
+}

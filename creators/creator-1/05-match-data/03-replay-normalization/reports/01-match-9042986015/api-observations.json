@@ -1,0 +1,418 @@
+{
+  "schema_version": "c1-api-observations-documentary-v1",
+  "date": "2026-10-14",
+  "match_id": "9042986015",
+  "actor": {
+    "account_id": 70388657,
+    "player_slot": 130,
+    "hero_id": 17,
+    "api_name": "Dendi",
+    "api_personaname": "v o i d",
+    "team": "Dire"
+  },
+  "source": {
+    "url": "https://api.opendota.com/api/matches/9042986015",
+    "local_path": "build/dota_coach/replay-9042986015/match.json",
+    "sha256": "e5d141bc6f7841999cb8afb75a107788287e46d3b9e2e6f85221413ab0147fb1",
+    "api_version_field": 22,
+    "has_parsed": true,
+    "exact_parser_deployment_revision": null
+  },
+  "match_context": {
+    "duration_seconds": 1910,
+    "radiant_win": true,
+    "actor_won": false,
+    "api_lane_role": 2,
+    "api_position_est": 2,
+    "patch_index": 60
+  },
+  "clock": "OpenDota source times in integer game seconds; native HUD calibration pending; UTC start_time separate",
+  "status": "documentary observations of API, not native visual analysis or runtime player profile",
+  "native_images_seen": 0,
+  "observations": [
+    {
+      "id": "terminal-result",
+      "kind": "aggregate",
+      "source_pointers": [
+        "/players/7/kills",
+        "/players/7/deaths",
+        "/players/7/assists",
+        "/players/7/last_hits",
+        "/players/7/denies",
+        "/players/7/gold_per_min",
+        "/players/7/xp_per_min",
+        "/players/7/hero_damage",
+        "/players/7/tower_damage",
+        "/players/7/net_worth",
+        "/players/7/level"
+      ],
+      "value": {
+        "kills": 5,
+        "deaths": 4,
+        "assists": 3,
+        "last_hits": 343,
+        "denies": 2,
+        "gold_per_min": 551,
+        "xp_per_min": 487,
+        "hero_damage": 12448,
+        "tower_damage": 84,
+        "net_worth": 16602,
+        "level": 16
+      },
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "One match terminal aggregates; no quality rating, stable style or causal loss attribution."
+    },
+    {
+      "id": "sampled-farm",
+      "kind": "time_series",
+      "source_pointers": [
+        "/players/7/times",
+        "/players/7/lh_t",
+        "/players/7/dn_t",
+        "/players/7/gold_t",
+        "/players/7/xp_t",
+        "/players/7/networth_t"
+      ],
+      "value": [
+        {
+          "time_seconds": 0,
+          "last_hits": 0,
+          "denies": 0,
+          "gold_t": 0,
+          "xp_t": 0,
+          "networth": 598
+        },
+        {
+          "time_seconds": 300,
+          "last_hits": 28,
+          "denies": 2,
+          "gold_t": 1691,
+          "xp_t": 2004,
+          "networth": 2109
+        },
+        {
+          "time_seconds": 600,
+          "last_hits": 70,
+          "denies": 2,
+          "gold_t": 3947,
+          "xp_t": 4496,
+          "networth": 3938
+        },
+        {
+          "time_seconds": 900,
+          "last_hits": 134,
+          "denies": 2,
+          "gold_t": 7250,
+          "xp_t": 7422,
+          "networth": 7009
+        },
+        {
+          "time_seconds": 1200,
+          "last_hits": 205,
+          "denies": 2,
+          "gold_t": 10650,
+          "xp_t": 9775,
+          "networth": 10069
+        },
+        {
+          "time_seconds": 1320,
+          "last_hits": 220,
+          "denies": 2,
+          "gold_t": 11603,
+          "xp_t": 10608,
+          "networth": 10747
+        },
+        {
+          "time_seconds": 1380,
+          "last_hits": 220,
+          "denies": 2,
+          "gold_t": 11768,
+          "xp_t": 10722,
+          "networth": 10912
+        },
+        {
+          "time_seconds": 1500,
+          "last_hits": 265,
+          "denies": 2,
+          "gold_t": 13894,
+          "xp_t": 12433,
+          "networth": 13038
+        },
+        {
+          "time_seconds": 1800,
+          "last_hits": 317,
+          "denies": 2,
+          "gold_t": 16568,
+          "xp_t": 14725,
+          "networth": 15612
+        },
+        {
+          "time_seconds": 1860,
+          "last_hits": 322,
+          "denies": 2,
+          "gold_t": 16791,
+          "xp_t": 14820,
+          "networth": 15835
+        }
+      ],
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "Minute samples do not locate farm camps, lane occupancy or movement routes; gold_t is reported series and not assumed identical to networth/current gold."
+    },
+    {
+      "id": "last-hit-flat-22-23",
+      "kind": "derived_series_difference",
+      "source_pointers": [
+        "/players/7/times",
+        "/players/7/lh_t",
+        "/players/7/deaths_log"
+      ],
+      "value": {
+        "from": {
+          "time_seconds": 1320,
+          "last_hits": 220,
+          "denies": 2,
+          "gold_t": 11603,
+          "xp_t": 10608,
+          "networth": 10747
+        },
+        "to": {
+          "time_seconds": 1380,
+          "last_hits": 220,
+          "denies": 2,
+          "gold_t": 11768,
+          "xp_t": 10722,
+          "networth": 10912
+        },
+        "delta_last_hits": 0,
+        "nearby_death_record": {
+          "gold_fed": 589,
+          "time": 1315,
+          "gold_lost": 275,
+          "key": "npc_dota_hero_mirana",
+          "time_dead": 46
+        }
+      },
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "Zero sampled LH increase22:00–23:00 and nearby21:55 death are both recorded; causality, exact respawn and post-respawn action not established."
+    },
+    {
+      "id": "deaths",
+      "kind": "event_log",
+      "source_pointers": [
+        "/players/7/deaths_log"
+      ],
+      "value": [
+        {
+          "gold_fed": 388,
+          "time": 493,
+          "gold_lost": 83,
+          "key": "npc_dota_hero_rubick",
+          "time_dead": 28
+        },
+        {
+          "gold_fed": 577,
+          "time": 932,
+          "gold_lost": 180,
+          "key": "npc_dota_hero_mirana",
+          "time_dead": 36
+        },
+        {
+          "gold_fed": 605,
+          "time": 1177,
+          "gold_lost": 257,
+          "key": "npc_dota_hero_dragon_knight",
+          "time_dead": 46
+        },
+        {
+          "gold_fed": 589,
+          "time": 1315,
+          "gold_lost": 275,
+          "key": "npc_dota_hero_mirana",
+          "time_dead": 46
+        }
+      ],
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "Killer key/time_dead are API attributes; do not infer positioning mistake, available escape or exact native respawn from these fields."
+    },
+    {
+      "id": "key-purchases",
+      "kind": "event_log",
+      "source_pointers": [
+        "/players/7/purchase_log"
+      ],
+      "value": [
+        {
+          "time": 86,
+          "key": "bottle"
+        },
+        {
+          "time": 187,
+          "key": "magic_wand"
+        },
+        {
+          "time": 330,
+          "key": "soul_ring"
+        },
+        {
+          "time": 594,
+          "key": "arcane_boots"
+        },
+        {
+          "time": 793,
+          "key": "kaya"
+        },
+        {
+          "time": 1118,
+          "key": "orchid"
+        },
+        {
+          "time": 1531,
+          "key": "black_king_bar"
+        }
+      ],
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "Reported purchase time is not proof of delivery/equipped/activation time, build commitment or intent."
+    },
+    {
+      "id": "observed-uses-aggregate",
+      "kind": "aggregate",
+      "source_pointers": [
+        "/players/7/ability_uses",
+        "/players/7/item_uses",
+        "/players/7/ability_targets"
+      ],
+      "value": {
+        "ability_uses": {
+          "storm_spirit_static_remnant": 165,
+          "storm_spirit_electric_vortex": 10,
+          "twin_gate_portal_warp": 5,
+          "storm_spirit_ball_lightning": 86,
+          "ability_lamp_use": 2
+        },
+        "item_uses": {
+          "soul_ring": 39,
+          "bottle": 32,
+          "arcane_boots": 15,
+          "magic_wand": 10,
+          "orchid": 4,
+          "black_king_bar": 1
+        },
+        "electric_vortex_targets": {
+          "npc_dota_hero_undying": 2,
+          "npc_dota_hero_rubick": 2,
+          "npc_dota_hero_mirana": 4,
+          "npc_dota_hero_dragon_knight": 2
+        }
+      },
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "Use counts and hero target totals lack full sequences, range/visibility and opportunity denominators; no reaction/target-preference score."
+    },
+    {
+      "id": "creep-categories",
+      "kind": "aggregate",
+      "source_pointers": [
+        "/players/7/neutral_kills",
+        "/players/7/lane_kills",
+        "/players/7/last_hits",
+        "/players/7/creeps_stacked",
+        "/players/7/camps_stacked"
+      ],
+      "value": {
+        "neutral_kills": 164,
+        "lane_kills": 166,
+        "last_hits": 343,
+        "creeps_stacked": 3,
+        "camps_stacked": 1
+      },
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "neutral164+lane166=330 differs from343last_hits; categories not treated as exhaustive normalized fractions. No time-specific switch-to-jungle inferred."
+    },
+    {
+      "id": "kill-attribution",
+      "kind": "event_log",
+      "source_pointers": [
+        "/players/7/kills_log",
+        "/players/7/kills"
+      ],
+      "value": {
+        "aggregate_kills": 5,
+        "kill_records": [
+          {
+            "time": 449,
+            "key": "npc_dota_hero_dragon_knight"
+          },
+          {
+            "time": 455,
+            "key": "npc_dota_hero_undying"
+          },
+          {
+            "time": 642,
+            "key": "npc_dota_hero_rubick"
+          },
+          {
+            "time": 698,
+            "key": "npc_dota_hero_dragon_knight"
+          },
+          {
+            "tracked_death": true,
+            "tracked_sourcename": "npc_dota_hero_bounty_hunter",
+            "time": 769,
+            "key": "npc_dota_hero_rubick"
+          }
+        ],
+        "flagged_record": {
+          "tracked_death": true,
+          "tracked_sourcename": "npc_dota_hero_bounty_hunter",
+          "time": 769,
+          "key": "npc_dota_hero_rubick"
+        }
+      },
+      "origin": "OpenDota parsed API fields",
+      "native_verified": false,
+      "available_knowledge": "unknown",
+      "intent_hypothesis": null,
+      "limitation": "At12:49 tracked_death=true/tracked_sourcename=BountyHunter. Native check needed before labeling this record as ordinary Storm last-hit kill."
+    }
+  ],
+  "profile_draft": {
+    "identity_label": "Dendi / API account70388657, identity provenance in metadata report",
+    "measured_origin": "this one parsed match only",
+    "personal_behavior_model_available": false,
+    "profile_version": null,
+    "train_split_frozen": false,
+    "heldout": "match9042986015 examined; exploratory/train candidate only",
+    "confidence": "API field values and arithmetic checked; full event correctness and native correspondence unverified",
+    "coverage": null,
+    "coverage_note": "No denominator of observable player decision episodes; no numeric profile coverage invented",
+    "traits": [],
+    "traits_note": "Morale/friendliness/focus not inferred; game traits require separate labeled design",
+    "next_measurements": [
+      "native player POV/vision and selected episode sequence",
+      "actual lane/jungle route with coordinates/time",
+      "purchase delivery and item activation times",
+      "combat alternatives/resources and escape context",
+      "additional independent matches before testing stable style"
+    ]
+  }
+}

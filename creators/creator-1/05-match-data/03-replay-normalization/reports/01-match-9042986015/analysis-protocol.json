@@ -1,0 +1,102 @@
+{
+  "schema_version": "c1-observation-protocol-v1",
+  "date": "2026-10-14",
+  "match_id": "9042986015",
+  "owner": "C1-05-03",
+  "analyst_role": "132 / персональные модели и наблюдения",
+  "status": "protocol_only_no_match_observations",
+  "claimed_player": "Dendi",
+  "identity_verified": false,
+  "replay_loaded": false,
+  "personal_similarity_confirmed": false,
+  "identity_rule": "Сначала связать match slot, account id и источник identity; nickname и утверждение пользователя отдельно от подтверждения.",
+  "observation_fields": {
+    "observation_id": "unique local id",
+    "match_id": "9042986015",
+    "actor_slot": "verified slot or null",
+    "game_time_seconds": "signed seconds relative to game start or null",
+    "time_source": "native replay HUD / parsed tick with documented conversion",
+    "segment_start_seconds": "interval start",
+    "segment_end_seconds": "interval end",
+    "evidence": "local frame/clip path + SHA256 / source record + parser revision",
+    "view_mode": "player POV / spectator all vision / metadata / unknown",
+    "context": "phase, actor hero/role, position, resources, lane/wave/objectives; unknown kept null",
+    "observed_action": "literal visible or parsed action, never intent",
+    "outcome": "observed result within explicit horizon; censored if no later evidence",
+    "available_knowledge": {
+      "own_team_visibility": "verified/unknown",
+      "enemy_information": "visible/last_known/spectator_only/unknown",
+      "player_camera": "observed/unknown",
+      "ui_input": "observed/unknown"
+    },
+    "intent_hypothesis": "optional hypothesis with alternatives, never fact",
+    "confidence": {
+      "observation": "high/medium/low + reason",
+      "hypothesis": "high/medium/low + reason"
+    },
+    "missing_context": "explicit list",
+    "normalization_gate": "c1-replay-gate-v1 only for compatible normalized events; manual record is separate"
+  },
+  "feature_groups": [
+    {
+      "name": "farm",
+      "observable": "lane/jungle occupancy, last hits/denies if HUD/source supports, farm route, time away from available farm",
+      "limit": "GPM is aggregate; motive and available alternatives require context"
+    },
+    {
+      "name": "movement",
+      "observable": "positions/time intervals, transitions, rotations, retreat, group proximity",
+      "limit": "spectator paths do not show player camera, clicks or attention"
+    },
+    {
+      "name": "targets",
+      "observable": "visible attacks/casts/target switches, combat entry/exit",
+      "limit": "unseen targets and selected unit alone are not actual issued commands"
+    },
+    {
+      "name": "purchases",
+      "observable": "inventory changes and timestamped purchase events if available",
+      "limit": "inventory acquisition alone can be delivery/transfer; exact intention is unknown"
+    },
+    {
+      "name": "threat_response",
+      "observable": "movement/action following documented visible threat",
+      "limit": "temporal order is not causality; invisible threat excluded from player feature context"
+    },
+    {
+      "name": "team_interaction",
+      "observable": "join/leave fights, assistance, objective participation",
+      "limit": "not evidence of friendliness, morale or private communication"
+    }
+  ],
+  "outcome_horizons_seconds": [
+    5,
+    15,
+    30
+  ],
+  "horizon_policy": "Descriptive candidates, no success thresholds fitted; do not search for best horizon on final test.",
+  "coverage_rule": "Per feature numerator of observable eligible episodes and denominator + exclusions; do not invent overall 0..1 from viewed minutes.",
+  "heldout": {
+    "unit": "whole match",
+    "this_match": "exploratory/train candidate because examined now; never untouched final test later",
+    "future": "Freeze train/validation/test match IDs after receipt and duplicate/patch/hero audit, before tuning. Final test not used for event selection/thresholds. No split claimed yet."
+  },
+  "gate_limitations": [
+    "current gate omits time/context/outcome/confidence; retain separate documentary observations, no source schema extension here",
+    "current hidden/future booleans are input assertions, not independent authorization or validation of replay vision",
+    "compatible parser not selected by this analyst; native replay viewing is not parser acceptance"
+  ],
+  "forbidden_conclusions": [
+    "personality, friendliness, morale or psychological state from replay",
+    "real-player imitation from one match",
+    "available enemy knowledge from omniscient spectator view",
+    "reliable response latency from sparse screenshots",
+    "skill rating or fixed trait from one result"
+  ],
+  "next_steps": [
+    "root verifies replay availability/version and actor identity",
+    "root captures actual native timestamped observations with view mode",
+    "analysts fill evidence records; separate descriptive tendency from hypothesis",
+    "cross-check observed episode against replay/metadata where available"
+  ]
+}

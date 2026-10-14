@@ -525,3 +525,12 @@
 
 
 Дополнение к45: git diff --check с transient core.autocrlf=false трактовал CRLF как trailing whitespace и дал огромный шум, хотя нормальная Git-проверка ранее проходила. Не переписывать source bytes/нативные receipts ради inspection config. Повтор с core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol и обычным autocrlf далexit0; длинный вывод сохранять вbuildlog.
+
+## 46. Replay capture проверять по изображению и часам, до масштабирования
+
+- **Факт:** матч 9042986015 получен по Valve URL `.dem.bz2`, но magic `28b52ffd` оказался Zstandard. BZ2 attempt дал Invalid data stream; пустой output сохранён. Проверенный Zstandard decode дал PBDEMS2/64095154 bytes. Использовать magic и SHA, а не расширение.
+- **Диагностика:** normal Dota не зарегистрировал screenshot, Tools зарегистрировал; `cl_playback_screenshots=false` блокировал экспорт. После true получен actual game PNG. Sky graphics timeout/GDI black frame не доказывали отсутствие реплея. Один отдельно разрешённый desktop probe остался local ignored; не использовать его для игрового вывода.
+- **Сбой:** первый overview88 повторил итоговый экран. Следующие pilots остановились на трёх дубликатах. Demo ticks продвигались при неактуальном HUD-изображении; получение файла не доказывает актуальность. После Sky state refresh/activate появился свежий кадр, причина заморозки не изолирована.
+- **Изменение подхода:** before long capture — active replay path, actor/POV, два новых game frames и продвижение HUD clock; duplicate guard плюс проверка menu. Событийные эпизоды дополнять обычными участками. Requested tick/UTC/index/скорость не выдавать за actual game clock. После одинаковых ошибок сначала урок/новая гипотеза, а не повтор всего запуска.
+- **Проверка:**114 разных PNG в трёх valid группах, bytes/SHA matched; root/два анализатора просмотрели sparse обзор. Ресурсное истощение8:11 и оглушение19:35 отделены. Temporary capture/focus cvars restored/readback; exact ownPID26024 quit→gone, Steam13704 сохранён. [Итог](../../../../creator-1/05-match-data/03-replay-normalization/reports/01-match-9042986015/match-analysis.md).
+- **Экономия:** один приём/кеш исходников, deterministic metrics, compact per-episode packets, один итоговый review. Usage недоступен — tokens/cost null; проценты не вычислять из числа кадров. Agent follow-up usage limit не считается выполненной проверкой.
