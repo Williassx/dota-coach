@@ -120,6 +120,9 @@ def validate_inputs(spec: InputSpec) -> ImportContext:
             if p.suffix in ['.py', '.java']: hashes['source:' + p.name] = sha256(p)
         schema = BASE / 'notes/dem-schema-v1.json'
         if schema.exists(): hashes['schema'] = sha256(checked_path(schema))
+        for name in ['evidence.json', 'observations.json']:
+            p = BASE / 'reports/03-native-tick-calibration' / name
+            if p.exists(): hashes['calibration:' + name] = sha256(checked_path(p))
         return ImportContext(spec, limits, hashes, {'java_home': str(java_home), 'jars': jar_paths}, config)
     except DemImportError:
         raise

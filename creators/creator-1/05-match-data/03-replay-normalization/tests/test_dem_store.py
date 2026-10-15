@@ -126,5 +126,17 @@ if mode=='nonzero':sys.exit(3)
             (stage/'states.jsonl').write_text(json.dumps(bad)+'\n')
             with self.assertRaises(DemImportError):validate_streams(stage,self.ctx)
 
+    def test_native_calibration_scoped_to_input_actor_and_fields(self):
+        from dem_store import calibration_reference
+        self.assertEqual(calibration_reference(self.ctx)['status'],'unverified')
+        self.ctx.hashes['input']='3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330'
+        ref=calibration_reference(self.ctx)
+        self.assertEqual(len(ref['points']),3)
+        stage=self.root/'calibration';stage.mkdir()
+        for name in ['events','gaps']:(stage/(name+'.jsonl')).write_text('')
+        row=dict(STATE,demo_tick=21212)
+        (stage/'states.jsonl').write_text(json.dumps(row)+'\n')
+        with self.assertRaises(DemImportError):validate_streams(stage,self.ctx)
+
 
 if __name__=='__main__':unittest.main()

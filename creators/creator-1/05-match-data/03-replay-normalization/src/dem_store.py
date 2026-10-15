@@ -12,8 +12,26 @@ import uuid
 from pathlib import Path
 from dem_types import DemImportError, ImportResult, canonical_json, uint64_decimal
 from dem_inputs import BASE, BUILD, cache_key, checked_path, read_json, sha256, validate_inputs
+from dem_episodes import build_episodes
 
 STREAMS = ('states', 'events', 'gaps')
+
+
+def calibration_reference(ctx):
+    empty = {'status':'unverified','points':[],'whole_native_payload_verified':False}
+    evidence_path = BASE/'reports/03-native-tick-calibration/evidence.json'
+    observations_path = BASE/'reports/03-native-tick-calibration/observations.json'
+    if not evidence_path.exists() or not observations_path.exists(): return empty
+    e, observations = read_json(evidence_path), read_json(observations_path)
+    if e.get('dem_sha256') != ctx.hashes['input'] or e.get('match_id') != ctx.spec.match_id: return empty
+    points = []
+    for p in observations['points']:
+        if p['comparison']['status'] == 'exact_csv_tick_fields_consistent' and p['decoded_source']['fields']['actor_account_id'] == str(ctx.spec.account_id):
+            points.append({'demo_tick':p['native_cursor']['before'],'hud':p['hud_readback'],'png_sha256':p['image']['sha256']})
+    if not points: return empty
+    return {'status':'scoped_hud_reference','points':points,'client_build':e['client_build'],
+            'evidence_sha256':sha256(evidence_path),'observations_sha256':sha256(observations_path),
+            'whole_native_payload_verified':False,'actual_pause_verified':False}
 
 
 def prepare_runtime(ctx):
@@ -65,6 +83,9 @@ def iter_rows(path, limits):
 
 def validate_streams(stage, ctx):
     counts = {}; hashes = {}
+    calibration = calibration_reference(ctx)
+    expected_points = {p['demo_tick']:p['hud'] for p in calibration['points']}
+    found_points = set()
     for stream in STREAMS:
         p = stage / (stream + '.jsonl'); count = 0; last_tick = -1
         for r in iter_rows(p, ctx.limits):
@@ -93,6 +114,11 @@ def validate_streams(stage, ctx):
                     if seconds is not None and (type(seconds) not in (int, float) or not math.isfinite(seconds)):
                         raise DemImportError(4, 'nonfinite_clock')
                     if r.get('raw_state64') is not None: uint64_decimal(r['raw_state64'])
+                    if tick in expected_points:
+                        hud = expected_points[tick]
+                        if any(abs(resources[k]-hud[k])>1 for k in ['hp','max_hp','mana','max_mana']) or seconds is None or math.floor(seconds) != hud['clock_seconds']:
+                            raise DemImportError(4, 'native_calibration_mismatch')
+                        found_points.add(tick)
                 except (KeyError, TypeError) as exc: raise DemImportError(4, 'state_schema') from exc
             elif stream == 'events':
                 if r.get('knowledge_scope') != 'spectator_research' or r.get('actor_link') not in ['candidate_name_only', 'unresolved', 'full_reference']:
@@ -104,6 +130,7 @@ def validate_streams(stage, ctx):
                     raise DemImportError(4, 'gap_schema')
         counts[stream] = count; hashes[p.name] = sha256(p)
     if not counts['states']: raise DemImportError(3, 'no_actor_states')
+    if found_points != set(expected_points): raise DemImportError(4, 'native_calibration_point_missing')
     return counts, hashes
 
 
@@ -127,6 +154,8 @@ def verify_cache(path: Path, context):
         counts, stream_hashes = validate_streams(path, context)
         if receipt.get('counts') != counts or any(hashes.get(k) != v for k, v in stream_hashes.items()):
             raise DemImportError(5, 'cache_counts')
+        if 'episodes.json' not in hashes or receipt.get('capabilities',{}).get('episode_index') is not True:
+            raise DemImportError(5, 'cache_episode_index')
         if any(receipt.get(k) is not False for k in ['model_trained','player_fidelity_verified','perception_export_allowed','native_verified']):
             raise DemImportError(5, 'cache_scope')
         return ImportResult('cache_hit', receipt['cache_key'], receipt['counts'], hashes, str(path))
@@ -210,10 +239,15 @@ def run_import(context):
         if any(summary.get(k) != v for k, v in counts.items()): raise DemImportError(4, 'summary_count_mismatch')
         if summary.get('states',0) + summary.get('unassigned',0) != summary.get('real_ticks'):
             raise DemImportError(4, 'real_tick_count_mismatch')
+        episode = build_episodes(iter_rows(stage/'states.jsonl',ctx.limits),iter_rows(stage/'events.jsonl',ctx.limits),
+                                 iter_rows(stage/'gaps.jsonl',ctx.limits),ctx.config['episode_windows'],stage,ctx.limits)
+        hashes.update(episode.data_hashes)
         assert_unchanged(ctx)
         receipt = {'schema':'dem-import-receipt-v1','completed':True,'cache_key':cache_key(ctx), 'match_id':str(ctx.spec.match_id),
                    'account_id':ctx.spec.account_id, 'provenance':ctx.hashes,'counts':counts, 'parser_summary':summary,'data_hashes':hashes,
-                   'capabilities':{'actor_resources':True,'episode_index':False,'verified_actor_events':False,'actual_pause_verified':False},
+                   'episode_index':{'entries':episode.index_count,'window_records':episode.window_record_count},
+                   'calibration':calibration_reference(ctx),
+                   'capabilities':{'actor_resources':True,'episode_index':True,'verified_actor_events':False,'actual_pause_verified':False},
                    'model_trained':False,'player_fidelity_verified':False,'perception_export_allowed':False,'native_verified':False}
         # Preserve internal diagnostics separately; final output contains only declared data + receipt.
         diagnostics = output.parent / ('.' + output.name + '.diagnostics-' + token)
