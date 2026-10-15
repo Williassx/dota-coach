@@ -18,6 +18,25 @@ from dem_episodes import build_episodes
 STREAMS = ('states', 'events', 'gaps')
 
 
+def class_snapshot(directory):
+    directory = checked_path(directory)
+    result = {}
+    for entry in directory.iterdir():
+        p = checked_path(entry)
+        # v1 has only default-package classes. Nested package trees could shadow pinned JARs.
+        if not p.is_file() or not re.fullmatch(r'[A-Za-z0-9_$]+\.class',p.name):
+            raise DemImportError(2,'unexpected_classpath_entry')
+        result[p.name] = sha256(p)
+    return result
+
+
+def owned_stage(stage, identity):
+    p = checked_path(stage)
+    s = p.stat()
+    if (s.st_dev,s.st_ino) != identity: raise DemImportError(5,'staging_identity_changed')
+    return p
+
+
 def calibration_reference(ctx):
     empty = {'status':'unverified','points':[],'whole_native_payload_verified':False}
     evidence_path = BASE/'reports/03-native-tick-calibration/evidence.json'
@@ -42,8 +61,7 @@ def prepare_runtime(ctx):
         raise DemImportError(2, 'stale_compile_receipt')
     sources = {p.name: sha256(checked_path(p)) for p in (BASE / 'src').glob('*.java')}
     if compiled.get('sources') != sources: raise DemImportError(2, 'recompile_java_sources')
-    paths = sorted((BUILD / 'classes').glob('*.class'))
-    actual = {p.name: sha256(checked_path(p)) for p in paths}
+    actual = class_snapshot(BUILD/'classes')
     if not actual or compiled.get('classes') != actual or 'TelemetryEmitter.class' not in actual:
         raise DemImportError(2, 'compiled_class_hash')
     ctx.hashes.update({'class:' + k: v for k, v in actual.items()})
@@ -82,39 +100,82 @@ def iter_rows(path, limits):
             yield row
 
 
+def required_integer(value, low=0, high=2**63-1):
+    if type(value) is not int or not low <= value <= high: raise DemImportError(4,'required_integer_range')
+    return value
+
+
+def required_finite(value):
+    if type(value) not in (int,float) or not math.isfinite(value): raise DemImportError(4,'required_finite_number')
+    return value
+
+
+def validate_state(row, account, previous):
+    try:
+        server = required_integer(row['server_tick'],0,2**31-1)
+        binding = required_integer(row['binding_epoch']); epoch = required_integer(row['clock_epoch'])
+        required_integer(row['phase_raw'],-2**31,2**31-1)
+        actor = row['actor']; resources = row['resources']; clock = row['clock']
+        if type(actor['account32']) is not int or actor['account32'] != account: raise DemImportError(3,'output_actor_mismatch')
+        if not isinstance(actor['steam64'],str) or int(uint64_decimal(actor['steam64'])) & 0xffffffff != account:
+            raise DemImportError(3,'output_steam_mismatch')
+        required_integer(actor['full_handle'],0,2**32-1)
+        for key in ['index','serial']: required_integer(actor[key],0,2**31-1)
+        for key in ['class','reference_path']:
+            if not isinstance(actor[key],str) or not actor[key]: raise DemImportError(4,'actor_reference_string')
+        identity = tuple(actor[k] for k in ['steam64','full_handle','index','serial','class'])
+        if previous:
+            if binding < previous[0] or epoch < previous[1] or (binding==previous[0] and identity!=previous[2]):
+                raise DemImportError(4,'epoch_or_actor_regression')
+            if epoch==previous[1] and server < previous[3]: raise DemImportError(4,'server_clock_regression')
+        if row.get('knowledge_scope') != 'spectator_research': raise DemImportError(4,'knowledge_scope')
+        if any(k in row for k in ['observed_action','action','inferred_intent','intent']): raise DemImportError(4,'state_is_not_action')
+        reasons = row['unknown_reasons']
+        if not isinstance(reasons,list) or any(not isinstance(v,str) for v in reasons): raise DemImportError(4,'unknown_reasons_schema')
+        for key in ['hp','max_hp','mana','max_mana']:
+            required_finite(resources[key])
+            if key in ['hp','max_hp']: required_integer(resources[key],-2**31,2**31-1)
+        start = clock['start']; total = required_integer(clock['pause_total'],0,2**31-1)
+        pause_start = clock['pause_start']; paused = clock['paused']; seconds = clock['game_seconds']
+        interval = required_finite(clock['tick_interval_seconds'])
+        if interval <= 0 or type(paused) is not bool: raise DemImportError(4,'clock_interval_or_pause_type')
+        if start is not None: required_finite(start)
+        if pause_start is not None: required_integer(pause_start,0,2**31-1)
+        if paused and (pause_start is None or pause_start > server): raise DemImportError(4,'pause_start_range')
+        effective = pause_start if paused else server
+        if total > effective: raise DemImportError(4,'pause_total_range')
+        expected = None if start is None or start==0 else (effective-total)*interval-start
+        if expected is None:
+            if seconds is not None or 'clock_unknown' not in reasons: raise DemImportError(4,'unknown_clock_not_declared')
+        else:
+            required_finite(expected); required_finite(seconds)
+            if not math.isclose(seconds,expected,rel_tol=1e-12,abs_tol=1e-9): raise DemImportError(4,'clock_formula_mismatch')
+        if row.get('raw_state64') is not None:
+            if not isinstance(row['raw_state64'],str): raise DemImportError(4,'uint64_string_required')
+            uint64_decimal(row['raw_state64'])
+        return (binding,epoch,identity,server)
+    except (KeyError,TypeError,OverflowError) as exc: raise DemImportError(4,'required_state_schema') from exc
+
+
 def validate_streams(stage, ctx):
     counts = {}; hashes = {}
     calibration = calibration_reference(ctx)
     expected_points = {p['demo_tick']:p['hud'] for p in calibration['points']}
     found_points = set()
     for stream in STREAMS:
-        p = stage / (stream + '.jsonl'); count = 0; last_tick = -1
+        p = stage / (stream + '.jsonl'); count = 0; last_tick = -1; previous_state = None
         for r in iter_rows(p, ctx.limits):
             if r.get('seq') != count or type(r.get('seq')) is not int: raise DemImportError(4, 'sequence:' + stream)
             tick = r.get('demo_tick') if stream != 'gaps' else r.get('start_demo_tick')
-            if type(tick) is not int or tick < last_tick: raise DemImportError(4, 'tick_order:' + stream)
+            if type(tick) is not int or tick < 0 or tick < last_tick: raise DemImportError(4, 'tick_order:' + stream)
             last_tick = tick; count += 1
             if count > (ctx.limits.max_events if stream == 'events' else ctx.limits.max_states * (2 if stream == 'gaps' else 1)):
                 raise DemImportError(6, 'record_limit:' + stream)
             if stream == 'states':
+                previous_state = validate_state(r,ctx.spec.account_id,previous_state)
                 try:
                     actor = r['actor']; resources = r['resources']; clock = r['clock']
-                    if type(actor['account32']) is not int or actor['account32'] != ctx.spec.account_id:
-                        raise DemImportError(3, 'output_actor_mismatch')
-                    steam = uint64_decimal(actor['steam64'])
-                    if not isinstance(actor['steam64'], str) or int(steam) & 0xffffffff != ctx.spec.account_id:
-                        raise DemImportError(3, 'output_steam_mismatch')
-                    if r.get('knowledge_scope') != 'spectator_research': raise DemImportError(4, 'knowledge_scope')
-                    for key in ['hp', 'max_hp', 'mana', 'max_mana']:
-                        v = resources[key]
-                        if isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v): raise DemImportError(4, 'nonfinite_resources')
-                        if key in ['hp', 'max_hp'] and (type(v) is not int or not -2**31 <= v < 2**31): raise DemImportError(4, 'resource_int32')
-                    for key in ['full_handle', 'index', 'serial']:
-                        if type(actor[key]) is not int or actor[key] < 0: raise DemImportError(4, 'actor_reference')
                     seconds = clock['game_seconds']
-                    if seconds is not None and (type(seconds) not in (int, float) or not math.isfinite(seconds)):
-                        raise DemImportError(4, 'nonfinite_clock')
-                    if r.get('raw_state64') is not None: uint64_decimal(r['raw_state64'])
                     if tick in expected_points:
                         hud = expected_points[tick]
                         if any(abs(resources[k]-hud[k])>1 for k in ['hp','max_hp','mana','max_mana']) or seconds is None or math.floor(seconds) != hud['clock_seconds']:
@@ -139,6 +200,11 @@ def verify_cache(path: Path, context):
     if not path.exists(): return None
     try:
         checked_path(path)
+        if re.fullmatch(r'\..+\.(?:staging|failed|diagnostics)-[0-9a-f]{32}',path.name):
+            raise DemImportError(5,'internal_stage_not_cache')
+        members = [checked_path(p) for p in path.iterdir()]
+        if any(not p.is_file() for p in members): raise DemImportError(5,'cache_nonfile_member')
+        if sum(p.stat().st_size for p in members)>context.limits.max_output_bytes: raise DemImportError(6,'cache_byte_limit')
         receipt = read_json(checked_path(path / 'receipt.json'))
         claimed_digest = receipt.get('receipt_digest')
         content = {k:v for k,v in receipt.items() if k != 'receipt_digest'}
@@ -168,7 +234,9 @@ def verify_cache(path: Path, context):
         if any(receipt.get(k) is not False for k in ['model_trained','player_fidelity_verified','perception_export_allowed','native_verified']):
             raise DemImportError(5, 'cache_scope')
         return ImportResult('cache_hit', receipt['cache_key'], receipt['counts'], hashes, str(path))
-    except DemImportError as exc: raise DemImportError(5, 'invalid_cache:' + exc.reason) from exc
+    except DemImportError as exc:
+        if exc.code==6: raise
+        raise DemImportError(5, 'invalid_cache:' + exc.reason) from exc
     except (OSError, KeyError, TypeError) as exc: raise DemImportError(5, 'invalid_cache') from exc
 
 
@@ -215,12 +283,10 @@ def run_child(command, stage, limits):
 
 
 def assert_unchanged(ctx):
-    fresh = validate_inputs(ctx.spec)
-    for key, actual in fresh.hashes.items():
-        if ctx.hashes.get(key) != actual: raise DemImportError(5, 'input_changed:' + key)
-    for name in [k[6:] for k in ctx.hashes if k.startswith('class:')]:
-        if sha256(checked_path(BUILD / 'classes' / name)) != ctx.hashes['class:' + name]:
-            raise DemImportError(5, 'class_changed')
+    try:
+        fresh = validate_inputs(ctx.spec); prepare_runtime(fresh)
+        if fresh.hashes != ctx.hashes: raise DemImportError(5,'provenance_changed')
+    except DemImportError as exc: raise DemImportError(5,'integrity_changed:' + exc.reason) from exc
 
 
 def run_import(context):
@@ -231,13 +297,14 @@ def run_import(context):
     token = uuid.uuid4().hex
     lock = output.parent / ('.' + output.name + '.lock')
     stage = output.parent / ('.' + output.name + '.staging-' + token)
-    owned_lock = False; staged = False
+    owned_lock = False; staged = False; stage_identity = None
     try:
         try:
             with lock.open('x', encoding='utf-8') as f: f.write(token)
             owned_lock = True
         except FileExistsError as exc: raise DemImportError(5, 'output_locked') from exc
         stage.mkdir(); staged = True
+        s = stage.stat(); stage_identity = (s.st_dev,s.st_ino)
         (stage / 'owner.json').write_bytes(canonical_json({'token': token}))
         lim = dataclasses.asdict(ctx.limits); lim['fields'] = ctx.config['fields']
         (stage / 'limits.json').write_bytes(canonical_json(lim))
@@ -262,14 +329,17 @@ def run_import(context):
         # Preserve internal diagnostics separately; final output contains only declared data + receipt.
         diagnostics = output.parent / ('.' + output.name + '.diagnostics-' + token)
         diagnostics.mkdir()
+        owned_stage(stage,stage_identity)
         for p in list(stage.iterdir()):
             if p.name not in hashes:
                 checked_path(p); p.rename(diagnostics / p.name)
         receipt['receipt_digest'] = hashlib.sha256(canonical_json(receipt)).hexdigest()
-        (stage / 'receipt.json').write_bytes(canonical_json(receipt))
-        if sum(p.stat().st_size for folder in [stage, diagnostics] for p in folder.iterdir() if p.is_file()) > ctx.limits.max_output_bytes:
+        encoded_receipt = canonical_json(receipt)
+        if len(encoded_receipt)+sum(p.stat().st_size for folder in [stage, diagnostics] for p in folder.iterdir() if p.is_file()) > ctx.limits.max_output_bytes:
             raise DemImportError(6, 'receipt_output_limit')
-        checked_path(output, may_not_exist=True); checked_path(stage)
+        owned_stage(stage,stage_identity)
+        with (stage/'receipt.json').open('xb') as f: f.write(encoded_receipt)
+        checked_path(output, may_not_exist=True); owned_stage(stage,stage_identity)
         promote_no_replace(stage, output); staged = False
         return ImportResult('imported',receipt['cache_key'],counts,hashes,str(output))
     except DemImportError:
@@ -280,7 +350,9 @@ def run_import(context):
         if staged:
             # Do not recursively delete anything. Rename only our original, non-reparse staging.
             try:
-                checked_path(stage)
+                owned_stage(stage,stage_identity)
+                receipt_path = stage/'receipt.json'
+                if receipt_path.exists(): checked_path(receipt_path).unlink()
                 stage.rename(output.parent / ('.' + output.name + '.failed-' + token))
             except (OSError, DemImportError): pass
         if owned_lock:

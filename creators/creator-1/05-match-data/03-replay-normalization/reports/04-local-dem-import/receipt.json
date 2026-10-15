@@ -91,12 +91,12 @@
       "window_records": 335
     },
     "run_seconds": {
-      "first": 48.375,
-      "second": 46.76600000000326,
-      "cache": 1.3429999999934807,
-      "wrong-match": 8.76500000001397,
-      "wrong-account": 8.780999999988126,
-      "truncated": 0.5
+      "first": 45.09299999999348,
+      "second": 51.610000000015134,
+      "cache": 1.7039999999979045,
+      "wrong-match": 8.827999999979511,
+      "wrong-account": 8.812000000005355,
+      "truncated": 0.485000000015134
     },
     "same_fresh_data_hashes": true,
     "cache_preserved_all_bytes": true,
@@ -142,16 +142,16 @@
     "source:TelemetryEmitter.java": "40142c580837e868b4426f32b3fbf3472890f2009c9812c5a065c63b758a472f",
     "source:dem_episodes.py": "3bb1739e6892ed7bfc2202c879f5535d7b5cac063690720b183b4c6b7466fc21",
     "source:dem_inputs.py": "3c14fa83d78b5866944ece5a4dc7b38beb62af93e7c90535b4b04656eec8e0f4",
-    "source:dem_store.py": "0fe698914d045af8c58704c8d9a51ce3e03eb4903e05c2eeed4a8f3276690ce4",
+    "source:dem_store.py": "b3d13224bb4281daa12cbecfddbc1d0c26c1cd558d59dde2d3b5a6e0a76008f2",
     "source:dem_types.py": "0f6b157fe501ec64c13908c57ea0a63e35cd27cb66a5640986992480805065d5",
     "source:import_dem.py": "f15bb11216097759aca973a22b84812c5af047cb53229c8de5ae5cee5bc5f6e9",
     "source:replay_gate.py": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb"
   },
-  "final_import_receipt_sha256": "7a13ba8cb39fcab873767d472d1b77c7f324695291248a71639c67209d1a956b",
+  "final_import_receipt_sha256": "8dcc0cc29fc16d6f0cd7183ecb8247cdd18f6cd22fddfa01ecd1173b60a912a8",
   "python_checks": {
-    "new_dem_tests": 26,
+    "new_dem_tests": 33,
     "existing_replay_gate_tests": 4,
-    "all": 30,
+    "all": 37,
     "passed": true
   },
   "java_core_assertions_passed": true,
@@ -162,7 +162,7 @@
   "full_source": {
     "verified": false,
     "suites": 89,
-    "passed_tests": 1417,
+    "passed_tests": 1424,
     "skipped_tests": 28,
     "incomplete_suites": [
       "python-c2-01-01",
@@ -311,12 +311,112 @@
       "path": "build/dota_coach/dem-import-v1/golden3/second/windows.jsonl",
       "bytes": 245495,
       "sha256": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/golden-check.json",
+      "bytes": 3549,
+      "sha256": "8f4616ab830c7cda1accba591d2f66ead72fd620a1c4d1e21b938d81e8efe067"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task5-golden4.log",
+      "bytes": 335,
+      "sha256": "7001eecaf2235dc6a301741d0b981035351db3e6d195befefe859ef9898ecfc9"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/review-fixes-red.log",
+      "bytes": 15716,
+      "sha256": "3c9fced3b4f871972fb2e338fd221c7028d92248907c0d01ca5f6d22368f1fbb"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/review-fixes-all-green.log",
+      "bytes": 4744,
+      "sha256": "1f720158fe8dd1872b3aa83561f1f52e6493eb15948b56b02ce334229d09d8a7"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/full-source-reviewed.log",
+      "bytes": 527,
+      "sha256": "6ba6ad9f5ef1ce5c0d9840ed1ba1be11abe431d5974bb70768f2776d59a88009"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/review-20261015/resolution-reproductions.json",
+      "bytes": 420,
+      "sha256": "97e086ca3b6b8bc0d30d391b512393704dfd8b2c7d00dafff2ca0abfe885bc31"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/review-20261015/golden4-artifact-check.json",
+      "bytes": 1879,
+      "sha256": "5b709b3c4350233571ce0b252aea6b903e7877c3fcc863161fd5af327197058d"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1-full-source-reviewed/source-checks.json",
+      "bytes": 59617,
+      "sha256": "98c030a17ca150c3cee98e740a4f96d2699413ce02709130cb76926ea7d4f7e8"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/first/episodes.json",
+      "bytes": 784035,
+      "sha256": "e464e03d18116d4325d0aaf7fd27c7508a3054af72dadd4cb74265a2db33c1c3"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/first/events.jsonl",
+      "bytes": 4326749,
+      "sha256": "7c23af4b88d18f8aee7a65f55312019ceeadcfa2fbb925860d60f50589c613e6"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/first/gaps.jsonl",
+      "bytes": 455985,
+      "sha256": "6f83b258ab5284eeb010bac3edc4fc62075c0655292eb215cf8da852d9869f36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/first/receipt.json",
+      "bytes": 5919,
+      "sha256": "8dcc0cc29fc16d6f0cd7183ecb8247cdd18f6cd22fddfa01ecd1173b60a912a8"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/first/states.jsonl",
+      "bytes": 28804394,
+      "sha256": "07c2da5855d2ab0167430c1dd05afc52dd170879dea9d7f06f5d7d642618fc36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/first/windows.jsonl",
+      "bytes": 245495,
+      "sha256": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/second/episodes.json",
+      "bytes": 784035,
+      "sha256": "e464e03d18116d4325d0aaf7fd27c7508a3054af72dadd4cb74265a2db33c1c3"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/second/events.jsonl",
+      "bytes": 4326749,
+      "sha256": "7c23af4b88d18f8aee7a65f55312019ceeadcfa2fbb925860d60f50589c613e6"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/second/gaps.jsonl",
+      "bytes": 455985,
+      "sha256": "6f83b258ab5284eeb010bac3edc4fc62075c0655292eb215cf8da852d9869f36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/second/receipt.json",
+      "bytes": 5919,
+      "sha256": "8dcc0cc29fc16d6f0cd7183ecb8247cdd18f6cd22fddfa01ecd1173b60a912a8"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/second/states.jsonl",
+      "bytes": 28804394,
+      "sha256": "07c2da5855d2ab0167430c1dd05afc52dd170879dea9d7f06f5d7d642618fc36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden4/second/windows.jsonl",
+      "bytes": 245495,
+      "sha256": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
     }
   ],
   "source_snapshot": {
     "src/dem_episodes.py": "3bb1739e6892ed7bfc2202c879f5535d7b5cac063690720b183b4c6b7466fc21",
     "src/dem_inputs.py": "3c14fa83d78b5866944ece5a4dc7b38beb62af93e7c90535b4b04656eec8e0f4",
-    "src/dem_store.py": "0fe698914d045af8c58704c8d9a51ce3e03eb4903e05c2eeed4a8f3276690ce4",
+    "src/dem_store.py": "b3d13224bb4281daa12cbecfddbc1d0c26c1cd558d59dde2d3b5a6e0a76008f2",
     "src/dem_types.py": "0f6b157fe501ec64c13908c57ea0a63e35cd27cb66a5640986992480805065d5",
     "src/import_dem.py": "f15bb11216097759aca973a22b84812c5af047cb53229c8de5ae5cee5bc5f6e9",
     "src/replay_gate.py": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb",
@@ -326,5 +426,13 @@
   "input_tokens": null,
   "output_tokens": null,
   "cost": null,
-  "usage_source": "per_task_not_exposed"
+  "usage_source": "per_task_not_exposed",
+  "technical_review": {
+    "path": "technical-review.md",
+    "initial_p2": 3,
+    "closed_p2": 3,
+    "open_confirmed_p1_p2": 0,
+    "independent_local_checks": 37,
+    "resolution_reproductions": "build/dota_coach/dem-import-v1/review-20261015/resolution-reproductions.json"
+  }
 }

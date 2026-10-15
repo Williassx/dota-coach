@@ -558,3 +558,19 @@
 - **Подход:** [план импортёра](../../../../creator-1/05-match-data/03-replay-normalization/telemetry-import-implementation-plan.md),Task2: structured field/type/decoder/quantization audit, failclosed unknownprofile и только измеренные entries; не менять decoded values подHUD. Source/eventnames сами по себе не actoridentity.
 - **Проверка:** на этапе планирования проверены actualJSON/source и getter signatures, выполнена self-review покрытия. Runtime fingerprint extractor ещё не реализован; его приёмка — futureTask2, не текущий PASS.
 - **Следующий раз:** перед frozen profile читать реальные numerical metadata и сравнивать одинаковый input в двух запусках. ВPowerShell передавать globs черезrg`-g` ссуществующим каталогом, а не нераскрытым позиционным путём.
+
+## 50. Проверять завершение, метаданные и окружение всего импортёра
+
+- **Факт:** при реализации DEM importer дополнительныеtests далиRED: receipt/diagnostics не входили вbytebudget, alteredcachecounts/EOF принимались, child наследовалJavaoptions. Исправлены budgetдоpromotion, digest+semanticcount/scopevalidation илокальноеисключение4Javavars. Реальныеpositive/negativeCLIoutputs сохранены.
+- **Причина:** EOFсампосебе не доказываетexit0/правильныеrecords; hashesdata не проверяютизменённыеметаданные; parentflags иlockJAR неограничиваютнеявныеJVMoptions изenvironment. `python -X utf8` не передаётUTF8mode следующемуPythonпроцессу.
+- **Подход:** передreceiptпроверятьexit+EOF+identity/counts/provenance, rehashinputs/classes, общийbudgetвключаяreceipt; immutablecachevalidateбезперезаписи; no-replaceWindowsAPI. Дляобщегокаталога process-localPYTHONUTF8=1 иexistingLuaPYTHONPATH; rootparent-X недостаточен, OSsettings не менять.
+- **Проверка:** [приёмка](../../../../creator-1/05-match-data/03-replay-normalization/reports/04-local-dem-import/result.md):37localPythonchecks/JavaCoremain, двеfreshfullDEMвыгрузкиsamehash/cachehit, неправильныеID/truncation/schemafail. Full89/1424PASS/28skip/6incomplete/0errors/verifiedfalse. Nativeprevious3HUDpoints — scopedonly, неигроваяприёмка. InitialUTF8/setup failure ивсеREDlogs остаютсяlocalignored.
+- **Следующий раз:** отдельно перечислить metadata/childenvironment/receiptbytes вreviewfocus, запускатьnegativecasesдоrealgolden. Pinneddeclaredserializerparams+decoderJARhash не называтьprivateeffectivequantizerstate. Cachewalltime1.704s — одинлокальныйsample, неSLA; токены/стоимостьнеизмерены.
+
+## 51. Проверять весь classpath и невозможность повторного использования failed receipt
+
+- **Факт:** независимый C2 review воспроизвёл три P2: неполный clock DTO принимался, вложенный Gson class мог затенить pinned JAR, completed receipt оставался после budget failure. Одного checksum data/EOF недостаточно.
+- **Причина:** частичная проверка полей и top-level glob исключали часть реально потребляемого состояния; receipt записывался раньше окончательного budget check. Failed stage мог выглядеть как completed cache.
+- **Подход:** проверять все обязательные typed поля/формулу времени/epochs, default-package classpath целиком и повтор membership перед публикацией. Проверять encoded receipt budget до записи; удалять completed receipt при failed promotion только в собственном stage с проверенной identity. Internal stage names не принимать как cache, cache budget проверять заново.
+- **Проверка:** RED15 failures → GREEN37/37; reviewer повторил исходные три reproductions и получил отказ без completed output/receipt. Два fresh golden4 сохранили deterministic hashes всех пяти data outputs; source provenance/cache key изменились. [Review и resolution](../../../../creator-1/05-match-data/03-replay-normalization/reports/04-local-dem-import/technical-review.md).
+- **Следующий раз:** до публикации отдельно рассмотреть classloader membership, обязательные DTO fields и каждую точку отказа после receipt. Не считать failed artifact безопасным cache из-за валидного JSON/digest.
