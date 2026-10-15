@@ -1,0 +1,15 @@
+{
+  "steam_manifest_build": 25946043,
+  "manifest_last_updated_unix": 1792046694,
+  "manifest_last_updated_utc": "2026-10-15T06:44:54+00:00",
+  "installation_updated_before_viewer_start": true,
+  "native_engine_build": 10938,
+  "native_engine_revision": 11130919,
+  "replay_header_server_build": 10939,
+  "replay_patch_version": 48,
+  "opendota_patch": 60,
+  "prior_match_client_build": 25894101,
+  "same_client_build_as_first": false,
+  "engine_source_path": "build/dota_coach/replay-9045392898/native/console.log",
+  "engine_source_sha256": "a902eae2bd02e8488d1b9735a42d9776160594153a5d6ac236b4ca54db72c6d4"
+}

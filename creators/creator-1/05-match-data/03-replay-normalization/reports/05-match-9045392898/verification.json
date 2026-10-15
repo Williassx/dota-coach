@@ -1,0 +1,167 @@
+{
+  "schema": "second-match-acceptance-v1",
+  "status": "accepted_scoped_technical_analysis",
+  "source_code_changed": false,
+  "schema_fields": 33,
+  "python_checks": 37,
+  "python_elapsed_seconds": 7.48,
+  "native_summary": {
+    "frames": 42,
+    "eligible_resources": 36,
+    "within_one_hud_unit": 36,
+    "excluded_resources": 6,
+    "exact_clock_floor": 38,
+    "exact_real_ticks": 18,
+    "prior_one_tick": 24,
+    "source_authorization_verified": false,
+    "native_whole_payload_verified": false
+  },
+  "model_trained": false,
+  "player_fidelity_verified": false,
+  "perception_export_allowed": false,
+  "whole_native_payload_verified": false,
+  "raw_published": false,
+  "input_tokens": null,
+  "output_tokens": null,
+  "cost": null,
+  "native_cleanup": {
+    "own_pid": 28664,
+    "steam_pid": 13648,
+    "client_build": 25946043,
+    "own_gone": true,
+    "restored": {
+      "fullscreen_min_on_focus_loss": "1",
+      "cl_playback_screenshots": "false",
+      "dota_spectator_mode": "0"
+    },
+    "desktop_capture_performed": false,
+    "steam_retained": true,
+    "utc": "2026-10-15T08:33:37.9830050+00:00"
+  },
+  "local_artifacts": [
+    {
+      "path": "build/dota_coach/replay-9045392898/match.json",
+      "bytes": 358152,
+      "sha256": "e99ed10b6081eb140b9773193792704b870313da7146c0e6190b2756aa2978f7"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/match-receipt.json",
+      "bytes": 260,
+      "sha256": "d44ce75fc36762fd644e311f62fc079d2efc699e842ca7b7f7fc3395d09b0df7"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/acquisition.json",
+      "bytes": 764,
+      "sha256": "6daf4a8aa6da10654aecdd40f30ee965b321e1f268da9d616385b970665fba96"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/reproducibility.json",
+      "bytes": 3281,
+      "sha256": "b936192f8f379566642a26a5f39c6d8aa58cb30cb317b977f9a363311c52c992"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/local-source-checks.log",
+      "bytes": 4744,
+      "sha256": "63d4d89ce4b3070d819ac4019beb452e3e693289662ed860b900ae15dde2b86f"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/import-v3/receipt.json",
+      "bytes": 4565,
+      "sha256": "5f7a14e678085fd7e59f82264a1421821fd25738dff897f71d7e2bfc7202ade0"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/import-v4/receipt.json",
+      "bytes": 4565,
+      "sha256": "5f7a14e678085fd7e59f82264a1421821fd25738dff897f71d7e2bfc7202ade0"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/baseline-regression/receipt.json",
+      "bytes": 5919,
+      "sha256": "bdcb3652a4a2811c2a9e61456ec12f239d1f258609137bed4047867dddb41584"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/native/owned.json",
+      "bytes": 546,
+      "sha256": "2341d954a9e43688c10e664834737f7f024e13b99727c5c81f85d5fdb69a0982"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/native/loaded-info.jsonl",
+      "bytes": 3252,
+      "sha256": "c5c28505ae8454912180bf7e07379756fbbe515f3ff9e6b71299e90fd7e99863"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/native/comparison-summary.json",
+      "bytes": 275,
+      "sha256": "f9a1032c88823fb22ffebcd6957427d905b79c696f6069656272c64548f227a6"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/native/cleanup.json",
+      "bytes": 350,
+      "sha256": "ef50e60f5542e2573da2652927f927d5d4645e02de4c13b7a533789e2a4c4b02"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/native/capture-episodes.log",
+      "bytes": 5285,
+      "sha256": "b1670f8066c612c530573137d05946924e2b20ecceed744c8e58b6b0a5a4c287"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/native/capture-extra.log",
+      "bytes": 1734,
+      "sha256": "c3eab54b9e419ec5e823e3607f0b102af0d88dd9f6a67011508e1a6591d8fd50"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/index-budget-audit.json",
+      "bytes": 346,
+      "sha256": "0a5f0467bf788d30834b122cad8cf3fe8986c205969b64a3ba2c1e9e227f8b35"
+    },
+    {
+      "path": "build/dota_coach/replay-9045392898/pause-segments.json",
+      "bytes": 11328,
+      "sha256": "13f4d4a4ea5ab59a418d45fff60918433b810d8dd685497cffe341edbea10d4d"
+    }
+  ],
+  "build_provenance": {
+    "steam_manifest_build": 25946043,
+    "manifest_last_updated_unix": 1792046694,
+    "manifest_last_updated_utc": "2026-10-15T06:44:54+00:00",
+    "installation_updated_before_viewer_start": true,
+    "native_engine_build": 10938,
+    "native_engine_revision": 11130919,
+    "replay_header_server_build": 10939,
+    "replay_patch_version": 48,
+    "opendota_patch": 60,
+    "prior_match_client_build": 25894101,
+    "same_client_build_as_first": false,
+    "engine_source_path": "build/dota_coach/replay-9045392898/native/console.log",
+    "engine_source_sha256": "a902eae2bd02e8488d1b9735a42d9776160594153a5d6ac236b4ca54db72c6d4"
+  },
+  "source_sha256": {
+    "dem_episodes.py": "3bb1739e6892ed7bfc2202c879f5535d7b5cac063690720b183b4c6b7466fc21",
+    "dem_inputs.py": "3c14fa83d78b5866944ece5a4dc7b38beb62af93e7c90535b4b04656eec8e0f4",
+    "dem_store.py": "b3d13224bb4281daa12cbecfddbc1d0c26c1cd558d59dde2d3b5a6e0a76008f2",
+    "dem_types.py": "0f6b157fe501ec64c13908c57ea0a63e35cd27cb66a5640986992480805065d5",
+    "import_dem.py": "f15bb11216097759aca973a22b84812c5af047cb53229c8de5ae5cee5bc5f6e9",
+    "replay_gate.py": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb",
+    "TelemetryCore.java": "089471e9ced5573aa888cad5f8606874a1f1c6f0cd040fedf5748148db368f33",
+    "TelemetryEmitter.java": "40142c580837e868b4426f32b3fbf3472890f2009c9812c5a065c63b758a472f"
+  },
+  "schema_sha256": "10e55b0ab2bb0a4617c54fdb8a6dca1bf703ffa162c5cf65c465533cedf68a14",
+  "review_annotation_fix": {
+    "confirmed_p2": 1,
+    "fix_applied": true,
+    "resolution_independent_review_pending": false,
+    "source_or_raw_data_changed": false,
+    "resource_or_clock_counts_changed": false
+  },
+  "technical_review": {
+    "path": "technical-review.md",
+    "sha256": "d03fc39126bcfb7d906dbd8b21d118901e9e838b5d84a1483aca54ce959c16ab",
+    "independent_creator": 2,
+    "initial_p2": 1,
+    "closed_p2": 1,
+    "open_confirmed_p1_p2": 0,
+    "reviewer_original_frames_inspected": 8,
+    "first_attempt_usage_limit": true,
+    "same_reviewer_resumed_after_reset": true
+  }
+}

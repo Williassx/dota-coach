@@ -1,0 +1,2851 @@
+{
+  "schema": "second-match-native-evidence-v1",
+  "scope": "42 selectively sampled native game PNG, not continuous viewing",
+  "frames": [
+    {
+      "index": 0,
+      "requested_game_seconds": 30,
+      "requested_tick": 7324,
+      "before_tick": 7368,
+      "after_tick": 7368,
+      "native_source": "shot_0234.png",
+      "png": "build/dota_coach/replay-9045392898/native/pilot/frame-0.png",
+      "sha256": "434623860c0a2ec582b8468b283fc6b78e2e624041776c10b2f3ade1e643eaa8",
+      "bytes": 1539330,
+      "utc": "2026-10-15T08:16:30.075Z",
+      "HUD_readback": {
+        "clock_text": "0:31",
+        "clock_seconds": 31,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 530,
+        "max_hp": 582,
+        "mana": 355,
+        "max_mana": 355,
+        "player_view_caption_status": "read directly from full PNG"
+      },
+      "physical_input_controlled": false,
+      "group": "pilot",
+      "decoded_source": {
+        "state_seq": 1819,
+        "demo_tick": 7368,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 31.433334205627432,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 530,
+          "mana": 355.00034,
+          "max_hp": 582,
+          "max_mana": 355.00034
+        },
+        "raw_state64": "8590475552",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.0003399999999942338,
+          "max_mana": 0.0003399999999942338
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 1,
+      "requested_game_seconds": 90,
+      "requested_tick": 9124,
+      "before_tick": 9167,
+      "after_tick": 9167,
+      "native_source": "shot_0235.png",
+      "png": "build/dota_coach/replay-9045392898/native/pilot/frame-1.png",
+      "sha256": "8b661d43556fa5e5820e464be5b6c2dd9bf9cd6291d4b54fe947da972221c716",
+      "bytes": 1537024,
+      "utc": "2026-10-15T08:16:34.629Z",
+      "HUD_readback": {
+        "clock_text": "1:31",
+        "clock_seconds": 91,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 455,
+        "max_hp": 626,
+        "mana": 256,
+        "max_mana": 406,
+        "player_view_caption_status": "read directly from full PNG"
+      },
+      "physical_input_controlled": false,
+      "group": "pilot",
+      "decoded_source": {
+        "state_seq": 2718,
+        "demo_tick": 9166,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 91.3666721115112,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 455,
+          "mana": 256.00024,
+          "max_hp": 626,
+          "max_mana": 406.0004
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.00024000000001933586,
+          "max_mana": 0.0004000000000132786
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 0,
+      "requested_game_seconds": 300,
+      "requested_tick": 15424,
+      "before_tick": 15450,
+      "after_tick": 15450,
+      "native_source": "shot_0236.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-0.png",
+      "sha256": "398bd1ad6f50e619735ed74592738ed22061f5b3e3936a5511b21bc930b6ab4c",
+      "bytes": 1526117,
+      "utc": "2026-10-15T08:17:58.464Z",
+      "HUD_readback": {
+        "clock_text": "5:00",
+        "clock_seconds": 300,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 315,
+        "max_hp": 780,
+        "mana": 343,
+        "max_mana": 425,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 5860,
+        "demo_tick": 15450,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 300.83335475921626,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 315,
+          "mana": 343.37534,
+          "max_hp": 780,
+          "max_mana": 425.3754
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.37533999999999423,
+          "max_mana": 0.3754000000000133
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 1,
+      "requested_game_seconds": 350,
+      "requested_tick": 16924,
+      "before_tick": 16955,
+      "after_tick": 16955,
+      "native_source": "shot_0237.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-1.png",
+      "sha256": "2cc0239c5496d3fc84c30406bd6c97c739b6d10969ee9a75b00441cc6be744ae",
+      "bytes": 1650288,
+      "utc": "2026-10-15T08:18:03.069Z",
+      "HUD_readback": {
+        "clock_text": "5:51",
+        "clock_seconds": 351,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 440,
+        "max_hp": 780,
+        "mana": 399,
+        "max_mana": 404,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 6612,
+        "demo_tick": 16954,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 350.96669191741944,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 440,
+          "mana": 399.81287,
+          "max_hp": 780,
+          "max_mana": 404.8129
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 1,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8128699999999753,
+          "max_mana": 0.8129000000000133
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 2,
+      "requested_game_seconds": 358,
+      "requested_tick": 17164,
+      "before_tick": 17218,
+      "after_tick": 17218,
+      "native_source": "shot_0238.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-2.png",
+      "sha256": "baede7b427c1e4cfa2000e64944d850b0fddef917f25355d7bf7c3a48d65ced3",
+      "bytes": 1484666,
+      "utc": "2026-10-15T08:18:07.670Z",
+      "HUD_readback": {
+        "clock_text": "5:59",
+        "clock_seconds": 359,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 434,
+        "max_hp": 824,
+        "mana": 343,
+        "max_mana": 454,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 6744,
+        "demo_tick": 17218,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 359.7666925888061,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 434,
+          "mana": 343.18784,
+          "max_hp": 824,
+          "max_mana": 454.25043
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.18783999999999423,
+          "max_mana": 0.2504299999999944
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 3,
+      "requested_game_seconds": 365,
+      "requested_tick": 17374,
+      "before_tick": 17429,
+      "after_tick": 17429,
+      "native_source": "shot_0239.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-3.png",
+      "sha256": "2f1bba0571f045dc788db29d6b3f2f4f86b0ec0083e49954341384df82faf088",
+      "bytes": 1514476,
+      "utc": "2026-10-15T08:18:12.276Z",
+      "HUD_readback": {
+        "clock_text": "6:06",
+        "clock_seconds": 366,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 458,
+        "max_hp": 824,
+        "mana": 375,
+        "max_mana": 454,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 6849,
+        "demo_tick": 17428,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 366.7666931228638,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 458,
+          "mana": 375.18787,
+          "max_hp": 824,
+          "max_mana": 454.25043
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.18786999999997533,
+          "max_mana": 0.2504299999999944
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 4,
+      "requested_game_seconds": 600,
+      "requested_tick": 24424,
+      "before_tick": 24451,
+      "after_tick": 24451,
+      "native_source": "shot_0240.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-4.png",
+      "sha256": "83578a8b69aeb74271dcf92e17eed3bd897d078114205b61ad04789257059751",
+      "bytes": 1505543,
+      "utc": "2026-10-15T08:18:16.837Z",
+      "HUD_readback": {
+        "clock_text": "10:00",
+        "clock_seconds": 600,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 1131,
+        "max_hp": 1131,
+        "mana": 1147,
+        "max_mana": 1147,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 10360,
+        "demo_tick": 24450,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 600.8333776473999,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1131,
+          "mana": 1147.4386,
+          "max_hp": 1131,
+          "max_mana": 1147.4386
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.43859999999995125,
+          "max_mana": 0.43859999999995125
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 5,
+      "requested_game_seconds": 1060,
+      "requested_tick": 38224,
+      "before_tick": 38257,
+      "after_tick": 38257,
+      "native_source": "shot_0241.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-5.png",
+      "sha256": "7320da5d36c27ea95e80e6aef81ae37347c155d21576e0398d163521756de2bf",
+      "bytes": 1461572,
+      "utc": "2026-10-15T08:18:21.411Z",
+      "HUD_readback": {
+        "clock_text": "17:41",
+        "clock_seconds": 1061,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 1162,
+        "max_hp": 1747,
+        "mana": 739,
+        "max_mana": 999,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 17263,
+        "demo_tick": 38256,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1061.0334127578735,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1162,
+          "mana": 739.12573,
+          "max_hp": 1747,
+          "max_mana": 999.126
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.12572999999997592,
+          "max_mana": 0.12599999999997635
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 6,
+      "requested_game_seconds": 1084,
+      "requested_tick": 38944,
+      "before_tick": 38985,
+      "after_tick": 38985,
+      "native_source": "shot_0242.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-6.png",
+      "sha256": "21727799fa9599ca7c72f156e4f4b1746f0a38cf049a4a7c0af8057ef05a175c",
+      "bytes": 1516397,
+      "utc": "2026-10-15T08:18:26.014Z",
+      "HUD_readback": {
+        "clock_text": "18:05",
+        "clock_seconds": 1085,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 1041,
+        "max_hp": 1879,
+        "mana": 707,
+        "max_mana": 1122,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 17627,
+        "demo_tick": 38984,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1085.3000812759399,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1041,
+          "mana": 707.1257,
+          "max_hp": 1879,
+          "max_mana": 1122.6886
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.12570000000005166,
+          "max_mana": 0.6885999999999513
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 7,
+      "requested_game_seconds": 1341,
+      "requested_tick": 46654,
+      "before_tick": 46663,
+      "after_tick": 46663,
+      "native_source": "shot_0243.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-7.png",
+      "sha256": "e14471f72cfdd04f3fbfcdc3fa12ea14f7c5b31481d9e24857a041e6740e5fde",
+      "bytes": 1707446,
+      "utc": "2026-10-15T08:18:30.639Z",
+      "HUD_readback": {
+        "clock_text": "22:21",
+        "clock_seconds": 1341,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 2055,
+        "max_hp": 2055,
+        "mana": 780,
+        "max_mana": 1594,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 21466,
+        "demo_tick": 46662,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1341.233434135437,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2055,
+          "mana": 780.00073,
+          "max_hp": 2055,
+          "max_mana": 1594.0015
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.0007299999999759166,
+          "max_mana": 0.0015000000000782165
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 8,
+      "requested_game_seconds": 1428,
+      "requested_tick": 49264,
+      "before_tick": 49294,
+      "after_tick": 49294,
+      "native_source": "shot_0244.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-8.png",
+      "sha256": "aee5a2c8492d8273f133eb3d6c29eff4e2f40739a76af2110b9e6a6165ce8679",
+      "bytes": 1679185,
+      "utc": "2026-10-15T08:18:35.239Z",
+      "HUD_readback": {
+        "clock_text": "23:49",
+        "clock_seconds": 1429,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 2055,
+        "max_hp": 2055,
+        "mana": 1527,
+        "max_mana": 1594,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 22782,
+        "demo_tick": 49294,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 1428.9667741622925,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2055,
+          "mana": 1527.0015,
+          "max_hp": 2055,
+          "max_mana": 1594.0015
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 1,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.0015000000000782165,
+          "max_mana": 0.0015000000000782165
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 9,
+      "requested_game_seconds": 1432,
+      "requested_tick": 49384,
+      "before_tick": 49439,
+      "after_tick": 49439,
+      "native_source": "shot_0245.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-9.png",
+      "sha256": "abf1cf8704913fda24a31b4fac94a59e7147e0301f9241e37048a188b03c9f1d",
+      "bytes": 1740807,
+      "utc": "2026-10-15T08:18:39.848Z",
+      "HUD_readback": {
+        "clock_text": "23:53",
+        "clock_seconds": 1433,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 724,
+        "max_hp": 2055,
+        "mana": 1445,
+        "max_mana": 1594,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 22854,
+        "demo_tick": 49438,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1433.7667745285034,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 724,
+          "mana": 1445.0013,
+          "max_hp": 2055,
+          "max_mana": 1594.0015
+        },
+        "raw_state64": "90",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.001299999999901047,
+          "max_mana": 0.0015000000000782165
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 10,
+      "requested_game_seconds": 1434,
+      "requested_tick": 49444,
+      "before_tick": 49470,
+      "after_tick": 49470,
+      "native_source": "shot_0246.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-10.png",
+      "sha256": "fa41e104d6caf28c735e106ea14a6ff28a847472d82dced57c13c3ee86cfc133",
+      "bytes": 1752055,
+      "utc": "2026-10-15T08:18:44.464Z",
+      "HUD_readback": {
+        "clock_text": "23:54",
+        "clock_seconds": 1434,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 2055,
+        "mana": 1452,
+        "max_mana": 1594,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 22870,
+        "demo_tick": 49470,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 1434.8334412765503,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1452.0013,
+          "max_hp": 2055,
+          "max_mana": 1594.0015
+        },
+        "raw_state64": "0",
+        "raw_life_state": 1
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.001299999999901047,
+          "max_mana": 0.0015000000000782165
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 11,
+      "requested_game_seconds": 1440,
+      "requested_tick": 49624,
+      "before_tick": 49678,
+      "after_tick": 49678,
+      "native_source": "shot_0247.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-11.png",
+      "sha256": "5d1e75ba7cf0fefda089cc9d7fbcfaefc6228016939561904b78d95e840e3ee4",
+      "bytes": 1539703,
+      "utc": "2026-10-15T08:18:49.088Z",
+      "HUD_readback": {
+        "clock_text": "24:01",
+        "clock_seconds": 1441,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 2055,
+        "mana": 1452,
+        "max_mana": 1594,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 22974,
+        "demo_tick": 49678,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 1441.7667751388549,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1452.0013,
+          "max_hp": 2055,
+          "max_mana": 1594.0015
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.001299999999901047,
+          "max_mana": 0.0015000000000782165
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 12,
+      "requested_game_seconds": 1600,
+      "requested_tick": 54424,
+      "before_tick": 54455,
+      "after_tick": 54455,
+      "native_source": "shot_0248.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-12.png",
+      "sha256": "19f1730cf6c7129fd58922132e97f412000f05f1c5db6b664d9a19f1798517ea",
+      "bytes": 1421901,
+      "utc": "2026-10-15T08:18:53.691Z",
+      "HUD_readback": {
+        "clock_text": "26:41",
+        "clock_seconds": 1601,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 2055,
+        "max_hp": 2055,
+        "mana": 1699,
+        "max_mana": 1705,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 25362,
+        "demo_tick": 54454,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1600.966787284851,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2055,
+          "mana": 1699.6266,
+          "max_hp": 2055,
+          "max_mana": 1705.6266
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 1,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.6266000000000531,
+          "max_mana": 0.6266000000000531
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 13,
+      "requested_game_seconds": 1738,
+      "requested_tick": 58564,
+      "before_tick": 58582,
+      "after_tick": 58582,
+      "native_source": "shot_0249.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-13.png",
+      "sha256": "5118a50a919ebc5a5d58a2b796a0609964863f6574db27714cba5616625b7005",
+      "bytes": 1582734,
+      "utc": "2026-10-15T08:18:58.380Z",
+      "HUD_readback": {
+        "clock_text": "28:58",
+        "clock_seconds": 1738,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 1969,
+        "max_hp": 2407,
+        "mana": 1214,
+        "max_mana": 1810,
+        "player_view_caption_status": "read directly from full PNG"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 27426,
+        "demo_tick": 58582,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 1738.566797782898,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1969,
+          "mana": 1213.9386,
+          "max_hp": 2407,
+          "max_mana": 1810.8767
+        },
+        "raw_state64": "32",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.06140000000004875,
+          "max_mana": 0.876700000000028
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 14,
+      "requested_game_seconds": 1743,
+      "requested_tick": 58714,
+      "before_tick": 58767,
+      "after_tick": 58767,
+      "native_source": "shot_0250.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-14.png",
+      "sha256": "6b68f06c786c47ae576e693153710b0643d1a6422ceb3c69fe3b26c96b3e4177",
+      "bytes": 1427099,
+      "utc": "2026-10-15T08:19:03.052Z",
+      "HUD_readback": {
+        "clock_text": "29:04",
+        "clock_seconds": 1744,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 2407,
+        "mana": 1281,
+        "max_mana": 1810,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 27518,
+        "demo_tick": 58766,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1744.7001315841676,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1280.9387,
+          "max_hp": 2407,
+          "max_mana": 1810.8767
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.06130000000007385,
+          "max_mana": 0.876700000000028
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 15,
+      "requested_game_seconds": 1750,
+      "requested_tick": 58924,
+      "before_tick": 58977,
+      "after_tick": 58977,
+      "native_source": "shot_0251.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-15.png",
+      "sha256": "ee1541804ad2760cb288cb651b3ee5640f0f23f63e8581cdec5ffddad2f1c8c1",
+      "bytes": 1314169,
+      "utc": "2026-10-15T08:19:07.678Z",
+      "HUD_readback": {
+        "clock_text": "29:11",
+        "clock_seconds": 1751,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 2407,
+        "mana": 1281,
+        "max_mana": 1810,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 27623,
+        "demo_tick": 58976,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 1751.7001321182252,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1280.9387,
+          "max_hp": 2407,
+          "max_mana": 1810.8767
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.06130000000007385,
+          "max_mana": 0.876700000000028
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 16,
+      "requested_game_seconds": 2100,
+      "requested_tick": 69424,
+      "before_tick": 69443,
+      "after_tick": 69443,
+      "native_source": "shot_0252.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-16.png",
+      "sha256": "1a3af54e5e93a2a9322fe5981c568e0e36cb92dd843546bec34898971abf05e7",
+      "bytes": 1590054,
+      "utc": "2026-10-15T08:19:12.304Z",
+      "HUD_readback": {
+        "clock_text": "35:00",
+        "clock_seconds": 2100,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 2645,
+        "max_hp": 2645,
+        "mana": 1876,
+        "max_mana": 1876,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 32856,
+        "demo_tick": 69442,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2100.5668254013062,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2645,
+          "mana": 1876.4393,
+          "max_hp": 2645,
+          "max_mana": 1876.4393
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.4393000000000029,
+          "max_mana": 0.4393000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 17,
+      "requested_game_seconds": 2340,
+      "requested_tick": 76624,
+      "before_tick": 76642,
+      "after_tick": 76642,
+      "native_source": "shot_0253.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-17.png",
+      "sha256": "27ee4d846699004ca64312cbe7fb63cdf395b5db372bc6d82e88f187e4fb683c",
+      "bytes": 1617382,
+      "utc": "2026-10-15T08:19:16.950Z",
+      "HUD_readback": {
+        "clock_text": "39:00",
+        "clock_seconds": 2340,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 2709,
+        "max_hp": 2997,
+        "mana": 1446,
+        "max_mana": 1446,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 36456,
+        "demo_tick": 76642,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 2340.566843711853,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2709,
+          "mana": 1446.6888,
+          "max_hp": 2997,
+          "max_mana": 1446.6888
+        },
+        "raw_state64": "32",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.688799999999901,
+          "max_mana": 0.688799999999901
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 18,
+      "requested_game_seconds": 2345,
+      "requested_tick": 76774,
+      "before_tick": 76828,
+      "after_tick": 76828,
+      "native_source": "shot_0254.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-18.png",
+      "sha256": "bb36465e0ddf672de688cfb1e457bdd1d05f074c8d6f3daf8f3763c8e3ad627d",
+      "bytes": 1660171,
+      "utc": "2026-10-15T08:19:21.579Z",
+      "HUD_readback": {
+        "clock_text": "39:06",
+        "clock_seconds": 2346,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 2997,
+        "mana": 1022,
+        "max_mana": 1446,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 36549,
+        "demo_tick": 76828,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 2346.7668441848755,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1022.751,
+          "max_hp": 2997,
+          "max_mana": 1446.6888
+        },
+        "raw_state64": "0",
+        "raw_life_state": 1
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.7509999999999764,
+          "max_mana": 0.688799999999901
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 19,
+      "requested_game_seconds": 2352,
+      "requested_tick": 76984,
+      "before_tick": 77037,
+      "after_tick": 77037,
+      "native_source": "shot_0255.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-19.png",
+      "sha256": "4fcbce9b6365704689c245817366c3d7d69d033d71d7604c41674b3f56b0dfd6",
+      "bytes": 1675852,
+      "utc": "2026-10-15T08:19:26.224Z",
+      "HUD_readback": {
+        "clock_text": "39:13",
+        "clock_seconds": 2353,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 2997,
+        "mana": 1022,
+        "max_mana": 1446,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 36653,
+        "demo_tick": 77036,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2353.70017804718,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1022.751,
+          "max_hp": 2997,
+          "max_mana": 1446.6888
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.7509999999999764,
+          "max_mana": 0.688799999999901
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 20,
+      "requested_game_seconds": 2541,
+      "requested_tick": 82654,
+      "before_tick": 82658,
+      "after_tick": 82658,
+      "native_source": "shot_0256.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-20.png",
+      "sha256": "551cada4e22181c3820572b29423a1e4e0f3fcf372076ea68bba2a7ed7c09435",
+      "bytes": 1692313,
+      "utc": "2026-10-15T08:19:30.878Z",
+      "HUD_readback": {
+        "clock_text": "42:21",
+        "clock_seconds": 2541,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 3005,
+        "max_hp": 3041,
+        "mana": 1583,
+        "max_mana": 1886,
+        "player_view_caption_status": "read directly from full PNG"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 39464,
+        "demo_tick": 82658,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 2541.1001923446656,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3005,
+          "mana": 1583.814,
+          "max_hp": 3041,
+          "max_mana": 1886.8143
+        },
+        "raw_state64": "32",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8140000000000782,
+          "max_mana": 0.8143000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 21,
+      "requested_game_seconds": 2546,
+      "requested_tick": 82804,
+      "before_tick": 82845,
+      "after_tick": 82845,
+      "native_source": "shot_0257.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-21.png",
+      "sha256": "851d8660438e509ad32f5226d5c4f17d0223120325eacf17bf6a80ddf6fb2db0",
+      "bytes": 1669234,
+      "utc": "2026-10-15T08:19:35.499Z",
+      "HUD_readback": {
+        "clock_text": "42:27",
+        "clock_seconds": 2547,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 3041,
+        "mana": 1664,
+        "max_mana": 1886,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 39557,
+        "demo_tick": 82844,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2547.300192817688,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1664.8141,
+          "max_hp": 3041,
+          "max_mana": 1886.8143
+        },
+        "raw_state64": "0",
+        "raw_life_state": 1
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8141000000000531,
+          "max_mana": 0.8143000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 22,
+      "requested_game_seconds": 2553,
+      "requested_tick": 83014,
+      "before_tick": 83067,
+      "after_tick": 83067,
+      "native_source": "shot_0258.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-22.png",
+      "sha256": "05e61c519116725c98405c89c5968d1d7ebb6c040634a708a1dd82dc2f794e2d",
+      "bytes": 1547921,
+      "utc": "2026-10-15T08:19:40.158Z",
+      "HUD_readback": {
+        "clock_text": "42:34",
+        "clock_seconds": 2554,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 3041,
+        "mana": 1664,
+        "max_mana": 1886,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 39668,
+        "demo_tick": 83066,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2554.700193382263,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1664.8141,
+          "max_hp": 3041,
+          "max_mana": 1886.8143
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8141000000000531,
+          "max_mana": 0.8143000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 23,
+      "requested_game_seconds": 2587,
+      "requested_tick": 84034,
+      "before_tick": 84071,
+      "after_tick": 84071,
+      "native_source": "shot_0259.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-23.png",
+      "sha256": "50ddde9625577b3abadf3776b0d530acdc76ee07c4fabae616f58d52a0df0be3",
+      "bytes": 1631832,
+      "utc": "2026-10-15T08:19:44.741Z",
+      "HUD_readback": {
+        "clock_text": "43:08",
+        "clock_seconds": 2588,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3041,
+        "max_hp": 3041,
+        "mana": 1837,
+        "max_mana": 1886,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 40170,
+        "demo_tick": 84070,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2588.166862602234,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3041,
+          "mana": 1837.8142,
+          "max_hp": 3041,
+          "max_mana": 1886.8143
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.814200000000028,
+          "max_mana": 0.8143000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 24,
+      "requested_game_seconds": 2700,
+      "requested_tick": 87424,
+      "before_tick": 87445,
+      "after_tick": 87445,
+      "native_source": "shot_0260.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-24.png",
+      "sha256": "7a01741caa1671383628ded31a62c7960132e967b583b0471b0ea0a6904f96ae",
+      "bytes": 1652672,
+      "utc": "2026-10-15T08:19:49.334Z",
+      "HUD_readback": {
+        "clock_text": "45:00",
+        "clock_seconds": 2700,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3085,
+        "max_hp": 3085,
+        "mana": 1928,
+        "max_mana": 1928,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 41857,
+        "demo_tick": 87444,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2700.6335378494264,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3085,
+          "mana": 1928.1268,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.1268000000000029,
+          "max_mana": 0.1268000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 25,
+      "requested_game_seconds": 2934,
+      "requested_tick": 94444,
+      "before_tick": 94465,
+      "after_tick": 94465,
+      "native_source": "shot_0261.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-25.png",
+      "sha256": "4e6eb386d626b5c6bdd760a9d186afc2ab2fc6f6d78fbb23ea4daf16a2f0b254",
+      "bytes": 1433171,
+      "utc": "2026-10-15T08:19:54.019Z",
+      "HUD_readback": {
+        "clock_text": "48:54",
+        "clock_seconds": 2934,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 1318,
+        "max_hp": 3085,
+        "mana": 1678,
+        "max_mana": 1928,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 45367,
+        "demo_tick": 94464,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2934.6335557022094,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1318,
+          "mana": 1678.1266,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.12660000000005311,
+          "max_mana": 0.1268000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 26,
+      "requested_game_seconds": 2939,
+      "requested_tick": 94594,
+      "before_tick": 94647,
+      "after_tick": 94647,
+      "native_source": "shot_0262.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-26.png",
+      "sha256": "5f4c967e8a7e77dc5f7dc495d26db0ee164c4d82ee7e340ef65b5e54ec7801b6",
+      "bytes": 1525201,
+      "utc": "2026-10-15T08:19:58.742Z",
+      "HUD_readback": {
+        "clock_text": "49:00",
+        "clock_seconds": 2940,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 2058,
+        "max_hp": 2538,
+        "mana": 1073,
+        "max_mana": 1522,
+        "player_view_caption_status": "read directly from full PNG",
+        "selected_panel_heading": "TECHIES"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 45458,
+        "demo_tick": 94646,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 2940.700222831726,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1894.1268,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": "HUD explicitly selects Techies",
+        "eligible": false,
+        "absolute_errors": {
+          "hp": 2058,
+          "max_hp": 547,
+          "mana": 821.1268,
+          "max_mana": 406.1268
+        },
+        "within_one_hud_unit": false
+      }
+    },
+    {
+      "index": 27,
+      "requested_game_seconds": 2946,
+      "requested_tick": 94804,
+      "before_tick": 94856,
+      "after_tick": 94856,
+      "native_source": "shot_0263.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-27.png",
+      "sha256": "8bfb885bd771e28571c9412409cf179c3030dbb425c7623635d4407a33acc408",
+      "bytes": 1440638,
+      "utc": "2026-10-15T08:20:03.417Z",
+      "HUD_readback": {
+        "clock_text": "49:07",
+        "clock_seconds": 2947,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 2391,
+        "max_hp": 3100,
+        "mana": 758,
+        "max_mana": 900,
+        "player_view_caption_status": "read directly from full PNG",
+        "selected_panel_heading": "ВОИН ШТОРМА"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 45563,
+        "demo_tick": 94856,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 2947.7002233657836,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1894.1268,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": "HUD explicitly selects unit named ВОИН ШТОРМА; target account identity not established",
+        "eligible": false,
+        "absolute_errors": {
+          "hp": 2391,
+          "max_hp": 15,
+          "mana": 1136.1268,
+          "max_mana": 1028.1268
+        },
+        "within_one_hud_unit": false
+      }
+    },
+    {
+      "index": 28,
+      "requested_game_seconds": 3150,
+      "requested_tick": 104766,
+      "before_tick": 104794,
+      "after_tick": 104794,
+      "native_source": "shot_0264.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-28.png",
+      "sha256": "19ae1f4966e21978f5aa83a3900961ab14e257a741006775a94fcd7f318e00ef",
+      "bytes": 1652948,
+      "utc": "2026-10-15T08:20:08.033Z",
+      "HUD_readback": {
+        "clock_text": "52:31",
+        "clock_seconds": 3151,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3085,
+        "max_hp": 3085,
+        "mana": 927,
+        "max_mana": 1928,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 50532,
+        "demo_tick": 104794,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3150.93357220459,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3085,
+          "mana": 927.12585,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 1,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.125850000000014,
+          "max_mana": 0.1268000000000029
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 29,
+      "requested_game_seconds": 3510,
+      "requested_tick": 115566,
+      "before_tick": 115596,
+      "after_tick": 115596,
+      "native_source": "shot_0265.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-29.png",
+      "sha256": "a4895b4245ee173b24d108ae539fdd01816c7c1ad90181b39260382d67cd2885",
+      "bytes": 1734381,
+      "utc": "2026-10-15T08:20:12.674Z",
+      "HUD_readback": {
+        "clock_text": "58:31",
+        "clock_seconds": 3511,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 1188,
+        "max_hp": 3461,
+        "mana": 499,
+        "max_mana": 2175,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 55933,
+        "demo_tick": 115596,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3511.0002663421633,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1188,
+          "mana": 499.7505,
+          "max_hp": 3461,
+          "max_mana": 2175.8145
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.7504999999999882,
+          "max_mana": 0.8144999999999527
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 30,
+      "requested_game_seconds": 3513,
+      "requested_tick": 115656,
+      "before_tick": 115710,
+      "after_tick": 115710,
+      "native_source": "shot_0266.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-30.png",
+      "sha256": "53dc29e6d52751be6c0cb09eeb12d55cac0e32264d0b47572fb341dfda7cf1b0",
+      "bytes": 1695066,
+      "utc": "2026-10-15T08:20:17.312Z",
+      "HUD_readback": {
+        "clock_text": "58:34",
+        "clock_seconds": 3514,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": "v o i d",
+        "hp": 355,
+        "max_hp": 3461,
+        "mana": 320,
+        "max_mana": 2175,
+        "player_view_caption_status": "read directly from full PNG"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 55990,
+        "demo_tick": 115710,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3514.80026663208,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 355,
+          "mana": 320.7503,
+          "max_hp": 3461,
+          "max_mana": 2175.8145
+        },
+        "raw_state64": "262234",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.7502999999999815,
+          "max_mana": 0.8144999999999527
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 31,
+      "requested_game_seconds": 3516,
+      "requested_tick": 115746,
+      "before_tick": 115802,
+      "after_tick": 115802,
+      "native_source": "shot_0267.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-31.png",
+      "sha256": "5bcf805cad6a6a2e26f910450f93b00bcbbb198c51118137d143df36a30f4805",
+      "bytes": 1713456,
+      "utc": "2026-10-15T08:20:21.959Z",
+      "HUD_readback": {
+        "clock_text": "58:37",
+        "clock_seconds": 3517,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3461,
+        "max_hp": 3461,
+        "mana": 2175,
+        "max_mana": 2175,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 56036,
+        "demo_tick": 115802,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3517.866933532715,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3461,
+          "mana": 2175.8145,
+          "max_hp": 3461,
+          "max_mana": 2175.8145
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8144999999999527,
+          "max_mana": 0.8144999999999527
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 32,
+      "requested_game_seconds": 3518,
+      "requested_tick": 115806,
+      "before_tick": 115828,
+      "after_tick": 115828,
+      "native_source": "shot_0268.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-32.png",
+      "sha256": "cf948d628855b1234c4b55dabd09e26c5e5722af00970730dad6ce0df71fd30a",
+      "bytes": 1710188,
+      "utc": "2026-10-15T08:20:26.582Z",
+      "HUD_readback": {
+        "clock_text": "58:38",
+        "clock_seconds": 3518,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3461,
+        "max_hp": 3461,
+        "mana": 2175,
+        "max_mana": 2175,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 56049,
+        "demo_tick": 115828,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3518.733600265503,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3461,
+          "mana": 2175.8145,
+          "max_hp": 3461,
+          "max_mana": 2175.8145
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8144999999999527,
+          "max_mana": 0.8144999999999527
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 33,
+      "requested_game_seconds": 3525,
+      "requested_tick": 116016,
+      "before_tick": 116068,
+      "after_tick": 116068,
+      "native_source": "shot_0269.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-33.png",
+      "sha256": "89a1f29ce377371c1dba391e2a2ac56e33e82740cd18141dba474f06ca9bac4d",
+      "bytes": 1478036,
+      "utc": "2026-10-15T08:20:31.212Z",
+      "HUD_readback": {
+        "clock_text": "58:46",
+        "clock_seconds": 3526,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3461,
+        "max_hp": 3461,
+        "mana": 2175,
+        "max_mana": 2175,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 56169,
+        "demo_tick": 116068,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3526.7336008758543,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3461,
+          "mana": 2175.8145,
+          "max_hp": 3461,
+          "max_mana": 2175.8145
+        },
+        "raw_state64": "8864812499072",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8144999999999527,
+          "max_mana": 0.8144999999999527
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 34,
+      "requested_game_seconds": 3535,
+      "requested_tick": 116316,
+      "before_tick": 116367,
+      "after_tick": 116367,
+      "native_source": "shot_0270.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-34.png",
+      "sha256": "1f5af81d8213727f92764500a775cb43ed08a4bf9ace9946e09e547cd8adfc67",
+      "bytes": 1683963,
+      "utc": "2026-10-15T08:20:35.814Z",
+      "HUD_readback": {
+        "clock_text": "58:56",
+        "clock_seconds": 3536,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 3461,
+        "max_hp": 3461,
+        "mana": 2158,
+        "max_mana": 2175,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 56318,
+        "demo_tick": 116366,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 3536.666934967041,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 3461,
+          "mana": 2158.8145,
+          "max_hp": 3461,
+          "max_mana": 2175.8145
+        },
+        "raw_state64": "8864812499072",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.8144999999999527,
+          "max_mana": 0.8144999999999527
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 35,
+      "requested_game_seconds": 3600,
+      "requested_tick": 118266,
+      "before_tick": 118275,
+      "after_tick": 118275,
+      "native_source": "shot_0271.png",
+      "png": "build/dota_coach/replay-9045392898/native/episodes/frame-35.png",
+      "sha256": "b6fca128f8262013cf729b36444971810087818de5e07dd7d07f8d4a8b486680",
+      "bytes": 1821277,
+      "utc": "2026-10-15T08:20:40.458Z",
+      "HUD_readback": {
+        "clock_text": "60:00",
+        "clock_seconds": 3600,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 1739,
+        "max_hp": 3461,
+        "mana": 330,
+        "max_mana": 2485,
+        "player_view_caption_status": "not independently transcribed; do not infer from initial focus"
+      },
+      "physical_input_controlled": false,
+      "group": "episodes",
+      "decoded_source": {
+        "state_seq": 57272,
+        "demo_tick": 118274,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 3600.266939819336,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 1739,
+          "mana": 330.3753,
+          "max_hp": 3461,
+          "max_mana": 2485.3774
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": null,
+        "eligible": true,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 0,
+          "mana": 0.37529999999998154,
+          "max_mana": 0.3773999999998523
+        },
+        "within_one_hud_unit": true
+      }
+    },
+    {
+      "index": 0,
+      "requested_game_seconds": null,
+      "label": "recorded-pause-a",
+      "requested_tick": 96700,
+      "before_tick": 96711,
+      "after_tick": 96711,
+      "native_source": "shot_0272.png",
+      "png": "build/dota_coach/replay-9045392898/native/extra/frame-0.png",
+      "sha256": "b076397957f36fbe60dade833406bf3821ed7d1c9af3323f653e7bc570657115",
+      "bytes": 1281838,
+      "utc": "2026-10-15T08:22:32.908Z",
+      "HUD_readback": {
+        "clock_text": "50:03",
+        "clock_seconds": 3003,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 3046,
+        "mana": 3755,
+        "max_mana": 3755,
+        "player_view_caption_status": "different truncated pink caption, target name not asserted",
+        "player_view_hero_icon_observed": "Obsidian Destroyer",
+        "selected_panel_heading": "СВОДКА СМЕРТИ"
+      },
+      "physical_input_controlled": false,
+      "group": "extra",
+      "decoded_source": {
+        "state_seq": 46490,
+        "demo_tick": 96710,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 3003.2335609359743,
+          "pause_start": 97497,
+          "pause_total": 0,
+          "paused": true,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1894.1268,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": "Native death-summary panel; player-view OD icon and different truncated caption, not verified target identity",
+        "eligible": false,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 39,
+          "mana": 1860.8732,
+          "max_mana": 1826.8732
+        },
+        "within_one_hud_unit": false
+      }
+    },
+    {
+      "index": 1,
+      "requested_game_seconds": null,
+      "label": "recorded-pause-b",
+      "requested_tick": 97200,
+      "before_tick": 97251,
+      "after_tick": 97251,
+      "native_source": "shot_0273.png",
+      "png": "build/dota_coach/replay-9045392898/native/extra/frame-1.png",
+      "sha256": "b78c2475a57537a911455c5b348b90afebb62e444b995f4dbbb7ce84750c8c2e",
+      "bytes": 1281919,
+      "utc": "2026-10-15T08:22:37.481Z",
+      "HUD_readback": {
+        "clock_text": "50:03",
+        "clock_seconds": 3003,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 3046,
+        "mana": 3755,
+        "max_mana": 3755,
+        "player_view_caption_status": "different truncated pink caption, target name not asserted",
+        "player_view_hero_icon_observed": "Obsidian Destroyer",
+        "selected_panel_heading": "СВОДКА СМЕРТИ"
+      },
+      "physical_input_controlled": false,
+      "group": "extra",
+      "decoded_source": {
+        "state_seq": 46760,
+        "demo_tick": 97250,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 3003.2335609359743,
+          "pause_start": 97497,
+          "pause_total": 0,
+          "paused": true,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 0,
+          "mana": 1894.1268,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "raw_state64": "0",
+        "raw_life_state": 2
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": "Native death-summary panel; player-view OD icon and different truncated caption, not verified target identity",
+        "eligible": false,
+        "absolute_errors": {
+          "hp": 0,
+          "max_hp": 39,
+          "mana": 1860.8732,
+          "max_mana": 1826.8732
+        },
+        "within_one_hud_unit": false
+      }
+    },
+    {
+      "index": 2,
+      "requested_game_seconds": null,
+      "label": "end-3616",
+      "requested_tick": 118746,
+      "before_tick": 118747,
+      "after_tick": 118747,
+      "native_source": "shot_0274.png",
+      "png": "build/dota_coach/replay-9045392898/native/extra/frame-2.png",
+      "sha256": "33b2debf272bf63f06b089bca1d40cb3845287ef4664645d5acd3774afc8fb07",
+      "bytes": 1338220,
+      "utc": "2026-10-15T08:22:42.099Z",
+      "HUD_readback": {
+        "clock_text": "60:16",
+        "clock_seconds": 3616,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "hp": 0,
+        "max_hp": 3112,
+        "mana": 4036,
+        "max_mana": 4206,
+        "player_view_caption_status": "different truncated pink caption, target name not asserted",
+        "player_view_hero_icon_observed": "Obsidian Destroyer",
+        "selected_panel_heading": "СВОДКА СМЕРТИ"
+      },
+      "physical_input_controlled": false,
+      "group": "extra",
+      "decoded_source": {
+        "state_seq": 57508,
+        "demo_tick": 118746,
+        "gap_ticks": 1,
+        "clock": {
+          "game_seconds": 3616.000274353027,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2933,
+          "mana": 573.37555,
+          "max_hp": 3461,
+          "max_mana": 2485.3774
+        },
+        "raw_state64": "0",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": "Native death-summary panel; player-view OD icon and different truncated caption, not verified target identity",
+        "eligible": false,
+        "absolute_errors": {
+          "hp": 2933,
+          "max_hp": 349,
+          "mana": 3462.6244500000003,
+          "max_mana": 1720.6226000000001
+        },
+        "within_one_hud_unit": false
+      }
+    },
+    {
+      "index": 3,
+      "requested_game_seconds": null,
+      "label": "end-3619",
+      "requested_tick": 118836,
+      "before_tick": 118876,
+      "after_tick": 118876,
+      "native_source": "shot_0275.png",
+      "png": "build/dota_coach/replay-9045392898/native/extra/frame-3.png",
+      "sha256": "a9f3ac17cbc9399c9e617fb84d6ad970cd151c4fd696202e8b29bce106cbcb23",
+      "bytes": 1646841,
+      "utc": "2026-10-15T08:22:46.701Z",
+      "HUD_readback": {
+        "clock_text": "60:20",
+        "clock_seconds": 3620,
+        "read_method": "root manual inspection of native PNG and HUD diagnostic crops",
+        "player_view_caption": null,
+        "player_view_caption_status": "not read in final scene"
+      },
+      "physical_input_controlled": false,
+      "group": "extra",
+      "decoded_source": {
+        "state_seq": 57573,
+        "demo_tick": 118876,
+        "gap_ticks": 0,
+        "clock": {
+          "game_seconds": 3620.333608016968,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "resources": {
+          "hp": 2907,
+          "mana": 685.3757,
+          "max_hp": 3461,
+          "max_mana": 2485.3774
+        },
+        "raw_state64": "122",
+        "raw_life_state": 0
+      },
+      "clock_floor_difference_seconds": 0,
+      "resource_comparison": {
+        "excluded_reason": "Cinematic has no selected-unit resources",
+        "eligible": false
+      }
+    }
+  ],
+  "summary": {
+    "frames": 42,
+    "eligible_resources": 36,
+    "within_one_hud_unit": 36,
+    "excluded_resources": 6,
+    "exact_clock_floor": 38,
+    "exact_real_ticks": 18,
+    "prior_one_tick": 24,
+    "source_authorization_verified": false,
+    "native_whole_payload_verified": false
+  },
+  "whole_native_payload_verified": false,
+  "player_knowledge_verified": false,
+  "actual_recorded_pause_sampled": true,
+  "pause_scope": "two native cursor samples 96711 and97251; HUD50:03, game pause overlay, both compared to prior real row gap1; not all pause transitions",
+  "clock_difference_note": "38 clock floors match;4 differ by+1sec,2exact and2prior rows; cause not established, no interpolation or HUD-fitting",
+  "annotation_correction": {
+    "date": "2026-10-15",
+    "review_finding": "P2 static player-caption / excluded-panel labels",
+    "frames": [
+      "extra/0",
+      "extra/1",
+      "extra/2",
+      "episodes/27"
+    ],
+    "raw_images_changed": false,
+    "resource_eligibility_changed": false,
+    "clock_values_changed": false,
+    "uncertain_captions_now_null": true
+  }
+}

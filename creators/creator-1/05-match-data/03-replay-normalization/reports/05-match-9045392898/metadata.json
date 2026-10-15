@@ -1,0 +1,782 @@
+{
+  "match_id": 9045392898,
+  "account_id": 70388657,
+  "player_index": 6,
+  "source": {
+    "url": "https://api.opendota.com/api/matches/9045392898",
+    "status": 200,
+    "bytes": 358152,
+    "sha256": "e99ed10b6081eb140b9773193792704b870313da7146c0e6190b2756aa2978f7",
+    "utc": "2026-10-15T08:06:27.983856+00:00",
+    "elapsed_seconds": 5.297
+  },
+  "native_identity": {
+    "match_id": 9045392898,
+    "steam64": "76561198030654385",
+    "hero_name": "npc_dota_hero_enchantress",
+    "player_name": "v o i d",
+    "team": 3,
+    "source_path": "build/dota_coach/replay-9045392898/native/loaded-info.jsonl",
+    "source_sha256": "c5c28505ae8454912180bf7e07379756fbbe515f3ff9e6b71299e90fd7e99863"
+  },
+  "match": {
+    "duration": 3620,
+    "radiant_win": false,
+    "start_time": 1792013573,
+    "patch": 60,
+    "version": 22,
+    "radiant_score": 51,
+    "dire_score": 47
+  },
+  "player": {
+    "account_id": 70388657,
+    "personaname": "v o i d",
+    "name": "Dendi",
+    "hero_id": 58,
+    "player_slot": 129,
+    "kills": 11,
+    "deaths": 6,
+    "assists": 11,
+    "last_hits": 492,
+    "denies": 18,
+    "gold_per_min": 609,
+    "xp_per_min": 776,
+    "net_worth": 29001,
+    "hero_damage": 47547,
+    "tower_damage": 3722,
+    "neutral_kills": 107,
+    "lane_kills": 349,
+    "times": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      300,
+      360,
+      420,
+      480,
+      540,
+      600,
+      660,
+      720,
+      780,
+      840,
+      900,
+      960,
+      1020,
+      1080,
+      1140,
+      1200,
+      1260,
+      1320,
+      1380,
+      1440,
+      1500,
+      1560,
+      1620,
+      1680,
+      1740,
+      1800,
+      1860,
+      1920,
+      1980,
+      2040,
+      2100,
+      2160,
+      2220,
+      2280,
+      2340,
+      2400,
+      2460,
+      2520,
+      2580,
+      2640,
+      2700,
+      2760,
+      2820,
+      2880,
+      2940,
+      3000,
+      3060,
+      3120,
+      3180,
+      3240,
+      3300,
+      3360,
+      3420,
+      3480,
+      3540,
+      3600
+    ],
+    "lh_t": [
+      0,
+      0,
+      4,
+      9,
+      10,
+      13,
+      21,
+      28,
+      36,
+      47,
+      54,
+      64,
+      76,
+      84,
+      91,
+      96,
+      106,
+      113,
+      121,
+      129,
+      132,
+      143,
+      149,
+      159,
+      164,
+      168,
+      178,
+      183,
+      197,
+      208,
+      219,
+      227,
+      246,
+      249,
+      264,
+      280,
+      295,
+      298,
+      303,
+      310,
+      310,
+      313,
+      333,
+      346,
+      358,
+      366,
+      376,
+      381,
+      392,
+      409,
+      414,
+      414,
+      417,
+      425,
+      447,
+      468,
+      476,
+      487,
+      489,
+      491,
+      491
+    ],
+    "dn_t": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      11,
+      14,
+      15,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "networth_t": [
+      600,
+      770,
+      1026,
+      1291,
+      1429,
+      1636,
+      2187,
+      2525,
+      2798,
+      3231,
+      3735,
+      4245,
+      4825,
+      5428,
+      5976,
+      6361,
+      6674,
+      7141,
+      8230,
+      9372,
+      9753,
+      10561,
+      11137,
+      11986,
+      12269,
+      12546,
+      13116,
+      13500,
+      14556,
+      15306,
+      15524,
+      15935,
+      16796,
+      16958,
+      17612,
+      18388,
+      19035,
+      20062,
+      20759,
+      20812,
+      20615,
+      21995,
+      22741,
+      22653,
+      21236,
+      21567,
+      21980,
+      22224,
+      23025,
+      23680,
+      24047,
+      24153,
+      24382,
+      25920,
+      26896,
+      27776,
+      28225,
+      29598,
+      30090,
+      28354,
+      28675
+    ],
+    "hero_damage_t": [
+      0,
+      255,
+      905,
+      1002,
+      1847,
+      2150,
+      2690,
+      2782,
+      2874,
+      2874,
+      2874,
+      2874,
+      3015,
+      4315,
+      4315,
+      5988,
+      5988,
+      6410,
+      7491,
+      8248,
+      10358,
+      11993,
+      13485,
+      14240,
+      14424,
+      14424,
+      14424,
+      15082,
+      16134,
+      17522,
+      17789,
+      17789,
+      17789,
+      18601,
+      20110,
+      20216,
+      20216,
+      23035,
+      23035,
+      25138,
+      26584,
+      27435,
+      27435,
+      27899,
+      27945,
+      28197,
+      29217,
+      29315,
+      29315,
+      30877,
+      30877,
+      30877,
+      32156,
+      34834,
+      34834,
+      34869,
+      34869,
+      35975,
+      39253,
+      45251,
+      47547
+    ],
+    "tower_damage_t": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      112,
+      853,
+      853,
+      1174,
+      1174,
+      1628,
+      1628,
+      1628,
+      1628,
+      1628,
+      1628,
+      1628,
+      1628,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1890,
+      1949,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2546,
+      2610,
+      2610
+    ],
+    "kills_log": [
+      {
+        "time": 358,
+        "key": "npc_dota_hero_obsidian_destroyer"
+      },
+      {
+        "time": 1060,
+        "key": "npc_dota_hero_obsidian_destroyer"
+      },
+      {
+        "time": 1084,
+        "key": "npc_dota_hero_tiny"
+      },
+      {
+        "smoke": true,
+        "time": 1341,
+        "key": "npc_dota_hero_tiny"
+      },
+      {
+        "smoke": true,
+        "time": 1668,
+        "key": "npc_dota_hero_gyrocopter"
+      },
+      {
+        "time": 2187,
+        "key": "npc_dota_hero_obsidian_destroyer"
+      },
+      {
+        "time": 2447,
+        "key": "npc_dota_hero_dazzle"
+      },
+      {
+        "time": 3161,
+        "key": "npc_dota_hero_tiny"
+      },
+      {
+        "smoke": true,
+        "time": 3365,
+        "key": "npc_dota_hero_gyrocopter"
+      },
+      {
+        "time": 3480,
+        "key": "npc_dota_hero_brewmaster"
+      },
+      {
+        "time": 3513,
+        "key": "npc_dota_hero_tiny"
+      }
+    ],
+    "deaths_log": [
+      {
+        "gold_fed": 1066,
+        "time": 1434,
+        "gold_lost": 306,
+        "key": "npc_dota_hero_obsidian_destroyer",
+        "time_dead": 54
+      },
+      {
+        "gold_fed": 967,
+        "time": 1743,
+        "gold_lost": 383,
+        "key": "npc_dota_hero_brewmaster",
+        "time_dead": 70
+      },
+      {
+        "gold_fed": 1135,
+        "time": 2345,
+        "gold_lost": 520,
+        "key": "npc_dota_hero_obsidian_destroyer",
+        "time_dead": 85
+      },
+      {
+        "gold_fed": 1257,
+        "time": 2546,
+        "gold_lost": 576,
+        "key": "npc_dota_hero_tiny",
+        "time_dead": 41
+      },
+      {
+        "gold_fed": 1261,
+        "time": 2939,
+        "gold_lost": 607,
+        "key": "npc_dota_hero_tiny",
+        "time_dead": 120
+      },
+      {
+        "gold_fed": 1871,
+        "time": 3516,
+        "gold_lost": 791,
+        "key": "npc_dota_hero_brewmaster",
+        "time_dead": 1
+      }
+    ],
+    "buyback_log": [
+      {
+        "time": 2587,
+        "type": "buyback_log",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 3518,
+        "type": "buyback_log",
+        "slot": 6,
+        "player_slot": 129
+      }
+    ],
+    "purchase_log": [
+      {
+        "time": -89,
+        "key": "mantle"
+      },
+      {
+        "time": -89,
+        "key": "tango"
+      },
+      {
+        "time": -89,
+        "key": "faerie_fire"
+      },
+      {
+        "time": -89,
+        "key": "circlet"
+      },
+      {
+        "time": -89,
+        "key": "ward_observer"
+      },
+      {
+        "time": -89,
+        "key": "branches"
+      },
+      {
+        "time": -89,
+        "key": "branches"
+      },
+      {
+        "time": 96,
+        "key": "null_talisman"
+      },
+      {
+        "time": 118,
+        "key": "magic_stick"
+      },
+      {
+        "time": 221,
+        "key": "flask"
+      },
+      {
+        "time": 246,
+        "key": "magic_wand"
+      },
+      {
+        "time": 253,
+        "key": "gloves"
+      },
+      {
+        "time": 254,
+        "key": "ward_observer"
+      },
+      {
+        "time": 329,
+        "key": "infused_raindrop"
+      },
+      {
+        "time": 364,
+        "key": "boots"
+      },
+      {
+        "time": 368,
+        "key": "ward_sentry"
+      },
+      {
+        "time": 458,
+        "key": "robe"
+      },
+      {
+        "time": 474,
+        "key": "power_treads"
+      },
+      {
+        "time": 595,
+        "key": "point_booster"
+      },
+      {
+        "time": 602,
+        "key": "tpscroll"
+      },
+      {
+        "time": 718,
+        "key": "staff_of_wizardry"
+      },
+      {
+        "time": 803,
+        "key": "ogre_axe"
+      },
+      {
+        "time": 961,
+        "key": "blade_of_alacrity"
+      },
+      {
+        "time": 982,
+        "key": "ultimate_scepter"
+      },
+      {
+        "time": 1094,
+        "key": "blitz_knuckles"
+      },
+      {
+        "time": 1094,
+        "key": "robe"
+      },
+      {
+        "time": 1094,
+        "key": "oblivion_staff"
+      },
+      {
+        "time": 1094,
+        "key": "sobi_mask"
+      },
+      {
+        "time": 1226,
+        "key": "claymore"
+      },
+      {
+        "time": 1255,
+        "key": "orchid"
+      },
+      {
+        "time": 1319,
+        "key": "blitz_knuckles"
+      },
+      {
+        "time": 1356,
+        "key": "robe"
+      },
+      {
+        "time": 1356,
+        "key": "sobi_mask"
+      },
+      {
+        "time": 1434,
+        "key": "oblivion_staff"
+      },
+      {
+        "time": 1557,
+        "key": "javelin"
+      },
+      {
+        "time": 1618,
+        "key": "bloodthorn"
+      },
+      {
+        "time": 1681,
+        "key": "tpscroll"
+      },
+      {
+        "time": 1682,
+        "key": "ogre_axe"
+      },
+      {
+        "time": 1991,
+        "key": "mithril_hammer"
+      },
+      {
+        "time": 1996,
+        "key": "black_king_bar"
+      },
+      {
+        "time": 2114,
+        "key": "aghanims_shard"
+      },
+      {
+        "time": 2311,
+        "key": "blade_of_alacrity"
+      },
+      {
+        "time": 2312,
+        "key": "belt_of_strength"
+      },
+      {
+        "time": 2312,
+        "key": "dragon_lance"
+      },
+      {
+        "time": 2313,
+        "key": "tpscroll"
+      },
+      {
+        "time": 3196,
+        "key": "staff_of_wizardry"
+      },
+      {
+        "time": 3196,
+        "key": "fluffy_hat"
+      },
+      {
+        "time": 3196,
+        "key": "force_staff"
+      },
+      {
+        "time": 3196,
+        "key": "hurricane_pike"
+      },
+      {
+        "time": 3265,
+        "key": "greater_famango"
+      },
+      {
+        "time": 3266,
+        "key": "greater_famango"
+      },
+      {
+        "time": 3267,
+        "key": "greater_famango"
+      },
+      {
+        "time": 3525,
+        "key": "mystic_staff"
+      },
+      {
+        "time": 3525,
+        "key": "sheepstick"
+      },
+      {
+        "time": 3525,
+        "key": "tiara_of_selemene"
+      },
+      {
+        "time": 3604,
+        "key": "enchanted_mango"
+      },
+      {
+        "time": 3604,
+        "key": "enchanted_mango"
+      },
+      {
+        "time": 3605,
+        "key": "enchanted_mango"
+      },
+      {
+        "time": 3605,
+        "key": "enchanted_mango"
+      },
+      {
+        "time": 3605,
+        "key": "clarity"
+      },
+      {
+        "time": 3605,
+        "key": "clarity"
+      }
+    ]
+  },
+  "full_other_player_identifiers_published": false
+}

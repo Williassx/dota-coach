@@ -1,0 +1,1934 @@
+{
+  "match_id": 9045392898,
+  "account_id": 70388657,
+  "knowledge_scope": "spectator_research",
+  "native_verified": false,
+  "model_trained": false,
+  "deaths": [
+    {
+      "api": {
+        "gold_fed": 1066,
+        "time": 1434,
+        "gold_lost": 306,
+        "key": "npc_dota_hero_obsidian_destroyer",
+        "time_dead": 54
+      },
+      "samples": [
+        {
+          "offset_seconds": -5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1428.9667741622925,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 49294,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 116,
+              "m_cellY": 114,
+              "m_cellZ": 128,
+              "m_vecX": 165.5,
+              "m_vecY": 56.8125,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 2055,
+              "mana": 1527.0015,
+              "max_hp": 2055,
+              "max_mana": 1594.0015
+            },
+            "seq": 22782,
+            "server_tick": 50269,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1431.9667743911743,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 49384,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 118,
+              "m_cellY": 112,
+              "m_cellZ": 128,
+              "m_vecX": 167.0,
+              "m_vecY": 229.0,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "32",
+            "resources": {
+              "hp": 1880,
+              "mana": 1563.0015,
+              "max_hp": 2055,
+              "max_mana": 1594.0015
+            },
+            "seq": 22827,
+            "server_tick": 50359,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -0.5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1433.5001078414916,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 49430,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 118,
+              "m_cellY": 112,
+              "m_cellZ": 128,
+              "m_vecX": 230.46875,
+              "m_vecY": 213.75,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "90",
+            "resources": {
+              "hp": 773,
+              "mana": 1441.0013,
+              "max_hp": 2055,
+              "max_mana": 1594.0015
+            },
+            "seq": 22850,
+            "server_tick": 50405,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": 2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1435.96677469635,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 49504,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 2,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 120,
+              "m_cellY": 112,
+              "m_cellZ": 128,
+              "m_vecX": 69.25,
+              "m_vecY": 139.625,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 0,
+              "mana": 1452.0013,
+              "max_hp": 2055,
+              "max_mana": 1594.0015
+            },
+            "seq": 22887,
+            "server_tick": 50479,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "api": {
+        "gold_fed": 967,
+        "time": 1743,
+        "gold_lost": 383,
+        "key": "npc_dota_hero_brewmaster",
+        "time_dead": 70
+      },
+      "samples": [
+        {
+          "offset_seconds": -5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1737.9667977371216,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 58564,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 122,
+              "m_cellY": 96,
+              "m_cellZ": 128,
+              "m_vecX": 35.90625,
+              "m_vecY": 198.1875,
+              "m_vecZ": 134.0
+            },
+            "raw_state64": "32",
+            "resources": {
+              "hp": 1968,
+              "mana": 1204.9386,
+              "max_hp": 2407,
+              "max_mana": 1810.8767
+            },
+            "seq": 27417,
+            "server_tick": 59539,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1740.9667979660035,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 58654,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 128,
+              "m_cellY": 100,
+              "m_cellZ": 130,
+              "m_vecX": 64.53124,
+              "m_vecY": 34.875,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "128",
+            "resources": {
+              "hp": 1775,
+              "mana": 1249.9387,
+              "max_hp": 2407,
+              "max_mana": 1810.8767
+            },
+            "seq": 27462,
+            "server_tick": 59629,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -0.5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1742.5001314163208,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 58700,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 128,
+              "m_cellY": 100,
+              "m_cellZ": 130,
+              "m_vecX": 164.03125,
+              "m_vecY": 240.15625,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "1073741824",
+            "resources": {
+              "hp": 732,
+              "mana": 1270.9387,
+              "max_hp": 2407,
+              "max_mana": 1810.8767
+            },
+            "seq": 27485,
+            "server_tick": 59675,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": 2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 1744.9667982711792,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 58774,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 2,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 128,
+              "m_cellY": 100,
+              "m_cellZ": 130,
+              "m_vecX": 166.84375,
+              "m_vecY": 246.1875,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 0,
+              "mana": 1280.9387,
+              "max_hp": 2407,
+              "max_mana": 1810.8767
+            },
+            "seq": 27522,
+            "server_tick": 59749,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "api": {
+        "gold_fed": 1135,
+        "time": 2345,
+        "gold_lost": 520,
+        "key": "npc_dota_hero_obsidian_destroyer",
+        "time_dead": 85
+      },
+      "samples": [
+        {
+          "offset_seconds": -5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2339.966843666077,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 76624,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 166,
+              "m_cellY": 156,
+              "m_cellZ": 130,
+              "m_vecX": 58.65625,
+              "m_vecY": 252.59375,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "32",
+            "resources": {
+              "hp": 2762,
+              "mana": 1446.6888,
+              "max_hp": 2997,
+              "max_mana": 1446.6888
+            },
+            "seq": 36447,
+            "server_tick": 77599,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2342.9668438949584,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 76714,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 166,
+              "m_cellY": 154,
+              "m_cellZ": 130,
+              "m_vecX": 174.34375,
+              "m_vecY": 133.6875,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 2351,
+              "mana": 1320.6887,
+              "max_hp": 2997,
+              "max_mana": 1446.6888
+            },
+            "seq": 36492,
+            "server_tick": 77689,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -0.5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2344.500177345276,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 76760,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 168,
+              "m_cellY": 154,
+              "m_cellZ": 130,
+              "m_vecX": 26.125,
+              "m_vecY": 181.78125,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "1073741824",
+            "resources": {
+              "hp": 477,
+              "mana": 1191.7511,
+              "max_hp": 2997,
+              "max_mana": 1446.6888
+            },
+            "seq": 36515,
+            "server_tick": 77735,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": 2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2346.9668442001343,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 76834,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 1,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 170,
+              "m_cellY": 158,
+              "m_cellZ": 130,
+              "m_vecX": 63.0,
+              "m_vecY": 221.5,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 0,
+              "mana": 1022.751,
+              "max_hp": 2997,
+              "max_mana": 1446.6888
+            },
+            "seq": 36552,
+            "server_tick": 77809,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "api": {
+        "gold_fed": 1257,
+        "time": 2546,
+        "gold_lost": 576,
+        "key": "npc_dota_hero_tiny",
+        "time_dead": 41
+      },
+      "samples": [
+        {
+          "offset_seconds": -5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2540.9668590011597,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 82654,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 112,
+              "m_cellY": 102,
+              "m_cellZ": 128,
+              "m_vecX": 174.375,
+              "m_vecY": 229.46875,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "32",
+            "resources": {
+              "hp": 3004,
+              "mana": 1582.814,
+              "max_hp": 3041,
+              "max_mana": 1886.8143
+            },
+            "seq": 39462,
+            "server_tick": 83629,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2543.9668592300413,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 82744,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 108,
+              "m_cellY": 102,
+              "m_cellZ": 128,
+              "m_vecX": 91.3125,
+              "m_vecY": 116.25,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "122",
+            "resources": {
+              "hp": 1795,
+              "mana": 1626.8141,
+              "max_hp": 3041,
+              "max_mana": 1886.8143
+            },
+            "seq": 39507,
+            "server_tick": 83719,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -0.5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2545.500192680359,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 82790,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 108,
+              "m_cellY": 102,
+              "m_cellZ": 128,
+              "m_vecX": 91.3125,
+              "m_vecY": 116.25,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "32",
+            "resources": {
+              "hp": 689,
+              "mana": 1648.8141,
+              "max_hp": 3041,
+              "max_mana": 1886.8143
+            },
+            "seq": 39530,
+            "server_tick": 83765,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": 2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2547.9668595352173,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 82864,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 1,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 108,
+              "m_cellY": 102,
+              "m_cellZ": 128,
+              "m_vecX": 94.5625,
+              "m_vecY": 43.34375,
+              "m_vecZ": 128.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 0,
+              "mana": 1664.8141,
+              "max_hp": 3041,
+              "max_mana": 1886.8143
+            },
+            "seq": 39567,
+            "server_tick": 83839,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "api": {
+        "gold_fed": 1261,
+        "time": 2939,
+        "gold_lost": 607,
+        "key": "npc_dota_hero_tiny",
+        "time_dead": 120
+      },
+      "samples": [
+        {
+          "offset_seconds": -5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2933.9668889846803,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 94444,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 138,
+              "m_cellY": 122,
+              "m_cellZ": 128,
+              "m_vecX": 18.34375,
+              "m_vecY": 223.15625,
+              "m_vecZ": 111.9375
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 1311,
+              "mana": 1669.1266,
+              "max_hp": 3085,
+              "max_mana": 1928.1268
+            },
+            "seq": 45357,
+            "server_tick": 95419,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2936.966889213562,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 94534,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 136,
+              "m_cellY": 120,
+              "m_cellZ": 132,
+              "m_vecX": 60.40625,
+              "m_vecY": 35.03125,
+              "m_vecZ": 65.78124
+            },
+            "raw_state64": "32",
+            "resources": {
+              "hp": 556,
+              "mana": 1713.1266,
+              "max_hp": 3085,
+              "max_mana": 1928.1268
+            },
+            "seq": 45402,
+            "server_tick": 95509,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -0.5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2938.5002226638794,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 94580,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 138,
+              "m_cellY": 120,
+              "m_cellZ": 128,
+              "m_vecX": 155.03125,
+              "m_vecY": 231.84375,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 286,
+              "mana": 1884.1268,
+              "max_hp": 3085,
+              "max_mana": 1928.1268
+            },
+            "seq": 45425,
+            "server_tick": 95555,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": 2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 2940.966889518738,
+              "pause_start": 0,
+              "pause_total": 0,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 94654,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 2,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 138,
+              "m_cellY": 120,
+              "m_cellZ": 128,
+              "m_vecX": 178.9375,
+              "m_vecY": 95.15624,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 0,
+              "mana": 1894.1268,
+              "max_hp": 3085,
+              "max_mana": 1928.1268
+            },
+            "seq": 45462,
+            "server_tick": 95629,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "api": {
+        "gold_fed": 1871,
+        "time": 3516,
+        "gold_lost": 791,
+        "key": "npc_dota_hero_brewmaster",
+        "time_dead": 1
+      },
+      "samples": [
+        {
+          "offset_seconds": -5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 3511.0002663421633,
+              "pause_start": 0,
+              "pause_total": 3841,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 115596,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 96,
+              "m_cellY": 78,
+              "m_cellZ": 130,
+              "m_vecX": 199.625,
+              "m_vecY": 131.03125,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 1188,
+              "mana": 499.7505,
+              "max_hp": 3461,
+              "max_mana": 2175.8145
+            },
+            "seq": 55933,
+            "server_tick": 116571,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 3514.000266571045,
+              "pause_start": 0,
+              "pause_total": 3841,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 115686,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 96,
+              "m_cellY": 76,
+              "m_cellZ": 130,
+              "m_vecX": 209.875,
+              "m_vecY": 205.875,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 506,
+              "mana": 307.7503,
+              "max_hp": 3461,
+              "max_mana": 2175.8145
+            },
+            "seq": 55978,
+            "server_tick": 116661,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": -0.5,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 3515.4669333496095,
+              "pause_start": 0,
+              "pause_total": 3841,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 115730,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 98,
+              "m_cellY": 76,
+              "m_cellZ": 130,
+              "m_vecX": 42.90625,
+              "m_vecY": 216.4375,
+              "m_vecZ": 0.0
+            },
+            "raw_state64": "262234",
+            "resources": {
+              "hp": 217,
+              "mana": 331.7503,
+              "max_hp": 3461,
+              "max_mana": 2175.8145
+            },
+            "seq": 56000,
+            "server_tick": 116705,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        },
+        {
+          "offset_seconds": 2,
+          "state": {
+            "actor": {
+              "account32": 70388657,
+              "class": "CDOTA_Unit_Hero_Enchantress",
+              "full_handle": 12615978,
+              "index": 298,
+              "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+              "serial": 770,
+              "steam64": "76561198030654385"
+            },
+            "binding_epoch": 1,
+            "clock": {
+              "game_seconds": 3518.000266876221,
+              "pause_start": 0,
+              "pause_total": 3841,
+              "paused": false,
+              "start": 246.66668701171875,
+              "tick_interval_seconds": 0.033333335876464844
+            },
+            "clock_epoch": 2,
+            "demo_tick": 115806,
+            "knowledge_scope": "spectator_research",
+            "phase_raw": 5,
+            "raw_life_state": 0,
+            "raw_player_id": 12,
+            "raw_position": {
+              "m_cellX": 180,
+              "m_cellY": 178,
+              "m_cellZ": 130,
+              "m_vecX": 246.0,
+              "m_vecY": 20.0,
+              "m_vecZ": 135.84375
+            },
+            "raw_state64": "0",
+            "resources": {
+              "hp": 3461,
+              "mana": 2175.8145,
+              "max_hp": 3461,
+              "max_mana": 2175.8145
+            },
+            "seq": 56038,
+            "server_tick": 116781,
+            "unknown_reasons": [
+              "clone_classification_unknown",
+              "player_id_semantics_unknown",
+              "fog_unknown",
+              "world_transform_unknown",
+              "control_semantics_unknown"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "named_death_candidates": [
+    {
+      "event": {
+        "actor_link": "candidate_name_only",
+        "attacker": "npc_dota_hero_obsidian_destroyer",
+        "combat_timestamp": 1681.1001,
+        "demo_tick": 49458,
+        "full_entity_reference": null,
+        "game_seconds": null,
+        "inflictor": "obsidian_destroyer_sanity_eclipse",
+        "is_target_illusion": false,
+        "knowledge_scope": "spectator_research",
+        "seq": 7518,
+        "server_tick": 50433,
+        "target": "npc_dota_hero_enchantress",
+        "type": "DOTA_COMBATLOG_DEATH",
+        "value": 217
+      },
+      "nearest_state_demo_tick": 49458,
+      "nearest_clock": {
+        "game_seconds": 1434.4334412460328,
+        "pause_start": 0,
+        "pause_total": 0,
+        "paused": false,
+        "start": 246.66668701171875,
+        "tick_interval_seconds": 0.033333335876464844
+      }
+    },
+    {
+      "event": {
+        "actor_link": "candidate_name_only",
+        "attacker": "npc_dota_brewmaster_earth_3",
+        "combat_timestamp": 1989.8,
+        "demo_tick": 58720,
+        "full_entity_reference": null,
+        "game_seconds": null,
+        "inflictor": "brewmaster_earth_hurl_boulder",
+        "is_target_illusion": false,
+        "knowledge_scope": "spectator_research",
+        "seq": 9444,
+        "server_tick": 59695,
+        "target": "npc_dota_hero_enchantress",
+        "type": "DOTA_COMBATLOG_DEATH",
+        "value": 16
+      },
+      "nearest_state_demo_tick": 58720,
+      "nearest_clock": {
+        "game_seconds": 1743.16679813385,
+        "pause_start": 0,
+        "pause_total": 0,
+        "paused": false,
+        "start": 246.66668701171875,
+        "tick_interval_seconds": 0.033333335876464844
+      }
+    },
+    {
+      "event": {
+        "actor_link": "candidate_name_only",
+        "attacker": "npc_dota_hero_obsidian_destroyer",
+        "combat_timestamp": 2592.2334,
+        "demo_tick": 76792,
+        "full_entity_reference": null,
+        "game_seconds": null,
+        "inflictor": "obsidian_destroyer_arcane_orb",
+        "is_target_illusion": false,
+        "knowledge_scope": "spectator_research",
+        "seq": 12512,
+        "server_tick": 77767,
+        "target": "npc_dota_hero_enchantress",
+        "type": "DOTA_COMBATLOG_DEATH",
+        "value": 201
+      },
+      "nearest_state_demo_tick": 76792,
+      "nearest_clock": {
+        "game_seconds": 2345.5668440933227,
+        "pause_start": 0,
+        "pause_total": 0,
+        "paused": false,
+        "start": 246.66668701171875,
+        "tick_interval_seconds": 0.033333335876464844
+      }
+    },
+    {
+      "event": {
+        "actor_link": "candidate_name_only",
+        "attacker": "npc_dota_hero_tiny",
+        "combat_timestamp": 2793.3,
+        "demo_tick": 82824,
+        "full_entity_reference": null,
+        "game_seconds": null,
+        "inflictor": "dota_unknown",
+        "is_target_illusion": false,
+        "knowledge_scope": "spectator_research",
+        "seq": 13956,
+        "server_tick": 83799,
+        "target": "npc_dota_hero_enchantress",
+        "type": "DOTA_COMBATLOG_DEATH",
+        "value": 6
+      },
+      "nearest_state_demo_tick": 82824,
+      "nearest_clock": {
+        "game_seconds": 2546.6335261001586,
+        "pause_start": 0,
+        "pause_total": 0,
+        "paused": false,
+        "start": 246.66668701171875,
+        "tick_interval_seconds": 0.033333335876464844
+      }
+    },
+    {
+      "event": {
+        "actor_link": "candidate_name_only",
+        "attacker": "npc_dota_hero_tiny",
+        "combat_timestamp": 3185.8335,
+        "demo_tick": 94600,
+        "full_entity_reference": null,
+        "game_seconds": null,
+        "inflictor": "tiny_toss_tree",
+        "is_target_illusion": false,
+        "knowledge_scope": "spectator_research",
+        "seq": 15844,
+        "server_tick": 95575,
+        "target": "npc_dota_hero_enchantress",
+        "type": "DOTA_COMBATLOG_DEATH",
+        "value": 179
+      },
+      "nearest_state_demo_tick": 94600,
+      "nearest_clock": {
+        "game_seconds": 2939.1668893814085,
+        "pause_start": 0,
+        "pause_total": 0,
+        "paused": false,
+        "start": 246.66668701171875,
+        "tick_interval_seconds": 0.033333335876464844
+      }
+    },
+    {
+      "event": {
+        "actor_link": "candidate_name_only",
+        "attacker": "npc_dota_hero_brewmaster",
+        "combat_timestamp": 3763.0,
+        "demo_tick": 115756,
+        "full_entity_reference": null,
+        "game_seconds": null,
+        "inflictor": "brewmaster_thunder_clap",
+        "is_target_illusion": false,
+        "knowledge_scope": "spectator_research",
+        "seq": 19803,
+        "server_tick": 116731,
+        "target": "npc_dota_hero_enchantress",
+        "type": "DOTA_COMBATLOG_DEATH",
+        "value": 99
+      },
+      "nearest_state_demo_tick": 115756,
+      "nearest_clock": {
+        "game_seconds": 3516.3336000823974,
+        "pause_start": 0,
+        "pause_total": 3841,
+        "paused": false,
+        "start": 246.66668701171875,
+        "tick_interval_seconds": 0.033333335876464844
+      }
+    }
+  ],
+  "minute_resources": [
+    {
+      "requested_seconds": 300,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 299.9666880264282,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 15424,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 0,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 132,
+          "m_cellY": 128,
+          "m_cellZ": 128,
+          "m_vecX": 21.40625,
+          "m_vecY": 87.375,
+          "m_vecZ": 128.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 312,
+          "mana": 340.37534,
+          "max_hp": 780,
+          "max_mana": 425.3754
+        },
+        "seq": 5847,
+        "server_tick": 16399,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    },
+    {
+      "requested_seconds": 600,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 599.9667109146118,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 24424,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 0,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 172,
+          "m_cellY": 108,
+          "m_cellZ": 128,
+          "m_vecX": 96.65624,
+          "m_vecY": 194.125,
+          "m_vecZ": 128.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 1131,
+          "mana": 1147.4386,
+          "max_hp": 1131,
+          "max_mana": 1147.4386
+        },
+        "seq": 10347,
+        "server_tick": 25399,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    },
+    {
+      "requested_seconds": 1200,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 1199.966756690979,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 42424,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 0,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 168,
+          "m_cellY": 90,
+          "m_cellZ": 128,
+          "m_vecX": 118.5625,
+          "m_vecY": 136.84375,
+          "m_vecZ": 128.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 1659,
+          "mana": 706.9382,
+          "max_hp": 1659,
+          "max_mana": 1716.0016
+        },
+        "seq": 19347,
+        "server_tick": 43399,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    },
+    {
+      "requested_seconds": 1800,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 1799.9668024673463,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 60424,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 2,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 128,
+          "m_cellY": 100,
+          "m_cellZ": 130,
+          "m_vecX": 166.84375,
+          "m_vecY": 246.1875,
+          "m_vecZ": 0.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 0,
+          "mana": 1280.9387,
+          "max_hp": 2407,
+          "max_mana": 1810.8767
+        },
+        "seq": 28347,
+        "server_tick": 61399,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    },
+    {
+      "requested_seconds": 2400,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 2399.9668482437132,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 78424,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 2,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 170,
+          "m_cellY": 158,
+          "m_cellZ": 130,
+          "m_vecX": 63.0,
+          "m_vecY": 221.5,
+          "m_vecZ": 0.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 0,
+          "mana": 1022.751,
+          "max_hp": 2997,
+          "max_mana": 1446.6888
+        },
+        "seq": 37347,
+        "server_tick": 79399,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    },
+    {
+      "requested_seconds": 3000,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 2999.9668940200804,
+          "pause_start": 0,
+          "pause_total": 0,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 96424,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 2,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 138,
+          "m_cellY": 120,
+          "m_cellZ": 128,
+          "m_vecX": 178.9375,
+          "m_vecY": 95.15624,
+          "m_vecZ": 0.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 0,
+          "mana": 1894.1268,
+          "max_hp": 3085,
+          "max_mana": 1928.1268
+        },
+        "seq": 46347,
+        "server_tick": 97399,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    },
+    {
+      "requested_seconds": 3600,
+      "state": {
+        "actor": {
+          "account32": 70388657,
+          "class": "CDOTA_Unit_Hero_Enchantress",
+          "full_handle": 12615978,
+          "index": 298,
+          "reference_path": "m_vecPlayerTeamData.0006.m_hSelectedHero",
+          "serial": 770,
+          "steam64": "76561198030654385"
+        },
+        "binding_epoch": 1,
+        "clock": {
+          "game_seconds": 3600.0002731323243,
+          "pause_start": 0,
+          "pause_total": 3841,
+          "paused": false,
+          "start": 246.66668701171875,
+          "tick_interval_seconds": 0.033333335876464844
+        },
+        "clock_epoch": 2,
+        "demo_tick": 118266,
+        "knowledge_scope": "spectator_research",
+        "phase_raw": 5,
+        "raw_life_state": 0,
+        "raw_player_id": 12,
+        "raw_position": {
+          "m_cellX": 92,
+          "m_cellY": 98,
+          "m_cellZ": 130,
+          "m_vecX": 79.28124,
+          "m_vecY": 85.0625,
+          "m_vecZ": 0.0
+        },
+        "raw_state64": "0",
+        "resources": {
+          "hp": 1695,
+          "mana": 377.37537,
+          "max_hp": 3461,
+          "max_mana": 2485.3774
+        },
+        "seq": 57268,
+        "server_tick": 119241,
+        "unknown_reasons": [
+          "clone_classification_unknown",
+          "player_id_semantics_unknown",
+          "fog_unknown",
+          "world_transform_unknown",
+          "control_semantics_unknown"
+        ]
+      }
+    }
+  ],
+  "resource_sample_description": [
+    {
+      "start": 0,
+      "end": 600,
+      "samples_hp_positive": 9000,
+      "hp_under25percent_samples": 205,
+      "mana_under20percent_samples": 0,
+      "not_independent_decisions": true
+    },
+    {
+      "start": 600,
+      "end": 1200,
+      "samples_hp_positive": 9000,
+      "hp_under25percent_samples": 70,
+      "mana_under20percent_samples": 0,
+      "not_independent_decisions": true
+    },
+    {
+      "start": 1200,
+      "end": 1800,
+      "samples_hp_positive": 7335,
+      "hp_under25percent_samples": 11,
+      "mana_under20percent_samples": 172,
+      "not_independent_decisions": true
+    },
+    {
+      "start": 1800,
+      "end": 2400,
+      "samples_hp_positive": 7985,
+      "hp_under25percent_samples": 17,
+      "mana_under20percent_samples": 0,
+      "not_independent_decisions": true
+    },
+    {
+      "start": 2400,
+      "end": 3000,
+      "samples_hp_positive": 7010,
+      "hp_under25percent_samples": 59,
+      "mana_under20percent_samples": 0,
+      "not_independent_decisions": true
+    },
+    {
+      "start": 3000,
+      "end": 3620,
+      "samples_hp_positive": 8388,
+      "hp_under25percent_samples": 80,
+      "mana_under20percent_samples": 835,
+      "not_independent_decisions": true
+    }
+  ]
+}

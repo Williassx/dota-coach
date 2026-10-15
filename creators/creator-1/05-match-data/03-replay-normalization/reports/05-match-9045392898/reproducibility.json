@@ -1,0 +1,88 @@
+{
+  "runs": [
+    {
+      "name": "baseline-regression",
+      "exit": 0,
+      "elapsed_seconds": 57.469,
+      "result": {
+        "cache_key": "5f7040a312a42d3fc9d627cd49f61536c0af89e0c3966f146c2a71cf3fcffaf7",
+        "completed": true,
+        "counts": {
+          "events": 11341,
+          "gaps": 3221,
+          "states": 32178
+        },
+        "data_hashes": {
+          "episodes.json": "e464e03d18116d4325d0aaf7fd27c7508a3054af72dadd4cb74265a2db33c1c3",
+          "events.jsonl": "7c23af4b88d18f8aee7a65f55312019ceeadcfa2fbb925860d60f50589c613e6",
+          "gaps.jsonl": "6f83b258ab5284eeb010bac3edc4fc62075c0655292eb215cf8da852d9869f36",
+          "states.jsonl": "07c2da5855d2ab0167430c1dd05afc52dd170879dea9d7f06f5d7d642618fc36",
+          "windows.jsonl": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+        },
+        "output": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9045392898\\baseline-regression",
+        "status": "imported"
+      }
+    },
+    {
+      "name": "repeat-import",
+      "exit": 0,
+      "elapsed_seconds": 95.828,
+      "result": {
+        "cache_key": "214497bd1f95345e0faaf2dcf62937d86fc46ec39767333900b830a10d1fd501",
+        "completed": true,
+        "counts": {
+          "events": 22108,
+          "gaps": 3213,
+          "states": 59747
+        },
+        "data_hashes": {
+          "episodes.json": "e50f0da2b5bde3f40dc7cad4dd2f3671cfe5972d7bc2ec75e131d120d11ecc43",
+          "events.jsonl": "ec2d543a9c30a6134e25c35f1a8d1d9e2e7f7ff4262d4099526c9385c7fc2f1a",
+          "gaps.jsonl": "11739bd5809b2a93ecd31a66d932148b3bf02ca2d0f55b34081f8ef44a9cab8b",
+          "states.jsonl": "1d3503790a777723084d7226a5335aee6bfff73235ce468eb6682f705cb5aa03"
+        },
+        "output": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9045392898\\import-v4",
+        "status": "imported"
+      }
+    },
+    {
+      "name": "cache-check",
+      "exit": 0,
+      "elapsed_seconds": 3.484,
+      "result": {
+        "cache_key": "214497bd1f95345e0faaf2dcf62937d86fc46ec39767333900b830a10d1fd501",
+        "completed": true,
+        "counts": {
+          "events": 22108,
+          "gaps": 3213,
+          "states": 59747
+        },
+        "data_hashes": {
+          "episodes.json": "e50f0da2b5bde3f40dc7cad4dd2f3671cfe5972d7bc2ec75e131d120d11ecc43",
+          "events.jsonl": "ec2d543a9c30a6134e25c35f1a8d1d9e2e7f7ff4262d4099526c9385c7fc2f1a",
+          "gaps.jsonl": "11739bd5809b2a93ecd31a66d932148b3bf02ca2d0f55b34081f8ef44a9cab8b",
+          "states.jsonl": "1d3503790a777723084d7226a5335aee6bfff73235ce468eb6682f705cb5aa03"
+        },
+        "output": "D:\\AI\\dota2coach\\build\\dota_coach\\replay-9045392898\\import-v4",
+        "status": "cache_hit"
+      }
+    },
+    {
+      "name": "wrong-match",
+      "exit": 3,
+      "elapsed_seconds": 9.188,
+      "result": {
+        "code": 3,
+        "completed": false,
+        "reason": "emitter_exit:3"
+      }
+    }
+  ],
+  "finished": true,
+  "baseline_five_data_hashes_preserved": true,
+  "second_match_four_data_hashes_identical": true,
+  "cache_preserved_all_bytes": true,
+  "wrong_match_rejected": true,
+  "native_fidelity_verified": false,
+  "model_trained": false
+}

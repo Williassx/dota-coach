@@ -1,0 +1,14 @@
+{
+  "own_pid": 28664,
+  "steam_pid": 13648,
+  "client_build": 25946043,
+  "own_gone": true,
+  "restored": {
+    "fullscreen_min_on_focus_loss": "1",
+    "cl_playback_screenshots": "false",
+    "dota_spectator_mode": "0"
+  },
+  "desktop_capture_performed": false,
+  "steam_retained": true,
+  "utc": "2026-10-15T08:33:37.9830050+00:00"
+}
