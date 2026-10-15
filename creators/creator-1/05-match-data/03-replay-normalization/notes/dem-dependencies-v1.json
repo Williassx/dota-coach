@@ -1,0 +1,54 @@
+{
+  "schema": "dem-dependencies-v1",
+  "parser": "Clarity5.0.1",
+  "protobuf": "7.1",
+  "jdk_version": "21.0.12.1+1",
+  "jars": [
+    {
+      "name": "clarity-5.0.1.jar",
+      "bytes": 666198,
+      "sha256": "8d42d78f383b25bd23ed2d1f61d6efe06866b14f98e0a4852163022b44320bd9"
+    },
+    {
+      "name": "clarity-protobuf-7.1.jar",
+      "bytes": 8884549,
+      "sha256": "7a17d3d97189482319a65337bf7e65ad3c2d8c6162d2c26115acb8419c497c8d"
+    },
+    {
+      "name": "error_prone_annotations-2.27.0.jar",
+      "bytes": 19370,
+      "sha256": "24c923372c58e35d0b9f16a028929bb9aedc77521867c274f2bd0735df5ba1f5"
+    },
+    {
+      "name": "fastutil-core-8.5.12.jar",
+      "bytes": 6428331,
+      "sha256": "f31c20f5b06312f3d5e06e6160a32e274d819aa6cebf27528b26b6b5c0c1df19"
+    },
+    {
+      "name": "gson-2.11.0.jar",
+      "bytes": 298435,
+      "sha256": "57928d6e5a6edeb2abd3770a8f95ba44dce45f3b23b7a9dc2b309c581552a78b"
+    },
+    {
+      "name": "slf4j-api-2.0.17.jar",
+      "bytes": 69908,
+      "sha256": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+    },
+    {
+      "name": "slf4j-simple-2.0.17.jar",
+      "bytes": 15716,
+      "sha256": "ddfea59ac074c6d3e24ac2c38622d2d963895e17f70b38ed4bdae4d780be6964"
+    },
+    {
+      "name": "snappy-java-1.1.10.7.jar",
+      "bytes": 2338496,
+      "sha256": "4c766cb3f855415ee734b2392949a0b6f12a60879334a74518deaf6270d32e36"
+    }
+  ],
+  "jdk_files": {
+    "release": "07117c72ce033949c14878e07fbf2fe23f59a1f8c90a6d1351b5c89099847ce7",
+    "bin/java.exe": "82051fdab26319d77d20cc0065045d05ec00b3e3d05f44935d7c06b96b621d55",
+    "bin/javac.exe": "00f7c6f9ec89ebba4bb96cf8760403cccf1268df2eae8685900ba38e58a7aff9"
+  },
+  "jdk_archive_sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e"
+}
