@@ -1,0 +1,188 @@
+{
+  "fields": {
+    "CDOTAGamerulesProxy:m_pGameRules.m_bGamePaused": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.BoolDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "bool"
+    },
+    "CDOTAGamerulesProxy:m_pGameRules.m_flGameStartTime": {
+      "bit_count": 32,
+      "decoder": "skadistats.clarity.io.decoder.FloatNoScaleDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "GameTime_t"
+    },
+    "CDOTAGamerulesProxy:m_pGameRules.m_nGameState": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarSignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "int32"
+    },
+    "CDOTAGamerulesProxy:m_pGameRules.m_nPauseStartTick": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarSignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "int32"
+    },
+    "CDOTAGamerulesProxy:m_pGameRules.m_nTotalPausedTicks": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarSignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "int32"
+    },
+    "CDOTA_PlayerResource:m_vecPlayerData.*.m_iPlayerSteamID": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.LongUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": "fixed64",
+      "high": null,
+      "low": null,
+      "type": "uint64"
+    },
+    "CDOTA_PlayerResource:m_vecPlayerTeamData.*.m_hSelectedHero": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "CHandle< CBaseEntity >"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:CBodyComponent.m_cellX": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "uint16"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:CBodyComponent.m_cellY": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "uint16"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:CBodyComponent.m_cellZ": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "uint16"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:CBodyComponent.m_vecX": {
+      "bit_count": 13,
+      "decoder": "skadistats.clarity.io.decoder.FloatQuantizedDecoder",
+      "encode_flags": 1,
+      "encoder": null,
+      "high": 256.0,
+      "low": null,
+      "type": "CNetworkedQuantizedFloat"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:CBodyComponent.m_vecY": {
+      "bit_count": 13,
+      "decoder": "skadistats.clarity.io.decoder.FloatQuantizedDecoder",
+      "encode_flags": 1,
+      "encoder": null,
+      "high": 256.0,
+      "low": null,
+      "type": "CNetworkedQuantizedFloat"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:CBodyComponent.m_vecZ": {
+      "bit_count": 13,
+      "decoder": "skadistats.clarity.io.decoder.FloatQuantizedDecoder",
+      "encode_flags": 1,
+      "encoder": null,
+      "high": 256.0,
+      "low": null,
+      "type": "CNetworkedQuantizedFloat"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_flMana": {
+      "bit_count": 20,
+      "decoder": "skadistats.clarity.io.decoder.FloatQuantizedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": 65536.0,
+      "low": null,
+      "type": "float32"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_flMaxMana": {
+      "bit_count": 20,
+      "decoder": "skadistats.clarity.io.decoder.FloatQuantizedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": 65536.0,
+      "low": null,
+      "type": "float32"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_iHealth": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarSignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "int32"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_iMaxHealth": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarSignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "int32"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_iPlayerID": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntVarUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "PlayerID_t"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_lifeState": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.IntUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": "fixed8",
+      "high": null,
+      "low": null,
+      "type": "uint8"
+    },
+    "CDOTA_Unit_Hero_StormSpirit:m_nUnitState64": {
+      "bit_count": null,
+      "decoder": "skadistats.clarity.io.decoder.LongVarUnsignedDecoder",
+      "encode_flags": null,
+      "encoder": null,
+      "high": null,
+      "low": null,
+      "type": "uint64"
+    }
+  },
+  "revision": "dem-schema-clock-v1",
+  "schema": "dem-schema-v1",
+  "scope": "measured declared serializer parameters plus pinned decoder implementation; not effective private quantizer state",
+  "source_dem_sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330"
+}
