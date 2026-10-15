@@ -1,4 +1,5 @@
 import hashlib
+import dataclasses
 import json
 import sys
 import tempfile
@@ -75,6 +76,10 @@ class InputTests(unittest.TestCase):
             saved = ctx.hashes[key]; ctx.hashes[key] = '0' * 64
             self.assertNotEqual(old, cache_key(ctx), key); ctx.hashes[key] = saved
         self.assertEqual(old, cache_key(validate_inputs(self.spec)))
+
+    def test_out_of_range_match_id_is_input_error(self):
+        with self.assertRaises(DemImportError) as caught:validate_inputs(dataclasses.replace(self.spec,match_id=2**64))
+        self.assertEqual(caught.exception.code,2)
 
 
 if __name__ == '__main__': unittest.main()

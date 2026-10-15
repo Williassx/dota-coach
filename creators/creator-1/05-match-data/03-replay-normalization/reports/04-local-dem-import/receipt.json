@@ -1,0 +1,330 @@
+{
+  "schema": "dem-import-acceptance-v1",
+  "date": "2026-10-15",
+  "scope": "one DEM offline spectator research, not training or game acceptance",
+  "golden": {
+    "schema": "dem-golden-check-v1",
+    "verified_scoped": true,
+    "dem_sha256": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330",
+    "data_hashes": {
+      "episodes.json": "e464e03d18116d4325d0aaf7fd27c7508a3054af72dadd4cb74265a2db33c1c3",
+      "events.jsonl": "7c23af4b88d18f8aee7a65f55312019ceeadcfa2fbb925860d60f50589c613e6",
+      "gaps.jsonl": "6f83b258ab5284eeb010bac3edc4fc62075c0655292eb215cf8da852d9869f36",
+      "states.jsonl": "07c2da5855d2ab0167430c1dd05afc52dd170879dea9d7f06f5d7d642618fc36",
+      "windows.jsonl": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+    },
+    "counts": {
+      "events": 11341,
+      "gaps": 3221,
+      "states": 32178
+    },
+    "parser_summary": {
+      "account_id": 70388657,
+      "eof": true,
+      "events": 11341,
+      "gaps": 3221,
+      "last_tick": 68100,
+      "match_id": "9042986015",
+      "real_ticks": 34051,
+      "states": 32178,
+      "synthetic_ticks": 34050,
+      "unassigned": 1873,
+      "verified_actor_events": false
+    },
+    "calibration": {
+      "actual_pause_verified": false,
+      "client_build": 25894101,
+      "evidence_sha256": "5409bfd718f146606fb723a3e990160f4cd8189e0f4ffb85359e374a96e9e767",
+      "observations_sha256": "11e22ddfa357ab9e560a21bdba3986b736ef249556cb71fa00535883d2a98e3b",
+      "points": [
+        {
+          "demo_tick": 21212,
+          "hud": {
+            "camera_caption": "player_view_v_o_i_d",
+            "clock_seconds": 492,
+            "clock_text": "8:12",
+            "hp": 71,
+            "mana": 62,
+            "max_hp": 956,
+            "max_mana": 651,
+            "read_method": "manual inspection of original PNG diagnostic crops",
+            "selected_actor_caption": "Storm Spirit"
+          },
+          "png_sha256": "21081a0165afe4015d027431bc87c2e0ae66faa2bd1c1505b0e2cbd6d5cf4b00"
+        },
+        {
+          "demo_tick": 41706,
+          "hud": {
+            "camera_caption": "player_view_v_o_i_d",
+            "clock_seconds": 1175,
+            "clock_text": "19:35",
+            "hp": 1215,
+            "mana": 734,
+            "max_hp": 1308,
+            "max_mana": 1376,
+            "read_method": "manual inspection of original PNG diagnostic crops",
+            "selected_actor_caption": "Storm Spirit"
+          },
+          "png_sha256": "5105dbe61066ad36c7f2d83a6c73280186a78ab3a19ef7b0eb5bb03227fc2df8"
+        },
+        {
+          "demo_tick": 45846,
+          "hud": {
+            "camera_caption": "player_view_v_o_i_d",
+            "clock_seconds": 1313,
+            "clock_text": "21:53",
+            "hp": 782,
+            "mana": 1335,
+            "max_hp": 1528,
+            "max_mana": 1376,
+            "read_method": "manual inspection of original PNG diagnostic crops",
+            "selected_actor_caption": "Storm Spirit"
+          },
+          "png_sha256": "453cc449753c123286011aca19894c5a5069204b16e20c0cfc6f95764d6b880d"
+        }
+      ],
+      "status": "scoped_hud_reference",
+      "whole_native_payload_verified": false
+    },
+    "episode_index": {
+      "entries": 3549,
+      "window_records": 335
+    },
+    "run_seconds": {
+      "first": 48.375,
+      "second": 46.76600000000326,
+      "cache": 1.3429999999934807,
+      "wrong-match": 8.76500000001397,
+      "wrong-account": 8.780999999988126,
+      "truncated": 0.5
+    },
+    "same_fresh_data_hashes": true,
+    "cache_preserved_all_bytes": true,
+    "target_death_candidate_ticks": [
+      21232,
+      34406,
+      41758,
+      45886
+    ],
+    "model_trained": false,
+    "player_fidelity_verified": false,
+    "native_verified": false
+  },
+  "runtime_provenance": {
+    "calibration:evidence.json": "5409bfd718f146606fb723a3e990160f4cd8189e0f4ffb85359e374a96e9e767",
+    "calibration:observations.json": "11e22ddfa357ab9e560a21bdba3986b736ef249556cb71fa00535883d2a98e3b",
+    "class:TelemetryCore$BindingObservation.class": "71545645ebfdb3b32e9dc471cfce8427059c9a252a106d1066703cca4a0dcd20",
+    "class:TelemetryCore$BindingResult.class": "fdf5a56bcff7d1f0caf7940fdaf827b6c63749efb43bfff22955b09f776c4345",
+    "class:TelemetryCore$ClockObservation.class": "7a0e3e191490001591a22451d931ae0aac28c6b470616beb1b8c899ff07e9359",
+    "class:TelemetryCore$ClockResult.class": "0f5d780d05f23a7707275a908cbe8e91c7dce90e8c79fd3d51d45c462860cb2f",
+    "class:TelemetryCore$HeroReference.class": "aa512a3e77b96b7797b7a408c441b9b5663c9afdd02e4a5a5971d82f43a44d0e",
+    "class:TelemetryCore.class": "a2b8ad81d1c8dba6c0814704915c75b8b1a62de683026e547965629f9f1abf16",
+    "class:TelemetryCoreTest.class": "e4f74b2a32ec2c14f1bd2db42d01c4a2163f49ecc6d251b4e3749101232876b0",
+    "class:TelemetryEmitter$Failure.class": "f496597f75ab8089d17b728033f6fd66f7f2db35c39c00afa8d5f5557a23c2be",
+    "class:TelemetryEmitter.class": "e74d689b25d1578291305a34ec8d7f7bf7f3a26c84073fc59e4c9b747c40fce6",
+    "compile_receipt": "8036f3bb52dd3a75b2dbb0abf64454883e02c7c6b5e95da38ae2ffab4d0b79b1",
+    "config": "ff7507001858dba51d61e5cf87a4c10c682d55a6ff0d7de46cc080e12a35ea8d",
+    "input": "3d647fb889e058534e85a759e405b9afad6a68878cfa20dae016c39c38234330",
+    "jar:clarity-5.0.1.jar": "8d42d78f383b25bd23ed2d1f61d6efe06866b14f98e0a4852163022b44320bd9",
+    "jar:clarity-protobuf-7.1.jar": "7a17d3d97189482319a65337bf7e65ad3c2d8c6162d2c26115acb8419c497c8d",
+    "jar:error_prone_annotations-2.27.0.jar": "24c923372c58e35d0b9f16a028929bb9aedc77521867c274f2bd0735df5ba1f5",
+    "jar:fastutil-core-8.5.12.jar": "f31c20f5b06312f3d5e06e6160a32e274d819aa6cebf27528b26b6b5c0c1df19",
+    "jar:gson-2.11.0.jar": "57928d6e5a6edeb2abd3770a8f95ba44dce45f3b23b7a9dc2b309c581552a78b",
+    "jar:slf4j-api-2.0.17.jar": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832",
+    "jar:slf4j-simple-2.0.17.jar": "ddfea59ac074c6d3e24ac2c38622d2d963895e17f70b38ed4bdae4d780be6964",
+    "jar:snappy-java-1.1.10.7.jar": "4c766cb3f855415ee734b2392949a0b6f12a60879334a74518deaf6270d32e36",
+    "jdk:bin/java.exe": "82051fdab26319d77d20cc0065045d05ec00b3e3d05f44935d7c06b96b621d55",
+    "jdk:bin/javac.exe": "00f7c6f9ec89ebba4bb96cf8760403cccf1268df2eae8685900ba38e58a7aff9",
+    "jdk:release": "07117c72ce033949c14878e07fbf2fe23f59a1f8c90a6d1351b5c89099847ce7",
+    "lock": "50caaaeb3fe4e6f683280b47382b7d3b197221c880bd5a2c2fe0326fd8645561",
+    "schema": "d1858b27d787be88a7d05f5243cea24aa9b71d29ef2f1619bc378beaac2445af",
+    "source:TelemetryCore.java": "089471e9ced5573aa888cad5f8606874a1f1c6f0cd040fedf5748148db368f33",
+    "source:TelemetryEmitter.java": "40142c580837e868b4426f32b3fbf3472890f2009c9812c5a065c63b758a472f",
+    "source:dem_episodes.py": "3bb1739e6892ed7bfc2202c879f5535d7b5cac063690720b183b4c6b7466fc21",
+    "source:dem_inputs.py": "3c14fa83d78b5866944ece5a4dc7b38beb62af93e7c90535b4b04656eec8e0f4",
+    "source:dem_store.py": "0fe698914d045af8c58704c8d9a51ce3e03eb4903e05c2eeed4a8f3276690ce4",
+    "source:dem_types.py": "0f6b157fe501ec64c13908c57ea0a63e35cd27cb66a5640986992480805065d5",
+    "source:import_dem.py": "f15bb11216097759aca973a22b84812c5af047cb53229c8de5ae5cee5bc5f6e9",
+    "source:replay_gate.py": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb"
+  },
+  "final_import_receipt_sha256": "7a13ba8cb39fcab873767d472d1b77c7f324695291248a71639c67209d1a956b",
+  "python_checks": {
+    "new_dem_tests": 26,
+    "existing_replay_gate_tests": 4,
+    "all": 30,
+    "passed": true
+  },
+  "java_core_assertions_passed": true,
+  "bad_decoder_expectation": {
+    "extractor_exit": 2,
+    "eof_summary": false
+  },
+  "full_source": {
+    "verified": false,
+    "suites": 89,
+    "passed_tests": 1417,
+    "skipped_tests": 28,
+    "incomplete_suites": [
+      "python-c2-01-01",
+      "python-c2-01-02",
+      "python-c2-03-01",
+      "python-c2-11-02",
+      "python-c2-10-01",
+      "python-c2-11-03"
+    ],
+    "error_suites": [],
+    "source2_compiled": false,
+    "runtime_verified": false
+  },
+  "input_unchanged": true,
+  "native_client_started": false,
+  "raw_published": false,
+  "runtime_game_changed": false,
+  "checklist_increased": false,
+  "local_artifact_snapshot": [
+    {
+      "path": "build/dota_coach/dem-import-v1/compile-receipt.json",
+      "bytes": 1384,
+      "sha256": "8036f3bb52dd3a75b2dbb0abf64454883e02c7c6b5e95da38ae2ffab4d0b79b1"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/config-local.json",
+      "bytes": 788,
+      "sha256": "ff7507001858dba51d61e5cf87a4c10c682d55a6ff0d7de46cc080e12a35ea8d"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/golden-check.json",
+      "bytes": 3522,
+      "sha256": "4948a8d61a814ca1676eb30eec544a53fe84f8d3ee5e804f960ac88bae513f56"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task5-golden3.log",
+      "bytes": 334,
+      "sha256": "74f77a4934cc4b95a129d8197be2b97b5074d4d2bb742c8614ae45779d61e779"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task5-bad-schema.log",
+      "bytes": 114,
+      "sha256": "b956c7edbe48a3b4248e5a242e1135727bc21dafecff949d4fcb505ad4da2086"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task5-final-unit-green.log",
+      "bytes": 3374,
+      "sha256": "4744cf80693d788272fc9cb7dd28fbe8468a13c348a780bc6876d9986c7c2e79"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/final-local-tests.log",
+      "bytes": 3836,
+      "sha256": "1846f6de2ab7020d29d4796f9d1f73f90efdf18d388161b46d00fd67a9f05e86"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/full-source.log",
+      "bytes": 858,
+      "sha256": "fd8d1213fa58f951743264f35f1e8dc5028110d05295b6a80eebdbec89a05eec"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/full-source-utf8.log",
+      "bytes": 523,
+      "sha256": "095d70bedf50bf1d0cf07ca32271e6454fe78932240ba91783ab1f7deabbd50d"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/full-source-final.log",
+      "bytes": 524,
+      "sha256": "29becad1cca6e10b16f16afbc2e8606f1dd710228b34d9ede095c6ca6a8db754"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1-full-source-final/source-checks.json",
+      "bytes": 59348,
+      "sha256": "992e7ce5f2ac878ffdac4950d527f02639634aa6ecd0dace8e88d6d70db86abd"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task3-budget-red.log",
+      "bytes": 2531,
+      "sha256": "9472cec6fc540655555c1580c604e633aa0d6dcf49840087543309b10cb782fe"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task5-boundaries-red.log",
+      "bytes": 4448,
+      "sha256": "1cbd2ae51f9ac3a37dc2a09557642d432b601542e3472591a314f988f90270ff"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/task5-environment-red.log",
+      "bytes": 2931,
+      "sha256": "97bd2d833ea5485ebbc1baaa58af5078f991c64a221d4dde583c87bb3b9c9fc9"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/first/episodes.json",
+      "bytes": 784035,
+      "sha256": "e464e03d18116d4325d0aaf7fd27c7508a3054af72dadd4cb74265a2db33c1c3"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/first/events.jsonl",
+      "bytes": 4326749,
+      "sha256": "7c23af4b88d18f8aee7a65f55312019ceeadcfa2fbb925860d60f50589c613e6"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/first/gaps.jsonl",
+      "bytes": 455985,
+      "sha256": "6f83b258ab5284eeb010bac3edc4fc62075c0655292eb215cf8da852d9869f36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/first/receipt.json",
+      "bytes": 5919,
+      "sha256": "7a13ba8cb39fcab873767d472d1b77c7f324695291248a71639c67209d1a956b"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/first/states.jsonl",
+      "bytes": 28804394,
+      "sha256": "07c2da5855d2ab0167430c1dd05afc52dd170879dea9d7f06f5d7d642618fc36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/first/windows.jsonl",
+      "bytes": 245495,
+      "sha256": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/second/episodes.json",
+      "bytes": 784035,
+      "sha256": "e464e03d18116d4325d0aaf7fd27c7508a3054af72dadd4cb74265a2db33c1c3"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/second/events.jsonl",
+      "bytes": 4326749,
+      "sha256": "7c23af4b88d18f8aee7a65f55312019ceeadcfa2fbb925860d60f50589c613e6"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/second/gaps.jsonl",
+      "bytes": 455985,
+      "sha256": "6f83b258ab5284eeb010bac3edc4fc62075c0655292eb215cf8da852d9869f36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/second/receipt.json",
+      "bytes": 5919,
+      "sha256": "7a13ba8cb39fcab873767d472d1b77c7f324695291248a71639c67209d1a956b"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/second/states.jsonl",
+      "bytes": 28804394,
+      "sha256": "07c2da5855d2ab0167430c1dd05afc52dd170879dea9d7f06f5d7d642618fc36"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/golden3/second/windows.jsonl",
+      "bytes": 245495,
+      "sha256": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+    }
+  ],
+  "source_snapshot": {
+    "src/dem_episodes.py": "3bb1739e6892ed7bfc2202c879f5535d7b5cac063690720b183b4c6b7466fc21",
+    "src/dem_inputs.py": "3c14fa83d78b5866944ece5a4dc7b38beb62af93e7c90535b4b04656eec8e0f4",
+    "src/dem_store.py": "0fe698914d045af8c58704c8d9a51ce3e03eb4903e05c2eeed4a8f3276690ce4",
+    "src/dem_types.py": "0f6b157fe501ec64c13908c57ea0a63e35cd27cb66a5640986992480805065d5",
+    "src/import_dem.py": "f15bb11216097759aca973a22b84812c5af047cb53229c8de5ae5cee5bc5f6e9",
+    "src/replay_gate.py": "789c9a762343f2afa34c1f4986512310e83f9a4f7e85cd82b850f22cb7046feb",
+    "src/TelemetryCore.java": "089471e9ced5573aa888cad5f8606874a1f1c6f0cd040fedf5748148db368f33",
+    "src/TelemetryEmitter.java": "40142c580837e868b4426f32b3fbf3472890f2009c9812c5a065c63b758a472f"
+  },
+  "input_tokens": null,
+  "output_tokens": null,
+  "cost": null,
+  "usage_source": "per_task_not_exposed"
+}

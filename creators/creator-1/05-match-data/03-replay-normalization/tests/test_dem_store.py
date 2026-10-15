@@ -26,11 +26,12 @@ class StoreTests(unittest.TestCase):
 
     def command(self, mode):
         def build(ctx, stage):
-            code='''import pathlib,json,sys,time
+            code='''import pathlib,json,sys,time,os
 p=pathlib.Path(sys.argv[1]); mode=sys.argv[2]
 state=json.loads(sys.argv[3])
 if mode=='timeout':time.sleep(5)
 if mode=='hold':time.sleep(0.4)
+if mode=='environment':print(json.dumps({k:k in os.environ for k in ['JAVA_TOOL_OPTIONS','JDK_JAVA_OPTIONS','_JAVA_OPTIONS','CLASSPATH']}))
 if mode=='stderr':sys.stderr.write('x'*2000000);sys.stderr.flush();time.sleep(2)
 for name,data in [('states',[state]),('events',[]),('gaps',[])]:
  (p/(name+'.jsonl')).write_text(''.join(json.dumps(r)+'\\n' for r in data))
@@ -77,6 +78,11 @@ if mode=='nonzero':sys.exit(3)
 
     def test_cache_receipt_counts_and_provenance_checked(self):
         self.invoke();p=self.spec.output/'receipt.json';r=json.loads(p.read_text());r['counts']['states']=999
+        p.write_text(json.dumps(r))
+        with self.assertRaises(DemImportError):verify_cache(self.spec.output,self.ctx)
+
+    def test_cache_inconsistent_eof_summary_rejected(self):
+        self.invoke();p=self.spec.output/'receipt.json';r=json.loads(p.read_text());r['parser_summary']['eof']=False
         p.write_text(json.dumps(r))
         with self.assertRaises(DemImportError):verify_cache(self.spec.output,self.ctx)
 
@@ -137,6 +143,13 @@ if mode=='nonzero':sys.exit(3)
         row=dict(STATE,demo_tick=21212)
         (stage/'states.jsonl').write_text(json.dumps(row)+'\n')
         with self.assertRaises(DemImportError):validate_streams(stage,self.ctx)
+
+    def test_java_environment_injection_not_inherited(self):
+        keys=['JAVA_TOOL_OPTIONS','JDK_JAVA_OPTIONS','_JAVA_OPTIONS','CLASSPATH']
+        with patch.dict(os.environ,{k:'TEST_DO_NOT_PROPAGATE' for k in keys}):self.invoke('environment')
+        diagnostics=next(self.root.glob('.out.diagnostics-*'))
+        flags=json.loads((diagnostics/'stdout.log').read_text())
+        self.assertEqual(flags,{k:False for k in keys})
 
 
 if __name__=='__main__':unittest.main()

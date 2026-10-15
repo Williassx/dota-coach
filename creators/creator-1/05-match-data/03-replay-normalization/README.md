@@ -43,4 +43,4 @@ API, сигнатуры, конкретные файлы и команды пр�
 
 [Следующий локальный telemetry probe](experiments/01-local-dem-telemetry/README.md) проверяет извлечение состояний из реального `.dem`; это исследование без подключения к игровому runtime.
 
-[Нативная калибровка](reports/03-native-tick-calibration/README.md) сопоставляет реальные кадры с actual demo tick. [Спецификация импортёра](telemetry-import-design.md) согласована пользователем; [технический план](telemetry-import-implementation-plan.md) подготовлен для рассмотрения. Постоянный source/CLI пока не реализованы.
+[Нативная калибровка](reports/03-native-tick-calibration/README.md) сопоставляет реальные кадры с actual demo tick. [Спецификация импортёра](telemetry-import-design.md) и [технический план](telemetry-import-implementation-plan.md) согласованы пользователем; реализация выполнена15октября. [Локальный DEM importer](notes/dem-import-usage.md) читает проверенный файл и пишет воспроизводимые spectatorresearch outputs. [Фактическая приёмка](reports/04-local-dem-import/README.md) сохраняет отдельные flagsнеподтверждённыхnative/model/product критериев.

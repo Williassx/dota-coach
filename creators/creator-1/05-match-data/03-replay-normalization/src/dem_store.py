@@ -1,6 +1,7 @@
 """Bounded offline process, validation and Windows no-replace publication."""
 import ctypes
 import dataclasses
+import hashlib
 import json
 import math
 import os
@@ -139,6 +140,10 @@ def verify_cache(path: Path, context):
     try:
         checked_path(path)
         receipt = read_json(checked_path(path / 'receipt.json'))
+        claimed_digest = receipt.get('receipt_digest')
+        content = {k:v for k,v in receipt.items() if k != 'receipt_digest'}
+        if claimed_digest != hashlib.sha256(canonical_json(content)).hexdigest():
+            raise DemImportError(5, 'cache_receipt_digest')
         if receipt.get('completed') is not True or receipt.get('cache_key') != cache_key(context):
             raise DemImportError(5, 'cache_key_or_completion_mismatch')
         hashes = receipt['data_hashes']
@@ -154,6 +159,10 @@ def verify_cache(path: Path, context):
         counts, stream_hashes = validate_streams(path, context)
         if receipt.get('counts') != counts or any(hashes.get(k) != v for k, v in stream_hashes.items()):
             raise DemImportError(5, 'cache_counts')
+        summary = receipt.get('parser_summary',{})
+        if summary.get('eof') is not True or summary.get('match_id') != str(context.spec.match_id) or summary.get('account_id') != context.spec.account_id or any(summary.get(k) != v for k,v in counts.items()):
+            raise DemImportError(5, 'cache_eof_summary')
+        if receipt.get('calibration') != calibration_reference(context): raise DemImportError(5, 'cache_calibration_scope')
         if 'episodes.json' not in hashes or receipt.get('capabilities',{}).get('episode_index') is not True:
             raise DemImportError(5, 'cache_episode_index')
         if any(receipt.get(k) is not False for k in ['model_trained','player_fidelity_verified','perception_export_allowed','native_verified']):
@@ -165,7 +174,8 @@ def verify_cache(path: Path, context):
 
 def run_child(command, stage, limits):
     overflow = threading.Event()
-    process = subprocess.Popen(command, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
+    environment = {k:v for k,v in os.environ.items() if k.upper() not in {'JAVA_TOOL_OPTIONS','JDK_JAVA_OPTIONS','_JAVA_OPTIONS','CLASSPATH'}}
+    process = subprocess.Popen(command, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False, env=environment)
     def drain(pipe, name):
         total = 0
         try:
@@ -255,6 +265,7 @@ def run_import(context):
         for p in list(stage.iterdir()):
             if p.name not in hashes:
                 checked_path(p); p.rename(diagnostics / p.name)
+        receipt['receipt_digest'] = hashlib.sha256(canonical_json(receipt)).hexdigest()
         (stage / 'receipt.json').write_bytes(canonical_json(receipt))
         if sum(p.stat().st_size for folder in [stage, diagnostics] for p in folder.iterdir() if p.is_file()) > ctx.limits.max_output_bytes:
             raise DemImportError(6, 'receipt_output_limit')

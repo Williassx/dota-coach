@@ -63,7 +63,8 @@ def validate_inputs(spec: InputSpec) -> ImportContext:
                  for k in ['input', 'lock', 'config', 'output']}
         if isinstance(spec.match_id, bool) or not isinstance(spec.match_id, int) or spec.match_id <= 0:
             raise DemImportError(2, 'invalid_match_id')
-        uint64_decimal(spec.match_id)
+        try: uint64_decimal(spec.match_id)
+        except DemImportError as exc: raise DemImportError(2, 'invalid_match_id') from exc
         if type(spec.account_id) is not int or not 0 < spec.account_id < 2**32:
             raise DemImportError(2, 'invalid_account_id')
         spec = dataclasses.replace(spec, **paths)

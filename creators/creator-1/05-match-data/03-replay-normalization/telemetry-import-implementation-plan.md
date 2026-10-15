@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python stdlib/unittest; Temurin21.0.12.1+1; Clarity5.0.1/protobuf7.1 и восемь JAR из существующего lock. Windows — первая поддерживаемая платформа CLI; pure tests могут работать отдельно от Windows/JDK/DEM.
 
-**Spec:** [согласованная спецификация](telemetry-import-design.md). Пользователь14октября2026 ответил «Согласовать спецификацию». Этот технический план ещё предъявляется для рассмотрения; код не создан. Исполняет основной агент последовательно, один независимый C2 review завершённого подпроекта; не нужны отдельные процессы для планирования.
+**Spec:** [согласованная спецификация](telemetry-import-design.md). Пользователь14октября2026 ответил «Согласовать спецификацию». Пользователь15октября2026 поручил «продолжай» после предъявления этого плана; исполнение согласовано. Фактические результаты — reports/04-local-dem-import. Исполняет основной агент последовательно, один независимый C2 review завершённого подпроекта; не нужны отдельные процессы для планирования.
 
 ## Global Constraints
 
@@ -76,7 +76,7 @@ Exit:0complete или verified cache hit;2input/lock/schema;3identity;4required 
 
 **Interfaces:** `validate_inputs(spec:InputSpec)->ImportContext`; `canonical_json(value:object)->bytes`; `uint64_decimal(value:int|str)->str`; `cache_key(context:ImportContext)->str`. `InputSpec(input:Path,match_id:int,account_id:int,lock:Path,config:Path,output:Path)`; Limits содержит именованные значения раздела Frozenv1. `ImportContext(spec:InputSpec,limits:Limits,hashes:dict[str,str],runtime:dict,config:dict)` хранит resolved paths черезspec, mutable staging не содержит. `DemImportError(code:int,reason:str)` — единственная ожидаемая категория отказа, не shadow встроенного ImportError.
 
-- [ ] RED: `test_inputs_reject_codec_truncation_duplicate_keys_and_tampered_jar`, `test_paths_reject_reparse_escape`, `test_uint64_canonical` проверяют PBDEMS2 magic, отсутствующие/повторные8pins, hashes, unknownconfigkeys,0/2^53+1/2^64−1 strings и отказ−1/overflow/noncanonical. `test_cache_key_changes_for_each_provenance_input` меняет каждое поле ключа по одному.
+- [x] RED: `test_inputs_reject_codec_truncation_duplicate_keys_and_tampered_jar`, `test_paths_reject_reparse_escape`, `test_uint64_canonical` проверяют PBDEMS2 magic, отсутствующие/повторные8pins, hashes, unknownconfigkeys,0/2^53+1/2^64−1 strings и отказ−1/overflow/noncanonical. `test_cache_key_changes_for_each_provenance_input` меняет каждое поле ключа по одному.
 
 ```python
 assert canonical_json({'state64': '18446744073709551615'}) == b'{"state64":"18446744073709551615"}\n'
@@ -85,9 +85,9 @@ with self.assertRaises(DemImportError):
     canonical_json({'mana': float('nan')})
 ```
 
-- [ ] Запустить `python -m unittest discover -s tests -p test_dem_inputs.py -v`; ожидаемый RED — отсутствующий модуль, затем реальные failing assertions, не случайная ошибка окружения.
-- [ ] Реализовать интерфейсы stdlib; зависимость/runtime используются только из explicit local paths. Lock переносит literal SHA/bytes всех8JAR; release/JDKjava+javac hashes измеряются перед фиксацией, не придумываются. Проверять все существующие path components на reparse, разрешённый local volume и наличие; immutable input hashes повторяются перед publication.
-- [ ] Та же команда GREEN; lock сверить с8actualJAR и записанным Temurin release, сохранить результат. Commit `feat: validate local DEM import inputs`.
+- [x] Запустить `python -m unittest discover -s tests -p test_dem_inputs.py -v`; ожидаемый RED — отсутствующий модуль, затем реальные failing assertions, не случайная ошибка окружения.
+- [x] Реализовать интерфейсы stdlib; зависимость/runtime используются только из explicit local paths. Lock переносит literal SHA/bytes всех8JAR; release/JDKjava+javac hashes измеряются перед фиксацией, не придумываются. Проверять все существующие path components на reparse, разрешённый local volume и наличие; immutable input hashes повторяются перед publication.
+- [x] Та же команда GREEN; lock сверить с8actualJAR и записанным Temurin release, сохранить результат. Commit `feat: validate local DEM import inputs`.
 
 ## Task2: Generic emitter, lifecycle и schema gate
 
@@ -95,17 +95,17 @@ with self.assertRaises(DemImportError):
 
 **Interfaces:** `TelemetryCore.updateBinding(BindingObservation)->BindingResult`; `TelemetryCore.clock(ClockObservation)->ClockResult`; `TelemetryCore.uint64(long)->String`. Core records: `HeroReference(long accountId,String steamId,long fullHandle,int index,int serial,String className,boolean existent,Boolean illusion,boolean authoritativeReference)`; `BindingObservation(int demoTick,List<HeroReference> candidates)`; `BindingResult(long epoch,HeroReference actor,String reason)` сnullableactor; `ClockObservation(int demoTick,int serverTick,Double startSeconds,int pauseTotalTicks,Integer pauseStartTick,boolean paused,double tickSeconds)`; `ClockResult(long epoch,Double gameSeconds,String reason)`. `TelemetryEmitter.main(String[] args)` принимает `--input/--account-id/--match-id/--schema/--staging/--limits-json`; пишет streams и отдельный `emitter-summary.json` сEOF/counts, не receipt.
 
-- [ ] RED Java assertions: `testIndexReuseExpiresOldSerial`, `testAmbiguousAndIllusionCannotReplaceAssignedHero`, `testStartUnknownAndPauseClock`, `testUnsignedBoundary`, `testSameHeroNameIsNotIdentity`. Fixtures передают observed references, не hardcoded slot/entity. Death/raw life_state change запрещает interpolation, не создаёт угаданный enum. Emitter actual negatives synthetic/missingdecoder/truncatedEOF проверяются Task5, исключение процесса Task3.
+- [x] RED Java assertions: `testIndexReuseExpiresOldSerial`, `testAmbiguousAndIllusionCannotReplaceAssignedHero`, `testStartUnknownAndPauseClock`, `testUnsignedBoundary`, `testSameHeroNameIsNotIdentity`. Fixtures передают observed references, не hardcoded slot/entity. Death/raw life_state change запрещает interpolation, не создаёт угаданный enum. Emitter actual negatives synthetic/missingdecoder/truncatedEOF проверяются Task5, исключение процесса Task3.
 
 ```java
 assert TelemetryCore.uint64(-1L).equals("18446744073709551615");
 assert core.clock(new ClockObservation(0,463,null,0,null,false,1.0/30)).gameSeconds() == null;
 ```
 
-- [ ] Компилировать `& "$taskJavaHome/bin/javac.exe" --release 21 -d "$taskBuild/classes" src/TelemetryCore.java tests/TelemetryCoreTest.java`; выполнить `& "$taskJavaHome/bin/java.exe" -ea -cp "$taskBuild/classes" TelemetryCoreTest`, RED затем GREEN после core implementation.
-- [ ] Emitter: Clarity `infoForFile(...).getGameInfo().getDota()` presence/matchid/roster checks, затем SimpleRunner; перечислять существующие PlayerResource paths, account по Steam64low32 при подтверждённом Steam type, выбранный полный hero reference/index/serial. Нет fallback firstStorm/0007/346 или ID14/2. Serial/deletion/reference change создают epoch и gaps; ambiguity закрывает actor channel. Единственная authoritative full reference допускает assignedhero binding приunknowncloneclassification, сохраняя unknownreason/capabilityfalse; это не доказательство clone/illusion semantic enum. Knownillusion или конфликт references не принимаются.
-- [ ] Schema сначала fail-closed audit: получить actual type/decoder и стабильные numerical quantization parameters required identity/resources/clock и optional fields. Сравнить с versioned profile; runtime `toString()` object addresses изspike не fingerprint. Фиксировать только реально измеренные entries; unknown profile возвращает2 и observed diagnostic, не auto-allow. Required hp:int32/signed, mana:float32/quantized, state64:uint64/unsigned подтверждены spike; остальные значения проверить, не экстраполировать.
-- [ ] Compile emitter с exact8JAR classpath; running schema audit не завершает receipt. После фиксации профиля реальный parse обязан успешно завершиться и generic identity получитьaccount70388657/fullhandle14926170. Политика clock поactualCNETMsg_Tick/currentnonzero start/observed pause fields, tick interval изruntime; не464offset. Тестпауза synthetic, actual pause acceptance остаётся false. Commit `feat: extract generic replay telemetry with schema gates`.
+- [x] Компилировать `& "$taskJavaHome/bin/javac.exe" --release 21 -d "$taskBuild/classes" src/TelemetryCore.java tests/TelemetryCoreTest.java`; выполнить `& "$taskJavaHome/bin/java.exe" -ea -cp "$taskBuild/classes" TelemetryCoreTest`, RED затем GREEN после core implementation.
+- [x] Emitter: Clarity `infoForFile(...).getGameInfo().getDota()` presence/matchid/roster checks, затем SimpleRunner; перечислять существующие PlayerResource paths, account по Steam64low32 при подтверждённом Steam type, выбранный полный hero reference/index/serial. Нет fallback firstStorm/0007/346 или ID14/2. Serial/deletion/reference change создают epoch и gaps; ambiguity закрывает actor channel. Единственная authoritative full reference допускает assignedhero binding приunknowncloneclassification, сохраняя unknownreason/capabilityfalse; это не доказательство clone/illusion semantic enum. Knownillusion или конфликт references не принимаются.
+- [x] Schema сначала fail-closed audit: получить actual type/decoder и стабильные numerical quantization parameters required identity/resources/clock и optional fields. Сравнить с versioned profile; runtime `toString()` object addresses изspike не fingerprint. Фиксировать только реально измеренные entries; unknown profile возвращает2 и observed diagnostic, не auto-allow. Required hp:int32/signed, mana:float32/quantized, state64:uint64/unsigned подтверждены spike; остальные значения проверить, не экстраполировать.
+- [x] Compile emitter с exact8JAR classpath; running schema audit не завершает receipt. После фиксации профиля реальный parse обязан успешно завершиться и generic identity получитьaccount70388657/fullhandle14926170. Политика clock поactualCNETMsg_Tick/currentnonzero start/observed pause fields, tick interval изruntime; не464offset. Тестпауза synthetic, actual pause acceptance остаётся false. Commit `feat: extract generic replay telemetry with schema gates`.
 
 ## Task3: Потоковый store, процесс, кэш и CLI
 
@@ -113,7 +113,7 @@ assert core.clock(new ClockObservation(0,463,null,0,null,false,1.0/30)).gameSeco
 
 **Interfaces:** `run_import(context:ImportContext)->ImportResult`; `verify_cache(path:Path,context:ImportContext)->ImportResult|None`; `promote_no_replace(staging:Path,output:Path)->None`; CLI `main(argv:list[str]|None)->int`. ImportResult: status/cache_key/counts/data_hashes/output, без model claims.
 
-- [ ] RED: subprocess fixture с EOF+nonzeroexit, безEOF+exit0, truncatedJSONL, changedDEM/JAR, timeout, overbytes/records/stderr; все дают ненулевой код и no completed output. `test_cache_tamper_refused`, `test_two_writers_and_external_empty_destination_preserved`, `test_staging_escape_refuses_cleanup` проверяют hashes/ownership/отсутствие replacement.
+- [x] RED: subprocess fixture с EOF+nonzeroexit, безEOF+exit0, truncatedJSONL, changedDEM/JAR, timeout, overbytes/records/stderr; все дают ненулевой код и no completed output. `test_cache_tamper_refused`, `test_two_writers_and_external_empty_destination_preserved`, `test_staging_escape_refuses_cleanup` проверяют hashes/ownership/отсутствие replacement.
 
 ```python
 destination.mkdir()
@@ -123,9 +123,9 @@ assert destination.is_dir() and not list(destination.iterdir())
 assert staging.exists()
 ```
 
-- [ ] Run `python -m unittest discover -s tests -p test_dem_store.py -v` и `test_dem_cli.py`; зафиксировать RED.
-- [ ] Реализовать один bounded subprocess без shell, `-Xmx512m`, streaming writer/validator, timeout/reaping own child, sibling staging и exclusive output lock. Cache — только существующий explicit output с совпадающим cache_key/completed/hashes; неполный/чужой output отказ5, не overwrite. Windows promotion `MoveFileExW` без REPLACE_EXISTING; unsupported platform отказ5 вместо недоказанной atomicity. Повторно проверять path/input/dep hashes непосредственно перед promotion; failure diagnostics отдельно, удалить только owned проверенный staging.
-- [ ] GREEN обеих команд и существующих4 `test_replay_gate.py`; actual no-replace race и reparse guard проверить на Windows, недоступный случай оформить NOT RUN, не skip=PASS. Commit `feat: publish verified bounded DEM imports`.
+- [x] Run `python -m unittest discover -s tests -p test_dem_store.py -v` и `test_dem_cli.py`; зафиксировать RED.
+- [x] Реализовать один bounded subprocess без shell, `-Xmx512m`, streaming writer/validator, timeout/reaping own child, sibling staging и exclusive output lock. Cache — только существующий explicit output с совпадающим cache_key/completed/hashes; неполный/чужой output отказ5, не overwrite. Windows promotion `MoveFileExW` без REPLACE_EXISTING; unsupported platform отказ5 вместо недоказанной atomicity. Повторно проверять path/input/dep hashes непосредственно перед promotion; failure diagnostics отдельно, удалить только owned проверенный staging.
+- [x] GREEN обеих команд и существующих4 `test_replay_gate.py`; actual no-replace race и reparse guard проверить на Windows, недоступный случай оформить NOT RUN, не skip=PASS. Commit `feat: publish verified bounded DEM imports`.
 
 ## Task4: Экономный индекс эпизодов и окна
 
@@ -133,7 +133,7 @@ assert staging.exists()
 
 **Interfaces:** `build_episodes(states:Iterator[dict],events:Iterator[dict],gaps:Iterator[dict],windows:list[dict],output_dir:Path,limits:Limits)->EpisodeResult`; `EpisodeResult(index_count:int,window_record_count:int,data_hashes:dict[str,str])`, не полный state list. Пишет episodes/windows вownedstaging Task3 доreceipt. Merge streams поdemo_tick+source sequence, bounded current epoch/window; input ужеvalidated Task3.
 
-- [ ] RED: `test_overlap_and_duplicate_windows_no_duplicate_records`, `test_unknown_clock_uses_demo_ticks`, `test_death_gap_and_epoch_not_interpolated`, `test_candidate_event_not_promoted_to_action`, `test_index_limit_aborts`, `test_streaming_does_not_materialize_all_states`. Проверить ordinary control windows наряду с candidate control/death episodes, не отбирать только ошибки игрока.
+- [x] RED: `test_overlap_and_duplicate_windows_no_duplicate_records`, `test_unknown_clock_uses_demo_ticks`, `test_death_gap_and_epoch_not_interpolated`, `test_candidate_event_not_promoted_to_action`, `test_index_limit_aborts`, `test_streaming_does_not_materialize_all_states`. Проверить ordinary control windows наряду с candidate control/death episodes, не отбирать только ошибки игрока.
 
 ```python
 # Проверить записанный windows.jsonl при двух пересекающихся окнах.
@@ -142,17 +142,17 @@ assert all('observed_action' not in r for r in candidate_index_entries)
 assert all(r['game_seconds'] is None for r in unknown_clock_records)
 ```
 
-- [ ] `python -m unittest discover -s tests -p test_dem_episodes.py -v`: RED.
-- [ ] Реализовать index поraw state/lifecycle changes, gap boundaries и named event candidates; label сохраняет source/type/uncertainty. Нет игровых команд/intent и нет подачи states вreplay_gate. Model export отсутствует; raw entitydump/rawchat/offactorresources не включаются. События/состояния каждого запроса попадают вwindows не более одного раза с list windowids.
-- [ ] GREEN; повторный deterministic output hash безwalltimestamps. Commit `feat: index replay episodes without inferred actions`.
+- [x] `python -m unittest discover -s tests -p test_dem_episodes.py -v`: RED.
+- [x] Реализовать index поraw state/lifecycle changes, gap boundaries и named event candidates; label сохраняет source/type/uncertainty. Нет игровых команд/intent и нет подачи states вreplay_gate. Model export отсутствует; raw entitydump/rawchat/offactorresources не включаются. События/состояния каждого запроса попадают вwindows не более одного раза с list windowids.
+- [x] GREEN; повторный deterministic output hash безwalltimestamps. Commit `feat: index replay episodes without inferred actions`.
 
 ## Task5: Реальная приёмка, независимый обзор и публикация
 
 **Files:** create `tests/check_dem_golden.py`; update README; new report `reports/04-local-dem-import/README.md`, `result.md`, `receipt.json`, `technical-review.md`; индекс reportsREADME. Raw outputs/compiler/config/JDK остаются ignored BUILD.
 
-- [ ] Создать golden check: exactDEMhash изspike,account70388657,match9042986015,mis-match IDs, preserve existing output; actual synthetic callbacks не увеличивают realcount, truncatedDEM и несовместимыйdecoder дают отказ. Два freshoutput импорта должны иметь одинаковые deterministic data hashes; cachehit не запускает Java. Parsecounts объяснить относительно34051real/32178actor/1873unassigned, не менять критерий под output без сохранённого исследования.
-- [ ] Run Python `unittest discover -s tests -p test_dem_*.py -v`, existing replaygate и Java main suite. Затем explicitly `python tests/check_dem_golden.py --dem VERIFIED_DEM --lock notes/dem-dependencies-v1.json --config LOCAL_CONFIG --output BUILD/golden-import`; команды будущие, сейчас не выполнены.
-- [ ] Compare21212/41706/45846 HP/mana/maxima/gameclock сexact native receipt. Межпакетные1tick и fixed/slowclock7:25 остаются отдельными отрицательными случаями. Actual pause/otherpatch/fog/controlbit/worldtransform/model/5×5 не становятся проверенными от unit fixtures.
+- [x] Создать golden check: exactDEMhash изspike,account70388657,match9042986015,mis-match IDs, preserve existing output; actual synthetic callbacks не увеличивают realcount, truncatedDEM и несовместимыйdecoder дают отказ. Два freshoutput импорта должны иметь одинаковые deterministic data hashes; cachehit не запускает Java. Parsecounts объяснить относительно34051real/32178actor/1873unassigned, не менять критерий под output без сохранённого исследования.
+- [x] Run Python `unittest discover -s tests -p test_dem_*.py -v`, existing replaygate и Java main suite. Затем explicitly `python tests/check_dem_golden.py --dem VERIFIED_DEM --lock notes/dem-dependencies-v1.json --config LOCAL_CONFIG --output BUILD/golden-import`; команды будущие, сейчас не выполнены.
+- [x] Compare21212/41706/45846 HP/mana/maxima/gameclock сexact native receipt. Межпакетные1tick и fixed/slowclock7:25 остаются отдельными отрицательными случаями. Actual pause/otherpatch/fog/controlbit/worldtransform/model/5×5 не становятся проверенными от unit fixtures.
 - [ ] Один independent C2 reviewer после завершения всехзадач: код+realoutputs+guard negatives+limits/cache/atomicity, исправления и повтор затронутых checks. В отчёте actualPASS/FAIL/NOTRUN и elapsed/bytes; tokens/costnull при отсутствииметрики. Нет критика каждого test/подпункта.
 - [ ] JSON/links/gitdiff checks, project lesson/actionlog/oneusage entry; staged только библиотечные источники/малыеtests/locks/compactreports. Commit/push по поручению пользователя, verifyremote SHA; .freebuff/сыройDEM/Java toolchain/assets не публиковать.
 
@@ -171,4 +171,4 @@ Set-Location -LiteralPath 'D:/AI/dota2coach/creators/creator-1/05-match-data/03-
 
 Speccoverage: provenance/schema→1/2, identity/lifecycle/clock/uint64→2, streaming/limits/cache/atomic→3, episodes/knowledge/actionboundaries→4, native evidence/independentreview→5. Все пять ReviewFocus имеют отдельные namedtests; интерфейсы совпадают междузадачами. Профиль неизвестных required decoder параметров получается actualaudit, не подгоняется кHUD. Новые лимиты/формат — предложения именно технического плана.
 
-План исполняет основной агент в этой сессии с существующим разрешением на полезные независимые специализации; выбранная здесь схема соответствует требованию экономии и одного итогового C2review. До рассмотрения этого письменного плана — только документы/исследования, без постоянного кода.
+План исполняет основной агент в этой сессии с существующим разрешением на полезные независимые специализации; выбранная здесь схема соответствует требованию экономии и одного итогового C2review. План рассмотрен; исходники реализованы, приёмка и итоговый обзор фиксируются отдельно.
