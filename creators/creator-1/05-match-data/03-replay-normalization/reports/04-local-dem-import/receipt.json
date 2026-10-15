@@ -411,6 +411,21 @@
       "path": "build/dota_coach/dem-import-v1/golden4/second/windows.jsonl",
       "bytes": 245495,
       "sha256": "8fbc29299f8d27d8ab11940ab069aa4e4fc2a51abc2f927b6ddb9bba4f5cb400"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/main-local-tests.log",
+      "bytes": 4744,
+      "sha256": "801fccb892a380dac573edb841365d98fd5f381cc1905c896ffe1d084364e85f"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/main-cache-check.log",
+      "bytes": 679,
+      "sha256": "10f67f2fafc86c19ff4882a40ad31c82708f4da93fd309a079c3ddcde6a58d09"
+    },
+    {
+      "path": "build/dota_coach/dem-import-v1/final-doc-check.json",
+      "bytes": 179,
+      "sha256": "2e19f9343bf96088599e22d946d781d2eb19bf9e837d4a8d0632c9f1e50e3f8d"
     }
   ],
   "source_snapshot": {
@@ -434,5 +449,16 @@
     "open_confirmed_p1_p2": 0,
     "independent_local_checks": 37,
     "resolution_reproductions": "build/dota_coach/dem-import-v1/review-20261015/resolution-reproductions.json"
+  },
+  "publication": {
+    "implementation_commit": "1dd4e0779d5fbb92144c80f36d4d2cd602a1bf7e",
+    "branch": "main",
+    "origin_main_verified_at_implementation_commit": true,
+    "integration": "verified fast-forward, compare-and-swap old main, same-tree switch preserves working bytes",
+    "post_integration_python_checks": 37,
+    "post_integration_python_seconds": 6.821,
+    "post_integration_java_core_passed": true,
+    "post_integration_cli_status": "cache_hit",
+    "raw_bytes_and_user_freebuff_excluded": true
   }
 }

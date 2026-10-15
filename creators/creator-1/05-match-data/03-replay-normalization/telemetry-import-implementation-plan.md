@@ -154,7 +154,7 @@ assert all(r['game_seconds'] is None for r in unknown_clock_records)
 - [x] Run Python `unittest discover -s tests -p test_dem_*.py -v`, existing replaygate и Java main suite. Затем explicitly `python tests/check_dem_golden.py --dem VERIFIED_DEM --lock notes/dem-dependencies-v1.json --config LOCAL_CONFIG --output BUILD/golden-import`; команды будущие, сейчас не выполнены.
 - [x] Compare21212/41706/45846 HP/mana/maxima/gameclock сexact native receipt. Межпакетные1tick и fixed/slowclock7:25 остаются отдельными отрицательными случаями. Actual pause/otherpatch/fog/controlbit/worldtransform/model/5×5 не становятся проверенными от unit fixtures.
 - [x] Один independent C2 reviewer после завершения всехзадач: код+realoutputs+guard negatives+limits/cache/atomicity, исправления и повтор затронутых checks. В отчёте actualPASS/FAIL/NOTRUN и elapsed/bytes; tokens/costnull при отсутствииметрики. Нет критика каждого test/подпункта.
-- [ ] JSON/links/gitdiff checks, project lesson/actionlog/oneusage entry; staged только библиотечные источники/малыеtests/locks/compactreports. Commit/push по поручению пользователя, verifyremote SHA; .freebuff/сыройDEM/Java toolchain/assets не публиковать.
+- [x] JSON/links/gitdiff checks, project lesson/actionlog/oneusage entry; staged только библиотечные источники/малыеtests/locks/compactreports. Commit/push по поручению пользователя, verifyremote SHA; .freebuff/сыройDEM/Java toolchain/assets не публиковать.
 
 ## Самопроверка плана и передача
 
